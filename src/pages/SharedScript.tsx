@@ -39,16 +39,15 @@ const SharedScript = () => {
   useEffect(() => {
     const fetchShared = async () => {
       if (!shareId) { setNotFound(true); setLoading(false); return; }
-      const { data, error } = await supabase
+      const { data, error } = await (supabase
         .from("generations")
-        .select("title, platform, framework, language, script, test_cases, prerequisites, coverage_notes, known_limitations, created_at")
+        .select("title, platform, framework, language, script, test_cases, prerequisites, coverage_notes, known_limitations, created_at") as any)
         .eq("share_id", shareId)
         .single();
-
       if (error || !data) {
         setNotFound(true);
       } else {
-        setScript(data as SharedGeneration);
+        setScript(data as unknown as SharedGeneration);
       }
       setLoading(false);
     };

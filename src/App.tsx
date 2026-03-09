@@ -12,6 +12,7 @@ import Templates from "./pages/Templates";
 import History from "./pages/History";
 import Collections from "./pages/Collections";
 import SharedScript from "./pages/SharedScript";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
                   <Route path="/history" element={<History />} />
                   <Route path="/collections" element={<Collections />} />
                   <Route path="/shared/:shareId" element={<SharedScript />} />
+                  <Route path="/profile" element={<Profile />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>

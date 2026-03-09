@@ -74,37 +74,6 @@
     font-family: 'DM Sans', sans-serif;
   }
 
-  .light {
-    --background: 40 20% 96%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 43 52% 44%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 14% 90%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 220 14% 92%;
-    --muted-foreground: 215 14% 40%;
-    --accent: 220 14% 92%;
-    --accent-foreground: 222 47% 11%;
-    --destructive: 0 84% 55%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 220 14% 86%;
-    --input: 220 14% 86%;
-    --ring: 43 52% 44%;
-
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 43 52% 44%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 92%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 220 14% 86%;
-    --sidebar-ring: 43 52% 44%;
-  }
-
   .dark {
     --background: 222 47% 5%;
     --foreground: 210 20% 98%;

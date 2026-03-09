@@ -1,10 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { Settings, Download, Menu, X, User, LogOut } from "lucide-react";
+import { Settings, Download, Menu, X, User, LogOut, UserCircle } from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useAuth } from "@/contexts/AuthContext";
 import { AuthModal } from "@/components/auth/AuthModal";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -91,6 +90,10 @@ const KRHeader = () => {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end" className="bg-card border-border">
+                    <DropdownMenuItem onClick={() => window.location.href = "/profile"} className="gap-2 cursor-pointer">
+                      <UserCircle className="w-4 h-4" />
+                      Profile
+                    </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => signOut()} className="gap-2 cursor-pointer">
                       <LogOut className="w-4 h-4" />
                       Sign Out
@@ -109,12 +112,10 @@ const KRHeader = () => {
               )
             )}
 
-            <ThemeToggle />
-
             {isInstallable && (
               <button
                 onClick={install}
-                className="px-3 py-1.5 text-sm rounded-md border border-primary/30 text-primary hover:bg-primary/10 flex items-center gap-1.5 transition-colors"
+                className="ml-2 px-3 py-1.5 text-sm rounded-md border border-primary/30 text-primary hover:bg-primary/10 flex items-center gap-1.5 transition-colors"
               >
                 <Download className="w-3.5 h-3.5" />
                 Install
