@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy, Download } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
+import { useGeneratorStore, Platform, TestScope } from "@/store/generatorStore";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
+import SkeletonRows from "@/components/SkeletonRows";
 
 interface Generation {
   id: string;
@@ -15,6 +18,8 @@ interface Generation {
   business_case: string;
   script: string;
   test_cases: any;
+  test_scopes: string[] | null;
+  test_count: number | null;
   prerequisites: string[] | null;
   coverage_notes: string | null;
   known_limitations: string[] | null;
@@ -30,6 +35,8 @@ const platformLabels: Record<string, string> = {
 
 const History = () => {
   const { user } = useAuth();
+  const navigate = useNavigate();
+  const store = useGeneratorStore();
   const [search, setSearch] = useState("");
   const [starredOnly, setStarredOnly] = useState(false);
   const [generations, setGenerations] = useState<Generation[]>([]);
@@ -58,6 +65,18 @@ const History = () => {
     setGenerations((prev) => prev.filter((g) => g.id !== id));
     if (selected?.id === id) setSelected(null);
     toast.success("Script deleted");
+  };
+
+  const handleRerun = (g: Generation) => {
+    store.setPlatform(g.platform as Platform);
+    store.setFramework(g.framework);
+    store.setLanguage(g.language);
+    store.setBusinessCase(g.business_case);
+    if (g.test_scopes?.length) store.setTestScopes(g.test_scopes as TestScope[]);
+    if (g.test_count) store.setTestCount(g.test_count);
+    store.setResult(null);
+    navigate("/");
+    toast.success("Parameters loaded — ready to generate");
   };
 
   const copyScript = (script: string) => {
@@ -135,7 +154,7 @@ const History = () => {
         </div>
 
         {loading ? (
-          <p className="text-muted-foreground text-sm text-center py-12">Loading...</p>
+          <SkeletonRows rows={4} columns={5} />
         ) : (
           <div className="rounded-xl border border-border overflow-hidden">
             <table className="w-full text-sm">
@@ -146,7 +165,7 @@ const History = () => {
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden sm:table-cell">Platform</th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden md:table-cell">Framework</th>
                   <th className="px-4 py-3 text-right text-xs font-medium text-muted-foreground">Generated</th>
-                  <th className="px-4 py-3 w-20"></th>
+                  <th className="px-4 py-3 w-28"></th>
                 </tr>
               </thead>
               <tbody>
@@ -169,6 +188,9 @@ const History = () => {
                     <td className="px-4 py-3 text-right text-muted-foreground text-xs">{formatDate(g.created_at)}</td>
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-1">
+                        <button onClick={() => handleRerun(g)} className="p-1 text-muted-foreground hover:text-primary" title="Re-run with same parameters">
+                          <RotateCcw className="w-3.5 h-3.5" />
+                        </button>
                         <button onClick={() => setSelected(g)} className="p-1 text-muted-foreground hover:text-foreground">
                           <Eye className="w-3.5 h-3.5" />
                         </button>
@@ -208,6 +230,9 @@ const History = () => {
               </TabsList>
               <TabsContent value="code" className="mt-3">
                 <div className="flex justify-end gap-2 mb-2">
+                  <button onClick={() => selected && handleRerun(selected)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary">
+                    <RotateCcw className="w-3.5 h-3.5" /> Re-run
+                  </button>
                   <button onClick={() => selected && downloadScript(selected)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground">
                     <Download className="w-3.5 h-3.5" /> Download
                   </button>

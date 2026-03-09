@@ -35,6 +35,7 @@ interface GeneratorState {
   setFramework: (f: string) => void;
   setLanguage: (l: string) => void;
   toggleScope: (s: TestScope) => void;
+  setTestScopes: (scopes: TestScope[]) => void;
   setTestCount: (n: number) => void;
   setBusinessCase: (t: string) => void;
   setIsGenerating: (b: boolean) => void;
@@ -68,6 +69,7 @@ export const useGeneratorStore = create<GeneratorState>((set) => ({
         ? state.testScopes.filter((x) => x !== s)
         : [...state.testScopes, s],
     })),
+  setTestScopes: (scopes) => set({ testScopes: scopes }),
   setTestCount: (n) => set({ testCount: n }),
   setBusinessCase: (t) => set({ businessCase: t }),
   setIsGenerating: (b) => set({ isGenerating: b }),
