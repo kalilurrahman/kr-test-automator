@@ -8,6 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
+import { useNotificationStore } from "@/store/notificationStore";
 
 const Index = () => {
   const store = useGeneratorStore();
@@ -42,6 +43,14 @@ const Index = () => {
         store.setProgress(100);
         store.setIsGenerating(false);
         store.setResult(result);
+
+        // Notify if user navigated away
+        if (document.hidden) {
+          useNotificationStore.getState().addNotification(
+            "Script Ready",
+            `"${result.title}" has been generated successfully.`
+          );
+        }
 
         // Auto-save if user is logged in
         if (user) {
