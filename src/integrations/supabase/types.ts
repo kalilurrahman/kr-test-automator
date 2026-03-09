@@ -14,6 +14,69 @@ export type Database = {
   }
   public: {
     Tables: {
+      collection_items: {
+        Row: {
+          added_at: string
+          collection_id: string
+          generation_id: string
+          id: string
+        }
+        Insert: {
+          added_at?: string
+          collection_id: string
+          generation_id: string
+          id?: string
+        }
+        Update: {
+          added_at?: string
+          collection_id?: string
+          generation_id?: string
+          id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "collection_items_collection_id_fkey"
+            columns: ["collection_id"]
+            isOneToOne: false
+            referencedRelation: "collections"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "collection_items_generation_id_fkey"
+            columns: ["generation_id"]
+            isOneToOne: false
+            referencedRelation: "generations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      collections: {
+        Row: {
+          created_at: string
+          description: string | null
+          id: string
+          name: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          name: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          name?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       generations: {
         Row: {
           business_case: string
@@ -95,6 +158,48 @@ export type Database = {
           email?: string | null
           id?: string
           updated_at?: string
+        }
+        Relationships: []
+      }
+      templates: {
+        Row: {
+          business_case_text: string
+          category: string | null
+          created_at: string
+          description: string | null
+          icon: string | null
+          id: string
+          is_featured: boolean | null
+          platform: string
+          suggested_framework: string | null
+          suggested_scopes: string[] | null
+          title: string
+        }
+        Insert: {
+          business_case_text: string
+          category?: string | null
+          created_at?: string
+          description?: string | null
+          icon?: string | null
+          id?: string
+          is_featured?: boolean | null
+          platform: string
+          suggested_framework?: string | null
+          suggested_scopes?: string[] | null
+          title: string
+        }
+        Update: {
+          business_case_text?: string
+          category?: string | null
+          created_at?: string
+          description?: string | null
+          icon?: string | null
+          id?: string
+          is_featured?: boolean | null
+          platform?: string
+          suggested_framework?: string | null
+          suggested_scopes?: string[] | null
+          title?: string
         }
         Relationships: []
       }
