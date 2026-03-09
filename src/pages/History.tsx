@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
