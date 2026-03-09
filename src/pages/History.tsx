@@ -11,6 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import SkeletonRows from "@/components/SkeletonRows";
 import { DeleteConfirmDialog, useDeleteConfirm } from "@/components/DeleteConfirmDialog";
+import { exportToPdf } from "@/lib/exportPdf";
 
 interface Generation {
   id: string;
