@@ -90,6 +90,7 @@ export type Database = {
           platform: string
           prerequisites: string[] | null
           script: string
+          share_id: string | null
           test_cases: Json | null
           test_count: number | null
           test_scopes: string[] | null
@@ -108,6 +109,7 @@ export type Database = {
           platform: string
           prerequisites?: string[] | null
           script: string
+          share_id?: string | null
           test_cases?: Json | null
           test_count?: number | null
           test_scopes?: string[] | null
@@ -126,6 +128,7 @@ export type Database = {
           platform?: string
           prerequisites?: string[] | null
           script?: string
+          share_id?: string | null
           test_cases?: Json | null
           test_count?: number | null
           test_scopes?: string[] | null

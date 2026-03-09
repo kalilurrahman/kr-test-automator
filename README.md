@@ -1,83 +1,73 @@
-# TestForge AI
+# Welcome to your Lovable project
 
-**TestForge AI** is an innovative platform tailored for creating, exploring, and saving automated test scripts across various platforms and frameworks. Powered by Generative AI, TestForge provides developers, QA engineers, and IT executives an intuitive interface to rapidly draft test cases for different test scopes.
+## Project info
 
-**Live Application:** [TestForge AI](https://kr-test-automator.lovable.app/)
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
----
+## How can I edit this code?
 
-## 🌟 Key Features
+There are several ways of editing your application.
 
-### 1. **Script Generation Engine**
-The home page lets you configure and generate test scripts seamlessly. Simply select your **Platform**, choose your target **Framework & Language**, and determine the **Test Scope**. The AI engine handles the rest.
+**Use Lovable**
 
-![Home Page](docs/assets/home.png)
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-#### Supported Configurations
-- **Platforms:** SAP, Salesforce, Veeva, ServiceNow, Workday, Oracle, Microsoft 365, Web/Custom, REST API, iOS, Android.
-- **Frameworks + Languages:** Playwright (TypeScript), Cypress (JavaScript), Selenium (Java/Python), REST Assured, and more.
-- **Test Scopes:** UI Functional, Regression, Smoke/Sanity, E2E, API, Performance, Security, Accessibility, Data-driven.
+Changes made via Lovable will be committed automatically to this repo.
 
-#### Interactive Selection
-Selecting a platform or altering scope actively updates the generation context. See an example below where "SAP" and "Playwright (TypeScript)" are selected:
+**Use your preferred IDE**
 
-![Home Interaction](docs/assets/home_interaction.png)
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-### 2. **Template Library**
-Don't want to start from scratch? The `/templates` page offers a rich library of pre-built scenarios categorized by Industry, Platform, and Complexity.
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-![Templates Page](docs/assets/templates.png)
-
-When you find a scenario that fits your needs (e.g., SAP Purchase Order Creation & Approval), you can effortlessly pull it into your workflow.
-
-![Template Interaction](docs/assets/template_interaction.png)
-
-### 3. **Script History**
-Keep track of all your previously generated tests on the `/history` page. You can easily view details like Platform, Framework, and when it was generated. Star your favorites for quick access!
-
-![History Page](docs/assets/history.png)
-
-### 4. **Deprecated Library Route**
-The legacy `/library` route has been deprecated. If you attempt to access it, you will receive a 404 Error page. All former library functionality is now consolidated under `/templates` and `/history`.
-
-![Library 404 Error](docs/assets/library.png)
-
-*(For more details, see the [Library Readme](library/README.md))*
-
----
-
-## 🛠️ Technology Stack
-
-This project is built using modern web development practices:
-
-- **Frontend:** React, TypeScript, Vite
-- **Styling:** Tailwind CSS, shadcn-ui
-- **State Management:** Zustand, React Query
-- **Routing:** React Router
-- **Database / Auth:** Supabase
-
-## 🚀 How to Run Locally
-
-If you want to run or edit this project locally, ensure you have [Node.js & npm](https://github.com/nvm-sh/nvm#installing-and-updating) installed.
+Follow these steps:
 
 ```sh
-# Step 1: Clone the repository
+# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the directory
+# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install dependencies
-npm install
+# Step 3: Install the necessary dependencies.
+npm i
 
-# Step 4: Start the development server
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-## 🤝 Contribution
+**Edit a file directly in GitHub**
 
-You can edit files directly via GitHub, use GitHub Codespaces, or utilize your preferred IDE locally. Commit your changes and push to your branch to see them updated.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
----
+**Use GitHub Codespaces**
 
-*(Built by Global IT Executive & Builder Kalilur Rahman)*
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

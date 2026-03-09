@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw, Share2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -69,6 +69,19 @@ const History = () => {
     setGenerations((prev) => prev.filter((g) => g.id !== id));
     if (selected?.id === id) setSelected(null);
     toast.success("Script deleted");
+  };
+
+  const handleShare = async (g: Generation) => {
+    // Generate share_id if not exists
+    let shareId = (g as any).share_id;
+    if (!shareId) {
+      shareId = crypto.randomUUID().slice(0, 8);
+      await supabase.from("generations").update({ share_id: shareId } as any).eq("id", g.id);
+      setGenerations((prev) => prev.map((gen) => gen.id === g.id ? { ...gen, share_id: shareId } : gen) as any);
+    }
+    const url = `${window.location.origin}/shared/${shareId}`;
+    await navigator.clipboard.writeText(url);
+    toast.success("Share link copied to clipboard");
   };
 
   const handleRerun = (g: Generation) => {
@@ -198,8 +211,11 @@ const History = () => {
                         <button onClick={() => setSelected(g)} className="p-1 text-muted-foreground hover:text-foreground">
                           <Eye className="w-3.5 h-3.5" />
                         </button>
-                        <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground">
+                        <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground" title="Download">
                           <Download className="w-3.5 h-3.5" />
+                        </button>
+                        <button onClick={() => handleShare(g)} className="p-1 text-muted-foreground hover:text-foreground" title="Share link">
+                          <Share2 className="w-3.5 h-3.5" />
                         </button>
                         <button onClick={() => deleteConfirm.requestDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
                           <Trash2 className="w-3.5 h-3.5" />
