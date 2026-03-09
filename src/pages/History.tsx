@@ -207,7 +207,10 @@ const History = () => {
                 <TabsTrigger value="setup">Setup</TabsTrigger>
               </TabsList>
               <TabsContent value="code" className="mt-3">
-                <div className="flex justify-end mb-2">
+                <div className="flex justify-end gap-2 mb-2">
+                  <button onClick={() => selected && downloadScript(selected)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground">
+                    <Download className="w-3.5 h-3.5" /> Download
+                  </button>
                   <button onClick={() => copyScript(selected.script)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground">
                     <Copy className="w-3.5 h-3.5" /> Copy
                   </button>
