@@ -15,8 +15,6 @@ const Index = () => {
 
   const canGenerate = !!store.platform && store.businessCase.trim().length > 10 && !store.isGenerating;
 
-  useKeyboardShortcuts({ onGenerate: handleGenerate, canGenerate });
-
   const handleGenerate = async () => {
     if (!store.platform || store.businessCase.trim().length < 10) return;
     store.setIsGenerating(true);
