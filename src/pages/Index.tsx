@@ -82,6 +82,8 @@ const Index = () => {
     if (pick.suggested_framework) store.setFramework(pick.suggested_framework);
   };
 
+  useKeyboardShortcuts({ onGenerate: handleGenerate, canGenerate });
+
   return (
     <div className="min-h-[calc(100vh-64px)]">
       <div className="max-w-7xl mx-auto px-4 py-6">
