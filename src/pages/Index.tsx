@@ -7,10 +7,13 @@ import { streamGeneration } from "@/lib/generateScript";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
 
 const Index = () => {
   const store = useGeneratorStore();
   const { user } = useAuth();
+
+  const canGenerate = !!store.platform && store.businessCase.trim().length > 10 && !store.isGenerating;
 
   const handleGenerate = async () => {
     if (!store.platform || store.businessCase.trim().length < 10) return;
@@ -78,6 +81,8 @@ const Index = () => {
     store.setBusinessCase(pick.business_case_text);
     if (pick.suggested_framework) store.setFramework(pick.suggested_framework);
   };
+
+  useKeyboardShortcuts({ onGenerate: handleGenerate, canGenerate });
 
   return (
     <div className="min-h-[calc(100vh-64px)]">
