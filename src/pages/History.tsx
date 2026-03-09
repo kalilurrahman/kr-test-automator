@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useGeneratorStore, Platform, TestScope } from "@/store/generatorStore";
@@ -8,6 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import SkeletonRows from "@/components/SkeletonRows";
+import { DeleteConfirmDialog, useDeleteConfirm } from "@/components/DeleteConfirmDialog";
 
 interface Generation {
   id: string;
@@ -42,6 +45,7 @@ const History = () => {
   const [generations, setGenerations] = useState<Generation[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Generation | null>(null);
+  const deleteConfirm = useDeleteConfirm();
 
   const fetchGenerations = async () => {
     if (!user) { setLoading(false); return; }
@@ -197,7 +201,7 @@ const History = () => {
                         <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground">
                           <Download className="w-3.5 h-3.5" />
                         </button>
-                        <button onClick={() => handleDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
+                        <button onClick={() => deleteConfirm.requestDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
                       </div>
@@ -240,9 +244,14 @@ const History = () => {
                     <Copy className="w-3.5 h-3.5" /> Copy
                   </button>
                 </div>
-                <pre className="p-4 rounded-lg bg-background border border-border text-xs overflow-x-auto whitespace-pre-wrap font-mono text-foreground">
+                <SyntaxHighlighter
+                  language={selected.language === "typescript" ? "typescript" : selected.language === "python" ? "python" : selected.language === "java" ? "java" : "javascript"}
+                  style={atomOneDark}
+                  customStyle={{ borderRadius: "0.5rem", fontSize: "0.75rem", padding: "1rem" }}
+                  wrapLongLines
+                >
                   {selected.script}
-                </pre>
+                </SyntaxHighlighter>
               </TabsContent>
               <TabsContent value="coverage" className="mt-3 space-y-3">
                 {selected.coverage_notes && (
@@ -274,6 +283,14 @@ const History = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      <DeleteConfirmDialog
+        open={deleteConfirm.isOpen}
+        onOpenChange={(open) => !open && deleteConfirm.cancel()}
+        title="Delete script?"
+        description="This will permanently delete this generated script. This action cannot be undone."
+        onConfirm={() => deleteConfirm.confirm(handleDelete)}
+      />
     </div>
   );
 };

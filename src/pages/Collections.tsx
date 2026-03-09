@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
+import { DeleteConfirmDialog, useDeleteConfirm } from "@/components/DeleteConfirmDialog";
 
 interface Collection {
   id: string;
@@ -52,6 +53,7 @@ const Collections = () => {
   const [items, setItems] = useState<CollectionItem[]>([]);
   const [addDialogOpen, setAddDialogOpen] = useState(false);
   const [availableGenerations, setAvailableGenerations] = useState<Generation[]>([]);
+  const collectionDeleteConfirm = useDeleteConfirm();
 
   const fetchCollections = async () => {
     if (!user) return;
@@ -232,7 +234,7 @@ const Collections = () => {
                   <div className="flex items-center gap-2">
                     <span className="text-xs text-muted-foreground">{c.item_count}</span>
                     <button
-                      onClick={(e) => { e.stopPropagation(); handleDelete(c.id); }}
+                      onClick={(e) => { e.stopPropagation(); collectionDeleteConfirm.requestDelete(c.id); }}
                       className="opacity-0 group-hover:opacity-100 p-1 hover:text-destructive transition-all"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
@@ -339,6 +341,14 @@ const Collections = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      <DeleteConfirmDialog
+        open={collectionDeleteConfirm.isOpen}
+        onOpenChange={(open) => !open && collectionDeleteConfirm.cancel()}
+        title="Delete collection?"
+        description="This will permanently delete this collection and remove all scripts from it."
+        onConfirm={() => collectionDeleteConfirm.confirm(handleDelete)}
+      />
     </div>
   );
 };
