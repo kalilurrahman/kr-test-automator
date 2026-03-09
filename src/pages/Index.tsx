@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import InputPanel from "@/components/generator/InputPanel";
 import OutputPanel from "@/components/generator/OutputPanel";
 import Dashboard from "@/components/Dashboard";
