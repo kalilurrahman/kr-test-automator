@@ -53,6 +53,7 @@ const Collections = () => {
   const [items, setItems] = useState<CollectionItem[]>([]);
   const [addDialogOpen, setAddDialogOpen] = useState(false);
   const [availableGenerations, setAvailableGenerations] = useState<Generation[]>([]);
+  const collectionDeleteConfirm = useDeleteConfirm();
 
   const fetchCollections = async () => {
     if (!user) return;
