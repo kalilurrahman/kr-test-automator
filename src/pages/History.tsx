@@ -244,9 +244,14 @@ const History = () => {
                     <Copy className="w-3.5 h-3.5" /> Copy
                   </button>
                 </div>
-                <pre className="p-4 rounded-lg bg-background border border-border text-xs overflow-x-auto whitespace-pre-wrap font-mono text-foreground">
+                <SyntaxHighlighter
+                  language={selected.language === "typescript" ? "typescript" : selected.language === "python" ? "python" : selected.language === "java" ? "java" : "javascript"}
+                  style={atomOneDark}
+                  customStyle={{ borderRadius: "0.5rem", fontSize: "0.75rem", padding: "1rem" }}
+                  wrapLongLines
+                >
                   {selected.script}
-                </pre>
+                </SyntaxHighlighter>
               </TabsContent>
               <TabsContent value="coverage" className="mt-3 space-y-3">
                 {selected.coverage_notes && (
