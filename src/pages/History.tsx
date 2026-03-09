@@ -45,6 +45,7 @@ const History = () => {
   const [generations, setGenerations] = useState<Generation[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Generation | null>(null);
+  const deleteConfirm = useDeleteConfirm();
 
   const fetchGenerations = async () => {
     if (!user) { setLoading(false); return; }
