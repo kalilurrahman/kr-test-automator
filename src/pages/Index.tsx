@@ -14,6 +14,23 @@ import { useNotificationStore } from "@/store/notificationStore";
 const Index = () => {
   const store = useGeneratorStore();
   const { user } = useAuth();
+  // Load user preferences on mount
+  useEffect(() => {
+    if (!user) return;
+    const loadPrefs = async () => {
+      const { data } = await (supabase
+        .from("profiles")
+        .select("default_platform, default_framework, default_test_count") as any)
+        .eq("id", user.id)
+        .single();
+      if (data) {
+        if (data.default_platform && !store.platform) store.setPlatform(data.default_platform);
+        if (data.default_framework && store.framework === "playwright_ts") store.setFramework(data.default_framework);
+        if (data.default_test_count && store.testCount === 10) store.setTestCount(data.default_test_count);
+      }
+    };
+    loadPrefs();
+  }, [user]);
 
   const canGenerate = !!store.platform && store.businessCase.trim().length > 10 && !store.isGenerating;
 
