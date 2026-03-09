@@ -1,29 +1,92 @@
-import { useState } from "react";
-import { Search, Star } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Search, Star, Trash2, Eye, Copy } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/contexts/AuthContext";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { toast } from "sonner";
 
-// Mock history data for now (will be replaced with DB)
-const mockHistory = [
-  { id: "1", title: "SF Lead Lifecycle — 20 tests", platform: "salesforce", framework: "Playwright", created_at: "2h ago", is_starred: true },
-  { id: "2", title: "SAP PO Approval — 15 tests", platform: "sap", framework: "Selenium", created_at: "Yesterday", is_starred: false },
-  { id: "3", title: "Veeva Vault Doc State — 12 tests", platform: "veeva", framework: "REST API", created_at: "Mar 5", is_starred: true },
-  { id: "4", title: "REST API CRUD Suite — 25 tests", platform: "api", framework: "REST Assured", created_at: "Mar 3", is_starred: false },
-  { id: "5", title: "E-commerce Checkout — 18 tests", platform: "web", framework: "Cypress", created_at: "Feb 28", is_starred: false },
-];
+interface Generation {
+  id: string;
+  title: string;
+  platform: string;
+  framework: string;
+  language: string;
+  business_case: string;
+  script: string;
+  test_cases: any;
+  prerequisites: string[] | null;
+  coverage_notes: string | null;
+  known_limitations: string[] | null;
+  is_starred: boolean | null;
+  created_at: string;
+}
 
 const platformLabels: Record<string, string> = {
   sap: "SAP", salesforce: "Salesforce", veeva: "Veeva", servicenow: "ServiceNow",
   workday: "Workday", oracle: "Oracle", web: "Web", api: "REST API",
+  mobile_ios: "iOS", mobile_android: "Android",
 };
 
 const History = () => {
+  const { user } = useAuth();
   const [search, setSearch] = useState("");
   const [starredOnly, setStarredOnly] = useState(false);
+  const [generations, setGenerations] = useState<Generation[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selected, setSelected] = useState<Generation | null>(null);
 
-  const filtered = mockHistory.filter((h) => {
-    if (search && !h.title.toLowerCase().includes(search.toLowerCase())) return false;
-    if (starredOnly && !h.is_starred) return false;
+  const fetchGenerations = async () => {
+    if (!user) { setLoading(false); return; }
+    const { data } = await supabase
+      .from("generations")
+      .select("*")
+      .order("created_at", { ascending: false });
+    setGenerations((data as Generation[]) || []);
+    setLoading(false);
+  };
+
+  useEffect(() => { fetchGenerations(); }, [user]);
+
+  const toggleStar = async (id: string, current: boolean | null) => {
+    await supabase.from("generations").update({ is_starred: !current }).eq("id", id);
+    setGenerations((prev) => prev.map((g) => g.id === id ? { ...g, is_starred: !current } : g));
+  };
+
+  const handleDelete = async (id: string) => {
+    await supabase.from("generations").delete().eq("id", id);
+    setGenerations((prev) => prev.filter((g) => g.id !== id));
+    if (selected?.id === id) setSelected(null);
+    toast.success("Script deleted");
+  };
+
+  const copyScript = (script: string) => {
+    navigator.clipboard.writeText(script);
+    toast.success("Copied to clipboard");
+  };
+
+  const filtered = generations.filter((g) => {
+    if (search && !g.title.toLowerCase().includes(search.toLowerCase())) return false;
+    if (starredOnly && !g.is_starred) return false;
     return true;
   });
+
+  const formatDate = (d: string) => {
+    const date = new Date(d);
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+    if (diff < 3600000) return `${Math.floor(diff / 60000)}m ago`;
+    if (diff < 86400000) return `${Math.floor(diff / 3600000)}h ago`;
+    return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  };
+
+  if (!user) {
+    return (
+      <div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
+        <p className="text-muted-foreground">Sign in to view your generated scripts.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-[calc(100vh-64px)]">
@@ -53,46 +116,115 @@ const History = () => {
           </button>
         </div>
 
-        <div className="rounded-xl border border-border overflow-hidden">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-border bg-card">
-                <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground w-8">★</th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground">Title</th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden sm:table-cell">Platform</th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden md:table-cell">Framework</th>
-                <th className="px-4 py-3 text-right text-xs font-medium text-muted-foreground">Generated</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filtered.map((h) => (
-                <tr key={h.id} className="border-b border-border last:border-0 hover:bg-accent/50 cursor-pointer transition-colors">
-                  <td className="px-4 py-3">
-                    {h.is_starred ? (
-                      <Star className="w-4 h-4 text-primary" fill="currentColor" />
-                    ) : (
-                      <Star className="w-4 h-4 text-muted-foreground/30" />
-                    )}
-                  </td>
-                  <td className="px-4 py-3 text-foreground font-medium">{h.title}</td>
-                  <td className="px-4 py-3 hidden sm:table-cell">
-                    <span className="px-2 py-0.5 rounded bg-accent text-xs text-muted-foreground">
-                      {platformLabels[h.platform] || h.platform}
-                    </span>
-                  </td>
-                  <td className="px-4 py-3 text-muted-foreground hidden md:table-cell">{h.framework}</td>
-                  <td className="px-4 py-3 text-right text-muted-foreground text-xs">{h.created_at}</td>
+        {loading ? (
+          <p className="text-muted-foreground text-sm text-center py-12">Loading...</p>
+        ) : (
+          <div className="rounded-xl border border-border overflow-hidden">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-border bg-card">
+                  <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground w-8">★</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground">Title</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden sm:table-cell">Platform</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden md:table-cell">Framework</th>
+                  <th className="px-4 py-3 text-right text-xs font-medium text-muted-foreground">Generated</th>
+                  <th className="px-4 py-3 w-20"></th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          {filtered.length === 0 && (
-            <div className="text-center py-12 text-muted-foreground text-sm">
-              No scripts found. Generate your first test script!
-            </div>
-          )}
-        </div>
+              </thead>
+              <tbody>
+                {filtered.map((g) => (
+                  <tr key={g.id} className="border-b border-border last:border-0 hover:bg-accent/50 transition-colors">
+                    <td className="px-4 py-3">
+                      <button onClick={() => toggleStar(g.id, g.is_starred)}>
+                        <Star className={`w-4 h-4 ${g.is_starred ? "text-primary" : "text-muted-foreground/30"}`} fill={g.is_starred ? "currentColor" : "none"} />
+                      </button>
+                    </td>
+                    <td className="px-4 py-3 text-foreground font-medium cursor-pointer" onClick={() => setSelected(g)}>
+                      {g.title}
+                    </td>
+                    <td className="px-4 py-3 hidden sm:table-cell">
+                      <span className="px-2 py-0.5 rounded bg-accent text-xs text-muted-foreground">
+                        {platformLabels[g.platform] || g.platform}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3 text-muted-foreground hidden md:table-cell">{g.framework}</td>
+                    <td className="px-4 py-3 text-right text-muted-foreground text-xs">{formatDate(g.created_at)}</td>
+                    <td className="px-4 py-3">
+                      <div className="flex items-center gap-1">
+                        <button onClick={() => setSelected(g)} className="p-1 text-muted-foreground hover:text-foreground">
+                          <Eye className="w-3.5 h-3.5" />
+                        </button>
+                        <button onClick={() => handleDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {filtered.length === 0 && (
+              <div className="text-center py-12 text-muted-foreground text-sm">
+                {generations.length === 0 ? "No scripts yet. Generate your first test script!" : "No matching scripts found."}
+              </div>
+            )}
+          </div>
+        )}
       </div>
+
+      {/* Detail Dialog */}
+      <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
+        <DialogContent className="bg-card border-border max-w-3xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="pr-8">{selected?.title}</DialogTitle>
+          </DialogHeader>
+          {selected && (
+            <Tabs defaultValue="code">
+              <TabsList className="bg-accent">
+                <TabsTrigger value="code">Code</TabsTrigger>
+                <TabsTrigger value="coverage">Coverage</TabsTrigger>
+                <TabsTrigger value="setup">Setup</TabsTrigger>
+              </TabsList>
+              <TabsContent value="code" className="mt-3">
+                <div className="flex justify-end mb-2">
+                  <button onClick={() => copyScript(selected.script)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground">
+                    <Copy className="w-3.5 h-3.5" /> Copy
+                  </button>
+                </div>
+                <pre className="p-4 rounded-lg bg-background border border-border text-xs overflow-x-auto whitespace-pre-wrap font-mono text-foreground">
+                  {selected.script}
+                </pre>
+              </TabsContent>
+              <TabsContent value="coverage" className="mt-3 space-y-3">
+                {selected.coverage_notes && (
+                  <div>
+                    <h3 className="text-sm font-medium text-foreground mb-1">Coverage Notes</h3>
+                    <p className="text-sm text-muted-foreground">{selected.coverage_notes}</p>
+                  </div>
+                )}
+                {selected.known_limitations && selected.known_limitations.length > 0 && (
+                  <div>
+                    <h3 className="text-sm font-medium text-foreground mb-1">Known Limitations</h3>
+                    <ul className="list-disc pl-4 text-sm text-muted-foreground space-y-1">
+                      {selected.known_limitations.map((l, i) => <li key={i}>{l}</li>)}
+                    </ul>
+                  </div>
+                )}
+              </TabsContent>
+              <TabsContent value="setup" className="mt-3">
+                {selected.prerequisites && selected.prerequisites.length > 0 && (
+                  <div>
+                    <h3 className="text-sm font-medium text-foreground mb-1">Prerequisites</h3>
+                    <ul className="list-disc pl-4 text-sm text-muted-foreground space-y-1">
+                      {selected.prerequisites.map((p, i) => <li key={i}>{p}</li>)}
+                    </ul>
+                  </div>
+                )}
+              </TabsContent>
+            </Tabs>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

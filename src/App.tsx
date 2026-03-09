@@ -9,6 +9,7 @@ import KRFooter from "@/components/KRFooter";
 import Index from "./pages/Index";
 import Templates from "./pages/Templates";
 import History from "./pages/History";
+import Collections from "./pages/Collections";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
                 <Route path="/" element={<Index />} />
                 <Route path="/templates" element={<Templates />} />
                 <Route path="/history" element={<History />} />
+                <Route path="/collections" element={<Collections />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
