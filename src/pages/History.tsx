@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw, Share2, FileDown } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw, Share2, FileDown, PackageCheck } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -8,7 +8,9 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useGeneratorStore, Platform, TestScope } from "@/store/generatorStore";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
+import JSZip from "jszip";
 import SkeletonRows from "@/components/SkeletonRows";
 import { DeleteConfirmDialog, useDeleteConfirm } from "@/components/DeleteConfirmDialog";
 import { exportToPdf } from "@/lib/exportPdf";
@@ -46,6 +48,8 @@ const History = () => {
   const [generations, setGenerations] = useState<Generation[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Generation | null>(null);
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [exporting, setExporting] = useState(false);
   const deleteConfirm = useDeleteConfirm();
 
   const fetchGenerations = async () => {
@@ -122,6 +126,49 @@ const History = () => {
     return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   };
 
+  const toggleSelect = (id: string) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      next.has(id) ? next.delete(id) : next.add(id);
+      return next;
+    });
+  };
+
+  const toggleSelectAll = () => {
+    if (selectedIds.size === filtered.length) {
+      setSelectedIds(new Set());
+    } else {
+      setSelectedIds(new Set(filtered.map((g) => g.id)));
+    }
+  };
+
+  const exportZip = async () => {
+    const items = generations.filter((g) => selectedIds.has(g.id));
+    if (!items.length) return;
+    setExporting(true);
+    try {
+      const zip = new JSZip();
+      items.forEach((g) => {
+        const ext = extMap[g.language] || ".txt";
+        const name = g.title.toLowerCase().replace(/\s+/g, "-") + ext;
+        zip.file(name, g.script);
+      });
+      const blob = await zip.generateAsync({ type: "blob" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `scripts-export-${new Date().toISOString().slice(0, 10)}.zip`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast.success(`Exported ${items.length} scripts as ZIP`);
+      setSelectedIds(new Set());
+    } catch {
+      toast.error("Export failed");
+    } finally {
+      setExporting(false);
+    }
+  };
+
   if (!user) {
     return (
       <div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
@@ -156,6 +203,16 @@ const History = () => {
             <Star className="w-3.5 h-3.5" fill={starredOnly ? "currentColor" : "none"} />
             Starred
           </button>
+          {selectedIds.size > 0 && (
+            <button
+              onClick={exportZip}
+              disabled={exporting}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-primary/40 text-primary bg-primary/10 text-sm transition-colors hover:bg-primary/20 disabled:opacity-50"
+            >
+              <PackageCheck className="w-3.5 h-3.5" />
+              {exporting ? "Exporting…" : `Export ${selectedIds.size} as ZIP`}
+            </button>
+          )}
         </div>
 
         {loading ? (
@@ -165,6 +222,12 @@ const History = () => {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border bg-card">
+                  <th className="px-4 py-3 w-8">
+                    <Checkbox
+                      checked={filtered.length > 0 && selectedIds.size === filtered.length}
+                      onCheckedChange={toggleSelectAll}
+                    />
+                  </th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground w-8">★</th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground">Title</th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden sm:table-cell">Platform</th>
@@ -175,7 +238,10 @@ const History = () => {
               </thead>
               <tbody>
                 {filtered.map((g) => (
-                  <tr key={g.id} className="border-b border-border last:border-0 hover:bg-accent/50 transition-colors">
+                  <tr key={g.id} className={`border-b border-border last:border-0 hover:bg-accent/50 transition-colors ${selectedIds.has(g.id) ? "bg-primary/5" : ""}`}>
+                    <td className="px-4 py-3">
+                      <Checkbox checked={selectedIds.has(g.id)} onCheckedChange={() => toggleSelect(g.id)} />
+                    </td>
                     <td className="px-4 py-3">
                       <button onClick={() => toggleStar(g.id, g.is_starred)}>
                         <Star className={`w-4 h-4 ${g.is_starred ? "text-primary" : "text-muted-foreground/30"}`} fill={g.is_starred ? "currentColor" : "none"} />
