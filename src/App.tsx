@@ -36,6 +36,7 @@ const App = () => (
                   <Route path="/collections" element={<Collections />} />
                   <Route path="/shared/:shareId" element={<SharedScript />} />
                   <Route path="/profile" element={<Profile />} />
+                  <Route path="/compare" element={<Compare />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>
