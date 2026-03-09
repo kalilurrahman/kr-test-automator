@@ -238,9 +238,11 @@ const History = () => {
               </thead>
               <tbody>
                 {filtered.map((g) => (
-                  <tr key={g.id} className="border-b border-border last:border-0 hover:bg-accent/50 transition-colors">
+                  <tr key={g.id} className={`border-b border-border last:border-0 hover:bg-accent/50 transition-colors ${selectedIds.has(g.id) ? "bg-primary/5" : ""}`}>
                     <td className="px-4 py-3">
-                      <button onClick={() => toggleStar(g.id, g.is_starred)}>
+                      <Checkbox checked={selectedIds.has(g.id)} onCheckedChange={() => toggleSelect(g.id)} />
+                    </td>
+                    <td className="px-4 py-3">
                         <Star className={`w-4 h-4 ${g.is_starred ? "text-primary" : "text-muted-foreground/30"}`} fill={g.is_starred ? "currentColor" : "none"} />
                       </button>
                     </td>
