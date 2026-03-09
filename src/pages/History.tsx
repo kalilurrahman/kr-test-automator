@@ -172,6 +172,9 @@ const History = () => {
                         <button onClick={() => setSelected(g)} className="p-1 text-muted-foreground hover:text-foreground">
                           <Eye className="w-3.5 h-3.5" />
                         </button>
+                        <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground">
+                          <Download className="w-3.5 h-3.5" />
+                        </button>
                         <button onClick={() => handleDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
