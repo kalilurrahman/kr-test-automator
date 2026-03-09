@@ -109,10 +109,12 @@ const KRHeader = () => {
               )
             )}
 
+            <ThemeToggle />
+
             {isInstallable && (
               <button
                 onClick={install}
-                className="ml-2 px-3 py-1.5 text-sm rounded-md border border-primary/30 text-primary hover:bg-primary/10 flex items-center gap-1.5 transition-colors"
+                className="px-3 py-1.5 text-sm rounded-md border border-primary/30 text-primary hover:bg-primary/10 flex items-center gap-1.5 transition-colors"
               >
                 <Download className="w-3.5 h-3.5" />
                 Install
