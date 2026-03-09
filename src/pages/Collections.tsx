@@ -234,7 +234,7 @@ const Collections = () => {
                   <div className="flex items-center gap-2">
                     <span className="text-xs text-muted-foreground">{c.item_count}</span>
                     <button
-                      onClick={(e) => { e.stopPropagation(); handleDelete(c.id); }}
+                      onClick={(e) => { e.stopPropagation(); collectionDeleteConfirm.requestDelete(c.id); }}
                       className="opacity-0 group-hover:opacity-100 p-1 hover:text-destructive transition-all"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
