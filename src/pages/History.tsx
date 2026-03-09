@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -63,6 +63,24 @@ const History = () => {
   const copyScript = (script: string) => {
     navigator.clipboard.writeText(script);
     toast.success("Copied to clipboard");
+  };
+
+  const extMap: Record<string, string> = {
+    typescript: ".ts", javascript: ".js", python: ".py", java: ".java",
+    csharp: ".cs", robot: ".robot", gherkin: ".feature", swift: ".swift",
+    kotlin: ".kt", scala: ".scala", xml: ".xml", json: ".json",
+  };
+
+  const downloadScript = (g: Generation) => {
+    const ext = extMap[g.language] || ".txt";
+    const blob = new Blob([g.script], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${g.title.toLowerCase().replace(/\s+/g, "-")}${ext}`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast.success("Downloaded");
   };
 
   const filtered = generations.filter((g) => {
@@ -154,6 +172,9 @@ const History = () => {
                         <button onClick={() => setSelected(g)} className="p-1 text-muted-foreground hover:text-foreground">
                           <Eye className="w-3.5 h-3.5" />
                         </button>
+                        <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground">
+                          <Download className="w-3.5 h-3.5" />
+                        </button>
                         <button onClick={() => handleDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
@@ -186,7 +207,10 @@ const History = () => {
                 <TabsTrigger value="setup">Setup</TabsTrigger>
               </TabsList>
               <TabsContent value="code" className="mt-3">
-                <div className="flex justify-end mb-2">
+                <div className="flex justify-end gap-2 mb-2">
+                  <button onClick={() => selected && downloadScript(selected)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground">
+                    <Download className="w-3.5 h-3.5" /> Download
+                  </button>
                   <button onClick={() => copyScript(selected.script)} className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground">
                     <Copy className="w-3.5 h-3.5" /> Copy
                   </button>
