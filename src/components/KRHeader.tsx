@@ -120,6 +120,13 @@ const KRHeader = () => {
             )}
 
             <NotificationBell />
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent("toggle-shortcuts-help"))}
+              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+              title="Keyboard shortcuts (Ctrl+/)"
+            >
+              <Keyboard className="w-4 h-4" />
+            </button>
             <ThemeToggle />
 
             {isInstallable && (
