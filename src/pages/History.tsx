@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw, Share2, FileDown } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw, Share2, FileDown, PackageCheck } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -8,7 +8,9 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useGeneratorStore, Platform, TestScope } from "@/store/generatorStore";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
+import JSZip from "jszip";
 import SkeletonRows from "@/components/SkeletonRows";
 import { DeleteConfirmDialog, useDeleteConfirm } from "@/components/DeleteConfirmDialog";
 import { exportToPdf } from "@/lib/exportPdf";
