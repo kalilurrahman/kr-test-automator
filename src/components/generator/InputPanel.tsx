@@ -1,10 +1,13 @@
 import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
+import { Progress } from "@/components/ui/progress";
 import { useGeneratorStore } from "@/store/generatorStore";
+import { useDailyUsage } from "@/hooks/useDailyUsage";
+import { useAuth } from "@/contexts/AuthContext";
 import PlatformGrid from "./PlatformGrid";
 import FrameworkSelect from "./FrameworkSelect";
 import TestScopeSelect from "./TestScopeSelect";
-import { Sparkles, LayoutTemplate, Dice5 } from "lucide-react";
+import { Sparkles, LayoutTemplate, Dice5, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface InputPanelProps {
@@ -16,8 +19,10 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
   const {
     platform, testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
   } = useGeneratorStore();
+  const { user } = useAuth();
+  const { used, limit, remaining, isAtLimit } = useDailyUsage();
 
-  const canGenerate = platform && businessCase.trim().length > 10 && !isGenerating;
+  const canGenerate = platform && businessCase.trim().length > 10 && !isGenerating && !isAtLimit;
 
   return (
     <div className="space-y-6">
@@ -98,6 +103,19 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         </button>
       </div>
 
+      {/* Usage Counter */}
+      {user && (
+        <div className="flex items-center gap-2">
+          <Zap className={`w-3.5 h-3.5 shrink-0 ${isAtLimit ? "text-destructive" : "text-primary"}`} />
+          <div className="flex-1">
+            <Progress value={(used / limit) * 100} className="h-1.5" />
+          </div>
+          <span className={`text-xs font-medium whitespace-nowrap ${isAtLimit ? "text-destructive" : "text-muted-foreground"}`}>
+            {remaining}/{limit} left today
+          </span>
+        </div>
+      )}
+
       {/* Generate Button */}
       <button
         onClick={onGenerate}
@@ -105,13 +123,15 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         className={`w-full py-3 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition-all ${
           isGenerating
             ? "btn-shimmer text-background"
+            : isAtLimit
+            ? "bg-destructive/20 text-destructive cursor-not-allowed"
             : canGenerate
             ? "btn-gold-gradient hover:shadow-lg"
             : "bg-muted text-muted-foreground cursor-not-allowed"
         }`}
       >
         <Sparkles className="w-4 h-4" />
-        {isGenerating ? "Generating..." : "✦ GENERATE SCRIPT"}
+        {isAtLimit ? "Daily Limit Reached" : isGenerating ? "Generating..." : "✦ GENERATE SCRIPT"}
       </button>
     </div>
   );
