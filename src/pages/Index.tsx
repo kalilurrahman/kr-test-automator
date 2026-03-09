@@ -44,6 +44,14 @@ const Index = () => {
         store.setIsGenerating(false);
         store.setResult(result);
 
+        // Notify if user navigated away
+        if (document.hidden) {
+          useNotificationStore.getState().addNotification(
+            "Script Ready",
+            `"${result.title}" has been generated successfully.`
+          );
+        }
+
         // Auto-save if user is logged in
         if (user) {
           try {
