@@ -16,6 +16,7 @@ const navLinks = [
   { to: "/", label: "Generate" },
   { to: "/templates", label: "Templates" },
   { to: "/history", label: "History" },
+  { to: "/collections", label: "Collections" },
 ];
 
 const KRHeader = () => {
