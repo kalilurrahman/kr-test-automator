@@ -71,6 +71,19 @@ const History = () => {
     toast.success("Script deleted");
   };
 
+  const handleShare = async (g: Generation) => {
+    // Generate share_id if not exists
+    let shareId = (g as any).share_id;
+    if (!shareId) {
+      shareId = crypto.randomUUID().slice(0, 8);
+      await supabase.from("generations").update({ share_id: shareId } as any).eq("id", g.id);
+      setGenerations((prev) => prev.map((gen) => gen.id === g.id ? { ...gen, share_id: shareId } : gen) as any);
+    }
+    const url = `${window.location.origin}/shared/${shareId}`;
+    await navigator.clipboard.writeText(url);
+    toast.success("Share link copied to clipboard");
+  };
+
   const handleRerun = (g: Generation) => {
     store.setPlatform(g.platform as Platform);
     store.setFramework(g.framework);
