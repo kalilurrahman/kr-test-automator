@@ -69,6 +69,7 @@ export const useGeneratorStore = create<GeneratorState>((set) => ({
         ? state.testScopes.filter((x) => x !== s)
         : [...state.testScopes, s],
     })),
+  setTestScopes: (scopes) => set({ testScopes: scopes }),
   setTestCount: (n) => set({ testCount: n }),
   setBusinessCase: (t) => set({ businessCase: t }),
   setIsGenerating: (b) => set({ isGenerating: b }),
