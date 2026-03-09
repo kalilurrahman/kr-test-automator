@@ -19,8 +19,10 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
   const {
     platform, testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
   } = useGeneratorStore();
+  const { user } = useAuth();
+  const { used, limit, remaining, isAtLimit } = useDailyUsage();
 
-  const canGenerate = platform && businessCase.trim().length > 10 && !isGenerating;
+  const canGenerate = platform && businessCase.trim().length > 10 && !isGenerating && !isAtLimit;
 
   return (
     <div className="space-y-6">
