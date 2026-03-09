@@ -36,6 +36,12 @@ export function useKeyboardShortcuts({ onGenerate, canGenerate }: UseKeyboardSho
         active?.blur?.();
       }
 
+      // Ctrl/Cmd+/ — show shortcuts help
+      if (mod && e.key === "/") {
+        e.preventDefault();
+        window.dispatchEvent(new CustomEvent("toggle-shortcuts-help"));
+      }
+
       // Ctrl/Cmd+K — focus search (if on history page)
       if (mod && e.key === "k") {
         const searchInput = document.querySelector<HTMLInputElement>('input[placeholder="Search scripts..."]');
