@@ -14,6 +14,7 @@ import Collections from "./pages/Collections";
 import SharedScript from "./pages/SharedScript";
 import Profile from "./pages/Profile";
 import Compare from "./pages/Compare";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
