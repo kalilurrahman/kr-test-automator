@@ -283,6 +283,14 @@ const History = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      <DeleteConfirmDialog
+        open={deleteConfirm.isOpen}
+        onOpenChange={(open) => !open && deleteConfirm.cancel()}
+        title="Delete script?"
+        description="This will permanently delete this generated script. This action cannot be undone."
+        onConfirm={() => deleteConfirm.confirm(handleDelete)}
+      />
     </div>
   );
 };
