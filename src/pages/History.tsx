@@ -65,6 +65,24 @@ const History = () => {
     toast.success("Copied to clipboard");
   };
 
+  const extMap: Record<string, string> = {
+    typescript: ".ts", javascript: ".js", python: ".py", java: ".java",
+    csharp: ".cs", robot: ".robot", gherkin: ".feature", swift: ".swift",
+    kotlin: ".kt", scala: ".scala", xml: ".xml", json: ".json",
+  };
+
+  const downloadScript = (g: Generation) => {
+    const ext = extMap[g.language] || ".txt";
+    const blob = new Blob([g.script], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${g.title.toLowerCase().replace(/\s+/g, "-")}${ext}`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast.success("Downloaded");
+  };
+
   const filtered = generations.filter((g) => {
     if (search && !g.title.toLowerCase().includes(search.toLowerCase())) return false;
     if (starredOnly && !g.is_starred) return false;
