@@ -9,6 +9,7 @@ import KRFooter from "@/components/KRFooter";
 import Index from "./pages/Index";
 import Templates from "./pages/Templates";
 import History from "./pages/History";
+import Collections from "./pages/Collections";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
