@@ -60,8 +60,15 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <div className="min-h-screen flex flex-col bg-background">
-              <KRHeader />
+            <AppShell />
+          </BrowserRouter>
+        </TooltipProvider>
+      </AuthProvider>
+    </ThemeProvider>
+  </QueryClientProvider>
+);
+
+export default App;
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Index />} />
