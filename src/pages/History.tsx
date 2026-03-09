@@ -222,6 +222,12 @@ const History = () => {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border bg-card">
+                  <th className="px-4 py-3 w-8">
+                    <Checkbox
+                      checked={filtered.length > 0 && selectedIds.size === filtered.length}
+                      onCheckedChange={toggleSelectAll}
+                    />
+                  </th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground w-8">★</th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground">Title</th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-muted-foreground hidden sm:table-cell">Platform</th>
