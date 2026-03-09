@@ -13,6 +13,7 @@ import History from "./pages/History";
 import Collections from "./pages/Collections";
 import SharedScript from "./pages/SharedScript";
 import Profile from "./pages/Profile";
+import Compare from "./pages/Compare";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
