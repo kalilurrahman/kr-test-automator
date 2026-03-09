@@ -126,6 +126,49 @@ const History = () => {
     return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   };
 
+  const toggleSelect = (id: string) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      next.has(id) ? next.delete(id) : next.add(id);
+      return next;
+    });
+  };
+
+  const toggleSelectAll = () => {
+    if (selectedIds.size === filtered.length) {
+      setSelectedIds(new Set());
+    } else {
+      setSelectedIds(new Set(filtered.map((g) => g.id)));
+    }
+  };
+
+  const exportZip = async () => {
+    const items = generations.filter((g) => selectedIds.has(g.id));
+    if (!items.length) return;
+    setExporting(true);
+    try {
+      const zip = new JSZip();
+      items.forEach((g) => {
+        const ext = extMap[g.language] || ".txt";
+        const name = g.title.toLowerCase().replace(/\s+/g, "-") + ext;
+        zip.file(name, g.script);
+      });
+      const blob = await zip.generateAsync({ type: "blob" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `scripts-export-${new Date().toISOString().slice(0, 10)}.zip`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast.success(`Exported ${items.length} scripts as ZIP`);
+      setSelectedIds(new Set());
+    } catch {
+      toast.error("Export failed");
+    } finally {
+      setExporting(false);
+    }
+  };
+
   if (!user) {
     return (
       <div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
@@ -160,6 +203,16 @@ const History = () => {
             <Star className="w-3.5 h-3.5" fill={starredOnly ? "currentColor" : "none"} />
             Starred
           </button>
+          {selectedIds.size > 0 && (
+            <button
+              onClick={exportZip}
+              disabled={exporting}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-primary/40 text-primary bg-primary/10 text-sm transition-colors hover:bg-primary/20 disabled:opacity-50"
+            >
+              <PackageCheck className="w-3.5 h-3.5" />
+              {exporting ? "Exporting…" : `Export ${selectedIds.size} as ZIP`}
+            </button>
+          )}
         </div>
 
         {loading ? (
