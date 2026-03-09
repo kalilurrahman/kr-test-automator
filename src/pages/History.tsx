@@ -211,8 +211,11 @@ const History = () => {
                         <button onClick={() => setSelected(g)} className="p-1 text-muted-foreground hover:text-foreground">
                           <Eye className="w-3.5 h-3.5" />
                         </button>
-                        <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground">
+                        <button onClick={() => downloadScript(g)} className="p-1 text-muted-foreground hover:text-foreground" title="Download">
                           <Download className="w-3.5 h-3.5" />
+                        </button>
+                        <button onClick={() => handleShare(g)} className="p-1 text-muted-foreground hover:text-foreground" title="Share link">
+                          <Share2 className="w-3.5 h-3.5" />
                         </button>
                         <button onClick={() => deleteConfirm.requestDelete(g.id)} className="p-1 text-muted-foreground hover:text-destructive">
                           <Trash2 className="w-3.5 h-3.5" />
