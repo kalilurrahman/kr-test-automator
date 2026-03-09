@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Settings, Download, Menu, X, User, LogOut } from "lucide-react";
+import { Settings, Download, Menu, X, User, LogOut, UserCircle } from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useAuth } from "@/contexts/AuthContext";
