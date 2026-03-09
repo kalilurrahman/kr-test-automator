@@ -90,6 +90,10 @@ const KRHeader = () => {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end" className="bg-card border-border">
+                    <DropdownMenuItem onClick={() => window.location.href = "/profile"} className="gap-2 cursor-pointer">
+                      <UserCircle className="w-4 h-4" />
+                      Profile
+                    </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => signOut()} className="gap-2 cursor-pointer">
                       <LogOut className="w-4 h-4" />
                       Sign Out
