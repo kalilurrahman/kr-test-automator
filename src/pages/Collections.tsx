@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FolderPlus, Folder, Trash2, Plus, X, FileText } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
