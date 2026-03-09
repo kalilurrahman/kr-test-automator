@@ -341,6 +341,14 @@ const Collections = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      <DeleteConfirmDialog
+        open={collectionDeleteConfirm.isOpen}
+        onOpenChange={(open) => !open && collectionDeleteConfirm.cancel()}
+        title="Delete collection?"
+        description="This will permanently delete this collection and remove all scripts from it."
+        onConfirm={() => collectionDeleteConfirm.confirm(handleDelete)}
+      />
     </div>
   );
 };
