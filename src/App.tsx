@@ -38,6 +38,7 @@ const App = () => (
                   <Route path="/shared/:shareId" element={<SharedScript />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/compare" element={<Compare />} />
+                  <Route path="/settings" element={<Settings />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>
