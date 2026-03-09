@@ -97,6 +97,10 @@ const KRHeader = () => {
                       <UserCircle className="w-4 h-4" />
                       Profile
                     </DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => window.location.href = "/settings"} className="gap-2 cursor-pointer">
+                      <Settings className="w-4 h-4" />
+                      Settings
+                    </DropdownMenuItem>
                     <DropdownMenuItem onClick={() => signOut()} className="gap-2 cursor-pointer">
                       <LogOut className="w-4 h-4" />
                       Sign Out
