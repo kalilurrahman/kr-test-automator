@@ -198,7 +198,15 @@ const Collections = () => {
           {/* Collection List */}
           <div className="space-y-2">
             {loading ? (
-              <p className="text-muted-foreground text-sm">Loading...</p>
+              Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className="px-4 py-3 rounded-lg border border-border bg-card flex items-center gap-3">
+                  <Skeleton className="w-4 h-4 rounded" />
+                  <div className="flex-1 space-y-1.5">
+                    <Skeleton className="h-4 w-32 rounded" />
+                    <Skeleton className="h-3 w-48 rounded" />
+                  </div>
+                </div>
+              ))
             ) : collections.length === 0 ? (
               <div className="text-center py-12 text-muted-foreground text-sm">
                 No collections yet. Create one to organize your scripts.
