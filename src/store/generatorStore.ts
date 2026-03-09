@@ -35,6 +35,7 @@ interface GeneratorState {
   setFramework: (f: string) => void;
   setLanguage: (l: string) => void;
   toggleScope: (s: TestScope) => void;
+  setTestScopes: (scopes: TestScope[]) => void;
   setTestCount: (n: number) => void;
   setBusinessCase: (t: string) => void;
   setIsGenerating: (b: boolean) => void;
