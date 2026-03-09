@@ -1,5 +1,6 @@
 import InputPanel from "@/components/generator/InputPanel";
 import OutputPanel from "@/components/generator/OutputPanel";
+import Dashboard from "@/components/Dashboard";
 import { useGeneratorStore } from "@/store/generatorStore";
 import { templates } from "@/data/templates";
 import { streamGeneration } from "@/lib/generateScript";
