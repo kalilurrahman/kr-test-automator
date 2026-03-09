@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw } from "lucide-react";
+import { Search, Star, Trash2, Eye, Copy, Download, RotateCcw, Share2, FileDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
