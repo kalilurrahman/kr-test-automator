@@ -69,26 +69,5 @@ const App = () => (
 );
 
 export default App;
-              <main className="flex-1">
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/templates" element={<Templates />} />
-                  <Route path="/history" element={<History />} />
-                  <Route path="/collections" element={<Collections />} />
-                  <Route path="/shared/:shareId" element={<SharedScript />} />
-                  <Route path="/profile" element={<Profile />} />
-                  <Route path="/compare" element={<Compare />} />
-                  <Route path="/settings" element={<Settings />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </main>
-              <KRFooter />
-            </div>
-          </BrowserRouter>
-        </TooltipProvider>
-      </AuthProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
-);
 
 export default App;
