@@ -82,6 +82,7 @@ const Index = () => {
   return (
     <div className="min-h-[calc(100vh-64px)]">
       <div className="max-w-7xl mx-auto px-4 py-6">
+        <Dashboard />
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
           {/* Input Panel — 2/5 */}
           <div className="lg:col-span-2">
