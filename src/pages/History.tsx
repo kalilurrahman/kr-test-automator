@@ -48,6 +48,8 @@ const History = () => {
   const [generations, setGenerations] = useState<Generation[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Generation | null>(null);
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [exporting, setExporting] = useState(false);
   const deleteConfirm = useDeleteConfirm();
 
   const fetchGenerations = async () => {
