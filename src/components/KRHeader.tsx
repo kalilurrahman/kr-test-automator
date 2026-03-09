@@ -115,6 +115,9 @@ const KRHeader = () => {
               )
             )}
 
+            <NotificationBell />
+            <ThemeToggle />
+
             {isInstallable && (
               <button
                 onClick={install}
