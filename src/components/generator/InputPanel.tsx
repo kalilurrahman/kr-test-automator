@@ -103,6 +103,19 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         </button>
       </div>
 
+      {/* Usage Counter */}
+      {user && (
+        <div className="flex items-center gap-2">
+          <Zap className={`w-3.5 h-3.5 shrink-0 ${isAtLimit ? "text-destructive" : "text-primary"}`} />
+          <div className="flex-1">
+            <Progress value={(used / limit) * 100} className="h-1.5" />
+          </div>
+          <span className={`text-xs font-medium whitespace-nowrap ${isAtLimit ? "text-destructive" : "text-muted-foreground"}`}>
+            {remaining}/{limit} left today
+          </span>
+        </div>
+      )}
+
       {/* Generate Button */}
       <button
         onClick={onGenerate}
@@ -110,13 +123,15 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         className={`w-full py-3 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition-all ${
           isGenerating
             ? "btn-shimmer text-background"
+            : isAtLimit
+            ? "bg-destructive/20 text-destructive cursor-not-allowed"
             : canGenerate
             ? "btn-gold-gradient hover:shadow-lg"
             : "bg-muted text-muted-foreground cursor-not-allowed"
         }`}
       >
         <Sparkles className="w-4 h-4" />
-        {isGenerating ? "Generating..." : "✦ GENERATE SCRIPT"}
+        {isAtLimit ? "Daily Limit Reached" : isGenerating ? "Generating..." : "✦ GENERATE SCRIPT"}
       </button>
     </div>
   );
