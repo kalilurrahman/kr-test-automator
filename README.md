@@ -11,7 +11,7 @@
 ### 1. **Script Generation Engine**
 The home page lets you configure and generate test scripts seamlessly. Simply select your **Platform**, choose your target **Framework & Language**, and determine the **Test Scope**. The AI engine handles the rest.
 
-![Home Page](docs/assets/home.png)
+<img src="docs/assets/home.png" alt="Home Page" width="800">
 
 #### Supported Configurations
 - **Platforms:** SAP, Salesforce, Veeva, ServiceNow, Workday, Oracle, Microsoft 365, Web/Custom, REST API, iOS, Android.
@@ -21,26 +21,26 @@ The home page lets you configure and generate test scripts seamlessly. Simply se
 #### Interactive Selection
 Selecting a platform or altering scope actively updates the generation context. See an example below where "SAP" and "Playwright (TypeScript)" are selected:
 
-![Home Interaction](docs/assets/home_interaction.png)
+<img src="docs/assets/home_interaction.png" alt="Home Interaction" width="800">
 
 ### 2. **Template Library**
 Don't want to start from scratch? The `/templates` page offers a rich library of pre-built scenarios categorized by Industry, Platform, and Complexity.
 
-![Templates Page](docs/assets/templates.png)
+<img src="docs/assets/templates.png" alt="Templates Page" width="800">
 
 When you find a scenario that fits your needs (e.g., SAP Purchase Order Creation & Approval), you can effortlessly pull it into your workflow.
 
-![Template Interaction](docs/assets/template_interaction.png)
+<img src="docs/assets/template_interaction.png" alt="Template Interaction" width="800">
 
 ### 3. **Script History**
 Keep track of all your previously generated tests on the `/history` page. You can easily view details like Platform, Framework, and when it was generated. Star your favorites for quick access!
 
-![History Page](docs/assets/history.png)
+<img src="docs/assets/history.png" alt="History Page" width="800">
 
 ### 4. **Deprecated Library Route**
 The legacy `/library` route has been deprecated. If you attempt to access it, you will receive a 404 Error page. All former library functionality is now consolidated under `/templates` and `/history`.
 
-![Library 404 Error](docs/assets/library.png)
+<img src="docs/assets/library.png" alt="Library 404 Error" width="800">
 
 *(For more details, see the [Library Readme](library/README.md))*
 
