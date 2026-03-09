@@ -1,10 +1,13 @@
 import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
+import { Progress } from "@/components/ui/progress";
 import { useGeneratorStore } from "@/store/generatorStore";
+import { useDailyUsage } from "@/hooks/useDailyUsage";
+import { useAuth } from "@/contexts/AuthContext";
 import PlatformGrid from "./PlatformGrid";
 import FrameworkSelect from "./FrameworkSelect";
 import TestScopeSelect from "./TestScopeSelect";
-import { Sparkles, LayoutTemplate, Dice5 } from "lucide-react";
+import { Sparkles, LayoutTemplate, Dice5, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface InputPanelProps {
