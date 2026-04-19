@@ -6,6 +6,8 @@ const apps = [
   "AI Literacy Lab",
 ];
 
+const LINKEDIN_URL = "https://www.linkedin.com/in/kalilurrahman";
+
 const KRFooter = () => (
   <footer className="border-t border-border bg-card mt-auto">
     <div className="max-w-7xl mx-auto px-4 py-10">
@@ -23,7 +25,7 @@ const KRFooter = () => (
             </span>
           </div>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Global IT Director · Kaggle Grandmaster · ISTQB Certified · CIO Next100 2022 · Building tools that matter.
+            Global IT Director · Kaggle Grandmaster · CIO Next100 2022 · Building tools that matter.
           </p>
         </div>
 
@@ -50,9 +52,8 @@ const KRFooter = () => (
           </h4>
           <ul className="space-y-1.5">
             {[
-              { label: "Portfolio", href: "https://kalilurrahman.lovable.app" },
-              { label: "LinkedIn", href: "https://linkedin.com/in/kalilurrahman" },
-              { label: "Kaggle", href: "https://kaggle.com/kalilurrahman" },
+              { label: "Portfolio", href: LINKEDIN_URL },
+              { label: "LinkedIn", href: LINKEDIN_URL },
             ].map((link) => (
               <li key={link.label}>
                 <a
@@ -67,16 +68,6 @@ const KRFooter = () => (
             ))}
           </ul>
         </div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-2">
-        <span className="text-[11px] text-muted-foreground">
-          © 2025 Kalilur Rahman · TestForge AI · App #29
-        </span>
-        <span className="text-[11px] text-muted-foreground">
-          Built with Lovable · Powered by Claude AI
-        </span>
       </div>
     </div>
   </footer>
