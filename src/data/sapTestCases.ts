@@ -7035,3 +7035,40 @@ export function getAutomationCoverage(): Record<string, { total: number; high: n
   }
   return result;
 }
+// =============================================================================
+// COMPATIBILITY SHIM — keep v2 API alive for older callers
+// =============================================================================
+
+/** All SAP modules present in v3 (sorted, unique) */
+export const MODULES = [...new Set(SAP_TEST_CASES.map(tc => tc.module))].sort() as readonly SAPModule[];
+
+/** All industries supported */
+export const INDUSTRIES: Industry[] = [
+  'All', 'Banking', 'Healthcare', 'Manufacturing',
+  'Oil & Gas', 'Pharma', 'Public Sector', 'Retail', 'Utilities',
+];
+
+/** v2-compatible filter signature (alias of filterCases) */
+export function filterTestCases(params: {
+  module?: string;
+  industry?: string;
+  priority?: Priority;
+  testType?: TestType;
+  search?: string;
+  autoFeasibility?: AutoFeasibility;
+}): TestCase[] {
+  return filterCases({
+    module: params.module && params.module !== 'All' ? (params.module as SAPModule) : undefined,
+    industry: params.industry && params.industry !== 'All' ? (params.industry as Industry) : undefined,
+    priority: params.priority,
+    testType: params.testType,
+    autoFeasibility: params.autoFeasibility,
+    search: params.search,
+  });
+}
+
+/** v2-compatible stats (alias of getStats) */
+export const getTestCaseStats = getStats;
+
+// Re-export v2 dataset for comparison/legacy use
+export { SAP_TEST_CASES_V2 } from './sapTestCasesV2';
