@@ -11,9 +11,10 @@ import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import {
-  SALESFORCE_CLOUDS, getCloud, parseCSV, rowsToObjects,
+  SALESFORCE_CLOUDS, getCloud,
   type SalesforceCloudId, type SalesforceTestRow,
 } from "@/data/salesforceClouds";
+import { loadSalesforceCases } from "@/data/salesforce/loader";
 
 const PAGE_SIZE = 25;
 
@@ -54,21 +55,15 @@ export function SalesforceRepository({ selectedCloud, onSelectCloud }: Props) {
     setModuleFilter("All");
     setPriorityFilter("All");
 
-    fetch(cloud.csv)
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.text();
-      })
-      .then((text) => {
-        if (cancelled) return;
-        const parsed = rowsToObjects(parseCSV(text));
-        setRows(parsed);
+    loadSalesforceCases(cloud.id)
+      .then((data) => {
+        if (!cancelled) setRows(data);
       })
       .catch((e) => !cancelled && setError(String(e?.message ?? e)))
       .finally(() => !cancelled && setLoading(false));
 
     return () => { cancelled = true; };
-  }, [cloud?.csv]);
+  }, [cloud?.id]);
 
   const modules = useMemo(() => {
     const set = new Set<string>();
