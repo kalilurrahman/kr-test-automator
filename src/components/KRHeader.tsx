@@ -5,6 +5,7 @@ import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useAuth } from "@/contexts/AuthContext";
 import { AuthModal } from "@/components/auth/AuthModal";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { PaletteSwitcher } from "@/components/PaletteSwitcher";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +17,7 @@ import {
 
 const navLinks = [
   { to: "/", label: "Generate" },
+  { to: "/sap", label: "SAP Tests" },
   { to: "/templates", label: "Templates" },
   { to: "/history", label: "History" },
   { to: "/collections", label: "Collections" },
@@ -128,6 +130,7 @@ const KRHeader = () => {
               <Keyboard className="w-4 h-4" />
             </button>
             <ThemeToggle />
+            <PaletteSwitcher />
 
             {isInstallable && (
               <button

@@ -147,3 +147,82 @@
   border-color: hsla(43, 52%, 54%, 0.6);
   box-shadow: 0 0 12px hsla(43, 52%, 54%, 0.15);
 }
+
+/* =================================================================
+   THEME PALETTES — switchable via [data-palette] on <html>
+   ================================================================= */
+
+[data-palette="financial-slate"] {
+  --background: 222 33% 7%;
+  --card: 220 24% 11%;
+  --popover: 220 24% 11%;
+  --secondary: 220 18% 16%;
+  --muted: 220 18% 16%;
+  --accent: 220 18% 16%;
+  --primary: 221 83% 60%;
+  --primary-foreground: 222 47% 5%;
+  --ring: 221 83% 60%;
+  --sidebar-background: 220 24% 11%;
+  --sidebar-primary: 221 83% 60%;
+  --sidebar-ring: 221 83% 60%;
+  --gold: 221 83% 60%;
+  --gold-light: 221 90% 70%;
+  --gold-dark: 221 70% 48%;
+}
+
+[data-palette="forest"] {
+  --background: 160 25% 6%;
+  --card: 160 22% 10%;
+  --popover: 160 22% 10%;
+  --secondary: 160 18% 14%;
+  --muted: 160 18% 14%;
+  --accent: 160 18% 14%;
+  --primary: 160 70% 45%;
+  --primary-foreground: 160 25% 6%;
+  --ring: 160 70% 45%;
+  --sidebar-background: 160 22% 10%;
+  --sidebar-primary: 160 70% 45%;
+  --sidebar-ring: 160 70% 45%;
+  --gold: 160 70% 45%;
+  --gold-light: 160 70% 58%;
+  --gold-dark: 160 70% 35%;
+}
+
+[data-palette="sunset"] {
+  --background: 18 25% 7%;
+  --card: 18 22% 11%;
+  --popover: 18 22% 11%;
+  --secondary: 18 18% 15%;
+  --muted: 18 18% 15%;
+  --accent: 18 18% 15%;
+  --primary: 14 90% 60%;
+  --primary-foreground: 18 25% 7%;
+  --ring: 14 90% 60%;
+  --sidebar-background: 18 22% 11%;
+  --sidebar-primary: 14 90% 60%;
+  --sidebar-ring: 14 90% 60%;
+  --gold: 14 90% 60%;
+  --gold-light: 36 95% 60%;
+  --gold-dark: 14 80% 48%;
+}
+
+[data-palette="mono"] {
+  --background: 0 0% 5%;
+  --card: 0 0% 9%;
+  --popover: 0 0% 9%;
+  --secondary: 0 0% 14%;
+  --muted: 0 0% 14%;
+  --accent: 0 0% 14%;
+  --primary: 0 0% 92%;
+  --primary-foreground: 0 0% 5%;
+  --ring: 0 0% 92%;
+  --sidebar-background: 0 0% 9%;
+  --sidebar-primary: 0 0% 92%;
+  --sidebar-ring: 0 0% 92%;
+  --gold: 0 0% 92%;
+  --gold-light: 0 0% 100%;
+  --gold-dark: 0 0% 70%;
+}
+
+/* Smooth palette transitions */
+html { transition: background-color 0.25s ease, color 0.25s ease; }
