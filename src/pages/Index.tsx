@@ -18,37 +18,79 @@ const Index = () => {
   const { user } = useAuth();
   const [params, setParams] = useSearchParams();
 
-  // Deep-link prefill from /sap (?platform=sap&prefill=ID)
+  // Deep-link prefill from /sap or /salesforce (?platform=…&prefill=ID)
   useEffect(() => {
     const platform = params.get("platform");
     const prefillId = params.get("prefill");
     if (!platform && !prefillId) return;
     if (platform) store.setPlatform(platform as any);
-    if (prefillId) {
-      // Lazy-import the SAP repo only when needed (~200 KB)
-      import("@/data/sapTestCases").then(({ getCaseById }) => {
-        const tc = getCaseById(prefillId);
-        if (tc) {
-          const prose =
-            `[${tc.id}] ${tc.scenario} — ${tc.testCase}\n\n` +
-            `Module: ${tc.module} / ${tc.subModule}\n` +
-            `Industry: ${tc.industry}\n` +
-            `Pre-conditions: ${tc.preCond}\n\n` +
-            `Steps:\n${tc.steps}\n\n` +
-            `Expected: ${tc.expected}\n\n` +
-            `BAPI / hint: ${tc.bapi}`;
-          store.setBusinessCase(prose);
-          toast.success(`Loaded SAP case ${tc.id}`);
-        } else {
-          toast.error(`Test case "${prefillId}" not found`);
-        }
-      });
+
+    const clearQuery = () => {
+      const next = new URLSearchParams(params);
+      next.delete("platform");
+      next.delete("prefill");
+      setParams(next, { replace: true });
+    };
+
+    if (!prefillId) {
+      clearQuery();
+      return;
     }
-    // Clear query so reload doesn't re-trigger
-    const next = new URLSearchParams(params);
-    next.delete("platform");
-    next.delete("prefill");
-    setParams(next, { replace: true });
+
+    if (platform === "salesforce") {
+      // Search across every Salesforce cloud chunk in parallel.
+      import("@/data/salesforce/loader").then(async ({ loadSalesforceCases }) => {
+        const cloudIds = [
+          "sales", "marketing", "service_cloud", "health",
+          "financial", "financial_variantB", "financial_superpack",
+        ] as const;
+        let found: any = null;
+        for (const id of cloudIds) {
+          const data = await loadSalesforceCases(id);
+          const hit = data.find((r) => r.id === prefillId);
+          if (hit) { found = hit; break; }
+        }
+        if (found) {
+          const prose =
+            `[${found.id}] ${found.scenario}\n\n` +
+            `Cloud: ${found.cloud}\n` +
+            `Module: ${found.module}\n` +
+            `Domain: ${found.domain}\n` +
+            (found.e2eFlow ? `E2E flow: ${found.e2eFlow}\n` : "") +
+            `Test type: ${found.testType}\n` +
+            `Priority: ${found.priority}\n\n` +
+            `Pre-conditions: ${found.preconditions}\n\n` +
+            `Steps:\n${(found.steps || "").replace(/\\n/g, "\n")}\n\n` +
+            `Expected: ${found.expected}`;
+          store.setBusinessCase(prose);
+          toast.success(`Loaded Salesforce case ${found.id}`);
+        } else {
+          toast.error(`Salesforce case "${prefillId}" not found`);
+        }
+        clearQuery();
+      });
+      return;
+    }
+
+    // Default: SAP repo lookup.
+    import("@/data/sapTestCases").then(({ getCaseById }) => {
+      const tc = getCaseById(prefillId);
+      if (tc) {
+        const prose =
+          `[${tc.id}] ${tc.scenario} — ${tc.testCase}\n\n` +
+          `Module: ${tc.module} / ${tc.subModule}\n` +
+          `Industry: ${tc.industry}\n` +
+          `Pre-conditions: ${tc.preCond}\n\n` +
+          `Steps:\n${tc.steps}\n\n` +
+          `Expected: ${tc.expected}\n\n` +
+          `BAPI / hint: ${tc.bapi}`;
+        store.setBusinessCase(prose);
+        toast.success(`Loaded SAP case ${tc.id}`);
+      } else {
+        toast.error(`Test case "${prefillId}" not found`);
+      }
+      clearQuery();
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
