@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import InputPanel from "@/components/generator/InputPanel";
 import OutputPanel from "@/components/generator/OutputPanel";
 import Dashboard from "@/components/Dashboard";
@@ -10,10 +11,44 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
 import { useNotificationStore } from "@/store/notificationStore";
+import { getCaseById } from "@/data/sapTestCases";
 
 const Index = () => {
   const store = useGeneratorStore();
   const { user } = useAuth();
+  const [params, setParams] = useSearchParams();
+
+  // Deep-link prefill from /sap (?platform=sap&prefill=ID)
+  useEffect(() => {
+    const platform = params.get("platform");
+    const prefillId = params.get("prefill");
+    if (!platform && !prefillId) return;
+    if (platform) store.setPlatform(platform as any);
+    if (prefillId) {
+      const tc = getCaseById(prefillId);
+      if (tc) {
+        const prose =
+          `[${tc.id}] ${tc.scenario} — ${tc.testCase}\n\n` +
+          `Module: ${tc.module} / ${tc.subModule}\n` +
+          `Industry: ${tc.industry}\n` +
+          `Pre-conditions: ${tc.preCond}\n\n` +
+          `Steps:\n${tc.steps}\n\n` +
+          `Expected: ${tc.expected}\n\n` +
+          `BAPI / hint: ${tc.bapi}`;
+        store.setBusinessCase(prose);
+        toast.success(`Loaded SAP case ${tc.id}`);
+      } else {
+        toast.error(`Test case "${prefillId}" not found`);
+      }
+    }
+    // Clear query so reload doesn't re-trigger
+    const next = new URLSearchParams(params);
+    next.delete("platform");
+    next.delete("prefill");
+    setParams(next, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Load user preferences on mount
   useEffect(() => {
     if (!user) return;
