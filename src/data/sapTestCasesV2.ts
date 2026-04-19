@@ -5,18 +5,18 @@
 //             Utilities, Public Sector
 // =============================================================================
 
-export type Priority = 'High' | 'Medium' | 'Low';
-export type AutoFeasibility = 'High' | 'Medium' | 'Low';
-export type TestType = 'Functional' | 'Integration' | 'Regression' | 'Performance' | 'Negative';
-export type SAPModule =
+type Priority = 'High' | 'Medium' | 'Low';
+type AutoFeasibility = 'High' | 'Medium' | 'Low';
+type TestType = 'Functional' | 'Integration' | 'Regression' | 'Performance' | 'Negative';
+type SAPModule =
   | 'FI' | 'CO' | 'MM' | 'SD' | 'PP' | 'QM' | 'PM'
   | 'HCM' | 'PS' | 'WM' | 'Basis' | 'IS-H' | 'IS-U';
 
-export type Industry =
+type Industry =
   | 'All' | 'Pharma' | 'Manufacturing' | 'Retail'
   | 'Banking' | 'Oil & Gas' | 'Healthcare' | 'Utilities' | 'Public Sector';
 
-export interface TestCase {
+interface TestCase {
   id: string;
   module: SAPModule;
   subModule: string;
@@ -32,7 +32,7 @@ export interface TestCase {
   bapi: string;
 }
 
-export const SAP_TEST_CASES: TestCase[] = [
+export const SAP_TEST_CASES_V2: TestCase[] = [
 
   // ============================================================
   // FI – GENERAL LEDGER
@@ -1376,14 +1376,14 @@ export const SAP_TEST_CASES: TestCase[] = [
 // UTILITY FUNCTIONS
 // ============================================================
 
-export const MODULES = ['FI', 'CO', 'MM', 'SD', 'PP', 'QM', 'PM', 'HCM', 'PS', 'WM', 'Basis', 'IS-H', 'IS-U'] as const;
+const MODULES_V2 = ['FI', 'CO', 'MM', 'SD', 'PP', 'QM', 'PM', 'HCM', 'PS', 'WM', 'Basis', 'IS-H', 'IS-U'] as const;
 
-export const INDUSTRIES: Industry[] = [
+const INDUSTRIES_V2: Industry[] = [
   'All', 'Pharma', 'Manufacturing', 'Retail',
   'Banking', 'Oil & Gas', 'Healthcare', 'Utilities', 'Public Sector',
 ];
 
-export function filterTestCases(params: {
+function filterTestCasesV2(params: {
   module?: string;
   industry?: string;
   priority?: Priority;
@@ -1391,7 +1391,7 @@ export function filterTestCases(params: {
   search?: string;
   autoFeasibility?: AutoFeasibility;
 }): TestCase[] {
-  return SAP_TEST_CASES.filter(tc => {
+  return SAP_TEST_CASES_V2.filter(tc => {
     if (params.module && params.module !== 'All' && tc.module !== params.module) return false;
     if (params.industry && params.industry !== 'All' && tc.industry !== params.industry && tc.industry !== 'All') return false;
     if (params.priority && tc.priority !== params.priority) return false;
@@ -1411,13 +1411,13 @@ export function filterTestCases(params: {
   });
 }
 
-export function getStats() {
+function getStatsV2() {
   const byModule: Record<string, number> = {};
   const byPriority: Record<string, number> = {};
   const byType: Record<string, number> = {};
   const byAutoFeasibility: Record<string, number> = {};
 
-  for (const tc of SAP_TEST_CASES) {
+  for (const tc of SAP_TEST_CASES_V2) {
     byModule[tc.module] = (byModule[tc.module] || 0) + 1;
     byPriority[tc.priority] = (byPriority[tc.priority] || 0) + 1;
     byType[tc.testType] = (byType[tc.testType] || 0) + 1;
@@ -1425,11 +1425,11 @@ export function getStats() {
   }
 
   return {
-    total: SAP_TEST_CASES.length,
+    total: SAP_TEST_CASES_V2.length,
     byModule,
     byPriority,
     byType,
     byAutoFeasibility,
-    highAuto: SAP_TEST_CASES.filter(tc => tc.autoFeasibility === 'High').length,
+    highAuto: SAP_TEST_CASES_V2.filter(tc => tc.autoFeasibility === 'High').length,
   };
 }
