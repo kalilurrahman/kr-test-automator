@@ -17,12 +17,16 @@ import SharedScript from "./pages/SharedScript";
 import Profile from "./pages/Profile";
 import Compare from "./pages/Compare";
 import Settings from "./pages/Settings";
+import SAP from "./pages/SAP";
 import NotFound from "./pages/NotFound";
+import { useThemePalette } from "@/hooks/useThemePalette";
 
 const queryClient = new QueryClient();
 
 function AppShell() {
   const [shortcutsOpen, setShortcutsOpen] = useState(false);
+  // Initialise palette on mount (also persists across reloads)
+  useThemePalette();
 
   useEffect(() => {
     const handler = () => setShortcutsOpen((o) => !o);
@@ -37,6 +41,7 @@ function AppShell() {
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/templates" element={<Templates />} />
+          <Route path="/sap" element={<SAP />} />
           <Route path="/history" element={<History />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/shared/:shareId" element={<SharedScript />} />
