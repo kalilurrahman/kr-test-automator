@@ -38,14 +38,23 @@ const Index = () => {
     }
 
     if (platform === "salesforce") {
-      // Search across every Salesforce cloud chunk in parallel.
+      // Map ID prefix → ordered list of candidate cloud chunks (most likely first).
+      // Several FSC variants share the SF-FSC- prefix but use different number ranges,
+      // so we try them in order and stop at the first hit.
       import("@/data/salesforce/loader").then(async ({ loadSalesforceCases }) => {
-        const cloudIds = [
-          "sales", "marketing", "service_cloud", "health",
-          "financial", "financial_variantB", "financial_superpack",
-        ] as const;
+        const prefix = prefillId.split("-").slice(0, 2).join("-").toUpperCase();
+        const PREFIX_MAP: Record<string, ("sales" | "marketing" | "service_cloud" | "health" | "financial" | "financial_variantB" | "financial_superpack")[]> = {
+          "SF-SA": ["sales"],
+          "SF-MA": ["marketing"],
+          "SF-SE": ["service_cloud"],
+          "SF-HC": ["health"],
+          "SF-FSC": ["financial", "financial_variantB", "financial_superpack"],
+        };
+        const ALL = ["sales", "marketing", "service_cloud", "health", "financial", "financial_variantB", "financial_superpack"] as const;
+        const candidates = PREFIX_MAP[prefix] ?? ALL;
+
         let found: any = null;
-        for (const id of cloudIds) {
+        for (const id of candidates) {
           const data = await loadSalesforceCases(id);
           const hit = data.find((r) => r.id === prefillId);
           if (hit) { found = hit; break; }
