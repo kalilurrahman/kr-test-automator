@@ -37,7 +37,16 @@ Keep track of all your previously generated tests on the `/history` page. You ca
 
 <img src="docs/assets/history.png" alt="History Page" width="800">
 
-### 4. **Deprecated Library Route**
+### 4. **Salesforce Integration**
+The `/Salesforce` route features an integrated, static HTML-based portal providing direct access to the Salesforce repository. This includes distinct modules mapped closely to specific clouds, ensuring robust E2E validation scenarios.
+
+<img src="Salesforce/assets/screenshots/landing.png" alt="Salesforce Landing" width="800">
+
+You can drill down into specific sub-clouds such as Sales to instantly view records imported directly from the CSV test data.
+
+<img src="Salesforce/assets/screenshots/sales_subfolder.png" alt="Salesforce Data View" width="800">
+
+### 5. **Deprecated Library Route**
 The legacy `/library` route has been deprecated. If you attempt to access it, you will receive a 404 Error page. All former library functionality is now consolidated under `/templates` and `/history`.
 
 <img src="docs/assets/library.png" alt="Library 404 Error" width="800">
