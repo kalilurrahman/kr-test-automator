@@ -2,7 +2,9 @@ import { create } from "zustand";
 
 export type Platform =
   | "sap" | "salesforce" | "veeva" | "servicenow" | "workday"
-  | "oracle" | "m365" | "web" | "api" | "mobile_ios" | "mobile_android";
+  | "oracle" | "m365" | "web" | "api" | "mobile_ios" | "mobile_android"
+  | "dynamics365" | "aws" | "gcp" | "azure" | "webapps" | "topproducts"
+  | "ios" | "android";
 
 export type TestScope =
   | "ui_functional" | "regression" | "smoke" | "e2e"
