@@ -18,7 +18,9 @@ const Index = () => {
   const { user } = useAuth();
   const [params, setParams] = useSearchParams();
 
-  // Deep-link prefill from /sap or /salesforce (?platform=…&prefill=ID)
+  // Deep-link prefill from /sap, /salesforce, or any /p/:platform repository
+  // (?platform=…&prefill=ID). Non-SAP/SF platforms stash the row in sessionStorage
+  // before navigating, so we don't have to re-fetch CSVs here.
   useEffect(() => {
     const platform = params.get("platform");
     const prefillId = params.get("prefill");
@@ -81,25 +83,72 @@ const Index = () => {
       return;
     }
 
-    // Default: SAP repo lookup.
-    import("@/data/sapTestCases").then(({ getCaseById }) => {
-      const tc = getCaseById(prefillId);
-      if (tc) {
+    if (platform === "sap") {
+      // Default: SAP repo lookup.
+      import("@/data/sapTestCases").then(({ getCaseById }) => {
+        const tc = getCaseById(prefillId);
+        if (tc) {
+          const prose =
+            `[${tc.id}] ${tc.scenario} — ${tc.testCase}\n\n` +
+            `Module: ${tc.module} / ${tc.subModule}\n` +
+            `Industry: ${tc.industry}\n` +
+            `Pre-conditions: ${tc.preCond}\n\n` +
+            `Steps:\n${tc.steps}\n\n` +
+            `Expected: ${tc.expected}\n\n` +
+            `BAPI / hint: ${tc.bapi}`;
+          store.setBusinessCase(prose);
+          toast.success(`Loaded SAP case ${tc.id}`);
+        } else {
+          toast.error(`Test case "${prefillId}" not found`);
+        }
+        clearQuery();
+      });
+      return;
+    }
+
+    // All other platforms (Veeva, Workday, ServiceNow, D365, Oracle, AWS, GCP,
+    // Azure, API, iOS, Android, WebApps, TopProducts) ship the row through
+    // sessionStorage when the user clicks "Generate" inside PlatformRepository.
+    try {
+      const key = `prefill:${platform}:${prefillId}`;
+      const raw = sessionStorage.getItem(key);
+      if (raw) {
+        const { row, platformLabel, moduleLabel } = JSON.parse(raw) as {
+          row: Record<string, string>;
+          platformLabel: string;
+          moduleLabel: string;
+        };
+        const get = (...keys: string[]) => {
+          for (const k of keys) if (row[k]) return row[k];
+          return "";
+        };
+        const id = get("Test Case ID", "id", "ID", "Case ID") || prefillId;
+        const scen = get("Test Scenario", "scenario", "Scenario");
+        const mod = get("Module", "module", "Domain");
+        const type = get("Test Type", "type", "Type");
+        const priority = get("Priority", "priority");
+        const pre = get("Preconditions", "Pre-conditions", "preconditions", "preCond");
+        const steps = get("Steps", "steps").replace(/\\n/g, "\n");
+        const expected = get("Expected Result", "expected", "Expected");
         const prose =
-          `[${tc.id}] ${tc.scenario} — ${tc.testCase}\n\n` +
-          `Module: ${tc.module} / ${tc.subModule}\n` +
-          `Industry: ${tc.industry}\n` +
-          `Pre-conditions: ${tc.preCond}\n\n` +
-          `Steps:\n${tc.steps}\n\n` +
-          `Expected: ${tc.expected}\n\n` +
-          `BAPI / hint: ${tc.bapi}`;
+          `[${id}] ${scen}\n\n` +
+          `Platform: ${platformLabel}\n` +
+          `Module: ${moduleLabel}${mod ? ` / ${mod}` : ""}\n` +
+          (type ? `Test type: ${type}\n` : "") +
+          (priority ? `Priority: ${priority}\n` : "") +
+          (pre ? `\nPre-conditions: ${pre}\n` : "") +
+          (steps ? `\nSteps:\n${steps}\n` : "") +
+          (expected ? `\nExpected: ${expected}` : "");
         store.setBusinessCase(prose);
-        toast.success(`Loaded SAP case ${tc.id}`);
+        sessionStorage.removeItem(key);
+        toast.success(`Loaded ${platformLabel} case ${id}`);
       } else {
-        toast.error(`Test case "${prefillId}" not found`);
+        toast.error(`Case "${prefillId}" not found in session — open the case from the repository again.`);
       }
-      clearQuery();
-    });
+    } catch (e) {
+      toast.error(`Could not load prefill: ${(e as Error).message}`);
+    }
+    clearQuery();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
