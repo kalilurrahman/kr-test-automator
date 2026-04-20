@@ -39,7 +39,7 @@ const KRHeader = () => {
   const { user, loading, signOut } = useAuth();
 
   const isActive = (path: string) => location.pathname === path;
-  const productActive = PRODUCT_CATALOG.some((p) => p.kind === "spa" && location.pathname === p.route);
+  const productActive = PRODUCT_CATALOG.some((p) => location.pathname === p.route || location.pathname.startsWith(p.route + "/"));
   const libraryActive = libraryLinks.some((l) => location.pathname === l.to);
 
   const closeMobile = () => setMobileOpen(false);
@@ -101,26 +101,14 @@ const KRHeader = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-card border-border w-64 max-h-[70vh] overflow-y-auto">
                 <DropdownMenuLabel className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                  Interactive (SPA)
+                  All platforms
                 </DropdownMenuLabel>
-                {PRODUCT_CATALOG.filter((p) => p.kind === "spa").map((p) => (
+                {PRODUCT_CATALOG.map((p) => (
                   <DropdownMenuItem key={p.key} asChild>
                     <Link to={p.route} className="cursor-pointer flex items-center justify-between">
                       <span>{p.label}</span>
                       <span className="text-[10px] font-mono text-muted-foreground">{p.idPrefix}</span>
                     </Link>
-                  </DropdownMenuItem>
-                ))}
-                <DropdownMenuSeparator />
-                <DropdownMenuLabel className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                  Static repositories
-                </DropdownMenuLabel>
-                {PRODUCT_CATALOG.filter((p) => p.kind === "static").map((p) => (
-                  <DropdownMenuItem key={p.key} asChild>
-                    <a href={p.route} className="cursor-pointer flex items-center justify-between">
-                      <span>{p.label}</span>
-                      <span className="text-[10px] font-mono text-muted-foreground">{p.idPrefix}</span>
-                    </a>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -234,27 +222,16 @@ const KRHeader = () => {
                 <AccordionContent className="pb-1">
                   <div className="pl-3 space-y-0.5">
                     {PRODUCT_CATALOG.map((p) => (
-                      p.kind === "spa" ? (
-                        <Link
-                          key={p.key}
-                          to={p.route}
-                          onClick={closeMobile}
-                          className={`block px-3 py-1.5 text-sm rounded-md ${
-                            isActive(p.route) ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
-                          }`}
-                        >
-                          {p.label}
-                        </Link>
-                      ) : (
-                        <a
-                          key={p.key}
-                          href={p.route}
-                          onClick={closeMobile}
-                          className="block px-3 py-1.5 text-sm rounded-md text-muted-foreground hover:text-foreground"
-                        >
-                          {p.label}
-                        </a>
-                      )
+                      <Link
+                        key={p.key}
+                        to={p.route}
+                        onClick={closeMobile}
+                        className={`block px-3 py-1.5 text-sm rounded-md ${
+                          isActive(p.route) ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+                        }`}
+                      >
+                        {p.label}
+                      </Link>
                     ))}
                   </div>
                 </AccordionContent>

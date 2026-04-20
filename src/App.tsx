@@ -28,6 +28,7 @@ import { useThemePalette } from "@/hooks/useThemePalette";
 // Heavy modules — code-split them.
 const SAP = lazy(() => import("./pages/SAP"));
 const Salesforce = lazy(() => import("./pages/Salesforce"));
+const PlatformPage = lazy(() => import("./pages/PlatformPage"));
 
 const ModuleFallback = ({ label }: { label: string }) => (
   <div className="min-h-[calc(100vh-64px)] flex items-center justify-center text-muted-foreground text-sm">
@@ -60,6 +61,7 @@ function AppShell() {
           <Route path="/templates" element={<Templates />} />
           <Route path="/sap" element={<Suspense fallback={<ModuleFallback label="Loading SAP repository…" />}><SAP /></Suspense>} />
           <Route path="/salesforce" element={<Suspense fallback={<ModuleFallback label="Loading Salesforce repository…" />}><Salesforce /></Suspense>} />
+          <Route path="/p/:platformId" element={<Suspense fallback={<ModuleFallback label="Loading repository…" />}><PlatformPage /></Suspense>} />
           <Route path="/history" element={<History />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/shared/:shareId" element={<SharedScript />} />
