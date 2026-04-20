@@ -49,25 +49,19 @@ const KRHeader = () => {
     <>
       <header className="sticky top-0 z-50 border-b border-border backdrop-blur-md bg-background/80">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-2">
-          {/* LEFT: KR Brand */}
+          {/* LEFT: KR Brand → portfolio */}
           <a
-            href="https://www.linkedin.com/in/kalilurrahman"
+            href="https://kalilurrahman.lovable.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 group shrink-0"
+            className="flex items-center gap-2 group shrink-0"
+            aria-label="Kalilur Rahman portfolio"
+            title="Kalilur Rahman portfolio"
           >
-            <div className="w-9 h-9 rounded-full bg-card border border-primary/30 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-full bg-card border border-primary/30 flex items-center justify-center group-hover:border-primary transition-colors">
               <span className="text-sm font-bold text-primary" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 KR
               </span>
-            </div>
-            <div className="hidden lg:block">
-              <div className="text-sm font-semibold text-foreground leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                Kalilur Rahman
-              </div>
-              <div className="text-[10px] text-muted-foreground leading-tight">
-                Global IT Executive · Builder
-              </div>
             </div>
           </a>
 
