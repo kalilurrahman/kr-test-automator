@@ -1,16 +1,11 @@
 {
+  "name": "servicenow-test-automator",
+  "version": "1.0.0",
   "routes": [
     {
-      "itsm": "/ServiceNow/itsm/index.html"
-    },
-    {
-      "itom": "/ServiceNow/itom/index.html"
-    },
-    {
-      "csm": "/ServiceNow/csm/index.html"
-    },
-    {
-      "hrsd": "/ServiceNow/hrsd/index.html"
+      "key": "home",
+      "title": "Home",
+      "path": "/ServiceNow/index.html"
     }
   ]
 }
