@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "financials",
+      "path": "/OracleApps/financials/index.html"
+    },
+    {
+      "key": "procurement",
+      "path": "/OracleApps/procurement/index.html"
+    },
+    {
+      "key": "scm",
+      "path": "/OracleApps/scm/index.html"
+    },
+    {
+      "key": "hcm",
+      "path": "/OracleApps/hcm/index.html"
+    },
+    {
+      "key": "projects",
+      "path": "/OracleApps/projects/index.html"
+    },
+    {
+      "key": "epm",
+      "path": "/OracleApps/epm/index.html"
+    }
+  ]
+}

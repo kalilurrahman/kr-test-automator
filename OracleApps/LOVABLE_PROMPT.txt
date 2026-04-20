@@ -1,0 +1,1 @@
+Connect GitHub repo, use /OracleApps/index.html as entry, mirror SAP/Salesforce style, keep GitHub source of truth.

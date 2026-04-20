@@ -1,0 +1,1 @@
+Maintain /OracleApps, keep module folders, preserve data files, generate screenshots, and open PRs.
