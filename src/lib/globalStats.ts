@@ -1,9 +1,14 @@
-// Aggregates stats across every SPA platform in the manifest. Used by the
-// master Dashboard hero. Single in-memory cache so navigating away and back
-// does not refetch ~70 CSVs.
+// Aggregates stats across every SPA platform in the manifest plus the two
+// "legacy" first-party catalogues (SAP and Salesforce) that ship as bundled
+// TypeScript datasets rather than module CSVs. Without folding them in here
+// the master Dashboard hero charts looked like SAP and ServiceNow were
+// missing — they weren't, just under-counted. Single in-memory cache so
+// navigating away and back does not refetch ~70 CSVs.
 
 import { PLATFORMS } from "@/data/platformManifests";
 import { getPlatformStats } from "@/lib/platformStats";
+import { getStats as getSapStats } from "@/data/sapTestCases";
+import { SALESFORCE_CLOUDS, TOTAL_SALESFORCE_CASES } from "@/data/salesforceClouds";
 
 export interface GlobalStats {
   totalCases: number;
@@ -38,10 +43,27 @@ export function getGlobalStats(): Promise<GlobalStats> {
       if (stats.total > 0) loadedPlatforms += 1;
       perPlatform.push({ name: platform.shortLabel, value: stats.total });
     }
+
+    // ---- SAP (bundled TS dataset) ---------------------------------------
+    const sap = getSapStats();
+    totalCases += sap.total;
+    totalModules += Object.keys(sap.byModule).length;
+    high += sap.byPriority.High ?? 0;
+    medium += sap.byPriority.Medium ?? 0;
+    low += sap.byPriority.Low ?? 0;
+    if (sap.total > 0) loadedPlatforms += 1;
+    perPlatform.push({ name: "SAP", value: sap.total });
+
+    // ---- Salesforce (static cloud catalogue) ----------------------------
+    totalCases += TOTAL_SALESFORCE_CASES;
+    totalModules += SALESFORCE_CLOUDS.length;
+    if (TOTAL_SALESFORCE_CASES > 0) loadedPlatforms += 1;
+    perPlatform.push({ name: "Salesforce", value: TOTAL_SALESFORCE_CASES });
+
     return {
       totalCases,
       totalModules,
-      totalPlatforms: PLATFORMS.length,
+      totalPlatforms: PLATFORMS.length + 2, // +SAP +Salesforce
       loadedPlatforms,
       byPriority: [
         { name: "High", value: high },
