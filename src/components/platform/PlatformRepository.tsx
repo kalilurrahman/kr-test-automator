@@ -120,7 +120,16 @@ export function PlatformRepository({ platform, selectedModule, onSelectModule }:
   const view = filtered.slice(safePage * PAGE_SIZE, safePage * PAGE_SIZE + PAGE_SIZE);
 
   const sendToGenerator = (r: Record<string, string>) => {
-    const id = pick(r, ID_FIELDS);
+    const id = pick(r, ID_FIELDS) || `${platform.idPrefix}-${Date.now()}`;
+    // Stash full row so Index.tsx can prefill without re-fetching the CSV.
+    try {
+      sessionStorage.setItem(
+        `prefill:${platform.id}:${id}`,
+        JSON.stringify({ row: r, platformLabel: platform.label, moduleLabel: selectedModule.label }),
+      );
+    } catch {
+      // sessionStorage may be unavailable (private mode) — Index.tsx will fall back.
+    }
     const params = new URLSearchParams({ platform: platform.id, prefill: id });
     navigate(`/?${params.toString()}`);
   };
