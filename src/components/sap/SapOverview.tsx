@@ -1,11 +1,16 @@
-import { Download, FileSpreadsheet, FileText, FileCode2, FileJson } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Download, FileSpreadsheet, FileText, FileCode2, FileJson, Loader2 } from "lucide-react";
 import {
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid,
 } from "recharts";
-import { getStats, getAutomationCoverage, SAP_TEST_CASES, exportAsJSON } from "@/data/sapTestCases";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { exportAsJSON } from "@/data/sapTestCases";
+import {
+  loadAllSapCases,
+  getMergedSapStats,
+  getMergedAutomationCoverage,
+  type SapMergedStats,
+} from "@/data/sapCsvLoader";
 
 const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
@@ -24,29 +29,56 @@ function downloadBlob(content: string, filename: string, mime: string) {
 }
 
 export function SapOverview() {
-  const stats = useMemo(() => getStats(), []);
-  const coverage = useMemo(() => getAutomationCoverage(), []);
+  const [stats, setStats] = useState<SapMergedStats | null>(null);
+  const [coverage, setCoverage] = useState<Record<string, { total: number; high: number; pct: number }>>({});
 
-  const priorityData = Object.entries(stats.byPriority).map(([name, value]) => ({ name, value }));
-  const moduleData = Object.entries(stats.byModule)
-    .map(([name, value]) => ({ name, value, pct: coverage[name]?.pct ?? 0 }))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 12);
+  useEffect(() => {
+    let alive = true;
+    Promise.all([getMergedSapStats(), getMergedAutomationCoverage()]).then(
+      ([s, c]) => { if (alive) { setStats(s); setCoverage(c); } },
+    );
+    return () => { alive = false; };
+  }, []);
 
-  const downloadJson = () => downloadBlob(exportAsJSON(SAP_TEST_CASES), "sap-test-cases-v3.json", "application/json");
+  const priorityData = useMemo(
+    () => stats ? Object.entries(stats.byPriority).map(([name, value]) => ({ name, value })) : [],
+    [stats],
+  );
+  const moduleData = useMemo(
+    () => stats
+      ? Object.entries(stats.byModule)
+          .map(([name, value]) => ({ name, value, pct: coverage[name]?.pct ?? 0 }))
+          .sort((a, b) => b.value - a.value)
+          .slice(0, 12)
+      : [],
+    [stats, coverage],
+  );
+
+  const downloadJson = async () => {
+    const all = await loadAllSapCases();
+    downloadBlob(exportAsJSON(all), "sap-test-cases-merged.json", "application/json");
+  };
 
   const downloads = [
-    { href: "/downloads/SAP_Test_Repository_v3.csv",  label: "CSV",  icon: FileSpreadsheet, hint: "Spreadsheet-friendly" },
-    { href: "/downloads/SAP_Test_Repository_v3.xlsx", label: "XLSX", icon: FileSpreadsheet, hint: "Excel workbook" },
-    { href: "/downloads/SAP_Test_Repository_v3.html", label: "HTML", icon: FileText,        hint: "Self-contained report" },
+    { href: "/downloads/SAP_Test_Repository_v3.csv",  label: "CSV (curated)",  icon: FileSpreadsheet, hint: "841 hand-curated cases" },
+    { href: "/downloads/SAP_Test_Repository_v3.xlsx", label: "XLSX (curated)", icon: FileSpreadsheet, hint: "Excel workbook" },
+    { href: "/downloads/SAP_Test_Repository_v3.html", label: "HTML report",    icon: FileText,        hint: "Self-contained" },
   ];
 
+  if (!stats) {
+    return (
+      <div className="flex items-center justify-center py-20 text-muted-foreground">
+        <Loader2 className="w-5 h-5 animate-spin mr-2" /> Loading 14,000+ SAP test cases…
+      </div>
+    );
+  }
+
   const statCards = [
-    { label: "Total cases",     value: stats.total,         tone: "text-foreground" },
+    { label: "Total cases",     value: stats.total.toLocaleString(),       tone: "text-foreground" },
     { label: "Modules",         value: Object.keys(stats.byModule).length, tone: "text-primary" },
-    { label: "High priority",   value: stats.highPriority,  tone: "text-destructive" },
-    { label: "High auto-feas.", value: stats.highAuto,      tone: "text-emerald-400" },
-    { label: "Coverage score",  value: `${stats.coverageScore}%`, tone: "text-primary" },
+    { label: "High priority",   value: stats.highPriority.toLocaleString(), tone: "text-destructive" },
+    { label: "High auto-feas.", value: stats.highAuto.toLocaleString(),    tone: "text-emerald-400" },
+    { label: "Coverage score",  value: `${stats.coverageScore}%`,          tone: "text-primary" },
   ];
 
   return (
@@ -59,6 +91,13 @@ export function SapOverview() {
             <div className="text-[11px] uppercase tracking-wide text-muted-foreground mt-1">{s.label}</div>
           </div>
         ))}
+      </div>
+
+      <div className="text-xs text-muted-foreground">
+        <span className="font-medium text-foreground">{stats.bundled.toLocaleString()}</span> curated cases
+        {" + "}
+        <span className="font-medium text-foreground">{stats.fromCsv.toLocaleString()}</span> from module CSVs
+        {" — all indexed and queryable by the AI Test Generator."}
       </div>
 
       {/* Charts */}
@@ -133,8 +172,8 @@ export function SapOverview() {
                     aria-label={`${c.pct}% high automation feasibility`}
                   />
                 </div>
-                <span className="text-xs text-muted-foreground tabular-nums w-14 text-right">
-                  {c.high}/{c.total}
+                <span className="text-xs text-muted-foreground tabular-nums w-20 text-right">
+                  {c.high.toLocaleString()}/{c.total.toLocaleString()}
                 </span>
               </div>
             ))}
@@ -167,13 +206,13 @@ export function SapOverview() {
           >
             <FileJson className="w-5 h-5 text-primary shrink-0 mt-0.5" />
             <div className="min-w-0">
-              <div className="text-sm font-medium text-foreground">JSON</div>
-              <div className="text-[11px] text-muted-foreground">Generated from current TS data</div>
+              <div className="text-sm font-medium text-foreground">JSON (merged)</div>
+              <div className="text-[11px] text-muted-foreground">All {stats.total.toLocaleString()} cases</div>
             </div>
           </button>
         </div>
         <p className="text-[11px] text-muted-foreground mt-3 flex items-center gap-1">
-          <FileCode2 className="w-3 h-3" /> The TypeScript module is bundled with the app and powers AI-grounded SAP generations.
+          <FileCode2 className="w-3 h-3" /> Curated cases ground the AI generator; CSV-derived cases extend the searchable catalogue.
         </p>
       </div>
     </div>

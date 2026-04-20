@@ -7,7 +7,7 @@
 
 import { PLATFORMS } from "@/data/platformManifests";
 import { getPlatformStats } from "@/lib/platformStats";
-import { getStats as getSapStats } from "@/data/sapTestCases";
+import { getMergedSapStats } from "@/data/sapCsvLoader";
 import { SALESFORCE_CLOUDS, TOTAL_SALESFORCE_CASES } from "@/data/salesforceClouds";
 
 export interface GlobalStats {
@@ -44,8 +44,8 @@ export function getGlobalStats(): Promise<GlobalStats> {
       perPlatform.push({ name: platform.shortLabel, value: stats.total });
     }
 
-    // ---- SAP (bundled TS dataset) ---------------------------------------
-    const sap = getSapStats();
+    // ---- SAP (curated TS dataset + 12 merged module CSVs) -------------
+    const sap = await getMergedSapStats();
     totalCases += sap.total;
     totalModules += Object.keys(sap.byModule).length;
     high += sap.byPriority.High ?? 0;
