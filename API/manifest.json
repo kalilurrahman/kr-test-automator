@@ -31,6 +31,10 @@
     {
       "key": "security",
       "path": "/API/security/index.html"
+    },
+    {
+      "key": "cross_platform",
+      "path": "/API/cross_platform/index.html"
     }
   ]
 }

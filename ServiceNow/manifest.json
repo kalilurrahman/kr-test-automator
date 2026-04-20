@@ -11,6 +11,9 @@
     },
     {
       "hrsd": "/ServiceNow/hrsd/index.html"
+    },
+    {
+      "secops": "/ServiceNow/secops/index.html"
     }
   ]
 }
