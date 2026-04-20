@@ -166,7 +166,11 @@ export function SapTestCases() {
         </div>
         <div className="flex items-center justify-between text-xs">
           <span className="text-muted-foreground">
-            Showing <span className="text-foreground font-medium">{filtered.length}</span> case{filtered.length !== 1 && "s"}
+            {!allCases ? (
+              <span className="inline-flex items-center gap-1"><Loader2 className="w-3 h-3 animate-spin" /> Loading 14,000+ cases…</span>
+            ) : (
+              <>Showing <span className="text-foreground font-medium">{filtered.length.toLocaleString()}</span> of <span className="text-foreground font-medium">{allCases.length.toLocaleString()}</span> case{filtered.length !== 1 && "s"}</>
+            )}
           </span>
           {filtersActive && (
             <Button variant="ghost" size="sm" onClick={resetFilters} className="h-7 text-xs">

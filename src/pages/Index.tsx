@@ -84,9 +84,10 @@ const Index = () => {
     }
 
     if (platform === "sap") {
-      // Default: SAP repo lookup.
-      import("@/data/sapTestCases").then(({ getCaseById }) => {
-        const tc = getCaseById(prefillId);
+      // SAP repo lookup — async because we now merge ~14k CSV cases on top of
+      // the bundled curated set.
+      import("@/data/sapCsvLoader").then(async ({ getSapCaseByIdAsync }) => {
+        const tc = await getSapCaseByIdAsync(prefillId);
         if (tc) {
           const prose =
             `[${tc.id}] ${tc.scenario} — ${tc.testCase}\n\n` +
