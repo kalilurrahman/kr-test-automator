@@ -172,10 +172,8 @@ const Dashboard = () => {
                 </Card>
               );
 
-              return p.kind === "spa" ? (
+              return (
                 <Link key={p.key} to={p.route} className="block">{cardContent}</Link>
-              ) : (
-                <a key={p.key} href={p.route} className="block">{cardContent}</a>
               );
             })}
           </div>
