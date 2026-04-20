@@ -1,1 +1,196 @@
-<!doctype html><html><body><h1>Workday</h1><ul><li><a href="/Workday/hcm/">HCM</a></li><li><a href="/Workday/payroll/">Payroll</a></li><li><a href="/Workday/recruiting/">Recruiting</a></li><li><a href="/Workday/finance/">Finance</a></li><li><a href="/Workday/integrations/">Integrations</a></li><li><a href="/Workday/reporting/">Reporting</a></li><li><a href="/Workday/e2e/">E2E</a></li></ul></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Workday Test Automator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f7f8fc;
+            color: #172b4d
+        }
+
+        header {
+            background: #5b4db7;
+            color: #fff;
+            padding: 28px
+        }
+
+        .wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px
+        }
+
+        .menu {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 12px
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+            padding-bottom: 2px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h2 {
+            margin: 0;
+            color: #5b4db7;
+            font-size: 20px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .pill {
+            display: inline-block;
+            background: #efeefe;
+            color: #5b4db7;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+        }
+
+        .muted {
+            color: #5e6c84;
+            font-size: 14px;
+        }
+
+        .top-nav {
+            display: flex;
+            gap: 16px;
+            background: #fff;
+            padding: 16px 24px;
+            border-bottom: 1px solid #ecf0f1;
+            flex-wrap: wrap;
+        }
+
+        .top-nav a {
+            color: #172b4d;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .top-nav a:hover {
+            background: #efeefe;
+            color: #5b4db7;
+        }
+
+        .top-nav a.active {
+            background: #5b4db7;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap" style="padding-bottom:0;">
+            <div class="pill">Workday Ecosystem</div>
+            <h1>Test Automator Hub</h1>
+            <p>Module navigation and data-driven test packs.</p>
+        </div>
+    </header>
+
+    <div class="top-nav" id="topNav">
+        <!-- Dynamic menu populated from manifest.json -->
+    </div>
+
+    <main class="wrap">
+        <div class="grid" id="modulesGrid">
+            <!-- Dynamic grid populated from manifest.json -->
+        </div>
+    </main>
+
+    <script>
+        async function loadManifest() {
+            try {
+                const response = await fetch('/workday/manifest.json');
+                const data = await response.json();
+
+                const topNav = document.getElementById('topNav');
+                const grid = document.getElementById('modulesGrid');
+
+                data.routes.forEach(route => {
+                    // Populate Top Nav Menu
+                    const navLink = document.createElement('a');
+                    navLink.href = route.path;
+                    navLink.textContent = route.title;
+                    if (route.key === 'home') {
+                        navLink.className = 'active';
+                    }
+                    topNav.appendChild(navLink);
+
+                    // Populate Modules Grid (exclude home)
+                    if (route.key !== 'home') {
+                        const card = document.createElement('a');
+                        card.className = 'card';
+                        card.href = route.path;
+
+                        let description = 'Workday ' + route.title + ' test cases and analytics.';
+                        if (route.key === 'hcm') description = 'Core HCM, onboarding, time, benefits.';
+                        if (route.key === 'payroll') description = 'Gross-to-net, tax, payments, year-end.';
+                        if (route.key === 'recruiting') description = 'Requisition, sourcing, interview, offer.';
+                        if (route.key === 'finance') description = 'Expense, supplier invoice, accounting.';
+                        if (route.key === 'integrations') description = 'EIB, Core Connector, API, error handling.';
+                        if (route.key === 'reporting') description = 'Reports, dashboards, Prism analytics.';
+
+                        card.innerHTML = `
+                            <h2>${route.title}</h2>
+                            <p class="muted">${description}</p>
+                        `;
+                        grid.appendChild(card);
+                    }
+                });
+
+            } catch (error) {
+                console.error('Error loading manifest:', error);
+                document.getElementById('modulesGrid').innerHTML = '<p>Error loading test repository data.</p>';
+            }
+        }
+
+        loadManifest();
+    </script>
+</body>
+
+</html>
