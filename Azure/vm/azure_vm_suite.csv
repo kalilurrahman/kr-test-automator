@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-VM-00001,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Integration,Search Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00002,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00003,Azure,vm,vm,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00004,Azure,vm,vm,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00005,Azure,vm,vm,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00006,Azure,vm,vm,DevOps,Create -> Protect -> Audit -> Report,Integration,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00007,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00008,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00009,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00010,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00011,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00012,Azure,vm,vm,Data,Create -> Protect -> Audit -> Report,UI,Edit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00013,Azure,vm,vm,Platform,Create -> Protect -> Audit -> Report,Regression,Archive Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00014,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00015,Azure,vm,vm,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00016,Azure,vm,vm,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00017,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00018,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,UI,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00019,Azure,vm,vm,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00020,Azure,vm,vm,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00021,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Security,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00022,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00023,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00024,Azure,vm,vm,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00025,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Security,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00026,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Security,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00027,Azure,vm,vm,Data,Create -> Protect -> Audit -> Report,UI,Edit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00028,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,UI,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00029,Azure,vm,vm,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00030,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Accessibility,Search Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00031,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Security,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00032,Azure,vm,vm,Platform,Create -> Protect -> Audit -> Report,Security,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00033,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00034,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Accessibility,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00035,Azure,vm,vm,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00036,Azure,vm,vm,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00037,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00038,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Performance,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00039,Azure,vm,vm,Data,Create -> Protect -> Audit -> Report,Accessibility,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00040,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Archive Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00041,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Performance,Escalate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00042,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00043,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,UI,Search Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00044,Azure,vm,vm,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00045,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00046,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Accessibility,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00047,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00048,Azure,vm,vm,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00049,Azure,vm,vm,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00050,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00051,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Edit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00052,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00053,Azure,vm,vm,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00054,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00055,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Integration,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00056,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00057,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00058,Azure,vm,vm,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00059,Azure,vm,vm,DevOps,Create -> Protect -> Audit -> Report,Security,Edit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00060,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00061,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00062,Azure,vm,vm,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00063,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00064,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00065,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00066,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00067,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Archive Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00068,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Security,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00069,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00070,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00071,Azure,vm,vm,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Delete Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00072,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Security,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00073,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,UI,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00074,Azure,vm,vm,DevOps,Create -> Protect -> Audit -> Report,Regression,Restore Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00075,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,Functional,Clone Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00076,Azure,vm,vm,DevOps,Create -> Protect -> Audit -> Report,Integration,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00077,Azure,vm,vm,Platform,Create -> Protect -> Audit -> Report,Accessibility,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00078,Azure,vm,vm,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00079,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Approve Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00080,Azure,vm,vm,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Search Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00081,Azure,vm,vm,Data,Create -> Protect -> Audit -> Report,UI,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00082,Azure,vm,vm,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Update Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00083,Azure,vm,vm,Data,Deploy -> Scale -> Observe -> Rollback,UI,Route Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00084,Azure,vm,vm,Data,Provision -> Validate -> Monitor -> Remediate,UI,Escalate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00085,Azure,vm,vm,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Submit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00086,Azure,vm,vm,DevOps,Create -> Protect -> Audit -> Report,Functional,Edit Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00087,Azure,vm,vm,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00088,Azure,vm,vm,Platform,Create -> Protect -> Audit -> Report,Accessibility,Archive Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00089,Azure,vm,vm,Security,Create -> Protect -> Audit -> Report,UI,Reject Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-VM-00090,Azure,vm,vm,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Create Azure vm,Azure access and test data available,"1. Open vm.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

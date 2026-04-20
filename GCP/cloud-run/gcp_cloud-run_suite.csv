@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-CLO-00001,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,Regression,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00002,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,Integration,Delete GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00003,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00004,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00005,GCP,cloud-run,cloud-run,Platform,Create -> Protect -> Audit -> Report,Security,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00006,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,Integration,Archive GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00007,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00008,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00009,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,Accessibility,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00010,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Performance,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00011,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,UI,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00012,GCP,cloud-run,cloud-run,Platform,Create -> Protect -> Audit -> Report,Performance,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00013,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,UI,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00014,GCP,cloud-run,cloud-run,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00015,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Clone GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00016,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Clone GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00017,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00018,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00019,GCP,cloud-run,cloud-run,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00020,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00021,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00022,GCP,cloud-run,cloud-run,Platform,Create -> Protect -> Audit -> Report,Regression,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00023,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00024,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00025,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00026,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Reject GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00027,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00028,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00029,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Accessibility,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00030,GCP,cloud-run,cloud-run,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Approve GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00031,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Functional,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00032,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00033,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00034,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Security,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00035,GCP,cloud-run,cloud-run,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00036,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00037,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,UI,Approve GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00038,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Restore GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00039,GCP,cloud-run,cloud-run,Platform,Create -> Protect -> Audit -> Report,Security,Restore GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00040,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Security,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00041,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,UI,Reject GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00042,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Security,Delete GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00043,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00044,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Performance,Approve GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00045,GCP,cloud-run,cloud-run,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00046,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Performance,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00047,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Archive GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00048,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00049,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00050,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00051,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Delete GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00052,GCP,cloud-run,cloud-run,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00053,GCP,cloud-run,cloud-run,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00054,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00055,GCP,cloud-run,cloud-run,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00056,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Integration,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00057,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Clone GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00058,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Accessibility,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00059,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00060,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Restore GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00061,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Clone GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00062,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00063,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Performance,Restore GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00064,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Functional,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00065,GCP,cloud-run,cloud-run,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00066,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00067,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,Functional,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00068,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Archive GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00069,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Regression,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00070,GCP,cloud-run,cloud-run,DevOps,Create -> Protect -> Audit -> Report,Performance,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00071,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Restore GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00072,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00073,GCP,cloud-run,cloud-run,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00074,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,UI,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00075,GCP,cloud-run,cloud-run,Platform,Create -> Protect -> Audit -> Report,Functional,Reject GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00076,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00077,GCP,cloud-run,cloud-run,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Search GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00078,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Security,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00079,GCP,cloud-run,cloud-run,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Reject GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00080,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,UI,Approve GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00081,GCP,cloud-run,cloud-run,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00082,GCP,cloud-run,cloud-run,Security,Create -> Protect -> Audit -> Report,Accessibility,Escalate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00083,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Regression,Clone GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00084,GCP,cloud-run,cloud-run,Platform,Create -> Protect -> Audit -> Report,Functional,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00085,GCP,cloud-run,cloud-run,Data,Create -> Protect -> Audit -> Report,Security,Update GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00086,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00087,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Edit GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00088,GCP,cloud-run,cloud-run,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Reject GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00089,GCP,cloud-run,cloud-run,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Validate GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-CLO-00090,GCP,cloud-run,cloud-run,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Delete GCP cloud-run,GCP access and test data available,"1. Open cloud-run.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

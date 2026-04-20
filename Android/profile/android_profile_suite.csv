@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-PRO-00001,Android,profile,profile,FinTech,Push -> Open -> Verify,Functional,Escalate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00002,Android,profile,profile,FinTech,Permission -> Action -> Persist,Regression,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00003,Android,profile,profile,Consumer,Push -> Open -> Verify,UI,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00004,Android,profile,profile,Consumer,Permission -> Action -> Persist,Functional,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00005,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Security,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00006,Android,profile,profile,Enterprise,Push -> Open -> Verify,Accessibility,Archive Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00007,Android,profile,profile,Healthcare,Permission -> Action -> Persist,UI,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00008,Android,profile,profile,FinTech,Permission -> Action -> Persist,Integration,Submit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00009,Android,profile,profile,Healthcare,Push -> Open -> Verify,Performance,Submit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00010,Android,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00011,Android,profile,profile,Healthcare,Permission -> Action -> Persist,Accessibility,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00012,Android,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00013,Android,profile,profile,FinTech,Offline -> Sync -> Resolve,Integration,Reject Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00014,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Security,Reject Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00015,Android,profile,profile,Consumer,Push -> Open -> Verify,Security,Reject Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00016,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Integration,Escalate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00017,Android,profile,profile,Consumer,Push -> Open -> Verify,Accessibility,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00018,Android,profile,profile,Healthcare,Permission -> Action -> Persist,Performance,Clone Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00019,Android,profile,profile,Consumer,Push -> Open -> Verify,Regression,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00020,Android,profile,profile,FinTech,Permission -> Action -> Persist,Functional,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00021,Android,profile,profile,Healthcare,Push -> Open -> Verify,UI,Archive Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00022,Android,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00023,Android,profile,profile,FinTech,Offline -> Sync -> Resolve,Security,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00024,Android,profile,profile,Enterprise,Offline -> Sync -> Resolve,Performance,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00025,Android,profile,profile,Healthcare,Offline -> Sync -> Resolve,Functional,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00026,Android,profile,profile,Enterprise,Offline -> Sync -> Resolve,Regression,Submit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00027,Android,profile,profile,Consumer,Push -> Open -> Verify,Performance,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00028,Android,profile,profile,FinTech,Permission -> Action -> Persist,Security,Submit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00029,Android,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Escalate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00030,Android,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00031,Android,profile,profile,FinTech,Push -> Open -> Verify,Performance,Validate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00032,Android,profile,profile,Healthcare,Permission -> Action -> Persist,Functional,Validate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00033,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Functional,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00034,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Performance,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00035,Android,profile,profile,Healthcare,Offline -> Sync -> Resolve,Accessibility,Escalate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00036,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Accessibility,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00037,Android,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00038,Android,profile,profile,FinTech,Push -> Open -> Verify,Security,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00039,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Security,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00040,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Integration,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00041,Android,profile,profile,Consumer,Push -> Open -> Verify,Performance,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00042,Android,profile,profile,Consumer,Permission -> Action -> Persist,Integration,Clone Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00043,Android,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00044,Android,profile,profile,FinTech,Offline -> Sync -> Resolve,Integration,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00045,Android,profile,profile,FinTech,Permission -> Action -> Persist,Performance,Clone Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00046,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Regression,Reject Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00047,Android,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00048,Android,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00049,Android,profile,profile,Healthcare,Push -> Open -> Verify,Regression,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00050,Android,profile,profile,Consumer,Push -> Open -> Verify,UI,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00051,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Integration,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00052,Android,profile,profile,Enterprise,Offline -> Sync -> Resolve,Integration,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00053,Android,profile,profile,FinTech,Push -> Open -> Verify,Regression,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00054,Android,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00055,Android,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00056,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Integration,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00057,Android,profile,profile,Consumer,Push -> Open -> Verify,Integration,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00058,Android,profile,profile,Enterprise,Push -> Open -> Verify,Security,Archive Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00059,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Accessibility,Reject Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00060,Android,profile,profile,Consumer,Permission -> Action -> Persist,Regression,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00061,Android,profile,profile,Enterprise,Push -> Open -> Verify,Performance,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00062,Android,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00063,Android,profile,profile,FinTech,Push -> Open -> Verify,Functional,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00064,Android,profile,profile,FinTech,Permission -> Action -> Persist,Regression,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00065,Android,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Performance,Archive Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00066,Android,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00067,Android,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00068,Android,profile,profile,Enterprise,Offline -> Sync -> Resolve,Integration,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00069,Android,profile,profile,Healthcare,Push -> Open -> Verify,Regression,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00070,Android,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Validate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00071,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Functional,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00072,Android,profile,profile,Enterprise,Push -> Open -> Verify,Security,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00073,Android,profile,profile,FinTech,Push -> Open -> Verify,Accessibility,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00074,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Functional,Validate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00075,Android,profile,profile,Healthcare,Push -> Open -> Verify,Integration,Submit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00076,Android,profile,profile,Consumer,Permission -> Action -> Persist,Security,Clone Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00077,Android,profile,profile,FinTech,Push -> Open -> Verify,Integration,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00078,Android,profile,profile,FinTech,Permission -> Action -> Persist,Performance,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00079,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Security,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00080,Android,profile,profile,FinTech,Push -> Open -> Verify,Performance,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00081,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Security,Clone Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00082,Android,profile,profile,Healthcare,Offline -> Sync -> Resolve,UI,Submit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00083,Android,profile,profile,Enterprise,Permission -> Action -> Persist,UI,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00084,Android,profile,profile,FinTech,Offline -> Sync -> Resolve,Accessibility,Reject Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00085,Android,profile,profile,Healthcare,Permission -> Action -> Persist,UI,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00086,Android,profile,profile,FinTech,Offline -> Sync -> Resolve,Performance,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00087,Android,profile,profile,Enterprise,Offline -> Sync -> Resolve,UI,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00088,Android,profile,profile,Healthcare,Offline -> Sync -> Resolve,UI,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00089,Android,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00090,Android,profile,profile,Healthcare,Offline -> Sync -> Resolve,Accessibility,Delete Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00091,Android,profile,profile,Healthcare,Offline -> Sync -> Resolve,Regression,Restore Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00092,Android,profile,profile,Consumer,Push -> Open -> Verify,Security,Approve Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00093,Android,profile,profile,Enterprise,Permission -> Action -> Persist,UI,Validate Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00094,Android,profile,profile,Healthcare,Permission -> Action -> Persist,Security,Update Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00095,Android,profile,profile,Enterprise,Permission -> Action -> Persist,Performance,Search Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00096,Android,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Route Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00097,Android,profile,profile,Consumer,Offline -> Sync -> Resolve,Regression,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00098,Android,profile,profile,FinTech,Offline -> Sync -> Resolve,Integration,Edit Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00099,Android,profile,profile,Healthcare,Permission -> Action -> Persist,Integration,Create Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PRO-00100,Android,profile,profile,FinTech,Push -> Open -> Verify,Integration,Clone Android profile,Android access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

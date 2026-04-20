@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-NOT-00001,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Accessibility,Update Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00002,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Functional,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00003,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Performance,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00004,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Regression,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00005,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Security,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00006,Android,notifications,notifications,Enterprise,Permission -> Action -> Persist,Security,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00007,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Accessibility,Update Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00008,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Performance,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00009,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,Functional,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00010,Android,notifications,notifications,Healthcare,Permission -> Action -> Persist,UI,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00011,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Integration,Create Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00012,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Functional,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00013,Android,notifications,notifications,FinTech,Push -> Open -> Verify,Integration,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00014,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,Accessibility,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00015,Android,notifications,notifications,Enterprise,Push -> Open -> Verify,Functional,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00016,Android,notifications,notifications,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Validate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00017,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Security,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00018,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,Security,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00019,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Regression,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00020,Android,notifications,notifications,Consumer,Push -> Open -> Verify,UI,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00021,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Regression,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00022,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,Regression,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00023,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00024,Android,notifications,notifications,FinTech,Permission -> Action -> Persist,Performance,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00025,Android,notifications,notifications,Enterprise,Offline -> Sync -> Resolve,Functional,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00026,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,Performance,Submit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00027,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,UI,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00028,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Functional,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00029,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Submit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00030,Android,notifications,notifications,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00031,Android,notifications,notifications,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00032,Android,notifications,notifications,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00033,Android,notifications,notifications,Enterprise,Push -> Open -> Verify,Accessibility,Escalate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00034,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Accessibility,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00035,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,Integration,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00036,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,UI,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00037,Android,notifications,notifications,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00038,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00039,Android,notifications,notifications,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00040,Android,notifications,notifications,FinTech,Push -> Open -> Verify,Accessibility,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00041,Android,notifications,notifications,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00042,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Accessibility,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00043,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Security,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00044,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,Accessibility,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00045,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,UI,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00046,Android,notifications,notifications,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00047,Android,notifications,notifications,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00048,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,UI,Update Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00049,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Regression,Validate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00050,Android,notifications,notifications,Enterprise,Permission -> Action -> Persist,UI,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00051,Android,notifications,notifications,FinTech,Permission -> Action -> Persist,UI,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00052,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Performance,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00053,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00054,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Regression,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00055,Android,notifications,notifications,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00056,Android,notifications,notifications,Enterprise,Permission -> Action -> Persist,Regression,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00057,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Functional,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00058,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Functional,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00059,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Accessibility,Update Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00060,Android,notifications,notifications,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00061,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Performance,Validate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00062,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Functional,Update Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00063,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,UI,Create Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00064,Android,notifications,notifications,Enterprise,Permission -> Action -> Persist,Accessibility,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00065,Android,notifications,notifications,Healthcare,Permission -> Action -> Persist,Integration,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00066,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,Integration,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00067,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Accessibility,Escalate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00068,Android,notifications,notifications,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00069,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Security,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00070,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Security,Update Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00071,Android,notifications,notifications,Enterprise,Push -> Open -> Verify,Integration,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00072,Android,notifications,notifications,Enterprise,Offline -> Sync -> Resolve,Regression,Create Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00073,Android,notifications,notifications,Consumer,Permission -> Action -> Persist,Regression,Escalate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00074,Android,notifications,notifications,FinTech,Permission -> Action -> Persist,Accessibility,Escalate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00075,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00076,Android,notifications,notifications,FinTech,Permission -> Action -> Persist,Regression,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00077,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,Integration,Submit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00078,Android,notifications,notifications,Enterprise,Permission -> Action -> Persist,Regression,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00079,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,UI,Approve Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00080,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Performance,Create Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00081,Android,notifications,notifications,FinTech,Permission -> Action -> Persist,Performance,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00082,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,UI,Create Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00083,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Performance,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00084,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,UI,Validate Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00085,Android,notifications,notifications,FinTech,Offline -> Sync -> Resolve,Regression,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00086,Android,notifications,notifications,FinTech,Push -> Open -> Verify,Performance,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00087,Android,notifications,notifications,Consumer,Push -> Open -> Verify,Security,Delete Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00088,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00089,Android,notifications,notifications,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Reject Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00090,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Integration,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00091,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Functional,Submit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00092,Android,notifications,notifications,Enterprise,Permission -> Action -> Persist,Integration,Route Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00093,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,Regression,Search Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00094,Android,notifications,notifications,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Create Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00095,Android,notifications,notifications,Consumer,Offline -> Sync -> Resolve,Integration,Edit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00096,Android,notifications,notifications,Healthcare,Offline -> Sync -> Resolve,Functional,Submit Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00097,Android,notifications,notifications,Healthcare,Push -> Open -> Verify,Accessibility,Restore Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00098,Android,notifications,notifications,Consumer,Launch -> Authenticate -> Use -> Logout,Performance,Archive Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00099,Android,notifications,notifications,FinTech,Permission -> Action -> Persist,Performance,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-NOT-00100,Android,notifications,notifications,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Clone Android notifications,Android access and test data available,"1. Open notifications.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

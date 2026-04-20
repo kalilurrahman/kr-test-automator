@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-BIG-00001,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00002,GCP,bigquery,bigquery,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00003,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,UI,Search GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00004,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Functional,Edit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00005,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Security,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00006,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,UI,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00007,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00008,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,UI,Clone GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00009,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Functional,Search GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00010,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00011,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Restore GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00012,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,Security,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00013,GCP,bigquery,bigquery,Data,Provision -> Validate -> Monitor -> Remediate,Security,Clone GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00014,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Functional,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00015,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Security,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00016,GCP,bigquery,bigquery,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Edit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00017,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,UI,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00018,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00019,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Clone GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00020,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Edit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00021,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Integration,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00022,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00023,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00024,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00025,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Integration,Edit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00026,GCP,bigquery,bigquery,Security,Provision -> Validate -> Monitor -> Remediate,Security,Search GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00027,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,Performance,Clone GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00028,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Functional,Archive GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00029,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Performance,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00030,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Functional,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00031,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Regression,Archive GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00032,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00033,GCP,bigquery,bigquery,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00034,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Security,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00035,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Security,Edit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00036,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,Accessibility,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00037,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00038,GCP,bigquery,bigquery,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Clone GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00039,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00040,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00041,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00042,GCP,bigquery,bigquery,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00043,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00044,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Edit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00045,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Delete GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00046,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,UI,Reject GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00047,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00048,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00049,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Reject GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00050,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Archive GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00051,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Security,Archive GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00052,GCP,bigquery,bigquery,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Archive GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00053,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Reject GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00054,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Security,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00055,GCP,bigquery,bigquery,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00056,GCP,bigquery,bigquery,Security,Provision -> Validate -> Monitor -> Remediate,Security,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00057,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00058,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00059,GCP,bigquery,bigquery,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00060,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,Security,Restore GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00061,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00062,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Regression,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00063,GCP,bigquery,bigquery,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Validate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00064,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,Security,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00065,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Integration,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00066,GCP,bigquery,bigquery,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00067,GCP,bigquery,bigquery,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00068,GCP,bigquery,bigquery,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00069,GCP,bigquery,bigquery,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00070,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,UI,Reject GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00071,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Functional,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00072,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Regression,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00073,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00074,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00075,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Integration,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00076,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Escalate GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00077,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Performance,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00078,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Archive GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00079,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00080,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Integration,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00081,GCP,bigquery,bigquery,Security,Create -> Protect -> Audit -> Report,Performance,Delete GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00082,GCP,bigquery,bigquery,Data,Deploy -> Scale -> Observe -> Rollback,UI,Submit GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00083,GCP,bigquery,bigquery,Data,Create -> Protect -> Audit -> Report,Performance,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00084,GCP,bigquery,bigquery,Platform,Create -> Protect -> Audit -> Report,Regression,Delete GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00085,GCP,bigquery,bigquery,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Route GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00086,GCP,bigquery,bigquery,DevOps,Create -> Protect -> Audit -> Report,Integration,Delete GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00087,GCP,bigquery,bigquery,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Approve GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00088,GCP,bigquery,bigquery,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Update GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00089,GCP,bigquery,bigquery,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Restore GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-BIG-00090,GCP,bigquery,bigquery,Data,Provision -> Validate -> Monitor -> Remediate,UI,Clone GCP bigquery,GCP access and test data available,"1. Open bigquery.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

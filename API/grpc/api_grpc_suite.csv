@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-GRP-00001,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Performance,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00002,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Validate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00003,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00004,API,grpc,grpc,Public API,Create -> Validate -> Respond,Security,Create API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00005,API,grpc,grpc,Public API,Create -> Validate -> Respond,Regression,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00006,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,UI,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00007,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00008,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00009,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00010,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Integration,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00011,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00012,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Regression,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00013,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,Accessibility,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00014,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00015,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Approve API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00016,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Security,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00017,API,grpc,grpc,Public API,Schema -> Contract -> Deploy -> Monitor,Regression,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00018,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00019,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Performance,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00020,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,UI,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00021,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,Performance,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00022,API,grpc,grpc,Internal API,Schema -> Contract -> Deploy -> Monitor,Performance,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00023,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,Functional,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00024,API,grpc,grpc,B2B API,Sync -> Retry -> Recover,Integration,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00025,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00026,API,grpc,grpc,Public API,Sync -> Retry -> Recover,UI,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00027,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Functional,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00028,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Accessibility,Create API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00029,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,Accessibility,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00030,API,grpc,grpc,Partner API,Create -> Validate -> Respond,Functional,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00031,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Security,Validate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00032,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,UI,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00033,API,grpc,grpc,Public API,Create -> Validate -> Respond,Integration,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00034,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,Performance,Approve API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00035,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Functional,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00036,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,Functional,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00037,API,grpc,grpc,Internal API,Schema -> Contract -> Deploy -> Monitor,Security,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00038,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,Performance,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00039,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Regression,Approve API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00040,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00041,API,grpc,grpc,Public API,Create -> Validate -> Respond,Security,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00042,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Performance,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00043,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Performance,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00044,API,grpc,grpc,Internal API,Create -> Validate -> Respond,UI,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00045,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Security,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00046,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Performance,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00047,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00048,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Performance,Edit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00049,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,Performance,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00050,API,grpc,grpc,Public API,Create -> Validate -> Respond,UI,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00051,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Integration,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00052,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Integration,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00053,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,UI,Approve API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00054,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Edit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00055,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,UI,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00056,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Integration,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00057,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Performance,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00058,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Performance,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00059,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Functional,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00060,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Functional,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00061,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Security,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00062,API,grpc,grpc,B2B API,Sync -> Retry -> Recover,Regression,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00063,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00064,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00065,API,grpc,grpc,Partner API,Create -> Validate -> Respond,Regression,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00066,API,grpc,grpc,Public API,Sync -> Retry -> Recover,UI,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00067,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Accessibility,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00068,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Accessibility,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00069,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Accessibility,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00070,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Performance,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00071,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Security,Create API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00072,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Regression,Create API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00073,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Performance,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00074,API,grpc,grpc,Public API,Create -> Validate -> Respond,Functional,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00075,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Security,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00076,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Regression,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00077,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Integration,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00078,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00079,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Functional,Create API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00080,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00081,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Functional,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00082,API,grpc,grpc,Internal API,Create -> Validate -> Respond,UI,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00083,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,Regression,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00084,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Security,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00085,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Integration,Create API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00086,API,grpc,grpc,Public API,Sync -> Retry -> Recover,Regression,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00087,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00088,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00089,API,grpc,grpc,Partner API,Create -> Validate -> Respond,UI,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00090,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,Regression,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00091,API,grpc,grpc,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00092,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Validate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00093,API,grpc,grpc,B2B API,Create -> Validate -> Respond,Security,Route API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00094,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Performance,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00095,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Performance,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00096,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,Security,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00097,API,grpc,grpc,Public API,Create -> Validate -> Respond,Integration,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00098,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,Regression,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00099,API,grpc,grpc,Public API,Create -> Validate -> Respond,Functional,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00100,API,grpc,grpc,Public API,Create -> Validate -> Respond,Security,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00101,API,grpc,grpc,Public API,Create -> Validate -> Respond,Performance,Clone API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00102,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,UI,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00103,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00104,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,Integration,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00105,API,grpc,grpc,Internal API,Create -> Validate -> Respond,UI,Delete API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00106,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,Performance,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00107,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Accessibility,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00108,API,grpc,grpc,Partner API,Sync -> Retry -> Recover,Accessibility,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00109,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,UI,Validate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00110,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Integration,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00111,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Submit API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00112,API,grpc,grpc,Internal API,Create -> Validate -> Respond,Performance,Update API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00113,API,grpc,grpc,B2B API,Auth -> Call -> Verify -> Log,UI,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00114,API,grpc,grpc,Partner API,Create -> Validate -> Respond,Functional,Reject API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00115,API,grpc,grpc,B2B API,Sync -> Retry -> Recover,Performance,Search API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00116,API,grpc,grpc,B2B API,Schema -> Contract -> Deploy -> Monitor,UI,Escalate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00117,API,grpc,grpc,Internal API,Sync -> Retry -> Recover,Functional,Restore API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00118,API,grpc,grpc,Partner API,Auth -> Call -> Verify -> Log,Security,Archive API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00119,API,grpc,grpc,Public API,Auth -> Call -> Verify -> Log,Security,Approve API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRP-00120,API,grpc,grpc,Internal API,Auth -> Call -> Verify -> Log,Accessibility,Validate API grpc,API access and test data available,"1. Open grpc.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

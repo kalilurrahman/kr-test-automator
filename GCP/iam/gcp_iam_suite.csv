@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-IAM-00001,GCP,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00002,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,Regression,Validate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00003,GCP,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00004,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00005,GCP,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00006,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Regression,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00007,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Security,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00008,GCP,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Security,Validate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00009,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,Regression,Approve GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00010,GCP,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Clone GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00011,GCP,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00012,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00013,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Performance,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00014,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,UI,Route GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00015,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00016,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00017,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00018,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00019,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Performance,Search GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00020,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Accessibility,Clone GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00021,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Edit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00022,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00023,GCP,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00024,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00025,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Restore GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00026,GCP,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Validate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00027,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Performance,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00028,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Functional,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00029,GCP,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Archive GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00030,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,UI,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00031,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Regression,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00032,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Restore GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00033,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Archive GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00034,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Restore GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00035,GCP,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Archive GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00036,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Reject GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00037,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00038,GCP,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Edit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00039,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00040,GCP,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Edit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00041,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Clone GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00042,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,UI,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00043,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,Functional,Reject GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00044,GCP,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00045,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,UI,Search GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00046,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Reject GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00047,GCP,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00048,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Approve GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00049,GCP,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00050,GCP,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00051,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Search GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00052,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Archive GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00053,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Approve GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00054,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00055,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00056,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Security,Edit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00057,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Approve GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00058,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Validate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00059,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Clone GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00060,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,Integration,Restore GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00061,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Approve GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00062,GCP,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00063,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Archive GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00064,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Accessibility,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00065,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00066,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,UI,Clone GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00067,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Performance,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00068,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,UI,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00069,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Validate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00070,GCP,iam,iam,Platform,Create -> Protect -> Audit -> Report,Performance,Validate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00071,GCP,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,UI,Reject GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00072,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Performance,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00073,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Performance,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00074,GCP,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00075,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,UI,Archive GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00076,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Security,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00077,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Approve GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00078,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00079,GCP,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Submit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00080,GCP,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Route GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00081,GCP,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Reject GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00082,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Performance,Route GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00083,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00084,GCP,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Update GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00085,GCP,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Functional,Route GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00086,GCP,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00087,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,UI,Create GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00088,GCP,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Delete GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00089,GCP,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Edit GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-IAM-00090,GCP,iam,iam,Security,Create -> Protect -> Audit -> Report,Functional,Search GCP iam,GCP access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

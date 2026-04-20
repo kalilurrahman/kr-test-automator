@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "rest",
+      "path": "/API/rest/index.html"
+    },
+    {
+      "key": "graphql",
+      "path": "/API/graphql/index.html"
+    },
+    {
+      "key": "grpc",
+      "path": "/API/grpc/index.html"
+    },
+    {
+      "key": "webhook",
+      "path": "/API/webhook/index.html"
+    },
+    {
+      "key": "auth",
+      "path": "/API/auth/index.html"
+    },
+    {
+      "key": "contract",
+      "path": "/API/contract/index.html"
+    },
+    {
+      "key": "performance",
+      "path": "/API/performance/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/API/security/index.html"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-LOG-00001,Android,login,login,Healthcare,Permission -> Action -> Persist,Accessibility,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00002,Android,login,login,Consumer,Permission -> Action -> Persist,Regression,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00003,Android,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Escalate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00004,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Accessibility,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00005,Android,login,login,Consumer,Permission -> Action -> Persist,Accessibility,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00006,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Approve Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00007,Android,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Create Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00008,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Performance,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00009,Android,login,login,Consumer,Push -> Open -> Verify,UI,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00010,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Edit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00011,Android,login,login,Enterprise,Permission -> Action -> Persist,UI,Approve Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00012,Android,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Regression,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00013,Android,login,login,Enterprise,Push -> Open -> Verify,Regression,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00014,Android,login,login,Consumer,Push -> Open -> Verify,Functional,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00015,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00016,Android,login,login,Healthcare,Push -> Open -> Verify,Accessibility,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00017,Android,login,login,Healthcare,Offline -> Sync -> Resolve,Accessibility,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00018,Android,login,login,Healthcare,Permission -> Action -> Persist,Security,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00019,Android,login,login,Enterprise,Push -> Open -> Verify,Regression,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00020,Android,login,login,FinTech,Push -> Open -> Verify,Security,Delete Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00021,Android,login,login,Healthcare,Push -> Open -> Verify,Accessibility,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00022,Android,login,login,Healthcare,Push -> Open -> Verify,Performance,Escalate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00023,Android,login,login,Consumer,Permission -> Action -> Persist,Accessibility,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00024,Android,login,login,FinTech,Push -> Open -> Verify,Functional,Approve Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00025,Android,login,login,FinTech,Push -> Open -> Verify,UI,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00026,Android,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00027,Android,login,login,FinTech,Push -> Open -> Verify,Functional,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00028,Android,login,login,FinTech,Permission -> Action -> Persist,Accessibility,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00029,Android,login,login,Consumer,Permission -> Action -> Persist,Performance,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00030,Android,login,login,Healthcare,Permission -> Action -> Persist,UI,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00031,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00032,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Accessibility,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00033,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Delete Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00034,Android,login,login,Enterprise,Permission -> Action -> Persist,Integration,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00035,Android,login,login,FinTech,Permission -> Action -> Persist,UI,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00036,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00037,Android,login,login,FinTech,Push -> Open -> Verify,Accessibility,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00038,Android,login,login,Healthcare,Push -> Open -> Verify,Regression,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00039,Android,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00040,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Escalate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00041,Android,login,login,Enterprise,Push -> Open -> Verify,Performance,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00042,Android,login,login,Consumer,Push -> Open -> Verify,UI,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00043,Android,login,login,Healthcare,Offline -> Sync -> Resolve,UI,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00044,Android,login,login,Consumer,Permission -> Action -> Persist,Performance,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00045,Android,login,login,Healthcare,Push -> Open -> Verify,Performance,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00046,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Delete Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00047,Android,login,login,Consumer,Permission -> Action -> Persist,Regression,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00048,Android,login,login,FinTech,Offline -> Sync -> Resolve,Functional,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00049,Android,login,login,Enterprise,Push -> Open -> Verify,Functional,Approve Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00050,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00051,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00052,Android,login,login,Enterprise,Permission -> Action -> Persist,Integration,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00053,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Integration,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00054,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00055,Android,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Escalate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00056,Android,login,login,FinTech,Permission -> Action -> Persist,UI,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00057,Android,login,login,Enterprise,Push -> Open -> Verify,Security,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00058,Android,login,login,Enterprise,Push -> Open -> Verify,Functional,Approve Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00059,Android,login,login,Enterprise,Push -> Open -> Verify,Functional,Edit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00060,Android,login,login,Healthcare,Push -> Open -> Verify,Accessibility,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00061,Android,login,login,Healthcare,Push -> Open -> Verify,Performance,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00062,Android,login,login,FinTech,Push -> Open -> Verify,Functional,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00063,Android,login,login,Healthcare,Permission -> Action -> Persist,Performance,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00064,Android,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00065,Android,login,login,FinTech,Offline -> Sync -> Resolve,Functional,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00066,Android,login,login,FinTech,Offline -> Sync -> Resolve,Performance,Create Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00067,Android,login,login,FinTech,Offline -> Sync -> Resolve,Accessibility,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00068,Android,login,login,Consumer,Permission -> Action -> Persist,Regression,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00069,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00070,Android,login,login,Consumer,Offline -> Sync -> Resolve,UI,Delete Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00071,Android,login,login,FinTech,Push -> Open -> Verify,Functional,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00072,Android,login,login,Enterprise,Permission -> Action -> Persist,UI,Create Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00073,Android,login,login,Enterprise,Permission -> Action -> Persist,Regression,Edit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00074,Android,login,login,Consumer,Offline -> Sync -> Resolve,UI,Escalate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00075,Android,login,login,Healthcare,Permission -> Action -> Persist,Functional,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00076,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Accessibility,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00077,Android,login,login,FinTech,Permission -> Action -> Persist,Regression,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00078,Android,login,login,Enterprise,Permission -> Action -> Persist,Integration,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00079,Android,login,login,Consumer,Push -> Open -> Verify,Functional,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00080,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Security,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00081,Android,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Route Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00082,Android,login,login,Healthcare,Offline -> Sync -> Resolve,Integration,Create Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00083,Android,login,login,Consumer,Permission -> Action -> Persist,Security,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00084,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Submit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00085,Android,login,login,Healthcare,Push -> Open -> Verify,Accessibility,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00086,Android,login,login,Consumer,Permission -> Action -> Persist,Security,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00087,Android,login,login,Consumer,Push -> Open -> Verify,Security,Validate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00088,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00089,Android,login,login,Consumer,Permission -> Action -> Persist,UI,Delete Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00090,Android,login,login,Enterprise,Push -> Open -> Verify,Accessibility,Update Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00091,Android,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Reject Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00092,Android,login,login,FinTech,Offline -> Sync -> Resolve,UI,Edit Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00093,Android,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00094,Android,login,login,Enterprise,Push -> Open -> Verify,UI,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00095,Android,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Search Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00096,Android,login,login,Enterprise,Offline -> Sync -> Resolve,Integration,Archive Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00097,Android,login,login,Enterprise,Permission -> Action -> Persist,Regression,Escalate Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00098,Android,login,login,FinTech,Offline -> Sync -> Resolve,Functional,Delete Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00099,Android,login,login,FinTech,Permission -> Action -> Persist,Regression,Clone Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-LOG-00100,Android,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Restore Android login,Android access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

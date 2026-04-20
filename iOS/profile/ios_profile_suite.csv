@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-PRO-00001,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Performance,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00002,iOS,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00003,iOS,profile,profile,Enterprise,Offline -> Sync -> Resolve,Regression,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00004,iOS,profile,profile,Healthcare,Push -> Open -> Verify,Security,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00005,iOS,profile,profile,Consumer,Push -> Open -> Verify,Integration,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00006,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Integration,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00007,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,Integration,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00008,iOS,profile,profile,Consumer,Permission -> Action -> Persist,Accessibility,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00009,iOS,profile,profile,Consumer,Permission -> Action -> Persist,Accessibility,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00010,iOS,profile,profile,Enterprise,Offline -> Sync -> Resolve,Regression,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00011,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Security,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00012,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00013,iOS,profile,profile,Healthcare,Push -> Open -> Verify,Integration,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00014,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Regression,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00015,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Functional,Update iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00016,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Accessibility,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00017,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00018,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,Functional,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00019,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Integration,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00020,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Performance,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00021,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Functional,Clone iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00022,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Performance,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00023,iOS,profile,profile,FinTech,Push -> Open -> Verify,Functional,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00024,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,Security,Search iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00025,iOS,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00026,iOS,profile,profile,FinTech,Push -> Open -> Verify,Integration,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00027,iOS,profile,profile,FinTech,Push -> Open -> Verify,UI,Update iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00028,iOS,profile,profile,Enterprise,Offline -> Sync -> Resolve,Integration,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00029,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Clone iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00030,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,Security,Search iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00031,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,UI,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00032,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,Accessibility,Route iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00033,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Integration,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00034,iOS,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00035,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,Functional,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00036,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,Performance,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00037,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,UI,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00038,iOS,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,Regression,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00039,iOS,profile,profile,Consumer,Permission -> Action -> Persist,Regression,Search iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00040,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,UI,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00041,iOS,profile,profile,FinTech,Push -> Open -> Verify,Accessibility,Update iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00042,iOS,profile,profile,Consumer,Push -> Open -> Verify,Regression,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00043,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Performance,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00044,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Performance,Route iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00045,iOS,profile,profile,Healthcare,Push -> Open -> Verify,UI,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00046,iOS,profile,profile,Enterprise,Offline -> Sync -> Resolve,Functional,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00047,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00048,iOS,profile,profile,FinTech,Push -> Open -> Verify,Functional,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00049,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Performance,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00050,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,UI,Route iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00051,iOS,profile,profile,Consumer,Permission -> Action -> Persist,Functional,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00052,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,UI,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00053,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,UI,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00054,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,UI,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00055,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Functional,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00056,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00057,iOS,profile,profile,Consumer,Permission -> Action -> Persist,Performance,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00058,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00059,iOS,profile,profile,FinTech,Permission -> Action -> Persist,UI,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00060,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Security,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00061,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Integration,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00062,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Regression,Route iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00063,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,Security,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00064,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Security,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00065,iOS,profile,profile,FinTech,Permission -> Action -> Persist,Regression,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00066,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Integration,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00067,iOS,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00068,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,Accessibility,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00069,iOS,profile,profile,Consumer,Push -> Open -> Verify,Accessibility,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00070,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Accessibility,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00071,iOS,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00072,iOS,profile,profile,FinTech,Permission -> Action -> Persist,Performance,Escalate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00073,iOS,profile,profile,FinTech,Push -> Open -> Verify,Performance,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00074,iOS,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00075,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,Accessibility,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00076,iOS,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00077,iOS,profile,profile,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Route iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00078,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Functional,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00079,iOS,profile,profile,Enterprise,Push -> Open -> Verify,Functional,Clone iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00080,iOS,profile,profile,FinTech,Offline -> Sync -> Resolve,Functional,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00081,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Performance,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00082,iOS,profile,profile,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Delete iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00083,iOS,profile,profile,FinTech,Push -> Open -> Verify,Performance,Restore iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00084,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,Security,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00085,iOS,profile,profile,Consumer,Offline -> Sync -> Resolve,Accessibility,Clone iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00086,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,Accessibility,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00087,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Regression,Search iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00088,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Security,Validate iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00089,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,Regression,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00090,iOS,profile,profile,Healthcare,Push -> Open -> Verify,UI,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00091,iOS,profile,profile,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Approve iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00092,iOS,profile,profile,Enterprise,Permission -> Action -> Persist,Performance,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00093,iOS,profile,profile,Healthcare,Push -> Open -> Verify,Security,Archive iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00094,iOS,profile,profile,Enterprise,Offline -> Sync -> Resolve,Integration,Route iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00095,iOS,profile,profile,Consumer,Push -> Open -> Verify,Regression,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00096,iOS,profile,profile,Healthcare,Offline -> Sync -> Resolve,Integration,Edit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00097,iOS,profile,profile,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00098,iOS,profile,profile,FinTech,Push -> Open -> Verify,Functional,Reject iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00099,iOS,profile,profile,Healthcare,Push -> Open -> Verify,Functional,Submit iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PRO-00100,iOS,profile,profile,Healthcare,Permission -> Action -> Persist,Regression,Create iOS profile,iOS access and test data available,"1. Open profile.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"

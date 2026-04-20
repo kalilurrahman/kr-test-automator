@@ -1,0 +1,1 @@
+Connect GitHub repo, use /Android/index.html as entry, keep GitHub source of truth.

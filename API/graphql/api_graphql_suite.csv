@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-GRA-00001,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Functional,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00002,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Regression,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00003,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,UI,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00004,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Functional,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00005,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00006,API,graphql,graphql,B2B API,Create -> Validate -> Respond,UI,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00007,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,Integration,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00008,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Accessibility,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00009,API,graphql,graphql,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00010,API,graphql,graphql,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00011,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00012,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,Performance,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00013,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00014,API,graphql,graphql,Public API,Create -> Validate -> Respond,Regression,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00015,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00016,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,Accessibility,Delete API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00017,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,Functional,Approve API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00018,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Accessibility,Update API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00019,API,graphql,graphql,Public API,Create -> Validate -> Respond,Security,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00020,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Functional,Update API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00021,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00022,API,graphql,graphql,Internal API,Auth -> Call -> Verify -> Log,Security,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00023,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,Performance,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00024,API,graphql,graphql,B2B API,Auth -> Call -> Verify -> Log,Security,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00025,API,graphql,graphql,B2B API,Create -> Validate -> Respond,Security,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00026,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Security,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00027,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,Performance,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00028,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Security,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00029,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Performance,Update API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00030,API,graphql,graphql,Partner API,Create -> Validate -> Respond,UI,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00031,API,graphql,graphql,Public API,Create -> Validate -> Respond,Accessibility,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00032,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Security,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00033,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00034,API,graphql,graphql,Internal API,Auth -> Call -> Verify -> Log,Integration,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00035,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Integration,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00036,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Accessibility,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00037,API,graphql,graphql,B2B API,Auth -> Call -> Verify -> Log,UI,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00038,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00039,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00040,API,graphql,graphql,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00041,API,graphql,graphql,Public API,Create -> Validate -> Respond,Security,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00042,API,graphql,graphql,Partner API,Sync -> Retry -> Recover,Integration,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00043,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Performance,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00044,API,graphql,graphql,B2B API,Sync -> Retry -> Recover,Security,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00045,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00046,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,UI,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00047,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,Regression,Approve API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00048,API,graphql,graphql,B2B API,Sync -> Retry -> Recover,Performance,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00049,API,graphql,graphql,B2B API,Sync -> Retry -> Recover,Security,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00050,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Integration,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00051,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Integration,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00052,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,Performance,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00053,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Performance,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00054,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Performance,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00055,API,graphql,graphql,B2B API,Create -> Validate -> Respond,Integration,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00056,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Update API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00057,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Performance,Update API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00058,API,graphql,graphql,Public API,Create -> Validate -> Respond,Security,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00059,API,graphql,graphql,B2B API,Create -> Validate -> Respond,Regression,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00060,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Integration,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00061,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Integration,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00062,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,Security,Delete API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00063,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Performance,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00064,API,graphql,graphql,Public API,Sync -> Retry -> Recover,UI,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00065,API,graphql,graphql,Internal API,Auth -> Call -> Verify -> Log,Performance,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00066,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Security,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00067,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,Performance,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00068,API,graphql,graphql,Public API,Create -> Validate -> Respond,Functional,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00069,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,UI,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00070,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Accessibility,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00071,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,Accessibility,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00072,API,graphql,graphql,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00073,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,Security,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00074,API,graphql,graphql,Partner API,Sync -> Retry -> Recover,Security,Delete API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00075,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,Functional,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00076,API,graphql,graphql,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Delete API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00077,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00078,API,graphql,graphql,Internal API,Create -> Validate -> Respond,UI,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00079,API,graphql,graphql,Partner API,Sync -> Retry -> Recover,Integration,Escalate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00080,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00081,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,Regression,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00082,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Regression,Delete API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00083,API,graphql,graphql,B2B API,Auth -> Call -> Verify -> Log,Integration,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00084,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00085,API,graphql,graphql,B2B API,Create -> Validate -> Respond,Regression,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00086,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Delete API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00087,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00088,API,graphql,graphql,Partner API,Sync -> Retry -> Recover,UI,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00089,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Integration,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00090,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,UI,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00091,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00092,API,graphql,graphql,B2B API,Sync -> Retry -> Recover,Functional,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00093,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,UI,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00094,API,graphql,graphql,Partner API,Sync -> Retry -> Recover,Accessibility,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00095,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Functional,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00096,API,graphql,graphql,B2B API,Create -> Validate -> Respond,Regression,Approve API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00097,API,graphql,graphql,Public API,Create -> Validate -> Respond,Regression,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00098,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Security,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00099,API,graphql,graphql,Internal API,Sync -> Retry -> Recover,Integration,Update API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00100,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00101,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Security,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00102,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Validate API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00103,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,UI,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00104,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00105,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00106,API,graphql,graphql,Public API,Auth -> Call -> Verify -> Log,UI,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00107,API,graphql,graphql,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00108,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Clone API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00109,API,graphql,graphql,Internal API,Create -> Validate -> Respond,Accessibility,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00110,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Security,Edit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00111,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,Integration,Archive API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00112,API,graphql,graphql,B2B API,Sync -> Retry -> Recover,Functional,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00113,API,graphql,graphql,Public API,Sync -> Retry -> Recover,Integration,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00114,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Route API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00115,API,graphql,graphql,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Create API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00116,API,graphql,graphql,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Search API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00117,API,graphql,graphql,B2B API,Sync -> Retry -> Recover,Security,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00118,API,graphql,graphql,Partner API,Auth -> Call -> Verify -> Log,UI,Reject API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00119,API,graphql,graphql,Partner API,Create -> Validate -> Respond,Integration,Restore API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-GRA-00120,API,graphql,graphql,Public API,Schema -> Contract -> Deploy -> Monitor,Integration,Submit API graphql,API access and test data available,"1. Open graphql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

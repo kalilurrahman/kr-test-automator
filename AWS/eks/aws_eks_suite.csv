@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-EKS-00001,AWS,eks,eks,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00002,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Accessibility,Route AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00003,AWS,eks,eks,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Search AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00004,AWS,eks,eks,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00005,AWS,eks,eks,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00006,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Route AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00007,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00008,AWS,eks,eks,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00009,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Regression,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00010,AWS,eks,eks,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00011,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Performance,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00012,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00013,AWS,eks,eks,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00014,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00015,AWS,eks,eks,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Approve AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00016,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Security,Validate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00017,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Security,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00018,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00019,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Approve AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00020,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Regression,Route AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00021,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Security,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00022,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00023,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00024,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,UI,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00025,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00026,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00027,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00028,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00029,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00030,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,UI,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00031,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Validate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00032,AWS,eks,eks,Data,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00033,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Performance,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00034,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00035,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Regression,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00036,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Integration,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00037,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Integration,Search AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00038,AWS,eks,eks,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00039,AWS,eks,eks,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Approve AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00040,AWS,eks,eks,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00041,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00042,AWS,eks,eks,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00043,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Regression,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00044,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Performance,Reject AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00045,AWS,eks,eks,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00046,AWS,eks,eks,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00047,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Functional,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00048,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00049,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Reject AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00050,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Search AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00051,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Performance,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00052,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Validate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00053,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Integration,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00054,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Accessibility,Reject AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00055,AWS,eks,eks,Data,Provision -> Validate -> Monitor -> Remediate,Security,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00056,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Security,Reject AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00057,AWS,eks,eks,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00058,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00059,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00060,AWS,eks,eks,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00061,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Performance,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00062,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Escalate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00063,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00064,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Security,Search AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00065,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Security,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00066,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Performance,Reject AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00067,AWS,eks,eks,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00068,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Regression,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00069,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00070,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Functional,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00071,AWS,eks,eks,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00072,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Approve AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00073,AWS,eks,eks,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00074,AWS,eks,eks,Data,Create -> Protect -> Audit -> Report,Security,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00075,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Security,Delete AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00076,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,UI,Clone AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00077,AWS,eks,eks,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00078,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Edit AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00079,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,UI,Escalate AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00080,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Functional,Restore AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00081,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Security,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00082,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Functional,Search AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00083,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Functional,Create AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00084,AWS,eks,eks,Security,Create -> Protect -> Audit -> Report,Regression,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00085,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00086,AWS,eks,eks,DevOps,Create -> Protect -> Audit -> Report,Security,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00087,AWS,eks,eks,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00088,AWS,eks,eks,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00089,AWS,eks,eks,Platform,Create -> Protect -> Audit -> Report,Security,Archive AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-EKS-00090,AWS,eks,eks,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS eks,AWS access and test data available,"1. Open eks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

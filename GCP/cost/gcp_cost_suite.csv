@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-COS-00001,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Accessibility,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00002,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Restore GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00003,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Integration,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00004,GCP,cost,cost,Data,Create -> Protect -> Audit -> Report,Performance,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00005,GCP,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00006,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00007,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Performance,Route GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00008,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Performance,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00009,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00010,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00011,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00012,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00013,GCP,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Security,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00014,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Security,Search GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00015,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,UI,Route GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00016,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Functional,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00017,GCP,cost,cost,Data,Create -> Protect -> Audit -> Report,Performance,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00018,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Security,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00019,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Restore GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00020,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Security,Route GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00021,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00022,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Security,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00023,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Accessibility,Search GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00024,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00025,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Security,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00026,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,UI,Delete GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00027,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Integration,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00028,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00029,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00030,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00031,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Route GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00032,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00033,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Integration,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00034,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00035,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Create GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00036,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00037,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Search GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00038,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,UI,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00039,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00040,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Delete GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00041,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Integration,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00042,GCP,cost,cost,Data,Create -> Protect -> Audit -> Report,Accessibility,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00043,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00044,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00045,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Restore GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00046,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Restore GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00047,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00048,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00049,GCP,cost,cost,Data,Create -> Protect -> Audit -> Report,Security,Delete GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00050,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00051,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00052,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00053,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Security,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00054,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00055,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00056,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00057,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,UI,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00058,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00059,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Functional,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00060,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,UI,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00061,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00062,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00063,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00064,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Regression,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00065,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00066,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Performance,Search GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00067,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Update GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00068,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00069,GCP,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Validate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00070,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00071,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00072,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Regression,Archive GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00073,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00074,GCP,cost,cost,Data,Create -> Protect -> Audit -> Report,UI,Delete GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00075,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Performance,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00076,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Validate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00077,GCP,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00078,GCP,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Clone GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00079,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Validate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00080,GCP,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Reject GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00081,GCP,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Security,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00082,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Search GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00083,GCP,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00084,GCP,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Approve GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00085,GCP,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,UI,Validate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00086,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,UI,Validate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00087,GCP,cost,cost,Platform,Create -> Protect -> Audit -> Report,Security,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00088,GCP,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Security,Validate GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00089,GCP,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Submit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COS-00090,GCP,cost,cost,Security,Create -> Protect -> Audit -> Report,Accessibility,Edit GCP cost,GCP access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

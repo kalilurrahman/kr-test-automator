@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-S3-00001,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,UI,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00002,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00003,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00004,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Accessibility,Clone AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00005,AWS,s3,s3,DevOps,Create -> Protect -> Audit -> Report,Security,Search AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00006,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00007,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Clone AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00008,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00009,AWS,s3,s3,DevOps,Create -> Protect -> Audit -> Report,Regression,Submit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00010,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00011,AWS,s3,s3,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Submit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00012,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Integration,Update AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00013,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00014,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00015,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00016,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00017,AWS,s3,s3,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00018,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Approve AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00019,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Performance,Edit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00020,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00021,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00022,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Security,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00023,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00024,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,UI,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00025,AWS,s3,s3,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00026,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00027,AWS,s3,s3,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00028,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00029,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00030,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Search AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00031,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00032,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,Functional,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00033,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,UI,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00034,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Clone AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00035,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,UI,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00036,AWS,s3,s3,DevOps,Create -> Protect -> Audit -> Report,Regression,Validate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00037,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Validate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00038,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00039,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00040,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,Security,Approve AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00041,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Edit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00042,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Integration,Edit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00043,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00044,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,Regression,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00045,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00046,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,Functional,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00047,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00048,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Update AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00049,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00050,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00051,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,Accessibility,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00052,AWS,s3,s3,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00053,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00054,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Security,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00055,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00056,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Submit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00057,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00058,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00059,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Clone AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00060,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00061,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Update AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00062,AWS,s3,s3,Data,Create -> Protect -> Audit -> Report,Regression,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00063,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Security,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00064,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,UI,Approve AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00065,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Security,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00066,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00067,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00068,AWS,s3,s3,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Approve AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00069,AWS,s3,s3,Data,Create -> Protect -> Audit -> Report,Integration,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00070,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00071,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00072,AWS,s3,s3,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00073,AWS,s3,s3,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Route AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00074,AWS,s3,s3,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Validate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00075,AWS,s3,s3,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Clone AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00076,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,Accessibility,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00077,AWS,s3,s3,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Approve AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00078,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00079,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Regression,Delete AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00080,AWS,s3,s3,Platform,Create -> Protect -> Audit -> Report,Integration,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00081,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Reject AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00082,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00083,AWS,s3,s3,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00084,AWS,s3,s3,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00085,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Performance,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00086,AWS,s3,s3,Data,Create -> Protect -> Audit -> Report,UI,Restore AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00087,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,UI,Archive AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00088,AWS,s3,s3,Security,Create -> Protect -> Audit -> Report,Regression,Search AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00089,AWS,s3,s3,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Validate AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-S3-00090,AWS,s3,s3,Data,Deploy -> Scale -> Observe -> Rollback,Security,Edit AWS s3,AWS access and test data available,"1. Open s3.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

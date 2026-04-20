@@ -1,0 +1,331 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+WEB-AUT-00001,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Integration,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00002,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Security,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00003,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Integration,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00004,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Security,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00005,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,UI,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00006,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Security,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00007,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,UI,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00008,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Performance,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00009,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,UI,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00010,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Security,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00011,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Security,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00012,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Accessibility,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00013,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Security,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00014,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Functional,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00015,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Security,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00016,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Regression,Approve WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00017,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Security,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00018,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Performance,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00019,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,UI,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00020,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,UI,Escalate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00021,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Accessibility,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00022,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Security,Approve WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00023,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Integration,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00024,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00025,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Accessibility,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00026,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Integration,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00027,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Functional,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00028,WebApps,auth,auth,Media,Browse -> Add -> Checkout -> Confirm,Regression,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00029,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Edit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00030,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Functional,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00031,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Performance,Approve WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00032,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Security,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00033,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00034,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00035,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Performance,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00036,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Regression,Escalate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00037,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Functional,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00038,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,UI,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00039,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Accessibility,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00040,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00041,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Accessibility,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00042,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00043,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00044,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Functional,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00045,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Functional,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00046,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Functional,Approve WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00047,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,UI,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00048,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Functional,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00049,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Accessibility,Delete WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00050,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Security,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00051,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Accessibility,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00052,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Performance,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00053,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Performance,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00054,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Security,Escalate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00055,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Regression,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00056,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,UI,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00057,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Accessibility,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00058,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Functional,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00059,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Performance,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00060,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Performance,Escalate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00061,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Security,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00062,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Accessibility,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00063,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Performance,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00064,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Performance,Edit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00065,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Regression,Escalate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00066,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Delete WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00067,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Performance,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00068,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00069,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Regression,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00070,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00071,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Performance,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00072,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,UI,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00073,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Accessibility,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00074,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00075,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Security,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00076,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Security,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00077,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Accessibility,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00078,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Security,Submit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00079,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Accessibility,Escalate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00080,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,UI,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00081,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Security,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00082,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,UI,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00083,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Regression,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00084,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Regression,Approve WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00085,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Functional,Delete WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00086,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Integration,Search WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00087,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,Functional,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00088,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Functional,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00089,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Security,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00090,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Accessibility,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00091,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Performance,Create WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00092,WebApps,auth,auth,Retail,Browse -> Add -> Checkout -> Confirm,Accessibility,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00093,WebApps,auth,auth,SaaS,Open -> Authenticate -> Use -> Close,Integration,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00094,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Clone WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00095,WebApps,auth,auth,Media,Browse -> Add -> Checkout -> Confirm,Integration,Clone WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00096,WebApps,auth,auth,SaaS,Browse -> Add -> Checkout -> Confirm,Accessibility,Reject WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00097,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Functional,Route WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00098,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Functional,Delete WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00099,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Functional,Delete WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00100,WebApps,auth,auth,Media,Render -> Interact -> Persist -> Report,Regression,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00101,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,Regression,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00102,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,Performance,Restore WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00103,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,Security,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00104,WebApps,auth,auth,Marketplace,Render -> Interact -> Persist -> Report,UI,Edit WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00105,WebApps,auth,auth,SaaS,Render -> Interact -> Persist -> Report,UI,Clone WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00106,WebApps,auth,auth,Marketplace,Browse -> Add -> Checkout -> Confirm,Accessibility,Approve WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00107,WebApps,auth,auth,Marketplace,Open -> Authenticate -> Use -> Close,UI,Update WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00108,WebApps,auth,auth,Retail,Render -> Interact -> Persist -> Report,Performance,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00109,WebApps,auth,auth,Retail,Open -> Authenticate -> Use -> Close,UI,Archive WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-AUT-00110,WebApps,auth,auth,Media,Open -> Authenticate -> Use -> Close,Performance,Validate WebApps auth,WebApps access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"

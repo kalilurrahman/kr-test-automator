@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-LAM-00001,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,Regression,Escalate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00002,AWS,lambda,lambda,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00003,AWS,lambda,lambda,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00004,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00005,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,UI,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00006,AWS,lambda,lambda,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Search AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00007,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,Security,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00008,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,Regression,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00009,AWS,lambda,lambda,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00010,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,Regression,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00011,AWS,lambda,lambda,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Search AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00012,AWS,lambda,lambda,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00013,AWS,lambda,lambda,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Clone AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00014,AWS,lambda,lambda,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00015,AWS,lambda,lambda,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Search AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00016,AWS,lambda,lambda,Data,Create -> Protect -> Audit -> Report,Regression,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00017,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,Accessibility,Clone AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00018,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,UI,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00019,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,UI,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00020,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,UI,Restore AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00021,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,UI,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00022,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,Accessibility,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00023,AWS,lambda,lambda,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Archive AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00024,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00025,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00026,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00027,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Functional,Clone AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00028,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,UI,Search AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00029,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Integration,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00030,AWS,lambda,lambda,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00031,AWS,lambda,lambda,Data,Create -> Protect -> Audit -> Report,Integration,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00032,AWS,lambda,lambda,Data,Create -> Protect -> Audit -> Report,Integration,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00033,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Security,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00034,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,Accessibility,Restore AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00035,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,Accessibility,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00036,AWS,lambda,lambda,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Archive AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00037,AWS,lambda,lambda,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00038,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,Regression,Restore AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00039,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00040,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,UI,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00041,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00042,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00043,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Security,Reject AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00044,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00045,AWS,lambda,lambda,Data,Create -> Protect -> Audit -> Report,Regression,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00046,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,UI,Restore AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00047,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,UI,Clone AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00048,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00049,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00050,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Search AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00051,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00052,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00053,AWS,lambda,lambda,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00054,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00055,AWS,lambda,lambda,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00056,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,UI,Archive AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00057,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Regression,Clone AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00058,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00059,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00060,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Integration,Escalate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00061,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00062,AWS,lambda,lambda,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00063,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00064,AWS,lambda,lambda,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00065,AWS,lambda,lambda,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00066,AWS,lambda,lambda,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00067,AWS,lambda,lambda,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00068,AWS,lambda,lambda,Security,Provision -> Validate -> Monitor -> Remediate,Security,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00069,AWS,lambda,lambda,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00070,AWS,lambda,lambda,Data,Create -> Protect -> Audit -> Report,Performance,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00071,AWS,lambda,lambda,Platform,Create -> Protect -> Audit -> Report,Accessibility,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00072,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00073,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00074,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00075,AWS,lambda,lambda,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00076,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,Security,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00077,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00078,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,Security,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00079,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Validate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00080,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Integration,Submit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00081,AWS,lambda,lambda,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00082,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Performance,Edit AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00083,AWS,lambda,lambda,DevOps,Create -> Protect -> Audit -> Report,Integration,Route AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00084,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,UI,Escalate AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00085,AWS,lambda,lambda,Security,Create -> Protect -> Audit -> Report,UI,Restore AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00086,AWS,lambda,lambda,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Approve AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00087,AWS,lambda,lambda,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00088,AWS,lambda,lambda,Security,Provision -> Validate -> Monitor -> Remediate,UI,Delete AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00089,AWS,lambda,lambda,Data,Create -> Protect -> Audit -> Report,Functional,Create AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-LAM-00090,AWS,lambda,lambda,Data,Provision -> Validate -> Monitor -> Remediate,UI,Update AWS lambda,AWS access and test data available,"1. Open lambda.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

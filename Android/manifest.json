@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "onboarding",
+      "path": "/Android/onboarding/index.html"
+    },
+    {
+      "key": "login",
+      "path": "/Android/login/index.html"
+    },
+    {
+      "key": "profile",
+      "path": "/Android/profile/index.html"
+    },
+    {
+      "key": "payments",
+      "path": "/Android/payments/index.html"
+    },
+    {
+      "key": "notifications",
+      "path": "/Android/notifications/index.html"
+    },
+    {
+      "key": "offline",
+      "path": "/Android/offline/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/Android/security/index.html"
+    },
+    {
+      "key": "performance",
+      "path": "/Android/performance/index.html"
+    }
+  ]
+}

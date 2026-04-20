@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-WEB-00001,API,webhook,webhook,Internal API,Create -> Validate -> Respond,Integration,Validate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00002,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Performance,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00003,API,webhook,webhook,Internal API,Create -> Validate -> Respond,Integration,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00004,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Functional,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00005,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00006,API,webhook,webhook,Internal API,Sync -> Retry -> Recover,Regression,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00007,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Integration,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00008,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Regression,Update API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00009,API,webhook,webhook,B2B API,Create -> Validate -> Respond,Integration,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00010,API,webhook,webhook,Partner API,Auth -> Call -> Verify -> Log,Integration,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00011,API,webhook,webhook,Internal API,Create -> Validate -> Respond,Security,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00012,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,UI,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00013,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Security,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00014,API,webhook,webhook,Internal API,Sync -> Retry -> Recover,Accessibility,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00015,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Integration,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00016,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Security,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00017,API,webhook,webhook,B2B API,Create -> Validate -> Respond,Regression,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00018,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00019,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Regression,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00020,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Accessibility,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00021,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Regression,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00022,API,webhook,webhook,Public API,Create -> Validate -> Respond,Integration,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00023,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Update API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00024,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Performance,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00025,API,webhook,webhook,B2B API,Create -> Validate -> Respond,UI,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00026,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Performance,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00027,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Security,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00028,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Performance,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00029,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Security,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00030,API,webhook,webhook,Public API,Auth -> Call -> Verify -> Log,Accessibility,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00031,API,webhook,webhook,Internal API,Create -> Validate -> Respond,Accessibility,Update API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00032,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Security,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00033,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,UI,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00034,API,webhook,webhook,Public API,Create -> Validate -> Respond,Functional,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00035,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00036,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Regression,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00037,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00038,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Security,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00039,API,webhook,webhook,Public API,Auth -> Call -> Verify -> Log,Functional,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00040,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00041,API,webhook,webhook,Public API,Auth -> Call -> Verify -> Log,Performance,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00042,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00043,API,webhook,webhook,Public API,Create -> Validate -> Respond,Security,Create API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00044,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Regression,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00045,API,webhook,webhook,Internal API,Auth -> Call -> Verify -> Log,Performance,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00046,API,webhook,webhook,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00047,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Accessibility,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00048,API,webhook,webhook,Public API,Create -> Validate -> Respond,Integration,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00049,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Integration,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00050,API,webhook,webhook,Public API,Sync -> Retry -> Recover,UI,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00051,API,webhook,webhook,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00052,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Security,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00053,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Security,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00054,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Performance,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00055,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Create API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00056,API,webhook,webhook,B2B API,Create -> Validate -> Respond,Functional,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00057,API,webhook,webhook,Internal API,Create -> Validate -> Respond,UI,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00058,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Functional,Validate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00059,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Integration,Update API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00060,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Functional,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00061,API,webhook,webhook,Partner API,Create -> Validate -> Respond,UI,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00062,API,webhook,webhook,B2B API,Create -> Validate -> Respond,Integration,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00063,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Create API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00064,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Performance,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00065,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Performance,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00066,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00067,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Security,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00068,API,webhook,webhook,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00069,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Integration,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00070,API,webhook,webhook,Internal API,Auth -> Call -> Verify -> Log,Security,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00071,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Regression,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00072,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Accessibility,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00073,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Integration,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00074,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00075,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,UI,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00076,API,webhook,webhook,Public API,Create -> Validate -> Respond,Functional,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00077,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Accessibility,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00078,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Regression,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00079,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Security,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00080,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Regression,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00081,API,webhook,webhook,Internal API,Auth -> Call -> Verify -> Log,Performance,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00082,API,webhook,webhook,Partner API,Auth -> Call -> Verify -> Log,Integration,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00083,API,webhook,webhook,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00084,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Security,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00085,API,webhook,webhook,Public API,Sync -> Retry -> Recover,UI,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00086,API,webhook,webhook,Partner API,Auth -> Call -> Verify -> Log,Functional,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00087,API,webhook,webhook,Internal API,Sync -> Retry -> Recover,Accessibility,Validate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00088,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Integration,Validate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00089,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Accessibility,Create API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00090,API,webhook,webhook,Internal API,Sync -> Retry -> Recover,Integration,Create API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00091,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Integration,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00092,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Security,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00093,API,webhook,webhook,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00094,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00095,API,webhook,webhook,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00096,API,webhook,webhook,Public API,Auth -> Call -> Verify -> Log,UI,Validate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00097,API,webhook,webhook,Partner API,Auth -> Call -> Verify -> Log,Functional,Delete API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00098,API,webhook,webhook,Public API,Create -> Validate -> Respond,Functional,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00099,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00100,API,webhook,webhook,Partner API,Create -> Validate -> Respond,Security,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00101,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Functional,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00102,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Security,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00103,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00104,API,webhook,webhook,Public API,Schema -> Contract -> Deploy -> Monitor,Regression,Create API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00105,API,webhook,webhook,Public API,Auth -> Call -> Verify -> Log,Integration,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00106,API,webhook,webhook,Partner API,Create -> Validate -> Respond,UI,Search API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00107,API,webhook,webhook,B2B API,Sync -> Retry -> Recover,Security,Reject API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00108,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Edit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00109,API,webhook,webhook,Partner API,Sync -> Retry -> Recover,Integration,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00110,API,webhook,webhook,Internal API,Schema -> Contract -> Deploy -> Monitor,Regression,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00111,API,webhook,webhook,Public API,Auth -> Call -> Verify -> Log,UI,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00112,API,webhook,webhook,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00113,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Performance,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00114,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Approve API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00115,API,webhook,webhook,Public API,Sync -> Retry -> Recover,UI,Route API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00116,API,webhook,webhook,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Clone API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00117,API,webhook,webhook,Partner API,Auth -> Call -> Verify -> Log,UI,Restore API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00118,API,webhook,webhook,Internal API,Create -> Validate -> Respond,Performance,Submit API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00119,API,webhook,webhook,Public API,Sync -> Retry -> Recover,Integration,Escalate API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-WEB-00120,API,webhook,webhook,Internal API,Sync -> Retry -> Recover,Functional,Archive API webhook,API access and test data available,"1. Open webhook.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

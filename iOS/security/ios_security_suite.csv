@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-SEC-00001,iOS,security,security,Consumer,Permission -> Action -> Persist,Functional,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00002,iOS,security,security,FinTech,Permission -> Action -> Persist,Security,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00003,iOS,security,security,FinTech,Offline -> Sync -> Resolve,Regression,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00004,iOS,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00005,iOS,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00006,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00007,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Search iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00008,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,Integration,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00009,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00010,iOS,security,security,Enterprise,Push -> Open -> Verify,Integration,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00011,iOS,security,security,FinTech,Push -> Open -> Verify,UI,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00012,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00013,iOS,security,security,Enterprise,Permission -> Action -> Persist,Accessibility,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00014,iOS,security,security,FinTech,Offline -> Sync -> Resolve,Performance,Route iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00015,iOS,security,security,FinTech,Permission -> Action -> Persist,Integration,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00016,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00017,iOS,security,security,FinTech,Permission -> Action -> Persist,Accessibility,Search iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00018,iOS,security,security,Consumer,Push -> Open -> Verify,Regression,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00019,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00020,iOS,security,security,FinTech,Push -> Open -> Verify,Accessibility,Validate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00021,iOS,security,security,FinTech,Push -> Open -> Verify,Functional,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00022,iOS,security,security,Enterprise,Permission -> Action -> Persist,Security,Reject iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00023,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Functional,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00024,iOS,security,security,Healthcare,Push -> Open -> Verify,Integration,Reject iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00025,iOS,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Performance,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00026,iOS,security,security,Consumer,Permission -> Action -> Persist,Performance,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00027,iOS,security,security,Consumer,Offline -> Sync -> Resolve,Functional,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00028,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00029,iOS,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00030,iOS,security,security,Healthcare,Permission -> Action -> Persist,Integration,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00031,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,Regression,Approve iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00032,iOS,security,security,FinTech,Permission -> Action -> Persist,UI,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00033,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00034,iOS,security,security,Enterprise,Push -> Open -> Verify,Accessibility,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00035,iOS,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00036,iOS,security,security,Consumer,Push -> Open -> Verify,Regression,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00037,iOS,security,security,Consumer,Push -> Open -> Verify,Integration,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00038,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,UI,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00039,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Route iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00040,iOS,security,security,Healthcare,Permission -> Action -> Persist,Functional,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00041,iOS,security,security,Healthcare,Push -> Open -> Verify,Performance,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00042,iOS,security,security,FinTech,Permission -> Action -> Persist,Security,Approve iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00043,iOS,security,security,Enterprise,Permission -> Action -> Persist,Security,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00044,iOS,security,security,Consumer,Permission -> Action -> Persist,Accessibility,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00045,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Integration,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00046,iOS,security,security,Enterprise,Permission -> Action -> Persist,Accessibility,Escalate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00047,iOS,security,security,Healthcare,Permission -> Action -> Persist,Performance,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00048,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00049,iOS,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Reject iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00050,iOS,security,security,Consumer,Permission -> Action -> Persist,Performance,Validate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00051,iOS,security,security,FinTech,Permission -> Action -> Persist,Performance,Escalate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00052,iOS,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Reject iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00053,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Escalate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00054,iOS,security,security,Healthcare,Permission -> Action -> Persist,UI,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00055,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Security,Search iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00056,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Performance,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00057,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,Integration,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00058,iOS,security,security,Consumer,Offline -> Sync -> Resolve,Performance,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00059,iOS,security,security,FinTech,Permission -> Action -> Persist,UI,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00060,iOS,security,security,Healthcare,Permission -> Action -> Persist,Regression,Validate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00061,iOS,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00062,iOS,security,security,Consumer,Offline -> Sync -> Resolve,Functional,Validate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00063,iOS,security,security,FinTech,Permission -> Action -> Persist,Integration,Approve iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00064,iOS,security,security,Consumer,Offline -> Sync -> Resolve,Accessibility,Route iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00065,iOS,security,security,Enterprise,Permission -> Action -> Persist,UI,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00066,iOS,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00067,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00068,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00069,iOS,security,security,Consumer,Offline -> Sync -> Resolve,Security,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00070,iOS,security,security,Consumer,Offline -> Sync -> Resolve,Performance,Escalate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00071,iOS,security,security,FinTech,Push -> Open -> Verify,Security,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00072,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,Integration,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00073,iOS,security,security,Enterprise,Permission -> Action -> Persist,Regression,Reject iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00074,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Accessibility,Escalate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00075,iOS,security,security,FinTech,Offline -> Sync -> Resolve,Security,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00076,iOS,security,security,Consumer,Push -> Open -> Verify,Integration,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00077,iOS,security,security,Consumer,Permission -> Action -> Persist,Performance,Search iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00078,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00079,iOS,security,security,FinTech,Push -> Open -> Verify,Functional,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00080,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,Performance,Edit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00081,iOS,security,security,Enterprise,Permission -> Action -> Persist,Functional,Route iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00082,iOS,security,security,Healthcare,Offline -> Sync -> Resolve,Regression,Reject iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00083,iOS,security,security,FinTech,Permission -> Action -> Persist,Accessibility,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00084,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Route iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00085,iOS,security,security,FinTech,Permission -> Action -> Persist,UI,Submit iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00086,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Security,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00087,iOS,security,security,FinTech,Permission -> Action -> Persist,Security,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00088,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00089,iOS,security,security,Enterprise,Push -> Open -> Verify,Security,Clone iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00090,iOS,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Search iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00091,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00092,iOS,security,security,FinTech,Offline -> Sync -> Resolve,Functional,Restore iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00093,iOS,security,security,Enterprise,Push -> Open -> Verify,Performance,Create iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00094,iOS,security,security,FinTech,Permission -> Action -> Persist,Accessibility,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00095,iOS,security,security,Enterprise,Push -> Open -> Verify,Regression,Validate iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00096,iOS,security,security,Enterprise,Offline -> Sync -> Resolve,Regression,Archive iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00097,iOS,security,security,Healthcare,Permission -> Action -> Persist,Accessibility,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00098,iOS,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00099,iOS,security,security,Consumer,Push -> Open -> Verify,Security,Approve iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-SEC-00100,iOS,security,security,Enterprise,Push -> Open -> Verify,UI,Update iOS security,iOS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
