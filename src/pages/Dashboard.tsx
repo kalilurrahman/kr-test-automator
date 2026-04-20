@@ -1,7 +1,7 @@
-import { useState, FormEvent } from "react";
+import { useEffect, useState, FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2 } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
@@ -14,6 +14,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
+import {
+  PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid,
+} from "recharts";
+import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
+
+const PRIORITY_COLORS: Record<string, string> = {
+  High: "hsl(var(--destructive))",
+  Medium: "hsl(var(--primary))",
+  Low: "hsl(var(--muted-foreground))",
+};
 
 const Dashboard = () => {
   const navigate = useNavigate();
