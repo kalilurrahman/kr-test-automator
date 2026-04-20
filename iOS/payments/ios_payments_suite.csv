@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-PAY-00001,iOS,payments,payments,Enterprise,Permission -> Action -> Persist,Performance,Route iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00002,iOS,payments,payments,Consumer,Push -> Open -> Verify,UI,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00003,iOS,payments,payments,Healthcare,Push -> Open -> Verify,UI,Create iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00004,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Create iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00005,iOS,payments,payments,FinTech,Push -> Open -> Verify,UI,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00006,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Functional,Edit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00007,iOS,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00008,iOS,payments,payments,FinTech,Push -> Open -> Verify,Accessibility,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00009,iOS,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Clone iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00010,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Accessibility,Route iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00011,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Regression,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00012,iOS,payments,payments,Enterprise,Offline -> Sync -> Resolve,Performance,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00013,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Regression,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00014,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Accessibility,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00015,iOS,payments,payments,Healthcare,Push -> Open -> Verify,Integration,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00016,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,Accessibility,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00017,iOS,payments,payments,Consumer,Permission -> Action -> Persist,Performance,Route iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00018,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,UI,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00019,iOS,payments,payments,Consumer,Push -> Open -> Verify,Performance,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00020,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Accessibility,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00021,iOS,payments,payments,Consumer,Offline -> Sync -> Resolve,Security,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00022,iOS,payments,payments,FinTech,Push -> Open -> Verify,Regression,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00023,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00024,iOS,payments,payments,Consumer,Push -> Open -> Verify,Security,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00025,iOS,payments,payments,Enterprise,Offline -> Sync -> Resolve,Functional,Clone iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00026,iOS,payments,payments,FinTech,Push -> Open -> Verify,UI,Reject iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00027,iOS,payments,payments,Healthcare,Push -> Open -> Verify,Security,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00028,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,Integration,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00029,iOS,payments,payments,FinTech,Permission -> Action -> Persist,UI,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00030,iOS,payments,payments,Healthcare,Push -> Open -> Verify,Functional,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00031,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,Regression,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00032,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00033,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00034,iOS,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00035,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00036,iOS,payments,payments,Consumer,Push -> Open -> Verify,Integration,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00037,iOS,payments,payments,Enterprise,Offline -> Sync -> Resolve,UI,Reject iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00038,iOS,payments,payments,Enterprise,Push -> Open -> Verify,Functional,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00039,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,Integration,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00040,iOS,payments,payments,Enterprise,Offline -> Sync -> Resolve,Integration,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00041,iOS,payments,payments,Enterprise,Push -> Open -> Verify,UI,Clone iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00042,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,UI,Validate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00043,iOS,payments,payments,Consumer,Push -> Open -> Verify,Functional,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00044,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Accessibility,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00045,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00046,iOS,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00047,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,Regression,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00048,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,UI,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00049,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00050,iOS,payments,payments,FinTech,Push -> Open -> Verify,Regression,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00051,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Performance,Clone iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00052,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,UI,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00053,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,Functional,Edit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00054,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Regression,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00055,iOS,payments,payments,Enterprise,Permission -> Action -> Persist,Performance,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00056,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,UI,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00057,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,Performance,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00058,iOS,payments,payments,Consumer,Offline -> Sync -> Resolve,UI,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00059,iOS,payments,payments,Enterprise,Permission -> Action -> Persist,Security,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00060,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,Performance,Edit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00061,iOS,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00062,iOS,payments,payments,FinTech,Push -> Open -> Verify,Accessibility,Route iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00063,iOS,payments,payments,FinTech,Push -> Open -> Verify,Functional,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00064,iOS,payments,payments,Consumer,Push -> Open -> Verify,Functional,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00065,iOS,payments,payments,Enterprise,Permission -> Action -> Persist,Security,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00066,iOS,payments,payments,Consumer,Offline -> Sync -> Resolve,Performance,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00067,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,Functional,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00068,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00069,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00070,iOS,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00071,iOS,payments,payments,Consumer,Push -> Open -> Verify,Performance,Reject iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00072,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Route iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00073,iOS,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Clone iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00074,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Integration,Submit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00075,iOS,payments,payments,Healthcare,Offline -> Sync -> Resolve,Security,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00076,iOS,payments,payments,FinTech,Offline -> Sync -> Resolve,Integration,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00077,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Create iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00078,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Functional,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00079,iOS,payments,payments,Consumer,Offline -> Sync -> Resolve,Integration,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00080,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,Integration,Route iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00081,iOS,payments,payments,Enterprise,Offline -> Sync -> Resolve,Functional,Edit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00082,iOS,payments,payments,Consumer,Push -> Open -> Verify,UI,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00083,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Integration,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00084,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,UI,Edit iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00085,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Update iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00086,iOS,payments,payments,Enterprise,Offline -> Sync -> Resolve,Functional,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00087,iOS,payments,payments,Enterprise,Push -> Open -> Verify,Regression,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00088,iOS,payments,payments,Healthcare,Permission -> Action -> Persist,UI,Create iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00089,iOS,payments,payments,FinTech,Permission -> Action -> Persist,UI,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00090,iOS,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Approve iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00091,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Archive iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00092,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Regression,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00093,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Accessibility,Search iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00094,iOS,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00095,iOS,payments,payments,Consumer,Offline -> Sync -> Resolve,Security,Clone iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00096,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Performance,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00097,iOS,payments,payments,FinTech,Permission -> Action -> Persist,Regression,Escalate iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00098,iOS,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Restore iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00099,iOS,payments,payments,FinTech,Push -> Open -> Verify,Accessibility,Reject iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PAY-00100,iOS,payments,payments,Enterprise,Permission -> Action -> Persist,Functional,Delete iOS payments,iOS access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"

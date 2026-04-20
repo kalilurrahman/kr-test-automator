@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-PER-00001,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00002,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Performance,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00003,iOS,performance,performance,Healthcare,Permission -> Action -> Persist,Integration,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00004,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00005,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Security,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00006,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00007,iOS,performance,performance,Consumer,Offline -> Sync -> Resolve,UI,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00008,iOS,performance,performance,FinTech,Push -> Open -> Verify,UI,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00009,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00010,iOS,performance,performance,FinTech,Push -> Open -> Verify,Functional,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00011,iOS,performance,performance,Consumer,Offline -> Sync -> Resolve,Functional,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00012,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00013,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Integration,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00014,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00015,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Integration,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00016,iOS,performance,performance,Healthcare,Push -> Open -> Verify,Integration,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00017,iOS,performance,performance,Enterprise,Offline -> Sync -> Resolve,Accessibility,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00018,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Integration,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00019,iOS,performance,performance,Enterprise,Offline -> Sync -> Resolve,UI,Update iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00020,iOS,performance,performance,Healthcare,Offline -> Sync -> Resolve,Integration,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00021,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Performance,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00022,iOS,performance,performance,FinTech,Permission -> Action -> Persist,Integration,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00023,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00024,iOS,performance,performance,FinTech,Push -> Open -> Verify,Regression,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00025,iOS,performance,performance,FinTech,Permission -> Action -> Persist,Accessibility,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00026,iOS,performance,performance,FinTech,Push -> Open -> Verify,Integration,Clone iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00027,iOS,performance,performance,Enterprise,Push -> Open -> Verify,UI,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00028,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Regression,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00029,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00030,iOS,performance,performance,Healthcare,Offline -> Sync -> Resolve,Functional,Reject iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00031,iOS,performance,performance,Enterprise,Permission -> Action -> Persist,Performance,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00032,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Regression,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00033,iOS,performance,performance,FinTech,Push -> Open -> Verify,UI,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00034,iOS,performance,performance,Healthcare,Permission -> Action -> Persist,Functional,Edit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00035,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Integration,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00036,iOS,performance,performance,FinTech,Permission -> Action -> Persist,Functional,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00037,iOS,performance,performance,Consumer,Push -> Open -> Verify,Accessibility,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00038,iOS,performance,performance,Consumer,Push -> Open -> Verify,UI,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00039,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Reject iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00040,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00041,iOS,performance,performance,FinTech,Push -> Open -> Verify,Integration,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00042,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00043,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00044,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Accessibility,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00045,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Functional,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00046,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,UI,Update iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00047,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00048,iOS,performance,performance,Enterprise,Permission -> Action -> Persist,Security,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00049,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Integration,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00050,iOS,performance,performance,Healthcare,Offline -> Sync -> Resolve,Integration,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00051,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Edit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00052,iOS,performance,performance,FinTech,Permission -> Action -> Persist,UI,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00053,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00054,iOS,performance,performance,Healthcare,Permission -> Action -> Persist,Functional,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00055,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Clone iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00056,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00057,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00058,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Create iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00059,iOS,performance,performance,FinTech,Push -> Open -> Verify,Accessibility,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00060,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Performance,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00061,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00062,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Security,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00063,iOS,performance,performance,Healthcare,Offline -> Sync -> Resolve,Performance,Update iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00064,iOS,performance,performance,Consumer,Offline -> Sync -> Resolve,Security,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00065,iOS,performance,performance,Consumer,Push -> Open -> Verify,Performance,Reject iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00066,iOS,performance,performance,Enterprise,Permission -> Action -> Persist,Integration,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00067,iOS,performance,performance,Enterprise,Offline -> Sync -> Resolve,Accessibility,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00068,iOS,performance,performance,Healthcare,Push -> Open -> Verify,Security,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00069,iOS,performance,performance,Healthcare,Offline -> Sync -> Resolve,Performance,Edit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00070,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00071,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00072,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Regression,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00073,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00074,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00075,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00076,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Accessibility,Submit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00077,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00078,iOS,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Search iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00079,iOS,performance,performance,Enterprise,Offline -> Sync -> Resolve,Accessibility,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00080,iOS,performance,performance,FinTech,Permission -> Action -> Persist,Performance,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00081,iOS,performance,performance,FinTech,Push -> Open -> Verify,Functional,Approve iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00082,iOS,performance,performance,FinTech,Permission -> Action -> Persist,Performance,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00083,iOS,performance,performance,Consumer,Permission -> Action -> Persist,Performance,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00084,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Performance,Clone iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00085,iOS,performance,performance,FinTech,Push -> Open -> Verify,Integration,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00086,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Edit iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00087,iOS,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Create iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00088,iOS,performance,performance,Healthcare,Offline -> Sync -> Resolve,Functional,Validate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00089,iOS,performance,performance,Enterprise,Offline -> Sync -> Resolve,Accessibility,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00090,iOS,performance,performance,Consumer,Offline -> Sync -> Resolve,Integration,Reject iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00091,iOS,performance,performance,Healthcare,Permission -> Action -> Persist,Integration,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00092,iOS,performance,performance,Enterprise,Push -> Open -> Verify,Accessibility,Restore iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00093,iOS,performance,performance,Healthcare,Push -> Open -> Verify,Performance,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00094,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Route iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00095,iOS,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Archive iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00096,iOS,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Clone iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00097,iOS,performance,performance,Healthcare,Permission -> Action -> Persist,Integration,Update iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00098,iOS,performance,performance,FinTech,Offline -> Sync -> Resolve,Integration,Escalate iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00099,iOS,performance,performance,Enterprise,Permission -> Action -> Persist,Accessibility,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-PER-00100,iOS,performance,performance,Enterprise,Permission -> Action -> Persist,Performance,Delete iOS performance,iOS access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"

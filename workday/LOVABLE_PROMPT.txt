@@ -1,0 +1,1 @@
+Connect GitHub repo, use /Workday/index.html as entry, mirror SAP/Salesforce style, keep GitHub as source of truth.

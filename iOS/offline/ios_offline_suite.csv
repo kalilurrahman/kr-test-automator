@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-OFF-00001,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,Accessibility,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00002,iOS,offline,offline,Consumer,Push -> Open -> Verify,Security,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00003,iOS,offline,offline,FinTech,Push -> Open -> Verify,Regression,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00004,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,UI,Archive iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00005,iOS,offline,offline,Healthcare,Push -> Open -> Verify,Regression,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00006,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,Regression,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00007,iOS,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00008,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Performance,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00009,iOS,offline,offline,Consumer,Permission -> Action -> Persist,UI,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00010,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,UI,Submit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00011,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,Functional,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00012,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00013,iOS,offline,offline,Consumer,Permission -> Action -> Persist,Accessibility,Restore iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00014,iOS,offline,offline,Consumer,Push -> Open -> Verify,Security,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00015,iOS,offline,offline,FinTech,Push -> Open -> Verify,Regression,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00016,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Integration,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00017,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,UI,Approve iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00018,iOS,offline,offline,Consumer,Permission -> Action -> Persist,UI,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00019,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Accessibility,Archive iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00020,iOS,offline,offline,Healthcare,Push -> Open -> Verify,Functional,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00021,iOS,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Restore iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00022,iOS,offline,offline,FinTech,Offline -> Sync -> Resolve,Security,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00023,iOS,offline,offline,Consumer,Push -> Open -> Verify,Integration,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00024,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,Functional,Approve iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00025,iOS,offline,offline,FinTech,Offline -> Sync -> Resolve,UI,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00026,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Functional,Submit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00027,iOS,offline,offline,Consumer,Push -> Open -> Verify,Accessibility,Submit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00028,iOS,offline,offline,Healthcare,Permission -> Action -> Persist,Functional,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00029,iOS,offline,offline,Consumer,Permission -> Action -> Persist,Security,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00030,iOS,offline,offline,Consumer,Push -> Open -> Verify,Performance,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00031,iOS,offline,offline,FinTech,Push -> Open -> Verify,Accessibility,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00032,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,UI,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00033,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,Accessibility,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00034,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Validate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00035,iOS,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00036,iOS,offline,offline,Healthcare,Push -> Open -> Verify,Security,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00037,iOS,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00038,iOS,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00039,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Security,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00040,iOS,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00041,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Approve iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00042,iOS,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00043,iOS,offline,offline,FinTech,Offline -> Sync -> Resolve,Security,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00044,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,UI,Submit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00045,iOS,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00046,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Performance,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00047,iOS,offline,offline,FinTech,Push -> Open -> Verify,Regression,Restore iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00048,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,Security,Submit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00049,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Performance,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00050,iOS,offline,offline,FinTech,Push -> Open -> Verify,Accessibility,Approve iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00051,iOS,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00052,iOS,offline,offline,FinTech,Push -> Open -> Verify,UI,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00053,iOS,offline,offline,Consumer,Permission -> Action -> Persist,Security,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00054,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Performance,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00055,iOS,offline,offline,Consumer,Push -> Open -> Verify,UI,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00056,iOS,offline,offline,FinTech,Offline -> Sync -> Resolve,Security,Reject iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00057,iOS,offline,offline,Consumer,Offline -> Sync -> Resolve,Regression,Validate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00058,iOS,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00059,iOS,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00060,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,Performance,Archive iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00061,iOS,offline,offline,Enterprise,Push -> Open -> Verify,Accessibility,Validate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00062,iOS,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00063,iOS,offline,offline,Consumer,Permission -> Action -> Persist,Performance,Archive iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00064,iOS,offline,offline,FinTech,Push -> Open -> Verify,Integration,Approve iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00065,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Search iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00066,iOS,offline,offline,Enterprise,Push -> Open -> Verify,Accessibility,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00067,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,UI,Validate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00068,iOS,offline,offline,Enterprise,Push -> Open -> Verify,Regression,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00069,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,Security,Restore iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00070,iOS,offline,offline,Enterprise,Push -> Open -> Verify,Regression,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00071,iOS,offline,offline,FinTech,Push -> Open -> Verify,Regression,Archive iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00072,iOS,offline,offline,Healthcare,Permission -> Action -> Persist,Integration,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00073,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Accessibility,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00074,iOS,offline,offline,Healthcare,Offline -> Sync -> Resolve,Performance,Restore iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00075,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,Functional,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00076,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00077,iOS,offline,offline,FinTech,Offline -> Sync -> Resolve,Regression,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00078,iOS,offline,offline,FinTech,Permission -> Action -> Persist,UI,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00079,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Regression,Reject iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00080,iOS,offline,offline,FinTech,Push -> Open -> Verify,Accessibility,Reject iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00081,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Approve iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00082,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00083,iOS,offline,offline,Healthcare,Push -> Open -> Verify,Integration,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00084,iOS,offline,offline,Healthcare,Permission -> Action -> Persist,UI,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00085,iOS,offline,offline,Enterprise,Permission -> Action -> Persist,Functional,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00086,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Accessibility,Reject iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00087,iOS,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00088,iOS,offline,offline,Consumer,Push -> Open -> Verify,Performance,Clone iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00089,iOS,offline,offline,Healthcare,Permission -> Action -> Persist,Integration,Validate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00090,iOS,offline,offline,Enterprise,Push -> Open -> Verify,Functional,Escalate iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00091,iOS,offline,offline,Healthcare,Push -> Open -> Verify,Regression,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00092,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Restore iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00093,iOS,offline,offline,Healthcare,Permission -> Action -> Persist,Functional,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00094,iOS,offline,offline,Healthcare,Push -> Open -> Verify,Regression,Create iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00095,iOS,offline,offline,Consumer,Permission -> Action -> Persist,Regression,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00096,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Functional,Update iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00097,iOS,offline,offline,Consumer,Push -> Open -> Verify,Functional,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00098,iOS,offline,offline,FinTech,Permission -> Action -> Persist,Integration,Edit iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00099,iOS,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Route iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-OFF-00100,iOS,offline,offline,Enterprise,Offline -> Sync -> Resolve,Security,Delete iOS offline,iOS access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"

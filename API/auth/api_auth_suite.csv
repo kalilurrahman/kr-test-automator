@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-AUT-00001,API,auth,auth,Partner API,Create -> Validate -> Respond,Functional,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00002,API,auth,auth,Public API,Schema -> Contract -> Deploy -> Monitor,Integration,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00003,API,auth,auth,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00004,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,Integration,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00005,API,auth,auth,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00006,API,auth,auth,Internal API,Create -> Validate -> Respond,Performance,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00007,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,UI,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00008,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00009,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,UI,Create API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00010,API,auth,auth,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00011,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00012,API,auth,auth,Partner API,Sync -> Retry -> Recover,Performance,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00013,API,auth,auth,B2B API,Create -> Validate -> Respond,Accessibility,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00014,API,auth,auth,Internal API,Sync -> Retry -> Recover,Performance,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00015,API,auth,auth,Internal API,Sync -> Retry -> Recover,UI,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00016,API,auth,auth,Partner API,Sync -> Retry -> Recover,Regression,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00017,API,auth,auth,Public API,Schema -> Contract -> Deploy -> Monitor,Regression,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00018,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Security,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00019,API,auth,auth,Internal API,Sync -> Retry -> Recover,Security,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00020,API,auth,auth,Public API,Create -> Validate -> Respond,Accessibility,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00021,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00022,API,auth,auth,Partner API,Sync -> Retry -> Recover,Regression,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00023,API,auth,auth,Partner API,Sync -> Retry -> Recover,UI,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00024,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Functional,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00025,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,Integration,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00026,API,auth,auth,B2B API,Sync -> Retry -> Recover,Functional,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00027,API,auth,auth,B2B API,Sync -> Retry -> Recover,Accessibility,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00028,API,auth,auth,Internal API,Create -> Validate -> Respond,Functional,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00029,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,Regression,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00030,API,auth,auth,Partner API,Sync -> Retry -> Recover,Functional,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00031,API,auth,auth,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00032,API,auth,auth,Internal API,Create -> Validate -> Respond,UI,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00033,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Performance,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00034,API,auth,auth,B2B API,Sync -> Retry -> Recover,Functional,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00035,API,auth,auth,Public API,Sync -> Retry -> Recover,Security,Search API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00036,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00037,API,auth,auth,Internal API,Sync -> Retry -> Recover,Regression,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00038,API,auth,auth,Public API,Sync -> Retry -> Recover,Security,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00039,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Security,Create API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00040,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,Integration,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00041,API,auth,auth,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00042,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Performance,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00043,API,auth,auth,Partner API,Create -> Validate -> Respond,Security,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00044,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,Functional,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00045,API,auth,auth,Partner API,Create -> Validate -> Respond,Regression,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00046,API,auth,auth,Public API,Sync -> Retry -> Recover,Functional,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00047,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Security,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00048,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Functional,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00049,API,auth,auth,Public API,Sync -> Retry -> Recover,Integration,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00050,API,auth,auth,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00051,API,auth,auth,Public API,Create -> Validate -> Respond,Functional,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00052,API,auth,auth,B2B API,Auth -> Call -> Verify -> Log,UI,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00053,API,auth,auth,Partner API,Sync -> Retry -> Recover,UI,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00054,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00055,API,auth,auth,B2B API,Auth -> Call -> Verify -> Log,Functional,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00056,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00057,API,auth,auth,B2B API,Sync -> Retry -> Recover,Functional,Create API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00058,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00059,API,auth,auth,Public API,Schema -> Contract -> Deploy -> Monitor,Performance,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00060,API,auth,auth,Internal API,Create -> Validate -> Respond,Security,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00061,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Security,Search API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00062,API,auth,auth,Public API,Sync -> Retry -> Recover,Accessibility,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00063,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00064,API,auth,auth,Partner API,Create -> Validate -> Respond,Regression,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00065,API,auth,auth,Partner API,Create -> Validate -> Respond,Regression,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00066,API,auth,auth,Partner API,Create -> Validate -> Respond,Integration,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00067,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,Security,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00068,API,auth,auth,Public API,Create -> Validate -> Respond,Functional,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00069,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,Functional,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00070,API,auth,auth,Public API,Create -> Validate -> Respond,UI,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00071,API,auth,auth,Internal API,Create -> Validate -> Respond,Security,Create API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00072,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,Integration,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00073,API,auth,auth,Internal API,Auth -> Call -> Verify -> Log,Functional,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00074,API,auth,auth,Internal API,Sync -> Retry -> Recover,Performance,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00075,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00076,API,auth,auth,Internal API,Create -> Validate -> Respond,Regression,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00077,API,auth,auth,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00078,API,auth,auth,Partner API,Create -> Validate -> Respond,Functional,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00079,API,auth,auth,Internal API,Sync -> Retry -> Recover,Performance,Search API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00080,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,UI,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00081,API,auth,auth,Public API,Create -> Validate -> Respond,Regression,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00082,API,auth,auth,Internal API,Sync -> Retry -> Recover,Security,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00083,API,auth,auth,Partner API,Create -> Validate -> Respond,Functional,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00084,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,Accessibility,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00085,API,auth,auth,B2B API,Sync -> Retry -> Recover,Performance,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00086,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00087,API,auth,auth,B2B API,Create -> Validate -> Respond,Regression,Escalate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00088,API,auth,auth,Internal API,Create -> Validate -> Respond,Integration,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00089,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,UI,Search API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00090,API,auth,auth,Partner API,Sync -> Retry -> Recover,UI,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00091,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,Accessibility,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00092,API,auth,auth,Public API,Sync -> Retry -> Recover,Performance,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00093,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Performance,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00094,API,auth,auth,Partner API,Create -> Validate -> Respond,Regression,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00095,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Submit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00096,API,auth,auth,B2B API,Create -> Validate -> Respond,UI,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00097,API,auth,auth,B2B API,Sync -> Retry -> Recover,Functional,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00098,API,auth,auth,Public API,Auth -> Call -> Verify -> Log,Security,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00099,API,auth,auth,Partner API,Create -> Validate -> Respond,Regression,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00100,API,auth,auth,B2B API,Sync -> Retry -> Recover,Security,Edit API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00101,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Performance,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00102,API,auth,auth,Partner API,Sync -> Retry -> Recover,Performance,Archive API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00103,API,auth,auth,Public API,Create -> Validate -> Respond,Integration,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00104,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00105,API,auth,auth,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00106,API,auth,auth,Partner API,Sync -> Retry -> Recover,Accessibility,Search API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00107,API,auth,auth,B2B API,Auth -> Call -> Verify -> Log,Functional,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00108,API,auth,auth,Public API,Sync -> Retry -> Recover,Integration,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00109,API,auth,auth,B2B API,Create -> Validate -> Respond,Integration,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00110,API,auth,auth,Partner API,Create -> Validate -> Respond,Security,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00111,API,auth,auth,Internal API,Schema -> Contract -> Deploy -> Monitor,Regression,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00112,API,auth,auth,Internal API,Create -> Validate -> Respond,Accessibility,Restore API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00113,API,auth,auth,B2B API,Create -> Validate -> Respond,UI,Approve API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00114,API,auth,auth,Internal API,Create -> Validate -> Respond,Accessibility,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00115,API,auth,auth,B2B API,Auth -> Call -> Verify -> Log,UI,Clone API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00116,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Functional,Update API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00117,API,auth,auth,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Route API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00118,API,auth,auth,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Delete API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00119,API,auth,auth,Internal API,Sync -> Retry -> Recover,Integration,Validate API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-AUT-00120,API,auth,auth,Internal API,Sync -> Retry -> Recover,Regression,Reject API auth,API access and test data available,"1. Open auth.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "iam",
+      "path": "/AWS/iam/index.html"
+    },
+    {
+      "key": "ec2",
+      "path": "/AWS/ec2/index.html"
+    },
+    {
+      "key": "s3",
+      "path": "/AWS/s3/index.html"
+    },
+    {
+      "key": "lambda",
+      "path": "/AWS/lambda/index.html"
+    },
+    {
+      "key": "eks",
+      "path": "/AWS/eks/index.html"
+    },
+    {
+      "key": "rds",
+      "path": "/AWS/rds/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/AWS/security/index.html"
+    },
+    {
+      "key": "cost",
+      "path": "/AWS/cost/index.html"
+    }
+  ]
+}

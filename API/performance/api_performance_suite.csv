@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-PER-00001,API,performance,performance,Internal API,Create -> Validate -> Respond,Performance,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00002,API,performance,performance,Public API,Auth -> Call -> Verify -> Log,Performance,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00003,API,performance,performance,Public API,Create -> Validate -> Respond,Integration,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00004,API,performance,performance,Public API,Schema -> Contract -> Deploy -> Monitor,Performance,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00005,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Performance,Create API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00006,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Security,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00007,API,performance,performance,Partner API,Sync -> Retry -> Recover,Regression,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00008,API,performance,performance,Partner API,Create -> Validate -> Respond,UI,Restore API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00009,API,performance,performance,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00010,API,performance,performance,Partner API,Create -> Validate -> Respond,UI,Create API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00011,API,performance,performance,Public API,Create -> Validate -> Respond,Accessibility,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00012,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00013,API,performance,performance,Public API,Create -> Validate -> Respond,Performance,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00014,API,performance,performance,B2B API,Create -> Validate -> Respond,Integration,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00015,API,performance,performance,Internal API,Sync -> Retry -> Recover,Security,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00016,API,performance,performance,Public API,Sync -> Retry -> Recover,Integration,Archive API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00017,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00018,API,performance,performance,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00019,API,performance,performance,Public API,Create -> Validate -> Respond,Security,Restore API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00020,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00021,API,performance,performance,B2B API,Sync -> Retry -> Recover,Performance,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00022,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Integration,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00023,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00024,API,performance,performance,Public API,Auth -> Call -> Verify -> Log,Functional,Restore API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00025,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00026,API,performance,performance,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00027,API,performance,performance,Public API,Create -> Validate -> Respond,Accessibility,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00028,API,performance,performance,B2B API,Sync -> Retry -> Recover,Integration,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00029,API,performance,performance,Public API,Auth -> Call -> Verify -> Log,Accessibility,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00030,API,performance,performance,Internal API,Sync -> Retry -> Recover,Security,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00031,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00032,API,performance,performance,Internal API,Create -> Validate -> Respond,Regression,Escalate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00033,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Integration,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00034,API,performance,performance,Internal API,Create -> Validate -> Respond,Functional,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00035,API,performance,performance,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00036,API,performance,performance,B2B API,Create -> Validate -> Respond,Performance,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00037,API,performance,performance,Partner API,Sync -> Retry -> Recover,Security,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00038,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Performance,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00039,API,performance,performance,Public API,Create -> Validate -> Respond,Accessibility,Archive API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00040,API,performance,performance,B2B API,Auth -> Call -> Verify -> Log,Integration,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00041,API,performance,performance,B2B API,Schema -> Contract -> Deploy -> Monitor,Performance,Restore API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00042,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Regression,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00043,API,performance,performance,B2B API,Create -> Validate -> Respond,Accessibility,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00044,API,performance,performance,Public API,Auth -> Call -> Verify -> Log,Security,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00045,API,performance,performance,B2B API,Sync -> Retry -> Recover,Performance,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00046,API,performance,performance,Public API,Create -> Validate -> Respond,Functional,Create API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00047,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00048,API,performance,performance,Partner API,Sync -> Retry -> Recover,Security,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00049,API,performance,performance,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00050,API,performance,performance,Public API,Sync -> Retry -> Recover,Performance,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00051,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Regression,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00052,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Accessibility,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00053,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Functional,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00054,API,performance,performance,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00055,API,performance,performance,Public API,Create -> Validate -> Respond,Regression,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00056,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Integration,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00057,API,performance,performance,B2B API,Sync -> Retry -> Recover,UI,Escalate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00058,API,performance,performance,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00059,API,performance,performance,Public API,Auth -> Call -> Verify -> Log,UI,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00060,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00061,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Performance,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00062,API,performance,performance,Internal API,Create -> Validate -> Respond,Regression,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00063,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Restore API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00064,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,UI,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00065,API,performance,performance,B2B API,Auth -> Call -> Verify -> Log,Performance,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00066,API,performance,performance,Public API,Auth -> Call -> Verify -> Log,Functional,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00067,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00068,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Regression,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00069,API,performance,performance,Partner API,Sync -> Retry -> Recover,Accessibility,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00070,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Archive API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00071,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,UI,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00072,API,performance,performance,Public API,Sync -> Retry -> Recover,Integration,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00073,API,performance,performance,Partner API,Sync -> Retry -> Recover,Regression,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00074,API,performance,performance,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Archive API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00075,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00076,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Functional,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00077,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Performance,Reject API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00078,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00079,API,performance,performance,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00080,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00081,API,performance,performance,Partner API,Sync -> Retry -> Recover,UI,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00082,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Integration,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00083,API,performance,performance,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00084,API,performance,performance,Partner API,Create -> Validate -> Respond,Performance,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00085,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00086,API,performance,performance,Public API,Sync -> Retry -> Recover,Integration,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00087,API,performance,performance,Partner API,Create -> Validate -> Respond,Performance,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00088,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Integration,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00089,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00090,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00091,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Security,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00092,API,performance,performance,B2B API,Create -> Validate -> Respond,UI,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00093,API,performance,performance,Internal API,Create -> Validate -> Respond,Accessibility,Restore API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00094,API,performance,performance,Internal API,Create -> Validate -> Respond,Accessibility,Create API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00095,API,performance,performance,Public API,Create -> Validate -> Respond,Security,Submit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00096,API,performance,performance,Internal API,Sync -> Retry -> Recover,Regression,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00097,API,performance,performance,Public API,Create -> Validate -> Respond,Accessibility,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00098,API,performance,performance,Internal API,Create -> Validate -> Respond,UI,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00099,API,performance,performance,Partner API,Create -> Validate -> Respond,Integration,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00100,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Create API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00101,API,performance,performance,Internal API,Create -> Validate -> Respond,Integration,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00102,API,performance,performance,Internal API,Create -> Validate -> Respond,Performance,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00103,API,performance,performance,Internal API,Create -> Validate -> Respond,Regression,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00104,API,performance,performance,Partner API,Sync -> Retry -> Recover,Performance,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00105,API,performance,performance,Public API,Schema -> Contract -> Deploy -> Monitor,Functional,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00106,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Archive API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00107,API,performance,performance,Internal API,Create -> Validate -> Respond,Security,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00108,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Regression,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00109,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Integration,Archive API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00110,API,performance,performance,Public API,Schema -> Contract -> Deploy -> Monitor,Regression,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00111,API,performance,performance,Internal API,Auth -> Call -> Verify -> Log,Accessibility,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00112,API,performance,performance,B2B API,Create -> Validate -> Respond,Accessibility,Clone API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00113,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Regression,Update API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00114,API,performance,performance,Public API,Sync -> Retry -> Recover,Integration,Escalate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00115,API,performance,performance,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Validate API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00116,API,performance,performance,Public API,Sync -> Retry -> Recover,Performance,Approve API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00117,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Search API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00118,API,performance,performance,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Delete API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00119,API,performance,performance,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Edit API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-PER-00120,API,performance,performance,Partner API,Auth -> Call -> Verify -> Log,Performance,Route API performance,API access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

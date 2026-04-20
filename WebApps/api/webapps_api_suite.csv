@@ -1,0 +1,331 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+WEB-API-00001,WebApps,api,api,SaaS,Open -> Authenticate -> Use -> Close,Integration,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00002,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Integration,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00003,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Integration,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00004,WebApps,api,api,Retail,Render -> Interact -> Persist -> Report,Security,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00005,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Escalate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00006,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Performance,Update WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00007,WebApps,api,api,Retail,Browse -> Add -> Checkout -> Confirm,Security,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00008,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Integration,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00009,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Security,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00010,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Security,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00011,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Performance,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00012,WebApps,api,api,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Update WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00013,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,UI,Validate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00014,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Security,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00015,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,UI,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00016,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Performance,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00017,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,UI,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00018,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Security,Validate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00019,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,Functional,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00020,WebApps,api,api,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00021,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,Integration,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00022,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,Security,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00023,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00024,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Accessibility,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00025,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Accessibility,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00026,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Security,Validate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00027,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Accessibility,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00028,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Functional,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00029,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Security,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00030,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00031,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,UI,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00032,WebApps,api,api,Retail,Render -> Interact -> Persist -> Report,Functional,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00033,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Regression,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00034,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Performance,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00035,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Performance,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00036,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Performance,Create WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00037,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Security,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00038,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Performance,Create WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00039,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Accessibility,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00040,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Security,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00041,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00042,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00043,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,UI,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00044,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,UI,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00045,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Integration,Validate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00046,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,Accessibility,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00047,WebApps,api,api,Retail,Browse -> Add -> Checkout -> Confirm,UI,Reject WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00048,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Performance,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00049,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Security,Create WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00050,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Performance,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00051,WebApps,api,api,Retail,Browse -> Add -> Checkout -> Confirm,Regression,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00052,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00053,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Integration,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00054,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Integration,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00055,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Integration,Escalate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00056,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Integration,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00057,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Regression,Escalate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00058,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Integration,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00059,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,UI,Reject WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00060,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,UI,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00061,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Accessibility,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00062,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Functional,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00063,WebApps,api,api,Retail,Browse -> Add -> Checkout -> Confirm,UI,Update WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00064,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Security,Escalate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00065,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Regression,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00066,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Performance,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00067,WebApps,api,api,Retail,Browse -> Add -> Checkout -> Confirm,Performance,Reject WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00068,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,UI,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00069,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,UI,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00070,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Accessibility,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00071,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Functional,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00072,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Regression,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00073,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Integration,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00074,WebApps,api,api,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00075,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,UI,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00076,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Regression,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00077,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Performance,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00078,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Regression,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00079,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Accessibility,Update WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00080,WebApps,api,api,SaaS,Open -> Authenticate -> Use -> Close,Security,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00081,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Update WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00082,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Security,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00083,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Functional,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00084,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,Accessibility,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00085,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00086,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Performance,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00087,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,UI,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00088,WebApps,api,api,SaaS,Open -> Authenticate -> Use -> Close,Regression,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00089,WebApps,api,api,Retail,Browse -> Add -> Checkout -> Confirm,UI,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00090,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Security,Create WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00091,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Integration,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00092,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Performance,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00093,WebApps,api,api,Media,Render -> Interact -> Persist -> Report,Functional,Validate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00094,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Performance,Create WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00095,WebApps,api,api,SaaS,Open -> Authenticate -> Use -> Close,UI,Reject WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00096,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Integration,Validate WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00097,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,UI,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00098,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,Functional,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00099,WebApps,api,api,Retail,Open -> Authenticate -> Use -> Close,Accessibility,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00100,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Accessibility,Submit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00101,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,UI,Archive WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00102,WebApps,api,api,Retail,Render -> Interact -> Persist -> Report,Security,Approve WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00103,WebApps,api,api,Marketplace,Browse -> Add -> Checkout -> Confirm,Accessibility,Route WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00104,WebApps,api,api,Retail,Render -> Interact -> Persist -> Report,Security,Edit WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00105,WebApps,api,api,Media,Browse -> Add -> Checkout -> Confirm,UI,Clone WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00106,WebApps,api,api,Marketplace,Open -> Authenticate -> Use -> Close,Functional,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00107,WebApps,api,api,Marketplace,Render -> Interact -> Persist -> Report,Functional,Restore WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00108,WebApps,api,api,SaaS,Render -> Interact -> Persist -> Report,Regression,Delete WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00109,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Accessibility,Reject WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-API-00110,WebApps,api,api,Media,Open -> Authenticate -> Use -> Close,Regression,Search WebApps api,WebApps access and test data available,"1. Open api.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"

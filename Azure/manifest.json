@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "iam",
+      "path": "/Azure/iam/index.html"
+    },
+    {
+      "key": "vm",
+      "path": "/Azure/vm/index.html"
+    },
+    {
+      "key": "storage",
+      "path": "/Azure/storage/index.html"
+    },
+    {
+      "key": "functions",
+      "path": "/Azure/functions/index.html"
+    },
+    {
+      "key": "aks",
+      "path": "/Azure/aks/index.html"
+    },
+    {
+      "key": "sql",
+      "path": "/Azure/sql/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/Azure/security/index.html"
+    },
+    {
+      "key": "cost",
+      "path": "/Azure/cost/index.html"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-ONB-00001,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Accessibility,Route iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00002,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Escalate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00003,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Security,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00004,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Functional,Archive iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00005,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Security,Approve iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00006,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Performance,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00007,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Integration,Approve iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00008,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Performance,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00009,iOS,onboarding,onboarding,Consumer,Push -> Open -> Verify,Accessibility,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00010,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00011,iOS,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00012,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Route iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00013,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Regression,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00014,iOS,onboarding,onboarding,Enterprise,Push -> Open -> Verify,UI,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00015,iOS,onboarding,onboarding,Consumer,Permission -> Action -> Persist,Accessibility,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00016,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Accessibility,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00017,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Performance,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00018,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Route iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00019,iOS,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Accessibility,Search iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00020,iOS,onboarding,onboarding,Enterprise,Permission -> Action -> Persist,Integration,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00021,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Performance,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00022,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00023,iOS,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Regression,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00024,iOS,onboarding,onboarding,Consumer,Permission -> Action -> Persist,Integration,Reject iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00025,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Accessibility,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00026,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00027,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,UI,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00028,iOS,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00029,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00030,iOS,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Security,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00031,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Accessibility,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00032,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Regression,Delete iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00033,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Regression,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00034,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Performance,Reject iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00035,iOS,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Security,Escalate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00036,iOS,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00037,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Integration,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00038,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Accessibility,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00039,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00040,iOS,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Integration,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00041,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Accessibility,Search iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00042,iOS,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Integration,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00043,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Performance,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00044,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Performance,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00045,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Integration,Search iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00046,iOS,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Regression,Escalate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00047,iOS,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Performance,Delete iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00048,iOS,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Regression,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00049,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Security,Archive iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00050,iOS,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Functional,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00051,iOS,onboarding,onboarding,Enterprise,Permission -> Action -> Persist,UI,Route iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00052,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Accessibility,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00053,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Integration,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00054,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Regression,Reject iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00055,iOS,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Security,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00056,iOS,onboarding,onboarding,Consumer,Permission -> Action -> Persist,Performance,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00057,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Integration,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00058,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Integration,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00059,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Integration,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00060,iOS,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Functional,Delete iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00061,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Functional,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00062,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Functional,Reject iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00063,iOS,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Search iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00064,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,UI,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00065,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Security,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00066,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Functional,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00067,iOS,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Regression,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00068,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00069,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Regression,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00070,iOS,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Performance,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00071,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Regression,Search iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00072,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Regression,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00073,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Integration,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00074,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Performance,Escalate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00075,iOS,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00076,iOS,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Route iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00077,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Validate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00078,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,UI,Approve iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00079,iOS,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Submit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00080,iOS,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Integration,Route iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00081,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Performance,Delete iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00082,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00083,iOS,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Integration,Archive iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00084,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00085,iOS,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Performance,Submit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00086,iOS,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00087,iOS,onboarding,onboarding,FinTech,Push -> Open -> Verify,Performance,Restore iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00088,iOS,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Escalate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00089,iOS,onboarding,onboarding,FinTech,Permission -> Action -> Persist,UI,Reject iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00090,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Security,Submit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00091,iOS,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Integration,Escalate iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00092,iOS,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Integration,Clone iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00093,iOS,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Integration,Reject iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00094,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Performance,Update iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00095,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Integration,Archive iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00096,iOS,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Functional,Delete iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00097,iOS,onboarding,onboarding,Healthcare,Push -> Open -> Verify,UI,Approve iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00098,iOS,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Regression,Submit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00099,iOS,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Create iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-ONB-00100,iOS,onboarding,onboarding,Consumer,Push -> Open -> Verify,Functional,Edit iOS onboarding,iOS access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"

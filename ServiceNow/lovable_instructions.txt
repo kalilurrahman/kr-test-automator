@@ -1,0 +1,1 @@
+Connect GitHub repo, set /ServiceNow/index.html as entry, mirror SAP/Salesforce style, sync from GitHub.

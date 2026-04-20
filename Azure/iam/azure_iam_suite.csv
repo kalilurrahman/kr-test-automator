@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-IAM-00001,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Search Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00002,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00003,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00004,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Security,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00005,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Functional,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00006,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Accessibility,Reject Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00007,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Create Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00008,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Security,Search Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00009,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,UI,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00010,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00011,Azure,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Security,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00012,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,Security,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00013,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00014,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00015,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00016,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Integration,Search Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00017,Azure,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00018,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00019,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Functional,Search Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00020,Azure,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00021,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Security,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00022,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00023,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00024,Azure,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Delete Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00025,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Delete Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00026,Azure,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Search Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00027,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,UI,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00028,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Submit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00029,Azure,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00030,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Security,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00031,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00032,Azure,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00033,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00034,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,Functional,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00035,Azure,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Search Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00036,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Archive Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00037,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00038,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,Integration,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00039,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00040,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Performance,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00041,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Integration,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00042,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00043,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00044,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Security,Submit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00045,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Archive Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00046,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Archive Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00047,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00048,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Create Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00049,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00050,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00051,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Submit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00052,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Security,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00053,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00054,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00055,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00056,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00057,Azure,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00058,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,UI,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00059,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00060,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00061,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Archive Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00062,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Regression,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00063,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00064,Azure,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00065,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Reject Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00066,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00067,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,Security,Delete Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00068,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00069,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,UI,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00070,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00071,Azure,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00072,Azure,iam,iam,Security,Create -> Protect -> Audit -> Report,Integration,Approve Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00073,Azure,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00074,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00075,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00076,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00077,Azure,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Delete Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00078,Azure,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Clone Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00079,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Edit Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00080,Azure,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00081,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00082,Azure,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Integration,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00083,Azure,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Create Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00084,Azure,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Security,Reject Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00085,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Security,Create Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00086,Azure,iam,iam,Data,Create -> Protect -> Audit -> Report,Accessibility,Route Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00087,Azure,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00088,Azure,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Reject Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00089,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Accessibility,Update Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-IAM-00090,Azure,iam,iam,Platform,Create -> Protect -> Audit -> Report,Accessibility,Validate Azure iam,Azure access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

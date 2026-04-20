@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-COM-00001,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Reject GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00002,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Delete GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00003,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00004,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00005,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00006,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00007,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00008,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00009,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00010,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00011,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00012,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Search GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00013,GCP,compute,compute,Platform,Create -> Protect -> Audit -> Report,Integration,Edit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00014,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00015,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,UI,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00016,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Edit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00017,GCP,compute,compute,Security,Create -> Protect -> Audit -> Report,Security,Route GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00018,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00019,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,UI,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00020,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00021,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Delete GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00022,GCP,compute,compute,Platform,Create -> Protect -> Audit -> Report,UI,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00023,GCP,compute,compute,Platform,Create -> Protect -> Audit -> Report,Integration,Reject GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00024,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Approve GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00025,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,UI,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00026,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Reject GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00027,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Search GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00028,GCP,compute,compute,Security,Create -> Protect -> Audit -> Report,Regression,Approve GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00029,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00030,GCP,compute,compute,Security,Create -> Protect -> Audit -> Report,Regression,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00031,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00032,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00033,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00034,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00035,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00036,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00037,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Search GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00038,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00039,GCP,compute,compute,Platform,Create -> Protect -> Audit -> Report,Integration,Search GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00040,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00041,GCP,compute,compute,Security,Create -> Protect -> Audit -> Report,Security,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00042,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Route GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00043,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Edit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00044,GCP,compute,compute,Data,Create -> Protect -> Audit -> Report,UI,Route GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00045,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00046,GCP,compute,compute,Data,Create -> Protect -> Audit -> Report,UI,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00047,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00048,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00049,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Edit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00050,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00051,GCP,compute,compute,Data,Create -> Protect -> Audit -> Report,Integration,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00052,GCP,compute,compute,DevOps,Create -> Protect -> Audit -> Report,Integration,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00053,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Reject GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00054,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00055,GCP,compute,compute,Data,Create -> Protect -> Audit -> Report,Performance,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00056,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Security,Reject GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00057,GCP,compute,compute,DevOps,Create -> Protect -> Audit -> Report,Regression,Approve GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00058,GCP,compute,compute,Data,Create -> Protect -> Audit -> Report,Security,Edit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00059,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Search GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00060,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Approve GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00061,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00062,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00063,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,UI,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00064,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00065,GCP,compute,compute,Security,Create -> Protect -> Audit -> Report,Accessibility,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00066,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00067,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00068,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00069,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,UI,Search GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00070,GCP,compute,compute,Data,Create -> Protect -> Audit -> Report,Accessibility,Route GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00071,GCP,compute,compute,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00072,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00073,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00074,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00075,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00076,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00077,GCP,compute,compute,DevOps,Create -> Protect -> Audit -> Report,Performance,Validate GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00078,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00079,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00080,GCP,compute,compute,Security,Create -> Protect -> Audit -> Report,Accessibility,Create GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00081,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00082,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00083,GCP,compute,compute,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00084,GCP,compute,compute,Platform,Create -> Protect -> Audit -> Report,Functional,Clone GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00085,GCP,compute,compute,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Restore GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00086,GCP,compute,compute,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Submit GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00087,GCP,compute,compute,Security,Deploy -> Scale -> Observe -> Rollback,UI,Update GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00088,GCP,compute,compute,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00089,GCP,compute,compute,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Archive GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-COM-00090,GCP,compute,compute,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Approve GCP compute,GCP access and test data available,"1. Open compute.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

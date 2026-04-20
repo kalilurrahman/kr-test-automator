@@ -1,26 +1,13 @@
-workday/
+Workday/
 ├── index.html
 ├── manifest.json
 ├── README.md
-├── assets/
-│   └── screenshots/
+├── assets/screenshots/
 ├── downloads/
 ├── hcm/
-│   ├── index.html
-│   ├── workday_5000.csv
-│   ├── workday_5000.xlsx
-│   ├── workday_5000.html
-│   ├── workday_5000.json
-│   └── workday_5000.ts
 ├── payroll/
-│   └── index.html
 ├── recruiting/
-│   └── index.html
 ├── finance/
-│   └── index.html
 ├── integrations/
-│   └── index.html
 ├── reporting/
-│   └── index.html
 └── e2e/
-    └── index.html

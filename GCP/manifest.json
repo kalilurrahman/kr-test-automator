@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "iam",
+      "path": "/GCP/iam/index.html"
+    },
+    {
+      "key": "compute",
+      "path": "/GCP/compute/index.html"
+    },
+    {
+      "key": "storage",
+      "path": "/GCP/storage/index.html"
+    },
+    {
+      "key": "cloud-run",
+      "path": "/GCP/cloud-run/index.html"
+    },
+    {
+      "key": "gke",
+      "path": "/GCP/gke/index.html"
+    },
+    {
+      "key": "bigquery",
+      "path": "/GCP/bigquery/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/GCP/security/index.html"
+    },
+    {
+      "key": "cost",
+      "path": "/GCP/cost/index.html"
+    }
+  ]
+}

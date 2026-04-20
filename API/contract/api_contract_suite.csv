@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-CON-00001,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00002,API,contract,contract,Internal API,Create -> Validate -> Respond,Performance,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00003,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00004,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,UI,Restore API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00005,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,UI,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00006,API,contract,contract,Partner API,Sync -> Retry -> Recover,Regression,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00007,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Functional,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00008,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00009,API,contract,contract,Internal API,Create -> Validate -> Respond,Security,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00010,API,contract,contract,B2B API,Sync -> Retry -> Recover,Security,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00011,API,contract,contract,Internal API,Create -> Validate -> Respond,Functional,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00012,API,contract,contract,Public API,Create -> Validate -> Respond,Functional,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00013,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Accessibility,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00014,API,contract,contract,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00015,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00016,API,contract,contract,Internal API,Sync -> Retry -> Recover,Integration,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00017,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Performance,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00018,API,contract,contract,Internal API,Sync -> Retry -> Recover,Security,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00019,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00020,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,Integration,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00021,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00022,API,contract,contract,Public API,Sync -> Retry -> Recover,Regression,Search API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00023,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00024,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00025,API,contract,contract,Internal API,Create -> Validate -> Respond,UI,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00026,API,contract,contract,Internal API,Create -> Validate -> Respond,Integration,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00027,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00028,API,contract,contract,Internal API,Create -> Validate -> Respond,UI,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00029,API,contract,contract,Internal API,Auth -> Call -> Verify -> Log,UI,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00030,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00031,API,contract,contract,Public API,Sync -> Retry -> Recover,Functional,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00032,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00033,API,contract,contract,Partner API,Sync -> Retry -> Recover,Security,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00034,API,contract,contract,B2B API,Sync -> Retry -> Recover,UI,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00035,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,Performance,Delete API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00036,API,contract,contract,Public API,Schema -> Contract -> Deploy -> Monitor,Security,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00037,API,contract,contract,B2B API,Create -> Validate -> Respond,Accessibility,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00038,API,contract,contract,Partner API,Create -> Validate -> Respond,Performance,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00039,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00040,API,contract,contract,Public API,Sync -> Retry -> Recover,Integration,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00041,API,contract,contract,B2B API,Create -> Validate -> Respond,Security,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00042,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00043,API,contract,contract,Internal API,Auth -> Call -> Verify -> Log,Functional,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00044,API,contract,contract,Internal API,Sync -> Retry -> Recover,UI,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00045,API,contract,contract,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00046,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,Security,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00047,API,contract,contract,B2B API,Sync -> Retry -> Recover,Integration,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00048,API,contract,contract,Partner API,Sync -> Retry -> Recover,Integration,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00049,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Functional,Restore API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00050,API,contract,contract,Public API,Sync -> Retry -> Recover,Performance,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00051,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,Functional,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00052,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00053,API,contract,contract,Partner API,Create -> Validate -> Respond,Performance,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00054,API,contract,contract,Public API,Sync -> Retry -> Recover,Regression,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00055,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00056,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Integration,Search API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00057,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Regression,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00058,API,contract,contract,Internal API,Auth -> Call -> Verify -> Log,Performance,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00059,API,contract,contract,Internal API,Create -> Validate -> Respond,UI,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00060,API,contract,contract,Public API,Create -> Validate -> Respond,Functional,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00061,API,contract,contract,Public API,Sync -> Retry -> Recover,Regression,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00062,API,contract,contract,Internal API,Create -> Validate -> Respond,Performance,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00063,API,contract,contract,B2B API,Create -> Validate -> Respond,Performance,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00064,API,contract,contract,Public API,Create -> Validate -> Respond,UI,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00065,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Performance,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00066,API,contract,contract,Internal API,Create -> Validate -> Respond,UI,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00067,API,contract,contract,Partner API,Sync -> Retry -> Recover,Functional,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00068,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Security,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00069,API,contract,contract,Internal API,Sync -> Retry -> Recover,Regression,Delete API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00070,API,contract,contract,Partner API,Create -> Validate -> Respond,Integration,Restore API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00071,API,contract,contract,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00072,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Update API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00073,API,contract,contract,Public API,Sync -> Retry -> Recover,Regression,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00074,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Functional,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00075,API,contract,contract,Public API,Sync -> Retry -> Recover,Performance,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00076,API,contract,contract,Internal API,Sync -> Retry -> Recover,Accessibility,Delete API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00077,API,contract,contract,Public API,Sync -> Retry -> Recover,Regression,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00078,API,contract,contract,Internal API,Create -> Validate -> Respond,Integration,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00079,API,contract,contract,Internal API,Create -> Validate -> Respond,UI,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00080,API,contract,contract,Public API,Sync -> Retry -> Recover,Integration,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00081,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Search API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00082,API,contract,contract,Internal API,Sync -> Retry -> Recover,Integration,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00083,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Functional,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00084,API,contract,contract,Partner API,Auth -> Call -> Verify -> Log,Accessibility,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00085,API,contract,contract,Partner API,Create -> Validate -> Respond,Accessibility,Validate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00086,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,UI,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00087,API,contract,contract,B2B API,Create -> Validate -> Respond,Performance,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00088,API,contract,contract,B2B API,Create -> Validate -> Respond,Accessibility,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00089,API,contract,contract,B2B API,Sync -> Retry -> Recover,Security,Update API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00090,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Regression,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00091,API,contract,contract,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Escalate API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00092,API,contract,contract,Internal API,Sync -> Retry -> Recover,UI,Restore API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00093,API,contract,contract,Public API,Create -> Validate -> Respond,Security,Delete API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00094,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00095,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00096,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,UI,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00097,API,contract,contract,Public API,Sync -> Retry -> Recover,Accessibility,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00098,API,contract,contract,B2B API,Schema -> Contract -> Deploy -> Monitor,UI,Route API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00099,API,contract,contract,Partner API,Create -> Validate -> Respond,Security,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00100,API,contract,contract,Partner API,Sync -> Retry -> Recover,UI,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00101,API,contract,contract,B2B API,Sync -> Retry -> Recover,Security,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00102,API,contract,contract,Public API,Create -> Validate -> Respond,Accessibility,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00103,API,contract,contract,Public API,Sync -> Retry -> Recover,Regression,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00104,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Integration,Restore API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00105,API,contract,contract,Public API,Create -> Validate -> Respond,Accessibility,Search API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00106,API,contract,contract,Partner API,Auth -> Call -> Verify -> Log,Regression,Update API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00107,API,contract,contract,B2B API,Create -> Validate -> Respond,Integration,Update API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00108,API,contract,contract,Public API,Sync -> Retry -> Recover,Security,Update API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00109,API,contract,contract,Public API,Sync -> Retry -> Recover,UI,Approve API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00110,API,contract,contract,Public API,Sync -> Retry -> Recover,Integration,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00111,API,contract,contract,Public API,Auth -> Call -> Verify -> Log,Regression,Reject API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00112,API,contract,contract,Public API,Schema -> Contract -> Deploy -> Monitor,Regression,Archive API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00113,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Restore API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00114,API,contract,contract,Partner API,Auth -> Call -> Verify -> Log,Integration,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00115,API,contract,contract,Public API,Create -> Validate -> Respond,Regression,Clone API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00116,API,contract,contract,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00117,API,contract,contract,Public API,Sync -> Retry -> Recover,Functional,Create API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00118,API,contract,contract,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Search API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00119,API,contract,contract,B2B API,Create -> Validate -> Respond,Accessibility,Submit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-CON-00120,API,contract,contract,B2B API,Auth -> Call -> Verify -> Log,Security,Edit API contract,API access and test data available,"1. Open contract.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

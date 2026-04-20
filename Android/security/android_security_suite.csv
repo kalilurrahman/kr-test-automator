@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-SEC-00001,Android,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00002,Android,security,security,FinTech,Push -> Open -> Verify,Integration,Clone Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00003,Android,security,security,Consumer,Push -> Open -> Verify,Accessibility,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00004,Android,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00005,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Accessibility,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00006,Android,security,security,Enterprise,Permission -> Action -> Persist,Performance,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00007,Android,security,security,FinTech,Offline -> Sync -> Resolve,Integration,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00008,Android,security,security,Healthcare,Permission -> Action -> Persist,Accessibility,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00009,Android,security,security,FinTech,Offline -> Sync -> Resolve,Accessibility,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00010,Android,security,security,FinTech,Push -> Open -> Verify,Security,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00011,Android,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00012,Android,security,security,Enterprise,Push -> Open -> Verify,Security,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00013,Android,security,security,Healthcare,Push -> Open -> Verify,Performance,Reject Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00014,Android,security,security,FinTech,Push -> Open -> Verify,Security,Restore Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00015,Android,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00016,Android,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00017,Android,security,security,Consumer,Offline -> Sync -> Resolve,Security,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00018,Android,security,security,Healthcare,Push -> Open -> Verify,Performance,Clone Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00019,Android,security,security,FinTech,Permission -> Action -> Persist,Performance,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00020,Android,security,security,Healthcare,Permission -> Action -> Persist,Integration,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00021,Android,security,security,Consumer,Permission -> Action -> Persist,Integration,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00022,Android,security,security,FinTech,Push -> Open -> Verify,Accessibility,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00023,Android,security,security,Consumer,Offline -> Sync -> Resolve,Accessibility,Route Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00024,Android,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00025,Android,security,security,Enterprise,Permission -> Action -> Persist,Accessibility,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00026,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Security,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00027,Android,security,security,Consumer,Permission -> Action -> Persist,Accessibility,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00028,Android,security,security,FinTech,Permission -> Action -> Persist,Accessibility,Route Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00029,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00030,Android,security,security,Enterprise,Push -> Open -> Verify,Performance,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00031,Android,security,security,Healthcare,Permission -> Action -> Persist,Regression,Reject Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00032,Android,security,security,Consumer,Permission -> Action -> Persist,Accessibility,Edit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00033,Android,security,security,Enterprise,Permission -> Action -> Persist,Accessibility,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00034,Android,security,security,Healthcare,Push -> Open -> Verify,Integration,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00035,Android,security,security,Healthcare,Permission -> Action -> Persist,Accessibility,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00036,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00037,Android,security,security,Healthcare,Push -> Open -> Verify,Functional,Clone Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00038,Android,security,security,Consumer,Push -> Open -> Verify,Security,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00039,Android,security,security,Consumer,Push -> Open -> Verify,Performance,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00040,Android,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Route Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00041,Android,security,security,Enterprise,Push -> Open -> Verify,Accessibility,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00042,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Accessibility,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00043,Android,security,security,Enterprise,Push -> Open -> Verify,Security,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00044,Android,security,security,Healthcare,Offline -> Sync -> Resolve,Functional,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00045,Android,security,security,Enterprise,Permission -> Action -> Persist,Regression,Clone Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00046,Android,security,security,Enterprise,Permission -> Action -> Persist,Accessibility,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00047,Android,security,security,Enterprise,Push -> Open -> Verify,Regression,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00048,Android,security,security,Healthcare,Push -> Open -> Verify,Security,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00049,Android,security,security,Consumer,Push -> Open -> Verify,Accessibility,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00050,Android,security,security,Enterprise,Permission -> Action -> Persist,Regression,Edit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00051,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00052,Android,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00053,Android,security,security,FinTech,Offline -> Sync -> Resolve,Performance,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00054,Android,security,security,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Clone Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00055,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00056,Android,security,security,FinTech,Offline -> Sync -> Resolve,Accessibility,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00057,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00058,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Accessibility,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00059,Android,security,security,FinTech,Offline -> Sync -> Resolve,UI,Restore Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00060,Android,security,security,FinTech,Permission -> Action -> Persist,Functional,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00061,Android,security,security,Consumer,Permission -> Action -> Persist,UI,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00062,Android,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00063,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00064,Android,security,security,Enterprise,Push -> Open -> Verify,Security,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00065,Android,security,security,FinTech,Push -> Open -> Verify,UI,Restore Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00066,Android,security,security,Healthcare,Push -> Open -> Verify,Accessibility,Edit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00067,Android,security,security,FinTech,Push -> Open -> Verify,UI,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00068,Android,security,security,Enterprise,Permission -> Action -> Persist,Accessibility,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00069,Android,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00070,Android,security,security,Consumer,Offline -> Sync -> Resolve,UI,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00071,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Functional,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00072,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Regression,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00073,Android,security,security,Healthcare,Permission -> Action -> Persist,Functional,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00074,Android,security,security,Healthcare,Permission -> Action -> Persist,Accessibility,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00075,Android,security,security,Enterprise,Push -> Open -> Verify,UI,Submit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00076,Android,security,security,Consumer,Offline -> Sync -> Resolve,Performance,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00077,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Accessibility,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00078,Android,security,security,Consumer,Offline -> Sync -> Resolve,UI,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00079,Android,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Restore Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00080,Android,security,security,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00081,Android,security,security,Healthcare,Permission -> Action -> Persist,Security,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00082,Android,security,security,Healthcare,Offline -> Sync -> Resolve,UI,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00083,Android,security,security,Healthcare,Offline -> Sync -> Resolve,Functional,Edit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00084,Android,security,security,Consumer,Offline -> Sync -> Resolve,Regression,Clone Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00085,Android,security,security,Enterprise,Push -> Open -> Verify,UI,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00086,Android,security,security,FinTech,Push -> Open -> Verify,Accessibility,Update Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00087,Android,security,security,Consumer,Offline -> Sync -> Resolve,UI,Edit Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00088,Android,security,security,Healthcare,Offline -> Sync -> Resolve,Regression,Approve Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00089,Android,security,security,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00090,Android,security,security,Consumer,Offline -> Sync -> Resolve,Functional,Route Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00091,Android,security,security,Consumer,Permission -> Action -> Persist,Regression,Reject Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00092,Android,security,security,FinTech,Offline -> Sync -> Resolve,Functional,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00093,Android,security,security,Healthcare,Offline -> Sync -> Resolve,Integration,Route Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00094,Android,security,security,FinTech,Push -> Open -> Verify,Accessibility,Delete Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00095,Android,security,security,FinTech,Offline -> Sync -> Resolve,Regression,Archive Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00096,Android,security,security,FinTech,Push -> Open -> Verify,Functional,Search Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00097,Android,security,security,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Restore Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00098,Android,security,security,Enterprise,Offline -> Sync -> Resolve,Performance,Escalate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00099,Android,security,security,FinTech,Permission -> Action -> Persist,Functional,Create Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-SEC-00100,Android,security,security,Enterprise,Push -> Open -> Verify,Performance,Validate Android security,Android access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

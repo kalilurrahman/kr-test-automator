@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-IAM-00001,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Security,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00002,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Security,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00003,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00004,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Security,Delete AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00005,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00006,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,UI,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00007,AWS,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Delete AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00008,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00009,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Clone AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00010,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00011,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Performance,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00012,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00013,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Security,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00014,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Delete AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00015,AWS,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00016,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Edit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00017,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Regression,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00018,AWS,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Restore AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00019,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Security,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00020,AWS,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00021,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Security,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00022,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Security,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00023,AWS,iam,iam,Security,Create -> Protect -> Audit -> Report,Performance,Edit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00024,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Clone AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00025,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00026,AWS,iam,iam,Security,Create -> Protect -> Audit -> Report,Functional,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00027,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,UI,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00028,AWS,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Validate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00029,AWS,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00030,AWS,iam,iam,Security,Create -> Protect -> Audit -> Report,UI,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00031,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Security,Create AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00032,AWS,iam,iam,Security,Create -> Protect -> Audit -> Report,Functional,Validate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00033,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,UI,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00034,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00035,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Performance,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00036,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00037,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Functional,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00038,AWS,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00039,AWS,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00040,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00041,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Functional,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00042,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Security,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00043,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00044,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Functional,Delete AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00045,AWS,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00046,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00047,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Restore AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00048,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00049,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00050,AWS,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Create AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00051,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Regression,Archive AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00052,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00053,AWS,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00054,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00055,AWS,iam,iam,Security,Create -> Protect -> Audit -> Report,Regression,Edit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00056,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,UI,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00057,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00058,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00059,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00060,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Functional,Validate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00061,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00062,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Functional,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00063,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00064,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00065,AWS,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00066,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00067,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,UI,Restore AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00068,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Clone AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00069,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Integration,Update AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00070,AWS,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00071,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00072,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Functional,Escalate AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00073,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00074,AWS,iam,iam,Security,Create -> Protect -> Audit -> Report,Regression,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00075,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00076,AWS,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Submit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00077,AWS,iam,iam,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Edit AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00078,AWS,iam,iam,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00079,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00080,AWS,iam,iam,Security,Deploy -> Scale -> Observe -> Rollback,UI,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00081,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Performance,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00082,AWS,iam,iam,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00083,AWS,iam,iam,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Archive AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00084,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,Security,Restore AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00085,AWS,iam,iam,Platform,Create -> Protect -> Audit -> Report,UI,Create AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00086,AWS,iam,iam,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Route AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00087,AWS,iam,iam,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Approve AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00088,AWS,iam,iam,Data,Create -> Protect -> Audit -> Report,Integration,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00089,AWS,iam,iam,DevOps,Create -> Protect -> Audit -> Report,Performance,Search AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-IAM-00090,AWS,iam,iam,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Reject AWS iam,AWS access and test data available,"1. Open iam.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

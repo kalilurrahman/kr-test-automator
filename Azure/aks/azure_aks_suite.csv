@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-AKS-00001,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Security,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00002,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00003,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,UI,Reject Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00004,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,UI,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00005,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Performance,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00006,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Performance,Route Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00007,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,UI,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00008,Azure,aks,aks,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00009,Azure,aks,aks,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00010,Azure,aks,aks,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00011,Azure,aks,aks,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00012,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Integration,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00013,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Functional,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00014,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00015,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Integration,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00016,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Security,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00017,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Integration,Escalate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00018,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00019,Azure,aks,aks,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00020,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Regression,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00021,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00022,Azure,aks,aks,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00023,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Submit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00024,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Accessibility,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00025,Azure,aks,aks,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00026,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Regression,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00027,Azure,aks,aks,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Route Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00028,Azure,aks,aks,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00029,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00030,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Regression,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00031,Azure,aks,aks,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00032,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Route Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00033,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00034,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00035,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Accessibility,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00036,Azure,aks,aks,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Submit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00037,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Security,Edit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00038,Azure,aks,aks,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00039,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Performance,Create Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00040,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00041,Azure,aks,aks,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00042,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00043,Azure,aks,aks,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Create Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00044,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00045,Azure,aks,aks,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00046,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Integration,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00047,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Regression,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00048,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00049,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Security,Edit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00050,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00051,Azure,aks,aks,Security,Provision -> Validate -> Monitor -> Remediate,Security,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00052,Azure,aks,aks,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00053,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Integration,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00054,Azure,aks,aks,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00055,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00056,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Security,Create Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00057,Azure,aks,aks,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00058,Azure,aks,aks,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00059,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00060,Azure,aks,aks,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00061,Azure,aks,aks,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Edit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00062,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00063,Azure,aks,aks,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Edit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00064,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00065,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Security,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00066,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Security,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00067,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Security,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00068,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Functional,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00069,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Performance,Validate Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00070,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00071,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Submit Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00072,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Integration,Reject Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00073,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Security,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00074,Azure,aks,aks,Security,Create -> Protect -> Audit -> Report,Security,Route Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00075,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Integration,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00076,Azure,aks,aks,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Reject Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00077,Azure,aks,aks,Data,Create -> Protect -> Audit -> Report,Performance,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00078,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Performance,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00079,Azure,aks,aks,DevOps,Create -> Protect -> Audit -> Report,Integration,Create Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00080,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Update Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00081,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00082,Azure,aks,aks,Security,Provision -> Validate -> Monitor -> Remediate,UI,Restore Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00083,Azure,aks,aks,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Reject Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00084,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Performance,Route Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00085,Azure,aks,aks,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00086,Azure,aks,aks,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Clone Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00087,Azure,aks,aks,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Approve Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00088,Azure,aks,aks,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00089,Azure,aks,aks,Platform,Create -> Protect -> Audit -> Report,Accessibility,Search Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-AKS-00090,Azure,aks,aks,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Delete Azure aks,Azure access and test data available,"1. Open aks.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "sales",
+      "path": "/Dynamics365/sales/index.html"
+    },
+    {
+      "key": "customer_service",
+      "path": "/Dynamics365/customer_service/index.html"
+    },
+    {
+      "key": "finance",
+      "path": "/Dynamics365/finance/index.html"
+    },
+    {
+      "key": "supply_chain",
+      "path": "/Dynamics365/supply_chain/index.html"
+    },
+    {
+      "key": "project_ops",
+      "path": "/Dynamics365/project_ops/index.html"
+    },
+    {
+      "key": "m365",
+      "path": "/Dynamics365/m365/index.html"
+    }
+  ]
+}

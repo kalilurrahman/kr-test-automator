@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-SEC-00001,GCP,security,security,Platform,Create -> Protect -> Audit -> Report,Regression,Approve GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00002,GCP,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Security,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00003,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Restore GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00004,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Restore GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00005,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Security,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00006,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00007,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00008,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00009,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Delete GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00010,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00011,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00012,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00013,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Performance,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00014,GCP,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Security,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00015,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00016,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Route GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00017,GCP,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00018,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00019,GCP,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Edit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00020,GCP,security,security,Security,Create -> Protect -> Audit -> Report,Accessibility,Delete GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00021,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00022,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00023,GCP,security,security,Data,Create -> Protect -> Audit -> Report,UI,Submit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00024,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00025,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Validate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00026,GCP,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00027,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Edit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00028,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00029,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Submit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00030,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Approve GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00031,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Restore GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00032,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Reject GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00033,GCP,security,security,Security,Create -> Protect -> Audit -> Report,Regression,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00034,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00035,GCP,security,security,Security,Create -> Protect -> Audit -> Report,UI,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00036,GCP,security,security,Security,Create -> Protect -> Audit -> Report,Regression,Submit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00037,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00038,GCP,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Validate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00039,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00040,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00041,GCP,security,security,Data,Create -> Protect -> Audit -> Report,Performance,Approve GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00042,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Security,Approve GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00043,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,UI,Edit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00044,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Integration,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00045,GCP,security,security,Platform,Create -> Protect -> Audit -> Report,Integration,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00046,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00047,GCP,security,security,Platform,Create -> Protect -> Audit -> Report,Security,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00048,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00049,GCP,security,security,Data,Create -> Protect -> Audit -> Report,Regression,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00050,GCP,security,security,Security,Create -> Protect -> Audit -> Report,Performance,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00051,GCP,security,security,Platform,Create -> Protect -> Audit -> Report,Accessibility,Reject GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00052,GCP,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00053,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,UI,Restore GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00054,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Restore GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00055,GCP,security,security,Platform,Create -> Protect -> Audit -> Report,Integration,Submit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00056,GCP,security,security,Data,Create -> Protect -> Audit -> Report,Functional,Reject GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00057,GCP,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00058,GCP,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Security,Validate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00059,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,UI,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00060,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00061,GCP,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Reject GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00062,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Integration,Submit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00063,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Edit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00064,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00065,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00066,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00067,GCP,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Delete GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00068,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00069,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Performance,Approve GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00070,GCP,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Reject GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00071,GCP,security,security,Data,Create -> Protect -> Audit -> Report,Functional,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00072,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Edit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00073,GCP,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Route GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00074,GCP,security,security,Data,Create -> Protect -> Audit -> Report,Functional,Restore GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00075,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Delete GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00076,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Route GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00077,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Security,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00078,GCP,security,security,Security,Provision -> Validate -> Monitor -> Remediate,UI,Validate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00079,GCP,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Create GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00080,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00081,GCP,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00082,GCP,security,security,Security,Create -> Protect -> Audit -> Report,Performance,Update GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00083,GCP,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Escalate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00084,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Regression,Submit GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00085,GCP,security,security,Data,Provision -> Validate -> Monitor -> Remediate,UI,Archive GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00086,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,UI,Validate GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00087,GCP,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Search GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00088,GCP,security,security,DevOps,Create -> Protect -> Audit -> Report,Functional,Delete GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00089,GCP,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Approve GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-SEC-00090,GCP,security,security,Platform,Create -> Protect -> Audit -> Report,Regression,Clone GCP security,GCP access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

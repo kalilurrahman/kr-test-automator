@@ -1,0 +1,1 @@
+Connect GitHub repo, point Lovable to the root index, sync Workday/ServiceNow/Veeva sections, keep GitHub as source of truth.

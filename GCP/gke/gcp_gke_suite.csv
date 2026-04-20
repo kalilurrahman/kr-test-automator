@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-GKE-00001,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00002,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Performance,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00003,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Performance,Reject GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00004,GCP,gke,gke,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Submit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00005,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Performance,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00006,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Security,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00007,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Search GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00008,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00009,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,UI,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00010,GCP,gke,gke,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00011,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Regression,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00012,GCP,gke,gke,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00013,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Integration,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00014,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Functional,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00015,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00016,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Security,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00017,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00018,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,UI,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00019,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Performance,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00020,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00021,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00022,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Reject GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00023,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Accessibility,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00024,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Reject GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00025,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Security,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00026,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00027,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00028,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Clone GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00029,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00030,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00031,GCP,gke,gke,DevOps,Create -> Protect -> Audit -> Report,Integration,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00032,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00033,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Update GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00034,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00035,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Restore GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00036,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Performance,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00037,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00038,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Performance,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00039,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,UI,Update GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00040,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Clone GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00041,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Performance,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00042,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Accessibility,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00043,GCP,gke,gke,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00044,GCP,gke,gke,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00045,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00046,GCP,gke,gke,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Submit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00047,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Search GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00048,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00049,GCP,gke,gke,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00050,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,UI,Clone GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00051,GCP,gke,gke,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00052,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Clone GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00053,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00054,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Accessibility,Search GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00055,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00056,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Restore GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00057,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00058,GCP,gke,gke,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00059,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Regression,Restore GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00060,GCP,gke,gke,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00061,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Regression,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00062,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00063,GCP,gke,gke,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Reject GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00064,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Functional,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00065,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Security,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00066,GCP,gke,gke,DevOps,Create -> Protect -> Audit -> Report,Integration,Clone GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00067,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,UI,Route GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00068,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00069,GCP,gke,gke,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00070,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00071,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00072,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Regression,Submit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00073,GCP,gke,gke,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Submit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00074,GCP,gke,gke,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Search GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00075,GCP,gke,gke,Data,Create -> Protect -> Audit -> Report,Accessibility,Search GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00076,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Reject GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00077,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Integration,Escalate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00078,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Integration,Archive GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00079,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Performance,Validate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00080,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Reject GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00081,GCP,gke,gke,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Restore GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00082,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,UI,Restore GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00083,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00084,GCP,gke,gke,Data,Provision -> Validate -> Monitor -> Remediate,Security,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00085,GCP,gke,gke,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Delete GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00086,GCP,gke,gke,DevOps,Create -> Protect -> Audit -> Report,Security,Create GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00087,GCP,gke,gke,Platform,Create -> Protect -> Audit -> Report,Integration,Approve GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00088,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,Performance,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00089,GCP,gke,gke,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-GKE-00090,GCP,gke,gke,Security,Create -> Protect -> Audit -> Report,UI,Edit GCP gke,GCP access and test data available,"1. Open gke.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

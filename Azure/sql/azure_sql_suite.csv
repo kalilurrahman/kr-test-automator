@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-SQL-00001,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00002,Azure,sql,sql,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Update Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00003,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00004,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Clone Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00005,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Functional,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00006,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00007,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00008,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Accessibility,Reject Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00009,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Integration,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00010,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Reject Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00011,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,UI,Edit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00012,Azure,sql,sql,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00013,Azure,sql,sql,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00014,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Security,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00015,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,UI,Archive Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00016,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Approve Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00017,Azure,sql,sql,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Edit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00018,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,UI,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00019,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00020,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Regression,Submit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00021,Azure,sql,sql,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Edit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00022,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,Regression,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00023,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Accessibility,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00024,Azure,sql,sql,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Update Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00025,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00026,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Edit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00027,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00028,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00029,Azure,sql,sql,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00030,Azure,sql,sql,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00031,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,UI,Reject Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00032,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00033,Azure,sql,sql,Data,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00034,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Integration,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00035,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00036,Azure,sql,sql,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Submit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00037,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00038,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Archive Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00039,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00040,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Regression,Archive Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00041,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Security,Submit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00042,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Security,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00043,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Security,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00044,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00045,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Performance,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00046,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00047,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Performance,Reject Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00048,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,Integration,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00049,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,Security,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00050,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Integration,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00051,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Submit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00052,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00053,Azure,sql,sql,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Edit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00054,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00055,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Reject Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00056,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,Security,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00057,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00058,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00059,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00060,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00061,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00062,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Performance,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00063,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,UI,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00064,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00065,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,Security,Route Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00066,Azure,sql,sql,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00067,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Regression,Clone Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00068,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Performance,Clone Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00069,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00070,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Update Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00071,Azure,sql,sql,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Validate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00072,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00073,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Accessibility,Route Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00074,Azure,sql,sql,Data,Create -> Protect -> Audit -> Report,Security,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00075,Azure,sql,sql,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Reject Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00076,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,UI,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00077,Azure,sql,sql,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00078,Azure,sql,sql,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00079,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Security,Route Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00080,Azure,sql,sql,Security,Create -> Protect -> Audit -> Report,Security,Restore Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00081,Azure,sql,sql,Security,Deploy -> Scale -> Observe -> Rollback,UI,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00082,Azure,sql,sql,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00083,Azure,sql,sql,Data,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00084,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Security,Update Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00085,Azure,sql,sql,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00086,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00087,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00088,Azure,sql,sql,Platform,Create -> Protect -> Audit -> Report,Regression,Create Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00089,Azure,sql,sql,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Archive Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SQL-00090,Azure,sql,sql,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Search Azure sql,Azure access and test data available,"1. Open sql.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

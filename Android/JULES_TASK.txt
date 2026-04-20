@@ -1,0 +1,1 @@
+Maintain /Android, preserve data files, update indexes/manifests, generate screenshots, open PRs.

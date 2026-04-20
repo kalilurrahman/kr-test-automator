@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-PER-00001,Android,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00002,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Accessibility,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00003,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00004,Android,performance,performance,Consumer,Push -> Open -> Verify,Security,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00005,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Performance,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00006,Android,performance,performance,Enterprise,Permission -> Action -> Persist,Security,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00007,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,UI,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00008,Android,performance,performance,Consumer,Push -> Open -> Verify,Performance,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00009,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Integration,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00010,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Integration,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00011,Android,performance,performance,Healthcare,Push -> Open -> Verify,Functional,Validate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00012,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Accessibility,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00013,Android,performance,performance,Enterprise,Permission -> Action -> Persist,Functional,Reject Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00014,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,UI,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00015,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Regression,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00016,Android,performance,performance,Healthcare,Permission -> Action -> Persist,UI,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00017,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Functional,Archive Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00018,Android,performance,performance,Enterprise,Permission -> Action -> Persist,Performance,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00019,Android,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00020,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Integration,Reject Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00021,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Performance,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00022,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Functional,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00023,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Accessibility,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00024,Android,performance,performance,Healthcare,Permission -> Action -> Persist,UI,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00025,Android,performance,performance,FinTech,Push -> Open -> Verify,UI,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00026,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,UI,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00027,Android,performance,performance,Consumer,Permission -> Action -> Persist,Functional,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00028,Android,performance,performance,Healthcare,Push -> Open -> Verify,Accessibility,Approve Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00029,Android,performance,performance,Healthcare,Push -> Open -> Verify,Accessibility,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00030,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Functional,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00031,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00032,Android,performance,performance,Consumer,Permission -> Action -> Persist,Accessibility,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00033,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Regression,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00034,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Integration,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00035,Android,performance,performance,FinTech,Permission -> Action -> Persist,UI,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00036,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Regression,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00037,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Integration,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00038,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Integration,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00039,Android,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00040,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Performance,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00041,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00042,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Functional,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00043,Android,performance,performance,Healthcare,Push -> Open -> Verify,UI,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00044,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Functional,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00045,Android,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00046,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Accessibility,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00047,Android,performance,performance,FinTech,Push -> Open -> Verify,Performance,Approve Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00048,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Functional,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00049,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Functional,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00050,Android,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00051,Android,performance,performance,Consumer,Permission -> Action -> Persist,Functional,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00052,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Functional,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00053,Android,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00054,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Performance,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00055,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Integration,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00056,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Validate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00057,Android,performance,performance,Enterprise,Push -> Open -> Verify,UI,Reject Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00058,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Reject Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00059,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Integration,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00060,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Integration,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00061,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Accessibility,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00062,Android,performance,performance,Consumer,Push -> Open -> Verify,Performance,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00063,Android,performance,performance,FinTech,Permission -> Action -> Persist,UI,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00064,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00065,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Archive Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00066,Android,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00067,Android,performance,performance,Healthcare,Permission -> Action -> Persist,Security,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00068,Android,performance,performance,Consumer,Push -> Open -> Verify,Accessibility,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00069,Android,performance,performance,Consumer,Push -> Open -> Verify,Accessibility,Approve Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00070,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00071,Android,performance,performance,Enterprise,Permission -> Action -> Persist,Functional,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00072,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Performance,Restore Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00073,Android,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00074,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Performance,Reject Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00075,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Functional,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00076,Android,performance,performance,Enterprise,Permission -> Action -> Persist,Integration,Route Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00077,Android,performance,performance,FinTech,Permission -> Action -> Persist,Functional,Create Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00078,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00079,Android,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00080,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Regression,Approve Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00081,Android,performance,performance,Healthcare,Push -> Open -> Verify,Security,Approve Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00082,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00083,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00084,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,UI,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00085,Android,performance,performance,Consumer,Offline -> Sync -> Resolve,Security,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00086,Android,performance,performance,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00087,Android,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00088,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Validate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00089,Android,performance,performance,FinTech,Offline -> Sync -> Resolve,Integration,Update Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00090,Android,performance,performance,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Approve Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00091,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Validate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00092,Android,performance,performance,FinTech,Permission -> Action -> Persist,Integration,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00093,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Functional,Edit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00094,Android,performance,performance,FinTech,Launch -> Authenticate -> Use -> Logout,UI,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00095,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Performance,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00096,Android,performance,performance,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Escalate Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00097,Android,performance,performance,Healthcare,Permission -> Action -> Persist,UI,Submit Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00098,Android,performance,performance,Healthcare,Offline -> Sync -> Resolve,Security,Clone Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00099,Android,performance,performance,FinTech,Permission -> Action -> Persist,Performance,Delete Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PER-00100,Android,performance,performance,Enterprise,Offline -> Sync -> Resolve,Functional,Search Android performance,Android access and test data available,"1. Open performance.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-FUN-00001,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Functional,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00002,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Approve Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00003,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,UI,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00004,Azure,functions,functions,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00005,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Integration,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00006,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00007,Azure,functions,functions,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00008,Azure,functions,functions,Data,Create -> Protect -> Audit -> Report,Functional,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00009,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Edit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00010,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Validate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00011,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Accessibility,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00012,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Archive Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00013,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Validate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00014,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,Regression,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00015,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Regression,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00016,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Escalate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00017,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00018,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Accessibility,Approve Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00019,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Security,Approve Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00020,Azure,functions,functions,Data,Create -> Protect -> Audit -> Report,Accessibility,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00021,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00022,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,UI,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00023,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00024,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00025,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00026,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Create Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00027,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00028,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Create Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00029,Azure,functions,functions,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00030,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Edit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00031,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Integration,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00032,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Functional,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00033,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00034,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00035,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00036,Azure,functions,functions,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00037,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00038,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00039,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Security,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00040,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00041,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Archive Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00042,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Edit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00043,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Performance,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00044,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,UI,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00045,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00046,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00047,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00048,Azure,functions,functions,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00049,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Security,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00050,Azure,functions,functions,Data,Deploy -> Scale -> Observe -> Rollback,UI,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00051,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00052,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00053,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00054,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,Accessibility,Reject Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00055,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Performance,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00056,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Functional,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00057,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,UI,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00058,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Integration,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00059,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,UI,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00060,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Regression,Reject Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00061,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00062,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Security,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00063,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00064,Azure,functions,functions,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Edit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00065,Azure,functions,functions,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00066,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Security,Approve Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00067,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,Functional,Create Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00068,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Performance,Create Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00069,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,Regression,Update Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00070,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,UI,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00071,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Route Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00072,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00073,Azure,functions,functions,Security,Provision -> Validate -> Monitor -> Remediate,Security,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00074,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Integration,Escalate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00075,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Integration,Submit Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00076,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Archive Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00077,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,Performance,Reject Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00078,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Validate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00079,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Approve Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00080,Azure,functions,functions,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Archive Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00081,Azure,functions,functions,Data,Create -> Protect -> Audit -> Report,Security,Search Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00082,Azure,functions,functions,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00083,Azure,functions,functions,Data,Create -> Protect -> Audit -> Report,Performance,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00084,Azure,functions,functions,Security,Create -> Protect -> Audit -> Report,Functional,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00085,Azure,functions,functions,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00086,Azure,functions,functions,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00087,Azure,functions,functions,DevOps,Create -> Protect -> Audit -> Report,Regression,Restore Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00088,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Validate Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00089,Azure,functions,functions,Platform,Create -> Protect -> Audit -> Report,Regression,Reject Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-FUN-00090,Azure,functions,functions,Data,Provision -> Validate -> Monitor -> Remediate,Security,Archive Azure functions,Azure access and test data available,"1. Open functions.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

@@ -1,0 +1,331 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+WEB-CHE-00001,WebApps,checkout,checkout,SaaS,Browse -> Add -> Checkout -> Confirm,Functional,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00002,WebApps,checkout,checkout,SaaS,Browse -> Add -> Checkout -> Confirm,Functional,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00003,WebApps,checkout,checkout,Marketplace,Render -> Interact -> Persist -> Report,Integration,Escalate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00004,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Functional,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00005,WebApps,checkout,checkout,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00006,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Accessibility,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00007,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,UI,Escalate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00008,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Performance,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00009,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Integration,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00010,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Integration,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00011,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,UI,Reject WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00012,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Functional,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00013,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Accessibility,Escalate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00014,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,UI,Escalate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00015,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,UI,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00016,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Regression,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00017,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Performance,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00018,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Security,Submit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00019,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Performance,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00020,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00021,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Security,Submit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00022,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,UI,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00023,WebApps,checkout,checkout,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00024,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Regression,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00025,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Regression,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00026,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00027,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,UI,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00028,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Accessibility,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00029,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,UI,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00030,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,UI,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00031,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Performance,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00032,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Security,Submit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00033,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Performance,Submit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00034,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,UI,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00035,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Security,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00036,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Security,Reject WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00037,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Integration,Search WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00038,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Performance,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00039,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Functional,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00040,WebApps,checkout,checkout,SaaS,Browse -> Add -> Checkout -> Confirm,Functional,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00041,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Regression,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00042,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Accessibility,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00043,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Security,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00044,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,UI,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00045,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Performance,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00046,WebApps,checkout,checkout,Marketplace,Render -> Interact -> Persist -> Report,Regression,Search WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00047,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Integration,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00048,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Performance,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00049,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Performance,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00050,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Integration,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00051,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,UI,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00052,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Security,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00053,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Security,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00054,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Regression,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00055,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Performance,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00056,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Performance,Reject WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00057,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Security,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00058,WebApps,checkout,checkout,SaaS,Browse -> Add -> Checkout -> Confirm,Integration,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00059,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,UI,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00060,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Security,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00061,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Functional,Search WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00062,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Performance,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00063,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Functional,Reject WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00064,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Performance,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00065,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Functional,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00066,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Integration,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00067,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Integration,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00068,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Accessibility,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00069,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Performance,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00070,WebApps,checkout,checkout,SaaS,Browse -> Add -> Checkout -> Confirm,Performance,Reject WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00071,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Accessibility,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00072,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Security,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00073,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Performance,Escalate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00074,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Regression,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00075,WebApps,checkout,checkout,Media,Open -> Authenticate -> Use -> Close,Functional,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00076,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00077,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00078,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Security,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00079,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Accessibility,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00080,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Performance,Route WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00081,WebApps,checkout,checkout,Marketplace,Render -> Interact -> Persist -> Report,Security,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00082,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Regression,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00083,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Accessibility,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00084,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00085,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00086,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Performance,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00087,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Integration,Escalate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00088,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Accessibility,Search WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00089,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Integration,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00090,WebApps,checkout,checkout,Retail,Render -> Interact -> Persist -> Report,Regression,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00091,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Functional,Create WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00092,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Regression,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00093,WebApps,checkout,checkout,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00094,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Security,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00095,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Integration,Update WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00096,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Performance,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00097,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Performance,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00098,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00099,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,UI,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00100,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Integration,Approve WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00101,WebApps,checkout,checkout,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00102,WebApps,checkout,checkout,SaaS,Render -> Interact -> Persist -> Report,Performance,Clone WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00103,WebApps,checkout,checkout,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Delete WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00104,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Security,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00105,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,UI,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00106,WebApps,checkout,checkout,Retail,Browse -> Add -> Checkout -> Confirm,Integration,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00107,WebApps,checkout,checkout,Media,Browse -> Add -> Checkout -> Confirm,Regression,Restore WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00108,WebApps,checkout,checkout,Marketplace,Browse -> Add -> Checkout -> Confirm,Security,Validate WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00109,WebApps,checkout,checkout,Media,Render -> Interact -> Persist -> Report,Performance,Archive WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-CHE-00110,WebApps,checkout,checkout,Retail,Open -> Authenticate -> Use -> Close,Accessibility,Edit WebApps checkout,WebApps access and test data available,"1. Open checkout.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"

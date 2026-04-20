@@ -19,6 +19,7 @@ const navLinks = [
   { to: "/", label: "Generate" },
   { to: "/sap", label: "SAP Tests" },
   { to: "/salesforce", label: "Salesforce" },
+  { to: "/workday/index.html", label: "Workday", isExternal: true },
   { to: "/templates", label: "Templates" },
   { to: "/history", label: "History" },
   { to: "/collections", label: "Collections" },
@@ -78,17 +79,27 @@ const KRHeader = () => {
           {/* RIGHT: Nav + Auth + Install */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
-                  location.pathname === link.to
-                    ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                }`}
-              >
-                {link.label}
-              </Link>
+              link.isExternal ? (
+                <a
+                  key={link.to}
+                  href={link.to}
+                  className="px-3 py-1.5 text-sm rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-accent"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+                    location.pathname === link.to
+                      ? "text-primary bg-primary/10"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
 
             {staticLinks.map((link) => (
@@ -173,18 +184,29 @@ const KRHeader = () => {
         {mobileOpen && (
           <div className="md:hidden border-t border-border bg-background px-4 py-3 space-y-1">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setMobileOpen(false)}
-                className={`block px-3 py-2 text-sm rounded-md ${
-                  location.pathname === link.to
-                    ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
+              link.isExternal ? (
+                <a
+                  key={link.to}
+                  href={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-3 py-2 text-sm rounded-md text-muted-foreground hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className={`block px-3 py-2 text-sm rounded-md ${
+                    location.pathname === link.to
+                      ? "text-primary bg-primary/10"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
             {staticLinks.map((link) => (
               <a
