@@ -53,7 +53,7 @@ export const PRODUCT_CATALOG: ProductEntry[] = [
     label: "Workday",
     shortLabel: "Workday",
     description: "10K+ HCM, Payroll, Recruiting, Finance, Reporting & integration scenarios.",
-    route: "/workday/index.html",
+    route: "/workday/Workday/index.html",
     kind: "static",
     modules: ["HCM", "Payroll", "Recruiting", "Finance", "Integrations", "Reporting", "E2E"],
     idPrefix: "WD",

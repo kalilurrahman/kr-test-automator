@@ -1,1 +1,117 @@
-<html><body><h1>TopProducts</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Products Test Repository</title>
+    <style>
+        body {font-family:Arial,sans-serif;margin:0;background:#f8f9fc;color:#2c3e50}
+        header {background:#c9a84c;color:white;padding:24px}
+        .wrap {max-width:1200px;margin:0 auto;padding:24px}
+        .pill {display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.2);color:white;font-size:12px;font-weight:bold;margin-bottom:12px}
+        h1 {margin:0 0 8px 0;}
+        header p {margin:0;opacity:0.9;}
+        .menu {display:flex;gap:16px;background:#fff;padding:16px 24px;border-bottom:1px solid #ecf0f1;flex-wrap:wrap;}
+        .menu a {color:#2c3e50;text-decoration:none;font-weight:bold;font-size:14px;padding:8px 12px;border-radius:6px;transition:all 0.2s;}
+        .menu a:hover {background:#ebf3fd;color:#c9a84c;}
+        .menu a.active {background:#c9a84c;color:white;}
+        .clouds-grid {display:grid;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));gap:24px;margin-top:24px;}
+        .cloud-card {background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:12px;transition:transform 0.2s;text-decoration:none;color:inherit;}
+        .cloud-card:hover {transform:translateY(-4px);box-shadow:0 4px 16px rgba(0,0,0,.12);}
+        .cloud-card h3 {margin:0;color:#c9a84c;font-size:20px;}
+        .cloud-card p {color:#7f8c8d;font-size:14px;margin:0;}
+        .btn {display:inline-block;padding:8px 14px;background:#c9a84c;color:white;border-radius:6px;font-weight:bold;font-size:13px;}
+        .btn-outline {background:transparent;border:1px solid #c9a84c;color:#c9a84c;}
+        .actions {display:flex;gap:8px;margin-top:auto;}
+        footer {text-align:center;padding:32px 16px;color:#7f8c8d;font-size:13px;}
+        footer a {color:#c9a84c;text-decoration:none;}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="wrap" style="padding-bottom:0;">
+        <div class="pill">Top Products Ecosystem</div>
+        <h1>Top Products Test Repository</h1>
+        <p>Comprehensive test scripts across 7 Top Products modules.</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <a href="/TopProducts/index.html" class="active">Overview</a>
+    <a href="/TopProducts/d365/index.html">D365</a>
+    <a href="/TopProducts/oracle/index.html">Oracle</a>
+    <a href="/TopProducts/salesforce/index.html">Salesforce</a>
+    <a href="/TopProducts/sap/index.html">SAP</a>
+    <a href="/TopProducts/servicenow/index.html">Servicenow</a>
+    <a href="/TopProducts/veeva/index.html">Veeva</a>
+    <a href="/TopProducts/workday/index.html">Workday</a>
+</nav>
+
+<main class="wrap">
+    <div class="clouds-grid">
+        <a class="cloud-card" href="/TopProducts/d365/index.html">
+            <h3>D365</h3>
+            <p>Browse D365 test cases — topproducts_d365_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/TopProducts/oracle/index.html">
+            <h3>Oracle</h3>
+            <p>Browse Oracle test cases — topproducts_oracle_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/TopProducts/salesforce/index.html">
+            <h3>Salesforce</h3>
+            <p>Browse Salesforce test cases — topproducts_salesforce_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/TopProducts/sap/index.html">
+            <h3>SAP</h3>
+            <p>Browse SAP test cases — topproducts_sap_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/TopProducts/servicenow/index.html">
+            <h3>Servicenow</h3>
+            <p>Browse Servicenow test cases — topproducts_servicenow_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/TopProducts/veeva/index.html">
+            <h3>Veeva</h3>
+            <p>Browse Veeva test cases — topproducts_veeva_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/TopProducts/workday/index.html">
+            <h3>Workday</h3>
+            <p>Browse Workday test cases — topproducts_workday_suite.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">Suite</span>
+            </div>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <p>← <a href="/dashboard">Back to dashboard</a> · <a href="/">Generator</a> · <a href="/about">About</a></p>
+</footer>
+
+</body>
+</html>

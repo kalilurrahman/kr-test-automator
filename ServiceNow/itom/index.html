@@ -1,1 +1,125 @@
-<html><body><h1>ITOM</h1><p>Landing page.</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ServiceNow ITOM Test Cases</title>
+    <style>
+        body {font-family:Arial,sans-serif;margin:0;background:#f8f9fc;color:#2c3e50}
+        header {background:#10b981;color:white;padding:24px}
+        .wrap {max-width:1200px;margin:0 auto;padding:24px}
+        .pill {display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.2);color:white;font-size:12px;font-weight:bold;margin-bottom:12px}
+        h1 {margin:0 0 8px 0;}
+        header p {margin:0;opacity:0.9;}
+        .menu {display:flex;gap:16px;background:#fff;padding:16px 24px;border-bottom:1px solid #ecf0f1;flex-wrap:wrap;}
+        .menu a {color:#2c3e50;text-decoration:none;font-weight:bold;font-size:14px;padding:8px 12px;border-radius:6px;transition:all 0.2s;}
+        .menu a:hover {background:#ebf3fd;color:#10b981;}
+        .menu a.active {background:#10b981;color:white;}
+        table {width:100%;border-collapse:collapse;box-shadow:0 2px 8px rgba(0,0,0,.08);background:white;border-radius:12px;overflow:hidden;margin-top:16px;}
+        th,td {padding:10px 12px;border-bottom:1px solid #ecf0f1;text-align:left;font-size:13px;vertical-align:top;}
+        th {background:#ebf3fd;font-weight:bold;color:#2c3e50;position:sticky;top:0;}
+        tr:hover {background:#f8f9fc;}
+        .loading {padding:48px;text-align:center;color:#7f8c8d;font-style:italic;}
+        .downloads {display:flex;gap:14px;margin-top:24px;background:white;padding:14px 18px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);flex-wrap:wrap;align-items:center;}
+        .downloads a {color:#10b981;text-decoration:none;font-weight:bold;font-size:13px;}
+        .downloads a:hover {text-decoration:underline;}
+        .stats {display:flex;gap:16px;margin-top:18px;flex-wrap:wrap;}
+        .stat {background:white;padding:10px 16px;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);font-size:13px;color:#5e6c84;}
+        .stat strong {color:#10b981;font-size:16px;display:block;}
+        footer {text-align:center;padding:32px 16px;color:#7f8c8d;font-size:13px;}
+        footer a {color:#10b981;text-decoration:none;}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="wrap" style="padding-bottom:0;">
+        <div class="pill">ServiceNow Test Repository</div>
+        <h1>ITOM</h1>
+        <p>Live data view — first 100 rows. Download for the full set.</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <a href="/ServiceNow/index.html">Overview</a>
+    <a href="/ServiceNow/csm/index.html">CSM</a>
+    <a href="/ServiceNow/hrsd/index.html">HRSD</a>
+    <a href="/ServiceNow/itom/index.html" class="active">ITOM</a>
+    <a href="/ServiceNow/itsm/index.html">ITSM</a>
+</nav>
+
+<main class="wrap">
+    <div class="downloads">
+        <strong>Downloads:</strong>
+        <a href="servicenow_itom_2500.csv">CSV</a>
+        <a href="servicenow_itom_2500.xlsx">XLSX</a>
+        <a href="servicenow_itom_2500.json">JSON</a>
+        <a href="servicenow_itom_2500.ts">TypeScript</a>
+        <a href="servicenow_itom_2500.html" target="_blank">Full HTML Report</a>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div style="overflow-x:auto; max-height: 720px; margin-top:18px;">
+        <table id="dataTable">
+            <thead><tr id="tableHeader"></tr></thead>
+            <tbody id="tableBody">
+                <tr><td class="loading" colspan="100">Loading servicenow_itom_2500.csv …</td></tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <p>← <a href="/ServiceNow/index.html">Back to ServiceNow</a> · <a href="/dashboard">Dashboard</a> · <a href="/">Generator</a></p>
+</footer>
+
+<script>
+function parseCSV(text) {
+    const rows = []; let row = []; let cell = ''; let q = false;
+    for (let i=0;i<text.length;i++) {
+        const c = text[i], n = text[i+1];
+        if (c === '"' && q && n === '"') { cell += '"'; i++; }
+        else if (c === '"') { q = !q; }
+        else if (c === ',' && !q) { row.push(cell); cell = ''; }
+        else if ((c === '\n' || (c === '\r' && n === '\n')) && !q) {
+            row.push(cell); rows.push(row); row = []; cell = '';
+            if (c === '\r') i++;
+        } else { cell += c; }
+    }
+    if (cell || row.length) { row.push(cell); rows.push(row); }
+    return rows;
+}
+async function load() {
+    try {
+        const res = await fetch('servicenow_itom_2500.csv');
+        if (!res.ok) throw new Error('HTTP '+res.status);
+        const txt = await res.text();
+        const rows = parseCSV(txt).filter(r => r.length > 1);
+        if (!rows.length) throw new Error('Empty CSV');
+        const headers = rows[0];
+        const total = rows.length - 1;
+        const data = rows.slice(1, 101);
+        document.getElementById('tableHeader').innerHTML =
+            headers.map(h => '<th>'+(h||'').replace(/</g,'&lt;')+'</th>').join('');
+        document.getElementById('tableBody').innerHTML = data.map(r =>
+            '<tr>' + headers.map((_,i) => {
+                const v = (r[i]||'').replace(/</g,'&lt;');
+                return '<td>' + (v.length>200 ? v.slice(0,200)+'…' : v) + '</td>';
+            }).join('') + '</tr>'
+        ).join('');
+        document.getElementById('stats').innerHTML =
+            '<div class="stat"><strong>'+total.toLocaleString()+'</strong>total cases</div>' +
+            '<div class="stat"><strong>'+headers.length+'</strong>columns</div>' +
+            '<div class="stat"><strong>'+Math.min(100,total)+'</strong>shown (download for all)</div>';
+    } catch (e) {
+        console.error(e);
+        document.getElementById('tableBody').innerHTML =
+            '<tr><td colspan="100" class="loading">Could not load servicenow_itom_2500.csv — '+e.message+'</td></tr>';
+    }
+}
+load();
+</script>
+
+</body>
+</html>
