@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { AuthModal } from "@/components/auth/AuthModal";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { PaletteSwitcher } from "@/components/PaletteSwitcher";
+import { FontSwitcher } from "@/components/FontSwitcher";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Button } from "@/components/ui/button";
 import { PRODUCT_CATALOG } from "@/data/productCatalog";
@@ -187,6 +188,7 @@ const KRHeader = () => {
             </button>
             <ThemeToggle />
             <PaletteSwitcher />
+            <FontSwitcher />
 
             {isInstallable && (
               <button

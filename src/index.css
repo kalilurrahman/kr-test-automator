@@ -71,7 +71,14 @@
     --clr-rest-assured: 38 92% 50%;
     --clr-karate: 330 81% 60%;
 
-    font-family: 'DM Sans', sans-serif;
+    /* Typography vars — overridden by FontSwitcher (src/lib/fonts.ts) */
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', Menlo, monospace;
+    --font-base-size: clamp(13px, 0.875rem + 0.1vw, 15px);
+
+    font-family: var(--font-body);
+    font-size: var(--font-base-size);
   }
 
   .dark {
@@ -104,15 +111,19 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
+    /* Prevent horizontal overflow when users pick a wider preset on small screens */
+    overflow-wrap: break-word;
   }
 
   h1, h2, h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-display);
+    /* Allow long titles to wrap rather than push containers */
+    overflow-wrap: anywhere;
   }
 
   code, pre, .font-code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-mono);
   }
 }
 
