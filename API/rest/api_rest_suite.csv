@@ -1,0 +1,361 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+API-RES-00001,API,rest,rest,B2B API,Schema -> Contract -> Deploy -> Monitor,Regression,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00002,API,rest,rest,Internal API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00003,API,rest,rest,Public API,Sync -> Retry -> Recover,Functional,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00004,API,rest,rest,Internal API,Create -> Validate -> Respond,Accessibility,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00005,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Accessibility,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00006,API,rest,rest,Internal API,Sync -> Retry -> Recover,Regression,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00007,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00008,API,rest,rest,Public API,Sync -> Retry -> Recover,Accessibility,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00009,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Security,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00010,API,rest,rest,Partner API,Sync -> Retry -> Recover,Integration,Restore API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00011,API,rest,rest,Partner API,Create -> Validate -> Respond,Regression,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00012,API,rest,rest,Public API,Sync -> Retry -> Recover,Integration,Search API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00013,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,UI,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00014,API,rest,rest,B2B API,Create -> Validate -> Respond,Performance,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00015,API,rest,rest,Public API,Sync -> Retry -> Recover,Integration,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00016,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00017,API,rest,rest,Public API,Sync -> Retry -> Recover,Regression,Search API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00018,API,rest,rest,B2B API,Create -> Validate -> Respond,UI,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00019,API,rest,rest,B2B API,Schema -> Contract -> Deploy -> Monitor,Functional,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00020,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00021,API,rest,rest,Internal API,Sync -> Retry -> Recover,Accessibility,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00022,API,rest,rest,B2B API,Sync -> Retry -> Recover,Functional,Restore API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00023,API,rest,rest,Public API,Create -> Validate -> Respond,UI,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00024,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Integration,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00025,API,rest,rest,Partner API,Create -> Validate -> Respond,Integration,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00026,API,rest,rest,Internal API,Create -> Validate -> Respond,Security,Submit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00027,API,rest,rest,Public API,Sync -> Retry -> Recover,UI,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00028,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Security,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00029,API,rest,rest,Internal API,Sync -> Retry -> Recover,Security,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00030,API,rest,rest,Partner API,Create -> Validate -> Respond,UI,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00031,API,rest,rest,Partner API,Create -> Validate -> Respond,Integration,Submit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00032,API,rest,rest,Internal API,Auth -> Call -> Verify -> Log,Regression,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00033,API,rest,rest,Partner API,Create -> Validate -> Respond,UI,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00034,API,rest,rest,Partner API,Sync -> Retry -> Recover,Security,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00035,API,rest,rest,Public API,Sync -> Retry -> Recover,Regression,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00036,API,rest,rest,Internal API,Auth -> Call -> Verify -> Log,Accessibility,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00037,API,rest,rest,Public API,Auth -> Call -> Verify -> Log,Integration,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00038,API,rest,rest,Public API,Create -> Validate -> Respond,Functional,Search API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00039,API,rest,rest,Internal API,Create -> Validate -> Respond,Regression,Search API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00040,API,rest,rest,Public API,Schema -> Contract -> Deploy -> Monitor,Performance,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00041,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Integration,Submit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00042,API,rest,rest,B2B API,Sync -> Retry -> Recover,Performance,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00043,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Regression,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00044,API,rest,rest,Public API,Auth -> Call -> Verify -> Log,Performance,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00045,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Integration,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00046,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Functional,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00047,API,rest,rest,B2B API,Create -> Validate -> Respond,Accessibility,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00048,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,UI,Restore API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00049,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Escalate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00050,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Performance,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00051,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Functional,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00052,API,rest,rest,B2B API,Create -> Validate -> Respond,Security,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00053,API,rest,rest,Partner API,Create -> Validate -> Respond,Accessibility,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00054,API,rest,rest,Partner API,Create -> Validate -> Respond,Accessibility,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00055,API,rest,rest,B2B API,Sync -> Retry -> Recover,Security,Restore API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00056,API,rest,rest,Partner API,Sync -> Retry -> Recover,Accessibility,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00057,API,rest,rest,B2B API,Create -> Validate -> Respond,Regression,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00058,API,rest,rest,B2B API,Sync -> Retry -> Recover,Regression,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00059,API,rest,rest,Internal API,Auth -> Call -> Verify -> Log,UI,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00060,API,rest,rest,Public API,Sync -> Retry -> Recover,Integration,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00061,API,rest,rest,Internal API,Create -> Validate -> Respond,Security,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00062,API,rest,rest,Internal API,Auth -> Call -> Verify -> Log,Functional,Escalate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00063,API,rest,rest,Public API,Create -> Validate -> Respond,Regression,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00064,API,rest,rest,Internal API,Create -> Validate -> Respond,Regression,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00065,API,rest,rest,Public API,Auth -> Call -> Verify -> Log,Security,Submit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00066,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,UI,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00067,API,rest,rest,Internal API,Sync -> Retry -> Recover,Accessibility,Restore API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00068,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Security,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00069,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Security,Search API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00070,API,rest,rest,Public API,Schema -> Contract -> Deploy -> Monitor,Security,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00071,API,rest,rest,Public API,Sync -> Retry -> Recover,Regression,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00072,API,rest,rest,Internal API,Create -> Validate -> Respond,Functional,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00073,API,rest,rest,B2B API,Schema -> Contract -> Deploy -> Monitor,UI,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00074,API,rest,rest,Partner API,Create -> Validate -> Respond,Integration,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00075,API,rest,rest,Public API,Sync -> Retry -> Recover,Functional,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00076,API,rest,rest,B2B API,Sync -> Retry -> Recover,Regression,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00077,API,rest,rest,Partner API,Create -> Validate -> Respond,Accessibility,Escalate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00078,API,rest,rest,Partner API,Sync -> Retry -> Recover,Integration,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00079,API,rest,rest,Internal API,Sync -> Retry -> Recover,Accessibility,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00080,API,rest,rest,Partner API,Sync -> Retry -> Recover,Security,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00081,API,rest,rest,Partner API,Create -> Validate -> Respond,UI,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00082,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Functional,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00083,API,rest,rest,Public API,Sync -> Retry -> Recover,Regression,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00084,API,rest,rest,B2B API,Create -> Validate -> Respond,Security,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00085,API,rest,rest,B2B API,Create -> Validate -> Respond,Accessibility,Clone API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00086,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Regression,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00087,API,rest,rest,Partner API,Sync -> Retry -> Recover,Integration,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00088,API,rest,rest,Partner API,Sync -> Retry -> Recover,Performance,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00089,API,rest,rest,B2B API,Sync -> Retry -> Recover,Security,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00090,API,rest,rest,Internal API,Sync -> Retry -> Recover,Functional,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00091,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Performance,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00092,API,rest,rest,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00093,API,rest,rest,Public API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00094,API,rest,rest,Public API,Sync -> Retry -> Recover,UI,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00095,API,rest,rest,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Escalate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00096,API,rest,rest,Public API,Schema -> Contract -> Deploy -> Monitor,UI,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00097,API,rest,rest,B2B API,Sync -> Retry -> Recover,Integration,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00098,API,rest,rest,Partner API,Create -> Validate -> Respond,Security,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00099,API,rest,rest,Partner API,Sync -> Retry -> Recover,Functional,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00100,API,rest,rest,Internal API,Sync -> Retry -> Recover,UI,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00101,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Integration,Submit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00102,API,rest,rest,Public API,Sync -> Retry -> Recover,Performance,Search API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00103,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Functional,Restore API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00104,API,rest,rest,Internal API,Auth -> Call -> Verify -> Log,Performance,Archive API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00105,API,rest,rest,Partner API,Create -> Validate -> Respond,Security,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00106,API,rest,rest,Internal API,Schema -> Contract -> Deploy -> Monitor,Integration,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00107,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Regression,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00108,API,rest,rest,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00109,API,rest,rest,Partner API,Create -> Validate -> Respond,Functional,Edit API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00110,API,rest,rest,Internal API,Schema -> Contract -> Deploy -> Monitor,UI,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00111,API,rest,rest,Partner API,Schema -> Contract -> Deploy -> Monitor,Accessibility,Escalate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00112,API,rest,rest,B2B API,Schema -> Contract -> Deploy -> Monitor,Security,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00113,API,rest,rest,Public API,Sync -> Retry -> Recover,Functional,Approve API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00114,API,rest,rest,Partner API,Create -> Validate -> Respond,Security,Reject API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00115,API,rest,rest,Internal API,Create -> Validate -> Respond,Functional,Delete API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00116,API,rest,rest,B2B API,Sync -> Retry -> Recover,Integration,Update API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00117,API,rest,rest,Partner API,Sync -> Retry -> Recover,Accessibility,Escalate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00118,API,rest,rest,Partner API,Create -> Validate -> Respond,Integration,Validate API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00119,API,rest,rest,B2B API,Auth -> Call -> Verify -> Log,Security,Create API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"
+API-RES-00120,API,rest,rest,Partner API,Auth -> Call -> Verify -> Log,Regression,Route API rest,API access and test data available,"1. Open rest.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""method"": ""GET"", ""endpoint"": ""/v1/items"", ""auth"": ""OAuth2"", ""payload"": ""{}""}"

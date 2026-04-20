@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-OFF-00001,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,Performance,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00002,Android,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00003,Android,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00004,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Reject Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00005,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,Integration,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00006,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Restore Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00007,Android,offline,offline,FinTech,Permission -> Action -> Persist,Security,Route Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00008,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00009,Android,offline,offline,FinTech,Push -> Open -> Verify,UI,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00010,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00011,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Restore Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00012,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Restore Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00013,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Security,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00014,Android,offline,offline,FinTech,Permission -> Action -> Persist,Integration,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00015,Android,offline,offline,FinTech,Permission -> Action -> Persist,Security,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00016,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,UI,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00017,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00018,Android,offline,offline,FinTech,Permission -> Action -> Persist,Accessibility,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00019,Android,offline,offline,Healthcare,Permission -> Action -> Persist,Accessibility,Reject Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00020,Android,offline,offline,FinTech,Push -> Open -> Verify,UI,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00021,Android,offline,offline,Enterprise,Offline -> Sync -> Resolve,Regression,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00022,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,Regression,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00023,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00024,Android,offline,offline,FinTech,Push -> Open -> Verify,UI,Reject Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00025,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00026,Android,offline,offline,Enterprise,Offline -> Sync -> Resolve,Performance,Clone Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00027,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Create Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00028,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,Accessibility,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00029,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Clone Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00030,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,UI,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00031,Android,offline,offline,Consumer,Offline -> Sync -> Resolve,Regression,Edit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00032,Android,offline,offline,Enterprise,Push -> Open -> Verify,Integration,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00033,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00034,Android,offline,offline,FinTech,Permission -> Action -> Persist,Regression,Edit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00035,Android,offline,offline,Enterprise,Permission -> Action -> Persist,Integration,Edit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00036,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Route Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00037,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Route Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00038,Android,offline,offline,FinTech,Push -> Open -> Verify,Regression,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00039,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00040,Android,offline,offline,Enterprise,Offline -> Sync -> Resolve,Security,Clone Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00041,Android,offline,offline,Healthcare,Permission -> Action -> Persist,Performance,Create Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00042,Android,offline,offline,Enterprise,Permission -> Action -> Persist,UI,Restore Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00043,Android,offline,offline,Consumer,Push -> Open -> Verify,Performance,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00044,Android,offline,offline,Enterprise,Permission -> Action -> Persist,Accessibility,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00045,Android,offline,offline,Healthcare,Push -> Open -> Verify,Security,Clone Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00046,Android,offline,offline,Healthcare,Push -> Open -> Verify,Integration,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00047,Android,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00048,Android,offline,offline,Healthcare,Permission -> Action -> Persist,Integration,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00049,Android,offline,offline,Healthcare,Push -> Open -> Verify,Integration,Delete Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00050,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00051,Android,offline,offline,Consumer,Offline -> Sync -> Resolve,Integration,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00052,Android,offline,offline,FinTech,Permission -> Action -> Persist,Integration,Restore Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00053,Android,offline,offline,FinTech,Offline -> Sync -> Resolve,Security,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00054,Android,offline,offline,Enterprise,Push -> Open -> Verify,Integration,Delete Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00055,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Security,Edit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00056,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Delete Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00057,Android,offline,offline,FinTech,Permission -> Action -> Persist,Accessibility,Reject Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00058,Android,offline,offline,Consumer,Push -> Open -> Verify,Functional,Clone Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00059,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Integration,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00060,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Performance,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00061,Android,offline,offline,Consumer,Permission -> Action -> Persist,Integration,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00062,Android,offline,offline,Consumer,Permission -> Action -> Persist,Integration,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00063,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Regression,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00064,Android,offline,offline,FinTech,Push -> Open -> Verify,Regression,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00065,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Route Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00066,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00067,Android,offline,offline,Consumer,Offline -> Sync -> Resolve,Functional,Edit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00068,Android,offline,offline,Enterprise,Push -> Open -> Verify,Regression,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00069,Android,offline,offline,FinTech,Permission -> Action -> Persist,Regression,Delete Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00070,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Escalate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00071,Android,offline,offline,Healthcare,Push -> Open -> Verify,Accessibility,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00072,Android,offline,offline,Consumer,Permission -> Action -> Persist,Accessibility,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00073,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Accessibility,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00074,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Create Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00075,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00076,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Integration,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00077,Android,offline,offline,FinTech,Push -> Open -> Verify,Accessibility,Route Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00078,Android,offline,offline,Healthcare,Permission -> Action -> Persist,Integration,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00079,Android,offline,offline,Healthcare,Push -> Open -> Verify,Regression,Create Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00080,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Create Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00081,Android,offline,offline,Consumer,Offline -> Sync -> Resolve,Functional,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00082,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00083,Android,offline,offline,Consumer,Permission -> Action -> Persist,Performance,Approve Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00084,Android,offline,offline,Healthcare,Push -> Open -> Verify,Accessibility,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00085,Android,offline,offline,FinTech,Push -> Open -> Verify,Performance,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00086,Android,offline,offline,Consumer,Push -> Open -> Verify,Accessibility,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00087,Android,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00088,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Regression,Update Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00089,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Performance,Validate Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00090,Android,offline,offline,Enterprise,Permission -> Action -> Persist,Performance,Clone Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00091,Android,offline,offline,Consumer,Offline -> Sync -> Resolve,Integration,Reject Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00092,Android,offline,offline,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Restore Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00093,Android,offline,offline,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00094,Android,offline,offline,Healthcare,Push -> Open -> Verify,Regression,Submit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00095,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Reject Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00096,Android,offline,offline,Healthcare,Offline -> Sync -> Resolve,Functional,Route Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00097,Android,offline,offline,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Edit Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00098,Android,offline,offline,Healthcare,Permission -> Action -> Persist,Integration,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00099,Android,offline,offline,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Search Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-OFF-00100,Android,offline,offline,FinTech,Permission -> Action -> Persist,Integration,Archive Android offline,Android access and test data available,"1. Open offline.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

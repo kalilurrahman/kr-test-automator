@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-PAY-00001,Android,payments,payments,FinTech,Offline -> Sync -> Resolve,UI,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00002,Android,payments,payments,Healthcare,Permission -> Action -> Persist,Regression,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00003,Android,payments,payments,Enterprise,Offline -> Sync -> Resolve,Regression,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00004,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Restore Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00005,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00006,Android,payments,payments,Healthcare,Permission -> Action -> Persist,Functional,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00007,Android,payments,payments,Consumer,Permission -> Action -> Persist,Accessibility,Delete Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00008,Android,payments,payments,Consumer,Permission -> Action -> Persist,Functional,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00009,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00010,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00011,Android,payments,payments,Consumer,Offline -> Sync -> Resolve,Accessibility,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00012,Android,payments,payments,Healthcare,Offline -> Sync -> Resolve,Functional,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00013,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00014,Android,payments,payments,FinTech,Push -> Open -> Verify,Integration,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00015,Android,payments,payments,Enterprise,Push -> Open -> Verify,Accessibility,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00016,Android,payments,payments,Enterprise,Offline -> Sync -> Resolve,Performance,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00017,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Create Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00018,Android,payments,payments,FinTech,Push -> Open -> Verify,Integration,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00019,Android,payments,payments,Healthcare,Push -> Open -> Verify,UI,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00020,Android,payments,payments,Consumer,Permission -> Action -> Persist,Regression,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00021,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00022,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00023,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00024,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00025,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00026,Android,payments,payments,Consumer,Offline -> Sync -> Resolve,Security,Validate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00027,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Restore Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00028,Android,payments,payments,Enterprise,Push -> Open -> Verify,Accessibility,Delete Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00029,Android,payments,payments,Healthcare,Offline -> Sync -> Resolve,Security,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00030,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00031,Android,payments,payments,Healthcare,Push -> Open -> Verify,Functional,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00032,Android,payments,payments,Consumer,Push -> Open -> Verify,Integration,Create Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00033,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Restore Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00034,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00035,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00036,Android,payments,payments,FinTech,Offline -> Sync -> Resolve,Performance,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00037,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00038,Android,payments,payments,Consumer,Offline -> Sync -> Resolve,UI,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00039,Android,payments,payments,Healthcare,Push -> Open -> Verify,UI,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00040,Android,payments,payments,Healthcare,Push -> Open -> Verify,UI,Clone Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00041,Android,payments,payments,FinTech,Push -> Open -> Verify,Regression,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00042,Android,payments,payments,FinTech,Push -> Open -> Verify,Functional,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00043,Android,payments,payments,Consumer,Offline -> Sync -> Resolve,Integration,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00044,Android,payments,payments,FinTech,Push -> Open -> Verify,Regression,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00045,Android,payments,payments,Consumer,Permission -> Action -> Persist,Integration,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00046,Android,payments,payments,Consumer,Permission -> Action -> Persist,Security,Delete Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00047,Android,payments,payments,Enterprise,Push -> Open -> Verify,Functional,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00048,Android,payments,payments,Healthcare,Offline -> Sync -> Resolve,Regression,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00049,Android,payments,payments,FinTech,Offline -> Sync -> Resolve,Performance,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00050,Android,payments,payments,Enterprise,Push -> Open -> Verify,Performance,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00051,Android,payments,payments,FinTech,Offline -> Sync -> Resolve,Security,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00052,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00053,Android,payments,payments,Healthcare,Offline -> Sync -> Resolve,Security,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00054,Android,payments,payments,Healthcare,Permission -> Action -> Persist,UI,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00055,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Validate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00056,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Clone Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00057,Android,payments,payments,Enterprise,Push -> Open -> Verify,Security,Create Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00058,Android,payments,payments,Healthcare,Permission -> Action -> Persist,Performance,Clone Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00059,Android,payments,payments,FinTech,Permission -> Action -> Persist,Performance,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00060,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00061,Android,payments,payments,Consumer,Push -> Open -> Verify,Functional,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00062,Android,payments,payments,Healthcare,Permission -> Action -> Persist,Integration,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00063,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00064,Android,payments,payments,Healthcare,Permission -> Action -> Persist,UI,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00065,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00066,Android,payments,payments,Enterprise,Permission -> Action -> Persist,UI,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00067,Android,payments,payments,Healthcare,Offline -> Sync -> Resolve,Regression,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00068,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Regression,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00069,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00070,Android,payments,payments,Enterprise,Permission -> Action -> Persist,Integration,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00071,Android,payments,payments,FinTech,Permission -> Action -> Persist,Security,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00072,Android,payments,payments,Healthcare,Offline -> Sync -> Resolve,Integration,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00073,Android,payments,payments,Consumer,Push -> Open -> Verify,Security,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00074,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00075,Android,payments,payments,Enterprise,Permission -> Action -> Persist,Performance,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00076,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00077,Android,payments,payments,Healthcare,Permission -> Action -> Persist,Security,Submit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00078,Android,payments,payments,Healthcare,Launch -> Authenticate -> Use -> Logout,Accessibility,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00079,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00080,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Validate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00081,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Approve Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00082,Android,payments,payments,Consumer,Permission -> Action -> Persist,UI,Create Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00083,Android,payments,payments,Healthcare,Permission -> Action -> Persist,Security,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00084,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00085,Android,payments,payments,Consumer,Permission -> Action -> Persist,Accessibility,Search Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00086,Android,payments,payments,Enterprise,Offline -> Sync -> Resolve,UI,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00087,Android,payments,payments,FinTech,Permission -> Action -> Persist,Functional,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00088,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00089,Android,payments,payments,Enterprise,Permission -> Action -> Persist,Functional,Validate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00090,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00091,Android,payments,payments,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Edit Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00092,Android,payments,payments,Consumer,Push -> Open -> Verify,Security,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00093,Android,payments,payments,Consumer,Permission -> Action -> Persist,Accessibility,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00094,Android,payments,payments,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00095,Android,payments,payments,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Escalate Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00096,Android,payments,payments,Enterprise,Offline -> Sync -> Resolve,Performance,Update Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00097,Android,payments,payments,Consumer,Permission -> Action -> Persist,Accessibility,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00098,Android,payments,payments,Enterprise,Permission -> Action -> Persist,Regression,Route Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00099,Android,payments,payments,Enterprise,Push -> Open -> Verify,Performance,Archive Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-PAY-00100,Android,payments,payments,Enterprise,Permission -> Action -> Persist,Accessibility,Reject Android payments,Android access and test data available,"1. Open payments.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

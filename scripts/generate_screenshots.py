@@ -1,1 +1,1 @@
-# screenshot automation placeholder for Playwright or browser automation
+# placeholder for browser automation screenshot generation

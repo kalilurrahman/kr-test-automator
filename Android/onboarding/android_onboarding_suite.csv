@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AND-ONB-00001,Android,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Integration,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00002,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00003,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Performance,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00004,Android,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Performance,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00005,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Search Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00006,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,UI,Search Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00007,Android,onboarding,onboarding,FinTech,Push -> Open -> Verify,Performance,Update Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00008,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Create Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00009,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Security,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00010,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Update Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00011,Android,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Regression,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00012,Android,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Accessibility,Create Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00013,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Accessibility,Update Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00014,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00015,Android,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Performance,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00016,Android,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Performance,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00017,Android,onboarding,onboarding,Consumer,Permission -> Action -> Persist,UI,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00018,Android,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Accessibility,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00019,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00020,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Search Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00021,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Accessibility,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00022,Android,onboarding,onboarding,FinTech,Push -> Open -> Verify,Performance,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00023,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Functional,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00024,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00025,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,UI,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00026,Android,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Update Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00027,Android,onboarding,onboarding,Consumer,Permission -> Action -> Persist,Performance,Delete Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00028,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Functional,Submit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00029,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Performance,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00030,Android,onboarding,onboarding,Enterprise,Permission -> Action -> Persist,UI,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00031,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Integration,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00032,Android,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Integration,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00033,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Delete Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00034,Android,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Performance,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00035,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Accessibility,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00036,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Functional,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00037,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Security,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00038,Android,onboarding,onboarding,Consumer,Permission -> Action -> Persist,Functional,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00039,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Accessibility,Delete Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00040,Android,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,UI,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00041,Android,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Update Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00042,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00043,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Performance,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00044,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Security,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00045,Android,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Regression,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00046,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Security,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00047,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Regression,Search Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00048,Android,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Functional,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00049,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Functional,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00050,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Integration,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00051,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00052,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Performance,Update Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00053,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Integration,Create Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00054,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Security,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00055,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Functional,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00056,Android,onboarding,onboarding,Consumer,Permission -> Action -> Persist,Integration,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00057,Android,onboarding,onboarding,FinTech,Permission -> Action -> Persist,Performance,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00058,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Security,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00059,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00060,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00061,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Search Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00062,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00063,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Performance,Delete Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00064,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Integration,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00065,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00066,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Security,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00067,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Security,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00068,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Accessibility,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00069,Android,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00070,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Security,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00071,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Security,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00072,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Performance,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00073,Android,onboarding,onboarding,FinTech,Push -> Open -> Verify,Performance,Submit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00074,Android,onboarding,onboarding,FinTech,Permission -> Action -> Persist,UI,Validate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00075,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Accessibility,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00076,Android,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Functional,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00077,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Security,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00078,Android,onboarding,onboarding,Consumer,Offline -> Sync -> Resolve,Performance,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00079,Android,onboarding,onboarding,Consumer,Push -> Open -> Verify,Performance,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00080,Android,onboarding,onboarding,Healthcare,Offline -> Sync -> Resolve,Performance,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00081,Android,onboarding,onboarding,Enterprise,Offline -> Sync -> Resolve,Performance,Delete Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00082,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,Regression,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00083,Android,onboarding,onboarding,Enterprise,Push -> Open -> Verify,UI,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00084,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Integration,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00085,Android,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Integration,Search Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00086,Android,onboarding,onboarding,Healthcare,Permission -> Action -> Persist,Integration,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00087,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Functional,Route Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00088,Android,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Integration,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00089,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Restore Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00090,Android,onboarding,onboarding,Healthcare,Launch -> Authenticate -> Use -> Logout,Performance,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00091,Android,onboarding,onboarding,Healthcare,Push -> Open -> Verify,Accessibility,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00092,Android,onboarding,onboarding,FinTech,Push -> Open -> Verify,Functional,Approve Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00093,Android,onboarding,onboarding,Enterprise,Permission -> Action -> Persist,UI,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00094,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Security,Submit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00095,Android,onboarding,onboarding,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00096,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Accessibility,Clone Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00097,Android,onboarding,onboarding,FinTech,Offline -> Sync -> Resolve,Performance,Escalate Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00098,Android,onboarding,onboarding,Consumer,Launch -> Authenticate -> Use -> Logout,Functional,Reject Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00099,Android,onboarding,onboarding,Enterprise,Launch -> Authenticate -> Use -> Logout,Security,Edit Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"
+AND-ONB-00100,Android,onboarding,onboarding,Enterprise,Permission -> Action -> Persist,Regression,Archive Android onboarding,Android access and test data available,"1. Open onboarding.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""Pixel 9"", ""os"": ""Android 15"", ""network"": ""5G""}"

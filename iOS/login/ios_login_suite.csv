@@ -1,0 +1,301 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+IOS-LOG-00001,iOS,login,login,Consumer,Permission -> Action -> Persist,Accessibility,Update iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00002,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Security,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00003,iOS,login,login,Enterprise,Push -> Open -> Verify,Functional,Clone iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00004,iOS,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Clone iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00005,iOS,login,login,Enterprise,Permission -> Action -> Persist,Security,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00006,iOS,login,login,Consumer,Permission -> Action -> Persist,Security,Route iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00007,iOS,login,login,Healthcare,Push -> Open -> Verify,Integration,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00008,iOS,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00009,iOS,login,login,Enterprise,Push -> Open -> Verify,Security,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00010,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Accessibility,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00011,iOS,login,login,Consumer,Permission -> Action -> Persist,Regression,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00012,iOS,login,login,FinTech,Push -> Open -> Verify,Functional,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00013,iOS,login,login,Healthcare,Permission -> Action -> Persist,Security,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00014,iOS,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Integration,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00015,iOS,login,login,Consumer,Permission -> Action -> Persist,Functional,Submit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00016,iOS,login,login,Consumer,Push -> Open -> Verify,Security,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00017,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Integration,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00018,iOS,login,login,Consumer,Permission -> Action -> Persist,Regression,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00019,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Functional,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00020,iOS,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Route iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00021,iOS,login,login,Healthcare,Push -> Open -> Verify,Regression,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00022,iOS,login,login,FinTech,Push -> Open -> Verify,Performance,Restore iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00023,iOS,login,login,Enterprise,Push -> Open -> Verify,Regression,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00024,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Regression,Archive iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00025,iOS,login,login,Enterprise,Offline -> Sync -> Resolve,UI,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00026,iOS,login,login,Consumer,Permission -> Action -> Persist,Regression,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00027,iOS,login,login,FinTech,Permission -> Action -> Persist,Integration,Update iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00028,iOS,login,login,Healthcare,Permission -> Action -> Persist,Integration,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00029,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Security,Submit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00030,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Performance,Route iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00031,iOS,login,login,Healthcare,Permission -> Action -> Persist,Accessibility,Submit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00032,iOS,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Regression,Restore iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00033,iOS,login,login,FinTech,Offline -> Sync -> Resolve,UI,Route iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00034,iOS,login,login,Enterprise,Push -> Open -> Verify,Functional,Clone iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00035,iOS,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,Security,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00036,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Regression,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00037,iOS,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Update iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00038,iOS,login,login,Healthcare,Push -> Open -> Verify,Security,Update iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00039,iOS,login,login,Healthcare,Permission -> Action -> Persist,Regression,Route iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00040,iOS,login,login,Consumer,Permission -> Action -> Persist,UI,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00041,iOS,login,login,FinTech,Push -> Open -> Verify,Functional,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00042,iOS,login,login,FinTech,Permission -> Action -> Persist,Performance,Restore iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00043,iOS,login,login,Healthcare,Push -> Open -> Verify,Regression,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00044,iOS,login,login,Consumer,Permission -> Action -> Persist,Integration,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00045,iOS,login,login,FinTech,Permission -> Action -> Persist,Integration,Submit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00046,iOS,login,login,FinTech,Permission -> Action -> Persist,Integration,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00047,iOS,login,login,FinTech,Push -> Open -> Verify,Integration,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00048,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Performance,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00049,iOS,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00050,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Accessibility,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00051,iOS,login,login,Enterprise,Permission -> Action -> Persist,Functional,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00052,iOS,login,login,Consumer,Permission -> Action -> Persist,Security,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00053,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Regression,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00054,iOS,login,login,Consumer,Permission -> Action -> Persist,Performance,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00055,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Integration,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00056,iOS,login,login,Healthcare,Permission -> Action -> Persist,Security,Submit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00057,iOS,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Integration,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00058,iOS,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Regression,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00059,iOS,login,login,Enterprise,Push -> Open -> Verify,Functional,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00060,iOS,login,login,FinTech,Permission -> Action -> Persist,UI,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00061,iOS,login,login,Enterprise,Push -> Open -> Verify,Performance,Restore iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00062,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Performance,Restore iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00063,iOS,login,login,Healthcare,Push -> Open -> Verify,Accessibility,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00064,iOS,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,UI,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00065,iOS,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Functional,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00066,iOS,login,login,Healthcare,Push -> Open -> Verify,Regression,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00067,iOS,login,login,Enterprise,Permission -> Action -> Persist,Regression,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00068,iOS,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,UI,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00069,iOS,login,login,Healthcare,Permission -> Action -> Persist,Security,Archive iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00070,iOS,login,login,Enterprise,Push -> Open -> Verify,Integration,Submit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00071,iOS,login,login,Consumer,Permission -> Action -> Persist,Performance,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00072,iOS,login,login,Enterprise,Permission -> Action -> Persist,Functional,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00073,iOS,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Regression,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00074,iOS,login,login,Consumer,Push -> Open -> Verify,Regression,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00075,iOS,login,login,Enterprise,Offline -> Sync -> Resolve,Regression,Search iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00076,iOS,login,login,FinTech,Push -> Open -> Verify,UI,Archive iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00077,iOS,login,login,Healthcare,Push -> Open -> Verify,Accessibility,Delete iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00078,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Integration,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00079,iOS,login,login,Enterprise,Push -> Open -> Verify,Integration,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00080,iOS,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Functional,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00081,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Integration,Archive iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00082,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Security,Edit iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00083,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Security,Restore iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00084,iOS,login,login,Enterprise,Permission -> Action -> Persist,UI,Archive iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00085,iOS,login,login,FinTech,Push -> Open -> Verify,Security,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00086,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Accessibility,Clone iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00087,iOS,login,login,Enterprise,Push -> Open -> Verify,Accessibility,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00088,iOS,login,login,Healthcare,Push -> Open -> Verify,Functional,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00089,iOS,login,login,FinTech,Launch -> Authenticate -> Use -> Logout,Regression,Update iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00090,iOS,login,login,Enterprise,Launch -> Authenticate -> Use -> Logout,Accessibility,Update iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00091,iOS,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,Accessibility,Approve iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00092,iOS,login,login,Healthcare,Permission -> Action -> Persist,Accessibility,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00093,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Security,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00094,iOS,login,login,Healthcare,Offline -> Sync -> Resolve,Integration,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00095,iOS,login,login,Healthcare,Launch -> Authenticate -> Use -> Logout,Functional,Route iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00096,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Security,Reject iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00097,iOS,login,login,Consumer,Offline -> Sync -> Resolve,Accessibility,Escalate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00098,iOS,login,login,Consumer,Launch -> Authenticate -> Use -> Logout,UI,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00099,iOS,login,login,FinTech,Offline -> Sync -> Resolve,Accessibility,Create iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"
+IOS-LOG-00100,iOS,login,login,FinTech,Push -> Open -> Verify,Integration,Validate iOS login,iOS access and test data available,"1. Open login.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""device"": ""iPhone 15"", ""os"": ""iOS 18"", ""network"": ""Wi-Fi""}"

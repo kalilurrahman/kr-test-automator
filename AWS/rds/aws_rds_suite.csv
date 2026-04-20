@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-RDS-00001,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Security,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00002,AWS,rds,rds,Data,Create -> Protect -> Audit -> Report,Regression,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00003,AWS,rds,rds,Security,Create -> Protect -> Audit -> Report,UI,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00004,AWS,rds,rds,Data,Create -> Protect -> Audit -> Report,Functional,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00005,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,UI,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00006,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Restore AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00007,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00008,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Security,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00009,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00010,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,Performance,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00011,AWS,rds,rds,DevOps,Create -> Protect -> Audit -> Report,Regression,Restore AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00012,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00013,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00014,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00015,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Update AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00016,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00017,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,Security,Archive AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00018,AWS,rds,rds,Security,Create -> Protect -> Audit -> Report,Functional,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00019,AWS,rds,rds,Data,Create -> Protect -> Audit -> Report,Functional,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00020,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00021,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00022,AWS,rds,rds,Data,Deploy -> Scale -> Observe -> Rollback,UI,Restore AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00023,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,Security,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00024,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00025,AWS,rds,rds,Security,Create -> Protect -> Audit -> Report,UI,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00026,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00027,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,UI,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00028,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00029,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00030,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00031,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00032,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,UI,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00033,AWS,rds,rds,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Restore AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00034,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00035,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00036,AWS,rds,rds,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00037,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00038,AWS,rds,rds,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00039,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,UI,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00040,AWS,rds,rds,Data,Create -> Protect -> Audit -> Report,Security,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00041,AWS,rds,rds,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00042,AWS,rds,rds,Data,Create -> Protect -> Audit -> Report,Performance,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00043,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00044,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00045,AWS,rds,rds,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00046,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Archive AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00047,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00048,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Restore AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00049,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Archive AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00050,AWS,rds,rds,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00051,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,Functional,Update AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00052,AWS,rds,rds,Security,Provision -> Validate -> Monitor -> Remediate,UI,Delete AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00053,AWS,rds,rds,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00054,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00055,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00056,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00057,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,Regression,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00058,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,UI,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00059,AWS,rds,rds,Data,Create -> Protect -> Audit -> Report,Security,Archive AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00060,AWS,rds,rds,Security,Create -> Protect -> Audit -> Report,Performance,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00061,AWS,rds,rds,Security,Provision -> Validate -> Monitor -> Remediate,UI,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00062,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00063,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,Performance,Update AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00064,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00065,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Reject AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00066,AWS,rds,rds,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00067,AWS,rds,rds,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Edit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00068,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Update AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00069,AWS,rds,rds,DevOps,Create -> Protect -> Audit -> Report,Functional,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00070,AWS,rds,rds,DevOps,Create -> Protect -> Audit -> Report,UI,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00071,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Archive AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00072,AWS,rds,rds,Security,Create -> Protect -> Audit -> Report,Accessibility,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00073,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Escalate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00074,AWS,rds,rds,DevOps,Create -> Protect -> Audit -> Report,Functional,Escalate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00075,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00076,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00077,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00078,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00079,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00080,AWS,rds,rds,DevOps,Create -> Protect -> Audit -> Report,Security,Approve AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00081,AWS,rds,rds,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00082,AWS,rds,rds,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00083,AWS,rds,rds,Platform,Create -> Protect -> Audit -> Report,UI,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00084,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00085,AWS,rds,rds,Security,Create -> Protect -> Audit -> Report,Accessibility,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00086,AWS,rds,rds,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Clone AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00087,AWS,rds,rds,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Update AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00088,AWS,rds,rds,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Route AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00089,AWS,rds,rds,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Delete AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-RDS-00090,AWS,rds,rds,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Search AWS rds,AWS access and test data available,"1. Open rds.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

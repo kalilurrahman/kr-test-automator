@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-SEC-00001,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00002,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00003,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00004,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Security,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00005,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Clone Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00006,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00007,Azure,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00008,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00009,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,Functional,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00010,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00011,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00012,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00013,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Performance,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00014,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Functional,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00015,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00016,Azure,security,security,Security,Create -> Protect -> Audit -> Report,UI,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00017,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,UI,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00018,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,Functional,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00019,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Accessibility,Search Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00020,Azure,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00021,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Search Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00022,Azure,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00023,Azure,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00024,Azure,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00025,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,UI,Escalate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00026,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Approve Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00027,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00028,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00029,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Escalate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00030,Azure,security,security,Security,Create -> Protect -> Audit -> Report,Functional,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00031,Azure,security,security,Security,Create -> Protect -> Audit -> Report,Security,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00032,Azure,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00033,Azure,security,security,Security,Create -> Protect -> Audit -> Report,Functional,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00034,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00035,Azure,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Security,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00036,Azure,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00037,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,UI,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00038,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00039,Azure,security,security,Security,Create -> Protect -> Audit -> Report,Security,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00040,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Security,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00041,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00042,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00043,Azure,security,security,Data,Create -> Protect -> Audit -> Report,Integration,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00044,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,UI,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00045,Azure,security,security,Security,Create -> Protect -> Audit -> Report,Regression,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00046,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Integration,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00047,Azure,security,security,Data,Create -> Protect -> Audit -> Report,Functional,Approve Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00048,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00049,Azure,security,security,Data,Create -> Protect -> Audit -> Report,Regression,Approve Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00050,Azure,security,security,Data,Create -> Protect -> Audit -> Report,Performance,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00051,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,UI,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00052,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00053,Azure,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Archive Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00054,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00055,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,UI,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00056,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00057,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00058,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,Performance,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00059,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00060,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00061,Azure,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00062,Azure,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00063,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,UI,Approve Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00064,Azure,security,security,Data,Create -> Protect -> Audit -> Report,UI,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00065,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00066,Azure,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00067,Azure,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00068,Azure,security,security,Data,Create -> Protect -> Audit -> Report,Regression,Submit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00069,Azure,security,security,Data,Create -> Protect -> Audit -> Report,Accessibility,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00070,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Security,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00071,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Approve Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00072,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00073,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00074,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00075,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00076,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00077,Azure,security,security,Security,Create -> Protect -> Audit -> Report,Regression,Clone Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00078,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Search Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00079,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Functional,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00080,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Restore Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00081,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Security,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00082,Azure,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00083,Azure,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Delete Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00084,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Route Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00085,Azure,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00086,Azure,security,security,Platform,Create -> Protect -> Audit -> Report,Regression,Reject Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00087,Azure,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Create Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00088,Azure,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Update Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00089,Azure,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Validate Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-SEC-00090,Azure,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Edit Azure security,Azure access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

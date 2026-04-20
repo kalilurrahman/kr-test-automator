@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-COS-00001,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00002,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Edit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00003,AWS,cost,cost,Security,Create -> Protect -> Audit -> Report,Regression,Search AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00004,AWS,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00005,AWS,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00006,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Route AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00007,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Approve AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00008,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00009,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Security,Approve AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00010,AWS,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00011,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,UI,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00012,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00013,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00014,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00015,AWS,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00016,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,UI,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00017,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00018,AWS,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00019,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,UI,Update AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00020,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Regression,Edit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00021,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00022,AWS,cost,cost,Security,Create -> Protect -> Audit -> Report,Security,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00023,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00024,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00025,AWS,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00026,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,Regression,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00027,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,UI,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00028,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Security,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00029,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,UI,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00030,AWS,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Regression,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00031,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Route AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00032,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00033,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00034,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00035,AWS,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00036,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Escalate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00037,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00038,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Accessibility,Route AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00039,AWS,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Approve AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00040,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Reject AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00041,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,Regression,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00042,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Integration,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00043,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Approve AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00044,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Regression,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00045,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Integration,Reject AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00046,AWS,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Security,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00047,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00048,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Reject AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00049,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00050,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,Security,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00051,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00052,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00053,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,UI,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00054,AWS,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00055,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00056,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00057,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,Regression,Escalate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00058,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00059,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,Functional,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00060,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00061,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00062,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00063,AWS,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Regression,Search AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00064,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00065,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Search AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00066,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Search AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00067,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,Integration,Update AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00068,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00069,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,UI,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00070,AWS,cost,cost,Security,Create -> Protect -> Audit -> Report,Accessibility,Restore AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00071,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00072,AWS,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Search AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00073,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Security,Approve AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00074,AWS,cost,cost,Data,Create -> Protect -> Audit -> Report,Functional,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00075,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Reject AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00076,AWS,cost,cost,Platform,Create -> Protect -> Audit -> Report,UI,Route AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00077,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00078,AWS,cost,cost,Security,Create -> Protect -> Audit -> Report,Security,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00079,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00080,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,UI,Delete AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00081,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00082,AWS,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00083,AWS,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Search AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00084,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00085,AWS,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Archive AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00086,AWS,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00087,AWS,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Create AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00088,AWS,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Submit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00089,AWS,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-COS-00090,AWS,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Performance,Edit AWS cost,AWS access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

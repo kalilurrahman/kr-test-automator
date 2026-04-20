@@ -1,0 +1,241 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+TOP-SAL-00001,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Functional,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00002,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Functional,Escalate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00003,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Functional,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00004,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Performance,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00005,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Regression,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00006,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Functional,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00007,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Functional,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00008,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Functional,Archive TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00009,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Accessibility,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00010,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00011,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00012,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Regression,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00013,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Regression,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00014,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Security,Reject TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00015,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Security,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00016,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Functional,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00017,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Regression,Approve TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00018,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Integration,Restore TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00019,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00020,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,UI,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00021,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Regression,Approve TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00022,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Functional,Reject TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00023,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Security,Delete TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00024,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Integration,Reject TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00025,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Regression,Restore TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00026,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Functional,Route TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00027,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Functional,Delete TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00028,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Performance,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00029,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Integration,Escalate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00030,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Integration,Approve TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00031,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Security,Escalate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00032,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Security,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00033,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Functional,Update TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00034,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Regression,Escalate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00035,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Functional,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00036,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Security,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00037,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Functional,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00038,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Security,Approve TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00039,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00040,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Security,Route TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00041,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Performance,Archive TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00042,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Functional,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00043,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Accessibility,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00044,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,UI,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00045,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00046,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Integration,Restore TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00047,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Accessibility,Route TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00048,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Performance,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00049,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Integration,Delete TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00050,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,UI,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00051,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Accessibility,Route TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00052,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Performance,Archive TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00053,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00054,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Performance,Approve TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00055,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,UI,Route TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00056,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Performance,Update TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00057,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,UI,Update TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00058,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Accessibility,Update TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00059,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Accessibility,Delete TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00060,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Integration,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00061,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Accessibility,Delete TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00062,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,UI,Escalate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00063,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Security,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00064,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Accessibility,Route TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00065,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Security,Clone TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00066,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00067,TopProducts,salesforce,salesforce,CRM,Navigate -> Execute -> Validate -> Report,Security,Reject TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00068,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Integration,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00069,TopProducts,salesforce,salesforce,Life Sciences,Navigate -> Execute -> Validate -> Report,Regression,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00070,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Regression,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00071,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Performance,Restore TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00072,TopProducts,salesforce,salesforce,ERP,Navigate -> Execute -> Validate -> Report,Performance,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00073,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Delete TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00074,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Functional,Archive TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00075,TopProducts,salesforce,salesforce,Enterprise,Create -> Approve -> Close -> Audit,Security,Validate TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00076,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Functional,Search TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00077,TopProducts,salesforce,salesforce,ERP,Create -> Approve -> Close -> Audit,Integration,Create TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00078,TopProducts,salesforce,salesforce,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Edit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00079,TopProducts,salesforce,salesforce,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Submit TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SAL-00080,TopProducts,salesforce,salesforce,CRM,Create -> Approve -> Close -> Audit,Regression,Update TopProducts salesforce,TopProducts access and test data available,"1. Open salesforce.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"

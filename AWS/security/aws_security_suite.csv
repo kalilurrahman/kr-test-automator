@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AWS-SEC-00001,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Performance,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00002,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Approve AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00003,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Security,Escalate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00004,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Search AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00005,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Restore AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00006,AWS,security,security,Security,Create -> Protect -> Audit -> Report,Performance,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00007,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Accessibility,Approve AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00008,AWS,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00009,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00010,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00011,AWS,security,security,Platform,Create -> Protect -> Audit -> Report,Accessibility,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00012,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00013,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00014,AWS,security,security,Security,Create -> Protect -> Audit -> Report,Performance,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00015,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00016,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Functional,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00017,AWS,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Archive AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00018,AWS,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Approve AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00019,AWS,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Update AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00020,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00021,AWS,security,security,Platform,Create -> Protect -> Audit -> Report,Accessibility,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00022,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Functional,Escalate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00023,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Performance,Route AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00024,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00025,AWS,security,security,Data,Create -> Protect -> Audit -> Report,UI,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00026,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00027,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Accessibility,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00028,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Security,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00029,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Performance,Update AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00030,AWS,security,security,Security,Create -> Protect -> Audit -> Report,Accessibility,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00031,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Accessibility,Restore AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00032,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Security,Reject AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00033,AWS,security,security,Security,Create -> Protect -> Audit -> Report,Performance,Update AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00034,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Regression,Route AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00035,AWS,security,security,Security,Create -> Protect -> Audit -> Report,UI,Update AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00036,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00037,AWS,security,security,Data,Create -> Protect -> Audit -> Report,UI,Archive AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00038,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Security,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00039,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Escalate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00040,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Approve AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00041,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,UI,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00042,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Reject AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00043,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Archive AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00044,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00045,AWS,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00046,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Regression,Reject AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00047,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Security,Escalate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00048,AWS,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00049,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Integration,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00050,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00051,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00052,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00053,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Performance,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00054,AWS,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00055,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00056,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00057,AWS,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00058,AWS,security,security,Platform,Create -> Protect -> Audit -> Report,Integration,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00059,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Approve AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00060,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00061,AWS,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00062,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Security,Escalate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00063,AWS,security,security,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Restore AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00064,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Escalate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00065,AWS,security,security,Security,Provision -> Validate -> Monitor -> Remediate,UI,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00066,AWS,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00067,AWS,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00068,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Accessibility,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00069,AWS,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00070,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Performance,Search AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00071,AWS,security,security,Security,Create -> Protect -> Audit -> Report,Regression,Reject AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00072,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Security,Route AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00073,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Security,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00074,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Clone AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00075,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Route AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00076,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00077,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00078,AWS,security,security,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00079,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Reject AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00080,AWS,security,security,Platform,Create -> Protect -> Audit -> Report,Performance,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00081,AWS,security,security,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00082,AWS,security,security,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00083,AWS,security,security,Data,Create -> Protect -> Audit -> Report,Accessibility,Edit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00084,AWS,security,security,Data,Create -> Protect -> Audit -> Report,UI,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00085,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Validate AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00086,AWS,security,security,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Reject AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00087,AWS,security,security,Data,Provision -> Validate -> Monitor -> Remediate,UI,Submit AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00088,AWS,security,security,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Delete AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00089,AWS,security,security,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Create AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"
+AWS-SEC-00090,AWS,security,security,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Update AWS security,AWS access and test data available,"1. Open security.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""EC2"", ""region"": ""us-east-1"", ""iam_role"": ""Tester""}"

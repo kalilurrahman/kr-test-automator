@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-COS-00001,Azure,cost,cost,Data,Create -> Protect -> Audit -> Report,Regression,Route Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00002,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00003,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Clone Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00004,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00005,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Security,Restore Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00006,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00007,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00008,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Security,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00009,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Integration,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00010,Azure,cost,cost,Platform,Create -> Protect -> Audit -> Report,Accessibility,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00011,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Reject Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00012,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Search Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00013,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00014,Azure,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00015,Azure,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Search Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00016,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,UI,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00017,Azure,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00018,Azure,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00019,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,UI,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00020,Azure,cost,cost,Data,Create -> Protect -> Audit -> Report,Regression,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00021,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00022,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Integration,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00023,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00024,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Route Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00025,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00026,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Validate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00027,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00028,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00029,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Clone Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00030,Azure,cost,cost,Data,Create -> Protect -> Audit -> Report,Security,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00031,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,UI,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00032,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Restore Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00033,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Restore Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00034,Azure,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Security,Approve Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00035,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00036,Azure,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00037,Azure,cost,cost,Platform,Create -> Protect -> Audit -> Report,Functional,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00038,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Integration,Reject Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00039,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Approve Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00040,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00041,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Reject Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00042,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Security,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00043,Azure,cost,cost,Data,Create -> Protect -> Audit -> Report,UI,Approve Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00044,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Performance,Approve Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00045,Azure,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00046,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00047,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Update Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00048,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Security,Approve Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00049,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00050,Azure,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Security,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00051,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Accessibility,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00052,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Edit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00053,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Security,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00054,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Validate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00055,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Clone Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00056,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Security,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00057,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00058,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Route Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00059,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,UI,Restore Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00060,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Functional,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00061,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Integration,Edit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00062,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Update Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00063,Azure,cost,cost,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00064,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00065,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Search Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00066,Azure,cost,cost,Data,Create -> Protect -> Audit -> Report,UI,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00067,Azure,cost,cost,Security,Create -> Protect -> Audit -> Report,Functional,Search Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00068,Azure,cost,cost,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Update Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00069,Azure,cost,cost,Platform,Create -> Protect -> Audit -> Report,Security,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00070,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Validate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00071,Azure,cost,cost,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00072,Azure,cost,cost,DevOps,Deploy -> Scale -> Observe -> Rollback,Performance,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00073,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Functional,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00074,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,UI,Clone Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00075,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Archive Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00076,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00077,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Accessibility,Create Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00078,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Escalate Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00079,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00080,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Update Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00081,Azure,cost,cost,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Restore Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00082,Azure,cost,cost,Data,Create -> Protect -> Audit -> Report,Security,Reject Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00083,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Security,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00084,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00085,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Accessibility,Submit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00086,Azure,cost,cost,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Clone Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00087,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Edit Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00088,Azure,cost,cost,DevOps,Create -> Protect -> Audit -> Report,Performance,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00089,Azure,cost,cost,Security,Provision -> Validate -> Monitor -> Remediate,UI,Delete Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-COS-00090,Azure,cost,cost,Platform,Deploy -> Scale -> Observe -> Rollback,UI,Update Azure cost,Azure access and test data available,"1. Open cost.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

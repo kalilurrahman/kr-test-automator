@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "onboarding",
+      "path": "/iOS/onboarding/index.html"
+    },
+    {
+      "key": "login",
+      "path": "/iOS/login/index.html"
+    },
+    {
+      "key": "profile",
+      "path": "/iOS/profile/index.html"
+    },
+    {
+      "key": "payments",
+      "path": "/iOS/payments/index.html"
+    },
+    {
+      "key": "notifications",
+      "path": "/iOS/notifications/index.html"
+    },
+    {
+      "key": "offline",
+      "path": "/iOS/offline/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/iOS/security/index.html"
+    },
+    {
+      "key": "performance",
+      "path": "/iOS/performance/index.html"
+    }
+  ]
+}

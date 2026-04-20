@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+AZU-STO-00001,Azure,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Route Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00002,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00003,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Functional,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00004,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,UI,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00005,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Functional,Submit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00006,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Security,Approve Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00007,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Regression,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00008,Azure,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00009,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00010,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Approve Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00011,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Accessibility,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00012,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Performance,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00013,Azure,storage,storage,Platform,Create -> Protect -> Audit -> Report,Integration,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00014,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00015,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00016,Azure,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00017,Azure,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Delete Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00018,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Regression,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00019,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Approve Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00020,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Accessibility,Route Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00021,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Security,Route Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00022,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00023,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,UI,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00024,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Restore Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00025,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Regression,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00026,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Regression,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00027,Azure,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Restore Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00028,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00029,Azure,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Delete Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00030,Azure,storage,storage,Platform,Create -> Protect -> Audit -> Report,Functional,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00031,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Accessibility,Restore Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00032,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Submit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00033,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,UI,Route Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00034,Azure,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Regression,Route Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00035,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00036,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Regression,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00037,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,UI,Route Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00038,Azure,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00039,Azure,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Integration,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00040,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Archive Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00041,Azure,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00042,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Security,Archive Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00043,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00044,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Integration,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00045,Azure,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Delete Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00046,Azure,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00047,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Regression,Restore Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00048,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Functional,Delete Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00049,Azure,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00050,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,UI,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00051,Azure,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,UI,Approve Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00052,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00053,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Regression,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00054,Azure,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Accessibility,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00055,Azure,storage,storage,Platform,Create -> Protect -> Audit -> Report,Regression,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00056,Azure,storage,storage,Platform,Create -> Protect -> Audit -> Report,Security,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00057,Azure,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00058,Azure,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Regression,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00059,Azure,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00060,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Regression,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00061,Azure,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00062,Azure,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Functional,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00063,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Security,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00064,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Security,Submit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00065,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Submit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00066,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Delete Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00067,Azure,storage,storage,Platform,Create -> Protect -> Audit -> Report,Performance,Create Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00068,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00069,Azure,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Escalate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00070,Azure,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00071,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,Performance,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00072,Azure,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Submit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00073,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Security,Validate Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00074,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Performance,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00075,Azure,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Clone Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00076,Azure,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Archive Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00077,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Integration,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00078,Azure,storage,storage,Platform,Create -> Protect -> Audit -> Report,UI,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00079,Azure,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Archive Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00080,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Regression,Approve Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00081,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,UI,Update Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00082,Azure,storage,storage,Data,Create -> Protect -> Audit -> Report,UI,Restore Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00083,Azure,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Restore Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00084,Azure,storage,storage,Security,Create -> Protect -> Audit -> Report,Security,Reject Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00085,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Regression,Delete Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00086,Azure,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,UI,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00087,Azure,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Security,Search Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00088,Azure,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Approve Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00089,Azure,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Integration,Edit Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"
+AZU-STO-00090,Azure,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Update Azure storage,Azure access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""VM"", ""region"": ""eastus"", ""iam_role"": ""Tester""}"

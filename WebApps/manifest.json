@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "ui",
+      "path": "/WebApps/ui/index.html"
+    },
+    {
+      "key": "auth",
+      "path": "/WebApps/auth/index.html"
+    },
+    {
+      "key": "api",
+      "path": "/WebApps/api/index.html"
+    },
+    {
+      "key": "forms",
+      "path": "/WebApps/forms/index.html"
+    },
+    {
+      "key": "checkout",
+      "path": "/WebApps/checkout/index.html"
+    },
+    {
+      "key": "accessibility",
+      "path": "/WebApps/accessibility/index.html"
+    },
+    {
+      "key": "performance",
+      "path": "/WebApps/performance/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/WebApps/security/index.html"
+    }
+  ]
+}

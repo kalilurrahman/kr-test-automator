@@ -1,0 +1,271 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+GCP-STO-00001,GCP,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Security,Restore GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00002,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00003,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Functional,Update GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00004,GCP,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Integration,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00005,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,UI,Update GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00006,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00007,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Integration,Reject GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00008,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Archive GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00009,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Security,Search GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00010,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Regression,Reject GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00011,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Regression,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00012,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Restore GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00013,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Create GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00014,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00015,GCP,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Performance,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00016,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00017,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00018,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,UI,Search GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00019,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Security,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00020,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Accessibility,Archive GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00021,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Performance,Reject GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00022,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Regression,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00023,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Performance,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00024,GCP,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Functional,Update GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00025,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Route GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00026,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Regression,Search GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00027,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Restore GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00028,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Functional,Search GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00029,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Performance,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00030,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Route GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00031,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Security,Edit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00032,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Create GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00033,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Security,Reject GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00034,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Functional,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00035,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Regression,Archive GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00036,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Integration,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00037,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00038,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,UI,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00039,GCP,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Functional,Create GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00040,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Security,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00041,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Regression,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00042,GCP,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00043,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Integration,Edit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00044,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Integration,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00045,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Functional,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00046,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Integration,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00047,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,UI,Reject GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00048,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,Functional,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00049,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Regression,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00050,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Accessibility,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00051,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Accessibility,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00052,GCP,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,UI,Edit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00053,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,UI,Edit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00054,GCP,storage,storage,Security,Provision -> Validate -> Monitor -> Remediate,Security,Delete GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00055,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Integration,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00056,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Integration,Create GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00057,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Performance,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00058,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,Regression,Restore GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00059,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Regression,Search GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00060,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Security,Restore GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00061,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,Performance,Route GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00062,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,Integration,Search GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00063,GCP,storage,storage,Platform,Provision -> Validate -> Monitor -> Remediate,Accessibility,Edit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00064,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Security,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00065,GCP,storage,storage,DevOps,Deploy -> Scale -> Observe -> Rollback,Functional,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00066,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,UI,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00067,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Functional,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00068,GCP,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Functional,Archive GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00069,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Performance,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00070,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Regression,Route GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00071,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,UI,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00072,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,Accessibility,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00073,GCP,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,Performance,Create GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00074,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Accessibility,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00075,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Integration,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00076,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Security,Escalate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00077,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Security,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00078,GCP,storage,storage,Data,Deploy -> Scale -> Observe -> Rollback,Performance,Clone GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00079,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,UI,Update GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00080,GCP,storage,storage,Security,Create -> Protect -> Audit -> Report,Regression,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00081,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Delete GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00082,GCP,storage,storage,DevOps,Provision -> Validate -> Monitor -> Remediate,Accessibility,Validate GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00083,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Performance,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00084,GCP,storage,storage,Security,Deploy -> Scale -> Observe -> Rollback,UI,Submit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00085,GCP,storage,storage,Data,Create -> Protect -> Audit -> Report,Regression,Edit GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00086,GCP,storage,storage,Platform,Create -> Protect -> Audit -> Report,Regression,Archive GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00087,GCP,storage,storage,DevOps,Create -> Protect -> Audit -> Report,Performance,Restore GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00088,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,Functional,Approve GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00089,GCP,storage,storage,Data,Provision -> Validate -> Monitor -> Remediate,UI,Create GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"
+GCP-STO-00090,GCP,storage,storage,Platform,Deploy -> Scale -> Observe -> Rollback,Performance,Archive GCP storage,GCP access and test data available,"1. Open storage.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""service"": ""GCS"", ""region"": ""us-central1"", ""iam_role"": ""Tester""}"

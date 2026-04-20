@@ -44,6 +44,11 @@
       "key": "e2e_5000",
       "path": "/workday/e2e/index.html",
       "title": "E2E 5000"
+      "path": "/Workday/e2e/index.html"
+    },
+    {
+      "key": "expanded_packs",
+      "path": "/Workday/expanded_packs/index.html"
     }
   ]
 }
