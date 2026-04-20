@@ -1,0 +1,1 @@
+Maintain Workday, ServiceNow, and Veeva folders, preserve data files, update manifests/indexes, create screenshots, and open PRs.

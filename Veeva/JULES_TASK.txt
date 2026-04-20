@@ -1,0 +1,1 @@
+Maintain Veeva root, keep module folders, preserve data files, generate screenshots, open PRs.

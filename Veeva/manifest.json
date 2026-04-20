@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "key": "clinical",
+      "path": "/Veeva/clinical/index.html"
+    },
+    {
+      "key": "regulatory",
+      "path": "/Veeva/regulatory/index.html"
+    },
+    {
+      "key": "quality",
+      "path": "/Veeva/quality/index.html"
+    },
+    {
+      "key": "medical",
+      "path": "/Veeva/medical/index.html"
+    },
+    {
+      "key": "commercial",
+      "path": "/Veeva/commercial/index.html"
+    }
+  ]
+}
