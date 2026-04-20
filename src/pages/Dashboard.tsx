@@ -29,6 +29,17 @@ const PRIORITY_COLORS: Record<string, string> = {
 const Dashboard = () => {
   const navigate = useNavigate();
   const [idQuery, setIdQuery] = useState("");
+  const [globalStats, setGlobalStats] = useState<GlobalStats | null>(null);
+  const [statsLoading, setStatsLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    setStatsLoading(true);
+    getGlobalStats()
+      .then((s) => !cancelled && setGlobalStats(s))
+      .finally(() => !cancelled && setStatsLoading(false));
+    return () => { cancelled = true; };
+  }, []);
 
   const handleIdLookup = (e: FormEvent) => {
     e.preventDefault();
@@ -48,6 +59,11 @@ const Dashboard = () => {
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
     { label: "Bundled cases", value: BUNDLED_TEST_COUNT.toLocaleString(), icon: FileCode2 },
+    {
+      label: "Live test cases",
+      value: globalStats ? globalStats.totalCases.toLocaleString() : "…",
+      icon: Database,
+    },
   ];
 
   const quickLinks = [
@@ -71,10 +87,7 @@ const Dashboard = () => {
       <div className="max-w-7xl mx-auto px-4 py-10">
         {/* Hero */}
         <header className="mb-10">
-          <h1
-            className="text-3xl md:text-4xl font-bold text-foreground mb-3"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
             Enterprise Test Automation Hub
           </h1>
           <p className="text-muted-foreground max-w-3xl">
@@ -83,20 +96,100 @@ const Dashboard = () => {
         </header>
 
         {/* Stats */}
-        <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+        <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {stats.map((s) => (
             <Card key={s.label} className="p-5 bg-card border-border flex items-center gap-4">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
                 <s.icon className="w-5 h-5 text-primary" />
               </div>
-              <div>
-                <div className="text-2xl font-bold text-foreground" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <div className="min-w-0">
+                <div className="text-2xl font-bold text-foreground truncate">
                   {s.value}
                 </div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">{s.label}</div>
+                <div className="text-[11px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
               </div>
             </Card>
           ))}
+        </section>
+
+        {/* Live charts */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10">
+          <Card className="p-5 bg-card border-border">
+            <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
+              Cases by priority (all platforms)
+            </h2>
+            <div className="h-56">
+              {statsLoading ? (
+                <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
+                </div>
+              ) : globalStats && globalStats.byPriority.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <Pie
+                      data={globalStats.byPriority}
+                      dataKey="value"
+                      nameKey="name"
+                      innerRadius={45}
+                      outerRadius={80}
+                      paddingAngle={2}
+                      label={(e) => `${e.name}: ${e.value.toLocaleString()}`}
+                    >
+                      {globalStats.byPriority.map((d) => (
+                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
+                      ))}
+                    </Pie>
+                    <Tooltip
+                      contentStyle={{
+                        background: "hsl(var(--card))",
+                        border: "1px solid hsl(var(--border))",
+                        borderRadius: 8,
+                        fontSize: 12,
+                      }}
+                    />
+                  </PieChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
+                  No data
+                </div>
+              )}
+            </div>
+          </Card>
+
+          <Card className="p-5 bg-card border-border">
+            <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
+              Top platforms by case volume
+            </h2>
+            <div className="h-56">
+              {statsLoading ? (
+                <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
+                </div>
+              ) : globalStats && globalStats.topPlatforms.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={globalStats.topPlatforms} margin={{ top: 5, right: 10, left: -10, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                    <XAxis dataKey="name" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
+                    <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
+                    <Tooltip
+                      contentStyle={{
+                        background: "hsl(var(--card))",
+                        border: "1px solid hsl(var(--border))",
+                        borderRadius: 8,
+                        fontSize: 12,
+                      }}
+                    />
+                    <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
+                  No data
+                </div>
+              )}
+            </div>
+          </Card>
         </section>
 
         {/* Find by ID */}
