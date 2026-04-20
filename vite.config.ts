@@ -26,6 +26,26 @@ export default defineConfig(({ mode }) => ({
         {
           src: 'workday/*',
           dest: 'workday'
+        },
+        {
+          src: 'ServiceNow/*',
+          dest: 'ServiceNow'
+        },
+        {
+          src: 'Veeva/*',
+          dest: 'Veeva'
+        },
+        {
+          src: 'Dynamics365/*',
+          dest: 'Dynamics365'
+        },
+        {
+          src: 'OracleApps/*',
+          dest: 'OracleApps'
+        },
+        {
+          src: 'SAP/Ph-II/*',
+          dest: 'SAP/Ph-II'
         }
       ]
     }),
