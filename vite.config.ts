@@ -22,6 +22,10 @@ export default defineConfig(({ mode }) => ({
         {
           src: 'Salesforce/*',
           dest: 'Salesforce'
+        },
+        {
+          src: 'workday/*',
+          dest: 'workday'
         }
       ]
     }),
