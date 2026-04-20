@@ -1,0 +1,46 @@
+{
+  "name": "workday-test-automator",
+  "version": "1.0.0",
+  "routes": [
+    {
+      "key": "home",
+      "title": "Home",
+      "path": "/workday/index.html"
+    },
+    {
+      "key": "hcm",
+      "title": "HCM",
+      "path": "/workday/hcm/index.html"
+    },
+    {
+      "key": "payroll",
+      "title": "Payroll",
+      "path": "/workday/payroll/index.html"
+    },
+    {
+      "key": "recruiting",
+      "title": "Recruiting",
+      "path": "/workday/recruiting/index.html"
+    },
+    {
+      "key": "finance",
+      "title": "Finance",
+      "path": "/workday/finance/index.html"
+    },
+    {
+      "key": "integrations",
+      "title": "Integrations",
+      "path": "/workday/integrations/index.html"
+    },
+    {
+      "key": "reporting",
+      "title": "Reporting",
+      "path": "/workday/reporting/index.html"
+    },
+    {
+      "key": "e2e",
+      "title": "E2E Flows",
+      "path": "/workday/e2e/index.html"
+    }
+  ]
+}
