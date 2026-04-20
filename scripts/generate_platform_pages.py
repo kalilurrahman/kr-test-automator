@@ -26,7 +26,8 @@ PLATFORMS = [
     ("WebApps", "/WebApps", "Web Apps", "#14b8a6", "#115e59"),
     ("iOS", "/iOS", "iOS", "#6366f1", "#312e81"),
     ("TopProducts", "/TopProducts", "Top Products", "#c9a84c", "#854d0e"),
-    ("workday/Workday", "/Workday", "Workday", "#f59e0b", "#92400e"),
+    ("workday", "/workday", "Workday (5K)", "#f59e0b", "#92400e"),
+    ("workday/Workday", "/workday/Workday", "Workday (Expanded)", "#f59e0b", "#92400e"),
 ]
 
 SKIP_DIRS = {"assets", "downloads", "screenshots"}
