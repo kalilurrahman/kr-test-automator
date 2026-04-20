@@ -1,0 +1,11 @@
+{
+  "name": "servicenow-test-automator",
+  "version": "1.0.0",
+  "routes": [
+    {
+      "key": "home",
+      "title": "Home",
+      "path": "/ServiceNow/index.html"
+    }
+  ]
+}

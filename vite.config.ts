@@ -22,6 +22,18 @@ export default defineConfig(({ mode }) => ({
         {
           src: 'Salesforce/*',
           dest: 'Salesforce'
+        },
+        {
+          src: 'ServiceNow/*',
+          dest: 'ServiceNow'
+        },
+        {
+          src: 'Veeva/*',
+          dest: 'Veeva'
+        },
+        {
+          src: 'workday/*',
+          dest: 'workday'
         }
       ]
     }),
