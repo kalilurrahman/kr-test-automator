@@ -27,6 +27,10 @@
     {
       "key": "e2e",
       "path": "/Workday/e2e/index.html"
+    },
+    {
+      "key": "expanded_packs",
+      "path": "/Workday/expanded_packs/index.html"
     }
   ]
 }
