@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
 import { PRODUCT_CATALOG, TOTAL_PRODUCTS, TOTAL_MODULES, BUNDLED_TEST_COUNT } from "@/data/productCatalog";
 import { Sparkles, Layers, Package, FileCode2, Workflow } from "lucide-react";
@@ -9,11 +9,11 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>About · TestForge AI</title>
-        <meta name="description" content="What TestForge AI is, how it's organised, and how to use the dashboard, generator, repositories and ID lookup." />
-        <link rel="canonical" href="/about" />
-      </Helmet>
+      <SeoHead
+        title="About · TestForge AI"
+        description="What TestForge AI is, how it's organised, and how to use the dashboard, generator, repositories and ID lookup."
+        canonical="/about"
+      />
 
       <div className="max-w-5xl mx-auto px-4 py-10 space-y-10">
         <header>

@@ -1,5 +1,5 @@
 import { useState, FormEvent } from "react";
-import { Helmet } from "react-helmet-async";
+import SeoHead from "@/components/SeoHead";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -64,11 +64,11 @@ const Feedback = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Feedback · TestForge AI</title>
-        <meta name="description" content="Share suggestions, bugs and improvements for TestForge AI. Goes straight to the maintainer." />
-        <link rel="canonical" href="/feedback" />
-      </Helmet>
+      <SeoHead
+        title="Feedback · TestForge AI"
+        description="Share suggestions, bugs and improvements for TestForge AI. Goes straight to the maintainer."
+        canonical="/feedback"
+      />
 
       <div className="max-w-2xl mx-auto px-4 py-10">
         <header className="mb-6">

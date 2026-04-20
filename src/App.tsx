@@ -18,6 +18,10 @@ import SharedScript from "./pages/SharedScript";
 import Profile from "./pages/Profile";
 import Compare from "./pages/Compare";
 import Settings from "./pages/Settings";
+import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
+import Feedback from "./pages/Feedback";
+import IosInstallHint from "@/components/IosInstallHint";
 import NotFound from "./pages/NotFound";
 import { useThemePalette } from "@/hooks/useThemePalette";
 
@@ -50,6 +54,9 @@ function AppShell() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/feedback" element={<Feedback />} />
           <Route path="/templates" element={<Templates />} />
           <Route path="/sap" element={<Suspense fallback={<ModuleFallback label="Loading SAP repository…" />}><SAP /></Suspense>} />
           <Route path="/salesforce" element={<Suspense fallback={<ModuleFallback label="Loading Salesforce repository…" />}><Salesforce /></Suspense>} />
@@ -64,6 +71,7 @@ function AppShell() {
       </main>
       <KRFooter />
       <KeyboardShortcutsDialog open={shortcutsOpen} onOpenChange={setShortcutsOpen} />
+      <IosInstallHint />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import SeoHead from "@/components/SeoHead";
 import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare } from "lucide-react";
 import {
   PRODUCT_CATALOG,
@@ -51,11 +51,11 @@ const Dashboard = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Dashboard · TestForge AI Enterprise Test Hub</title>
-        <meta name="description" content="Master dashboard for 15 enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, AWS, GCP, Azure, iOS, Android and more." />
-        <link rel="canonical" href="/dashboard" />
-      </Helmet>
+      <SeoHead
+        title="Dashboard · TestForge AI Enterprise Test Hub"
+        description="Master dashboard for 15 enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, AWS, GCP, Azure, iOS, Android and more."
+        canonical="/dashboard"
+      />
 
       <div className="max-w-7xl mx-auto px-4 py-10">
         {/* Hero */}
