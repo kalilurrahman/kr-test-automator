@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, ArrowUpDown, ChevronLeft, ChevronRight, Wand2, X } from "lucide-react";
+import { Search, ArrowUpDown, ChevronLeft, ChevronRight, Wand2, X, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -11,9 +11,10 @@ import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import {
-  filterCases, MODULES, type TestCase, type Priority,
+  type TestCase, type Priority,
   type AutoFeasibility, type Industry, type SAPModule,
 } from "@/data/sapTestCases";
+import { loadAllSapCases } from "@/data/sapCsvLoader";
 
 const PAGE_SIZE = 25;
 
@@ -40,19 +41,39 @@ export function SapTestCases() {
   const [sortDir, setSortDir] = useState<"asc" | "desc">("asc");
   const [page, setPage] = useState(0);
   const [drawer, setDrawer] = useState<TestCase | null>(null);
+  const [allCases, setAllCases] = useState<TestCase[] | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    loadAllSapCases().then((list) => { if (alive) setAllCases(list); });
+    return () => { alive = false; };
+  }, []);
 
   const industries: Industry[] = [
     "All", "Banking", "Healthcare", "Manufacturing",
     "Oil & Gas", "Pharma", "Public Sector", "Retail", "Utilities",
   ];
 
+  const allModules = useMemo<SAPModule[]>(
+    () => allCases
+      ? ([...new Set(allCases.map((c) => c.module))].sort() as SAPModule[])
+      : [],
+    [allCases],
+  );
+
   const filtered = useMemo(() => {
-    const list = filterCases({
-      module: module === "All" ? undefined : module,
-      industry: industry === "All" ? undefined : industry,
-      priority: priority === "All" ? undefined : priority,
-      autoFeasibility: autoFeas === "All" ? undefined : autoFeas,
-      search: search.trim() || undefined,
+    if (!allCases) return [];
+    const q = search.trim().toLowerCase();
+    const list = allCases.filter((tc) => {
+      if (module !== "All" && tc.module !== module) return false;
+      if (industry !== "All" && tc.industry !== industry && tc.industry !== "All") return false;
+      if (priority !== "All" && tc.priority !== priority) return false;
+      if (autoFeas !== "All" && tc.autoFeasibility !== autoFeas) return false;
+      if (q) {
+        const hay = `${tc.id} ${tc.scenario} ${tc.testCase} ${tc.subModule} ${tc.steps} ${tc.bapi}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
     });
     const order = { High: 0, Medium: 1, Low: 2 };
     return [...list].sort((a, b) => {
@@ -62,7 +83,7 @@ export function SapTestCases() {
       else cmp = String(a[sortKey]).localeCompare(String(b[sortKey]));
       return sortDir === "asc" ? cmp : -cmp;
     });
-  }, [module, industry, priority, autoFeas, search, sortKey, sortDir]);
+  }, [allCases, module, industry, priority, autoFeas, search, sortKey, sortDir]);
 
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, pages - 1);
@@ -110,7 +131,7 @@ export function SapTestCases() {
             aria-label="Module"
           >
             <option value="All">All modules</option>
-            {MODULES.map((m) => <option key={m} value={m}>{m}</option>)}
+            {allModules.map((m) => <option key={m} value={m}>{m}</option>)}
           </select>
           <select
             value={industry}
