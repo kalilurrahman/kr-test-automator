@@ -19,34 +19,21 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     viteStaticCopy({
       targets: [
-        {
-          src: 'Salesforce/*',
-          dest: 'Salesforce'
-        },
-        {
-          src: 'workday/*',
-          dest: 'workday'
-        },
-        {
-          src: 'ServiceNow/*',
-          dest: 'ServiceNow'
-        },
-        {
-          src: 'Veeva/*',
-          dest: 'Veeva'
-        },
-        {
-          src: 'Dynamics365/*',
-          dest: 'Dynamics365'
-        },
-        {
-          src: 'OracleApps/*',
-          dest: 'OracleApps'
-        },
-        {
-          src: 'SAP/Ph-II/*',
-          dest: 'SAP/Ph-II'
-        }
+        { src: 'Salesforce/*', dest: 'Salesforce' },
+        { src: 'workday/*', dest: 'workday' },
+        { src: 'ServiceNow/*', dest: 'ServiceNow' },
+        { src: 'Veeva/*', dest: 'Veeva' },
+        { src: 'Dynamics365/*', dest: 'Dynamics365' },
+        { src: 'OracleApps/*', dest: 'OracleApps' },
+        { src: 'SAP/Ph-II/*', dest: 'SAP/Ph-II' },
+        { src: 'API/*', dest: 'API' },
+        { src: 'iOS/*', dest: 'iOS' },
+        { src: 'Android/*', dest: 'Android' },
+        { src: 'AWS/*', dest: 'AWS' },
+        { src: 'GCP/*', dest: 'GCP' },
+        { src: 'Azure/*', dest: 'Azure' },
+        { src: 'WebApps/*', dest: 'WebApps' },
+        { src: 'TopProducts/*', dest: 'TopProducts' },
       ]
     }),
     VitePWA({

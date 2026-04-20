@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard } from "lucide-react";
+import { Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown, LayoutDashboard, Info, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useAuth } from "@/contexts/AuthContext";
@@ -8,22 +8,23 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { PaletteSwitcher } from "@/components/PaletteSwitcher";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Button } from "@/components/ui/button";
+import { PRODUCT_CATALOG } from "@/data/productCatalog";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
-const navLinks = [
-  { to: "/", label: "Generate" },
-  { to: "/sap", label: "SAP Tests" },
-  { to: "/salesforce", label: "Salesforce" },
-  { to: "/workday/index.html", label: "Workday", isExternal: true },
-  { to: "/ServiceNow/index.html", label: "ServiceNow", isExternal: true },
-  { to: "/Veeva/index.html", label: "Veeva", isExternal: true },
-  { to: "/Dynamics365/index.html", label: "Dynamics 365", isExternal: true },
-  { to: "/OracleApps/index.html", label: "Oracle Apps", isExternal: true },
+const libraryLinks = [
   { to: "/templates", label: "Templates" },
   { to: "/history", label: "History" },
   { to: "/collections", label: "Collections" },
@@ -37,23 +38,29 @@ const KRHeader = () => {
   const [authOpen, setAuthOpen] = useState(false);
   const { user, loading, signOut } = useAuth();
 
+  const isActive = (path: string) => location.pathname === path;
+  const productActive = PRODUCT_CATALOG.some((p) => p.kind === "spa" && location.pathname === p.route);
+  const libraryActive = libraryLinks.some((l) => location.pathname === l.to);
+
+  const closeMobile = () => setMobileOpen(false);
+
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-border backdrop-blur-md bg-background/80">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-2">
           {/* LEFT: KR Brand */}
           <a
             href="https://www.linkedin.com/in/kalilurrahman"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-3 group shrink-0"
           >
             <div className="w-9 h-9 rounded-full bg-card border border-primary/30 flex items-center justify-center">
               <span className="text-sm font-bold text-primary" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 KR
               </span>
             </div>
-            <div className="hidden sm:block">
+            <div className="hidden lg:block">
               <div className="text-sm font-semibold text-foreground leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 Kalilur Rahman
               </div>
@@ -64,10 +71,10 @@ const KRHeader = () => {
           </a>
 
           {/* CENTER: App name */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 shrink-0">
             <Settings className="w-5 h-5 text-primary" />
             <span
-              className="text-lg font-bold tracking-wide text-foreground"
+              className="text-lg font-bold tracking-wide text-foreground hidden sm:inline"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               TestForge AI
@@ -75,30 +82,74 @@ const KRHeader = () => {
           </Link>
 
           {/* RIGHT: Nav + Auth + Install */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              link.isExternal ? (
-                <a
-                  key={link.to}
-                  href={link.to}
-                  className="px-3 py-1.5 text-sm rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-accent"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
-                    location.pathname === link.to
+          <div className="hidden lg:flex items-center gap-1">
+            <NavLink to="/" label="Generate" active={isActive("/")} />
+            <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
+
+            {/* Products dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors inline-flex items-center gap-1 ${
+                    productActive
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   }`}
                 >
-                  {link.label}
-                </Link>
-              )
-            ))}
+                  Products <ChevronDown className="w-3 h-3" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="bg-card border-border w-64 max-h-[70vh] overflow-y-auto">
+                <DropdownMenuLabel className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                  Interactive (SPA)
+                </DropdownMenuLabel>
+                {PRODUCT_CATALOG.filter((p) => p.kind === "spa").map((p) => (
+                  <DropdownMenuItem key={p.key} asChild>
+                    <Link to={p.route} className="cursor-pointer flex items-center justify-between">
+                      <span>{p.label}</span>
+                      <span className="text-[10px] font-mono text-muted-foreground">{p.idPrefix}</span>
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuLabel className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                  Static repositories
+                </DropdownMenuLabel>
+                {PRODUCT_CATALOG.filter((p) => p.kind === "static").map((p) => (
+                  <DropdownMenuItem key={p.key} asChild>
+                    <a href={p.route} className="cursor-pointer flex items-center justify-between">
+                      <span>{p.label}</span>
+                      <span className="text-[10px] font-mono text-muted-foreground">{p.idPrefix}</span>
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Library dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors inline-flex items-center gap-1 ${
+                    libraryActive
+                      ? "text-primary bg-primary/10"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  }`}
+                >
+                  Library <ChevronDown className="w-3 h-3" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="bg-card border-border">
+                {libraryLinks.map((l) => (
+                  <DropdownMenuItem key={l.to} asChild>
+                    <Link to={l.to} className="cursor-pointer">{l.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <NavLink to="/about" label="About" icon={Info} active={isActive("/about")} />
+            <NavLink to="/feedback" label="Feedback" icon={MessageSquare} active={isActive("/feedback")} />
 
             {/* Auth */}
             {!loading && (
@@ -142,6 +193,7 @@ const KRHeader = () => {
               onClick={() => window.dispatchEvent(new CustomEvent("toggle-shortcuts-help"))}
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
               title="Keyboard shortcuts (Ctrl+/)"
+              aria-label="Keyboard shortcuts"
             >
               <Keyboard className="w-4 h-4" />
             </button>
@@ -161,8 +213,10 @@ const KRHeader = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+            className="lg:hidden p-2 text-muted-foreground hover:text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -170,35 +224,78 @@ const KRHeader = () => {
 
         {/* Mobile nav */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-border bg-background px-4 py-3 space-y-1">
-            {navLinks.map((link) => (
-              link.isExternal ? (
-                <a
-                  key={link.to}
-                  href={link.to}
-                  onClick={() => setMobileOpen(false)}
-                  className="block px-3 py-2 text-sm rounded-md text-muted-foreground hover:text-foreground"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  onClick={() => setMobileOpen(false)}
-                  className={`block px-3 py-2 text-sm rounded-md ${
-                    location.pathname === link.to
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            ))}
+          <nav className="lg:hidden border-t border-border bg-background px-4 py-3 max-h-[80vh] overflow-y-auto">
+            <MobileLink to="/" label="Generate" onNavigate={closeMobile} active={isActive("/")} />
+            <MobileLink to="/dashboard" label="Dashboard" onNavigate={closeMobile} active={isActive("/dashboard")} />
+
+            <Accordion type="multiple" className="border-none">
+              <AccordionItem value="products" className="border-none">
+                <AccordionTrigger className="py-2 px-3 text-sm hover:no-underline">Products</AccordionTrigger>
+                <AccordionContent className="pb-1">
+                  <div className="pl-3 space-y-0.5">
+                    {PRODUCT_CATALOG.map((p) => (
+                      p.kind === "spa" ? (
+                        <Link
+                          key={p.key}
+                          to={p.route}
+                          onClick={closeMobile}
+                          className={`block px-3 py-1.5 text-sm rounded-md ${
+                            isActive(p.route) ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+                          }`}
+                        >
+                          {p.label}
+                        </Link>
+                      ) : (
+                        <a
+                          key={p.key}
+                          href={p.route}
+                          onClick={closeMobile}
+                          className="block px-3 py-1.5 text-sm rounded-md text-muted-foreground hover:text-foreground"
+                        >
+                          {p.label}
+                        </a>
+                      )
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="library" className="border-none">
+                <AccordionTrigger className="py-2 px-3 text-sm hover:no-underline">Library</AccordionTrigger>
+                <AccordionContent className="pb-1">
+                  <div className="pl-3 space-y-0.5">
+                    {libraryLinks.map((l) => (
+                      <Link
+                        key={l.to}
+                        to={l.to}
+                        onClick={closeMobile}
+                        className={`block px-3 py-1.5 text-sm rounded-md ${
+                          isActive(l.to) ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+                        }`}
+                      >
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+
+            <MobileLink to="/about" label="About" onNavigate={closeMobile} active={isActive("/about")} />
+            <MobileLink to="/feedback" label="Feedback" onNavigate={closeMobile} active={isActive("/feedback")} />
+
+            {isInstallable && (
+              <button
+                onClick={() => { install(); closeMobile(); }}
+                className="w-full text-left px-3 py-2 text-sm rounded-md text-primary inline-flex items-center gap-2"
+              >
+                <Download className="w-4 h-4" /> Install app
+              </button>
+            )}
+
             {!loading && !user && (
               <button
-                onClick={() => { setAuthOpen(true); setMobileOpen(false); }}
+                onClick={() => { setAuthOpen(true); closeMobile(); }}
                 className="block w-full text-left px-3 py-2 text-sm rounded-md text-primary"
               >
                 Sign In
@@ -206,13 +303,13 @@ const KRHeader = () => {
             )}
             {!loading && user && (
               <button
-                onClick={() => { signOut(); setMobileOpen(false); }}
+                onClick={() => { signOut(); closeMobile(); }}
                 className="block w-full text-left px-3 py-2 text-sm rounded-md text-muted-foreground"
               >
                 Sign Out
               </button>
             )}
-          </div>
+          </nav>
         )}
       </header>
 
@@ -220,5 +317,33 @@ const KRHeader = () => {
     </>
   );
 };
+
+const NavLink = ({
+  to, label, icon: Icon, active,
+}: { to: string; label: string; icon?: typeof LayoutDashboard; active: boolean }) => (
+  <Link
+    to={to}
+    className={`px-3 py-1.5 text-sm rounded-md transition-colors inline-flex items-center gap-1.5 ${
+      active ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground hover:bg-accent"
+    }`}
+  >
+    {Icon && <Icon className="w-3.5 h-3.5" />}
+    {label}
+  </Link>
+);
+
+const MobileLink = ({
+  to, label, onNavigate, active,
+}: { to: string; label: string; onNavigate: () => void; active: boolean }) => (
+  <Link
+    to={to}
+    onClick={onNavigate}
+    className={`block px-3 py-2 text-sm rounded-md ${
+      active ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+    }`}
+  >
+    {label}
+  </Link>
+);
 
 export default KRHeader;
