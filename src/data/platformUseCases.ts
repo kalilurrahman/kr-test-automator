@@ -327,4 +327,389 @@ export const PLATFORM_USE_CASES: Record<string, { useCases: string; modulesCopy:
       logs: "NSS feeds, SIEM streaming, log search, retention.",
     },
   },
+  // ----- Wave 3: enterprise additions synced from GitHub --------------------
+  "3dexperience": {
+    useCases:
+      "Dassault Systèmes 3DEXPERIENCE platform regression for product engineering: CAD authoring & check-in, PLM lifecycle states, manufacturing process planning, FEA/CFD simulation jobs, multi-tier supply-chain BOM rollups and quality non-conformance handling. Designed for aerospace, automotive and high-tech enterprises.",
+    modulesCopy: {
+      cad: "CATIA/SolidWorks check-in/out, parametric updates, family tables.",
+      plm: "Lifecycle states, baselines, effectivity, options & variants.",
+      manufacturing: "Process plans, work instructions, MBOM transforms.",
+      simulation: "FEA/CFD setup, mesh, solve, post-processing.",
+      supply_chain: "Multi-tier BOM rollup, supplier collaboration.",
+      quality: "Non-conformance, CAPA, inspection plans, FAI.",
+    },
+  },
+  adobeexperiencecloud: {
+    useCases:
+      "Adobe Experience Cloud regression: AEM authoring/publishing, Analytics report suites and segmentation, Campaign cross-channel orchestration, Target A/B/MVT experiences, Journey Optimizer real-time decisioning and Identity Service stitching across web/app/CRM. Validates GDPR/CCPA consent and Edge Network performance.",
+    modulesCopy: {
+      aem: "Authoring, workflows, replication, dispatcher caching.",
+      analytics: "Report suites, segments, calculated metrics, virtual report suites.",
+      campaign: "Email, push, SMS orchestration, delivery throttling.",
+      target: "A/B/MVT, automated personalization, recommendations.",
+      journey_optimizer: "Real-time journeys, decisioning, frequency capping.",
+      identity_service: "ECID stitching, cross-device, consent enforcement.",
+    },
+  },
+  adpworkforcenow: {
+    useCases:
+      "ADP Workforce Now regression for US/Canada payroll: gross-to-net calc, multi-state taxation, benefits open enrolment, applicant tracking, talent reviews and time/attendance accruals. Includes year-end W-2/T4, ACA reporting and GL export validation.",
+    modulesCopy: {
+      payroll: "Gross-to-net, multi-state tax, off-cycle, year-end W-2/T4.",
+      benefits: "Open enrolment, life events, COBRA, ACA reporting.",
+      core_hr: "Personal data, position mgmt, org charts, security roles.",
+      recruiting: "Req → applicant → offer → onboarding hand-off.",
+      talent: "Performance reviews, goals, succession, compensation.",
+      time: "Schedules, accruals, exceptions, mobile clock-in.",
+    },
+  },
+  anaplan: {
+    useCases:
+      "Connected planning regression: model build, list/module dimensionality, formula recalculation, sheet drill-paths, forecast scenarios, planning workflow approvals and selective access controls. Suitable for FP&A, S&OP and workforce-planning model upgrades.",
+    modulesCopy: {
+      models: "Model open/save, list refresh, formula recalc, blueprints.",
+      sheets: "Grid, board, action sheets, drill-down navigation.",
+      forecasting: "Scenario planning, what-ifs, time scaling, snapshots.",
+      planning: "Driver-based plans, allocations, contributions.",
+      workflow: "Approval routing, status, notifications, audit trail.",
+      access_control: "Selective access, roles, model security, single sign-on.",
+    },
+  },
+  automationanywhere: {
+    useCases:
+      "Automation 360 RPA regression: bot build/run, Control Room governance, attended runner triggers, work queue throughput, document automation OCR and IQ Bot ML classification. Validates credential vault, audit logs and Bot Insight analytics.",
+    modulesCopy: {
+      bots: "Bot build, parameters, error handling, version control.",
+      control_room: "User mgmt, roles, audit log, license utilisation.",
+      runner: "Attended/headless runner, schedules, triggers.",
+      queues: "Work queue throughput, retries, deadlettering.",
+      documents: "OCR, key-value extraction, validator station.",
+      iq_bot: "ML model training, classification, learning instances.",
+    },
+  },
+  blackline: {
+    useCases:
+      "Financial close regression: account reconciliations with auto-cert, journal entry approvals, close-task tracking, transaction matching, variance analysis and SOX-aligned controls. Aligned to month/quarter/year-end close cycles.",
+    modulesCopy: {
+      reconciliations: "Auto-cert, certification levels, supporting docs.",
+      journals: "Journal entry creation, approval, ERP posting.",
+      tasks: "Task templates, dependencies, assignments, status.",
+      matching: "Transaction matching rules, exceptions, escalations.",
+      variance: "Variance analysis, threshold rules, commentary.",
+      controls: "SOX controls, evidence, certification, segregation of duties.",
+    },
+  },
+  boomi: {
+    useCases:
+      "Boomi AtomSphere integration regression: process build/deploy on atoms/molecules, API publishing & gateway policies, master data hub golden-record dedup and run-time monitoring with alerts. Used by integration CoEs migrating from on-prem ESBs.",
+    modulesCopy: {
+      atomsphere: "Atom/molecule deploy, environments, properties.",
+      integration_process: "Maps, decisions, branches, error handling.",
+      api_management: "API publish, gateway policies, throttling, OAuth.",
+      master_data: "Golden record, survivorship, dedup, governance.",
+      monitoring: "Process reporting, alerts, atom health, throughput.",
+    },
+  },
+  coupa: {
+    useCases:
+      "Coupa BSM regression: requisition→PO→receipt→invoice match, expense claims with receipt OCR, supplier onboarding & risk assessments, sourcing events, e-invoicing compliance and spend analytics dashboards.",
+    modulesCopy: {
+      procurement: "Req → PO → receipt → 3-way match, contracts, catalogues.",
+      expenses: "Expense claims, receipt OCR, mileage, policy enforcement.",
+      invoicing: "e-Invoicing compliance, OCR, AP automation, dispute mgmt.",
+      supplier_mgmt: "Onboarding, risk assessment, performance, certifications.",
+      sourcing: "RFI/RFP/RFQ events, e-auctions, award scenarios.",
+      analytics: "Spend cubes, savings, supplier diversity, dashboards.",
+    },
+  },
+  crowdstrike: {
+    useCases:
+      "Falcon platform regression: lightweight Falcon sensor health, behavioural detection of fileless attacks, machine-learning prevention, threat-hunt OverWatch hand-offs and Falcon Identity attack path mapping. Aligned to MITRE ATT&CK technique coverage.",
+    modulesCopy: {
+      endpoint: "Endpoint inventory, host groups, sensor updates.",
+      sensor: "Sensor install, kernel compat, RFM, RTR shell.",
+      detection: "IOA-based detection, severity, suppression rules.",
+      prevention: "ML quarantine, exploit blocking, custom IOA.",
+      hunt: "Threat hunt queries, OverWatch, Falcon Search.",
+      falcon_identity: "Identity attack path, MFA enforcement, AD posture.",
+    },
+  },
+  datadog: {
+    useCases:
+      "Observability regression: APM trace ingestion & service maps, infrastructure host/container metrics, RUM session replay, synthetic API/browser tests and Cloud SIEM detection rules. Validates SLO burn-rate alerts and notebook reporting.",
+    modulesCopy: {
+      apm: "Service maps, distributed traces, error rates, latency P95.",
+      infra: "Host metrics, container monitoring, processes, custom metrics.",
+      rum: "Session replay, frustration signals, JS error tracking.",
+      synthetics: "API & browser tests, multi-step, global locations.",
+      security: "Cloud SIEM rules, signals triage, agent-based scanning.",
+    },
+  },
+  epicor: {
+    useCases:
+      "Epicor Kinetic ERP regression for discrete manufacturers: shop-floor MES, multi-site supply chain, multi-currency finance, CRM lead-to-order, distribution warehousing and quality non-conformance.",
+    modulesCopy: {
+      manufacturing: "Job entry, MES feedback, kanban, scheduling.",
+      supply_chain: "Multi-site planning, transfers, vendor RMAs.",
+      finance: "GL, AP, AR, fixed assets, multi-currency, taxes.",
+      crm: "Lead → opp → quote → order, account hierarchy.",
+      distribution: "Warehouse pick/pack/ship, lot/serial, kitting.",
+      quality: "Non-conformance, CAPA, inspection plans, calibration.",
+    },
+  },
+  hubspot: {
+    useCases:
+      "HubSpot Hub regression: CRM contact/company/deal pipelines, Marketing Hub email/workflow campaigns, Sales Hub sequences, Service Hub tickets/SLAs, CMS Hub page templates and Operations Hub data sync. Validates GDPR consent and lead scoring.",
+    modulesCopy: {
+      crm: "Contacts, companies, deals, pipelines, custom properties.",
+      marketing: "Emails, workflows, lead scoring, A/B tests.",
+      sales: "Sequences, snippets, meetings, deal forecasting.",
+      service: "Tickets, SLAs, knowledge base, customer portal.",
+      cms: "Page templates, modules, A/B tests, smart content.",
+      operations: "Data sync, programmable automation, custom code actions.",
+    },
+  },
+  ibmmaximo: {
+    useCases:
+      "Maximo Application Suite regression for asset-intensive industries: asset hierarchy & meters, work order lifecycle, MRO inventory, predictive maintenance with anomaly scoring and service-request intake. Validates calibration, condition-based monitoring and SR routing.",
+    modulesCopy: {
+      asset_mgmt: "Asset hierarchy, meters, classifications, attributes.",
+      work_management: "Work order lifecycle, planning, labour, materials.",
+      inventory: "MRO inventory, reorder, ABC, cycle counts.",
+      predictive_maintenance: "Anomaly scoring, sensor data, alerts.",
+      service_requests: "SR intake, classification, routing, SLA.",
+    },
+  },
+  inforcloudsuite: {
+    useCases:
+      "Infor CloudSuite regression for manufacturing & healthcare verticals: M3/LN/CSI finance, GHR HCM, multi-site manufacturing, supply chain, project costing, EAM assets and quality non-conformance.",
+    modulesCopy: {
+      finance: "GL, AP, AR, fixed assets, multi-book, period close.",
+      hr: "Personal data, positions, comp planning, learning.",
+      manufacturing: "Discrete/process manufacturing, work orders, MES.",
+      supply_chain: "Multi-site planning, transfers, distribution.",
+      projects: "Project costing, billing, revenue recognition.",
+      assets: "EAM asset hierarchy, work mgmt, predictive.",
+      quality: "Non-conformance, CAPA, inspection, supplier quality.",
+    },
+  },
+  jira: {
+    useCases:
+      "Atlassian Jira regression: project setup with team-managed/company-managed schemes, issue workflows with transitions, agile boards (Scrum/Kanban), Jira Service Management request types/SLAs and rule-based automation.",
+    modulesCopy: {
+      projects: "Project schemes, permissions, components, versions.",
+      issues: "Workflows, fields, screens, validators, post-functions.",
+      boards: "Scrum/Kanban boards, swimlanes, quick filters.",
+      agile: "Sprints, story points, backlog grooming, velocity.",
+      service_management: "Request types, queues, SLAs, customer portal.",
+      automation: "Rule triggers, conditions, branches, actions.",
+    },
+  },
+  mulesoft: {
+    useCases:
+      "MuleSoft Anypoint regression: API design in Design Center, Exchange asset publishing, RAML/OAS specs, runtime deployments to CloudHub/Runtime Fabric, API Manager policies (rate-limit, OAuth) and Anypoint Monitoring dashboards.",
+    modulesCopy: {
+      api_manager: "Policy enforcement, rate-limit, OAuth, client mgmt.",
+      design_center: "API design, mocking, validation against RAML/OAS.",
+      exchange: "Asset publishing, dependencies, version semantics.",
+      raml: "RAML 1.0 specs, traits, resource types, libraries.",
+      runtime_manager: "CloudHub/RTF deploy, scale, alerts, logs.",
+      monitoring: "Anypoint Monitoring dashboards, alerts, custom metrics.",
+    },
+  },
+  netsuite: {
+    useCases:
+      "Oracle NetSuite ERP regression for SMB/mid-market: financials period close, CRM lead-to-cash, inventory & order management, procurement P2P, manufacturing work orders, project costing/billing and SuitePeople HCM.",
+    modulesCopy: {
+      financials: "GL, AP, AR, multi-book, multi-currency, period close.",
+      crm: "Leads, opportunities, sales orders, customer center.",
+      inventory: "Items, locations, transfers, valuation methods.",
+      order_management: "Sales orders, fulfilment, returns, drop-ship.",
+      procurement: "Vendor, RFQ, PO, receipt, vendor bills, 3-way match.",
+      manufacturing: "Work orders, BOMs, routings, assembly builds.",
+      projects: "Project tasks, time, expense, billing, revenue.",
+      hcm: "SuitePeople employee mgmt, time-off, payroll integration.",
+    },
+  },
+  okta: {
+    useCases:
+      "Okta Workforce Identity regression: sign-in policies & ThreatInsight, lifecycle management with provisioning to SaaS, Universal Directory, MFA factors (push/WebAuthn/Verify), Adaptive Access policies and Okta API token mgmt.",
+    modulesCopy: {
+      signin: "Sign-in widget, policy, ThreatInsight, password reset.",
+      lifecycle: "Provisioning to SaaS, deprovisioning, group rules.",
+      directory: "Universal Directory, profile sources, attribute mapping.",
+      mfa: "Push, WebAuthn, Okta Verify, FIDO2, recovery factors.",
+      access: "Adaptive Access policies, network zones, device trust.",
+      api: "API tokens, scopes, rate limits, OAuth for Okta.",
+    },
+  },
+  palantirfoundry: {
+    useCases:
+      "Palantir Foundry regression: data integration via Connections, transform pipelines (PySpark/SQL), Ontology object/link model, analytics dashboards, Workflow Builder operational apps and project security with markings.",
+    modulesCopy: {
+      data_integration: "Connections, sources, sync schedules, schemas.",
+      pipelines: "PySpark/SQL transforms, lineage, build schedules.",
+      ontology: "Object types, link types, action types, constraints.",
+      analytics: "Contour analyses, Workshop dashboards, Quiver.",
+      workflow: "Workflow Builder operational apps, branching, actions.",
+      security: "Markings, project roles, organisations, audit trail.",
+    },
+  },
+  qliksense: {
+    useCases:
+      "Qlik Sense Enterprise regression: app reload tasks, data load script with QVDs, visualization rendering across charts, section access security, governance via QMC and automation flows for orchestration.",
+    modulesCopy: {
+      apps: "App reload, on-demand, sheet rendering, exports.",
+      data_load: "Script editor, QVDs, incremental loads, binary.",
+      visualizations: "Native charts, extensions, mashups, themes.",
+      security: "Section access, OS user resolution, attribute filters.",
+      governance: "QMC tasks, audit log, license usage, content libraries.",
+      automation: "Qlik Application Automation flows, connectors, triggers.",
+    },
+  },
+  qualtrics: {
+    useCases:
+      "Qualtrics XM regression: survey design with branching/quotas, multi-channel distribution (email/SMS/anonymous), CX/EX dashboards, XM Programs (NPS/employee engagement), Actions for closed-loop and Stats iQ analytics.",
+    modulesCopy: {
+      surveys: "Question types, display logic, branching, quotas.",
+      distribution: "Email, SMS, anonymous link, embedded, panel mgmt.",
+      dashboards: "Pages, widgets, filters, drill-down, sharing.",
+      xm_programs: "NPS, employee engagement, lifecycle programs.",
+      actions: "Closed-loop tickets, follow-up tasks, integrations.",
+      analytics: "Stats iQ, Text iQ topic modelling, predict iQ.",
+    },
+  },
+  rhel: {
+    useCases:
+      "RHEL platform regression: subscription-manager attach, dnf/yum package operations, SELinux & firewalld security, NetworkManager, LVM/XFS storage and systemd unit lifecycle. Aligned to RHEL 8/9 STIG hardening baselines.",
+    modulesCopy: {
+      subscription: "subscription-manager register/attach, RHSM proxy.",
+      package_mgmt: "dnf install/upgrade/rollback, modules, repos.",
+      security: "SELinux modes, firewalld, fapolicyd, USBGuard, OpenSCAP.",
+      networking: "NetworkManager, nmcli, bonding, bridges, teamd.",
+      storage: "LVM volumes, XFS/ext4, Stratis, NFS, iSCSI.",
+      services: "systemd units, timers, journald, targets, failover.",
+    },
+  },
+  sageintacct: {
+    useCases:
+      "Sage Intacct cloud financials regression: GL multi-entity, AP bill mgmt, AR collections, cash mgmt bank rec, project costing/billing, subscription billing recognition and dimension-based reporting.",
+    modulesCopy: {
+      general_ledger: "Multi-entity, multi-currency, dimensions, journals.",
+      ap: "Bills, payments, 1099, vendor mgmt, approvals.",
+      ar: "Invoices, collections, statements, customer mgmt.",
+      cash: "Bank reconciliation, payment processing, cash mgmt.",
+      projects: "Project costing, billing, time/expense, resource mgmt.",
+      subscriptions: "Subscription billing, ASC 606 revenue recognition.",
+      reporting: "Financial reports, dashboards, custom reports, drill-down.",
+    },
+  },
+  snowflake: {
+    useCases:
+      "Snowflake data cloud regression: warehouse compute scaling, micro-partition storage, Snowpipe/Streams/Tasks pipelines, secure data sharing & data exchange, Horizon governance and RBAC roles/grants. Aligned to PCI/HIPAA workload patterns.",
+    modulesCopy: {
+      data_warehouse: "Virtual warehouse scaling, queries, results cache.",
+      storage: "Micro-partitions, clustering keys, time travel, fail-safe.",
+      pipelines: "Snowpipe ingest, streams, tasks, dynamic tables.",
+      sharing: "Secure data sharing, data exchange, listings, reader accounts.",
+      governance: "Horizon, tags, masking, row-access, lineage.",
+      access_control: "RBAC roles, grants, future grants, SCIM.",
+    },
+  },
+  splunk: {
+    useCases:
+      "Splunk Enterprise/Cloud regression: SPL search performance, dashboards & XML/Studio visualisations, alert actions, scheduled reports, Enterprise Security correlation searches and Observability Cloud APM/RUM/synthetics.",
+    modulesCopy: {
+      search: "SPL search, tstats, datamodel acceleration, summary indexing.",
+      dashboards: "Classic XML, Dashboard Studio, inputs, drilldown.",
+      alerts: "Real-time/scheduled alerts, throttling, alert actions.",
+      reports: "Saved searches, scheduled reports, PDF delivery.",
+      siem: "Enterprise Security correlation, notable events, risk scoring.",
+      observability: "APM, RUM, synthetics, infra metrics, log obs connect.",
+    },
+  },
+  strata: {
+    useCases:
+      "Palo Alto Strata next-gen firewall regression: PAN-OS firewall policies, security/NAT/decryption rule ordering, GlobalProtect VPN, Threat Prevention IPS signatures and PAN-DB URL filtering. Aligned to Zero Trust segmentation models.",
+    modulesCopy: {
+      firewall: "PAN-OS deployment, HA pairs, panorama, dynamic updates.",
+      policy: "Security, NAT, decryption rule order, app-id, user-id.",
+      vpn: "GlobalProtect portal/gateway, IPSec site-to-site, MFA.",
+      threat_prevention: "IPS signatures, antivirus, DNS security, WildFire.",
+      url_filtering: "PAN-DB categories, custom categories, credential phishing.",
+    },
+  },
+  tableau: {
+    useCases:
+      "Tableau Server/Cloud regression: dashboard rendering across viewers, data source connections (extracts/live), Tableau Prep flows, server publishing & permissions and row-level security with user filters.",
+    modulesCopy: {
+      dashboards: "Rendering, filters, parameters, actions, mobile layouts.",
+      data_sources: "Live/extract connections, calculated fields, joins.",
+      extracts: "Extract refresh, incremental, scheduling, performance.",
+      prep: "Tableau Prep flows, output to extract/database, schedule.",
+      server: "Publishing, sites, projects, schedules, REST API.",
+      permissions: "Project/workbook permissions, row-level security, user filters.",
+    },
+  },
+  teamcenter: {
+    useCases:
+      "Siemens Teamcenter PLM regression: BOM mgmt with mass updates, change mgmt (CR/CN/CO), document mgmt with templated approvals, requirements traceability and configurable workflows. Covers NX/SolidEdge integrations.",
+    modulesCopy: {
+      plm: "Item lifecycle, revisioning, configuration mgmt, baselines.",
+      bom: "Multi-level BOM, where-used, mass update, transforms.",
+      change_mgmt: "ECR → ECN → ECO, impact analysis, dispositions.",
+      documentation: "Document templates, approval routing, references.",
+      requirements: "Requirements capture, traceability, allocation, verification.",
+      workflow: "Configurable workflows, role-based routing, escalation.",
+    },
+  },
+  uipath: {
+    useCases:
+      "UiPath Automation Cloud regression: Orchestrator process scheduling, Studio package publishing, attended robot triggers, unattended job throughput, queue retries and asset/credential vault access.",
+    modulesCopy: {
+      orchestrator: "Tenants, folders, schedules, triggers, audit log.",
+      studio: "Package publish, version, library, dependencies.",
+      attended: "Trigger from system tray, picture-in-picture, forms.",
+      unattended: "Job throughput, machine templates, scaling.",
+      queues: "Transactions, retries, dead-letter, priority.",
+      assets: "Credential vault, text/integer assets, robot-scoped.",
+    },
+  },
+  ukgpro: {
+    useCases:
+      "UKG Pro HCM regression: payroll gross-to-net & multi-state tax, benefits open enrolment with life events, core HR position mgmt, talent reviews, timekeeping schedules and workforce mgmt scheduling.",
+    modulesCopy: {
+      payroll: "Gross-to-net, multi-state tax, off-cycle, year-end.",
+      benefits: "Open enrolment, life events, COBRA, ACA reporting.",
+      core_hr: "Personal data, positions, org charts, security.",
+      talent: "Performance reviews, goals, succession, learning.",
+      timekeeping: "Schedules, accruals, exceptions, mobile clock-in.",
+      workforce_management: "Schedules, demand forecasting, leave mgmt.",
+    },
+  },
+  vsphere: {
+    useCases:
+      "VMware vSphere regression: vCenter cluster lifecycle, VM provisioning/cloning/snapshots, vSphere Distributed Switch networking, vSAN/iSCSI/NFS storage, HA failover orchestration and DRS resource balancing. Suitable for vSphere 7/8 upgrade smoke + regression.",
+    modulesCopy: {
+      cluster: "vCenter, ESXi hosts, lifecycle mgr, EVC mode.",
+      vm: "Provision, clone, snapshot, vMotion, storage vMotion.",
+      network: "vSwitch, dvSwitch, NIOC, VLAN tagging, NSX integration.",
+      storage: "vSAN, iSCSI, NFS, datastores, storage policies.",
+      ha: "HA clusters, admission control, host failure response.",
+      drs: "DRS automation level, affinity rules, predictive DRS.",
+    },
+  },
+  zendesk: {
+    useCases:
+      "Zendesk Suite regression: ticket workflows with triggers/automations, Help Center knowledge base, Chat live agent routing, Talk voice IVR, Guide article publishing and Explore reporting dashboards. Validates SLA policies and omnichannel routing.",
+    modulesCopy: {
+      tickets: "Triggers, automations, macros, SLA policies, side conversations.",
+      help_center: "Article publishing, themes, multilingual, community.",
+      chat: "Routing, departments, triggers, shortcuts, Web Widget.",
+      talk: "IVR, call queues, voicemail, recording, e911.",
+      guide: "Knowledge base, AI suggestions, content blocks.",
+      explore: "Datasets, dashboards, calculated metrics, scheduled delivery.",
+    },
+  },
 };
