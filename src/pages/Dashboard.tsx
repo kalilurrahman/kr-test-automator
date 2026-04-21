@@ -104,7 +104,7 @@ const Dashboard = () => {
     <>
       <SeoHead
         title="Dashboard · TestForge AI Enterprise Test Hub"
-        description="Master dashboard for 15 enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, AWS, GCP, Azure, iOS, Android and more."
+        description={`Master dashboard for ${TOTAL_PRODUCTS}+ enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, Snowflake, Datadog, Jira and more.`}
         canonical="/dashboard"
       />
 
@@ -191,19 +191,36 @@ const Dashboard = () => {
           </Card>
 
           <Card className="p-5 bg-card border-border">
-            <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-              Top platforms by case volume
-            </h2>
-            <div className="h-56">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+                Top platforms by case volume
+              </h2>
+              {globalStats && (
+                <span className="text-[10px] font-mono text-muted-foreground">
+                  {globalStats.topPlatforms.length} platforms
+                </span>
+              )}
+            </div>
+            <div className="h-72 sm:h-80">
               {statsLoading ? (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
               ) : globalStats && globalStats.topPlatforms.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={globalStats.topPlatforms} margin={{ top: 5, right: 10, left: -10, bottom: 0 }}>
+                  <BarChart
+                    data={globalStats.topPlatforms}
+                    margin={{ top: 5, right: 10, left: -10, bottom: 60 }}
+                  >
                     <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                    <XAxis dataKey="name" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
+                    <XAxis
+                      dataKey="name"
+                      tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 9 }}
+                      interval={0}
+                      angle={-55}
+                      textAnchor="end"
+                      height={80}
+                    />
                     <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
                     <Tooltip
                       contentStyle={{
