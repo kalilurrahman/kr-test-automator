@@ -150,11 +150,12 @@ const Dashboard = () => {
           ))}
         </section>
 
-        {/* Live charts */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10">
-          <Card className="p-5 bg-card border-border">
+        {/* Live charts — priority (compact horizontal bar) + platforms (heatmap treemap) */}
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-10">
+          {/* Priority — small horizontal bar chart */}
+          <Card className="p-5 bg-card border-border lg:col-span-1">
             <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-              Cases by priority (all platforms)
+              Cases by priority
             </h2>
             <div className="h-56">
               {statsLoading ? (
@@ -163,21 +164,24 @@ const Dashboard = () => {
                 </div>
               ) : globalStats && globalStats.byPriority.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={globalStats.byPriority}
-                      dataKey="value"
-                      nameKey="name"
-                      innerRadius={45}
-                      outerRadius={80}
-                      paddingAngle={2}
-                      label={(e) => `${e.name}: ${e.value.toLocaleString()}`}
-                    >
-                      {globalStats.byPriority.map((d) => (
-                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
-                      ))}
-                    </Pie>
+                  <BarChart
+                    data={globalStats.byPriority}
+                    layout="vertical"
+                    margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
+                    barCategoryGap={12}
+                  >
+                    <XAxis type="number" hide />
+                    <YAxis
+                      type="category"
+                      dataKey="name"
+                      tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 600 }}
+                      width={70}
+                      axisLine={false}
+                      tickLine={false}
+                    />
                     <Tooltip
+                      cursor={{ fill: "hsl(var(--muted) / 0.3)" }}
+                      formatter={(v: number) => v.toLocaleString()}
                       contentStyle={{
                         background: "hsl(var(--card))",
                         border: "1px solid hsl(var(--border))",
@@ -185,7 +189,21 @@ const Dashboard = () => {
                         fontSize: 12,
                       }}
                     />
-                  </PieChart>
+                    <Bar
+                      dataKey="value"
+                      radius={[0, 6, 6, 0]}
+                      label={{
+                        position: "right",
+                        fill: "hsl(var(--foreground))",
+                        fontSize: 11,
+                        formatter: (v: number) => v.toLocaleString(),
+                      }}
+                    >
+                      {globalStats.byPriority.map((d) => (
+                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
+                      ))}
+                    </Bar>
+                  </BarChart>
                 </ResponsiveContainer>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
@@ -195,14 +213,15 @@ const Dashboard = () => {
             </div>
           </Card>
 
-          <Card className="p-5 bg-card border-border">
+          {/* Top platforms — heatmap-style treemap */}
+          <Card className="p-5 bg-card border-border lg:col-span-2">
             <div className="flex items-center justify-between mb-3">
               <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
                 Top platforms by case volume
               </h2>
               {globalStats && (
                 <span className="text-[10px] font-mono text-muted-foreground">
-                  {globalStats.topPlatforms.length} platforms
+                  {globalStats.topPlatforms.length} platforms · larger tile = more cases
                 </span>
               )}
             </div>
@@ -213,21 +232,15 @@ const Dashboard = () => {
                 </div>
               ) : globalStats && globalStats.topPlatforms.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
+                  <Treemap
                     data={globalStats.topPlatforms}
-                    margin={{ top: 5, right: 10, left: -10, bottom: 60 }}
+                    dataKey="value"
+                    nameKey="name"
+                    stroke="hsl(var(--background))"
+                    content={<HeatmapTile maxValue={globalStats.topPlatforms[0]?.value ?? 1} />}
                   >
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                    <XAxis
-                      dataKey="name"
-                      tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 9 }}
-                      interval={0}
-                      angle={-55}
-                      textAnchor="end"
-                      height={80}
-                    />
-                    <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
                     <Tooltip
+                      formatter={(v: number) => v.toLocaleString() + " cases"}
                       contentStyle={{
                         background: "hsl(var(--card))",
                         border: "1px solid hsl(var(--border))",
@@ -235,8 +248,7 @@ const Dashboard = () => {
                         fontSize: 12,
                       }}
                     />
-                    <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-                  </BarChart>
+                  </Treemap>
                 </ResponsiveContainer>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
