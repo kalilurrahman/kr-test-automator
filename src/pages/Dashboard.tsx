@@ -116,17 +116,26 @@ const Dashboard = () => {
         </header>
 
         {/* Stats */}
-        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+        <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-8">
           {stats.map((s) => (
-            <Card key={s.label} className="p-4 bg-card border-border flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+            <Card
+              key={s.label}
+              className="p-3 sm:p-4 bg-card border-border flex items-center gap-2 sm:gap-3 min-w-0"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
                 <s.icon className="w-4 h-4 text-primary" />
               </div>
-              <div className="min-w-0">
-                <div className="text-lg font-bold text-foreground truncate">
+              <div className="min-w-0 flex-1">
+                <div
+                  className="font-bold text-foreground leading-tight break-words"
+                  style={{ fontSize: "clamp(0.95rem, 1.6vw, 1.25rem)" }}
+                  title={typeof s.value === "string" ? s.value : String(s.value)}
+                >
                   {s.value}
                 </div>
-                <div className="text-[10px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
+                <div className="text-[10px] sm:text-[11px] text-muted-foreground uppercase tracking-wider mt-0.5 leading-tight break-words">
+                  {s.label}
+                </div>
               </div>
             </Card>
           ))}
