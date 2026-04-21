@@ -33,10 +33,28 @@ const PRIORITY_COLORS: Record<string, string> = {
 };
 
 /**
+ * Vivid, evenly-spaced hues used to colour heatmap tiles. We sweep around the
+ * colour wheel so neighbouring tiles always contrast, then modulate lightness
+ * by rank so the densest tile still feels "hottest". Picked to stay legible
+ * on both the dark default theme and the new light mode.
+ */
+const HEATMAP_HUES = [
+  12, 28, 45, 95, 140, 165, 190, 210, 235, 260, 285, 310, 330, 355,
+];
+
+const tileColor = (index: number, total: number) => {
+  const hue = HEATMAP_HUES[index % HEATMAP_HUES.length];
+  const t = total > 1 ? index / (total - 1) : 0;
+  const saturation = Math.round(78 - t * 18); // 78 → 60
+  const lightness = Math.round(58 + t * 10); // 58 → 68 — bright enough that dark text stays legible
+  return `hsl(${hue} ${saturation}% ${lightness}%)`;
+};
+
+/**
  * Custom Treemap tile that renders the platform name and case count directly
- * inside each rectangle, with fill opacity scaled by value so the chart reads
- * like a true heatmap (denser tiles = higher volume). Recharts injects all
- * geometry props (x, y, width, height, name, value) at render time.
+ * inside each rectangle, using a distinct vivid colour per tile so the chart
+ * reads as a true multi-colour heatmap. Recharts injects all geometry props
+ * (x, y, width, height, name, value, index) at render time.
  */
 interface HeatmapTileProps {
   x?: number;
@@ -45,17 +63,16 @@ interface HeatmapTileProps {
   height?: number;
   name?: string;
   value?: number;
-  maxValue: number;
+  index?: number;
+  total: number;
 }
 
 const HeatmapTile = (props: HeatmapTileProps) => {
-  const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, maxValue } = props;
+  const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, index = 0, total } = props;
   if (width <= 0 || height <= 0) return null;
-  // Map value to a 0.25–1.0 opacity range so even small tiles stay legible.
-  const intensity = Math.max(0.25, Math.min(1, 0.25 + (value / maxValue) * 0.75));
+  const fill = tileColor(index, total);
   const showLabel = width > 50 && height > 30;
   const showValue = width > 70 && height > 50;
-  // Truncate long names to fit narrow tiles.
   const maxChars = Math.max(3, Math.floor(width / 7));
   const label = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
 
@@ -66,7 +83,7 @@ const HeatmapTile = (props: HeatmapTileProps) => {
         y={y}
         width={width}
         height={height}
-        fill={`hsl(var(--primary) / ${intensity})`}
+        fill={fill}
         stroke="hsl(var(--background))"
         strokeWidth={2}
       />
@@ -76,8 +93,8 @@ const HeatmapTile = (props: HeatmapTileProps) => {
           y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
           textAnchor="middle"
           fontSize={Math.min(13, Math.max(10, width / 10))}
-          fontWeight={600}
-          fill="hsl(var(--primary-foreground))"
+          fontWeight={700}
+          fill="#0b0f1a"
           style={{ pointerEvents: "none" }}
         >
           {label}
@@ -90,13 +107,38 @@ const HeatmapTile = (props: HeatmapTileProps) => {
           textAnchor="middle"
           fontSize={11}
           fontFamily="JetBrains Mono, monospace"
-          fill="hsl(var(--primary-foreground) / 0.85)"
+          fontWeight={600}
+          fill="#0b0f1a"
           style={{ pointerEvents: "none" }}
         >
           {value.toLocaleString()}
         </text>
       )}
     </g>
+  );
+};
+
+/**
+ * Recharts' default Tooltip renders nothing useful for Treemap, so we ship a
+ * custom popover that always shows the full platform name + case count. This
+ * makes hover legible even when the tile itself is too narrow for a label.
+ */
+interface HeatmapTooltipProps {
+  active?: boolean;
+  payload?: Array<{ payload?: { name?: string; value?: number } }>;
+}
+
+const HeatmapTooltip = ({ active, payload }: HeatmapTooltipProps) => {
+  if (!active || !payload || payload.length === 0) return null;
+  const data = payload[0]?.payload;
+  if (!data?.name) return null;
+  return (
+    <div className="rounded-md border border-border bg-popover px-3 py-2 shadow-lg">
+      <div className="text-sm font-semibold text-popover-foreground">{data.name}</div>
+      <div className="text-xs font-mono text-muted-foreground mt-0.5">
+        {(data.value ?? 0).toLocaleString()} cases
+      </div>
+    </div>
   );
 };
 
@@ -305,17 +347,10 @@ const Dashboard = () => {
                     dataKey="value"
                     nameKey="name"
                     stroke="hsl(var(--background))"
-                    content={<HeatmapTile maxValue={globalStats.topPlatforms[0]?.value ?? 1} />}
+                    content={<HeatmapTile total={globalStats.topPlatforms.length} />}
+                    isAnimationActive={false}
                   >
-                    <Tooltip
-                      formatter={(v: number) => v.toLocaleString() + " cases"}
-                      contentStyle={{
-                        background: "hsl(var(--card))",
-                        border: "1px solid hsl(var(--border))",
-                        borderRadius: 8,
-                        fontSize: 12,
-                      }}
-                    />
+                    <Tooltip content={<HeatmapTooltip />} />
                   </Treemap>
                 </ResponsiveContainer>
               ) : (
