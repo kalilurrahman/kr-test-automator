@@ -1,0 +1,177 @@
+{
+  "summary": {
+    "total": 9500,
+    "high": 6380,
+    "autoReady": 6900
+  },
+  "Pharma": {
+    "total": 250,
+    "high": 63,
+    "autoReady": 250
+  },
+  "Healthcare": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 0
+  },
+  "Telecom": {
+    "total": 200,
+    "high": 200,
+    "autoReady": 200
+  },
+  "CPG": {
+    "total": 150,
+    "high": 0,
+    "autoReady": 0
+  },
+  "Retail": {
+    "total": 150,
+    "high": 150,
+    "autoReady": 150
+  },
+  "Banking": {
+    "total": 500,
+    "high": 167,
+    "autoReady": 500
+  },
+  "Manufacturing": {
+    "total": 500,
+    "high": 500,
+    "autoReady": 0
+  },
+  "Insurance": {
+    "total": 300,
+    "high": 100,
+    "autoReady": 300
+  },
+  "Automotive": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Logistics": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Aerospace": {
+    "total": 200,
+    "high": 200,
+    "autoReady": 0
+  },
+  "Public Sector": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Energy & Utilities": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 0
+  },
+  "Education": {
+    "total": 250,
+    "high": 0,
+    "autoReady": 250
+  },
+  "IT Services": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Finance": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "HCM": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Real Estate": {
+    "total": 250,
+    "high": 0,
+    "autoReady": 0
+  },
+  "Travel": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "High Tech": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 0
+  },
+  "Media": {
+    "total": 250,
+    "high": 0,
+    "autoReady": 250
+  },
+  "Life Sciences": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Consumer Finance": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Cybersecurity": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Supply Chain": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Platform & Cloud": {
+    "total": 250,
+    "high": 0,
+    "autoReady": 250
+  },
+  "Commerce": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Government": {
+    "total": 500,
+    "high": 0,
+    "autoReady": 500
+  },
+  "Edge/IoT": {
+    "total": 500,
+    "high": 500,
+    "autoReady": 0
+  },
+  "Research": {
+    "total": 500,
+    "high": 0,
+    "autoReady": 500
+  },
+  "GovTech": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Retail & eCommerce": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 250
+  },
+  "Transportation": {
+    "total": 250,
+    "high": 0,
+    "autoReady": 250
+  },
+  "Chemicals": {
+    "total": 250,
+    "high": 250,
+    "autoReady": 0
+  }
+}
