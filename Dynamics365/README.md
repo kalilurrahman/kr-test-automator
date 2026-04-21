@@ -1,1 +1,1 @@
-Dynamics 365 test suite bundle.
+Dynamics365 test suite bundle.

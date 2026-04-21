@@ -21,12 +21,17 @@
       "path": "/Dynamics365/project_ops/index.html"
     },
     {
+<<<<<<< Updated upstream
       "key": "m365",
       "path": "/Dynamics365/m365/index.html"
     },
     {
       "key": "marketing",
       "path": "/Dynamics365/marketing/index.html"
+=======
+      "key": "field_service",
+      "path": "/Dynamics365/field_service/index.html"
+>>>>>>> Stashed changes
     }
   ]
 }
