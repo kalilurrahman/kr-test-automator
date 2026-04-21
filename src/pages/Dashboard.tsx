@@ -177,9 +177,8 @@ const Dashboard = () => {
     toast.error(`Unknown ID "${id}". Try SF-HC-00005, SAP-FI-001, WD-PAY-042…`);
   };
 
-  // Six-card stats row. "Live test cases" was removed — it duplicated
-  // "Unique test IDs" exactly once the precomputed index started shipping
-  // already-deduplicated counts.
+  // Compact stats row — duplicates-removed + loaded-platforms cards were
+  // dropped per dashboard cleanup; kept the four metrics that matter most.
   const stats = [
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
@@ -189,17 +188,7 @@ const Dashboard = () => {
       icon: Fingerprint,
     },
     {
-      label: "Duplicates removed",
-      value: globalStats ? globalStats.duplicatesRemoved.toLocaleString() : "…",
-      icon: Copy,
-    },
-    {
-      label: "Loaded platforms",
-      value: globalStats ? `${globalStats.loadedPlatforms}/${globalStats.totalPlatforms}` : "…",
-      icon: Database,
-    },
-    {
-      label: "Index updated",
+      label: "Last updated",
       value: globalStats ? new Date(globalStats.lastUpdated).toLocaleTimeString() : "…",
       icon: Clock,
     },
