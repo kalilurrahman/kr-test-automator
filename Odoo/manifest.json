@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "key": "accounting",
+      "path": "/Odoo/accounting/index.html"
+    },
+    {
+      "key": "inventory",
+      "path": "/Odoo/inventory/index.html"
+    },
+    {
+      "key": "sales",
+      "path": "/Odoo/sales/index.html"
+    },
+    {
+      "key": "purchase",
+      "path": "/Odoo/purchase/index.html"
+    },
+    {
+      "key": "manufacturing",
+      "path": "/Odoo/manufacturing/index.html"
+    },
+    {
+      "key": "hr",
+      "path": "/Odoo/hr/index.html"
+    },
+    {
+      "key": "website",
+      "path": "/Odoo/website/index.html"
+    }
+  ]
+}

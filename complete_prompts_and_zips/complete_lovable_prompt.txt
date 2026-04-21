@@ -1,0 +1,18 @@
+Project: Integration Master Test Hub
+
+Goal:
+Build a unified, user-friendly enterprise test automation hub that integrates all existing and new product suites without overwriting current content.
+
+Requirements:
+- Reformat the website for usability and clear navigation.
+- Make the app a PWA with mobile install support.
+- Improve navigation so users can reach scripts by product, module, or test case ID.
+- Rename "SAP Tests" to "SAP" in navigation and related menus where appropriate.
+- Add a master dashboard with links to all scripts, modules, apps, and E2E flows.
+- Add an integration-by-ID capability for generating and finding test cases.
+- Add a feedback form that sends suggestions to rahman.kalilur@outlook.com.
+- Add a prominent About page covering stats, modules, apps, and use cases.
+- Keep SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle Apps, API, iOS, Android, AWS, GCP, Azure, WebApps, TopProducts, and all new product suites additive only.
+- Support industry-specific E2E scenarios across multiple products such as ERP + HCM, CRM + ERP, ITSM + Observability, PLM + Manufacturing, Procurement + AP, Data Platform + BI, IAM + Security, and Automation + Enterprise Apps.
+- Keep GitHub as the source of truth and preserve existing routes, assets, and manifests.
+- Do not overwrite existing files; extend shared navigation, dashboards, and script indexes.

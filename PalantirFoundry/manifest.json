@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "data_integration",
+      "path": "/PalantirFoundry/data_integration/index.html"
+    },
+    {
+      "key": "ontology",
+      "path": "/PalantirFoundry/ontology/index.html"
+    },
+    {
+      "key": "pipelines",
+      "path": "/PalantirFoundry/pipelines/index.html"
+    },
+    {
+      "key": "analytics",
+      "path": "/PalantirFoundry/analytics/index.html"
+    },
+    {
+      "key": "workflow",
+      "path": "/PalantirFoundry/workflow/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/PalantirFoundry/security/index.html"
+    }
+  ]
+}

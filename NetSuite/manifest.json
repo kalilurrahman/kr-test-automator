@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "key": "financials",
+      "path": "/NetSuite/financials/index.html"
+    },
+    {
+      "key": "crm",
+      "path": "/NetSuite/crm/index.html"
+    },
+    {
+      "key": "inventory",
+      "path": "/NetSuite/inventory/index.html"
+    },
+    {
+      "key": "order_management",
+      "path": "/NetSuite/order_management/index.html"
+    },
+    {
+      "key": "procurement",
+      "path": "/NetSuite/procurement/index.html"
+    },
+    {
+      "key": "manufacturing",
+      "path": "/NetSuite/manufacturing/index.html"
+    },
+    {
+      "key": "projects",
+      "path": "/NetSuite/projects/index.html"
+    },
+    {
+      "key": "hcm",
+      "path": "/NetSuite/hcm/index.html"
+    }
+  ]
+}

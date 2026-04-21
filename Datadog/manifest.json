@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "infra",
+      "path": "/Datadog/infra/index.html"
+    },
+    {
+      "key": "apm",
+      "path": "/Datadog/apm/index.html"
+    },
+    {
+      "key": "logs",
+      "path": "/Datadog/logs/index.html"
+    },
+    {
+      "key": "rum",
+      "path": "/Datadog/rum/index.html"
+    },
+    {
+      "key": "synthetics",
+      "path": "/Datadog/synthetics/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/Datadog/security/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "envelopes",
+      "path": "/DocuSign/envelopes/index.html"
+    },
+    {
+      "key": "templates",
+      "path": "/DocuSign/templates/index.html"
+    },
+    {
+      "key": "routing",
+      "path": "/DocuSign/routing/index.html"
+    },
+    {
+      "key": "signing",
+      "path": "/DocuSign/signing/index.html"
+    },
+    {
+      "key": "admin",
+      "path": "/DocuSign/admin/index.html"
+    },
+    {
+      "key": "clm",
+      "path": "/DocuSign/clm/index.html"
+    }
+  ]
+}

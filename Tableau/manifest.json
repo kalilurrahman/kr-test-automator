@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "dashboards",
+      "path": "/Tableau/dashboards/index.html"
+    },
+    {
+      "key": "data_sources",
+      "path": "/Tableau/data_sources/index.html"
+    },
+    {
+      "key": "extracts",
+      "path": "/Tableau/extracts/index.html"
+    },
+    {
+      "key": "permissions",
+      "path": "/Tableau/permissions/index.html"
+    },
+    {
+      "key": "server",
+      "path": "/Tableau/server/index.html"
+    },
+    {
+      "key": "prep",
+      "path": "/Tableau/prep/index.html"
+    }
+  ]
+}

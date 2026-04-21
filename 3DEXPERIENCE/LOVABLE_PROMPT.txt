@@ -1,0 +1,1 @@
+Connect GitHub repo, use /3DEXPERIENCE/index.html as entry, keep source of truth.

@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "key": "atomsphere",
+      "path": "/Boomi/atomsphere/index.html"
+    },
+    {
+      "key": "integration_process",
+      "path": "/Boomi/integration_process/index.html"
+    },
+    {
+      "key": "api_management",
+      "path": "/Boomi/api_management/index.html"
+    },
+    {
+      "key": "master_data",
+      "path": "/Boomi/master_data/index.html"
+    },
+    {
+      "key": "monitoring",
+      "path": "/Boomi/monitoring/index.html"
+    }
+  ]
+}

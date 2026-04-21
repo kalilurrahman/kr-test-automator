@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "procurement",
+      "path": "/Coupa/procurement/index.html"
+    },
+    {
+      "key": "expenses",
+      "path": "/Coupa/expenses/index.html"
+    },
+    {
+      "key": "invoicing",
+      "path": "/Coupa/invoicing/index.html"
+    },
+    {
+      "key": "supplier_mgmt",
+      "path": "/Coupa/supplier_mgmt/index.html"
+    },
+    {
+      "key": "sourcing",
+      "path": "/Coupa/sourcing/index.html"
+    },
+    {
+      "key": "analytics",
+      "path": "/Coupa/analytics/index.html"
+    }
+  ]
+}

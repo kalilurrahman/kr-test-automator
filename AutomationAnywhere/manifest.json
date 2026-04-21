@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "bots",
+      "path": "/AutomationAnywhere/bots/index.html"
+    },
+    {
+      "key": "control_room",
+      "path": "/AutomationAnywhere/control_room/index.html"
+    },
+    {
+      "key": "runner",
+      "path": "/AutomationAnywhere/runner/index.html"
+    },
+    {
+      "key": "queues",
+      "path": "/AutomationAnywhere/queues/index.html"
+    },
+    {
+      "key": "documents",
+      "path": "/AutomationAnywhere/documents/index.html"
+    },
+    {
+      "key": "iq_bot",
+      "path": "/AutomationAnywhere/iq_bot/index.html"
+    }
+  ]
+}

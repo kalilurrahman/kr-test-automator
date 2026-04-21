@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "endpoint",
+      "path": "/CrowdStrike/endpoint/index.html"
+    },
+    {
+      "key": "prevention",
+      "path": "/CrowdStrike/prevention/index.html"
+    },
+    {
+      "key": "detection",
+      "path": "/CrowdStrike/detection/index.html"
+    },
+    {
+      "key": "hunt",
+      "path": "/CrowdStrike/hunt/index.html"
+    },
+    {
+      "key": "falcon_identity",
+      "path": "/CrowdStrike/falcon_identity/index.html"
+    },
+    {
+      "key": "sensor",
+      "path": "/CrowdStrike/sensor/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "planning",
+      "path": "/Anaplan/planning/index.html"
+    },
+    {
+      "key": "forecasting",
+      "path": "/Anaplan/forecasting/index.html"
+    },
+    {
+      "key": "models",
+      "path": "/Anaplan/models/index.html"
+    },
+    {
+      "key": "sheets",
+      "path": "/Anaplan/sheets/index.html"
+    },
+    {
+      "key": "access_control",
+      "path": "/Anaplan/access_control/index.html"
+    },
+    {
+      "key": "workflow",
+      "path": "/Anaplan/workflow/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "apps",
+      "path": "/QlikSense/apps/index.html"
+    },
+    {
+      "key": "data_load",
+      "path": "/QlikSense/data_load/index.html"
+    },
+    {
+      "key": "visualizations",
+      "path": "/QlikSense/visualizations/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/QlikSense/security/index.html"
+    },
+    {
+      "key": "governance",
+      "path": "/QlikSense/governance/index.html"
+    },
+    {
+      "key": "automation",
+      "path": "/QlikSense/automation/index.html"
+    }
+  ]
+}

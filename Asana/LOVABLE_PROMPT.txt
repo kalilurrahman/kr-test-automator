@@ -1,0 +1,1 @@
+Connect GitHub repo, use /Asana/index.html as entry, keep source of truth.

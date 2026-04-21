@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "core_hr",
+      "path": "/ADPWorkforceNow/core_hr/index.html"
+    },
+    {
+      "key": "payroll",
+      "path": "/ADPWorkforceNow/payroll/index.html"
+    },
+    {
+      "key": "time",
+      "path": "/ADPWorkforceNow/time/index.html"
+    },
+    {
+      "key": "benefits",
+      "path": "/ADPWorkforceNow/benefits/index.html"
+    },
+    {
+      "key": "talent",
+      "path": "/ADPWorkforceNow/talent/index.html"
+    },
+    {
+      "key": "recruiting",
+      "path": "/ADPWorkforceNow/recruiting/index.html"
+    }
+  ]
+}

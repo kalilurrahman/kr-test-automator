@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "signin",
+      "path": "/Okta/signin/index.html"
+    },
+    {
+      "key": "lifecycle",
+      "path": "/Okta/lifecycle/index.html"
+    },
+    {
+      "key": "directory",
+      "path": "/Okta/directory/index.html"
+    },
+    {
+      "key": "mfa",
+      "path": "/Okta/mfa/index.html"
+    },
+    {
+      "key": "access",
+      "path": "/Okta/access/index.html"
+    },
+    {
+      "key": "api",
+      "path": "/Okta/api/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "core_hr",
+      "path": "/UKGPro/core_hr/index.html"
+    },
+    {
+      "key": "payroll",
+      "path": "/UKGPro/payroll/index.html"
+    },
+    {
+      "key": "timekeeping",
+      "path": "/UKGPro/timekeeping/index.html"
+    },
+    {
+      "key": "benefits",
+      "path": "/UKGPro/benefits/index.html"
+    },
+    {
+      "key": "talent",
+      "path": "/UKGPro/talent/index.html"
+    },
+    {
+      "key": "workforce_management",
+      "path": "/UKGPro/workforce_management/index.html"
+    }
+  ]
+}

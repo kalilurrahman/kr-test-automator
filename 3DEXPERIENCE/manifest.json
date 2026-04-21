@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "cad",
+      "path": "/3DEXPERIENCE/cad/index.html"
+    },
+    {
+      "key": "plm",
+      "path": "/3DEXPERIENCE/plm/index.html"
+    },
+    {
+      "key": "simulation",
+      "path": "/3DEXPERIENCE/simulation/index.html"
+    },
+    {
+      "key": "manufacturing",
+      "path": "/3DEXPERIENCE/manufacturing/index.html"
+    },
+    {
+      "key": "quality",
+      "path": "/3DEXPERIENCE/quality/index.html"
+    },
+    {
+      "key": "supply_chain",
+      "path": "/3DEXPERIENCE/supply_chain/index.html"
+    }
+  ]
+}

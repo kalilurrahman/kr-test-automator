@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "vault",
+      "path": "/CyberArk/vault/index.html"
+    },
+    {
+      "key": "privileged_access",
+      "path": "/CyberArk/privileged_access/index.html"
+    },
+    {
+      "key": "session_management",
+      "path": "/CyberArk/session_management/index.html"
+    },
+    {
+      "key": "rotation",
+      "path": "/CyberArk/rotation/index.html"
+    },
+    {
+      "key": "ediscovery",
+      "path": "/CyberArk/ediscovery/index.html"
+    },
+    {
+      "key": "conjur",
+      "path": "/CyberArk/conjur/index.html"
+    }
+  ]
+}

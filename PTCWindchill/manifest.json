@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "cad",
+      "path": "/PTCWindchill/cad/index.html"
+    },
+    {
+      "key": "plm",
+      "path": "/PTCWindchill/plm/index.html"
+    },
+    {
+      "key": "bom",
+      "path": "/PTCWindchill/bom/index.html"
+    },
+    {
+      "key": "change_mgmt",
+      "path": "/PTCWindchill/change_mgmt/index.html"
+    },
+    {
+      "key": "documents",
+      "path": "/PTCWindchill/documents/index.html"
+    },
+    {
+      "key": "workflow",
+      "path": "/PTCWindchill/workflow/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "search",
+      "path": "/Splunk/search/index.html"
+    },
+    {
+      "key": "dashboards",
+      "path": "/Splunk/dashboards/index.html"
+    },
+    {
+      "key": "alerts",
+      "path": "/Splunk/alerts/index.html"
+    },
+    {
+      "key": "siem",
+      "path": "/Splunk/siem/index.html"
+    },
+    {
+      "key": "observability",
+      "path": "/Splunk/observability/index.html"
+    },
+    {
+      "key": "reports",
+      "path": "/Splunk/reports/index.html"
+    }
+  ]
+}

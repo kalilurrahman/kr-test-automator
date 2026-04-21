@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "projects",
+      "path": "/Procore/projects/index.html"
+    },
+    {
+      "key": "rfis",
+      "path": "/Procore/rfis/index.html"
+    },
+    {
+      "key": "submittals",
+      "path": "/Procore/submittals/index.html"
+    },
+    {
+      "key": "financials",
+      "path": "/Procore/financials/index.html"
+    },
+    {
+      "key": "quality",
+      "path": "/Procore/quality/index.html"
+    },
+    {
+      "key": "safety",
+      "path": "/Procore/safety/index.html"
+    }
+  ]
+}

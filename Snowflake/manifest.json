@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "data_warehouse",
+      "path": "/Snowflake/data_warehouse/index.html"
+    },
+    {
+      "key": "storage",
+      "path": "/Snowflake/storage/index.html"
+    },
+    {
+      "key": "access_control",
+      "path": "/Snowflake/access_control/index.html"
+    },
+    {
+      "key": "pipelines",
+      "path": "/Snowflake/pipelines/index.html"
+    },
+    {
+      "key": "sharing",
+      "path": "/Snowflake/sharing/index.html"
+    },
+    {
+      "key": "governance",
+      "path": "/Snowflake/governance/index.html"
+    }
+  ]
+}

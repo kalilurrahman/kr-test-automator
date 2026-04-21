@@ -1,0 +1,1 @@
+Maintain /Zoom, keep additive files only, update indexes and manifests, generate screenshots.

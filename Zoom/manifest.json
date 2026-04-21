@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "meetings",
+      "path": "/Zoom/meetings/index.html"
+    },
+    {
+      "key": "webinars",
+      "path": "/Zoom/webinars/index.html"
+    },
+    {
+      "key": "phone",
+      "path": "/Zoom/phone/index.html"
+    },
+    {
+      "key": "rooms",
+      "path": "/Zoom/rooms/index.html"
+    },
+    {
+      "key": "contact_center",
+      "path": "/Zoom/contact_center/index.html"
+    },
+    {
+      "key": "recordings",
+      "path": "/Zoom/recordings/index.html"
+    }
+  ]
+}

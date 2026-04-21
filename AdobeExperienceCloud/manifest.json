@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "aem",
+      "path": "/AdobeExperienceCloud/aem/index.html"
+    },
+    {
+      "key": "analytics",
+      "path": "/AdobeExperienceCloud/analytics/index.html"
+    },
+    {
+      "key": "target",
+      "path": "/AdobeExperienceCloud/target/index.html"
+    },
+    {
+      "key": "campaign",
+      "path": "/AdobeExperienceCloud/campaign/index.html"
+    },
+    {
+      "key": "identity_service",
+      "path": "/AdobeExperienceCloud/identity_service/index.html"
+    },
+    {
+      "key": "journey_optimizer",
+      "path": "/AdobeExperienceCloud/journey_optimizer/index.html"
+    }
+  ]
+}

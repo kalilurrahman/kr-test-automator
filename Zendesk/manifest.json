@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "tickets",
+      "path": "/Zendesk/tickets/index.html"
+    },
+    {
+      "key": "help_center",
+      "path": "/Zendesk/help_center/index.html"
+    },
+    {
+      "key": "chat",
+      "path": "/Zendesk/chat/index.html"
+    },
+    {
+      "key": "talk",
+      "path": "/Zendesk/talk/index.html"
+    },
+    {
+      "key": "guide",
+      "path": "/Zendesk/guide/index.html"
+    },
+    {
+      "key": "explore",
+      "path": "/Zendesk/explore/index.html"
+    }
+  ]
+}
