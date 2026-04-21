@@ -172,4 +172,159 @@ export const PLATFORM_USE_CASES: Record<string, { useCases: string; modulesCopy:
       oracle: "Cross-product wrapper for Oracle Apps catalogue.",
     },
   },
+  asana: {
+    useCases:
+      "Work-management regression for distributed delivery teams: project intake, task assignment, dependency chains, timeline rebaselines, portfolio rollups, intake forms and rules-based automation. Suitable for organisations standardising on Asana for OKRs and cross-functional programmes.",
+    modulesCopy: {
+      projects: "Project templates, sections, custom fields, members.",
+      tasks: "Assign, due dates, dependencies, subtasks, comments.",
+      timeline: "Gantt rebaseline, critical path, drag-to-reschedule.",
+      portfolios: "Roll-up status, RAG indicators, custom fields.",
+      forms: "Intake forms, branching logic, attachments.",
+      automation: "Rules engine triggers, conditions, actions.",
+    },
+  },
+  cyberark: {
+    useCases:
+      "Privileged access management coverage: vault onboarding, session isolation and recording, just-in-time access, secret rotation policies, Conjur secrets-as-code for CI/CD, and eDiscovery export for audit. Designed for SOX, PCI and ISO 27001 control validation.",
+    modulesCopy: {
+      privileged_access: "PAM workflows, dual-control, JIT access, MFA.",
+      vault: "Account onboarding, safe permissions, CPM cycles.",
+      session_management: "PSM isolation, session recording, live monitoring.",
+      rotation: "Password/secret rotation, plugin reliability, retries.",
+      conjur: "Secrets-as-code, K8s/CI integrations, policy load.",
+      ediscovery: "Audit export, search, legal-hold packaging.",
+    },
+  },
+  docusign: {
+    useCases:
+      "eSignature regression across envelopes, templates, routing, signing experience and admin. CLM module covers contract lifecycle from request → negotiate → execute → renew. Includes 21 CFR Part 11 compatible signing flows and bulk-send scenarios.",
+    modulesCopy: {
+      envelopes: "Send, void, correct, resend, expiry & reminders.",
+      templates: "Template fields, roles, conditional routing.",
+      routing: "Sequential/parallel, signing groups, witness signers.",
+      signing: "Web/mobile signing, SMS auth, KBA, drawn signature.",
+      admin: "Users, groups, branding, retention, connect webhooks.",
+      clm: "Request → negotiate → execute → renew, redlining, clauses.",
+    },
+  },
+  googleworkspace: {
+    useCases:
+      "Workspace-wide validation: Gmail filters and delegation, Drive sharing and DLP, Docs/Sheets co-editing, Meet enterprise telephony, and Admin console org-unit policies. Covers data loss prevention, context-aware access and Vault retention.",
+    modulesCopy: {
+      gmail: "Filters, delegation, confidential mode, DLP rules.",
+      drive: "Shared drives, sharing scopes, DLP, Vault retention.",
+      docs: "Co-edit, comments, version history, smart chips.",
+      sheets: "Apps Script, protected ranges, named functions.",
+      meet: "Recording, dial-in, breakout rooms, captions.",
+      admin: "OUs, context-aware access, mobile mgmt, audit log.",
+    },
+  },
+  medallia: {
+    useCases:
+      "Experience management regression: journey orchestration across CX touchpoints, real-time analytics, alert routing for detractor feedback and case management workflows. Suitable for NPS, CES and CSAT programme validation across retail, banking and healthcare verticals.",
+    modulesCopy: {
+      journeys: "Touchpoint orchestration, sampling, journey analytics.",
+      analytics: "Sentiment, text analytics, KPI dashboards.",
+      alerts: "Detractor alerts, routing rules, escalations.",
+      cases: "Case creation, assignment, closed-loop follow-up.",
+    },
+  },
+  odoo: {
+    useCases:
+      "Open-source ERP regression for SMB and mid-market: P2P, O2C, MRP, inventory valuation, payroll calc, plus website/eCommerce flows. Tailored for Odoo Enterprise upgrades and migration from Community editions.",
+    modulesCopy: {
+      accounting: "AP, AR, journals, tax engine, bank reconciliation.",
+      inventory: "Stock moves, lots/serials, putaway, reordering.",
+      sales: "Quote → SO → delivery → invoice with variants.",
+      purchase: "RFQ → PO → receipt → vendor bill matching.",
+      manufacturing: "MRP, BOMs, work orders, quality checks.",
+      hr: "Employees, contracts, leaves, payroll calculation.",
+      website: "CMS pages, eCommerce checkout, payment providers.",
+    },
+  },
+  procore: {
+    useCases:
+      "Construction management regression for general contractors: project setup, RFI/submittal turnaround SLAs, financial commitments and budgets, field-quality observations and safety incident reporting. Validates daily logs, drawings, and integrations with accounting systems.",
+    modulesCopy: {
+      projects: "Project setup, directory, drawings, daily logs.",
+      rfis: "RFI lifecycle, ball-in-court, response SLAs.",
+      submittals: "Submittal log, approval routing, distribution.",
+      financials: "Budgets, commitments, change orders, billing.",
+      quality: "Observations, punch lists, inspections, photos.",
+      safety: "Incidents, near-misses, JHAs, toolbox talks.",
+    },
+  },
+  ptcwindchill: {
+    useCases:
+      "PLM regression for manufacturing engineering: CAD data management with check-in/out, multi-level BOM mgmt, change requests/notices/orders (3CN), document control and configurable workflows. Covers Creo and SolidWorks integrations.",
+    modulesCopy: {
+      cad: "CAD check-in/out, family tables, derived parts.",
+      plm: "Lifecycle states, baselines, effectivity, options.",
+      bom: "Multi-level BOM, where-used, redlining, transforms.",
+      change_mgmt: "Change request → notice → order, impact analysis.",
+      documents: "Document templates, approval routing, references.",
+      workflow: "Configurable workflows, role-based routing, escalation.",
+    },
+  },
+  qad: {
+    useCases:
+      "Adaptive ERP regression for global manufacturers: discrete + process production, multi-site supply chain, financial consolidation, quality non-conformance, logistics warehouse moves and demand planning. Validates QAD release cycles and channel partner integrations.",
+    modulesCopy: {
+      manufacturing: "Work orders, repetitive, kanban, backflushing.",
+      supply_chain: "Multi-site planning, transfers, distribution.",
+      finance: "GL, AP, AR, fixed assets, multi-entity consolidation.",
+      quality: "Non-conformance, CAPA, supplier quality, inspection.",
+      logistics: "Warehouse moves, picking, shipping, transport.",
+      planning: "Demand planning, MRP, MPS, capacity planning.",
+    },
+  },
+  smartsheet: {
+    useCases:
+      "Collaborative work-management regression: dynamic sheets, intake forms, cross-sheet reports, dashboards, automation rules and resource-management capacity planning. Covers cell-history audit, conditional formatting and Bridge workflow integrations.",
+    modulesCopy: {
+      sheets: "Cell types, formulas, cross-sheet refs, conditional fmt.",
+      forms: "Form intake, conditional logic, captcha, attachments.",
+      reports: "Cross-sheet rollups, grouping, summary metrics.",
+      dashboards: "Widgets, charts, web content, KPIs.",
+      automation: "Workflow rules, approvals, notifications, escalation.",
+      resource_management: "Capacity planning, allocations, time tracking.",
+    },
+  },
+  zoho: {
+    useCases:
+      "Zoho One suite regression for SMB: CRM lead-to-cash, Books invoicing and bank reconciliation, Projects task management, Desk multichannel support, low-code Creator apps, and People HR self-service.",
+    modulesCopy: {
+      crm: "Leads, deals, blueprints, automation, forecasting.",
+      books: "Invoices, banking, GST/VAT, expense claims.",
+      projects: "Tasks, milestones, time logs, billing.",
+      desk: "Tickets, SLAs, multi-channel, knowledge base.",
+      creator: "Low-code forms, workflows, deluge scripting.",
+      people: "Employee self-service, leave, attendance, performance.",
+    },
+  },
+  zoom: {
+    useCases:
+      "Zoom platform regression: Meetings (in-meeting controls, breakout rooms, polls), Webinars (registration, Q&A), Phone (call queues, IVR), Rooms (kiosk mode, BYOD), Contact Center (omnichannel routing) and cloud recordings governance.",
+    modulesCopy: {
+      meetings: "Schedule, breakout rooms, polls, captioning.",
+      webinars: "Registration, Q&A, practice session, simulive.",
+      phone: "Call queues, IVR, voicemail, SMS, e911.",
+      rooms: "Kiosk mode, scheduler, BYOD, calendar integration.",
+      contact_center: "Omnichannel routing, IVR, dispositions, QM.",
+      recordings: "Cloud storage, retention, transcripts, sharing.",
+    },
+  },
+  zscaler: {
+    useCases:
+      "Zero-Trust Exchange regression: ZIA secure web/internet access with SSL inspection, ZPA private app access without VPN, inline DLP, sandbox detonation of unknown files, granular policy and log streaming to SIEM. Aligned to SSE Gartner-MQ controls.",
+    modulesCopy: {
+      internet_access: "ZIA SSL inspection, URL filtering, threat protection.",
+      private_access: "ZPA app segments, browser access, posture profiles.",
+      dlp: "Inline DLP, dictionaries, exact data match, OCR.",
+      sandbox: "File detonation, MD5 reputation, quarantine.",
+      policy: "Policy ordering, time-based, group-based, geofencing.",
+      logs: "NSS feeds, SIEM streaming, log search, retention.",
+    },
+  },
 };

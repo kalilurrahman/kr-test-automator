@@ -233,6 +233,19 @@ async function build(): Promise<GlobalIndex> {
     AZ: "azure",
     WEB: "webapps",
     TOP: "topproducts",
+    ASA: "asana",
+    CYB: "cyberark",
+    DOC: "docusign",
+    GOO: "googleworkspace",
+    MED: "medallia",
+    ODO: "odoo",
+    PRO: "procore",
+    PTC: "ptcwindchill",
+    QAD: "qad",
+    SMA: "smartsheet",
+    ZOH: "zoho",
+    ZOO: "zoom",
+    ZSC: "zscaler",
   };
   for (const [pref, src] of Object.entries(STATIC_PREFIXES)) {
     if (!prefixToSource.has(pref)) prefixToSource.set(pref, src);
