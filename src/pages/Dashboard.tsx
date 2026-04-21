@@ -133,9 +133,20 @@ const HeatmapTooltip = ({ active, payload }: HeatmapTooltipProps) => {
   const data = payload[0]?.payload;
   if (!data?.name) return null;
   return (
-    <div className="rounded-md border border-border bg-popover px-3 py-2 shadow-lg">
-      <div className="text-sm font-semibold text-popover-foreground">{data.name}</div>
-      <div className="text-xs font-mono text-muted-foreground mt-0.5">
+    <div
+      className="rounded-md border border-border px-3 py-2 shadow-lg"
+      style={{
+        background: "hsl(var(--popover))",
+        color: "hsl(var(--popover-foreground))",
+      }}
+    >
+      <div className="text-sm font-semibold" style={{ color: "hsl(var(--popover-foreground))" }}>
+        {data.name}
+      </div>
+      <div
+        className="text-xs font-mono mt-0.5"
+        style={{ color: "hsl(var(--muted-foreground))" }}
+      >
         {(data.value ?? 0).toLocaleString()} cases
       </div>
     </div>
@@ -177,9 +188,8 @@ const Dashboard = () => {
     toast.error(`Unknown ID "${id}". Try SF-HC-00005, SAP-FI-001, WD-PAY-042…`);
   };
 
-  // Six-card stats row. "Live test cases" was removed — it duplicated
-  // "Unique test IDs" exactly once the precomputed index started shipping
-  // already-deduplicated counts.
+  // Compact stats row — duplicates-removed + loaded-platforms cards were
+  // dropped per dashboard cleanup; kept the four metrics that matter most.
   const stats = [
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
@@ -189,17 +199,7 @@ const Dashboard = () => {
       icon: Fingerprint,
     },
     {
-      label: "Duplicates removed",
-      value: globalStats ? globalStats.duplicatesRemoved.toLocaleString() : "…",
-      icon: Copy,
-    },
-    {
-      label: "Loaded platforms",
-      value: globalStats ? `${globalStats.loadedPlatforms}/${globalStats.totalPlatforms}` : "…",
-      icon: Database,
-    },
-    {
-      label: "Index updated",
+      label: "Last updated",
       value: globalStats ? new Date(globalStats.lastUpdated).toLocaleTimeString() : "…",
       icon: Clock,
     },
