@@ -228,6 +228,11 @@ export function PlatformOverview({ platform, onOpenModule }: Props) {
                     <p className="text-[11px] text-muted-foreground mt-0.5">
                       {ms ? `${ms.total.toLocaleString()} cases · ${ms.automationPct}% auto` : "—"}
                     </p>
+                    {PLATFORM_USE_CASES[platform.id]?.modulesCopy[mod.id] && (
+                      <p className="text-[11px] text-foreground/70 mt-1 leading-snug">
+                        {PLATFORM_USE_CASES[platform.id].modulesCopy[mod.id]}
+                      </p>
+                    )}
                   </div>
                   <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
                 </button>
