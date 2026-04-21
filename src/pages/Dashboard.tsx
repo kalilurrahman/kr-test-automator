@@ -1,7 +1,7 @@
 import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
@@ -13,8 +13,9 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import {
-  PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
-  BarChart, Bar, XAxis, YAxis, CartesianGrid,
+  ResponsiveContainer, Tooltip,
+  BarChart, Bar, XAxis, YAxis,
+  Treemap,
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
@@ -66,23 +67,26 @@ const Dashboard = () => {
     toast.error(`Unknown ID "${id}". Try SF-HC-00005, SAP-FI-001, WD-PAY-042…`);
   };
 
+  // Six-card stats row. "Live test cases" was removed — it duplicated
+  // "Unique test IDs" exactly once the precomputed index started shipping
+  // already-deduplicated counts.
   const stats = [
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
     {
-      label: "Unique test IDs",
+      label: "Unique test cases",
       value: globalStats ? globalStats.uniqueIds.toLocaleString() : "…",
       icon: Fingerprint,
-    },
-    {
-      label: "Live test cases",
-      value: globalStats ? globalStats.totalCases.toLocaleString() : "…",
-      icon: Database,
     },
     {
       label: "Duplicates removed",
       value: globalStats ? globalStats.duplicatesRemoved.toLocaleString() : "…",
       icon: Copy,
+    },
+    {
+      label: "Loaded platforms",
+      value: globalStats ? `${globalStats.loadedPlatforms}/${globalStats.totalPlatforms}` : "…",
+      icon: Database,
     },
     {
       label: "Index updated",
