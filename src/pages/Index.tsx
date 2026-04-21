@@ -31,6 +31,8 @@ const Index = () => {
       const next = new URLSearchParams(params);
       next.delete("platform");
       next.delete("prefill");
+      next.delete("industry");
+      next.delete("script");
       setParams(next, { replace: true });
     };
 
@@ -108,17 +110,24 @@ const Index = () => {
     }
 
     // All other platforms (Veeva, Workday, ServiceNow, D365, Oracle, AWS, GCP,
-    // Azure, API, iOS, Android, WebApps, TopProducts) ship the row through
-    // sessionStorage when the user clicks "Generate" inside PlatformRepository.
+    // Azure, API, iOS, Android, WebApps, TopProducts) — and the new Industries
+    // section — ship the row through sessionStorage when the user clicks
+    // "Generate" inside PlatformRepository or IndustryDetail.
     try {
       const key = `prefill:${platform}:${prefillId}`;
       const raw = sessionStorage.getItem(key);
       if (raw) {
-        const { row, platformLabel, moduleLabel } = JSON.parse(raw) as {
+        const parsed = JSON.parse(raw) as {
           row: Record<string, string>;
           platformLabel: string;
           moduleLabel: string;
+          /** Optional pre-built business-case prose. Industries set this so we
+           *  don't have to re-stringify modules / data sources. */
+          prose?: string;
+          industry?: string;
+          scriptType?: string;
         };
+        const { row, platformLabel, moduleLabel, prose: prebuilt } = parsed;
         const get = (...keys: string[]) => {
           for (const k of keys) if (row[k]) return row[k];
           return "";
@@ -131,15 +140,18 @@ const Index = () => {
         const pre = get("Preconditions", "Pre-conditions", "preconditions", "preCond");
         const steps = get("Steps", "steps").replace(/\\n/g, "\n");
         const expected = get("Expected Result", "expected", "Expected");
+        const industry = get("Industry") || params.get("industry") || "";
         const prose =
+          prebuilt ??
           `[${id}] ${scen}\n\n` +
-          `Platform: ${platformLabel}\n` +
-          `Module: ${moduleLabel}${mod ? ` / ${mod}` : ""}\n` +
-          (type ? `Test type: ${type}\n` : "") +
-          (priority ? `Priority: ${priority}\n` : "") +
-          (pre ? `\nPre-conditions: ${pre}\n` : "") +
-          (steps ? `\nSteps:\n${steps}\n` : "") +
-          (expected ? `\nExpected: ${expected}` : "");
+            `Platform: ${platformLabel}\n` +
+            `Module: ${moduleLabel}${mod ? ` / ${mod}` : ""}\n` +
+            (industry ? `Industry: ${industry}\n` : "") +
+            (type ? `Test type: ${type}\n` : "") +
+            (priority ? `Priority: ${priority}\n` : "") +
+            (pre ? `\nPre-conditions: ${pre}\n` : "") +
+            (steps ? `\nSteps:\n${steps}\n` : "") +
+            (expected ? `\nExpected: ${expected}` : "");
         store.setBusinessCase(prose);
         sessionStorage.removeItem(key);
         toast.success(`Loaded ${platformLabel} case ${id}`);

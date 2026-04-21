@@ -1,7 +1,7 @@
 import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock, Factory, Cpu } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
@@ -20,6 +20,8 @@ import {
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
+import { getIndustryIndex, type IndustryIndex } from "@/data/industryScenarios";
+import { INDUSTRY_BY_NAME, AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
 
 // Defer the heavy global browser — its first render builds the entire index.
 const GlobalCaseBrowser = lazy(() =>
@@ -158,6 +160,7 @@ const Dashboard = () => {
   const [idQuery, setIdQuery] = useState("");
   const [globalStats, setGlobalStats] = useState<GlobalStats | null>(null);
   const [statsLoading, setStatsLoading] = useState(true);
+  const [industryIndex, setIndustryIndex] = useState<IndustryIndex | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -165,6 +168,10 @@ const Dashboard = () => {
     getGlobalStats()
       .then((s) => !cancelled && setGlobalStats(s))
       .finally(() => !cancelled && setStatsLoading(false));
+    // Industries data is non-blocking — load in parallel and render when ready.
+    getIndustryIndex()
+      .then((idx) => !cancelled && setIndustryIndex(idx))
+      .catch(() => undefined);
     return () => { cancelled = true; };
   }, []);
 
@@ -387,6 +394,80 @@ const Dashboard = () => {
           </Card>
         </section>
 
+        {/* Industries summary — top industries by scenario count + script-type breakdown */}
+        {industryIndex && (
+          <section className="mb-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <Card className="p-5 bg-card border-border lg:col-span-2">
+              <div className="flex items-center justify-between mb-3 gap-2 flex-wrap">
+                <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider inline-flex items-center gap-2">
+                  <Factory className="w-4 h-4 text-primary" /> Top industries by scenario count
+                </h2>
+                <Link
+                  to="/industries"
+                  className="text-xs text-primary hover:underline inline-flex items-center gap-1"
+                >
+                  Browse all <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+                {industryIndex.summaries.slice(0, 12).map((s) => {
+                  const meta = INDUSTRY_BY_NAME.get(s.industry);
+                  return (
+                    <Link
+                      key={s.industry}
+                      to={`/industries/${s.slug}`}
+                      className="rounded-md border border-border bg-background/40 hover:border-primary/40 px-3 py-2 transition-colors min-w-0"
+                    >
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-base leading-none" aria-hidden>{meta?.glyph ?? "🏷"}</span>
+                        <span className="text-xs font-semibold text-foreground truncate" title={s.industry}>
+                          {s.industry}
+                        </span>
+                      </div>
+                      <div className="text-sm font-mono text-foreground">{s.total.toLocaleString()}</div>
+                      <div className="text-[10px] text-muted-foreground uppercase tracking-wider">scenarios</div>
+                    </Link>
+                  );
+                })}
+              </div>
+              <div className="grid grid-cols-3 gap-3 mt-4">
+                <SuccessMetric
+                  label="High-priority"
+                  value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`}
+                />
+                <SuccessMetric
+                  label="Auto-ready"
+                  value={`${Math.round((industryIndex.totals.autoReady / industryIndex.totals.scenarios) * 100)}%`}
+                />
+                <SuccessMetric
+                  label="Integration covered"
+                  value={`${Math.round((industryIndex.totals.integrationCoverage / industryIndex.totals.scenarios) * 100)}%`}
+                />
+              </div>
+            </Card>
+
+            <Card className="p-5 bg-card border-border">
+              <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 inline-flex items-center gap-2">
+                <Cpu className="w-4 h-4 text-primary" /> Script options
+              </h2>
+              <div className="space-y-1.5 max-h-[280px] overflow-y-auto pr-1">
+                {AUTOMATION_SCRIPT_OPTIONS.map((opt) => (
+                  <div
+                    key={opt.value}
+                    className="flex items-center justify-between text-xs px-2 py-1.5 rounded bg-background/40 border border-border/60"
+                  >
+                    <span className="text-foreground truncate" title={opt.label}>{opt.label}</span>
+                    <span className="text-[10px] font-mono text-muted-foreground uppercase">{opt.language}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="text-[10px] text-muted-foreground mt-3 leading-relaxed">
+                Pick a script flavour inside any industry tile to seed the generator with the right framework hint.
+              </div>
+            </Card>
+          </section>
+        )}
+
         {/* Quick links — moved up so search can sit at the very bottom */}
 
         <section className="mb-10">
@@ -479,5 +560,12 @@ const Dashboard = () => {
     </>
   );
 };
+
+const SuccessMetric = ({ label, value }: { label: string; value: string }) => (
+  <div className="rounded-md border border-border bg-background/40 px-3 py-2">
+    <div className="text-base font-bold text-foreground leading-none">{value}</div>
+    <div className="text-[10px] text-muted-foreground uppercase tracking-wider mt-1">{label}</div>
+  </div>
+);
 
 export default Dashboard;
