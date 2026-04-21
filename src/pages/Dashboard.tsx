@@ -561,4 +561,11 @@ const Dashboard = () => {
   );
 };
 
+const SuccessMetric = ({ label, value }: { label: string; value: string }) => (
+  <div className="rounded-md border border-border bg-background/40 px-3 py-2">
+    <div className="text-base font-bold text-foreground leading-none">{value}</div>
+    <div className="text-[10px] text-muted-foreground uppercase tracking-wider mt-1">{label}</div>
+  </div>
+);
+
 export default Dashboard;
