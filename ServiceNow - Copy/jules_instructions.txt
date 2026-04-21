@@ -1,1 +1,0 @@
-Keep ServiceNow root, preserve data, update manifest/index, generate screenshots, PR after validation.

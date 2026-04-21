@@ -1,1 +1,0 @@
-Connect GitHub repo, use /SAP/index.html as entry, keep GitHub source of truth, mirror SAP/Salesforce style.
