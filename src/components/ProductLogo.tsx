@@ -16,7 +16,7 @@ interface ProductLogoProps {
  */
 export function ProductLogo({ productKey, label, size = 40, className = "" }: ProductLogoProps) {
   const [errored, setErrored] = useState(false);
-  const url = getProductLogoUrl(productKey, size);
+  const url = getProductLogoUrl(productKey);
 
   const dimension = { width: size, height: size };
 
