@@ -16,6 +16,7 @@ import { parseCsvAsObjects } from "@/lib/csv";
 import { loadAllSapCases } from "@/data/sapCsvLoader";
 import { SAP_TEST_CASES } from "@/data/sapTestCases";
 import { SALESFORCE_CLOUDS } from "@/data/salesforceClouds";
+import { readCache, writeCache, TTL_MS } from "@/lib/indexCache";
 
 export interface IndexedCase {
   id: string;
