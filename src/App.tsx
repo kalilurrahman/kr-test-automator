@@ -54,24 +54,26 @@ function AppShell() {
     <div className="min-h-screen flex flex-col bg-background">
       <KRHeader />
       <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/feedback" element={<Feedback />} />
-          <Route path="/templates" element={<Templates />} />
-          <Route path="/sap" element={<Suspense fallback={<ModuleFallback label="Loading SAP repository…" />}><SAP /></Suspense>} />
-          <Route path="/salesforce" element={<Suspense fallback={<ModuleFallback label="Loading Salesforce repository…" />}><Salesforce /></Suspense>} />
-          <Route path="/p/:platformId" element={<Suspense fallback={<ModuleFallback label="Loading repository…" />}><PlatformPage /></Suspense>} />
-          <Route path="/t/:id" element={<Suspense fallback={<ModuleFallback label="Resolving test case…" />}><TestCaseDetail /></Suspense>} />
-          <Route path="/history" element={<History />} />
-          <Route path="/collections" element={<Collections />} />
-          <Route path="/shared/:shareId" element={<SharedScript />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/compare" element={<Compare />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<ModuleFallback label="Loading…" />}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/feedback" element={<Feedback />} />
+            <Route path="/templates" element={<Templates />} />
+            <Route path="/sap" element={<SAP />} />
+            <Route path="/salesforce" element={<Salesforce />} />
+            <Route path="/p/:platformId" element={<PlatformPage />} />
+            <Route path="/t/:id" element={<TestCaseDetail />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/collections" element={<Collections />} />
+            <Route path="/shared/:shareId" element={<SharedScript />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/compare" element={<Compare />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </main>
       <KRFooter />
       <KeyboardShortcutsDialog open={shortcutsOpen} onOpenChange={setShortcutsOpen} />
