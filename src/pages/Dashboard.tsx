@@ -268,23 +268,8 @@ const Dashboard = () => {
           </Card>
         </section>
 
-        {/* Global search */}
-        <section className="mb-10">
-          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
-            <Search className="w-4 h-4 text-primary" /> Search every product
-          </h2>
-          <Suspense
-            fallback={
-              <div className="rounded-xl border border-border bg-card p-12 flex items-center justify-center text-sm text-muted-foreground">
-                <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Preparing search…
-              </div>
-            }
-          >
-            <GlobalCaseBrowser />
-          </Suspense>
-        </section>
+        {/* Quick links — moved up so search can sit at the very bottom */}
 
-        {/* Quick links */}
         <section className="mb-10">
           <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">Quick links</h2>
           <div className="flex flex-wrap gap-2">
