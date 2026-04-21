@@ -12,11 +12,11 @@
 // =============================================================================
 
 import { PLATFORMS, type PlatformDef } from "@/data/platformManifests";
-import { parseCsvAsObjects } from "@/lib/csv";
 import { loadAllSapCases } from "@/data/sapCsvLoader";
 import { SAP_TEST_CASES } from "@/data/sapTestCases";
 import { SALESFORCE_CLOUDS } from "@/data/salesforceClouds";
 import { readCache, writeCache, TTL_MS } from "@/lib/indexCache";
+import { getCachedCsv } from "@/lib/csvCache";
 
 export interface IndexedCase {
   id: string;
