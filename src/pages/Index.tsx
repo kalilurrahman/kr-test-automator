@@ -31,6 +31,8 @@ const Index = () => {
       const next = new URLSearchParams(params);
       next.delete("platform");
       next.delete("prefill");
+      next.delete("industry");
+      next.delete("script");
       setParams(next, { replace: true });
     };
 
