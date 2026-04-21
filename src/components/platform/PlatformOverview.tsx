@@ -8,6 +8,8 @@ import {
 } from "recharts";
 import type { PlatformDef, PlatformModule } from "@/data/platformManifests";
 import { getPlatformStats, type PlatformStats } from "@/lib/platformStats";
+import { PLATFORM_USE_CASES } from "@/data/platformUseCases";
+import { Link } from "react-router-dom";
 
 interface Props {
   platform: PlatformDef;
@@ -77,10 +79,16 @@ export function PlatformOverview({ platform, onOpenModule }: Props) {
       <Card className="p-5 bg-card border-border">
         <h2 className="text-lg font-semibold text-foreground mb-1">About this platform</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">{platform.description}</p>
+        {PLATFORM_USE_CASES[platform.id]?.useCases && (
+          <p className="text-sm text-foreground/80 leading-relaxed mt-3">
+            {PLATFORM_USE_CASES[platform.id].useCases}
+          </p>
+        )}
         <div className="mt-3 flex flex-wrap gap-3 text-xs text-muted-foreground">
           <span><strong className="text-foreground">{platform.modules.length}</strong> modules</span>
           <span>ID prefix: <code className="font-mono text-primary">{platform.idPrefix}-</code></span>
           <span>Static folder: <code className="font-mono">{platform.publicBase}</code></span>
+          <Link to="/dashboard" className="text-primary hover:underline ml-auto">← Back to master dashboard</Link>
         </div>
       </Card>
 
