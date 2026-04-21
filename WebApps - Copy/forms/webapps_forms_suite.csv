@@ -1,0 +1,331 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+WEB-FOR-00001,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Security,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00002,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,UI,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00003,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Regression,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00004,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00005,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00006,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Security,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00007,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Security,Update WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00008,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Regression,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00009,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Integration,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00010,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Functional,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00011,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,Regression,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00012,WebApps,forms,forms,Media,Render -> Interact -> Persist -> Report,Functional,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00013,WebApps,forms,forms,Marketplace,Render -> Interact -> Persist -> Report,Accessibility,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00014,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00015,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00016,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Security,Submit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00017,WebApps,forms,forms,Marketplace,Render -> Interact -> Persist -> Report,Functional,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00018,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,UI,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00019,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,UI,Search WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00020,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,UI,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00021,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Functional,Search WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00022,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Functional,Delete WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00023,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,Functional,Restore WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00024,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Integration,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00025,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,UI,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00026,WebApps,forms,forms,Marketplace,Open -> Authenticate -> Use -> Close,Functional,Search WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00027,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Integration,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00028,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,Regression,Delete WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00029,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Accessibility,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00030,WebApps,forms,forms,Marketplace,Open -> Authenticate -> Use -> Close,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00031,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Security,Delete WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00032,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Integration,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00033,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Regression,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00034,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,UI,Submit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00035,WebApps,forms,forms,SaaS,Browse -> Add -> Checkout -> Confirm,Functional,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00036,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Security,Search WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00037,WebApps,forms,forms,Media,Render -> Interact -> Persist -> Report,Security,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00038,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Performance,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00039,WebApps,forms,forms,Media,Render -> Interact -> Persist -> Report,UI,Create WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00040,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Functional,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00041,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Integration,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00042,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,UI,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00043,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Regression,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00044,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Performance,Search WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00045,WebApps,forms,forms,Media,Render -> Interact -> Persist -> Report,UI,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00046,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Functional,Restore WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00047,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Integration,Create WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00048,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Integration,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00049,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Regression,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00050,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Security,Update WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00051,WebApps,forms,forms,Media,Render -> Interact -> Persist -> Report,Security,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00052,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Integration,Update WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00053,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,UI,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00054,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Security,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00055,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Accessibility,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00056,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,UI,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00057,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Accessibility,Restore WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00058,WebApps,forms,forms,Marketplace,Render -> Interact -> Persist -> Report,Functional,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00059,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,UI,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00060,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Performance,Submit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00061,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,Functional,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00062,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Functional,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00063,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Performance,Create WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00064,WebApps,forms,forms,SaaS,Browse -> Add -> Checkout -> Confirm,Regression,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00065,WebApps,forms,forms,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00066,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Security,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00067,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,Integration,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00068,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Functional,Restore WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00069,WebApps,forms,forms,Marketplace,Render -> Interact -> Persist -> Report,UI,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00070,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Regression,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00071,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00072,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,UI,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00073,WebApps,forms,forms,Marketplace,Render -> Interact -> Persist -> Report,Integration,Delete WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00074,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Accessibility,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00075,WebApps,forms,forms,Media,Render -> Interact -> Persist -> Report,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00076,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00077,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Regression,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00078,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,UI,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00079,WebApps,forms,forms,SaaS,Open -> Authenticate -> Use -> Close,Accessibility,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00080,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Performance,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00081,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Regression,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00082,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,Integration,Create WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00083,WebApps,forms,forms,Marketplace,Open -> Authenticate -> Use -> Close,UI,Update WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00084,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Security,Validate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00085,WebApps,forms,forms,Marketplace,Open -> Authenticate -> Use -> Close,Integration,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00086,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Performance,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00087,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,Accessibility,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00088,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,Performance,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00089,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Performance,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00090,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Accessibility,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00091,WebApps,forms,forms,Marketplace,Open -> Authenticate -> Use -> Close,UI,Delete WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00092,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,UI,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00093,WebApps,forms,forms,SaaS,Render -> Interact -> Persist -> Report,UI,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00094,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,Integration,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00095,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Integration,Create WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00096,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Functional,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00097,WebApps,forms,forms,SaaS,Browse -> Add -> Checkout -> Confirm,Functional,Escalate WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00098,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,UI,Approve WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00099,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,Security,Clone WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00100,WebApps,forms,forms,Retail,Open -> Authenticate -> Use -> Close,Functional,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00101,WebApps,forms,forms,Marketplace,Browse -> Add -> Checkout -> Confirm,Performance,Create WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00102,WebApps,forms,forms,Media,Open -> Authenticate -> Use -> Close,Performance,Update WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00103,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Accessibility,Archive WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00104,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Integration,Update WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00105,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,UI,Reject WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00106,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,Accessibility,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00107,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Functional,Edit WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00108,WebApps,forms,forms,Retail,Browse -> Add -> Checkout -> Confirm,UI,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00109,WebApps,forms,forms,Retail,Render -> Interact -> Persist -> Report,Integration,Route WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"
+WEB-FOR-00110,WebApps,forms,forms,Media,Browse -> Add -> Checkout -> Confirm,UI,Delete WebApps forms,WebApps access and test data available,"1. Open forms.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""browser"": ""Chrome"", ""viewport"": ""1440x900"", ""user"": ""demo""}"

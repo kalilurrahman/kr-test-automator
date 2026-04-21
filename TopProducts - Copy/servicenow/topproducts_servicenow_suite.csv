@@ -1,0 +1,241 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+TOP-SER-00001,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Accessibility,Edit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00002,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Accessibility,Edit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00003,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Performance,Create TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00004,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,Accessibility,Delete TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00005,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00006,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00007,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,Regression,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00008,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00009,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Integration,Update TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00010,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,UI,Archive TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00011,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Security,Create TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00012,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Regression,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00013,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Security,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00014,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Regression,Route TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00015,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Regression,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00016,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,Integration,Update TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00017,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,Integration,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00018,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Reject TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00019,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Regression,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00020,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00021,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,UI,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00022,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Integration,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00023,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Regression,Create TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00024,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Delete TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00025,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Security,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00026,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Performance,Escalate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00027,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,UI,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00028,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,UI,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00029,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Security,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00030,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Functional,Escalate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00031,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Functional,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00032,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Functional,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00033,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00034,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Regression,Archive TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00035,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Regression,Archive TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00036,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,UI,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00037,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,UI,Submit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00038,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Security,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00039,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00040,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Functional,Reject TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00041,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00042,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Regression,Reject TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00043,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Archive TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00044,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00045,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Security,Archive TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00046,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Regression,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00047,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Create TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00048,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Performance,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00049,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Integration,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00050,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Performance,Route TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00051,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00052,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Security,Delete TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00053,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Accessibility,Delete TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00054,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Functional,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00055,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Regression,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00056,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Integration,Edit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00057,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Functional,Delete TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00058,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Regression,Edit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00059,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Security,Edit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00060,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Integration,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00061,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,Security,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00062,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Regression,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00063,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Regression,Delete TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00064,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Functional,Update TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00065,TopProducts,servicenow,servicenow,Life Sciences,Create -> Approve -> Close -> Audit,UI,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00066,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Accessibility,Validate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00067,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Integration,Escalate TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00068,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,UI,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00069,TopProducts,servicenow,servicenow,ERP,Navigate -> Execute -> Validate -> Report,Performance,Search TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00070,TopProducts,servicenow,servicenow,Enterprise,Navigate -> Execute -> Validate -> Report,Accessibility,Approve TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00071,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Accessibility,Archive TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00072,TopProducts,servicenow,servicenow,ERP,Create -> Approve -> Close -> Audit,Functional,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00073,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,Regression,Submit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00074,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,Integration,Submit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00075,TopProducts,servicenow,servicenow,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00076,TopProducts,servicenow,servicenow,Enterprise,Create -> Approve -> Close -> Audit,UI,Create TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00077,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Functional,Clone TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00078,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Integration,Update TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00079,TopProducts,servicenow,servicenow,CRM,Navigate -> Execute -> Validate -> Report,Functional,Restore TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-SER-00080,TopProducts,servicenow,servicenow,CRM,Create -> Approve -> Close -> Audit,Integration,Edit TopProducts servicenow,TopProducts access and test data available,"1. Open servicenow.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"

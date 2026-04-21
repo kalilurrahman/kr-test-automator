@@ -1,0 +1,241 @@
+Test Case ID,Product,Folder,Capability,Domain,Flow,Test Type,Scenario,Preconditions,Steps,Expected Result,Priority,Sample Data
+TOP-VEE-00001,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Integration,Submit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00002,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Integration,Reject TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00003,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Functional,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00004,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Archive TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00005,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Functional,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00006,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Security,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00007,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Integration,Reject TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00008,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Performance,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00009,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,Functional,Validate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00010,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Regression,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00011,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Regression,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00012,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00013,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Security,Search TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00014,TopProducts,veeva,veeva,Enterprise,Navigate -> Execute -> Validate -> Report,Functional,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00015,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Performance,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00016,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Integration,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00017,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,Integration,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00018,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,Functional,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00019,TopProducts,veeva,veeva,Enterprise,Navigate -> Execute -> Validate -> Report,Regression,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00020,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Functional,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00021,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Functional,Update TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00022,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Performance,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00023,TopProducts,veeva,veeva,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00024,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Archive TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00025,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Performance,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00026,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00027,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Archive TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00028,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Performance,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00029,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Functional,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00030,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Security,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00031,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Accessibility,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00032,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00033,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,UI,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00034,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Regression,Restore TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00035,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Functional,Update TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00036,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Accessibility,Submit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00037,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,UI,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00038,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Regression,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00039,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Security,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00040,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Accessibility,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00041,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Performance,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00042,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Integration,Reject TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00043,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Security,Submit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00044,TopProducts,veeva,veeva,Enterprise,Navigate -> Execute -> Validate -> Report,Performance,Validate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00045,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Accessibility,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00046,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00047,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Accessibility,Archive TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00048,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Regression,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00049,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Accessibility,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00050,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Performance,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00051,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Performance,Reject TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00052,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,UI,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00053,TopProducts,veeva,veeva,Enterprise,Navigate -> Execute -> Validate -> Report,Regression,Archive TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00054,TopProducts,veeva,veeva,Enterprise,Navigate -> Execute -> Validate -> Report,Security,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00055,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Regression,Submit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00056,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Integration,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00057,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Functional,Search TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00058,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Functional,Validate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00059,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Security,Restore TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00060,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Integration,Update TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00061,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00062,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Functional,Archive TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00063,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Integration,Route TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00064,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Functional,Update TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00065,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Security,Validate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00066,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,UI,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00067,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Accessibility,Escalate TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00068,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Integration,Search TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00069,TopProducts,veeva,veeva,Life Sciences,Create -> Approve -> Close -> Audit,Integration,Restore TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00070,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,UI,Approve TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00071,TopProducts,veeva,veeva,Life Sciences,Navigate -> Execute -> Validate -> Report,Regression,Update TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00072,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Regression,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00073,TopProducts,veeva,veeva,Enterprise,Create -> Approve -> Close -> Audit,Regression,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,High,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00074,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Security,Clone TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00075,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Functional,Reject TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00076,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Integration,Submit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00077,TopProducts,veeva,veeva,ERP,Create -> Approve -> Close -> Audit,Security,Create TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00078,TopProducts,veeva,veeva,ERP,Navigate -> Execute -> Validate -> Report,Performance,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Medium,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00079,TopProducts,veeva,veeva,CRM,Navigate -> Execute -> Validate -> Report,Security,Edit TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"
+TOP-VEE-00080,TopProducts,veeva,veeva,CRM,Create -> Approve -> Close -> Audit,Functional,Delete TopProducts veeva,TopProducts access and test data available,"1. Open veeva.
+2. Execute flow.
+3. Verify outcome.",Flow completes successfully,Low,"{""suite"": ""Enterprise"", ""env"": ""QA"", ""locale"": ""en-US""}"

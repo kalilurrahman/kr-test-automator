@@ -14,6 +14,26 @@ async def capture_screenshot():
         await page.wait_for_timeout(2000)
         await page.screenshot(path='workday/assets/screenshots/hcm_subfolder.png')
 
+        await page.goto('http://localhost:8080/ServiceNow/index.html')
+        await page.wait_for_timeout(2000)
+        await page.screenshot(path='ServiceNow/assets/screenshots/landing.png')
+
+        await page.goto('http://localhost:8080/Veeva/index.html')
+        await page.wait_for_timeout(2000)
+        await page.screenshot(path='Veeva/assets/screenshots/landing.png')
+
+        await page.goto('http://localhost:8080/Dynamics365/index.html')
+        await page.wait_for_timeout(2000)
+        await page.screenshot(path='Dynamics365/assets/screenshots/landing.png')
+
+        await page.goto('http://localhost:8080/OracleApps/index.html')
+        await page.wait_for_timeout(2000)
+        await page.screenshot(path='OracleApps/assets/screenshots/landing.png')
+
+        await page.goto('http://localhost:8080/SAP/Ph-II/index.html')
+        await page.wait_for_timeout(2000)
+        await page.screenshot(path='SAP/assets/screenshots/phii_subfolder.png')
+
         await browser.close()
 
 asyncio.run(capture_screenshot())

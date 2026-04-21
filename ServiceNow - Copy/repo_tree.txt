@@ -1,0 +1,10 @@
+ServiceNow/
+├── index.html
+├── manifest.json
+├── README.md
+├── assets/screenshots/
+├── downloads/
+├── itsm/
+├── itom/
+├── csm/
+└── hrsd/

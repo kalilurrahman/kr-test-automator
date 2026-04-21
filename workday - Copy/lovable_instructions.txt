@@ -1,0 +1,8 @@
+Lovable instructions:
+1. Connect the project to the GitHub repo containing /workday.
+2. Set /workday/index.html as the app root.
+3. Sync the module folders from GitHub; do not recreate large datasets inside Lovable.
+4. Mirror the SAP/Salesforce pattern: top menu, cards, module pages, downloads section.
+5. Use GitHub as the source of truth and Lovable only for preview and final polish.
+6. Map CSV files into tables and use the HTML pages as module landing pages.
+7. Keep credits low by making bulk changes in GitHub/Jules, not Lovable.
