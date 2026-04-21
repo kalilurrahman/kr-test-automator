@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import {
-  ResponsiveContainer, Tooltip,
+  ResponsiveContainer, Tooltip, Cell,
   BarChart, Bar, XAxis, YAxis,
   Treemap,
 } from "recharts";
@@ -30,6 +30,74 @@ const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
   Medium: "hsl(var(--primary))",
   Low: "hsl(var(--muted-foreground))",
+};
+
+/**
+ * Custom Treemap tile that renders the platform name and case count directly
+ * inside each rectangle, with fill opacity scaled by value so the chart reads
+ * like a true heatmap (denser tiles = higher volume). Recharts injects all
+ * geometry props (x, y, width, height, name, value) at render time.
+ */
+interface HeatmapTileProps {
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+  name?: string;
+  value?: number;
+  maxValue: number;
+}
+
+const HeatmapTile = (props: HeatmapTileProps) => {
+  const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, maxValue } = props;
+  if (width <= 0 || height <= 0) return null;
+  // Map value to a 0.25–1.0 opacity range so even small tiles stay legible.
+  const intensity = Math.max(0.25, Math.min(1, 0.25 + (value / maxValue) * 0.75));
+  const showLabel = width > 50 && height > 30;
+  const showValue = width > 70 && height > 50;
+  // Truncate long names to fit narrow tiles.
+  const maxChars = Math.max(3, Math.floor(width / 7));
+  const label = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
+
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        fill={`hsl(var(--primary) / ${intensity})`}
+        stroke="hsl(var(--background))"
+        strokeWidth={2}
+      />
+      {showLabel && (
+        <text
+          x={x + width / 2}
+          y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
+          textAnchor="middle"
+          fontSize={Math.min(13, Math.max(10, width / 10))}
+          fontWeight={600}
+          fill="hsl(var(--primary-foreground))"
+          style={{ pointerEvents: "none" }}
+        >
+          {label}
+        </text>
+      )}
+      {showValue && (
+        <text
+          x={x + width / 2}
+          y={y + height / 2 + 12}
+          textAnchor="middle"
+          fontSize={11}
+          fontFamily="JetBrains Mono, monospace"
+          fill="hsl(var(--primary-foreground) / 0.85)"
+          style={{ pointerEvents: "none" }}
+        >
+          {value.toLocaleString()}
+        </text>
+      )}
+    </g>
+  );
 };
 
 const Dashboard = () => {
