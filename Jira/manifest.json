@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "projects",
+      "path": "/Jira/projects/index.html"
+    },
+    {
+      "key": "issues",
+      "path": "/Jira/issues/index.html"
+    },
+    {
+      "key": "agile",
+      "path": "/Jira/agile/index.html"
+    },
+    {
+      "key": "boards",
+      "path": "/Jira/boards/index.html"
+    },
+    {
+      "key": "automation",
+      "path": "/Jira/automation/index.html"
+    },
+    {
+      "key": "service_management",
+      "path": "/Jira/service_management/index.html"
+    }
+  ]
+}

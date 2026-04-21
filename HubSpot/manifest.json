@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "crm",
+      "path": "/HubSpot/crm/index.html"
+    },
+    {
+      "key": "marketing",
+      "path": "/HubSpot/marketing/index.html"
+    },
+    {
+      "key": "sales",
+      "path": "/HubSpot/sales/index.html"
+    },
+    {
+      "key": "service",
+      "path": "/HubSpot/service/index.html"
+    },
+    {
+      "key": "cms",
+      "path": "/HubSpot/cms/index.html"
+    },
+    {
+      "key": "operations",
+      "path": "/HubSpot/operations/index.html"
+    }
+  ]
+}

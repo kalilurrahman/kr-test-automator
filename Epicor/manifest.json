@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "finance",
+      "path": "/Epicor/finance/index.html"
+    },
+    {
+      "key": "manufacturing",
+      "path": "/Epicor/manufacturing/index.html"
+    },
+    {
+      "key": "distribution",
+      "path": "/Epicor/distribution/index.html"
+    },
+    {
+      "key": "crm",
+      "path": "/Epicor/crm/index.html"
+    },
+    {
+      "key": "quality",
+      "path": "/Epicor/quality/index.html"
+    },
+    {
+      "key": "supply_chain",
+      "path": "/Epicor/supply_chain/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "orchestrator",
+      "path": "/UiPath/orchestrator/index.html"
+    },
+    {
+      "key": "studio",
+      "path": "/UiPath/studio/index.html"
+    },
+    {
+      "key": "attended",
+      "path": "/UiPath/attended/index.html"
+    },
+    {
+      "key": "unattended",
+      "path": "/UiPath/unattended/index.html"
+    },
+    {
+      "key": "queues",
+      "path": "/UiPath/queues/index.html"
+    },
+    {
+      "key": "assets",
+      "path": "/UiPath/assets/index.html"
+    }
+  ]
+}

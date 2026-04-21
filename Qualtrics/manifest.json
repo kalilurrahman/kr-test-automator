@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "surveys",
+      "path": "/Qualtrics/surveys/index.html"
+    },
+    {
+      "key": "distribution",
+      "path": "/Qualtrics/distribution/index.html"
+    },
+    {
+      "key": "analytics",
+      "path": "/Qualtrics/analytics/index.html"
+    },
+    {
+      "key": "dashboards",
+      "path": "/Qualtrics/dashboards/index.html"
+    },
+    {
+      "key": "xm_programs",
+      "path": "/Qualtrics/xm_programs/index.html"
+    },
+    {
+      "key": "actions",
+      "path": "/Qualtrics/actions/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "subscription",
+      "path": "/RHEL/subscription/index.html"
+    },
+    {
+      "key": "package_mgmt",
+      "path": "/RHEL/package_mgmt/index.html"
+    },
+    {
+      "key": "security",
+      "path": "/RHEL/security/index.html"
+    },
+    {
+      "key": "networking",
+      "path": "/RHEL/networking/index.html"
+    },
+    {
+      "key": "storage",
+      "path": "/RHEL/storage/index.html"
+    },
+    {
+      "key": "services",
+      "path": "/RHEL/services/index.html"
+    }
+  ]
+}

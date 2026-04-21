@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "api_manager",
+      "path": "/MuleSoft/api_manager/index.html"
+    },
+    {
+      "key": "raml",
+      "path": "/MuleSoft/raml/index.html"
+    },
+    {
+      "key": "runtime_manager",
+      "path": "/MuleSoft/runtime_manager/index.html"
+    },
+    {
+      "key": "exchange",
+      "path": "/MuleSoft/exchange/index.html"
+    },
+    {
+      "key": "design_center",
+      "path": "/MuleSoft/design_center/index.html"
+    },
+    {
+      "key": "monitoring",
+      "path": "/MuleSoft/monitoring/index.html"
+    }
+  ]
+}

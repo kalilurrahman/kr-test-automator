@@ -1,0 +1,1 @@
+QlikSense test suite bundle.

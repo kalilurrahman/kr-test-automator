@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "cluster",
+      "path": "/vSphere/cluster/index.html"
+    },
+    {
+      "key": "vm",
+      "path": "/vSphere/vm/index.html"
+    },
+    {
+      "key": "network",
+      "path": "/vSphere/network/index.html"
+    },
+    {
+      "key": "storage",
+      "path": "/vSphere/storage/index.html"
+    },
+    {
+      "key": "ha",
+      "path": "/vSphere/ha/index.html"
+    },
+    {
+      "key": "drs",
+      "path": "/vSphere/drs/index.html"
+    }
+  ]
+}

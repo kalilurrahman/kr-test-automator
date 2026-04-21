@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "key": "firewall",
+      "path": "/Strata/firewall/index.html"
+    },
+    {
+      "key": "policy",
+      "path": "/Strata/policy/index.html"
+    },
+    {
+      "key": "threat_prevention",
+      "path": "/Strata/threat_prevention/index.html"
+    },
+    {
+      "key": "url_filtering",
+      "path": "/Strata/url_filtering/index.html"
+    },
+    {
+      "key": "vpn",
+      "path": "/Strata/vpn/index.html"
+    }
+  ]
+}

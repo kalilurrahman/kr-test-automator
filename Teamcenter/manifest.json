@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "bom",
+      "path": "/Teamcenter/bom/index.html"
+    },
+    {
+      "key": "plm",
+      "path": "/Teamcenter/plm/index.html"
+    },
+    {
+      "key": "change_mgmt",
+      "path": "/Teamcenter/change_mgmt/index.html"
+    },
+    {
+      "key": "documentation",
+      "path": "/Teamcenter/documentation/index.html"
+    },
+    {
+      "key": "requirements",
+      "path": "/Teamcenter/requirements/index.html"
+    },
+    {
+      "key": "workflow",
+      "path": "/Teamcenter/workflow/index.html"
+    }
+  ]
+}

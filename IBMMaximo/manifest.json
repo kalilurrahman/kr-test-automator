@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "key": "asset_mgmt",
+      "path": "/IBMMaximo/asset_mgmt/index.html"
+    },
+    {
+      "key": "work_management",
+      "path": "/IBMMaximo/work_management/index.html"
+    },
+    {
+      "key": "inventory",
+      "path": "/IBMMaximo/inventory/index.html"
+    },
+    {
+      "key": "predictive_maintenance",
+      "path": "/IBMMaximo/predictive_maintenance/index.html"
+    },
+    {
+      "key": "service_requests",
+      "path": "/IBMMaximo/service_requests/index.html"
+    }
+  ]
+}

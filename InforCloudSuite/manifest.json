@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "key": "finance",
+      "path": "/InforCloudSuite/finance/index.html"
+    },
+    {
+      "key": "supply_chain",
+      "path": "/InforCloudSuite/supply_chain/index.html"
+    },
+    {
+      "key": "manufacturing",
+      "path": "/InforCloudSuite/manufacturing/index.html"
+    },
+    {
+      "key": "hr",
+      "path": "/InforCloudSuite/hr/index.html"
+    },
+    {
+      "key": "assets",
+      "path": "/InforCloudSuite/assets/index.html"
+    },
+    {
+      "key": "quality",
+      "path": "/InforCloudSuite/quality/index.html"
+    },
+    {
+      "key": "projects",
+      "path": "/InforCloudSuite/projects/index.html"
+    }
+  ]
+}

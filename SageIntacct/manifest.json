@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "key": "general_ledger",
+      "path": "/SageIntacct/general_ledger/index.html"
+    },
+    {
+      "key": "ap",
+      "path": "/SageIntacct/ap/index.html"
+    },
+    {
+      "key": "ar",
+      "path": "/SageIntacct/ar/index.html"
+    },
+    {
+      "key": "cash",
+      "path": "/SageIntacct/cash/index.html"
+    },
+    {
+      "key": "projects",
+      "path": "/SageIntacct/projects/index.html"
+    },
+    {
+      "key": "subscriptions",
+      "path": "/SageIntacct/subscriptions/index.html"
+    },
+    {
+      "key": "reporting",
+      "path": "/SageIntacct/reporting/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "reconciliations",
+      "path": "/BlackLine/reconciliations/index.html"
+    },
+    {
+      "key": "journals",
+      "path": "/BlackLine/journals/index.html"
+    },
+    {
+      "key": "tasks",
+      "path": "/BlackLine/tasks/index.html"
+    },
+    {
+      "key": "matching",
+      "path": "/BlackLine/matching/index.html"
+    },
+    {
+      "key": "variance",
+      "path": "/BlackLine/variance/index.html"
+    },
+    {
+      "key": "controls",
+      "path": "/BlackLine/controls/index.html"
+    }
+  ]
+}
