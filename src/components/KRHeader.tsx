@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown, LayoutDashboard, Info, MessageSquare } from "lucide-react";
+import { Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown, LayoutDashboard, Info, MessageSquare, Factory } from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useAuth } from "@/contexts/AuthContext";
@@ -80,6 +80,7 @@ const KRHeader = () => {
           <div className="hidden lg:flex items-center gap-1">
             <NavLink to="/" label="Generate" active={isActive("/")} />
             <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
+            <NavLink to="/industries" label="Industries" icon={Factory} active={location.pathname.startsWith("/industries")} />
 
             {/* Products dropdown */}
             <DropdownMenu>
@@ -211,6 +212,7 @@ const KRHeader = () => {
           <nav className="lg:hidden border-t border-border bg-background px-4 py-3 max-h-[80vh] overflow-y-auto">
             <MobileLink to="/" label="Generate" onNavigate={closeMobile} active={isActive("/")} />
             <MobileLink to="/dashboard" label="Dashboard" onNavigate={closeMobile} active={isActive("/dashboard")} />
+            <MobileLink to="/industries" label="Industries" onNavigate={closeMobile} active={location.pathname.startsWith("/industries")} />
 
             <Accordion type="multiple" className="border-none">
               <AccordionItem value="products" className="border-none">

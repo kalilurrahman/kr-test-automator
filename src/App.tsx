@@ -30,6 +30,8 @@ const SAP = lazy(() => import("./pages/SAP"));
 const Salesforce = lazy(() => import("./pages/Salesforce"));
 const PlatformPage = lazy(() => import("./pages/PlatformPage"));
 const TestCaseDetail = lazy(() => import("./pages/TestCaseDetail"));
+const Industries = lazy(() => import("./pages/Industries"));
+const IndustryDetail = lazy(() => import("./pages/IndustryDetail"));
 
 const ModuleFallback = ({ label }: { label: string }) => (
   <div className="min-h-[calc(100vh-64px)] flex items-center justify-center text-muted-foreground text-sm">
@@ -64,6 +66,8 @@ function AppShell() {
             <Route path="/sap" element={<SAP />} />
             <Route path="/salesforce" element={<Salesforce />} />
             <Route path="/p/:platformId" element={<PlatformPage />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/industries/:slug" element={<IndustryDetail />} />
             <Route path="/t/:id" element={<TestCaseDetail />} />
             <Route path="/history" element={<History />} />
             <Route path="/collections" element={<Collections />} />

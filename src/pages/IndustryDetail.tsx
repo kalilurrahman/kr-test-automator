@@ -82,10 +82,6 @@ const IndustryDetail = () => {
     });
   }, [scenarios, query, productFilter, priorityFilter]);
 
-  if (!meta) {
-    return <Navigate to="/industries" replace />;
-  }
-
   const totals = useMemo(() => {
     let high = 0;
     let auto = 0;
@@ -97,6 +93,10 @@ const IndustryDetail = () => {
     }
     return { high, auto, integrationCovered };
   }, [scenarios]);
+
+  if (!meta) {
+    return <Navigate to="/industries" replace />;
+  }
 
   const handleGenerate = (s: IndustryScenario) => {
     const platform = erpToPlatform(s.erp_system, s.product);
