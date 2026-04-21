@@ -347,17 +347,10 @@ const Dashboard = () => {
                     dataKey="value"
                     nameKey="name"
                     stroke="hsl(var(--background))"
-                    content={<HeatmapTile maxValue={globalStats.topPlatforms[0]?.value ?? 1} />}
+                    content={<HeatmapTile total={globalStats.topPlatforms.length} />}
+                    isAnimationActive={false}
                   >
-                    <Tooltip
-                      formatter={(v: number) => v.toLocaleString() + " cases"}
-                      contentStyle={{
-                        background: "hsl(var(--card))",
-                        border: "1px solid hsl(var(--border))",
-                        borderRadius: 8,
-                        fontSize: 12,
-                      }}
-                    />
+                    <Tooltip content={<HeatmapTooltip />} />
                   </Treemap>
                 </ResponsiveContainer>
               ) : (
