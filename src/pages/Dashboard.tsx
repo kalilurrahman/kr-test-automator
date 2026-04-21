@@ -1,7 +1,7 @@
 import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
@@ -13,8 +13,9 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import {
-  PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
-  BarChart, Bar, XAxis, YAxis, CartesianGrid,
+  ResponsiveContainer, Tooltip, Cell,
+  BarChart, Bar, XAxis, YAxis,
+  Treemap,
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
@@ -29,6 +30,74 @@ const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
   Medium: "hsl(var(--primary))",
   Low: "hsl(var(--muted-foreground))",
+};
+
+/**
+ * Custom Treemap tile that renders the platform name and case count directly
+ * inside each rectangle, with fill opacity scaled by value so the chart reads
+ * like a true heatmap (denser tiles = higher volume). Recharts injects all
+ * geometry props (x, y, width, height, name, value) at render time.
+ */
+interface HeatmapTileProps {
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+  name?: string;
+  value?: number;
+  maxValue: number;
+}
+
+const HeatmapTile = (props: HeatmapTileProps) => {
+  const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, maxValue } = props;
+  if (width <= 0 || height <= 0) return null;
+  // Map value to a 0.25–1.0 opacity range so even small tiles stay legible.
+  const intensity = Math.max(0.25, Math.min(1, 0.25 + (value / maxValue) * 0.75));
+  const showLabel = width > 50 && height > 30;
+  const showValue = width > 70 && height > 50;
+  // Truncate long names to fit narrow tiles.
+  const maxChars = Math.max(3, Math.floor(width / 7));
+  const label = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
+
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        fill={`hsl(var(--primary) / ${intensity})`}
+        stroke="hsl(var(--background))"
+        strokeWidth={2}
+      />
+      {showLabel && (
+        <text
+          x={x + width / 2}
+          y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
+          textAnchor="middle"
+          fontSize={Math.min(13, Math.max(10, width / 10))}
+          fontWeight={600}
+          fill="hsl(var(--primary-foreground))"
+          style={{ pointerEvents: "none" }}
+        >
+          {label}
+        </text>
+      )}
+      {showValue && (
+        <text
+          x={x + width / 2}
+          y={y + height / 2 + 12}
+          textAnchor="middle"
+          fontSize={11}
+          fontFamily="JetBrains Mono, monospace"
+          fill="hsl(var(--primary-foreground) / 0.85)"
+          style={{ pointerEvents: "none" }}
+        >
+          {value.toLocaleString()}
+        </text>
+      )}
+    </g>
+  );
 };
 
 const Dashboard = () => {
@@ -66,23 +135,26 @@ const Dashboard = () => {
     toast.error(`Unknown ID "${id}". Try SF-HC-00005, SAP-FI-001, WD-PAY-042…`);
   };
 
+  // Six-card stats row. "Live test cases" was removed — it duplicated
+  // "Unique test IDs" exactly once the precomputed index started shipping
+  // already-deduplicated counts.
   const stats = [
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
     {
-      label: "Unique test IDs",
+      label: "Unique test cases",
       value: globalStats ? globalStats.uniqueIds.toLocaleString() : "…",
       icon: Fingerprint,
-    },
-    {
-      label: "Live test cases",
-      value: globalStats ? globalStats.totalCases.toLocaleString() : "…",
-      icon: Database,
     },
     {
       label: "Duplicates removed",
       value: globalStats ? globalStats.duplicatesRemoved.toLocaleString() : "…",
       icon: Copy,
+    },
+    {
+      label: "Loaded platforms",
+      value: globalStats ? `${globalStats.loadedPlatforms}/${globalStats.totalPlatforms}` : "…",
+      icon: Database,
     },
     {
       label: "Index updated",
@@ -146,11 +218,12 @@ const Dashboard = () => {
           ))}
         </section>
 
-        {/* Live charts */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10">
-          <Card className="p-5 bg-card border-border">
+        {/* Live charts — priority (compact horizontal bar) + platforms (heatmap treemap) */}
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-10">
+          {/* Priority — small horizontal bar chart */}
+          <Card className="p-5 bg-card border-border lg:col-span-1">
             <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-              Cases by priority (all platforms)
+              Cases by priority
             </h2>
             <div className="h-56">
               {statsLoading ? (
@@ -159,21 +232,24 @@ const Dashboard = () => {
                 </div>
               ) : globalStats && globalStats.byPriority.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={globalStats.byPriority}
-                      dataKey="value"
-                      nameKey="name"
-                      innerRadius={45}
-                      outerRadius={80}
-                      paddingAngle={2}
-                      label={(e) => `${e.name}: ${e.value.toLocaleString()}`}
-                    >
-                      {globalStats.byPriority.map((d) => (
-                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
-                      ))}
-                    </Pie>
+                  <BarChart
+                    data={globalStats.byPriority}
+                    layout="vertical"
+                    margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
+                    barCategoryGap={12}
+                  >
+                    <XAxis type="number" hide />
+                    <YAxis
+                      type="category"
+                      dataKey="name"
+                      tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 600 }}
+                      width={70}
+                      axisLine={false}
+                      tickLine={false}
+                    />
                     <Tooltip
+                      cursor={{ fill: "hsl(var(--muted) / 0.3)" }}
+                      formatter={(v: number) => v.toLocaleString()}
                       contentStyle={{
                         background: "hsl(var(--card))",
                         border: "1px solid hsl(var(--border))",
@@ -181,7 +257,21 @@ const Dashboard = () => {
                         fontSize: 12,
                       }}
                     />
-                  </PieChart>
+                    <Bar
+                      dataKey="value"
+                      radius={[0, 6, 6, 0]}
+                      label={{
+                        position: "right",
+                        fill: "hsl(var(--foreground))",
+                        fontSize: 11,
+                        formatter: (v: number) => v.toLocaleString(),
+                      }}
+                    >
+                      {globalStats.byPriority.map((d) => (
+                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
+                      ))}
+                    </Bar>
+                  </BarChart>
                 </ResponsiveContainer>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
@@ -191,14 +281,15 @@ const Dashboard = () => {
             </div>
           </Card>
 
-          <Card className="p-5 bg-card border-border">
+          {/* Top platforms — heatmap-style treemap */}
+          <Card className="p-5 bg-card border-border lg:col-span-2">
             <div className="flex items-center justify-between mb-3">
               <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
                 Top platforms by case volume
               </h2>
               {globalStats && (
                 <span className="text-[10px] font-mono text-muted-foreground">
-                  {globalStats.topPlatforms.length} platforms
+                  {globalStats.topPlatforms.length} platforms · larger tile = more cases
                 </span>
               )}
             </div>
@@ -209,21 +300,15 @@ const Dashboard = () => {
                 </div>
               ) : globalStats && globalStats.topPlatforms.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
+                  <Treemap
                     data={globalStats.topPlatforms}
-                    margin={{ top: 5, right: 10, left: -10, bottom: 60 }}
+                    dataKey="value"
+                    nameKey="name"
+                    stroke="hsl(var(--background))"
+                    content={<HeatmapTile maxValue={globalStats.topPlatforms[0]?.value ?? 1} />}
                   >
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                    <XAxis
-                      dataKey="name"
-                      tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 9 }}
-                      interval={0}
-                      angle={-55}
-                      textAnchor="end"
-                      height={80}
-                    />
-                    <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
                     <Tooltip
+                      formatter={(v: number) => v.toLocaleString() + " cases"}
                       contentStyle={{
                         background: "hsl(var(--card))",
                         border: "1px solid hsl(var(--border))",
@@ -231,8 +316,7 @@ const Dashboard = () => {
                         fontSize: 12,
                       }}
                     />
-                    <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-                  </BarChart>
+                  </Treemap>
                 </ResponsiveContainer>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
