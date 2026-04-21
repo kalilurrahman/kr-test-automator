@@ -1,0 +1,1 @@
+Maintain /SAP, preserve function folders, update indexes/manifests, generate screenshots, open PRs.

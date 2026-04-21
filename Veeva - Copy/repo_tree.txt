@@ -1,0 +1,11 @@
+Veeva/
+├── index.html
+├── manifest.json
+├── README.md
+├── assets/screenshots/
+├── downloads/
+├── clinical/
+├── regulatory/
+├── quality/
+├── medical/
+└── commercial/

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 5%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 33% 9%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 33% 9%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 43 52% 54%;
+    --primary-foreground: 222 47% 5%;
+
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 20% 14%;
+    --muted-foreground: 215 14% 55%;
+
+    --accent: 220 20% 14%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 0 0% 100% / 0.08;
+    --input: 0 0% 100% / 0.08;
+    --ring: 43 52% 54%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 33% 9%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 43 52% 54%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 220 20% 14%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 0 0% 100% / 0.08;
+    --sidebar-ring: 43 52% 54%;
+
+    /* KR Brand Colors */
+    --gold: 43 52% 54%;
+    --gold-light: 43 70% 66%;
+    --gold-dark: 43 40% 42%;
+
+    /* Platform colors */
+    --clr-sap: 207 100% 35%;
+    --clr-salesforce: 195 100% 44%;
+    --clr-veeva: 18 100% 60%;
+    --clr-servicenow: 155 26% 62%;
+    --clr-workday: 36 90% 55%;
+    --clr-oracle: 7 57% 52%;
+    --clr-web: 239 84% 67%;
+    --clr-mobile: 263 70% 66%;
+    --clr-api: 160 84% 39%;
+    --clr-m365: 207 90% 54%;
+
+    /* Framework colors */
+    --clr-playwright: 168 79% 52%;
+    --clr-selenium: 105 61% 42%;
+    --clr-cypress: 160 97% 37%;
+    --clr-robot: 186 100% 33%;
+    --clr-appium: 239 84% 67%;
+    --clr-rest-assured: 38 92% 50%;
+    --clr-karate: 330 81% 60%;
+
+    /* Typography vars — overridden by FontSwitcher (src/lib/fonts.ts) */
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', Menlo, monospace;
+    --font-base-size: clamp(13px, 0.875rem + 0.1vw, 15px);
+
+    font-family: var(--font-body);
+    font-size: var(--font-base-size);
+  }
+
+  .dark {
+    --background: 222 47% 5%;
+    --foreground: 210 20% 98%;
+    --card: 220 33% 9%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 33% 9%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 43 52% 54%;
+    --primary-foreground: 222 47% 5%;
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 220 20% 14%;
+    --muted-foreground: 215 14% 55%;
+    --accent: 220 20% 14%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 0 0% 100% / 0.08;
+    --input: 0 0% 100% / 0.08;
+    --ring: 43 52% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    /* Prevent horizontal overflow when users pick a wider preset on small screens */
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    /* Allow long titles to wrap rather than push containers */
+    overflow-wrap: anywhere;
+  }
+
+  code, pre, .font-code {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Gold gradient button */
+.btn-gold-gradient {
+  background: linear-gradient(135deg, hsl(43, 52%, 54%), hsl(43, 70%, 66%));
+  color: hsl(222, 47%, 5%);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-gold-gradient:hover {
+  background: linear-gradient(135deg, hsl(43, 70%, 66%), hsl(43, 52%, 54%));
+  box-shadow: 0 0 20px hsla(43, 52%, 54%, 0.3);
+}
+
+/* Shimmer animation for generate button */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.btn-shimmer {
+  background: linear-gradient(90deg, hsl(43,52%,54%) 0%, hsl(43,70%,66%) 25%, hsl(0,0%,100%,0.3) 50%, hsl(43,70%,66%) 75%, hsl(43,52%,54%) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+/* Gold border glow */
+.border-gold-glow {
+  border-color: hsla(43, 52%, 54%, 0.35);
+}
+.border-gold-glow-strong {
+  border-color: hsla(43, 52%, 54%, 0.6);
+  box-shadow: 0 0 12px hsla(43, 52%, 54%, 0.15);
+}
+
+/* =================================================================
+   THEME PALETTES — switchable via [data-palette] on <html>
+   ================================================================= */
+
+[data-palette="financial-slate"] {
+  --background: 222 33% 7%;
+  --card: 220 24% 11%;
+  --popover: 220 24% 11%;
+  --secondary: 220 18% 16%;
+  --muted: 220 18% 16%;
+  --accent: 220 18% 16%;
+  --primary: 221 83% 60%;
+  --primary-foreground: 222 47% 5%;
+  --ring: 221 83% 60%;
+  --sidebar-background: 220 24% 11%;
+  --sidebar-primary: 221 83% 60%;
+  --sidebar-ring: 221 83% 60%;
+  --gold: 221 83% 60%;
+  --gold-light: 221 90% 70%;
+  --gold-dark: 221 70% 48%;
+}
+
+[data-palette="forest"] {
+  --background: 160 25% 6%;
+  --card: 160 22% 10%;
+  --popover: 160 22% 10%;
+  --secondary: 160 18% 14%;
+  --muted: 160 18% 14%;
+  --accent: 160 18% 14%;
+  --primary: 160 70% 45%;
+  --primary-foreground: 160 25% 6%;
+  --ring: 160 70% 45%;
+  --sidebar-background: 160 22% 10%;
+  --sidebar-primary: 160 70% 45%;
+  --sidebar-ring: 160 70% 45%;
+  --gold: 160 70% 45%;
+  --gold-light: 160 70% 58%;
+  --gold-dark: 160 70% 35%;
+}
+
+[data-palette="sunset"] {
+  --background: 18 25% 7%;
+  --card: 18 22% 11%;
+  --popover: 18 22% 11%;
+  --secondary: 18 18% 15%;
+  --muted: 18 18% 15%;
+  --accent: 18 18% 15%;
+  --primary: 14 90% 60%;
+  --primary-foreground: 18 25% 7%;
+  --ring: 14 90% 60%;
+  --sidebar-background: 18 22% 11%;
+  --sidebar-primary: 14 90% 60%;
+  --sidebar-ring: 14 90% 60%;
+  --gold: 14 90% 60%;
+  --gold-light: 36 95% 60%;
+  --gold-dark: 14 80% 48%;
+}
+
+[data-palette="mono"] {
+  --background: 0 0% 5%;
+  --card: 0 0% 9%;
+  --popover: 0 0% 9%;
+  --secondary: 0 0% 14%;
+  --muted: 0 0% 14%;
+  --accent: 0 0% 14%;
+  --primary: 0 0% 92%;
+  --primary-foreground: 0 0% 5%;
+  --ring: 0 0% 92%;
+  --sidebar-background: 0 0% 9%;
+  --sidebar-primary: 0 0% 92%;
+  --sidebar-ring: 0 0% 92%;
+  --gold: 0 0% 92%;
+  --gold-light: 0 0% 100%;
+  --gold-dark: 0 0% 70%;
+}
+
+/* Smooth palette transitions */
+html { transition: background-color 0.25s ease, color 0.25s ease; }

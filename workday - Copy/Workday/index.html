@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workday (Expanded) Test Repository</title>
+    <style>
+        body {font-family:Arial,sans-serif;margin:0;background:#f8f9fc;color:#2c3e50}
+        header {background:#f59e0b;color:white;padding:24px}
+        .wrap {max-width:1200px;margin:0 auto;padding:24px}
+        .pill {display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.2);color:white;font-size:12px;font-weight:bold;margin-bottom:12px}
+        h1 {margin:0 0 8px 0;}
+        header p {margin:0;opacity:0.9;}
+        .menu {display:flex;gap:16px;background:#fff;padding:16px 24px;border-bottom:1px solid #ecf0f1;flex-wrap:wrap;}
+        .menu a {color:#2c3e50;text-decoration:none;font-weight:bold;font-size:14px;padding:8px 12px;border-radius:6px;transition:all 0.2s;}
+        .menu a:hover {background:#ebf3fd;color:#f59e0b;}
+        .menu a.active {background:#f59e0b;color:white;}
+        .clouds-grid {display:grid;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));gap:24px;margin-top:24px;}
+        .cloud-card {background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:12px;transition:transform 0.2s;text-decoration:none;color:inherit;}
+        .cloud-card:hover {transform:translateY(-4px);box-shadow:0 4px 16px rgba(0,0,0,.12);}
+        .cloud-card h3 {margin:0;color:#f59e0b;font-size:20px;}
+        .cloud-card p {color:#7f8c8d;font-size:14px;margin:0;}
+        .btn {display:inline-block;padding:8px 14px;background:#f59e0b;color:white;border-radius:6px;font-weight:bold;font-size:13px;}
+        .btn-outline {background:transparent;border:1px solid #f59e0b;color:#f59e0b;}
+        .actions {display:flex;gap:8px;margin-top:auto;}
+        footer {text-align:center;padding:32px 16px;color:#7f8c8d;font-size:13px;}
+        footer a {color:#f59e0b;text-decoration:none;}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="wrap" style="padding-bottom:0;">
+        <div class="pill">Workday (Expanded) Ecosystem</div>
+        <h1>Workday (Expanded) Test Repository</h1>
+        <p>Comprehensive test scripts across 7 Workday (Expanded) modules.</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <a href="/workday/Workday/index.html" class="active">Overview</a>
+    <a href="/workday/Workday/e2e/index.html">End-to-End</a>
+    <a href="/workday/Workday/finance/index.html">Finance</a>
+    <a href="/workday/Workday/hcm/index.html">HCM</a>
+    <a href="/workday/Workday/integrations/index.html">Integrations</a>
+    <a href="/workday/Workday/payroll/index.html">Payroll</a>
+    <a href="/workday/Workday/recruiting/index.html">Recruiting</a>
+    <a href="/workday/Workday/reporting/index.html">Reporting</a>
+</nav>
+
+<main class="wrap">
+    <div class="clouds-grid">
+        <a class="cloud-card" href="/workday/Workday/e2e/index.html">
+            <h3>End-to-End</h3>
+            <p>Browse End-to-End test cases — workday_e2e_1500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">1500</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/workday/Workday/finance/index.html">
+            <h3>Finance</h3>
+            <p>Browse Finance test cases — workday_finance_1500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">1500</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/workday/Workday/hcm/index.html">
+            <h3>HCM</h3>
+            <p>Browse HCM test cases — workday_hcm_2500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">2500</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/workday/Workday/integrations/index.html">
+            <h3>Integrations</h3>
+            <p>Browse Integrations test cases — workday_integrations_1500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">1500</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/workday/Workday/payroll/index.html">
+            <h3>Payroll</h3>
+            <p>Browse Payroll test cases — workday_payroll_1500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">1500</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/workday/Workday/recruiting/index.html">
+            <h3>Recruiting</h3>
+            <p>Browse Recruiting test cases — workday_recruiting_1500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">1500</span>
+            </div>
+        </a>
+        <a class="cloud-card" href="/workday/Workday/reporting/index.html">
+            <h3>Reporting</h3>
+            <p>Browse Reporting test cases — workday_reporting_1500.</p>
+            <div class="actions">
+                <span class="btn">View Data</span>
+                <span class="btn btn-outline">1500</span>
+            </div>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <p>← <a href="/dashboard">Back to dashboard</a> · <a href="/">Generator</a> · <a href="/about">About</a></p>
+</footer>
+
+</body>
+</html>
