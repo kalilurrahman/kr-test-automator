@@ -9,12 +9,19 @@ import { PLATFORMS } from "@/data/platformManifests";
 import { getPlatformStats } from "@/lib/platformStats";
 import { getMergedSapStats } from "@/data/sapCsvLoader";
 import { SALESFORCE_CLOUDS, TOTAL_SALESFORCE_CASES } from "@/data/salesforceClouds";
+import { getGlobalIndex } from "@/lib/globalIndex";
 
 export interface GlobalStats {
   totalCases: number;
   totalModules: number;
   totalPlatforms: number;
   loadedPlatforms: number;
+  /** Unique test IDs after dedup across the entire catalogue */
+  uniqueIds: number;
+  /** Number of duplicate IDs removed during global indexing */
+  duplicatesRemoved: number;
+  /** Wall-clock timestamp of the most recent index build */
+  lastUpdated: number;
   byPriority: { name: string; value: number }[];
   topPlatforms: { name: string; value: number }[];
 }
@@ -60,11 +67,17 @@ export function getGlobalStats(): Promise<GlobalStats> {
     if (TOTAL_SALESFORCE_CASES > 0) loadedPlatforms += 1;
     perPlatform.push({ name: "Salesforce", value: TOTAL_SALESFORCE_CASES });
 
+    // Pull dedup metrics from the global index (built in parallel).
+    const idx = await getGlobalIndex();
+
     return {
       totalCases,
       totalModules,
       totalPlatforms: PLATFORMS.length + 2, // +SAP +Salesforce
       loadedPlatforms,
+      uniqueIds: idx.byId.size,
+      duplicatesRemoved: idx.duplicatesRemoved,
+      lastUpdated: idx.builtAt,
       byPriority: [
         { name: "High", value: high },
         { name: "Medium", value: medium },

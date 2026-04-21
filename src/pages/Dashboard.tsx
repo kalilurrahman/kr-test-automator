@@ -1,14 +1,12 @@
 import { useEffect, useState, FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2 } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
   TOTAL_MODULES,
-  BUNDLED_TEST_COUNT,
   ACCENT_CLASSES,
-  resolveProductByTestId,
 } from "@/data/productCatalog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -19,6 +17,8 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
+import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
+import { GlobalCaseBrowser } from "@/components/GlobalCaseBrowser";
 
 const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
@@ -41,28 +41,48 @@ const Dashboard = () => {
     return () => { cancelled = true; };
   }, []);
 
-  const handleIdLookup = (e: FormEvent) => {
+  const handleIdLookup = async (e: FormEvent) => {
     e.preventDefault();
-    const product = resolveProductByTestId(idQuery);
-    if (!product) {
-      toast.error(`Unknown ID prefix in "${idQuery}". Try SF-HC-00005, SAP-001, WD-…`);
+    const id = idQuery.trim();
+    if (!id) return;
+    // Prefer the global index — it knows about every CSV row, not just prefixes.
+    const hit = await findCaseById(id);
+    if (hit) {
+      navigate(`/t/${encodeURIComponent(hit.id)}`);
       return;
     }
-    if (product.kind === "spa") {
-      navigate(`/?platform=${product.key}&prefill=${encodeURIComponent(idQuery.trim())}`);
-    } else {
-      window.location.href = product.route;
+    // Fall back to prefix guess so unknown IDs still route to a sensible product.
+    const source = await guessSourceFromId(id);
+    if (source) {
+      navigate(`/t/${encodeURIComponent(id)}`);
+      toast.message(`No exact match — opening best guess from ${source}.`);
+      return;
     }
+    toast.error(`Unknown ID "${id}". Try SF-HC-00005, SAP-FI-001, WD-PAY-042…`);
   };
 
   const stats = [
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
-    { label: "Bundled cases", value: BUNDLED_TEST_COUNT.toLocaleString(), icon: FileCode2 },
+    {
+      label: "Unique test IDs",
+      value: globalStats ? globalStats.uniqueIds.toLocaleString() : "…",
+      icon: Fingerprint,
+    },
     {
       label: "Live test cases",
       value: globalStats ? globalStats.totalCases.toLocaleString() : "…",
       icon: Database,
+    },
+    {
+      label: "Duplicates removed",
+      value: globalStats ? globalStats.duplicatesRemoved.toLocaleString() : "…",
+      icon: Copy,
+    },
+    {
+      label: "Index updated",
+      value: globalStats ? new Date(globalStats.lastUpdated).toLocaleTimeString() : "…",
+      icon: Clock,
     },
   ];
 
@@ -96,17 +116,17 @@ const Dashboard = () => {
         </header>
 
         {/* Stats */}
-        <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
           {stats.map((s) => (
-            <Card key={s.label} className="p-5 bg-card border-border flex items-center gap-4">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
-                <s.icon className="w-5 h-5 text-primary" />
+            <Card key={s.label} className="p-4 bg-card border-border flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+                <s.icon className="w-4 h-4 text-primary" />
               </div>
               <div className="min-w-0">
-                <div className="text-2xl font-bold text-foreground truncate">
+                <div className="text-lg font-bold text-foreground truncate">
                   {s.value}
                 </div>
-                <div className="text-[11px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
               </div>
             </Card>
           ))}
@@ -193,7 +213,7 @@ const Dashboard = () => {
         </section>
 
         {/* Find by ID */}
-        <section className="mb-10">
+        <section className="mb-6">
           <Card className="p-5 bg-card border-border">
             <div className="flex items-center gap-2 mb-3">
               <Search className="w-4 h-4 text-primary" />
@@ -203,7 +223,7 @@ const Dashboard = () => {
               <Input
                 value={idQuery}
                 onChange={(e) => setIdQuery(e.target.value)}
-                placeholder="e.g. SF-HC-00005, SAP-001, WD-PAY-042"
+                placeholder="e.g. SF-HC-00005, SAP-FI-001, WD-PAY-042"
                 className="flex-1 bg-background"
                 aria-label="Test case ID lookup"
               />
@@ -212,9 +232,17 @@ const Dashboard = () => {
               </Button>
             </form>
             <p className="text-xs text-muted-foreground mt-2">
-              Routes the ID into the generator (for SPA platforms) or opens the platform launcher.
+              Resolves the ID against the global index across every product and opens its detail view.
             </p>
           </Card>
+        </section>
+
+        {/* Global search */}
+        <section className="mb-10">
+          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
+            <Search className="w-4 h-4 text-primary" /> Search every product
+          </h2>
+          <GlobalCaseBrowser />
         </section>
 
         {/* Quick links */}

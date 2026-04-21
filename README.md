@@ -169,4 +169,43 @@ You can edit files directly via GitHub, use GitHub Codespaces, or utilize your p
 
 ---
 
+## 🌐 Enterprise Test Hub — Global Index, Deep Links & Dedup
+
+The `/dashboard` route is now backed by a **global in-memory index** that pulls every test case from every product (SAP curated + 12 SAP module CSVs, all 7 Salesforce clouds, plus the 13 CSV-driven platforms — Veeva, Workday, ServiceNow, Dynamics 365, Oracle Apps, API, iOS, Android, AWS, GCP, Azure, WebApps, TopProducts).
+
+### Unique test IDs
+
+Every row carries a **stable, human-readable ID** (e.g. `SF-HC-00005`, `SAP-FI-001`, `WD-PAY-042`). The global index dedupes by ID using this priority order:
+
+1. SAP curated (hand-written)
+2. SAP module CSVs
+3. Salesforce cloud CSVs
+4. Other platform CSVs (first seen wins)
+
+The dashboard reports the **number of duplicate IDs skipped** and the **count of unique IDs** so you can see at a glance how clean the catalogue is.
+
+### Deep-linking by ID
+
+Any test case is reachable at `/t/<id>`:
+
+- `https://kr-test-automator.lovable.app/t/SF-HC-00005`
+- `https://kr-test-automator.lovable.app/t/SAP-FI-001`
+- `https://kr-test-automator.lovable.app/t/WD-PAY-042`
+
+The detail page renders the case (preconditions, steps, expected result, metadata) and offers two CTAs:
+
+- **Send to generator** — pre-fills the AI script generator with that case
+- **View in product repo** — jumps to the owning platform page with the right module + tab pre-selected
+
+### Search & filter
+
+The dashboard now ships a **global search** that scans every product's catalogue. You can filter by product, by priority, and free-text search across IDs, scenarios, modules and test types. Each result row deep-links to `/t/<id>`.
+
+### Per-platform overviews
+
+Each platform page (`/sap`, `/salesforce`, `/p/<platform>`) shows the same SAP-style stats: total cases, modules loaded, high-priority count, automation %, coverage score, plus priority pie + top-modules bar — all powered by the same parser.
+
+---
+
 *(Built by Global IT Executive & Builder Kalilur Rahman)*
+
