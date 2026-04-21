@@ -3,6 +3,7 @@ import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
 import { PRODUCT_CATALOG, TOTAL_PRODUCTS, TOTAL_MODULES, BUNDLED_TEST_COUNT } from "@/data/productCatalog";
 import { Sparkles, Layers, Package, FileCode2, Workflow } from "lucide-react";
+import { ProductLogo } from "@/components/ProductLogo";
 
 const About = () => {
   const totalCases = BUNDLED_TEST_COUNT;
@@ -24,8 +25,8 @@ const About = () => {
             About TestForge AI
           </h1>
           <p className="text-muted-foreground max-w-3xl">
-            TestForge AI is an enterprise test-automation hub. It bundles thousands of curated test cases
-            across 15 platforms and pairs them with an AI script generator that turns plain-English business cases
+            TestForge AI is an enterprise test-automation hub. It bundles 130,000+ curated test cases
+            across {TOTAL_PRODUCTS} platforms and pairs them with an AI script generator that turns plain-English business cases
             into Selenium, Cypress, Playwright, REST-Assured, Karate, Postman or Robot Framework code.
           </p>
         </header>
@@ -51,7 +52,7 @@ const About = () => {
               <strong className="text-foreground">Generator (/)</strong> — describe a business case and the AI streams a runnable script in your chosen framework.
             </p>
             <p>
-              <strong className="text-foreground">Dashboard (/dashboard)</strong> — landing page with stats, quick links and the 15-platform grid. Includes a <em>Find by ID</em> box that deep-links any test case (e.g. <code className="font-mono text-primary">SF-HC-00005</code>) into the generator with the prompt pre-filled.
+              <strong className="text-foreground">Dashboard (/dashboard)</strong> — landing page with stats, quick links and the {TOTAL_PRODUCTS}-platform grid. Includes a <em>Find by ID</em> box that deep-links any test case (e.g. <code className="font-mono text-primary">SF-HC-00005</code>) into the generator with the prompt pre-filled.
             </p>
             <p>
               <strong className="text-foreground">SAP & Salesforce SPA modules</strong> — interactive React pages with searchable tables, analytics charts and one-click "Send to generator".
@@ -67,24 +68,38 @@ const About = () => {
 
         {/* Platform breakdown */}
         <section>
-          <h2
-            className="text-2xl font-semibold text-foreground mb-4"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            Platform breakdown
-          </h2>
+          <div className="flex items-end justify-between mb-4">
+            <h2
+              className="text-2xl font-semibold text-foreground"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              Platform breakdown
+            </h2>
+            <span className="text-xs text-muted-foreground font-mono">
+              {TOTAL_PRODUCTS} platforms · {TOTAL_MODULES} modules
+            </span>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {PRODUCT_CATALOG.map((p) => (
               <Card key={p.key} className="p-4 bg-card border-border">
-                <div className="flex items-start justify-between mb-1.5">
-                  <h3 className="text-base font-semibold text-foreground" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                    {p.label}
-                  </h3>
-                  <span className="text-[10px] font-mono text-primary bg-primary/10 px-1.5 py-0.5 rounded">
-                    {p.idPrefix}-*
-                  </span>
+                <div className="flex items-start gap-3 mb-2">
+                  <ProductLogo productKey={p.key} label={p.label} size={40} />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-start justify-between gap-2">
+                      <h3
+                        className="text-base font-semibold text-foreground leading-tight truncate"
+                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        title={p.label}
+                      >
+                        {p.label}
+                      </h3>
+                      <span className="text-[10px] font-mono text-primary bg-primary/10 px-1.5 py-0.5 rounded shrink-0">
+                        {p.idPrefix}-*
+                      </span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1">{p.description}</p>
+                  </div>
                 </div>
-                <p className="text-xs text-muted-foreground mb-2">{p.description}</p>
                 <div className="flex flex-wrap gap-1">
                   {p.modules.map((m) => (
                     <span key={m} className="text-[10px] px-1.5 py-0.5 rounded bg-muted/30 text-muted-foreground">

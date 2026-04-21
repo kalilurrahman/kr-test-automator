@@ -18,6 +18,7 @@ import {
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
+import { ProductLogo } from "@/components/ProductLogo";
 
 // Defer the heavy global browser — its first render builds the entire index.
 const GlobalCaseBrowser = lazy(() =>
@@ -267,23 +268,8 @@ const Dashboard = () => {
           </Card>
         </section>
 
-        {/* Global search */}
-        <section className="mb-10">
-          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
-            <Search className="w-4 h-4 text-primary" /> Search every product
-          </h2>
-          <Suspense
-            fallback={
-              <div className="rounded-xl border border-border bg-card p-12 flex items-center justify-center text-sm text-muted-foreground">
-                <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Preparing search…
-              </div>
-            }
-          >
-            <GlobalCaseBrowser />
-          </Suspense>
-        </section>
+        {/* Quick links — moved up so search can sit at the very bottom */}
 
-        {/* Quick links */}
         <section className="mb-10">
           <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">Quick links</h2>
           <div className="flex flex-wrap gap-2">
@@ -309,16 +295,22 @@ const Dashboard = () => {
                 <Card
                   className={`p-5 bg-card border-2 transition-all h-full flex flex-col ${ACCENT_CLASSES[p.accent]}`}
                 >
-                  <div className="flex items-start justify-between mb-2">
-                    <h3
-                      className="text-lg font-semibold text-foreground"
-                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                    >
-                      {p.label}
-                    </h3>
-                    <span className="text-[10px] font-mono text-muted-foreground bg-muted/40 px-1.5 py-0.5 rounded">
-                      {p.modules.length} mods
-                    </span>
+                  <div className="flex items-start gap-3 mb-2">
+                    <ProductLogo productKey={p.key} label={p.label} size={44} />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2">
+                        <h3
+                          className="text-lg font-semibold text-foreground leading-tight truncate"
+                          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                          title={p.label}
+                        >
+                          {p.label}
+                        </h3>
+                        <span className="text-[10px] font-mono text-muted-foreground bg-muted/40 px-1.5 py-0.5 rounded shrink-0">
+                          {p.modules.length} mods
+                        </span>
+                      </div>
+                    </div>
                   </div>
                   <p className="text-xs text-muted-foreground mb-3 flex-1">{p.description}</p>
                   <div className="flex flex-wrap gap-1 mb-3">
@@ -347,6 +339,22 @@ const Dashboard = () => {
               );
             })}
           </div>
+        </section>
+
+        {/* Global search — moved below the product grid per dashboard layout request */}
+        <section className="mt-10">
+          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
+            <Search className="w-4 h-4 text-primary" /> Search every product
+          </h2>
+          <Suspense
+            fallback={
+              <div className="rounded-xl border border-border bg-card p-12 flex items-center justify-center text-sm text-muted-foreground">
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Preparing search…
+              </div>
+            }
+          >
+            <GlobalCaseBrowser />
+          </Suspense>
         </section>
       </div>
     </>
