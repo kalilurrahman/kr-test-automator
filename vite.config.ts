@@ -37,6 +37,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [
+    precomputeStatsPlugin(),
     react(),
     mode === "development" && componentTagger(),
     viteStaticCopy({
