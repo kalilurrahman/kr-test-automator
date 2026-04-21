@@ -104,7 +104,7 @@ const Dashboard = () => {
     <>
       <SeoHead
         title="Dashboard · TestForge AI Enterprise Test Hub"
-        description="Master dashboard for 15 enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, AWS, GCP, Azure, iOS, Android and more."
+        description={`Master dashboard for ${TOTAL_PRODUCTS}+ enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, Snowflake, Datadog, Jira and more.`}
         canonical="/dashboard"
       />
 
