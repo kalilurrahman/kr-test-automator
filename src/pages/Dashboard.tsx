@@ -1,4 +1,4 @@
-import { useEffect, useState, FormEvent } from "react";
+import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
 import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
@@ -18,7 +18,11 @@ import {
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
-import { GlobalCaseBrowser } from "@/components/GlobalCaseBrowser";
+
+// Defer the heavy global browser — its first render builds the entire index.
+const GlobalCaseBrowser = lazy(() =>
+  import("@/components/GlobalCaseBrowser").then((m) => ({ default: m.GlobalCaseBrowser })),
+);
 
 const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
