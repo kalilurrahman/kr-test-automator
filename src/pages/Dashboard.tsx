@@ -1,4 +1,4 @@
-import { useEffect, useState, FormEvent } from "react";
+import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
 import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
@@ -18,7 +18,11 @@ import {
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
-import { GlobalCaseBrowser } from "@/components/GlobalCaseBrowser";
+
+// Defer the heavy global browser — its first render builds the entire index.
+const GlobalCaseBrowser = lazy(() =>
+  import("@/components/GlobalCaseBrowser").then((m) => ({ default: m.GlobalCaseBrowser })),
+);
 
 const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
@@ -251,7 +255,15 @@ const Dashboard = () => {
           <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
             <Search className="w-4 h-4 text-primary" /> Search every product
           </h2>
-          <GlobalCaseBrowser />
+          <Suspense
+            fallback={
+              <div className="rounded-xl border border-border bg-card p-12 flex items-center justify-center text-sm text-muted-foreground">
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Preparing search…
+              </div>
+            }
+          >
+            <GlobalCaseBrowser />
+          </Suspense>
         </section>
 
         {/* Quick links */}

@@ -12,10 +12,11 @@
 // =============================================================================
 
 import { PLATFORMS, type PlatformDef } from "@/data/platformManifests";
-import { parseCsvAsObjects } from "@/lib/csv";
 import { loadAllSapCases } from "@/data/sapCsvLoader";
 import { SAP_TEST_CASES } from "@/data/sapTestCases";
 import { SALESFORCE_CLOUDS } from "@/data/salesforceClouds";
+import { readCache, writeCache, TTL_MS } from "@/lib/indexCache";
+import { getCachedCsv } from "@/lib/csvCache";
 
 export interface IndexedCase {
   id: string;
@@ -62,9 +63,71 @@ const pick = (row: Record<string, string>, keys: string[]) => {
 
 let cached: Promise<GlobalIndex> | null = null;
 
+/** Hydrate the in-memory index from a persisted snapshot. */
+function fromPersisted(p: {
+  cases: IndexedCase[];
+  prefixes: [string, string][];
+  duplicatesRemoved: number;
+  builtAt: number;
+}): GlobalIndex {
+  const byId = new Map<string, IndexedCase>();
+  const bySource = new Map<string, { total: number; modules: Set<string> }>();
+  for (const c of p.cases) {
+    byId.set(c.id, c);
+    let s = bySource.get(c.source);
+    if (!s) { s = { total: 0, modules: new Set() }; bySource.set(c.source, s); }
+    s.total += 1;
+    if (c.module) s.modules.add(c.module);
+  }
+  let totalModules = 0;
+  for (const s of bySource.values()) totalModules += s.modules.size;
+  return {
+    byId,
+    cases: p.cases,
+    prefixToSource: new Map(p.prefixes),
+    bySource,
+    duplicatesRemoved: p.duplicatesRemoved,
+    totalModules,
+    builtAt: p.builtAt,
+  };
+}
+
 export function getGlobalIndex(): Promise<GlobalIndex> {
   if (cached) return cached;
-  cached = build();
+  cached = (async () => {
+    // 1. Try the persisted snapshot first — instant if present and fresh.
+    const hit = await readCache<{
+      cases: IndexedCase[];
+      prefixes: [string, string][];
+      duplicatesRemoved: number;
+      builtAt: number;
+    }>();
+    if (hit && hit.ageMs < TTL_MS) {
+      // Background-refresh after handing back the cached copy so the next
+      // visit gets newer data without blocking this one.
+      const idx = fromPersisted(hit.payload);
+      // Fire-and-forget refresh.
+      void build().then((fresh) => {
+        cached = Promise.resolve(fresh);
+        void writeCache({
+          cases: fresh.cases,
+          prefixes: [...fresh.prefixToSource.entries()],
+          duplicatesRemoved: fresh.duplicatesRemoved,
+          builtAt: fresh.builtAt,
+        });
+      }).catch(() => undefined);
+      return idx;
+    }
+    // 2. Cold path — build from scratch and persist.
+    const fresh = await build();
+    void writeCache({
+      cases: fresh.cases,
+      prefixes: [...fresh.prefixToSource.entries()],
+      duplicatesRemoved: fresh.duplicatesRemoved,
+      builtAt: fresh.builtAt,
+    });
+    return fresh;
+  })();
   cached.catch(() => { cached = null; });
   return cached;
 }
@@ -141,33 +204,26 @@ async function build(): Promise<GlobalIndex> {
   // ---- 2. Salesforce clouds (parse each CSV) -------------------------------
   await Promise.all(
     SALESFORCE_CLOUDS.map(async (cloud) => {
-      try {
-        const res = await fetch(cloud.csv);
-        if (!res.ok) return;
-        const text = await res.text();
-        if (text.trimStart().startsWith("<")) return;
-        const { rows } = parseCsvAsObjects(text);
-        for (const r of rows) {
-          const id = pick(r, ["Test Case ID", "id", "ID"]);
-          if (!id) continue;
-          tryAdd({
-            id,
-            source: "salesforce",
-            sourceLabel: "Salesforce",
-            module: cloud.name,
-            scenario: pick(r, ["Test Scenario", "Scenario"]),
-            priority: pick(r, ["Priority"]),
-            testType: pick(r, ["Test Type", "Type"]),
-            preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
-            steps: pick(r, ["Steps"]),
-            expected: pick(r, ["Expected Result", "Expected"]),
-            productRoute: "/salesforce",
-            moduleId: cloud.id,
-            raw: r,
-          });
-        }
-      } catch {
-        // ignore per-cloud failures
+      const parsed = await getCachedCsv(cloud.csv);
+      if (!parsed) return;
+      for (const r of parsed.rows) {
+        const id = pick(r, ["Test Case ID", "id", "ID"]);
+        if (!id) continue;
+        tryAdd({
+          id,
+          source: "salesforce",
+          sourceLabel: "Salesforce",
+          module: cloud.name,
+          scenario: pick(r, ["Test Scenario", "Scenario"]),
+          priority: pick(r, ["Priority"]),
+          testType: pick(r, ["Test Type", "Type"]),
+          preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
+          steps: pick(r, ["Steps"]),
+          expected: pick(r, ["Expected Result", "Expected"]),
+          productRoute: "/salesforce",
+          moduleId: cloud.id,
+          raw: r,
+        });
       }
     }),
   );
@@ -178,33 +234,26 @@ async function build(): Promise<GlobalIndex> {
       await Promise.all(
         p.modules.map(async (mod) => {
           const url = `${p.publicBase}/${mod.folder}/${mod.prefix}.csv`;
-          try {
-            const res = await fetch(url);
-            if (!res.ok) return;
-            const text = await res.text();
-            if (text.trimStart().startsWith("<")) return;
-            const { rows } = parseCsvAsObjects(text);
-            for (const r of rows) {
-              const id = pick(r, ["Test Case ID", "id", "ID", "Case ID"]);
-              if (!id) continue;
-              tryAdd({
-                id,
-                source: p.id,
-                sourceLabel: p.label,
-                module: pick(r, ["Module", "Domain"]) || mod.label,
-                scenario: pick(r, ["Test Scenario", "Scenario", "scenario"]),
-                priority: pick(r, ["Priority", "priority"]),
-                testType: pick(r, ["Test Type", "Type", "type"]),
-                preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
-                steps: pick(r, ["Steps", "steps"]),
-                expected: pick(r, ["Expected Result", "Expected"]),
-                productRoute: `/p/${p.id}`,
-                moduleId: mod.id,
-                raw: r,
-              });
-            }
-          } catch {
-            // ignore
+          const parsed = await getCachedCsv(url);
+          if (!parsed) return;
+          for (const r of parsed.rows) {
+            const id = pick(r, ["Test Case ID", "id", "ID", "Case ID"]);
+            if (!id) continue;
+            tryAdd({
+              id,
+              source: p.id,
+              sourceLabel: p.label,
+              module: pick(r, ["Module", "Domain"]) || mod.label,
+              scenario: pick(r, ["Test Scenario", "Scenario", "scenario"]),
+              priority: pick(r, ["Priority", "priority"]),
+              testType: pick(r, ["Test Type", "Type", "type"]),
+              preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
+              steps: pick(r, ["Steps", "steps"]),
+              expected: pick(r, ["Expected Result", "Expected"]),
+              productRoute: `/p/${p.id}`,
+              moduleId: mod.id,
+              raw: r,
+            });
           }
         }),
       );
