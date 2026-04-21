@@ -71,12 +71,11 @@ const SLUGS: Record<string, string | null> = {
   zendesk: "zendesk",
 };
 
-export function getProductLogoUrl(productKey: string, size = 40): string | null {
+export function getProductLogoUrl(productKey: string): string | null {
   const slug = SLUGS[productKey];
   if (!slug) return null;
-  // Simple Icons honours ?size= for raster preview; for SVG we just set width/height.
+  // Simple Icons serves official brand SVGs in the brand colour by default.
   return `https://cdn.simpleicons.org/${slug}`;
-  void size;
 }
 
 /** Initials shown when no public logo exists. */
