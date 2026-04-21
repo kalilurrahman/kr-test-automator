@@ -11,21 +11,21 @@ import KRFooter from "@/components/KRFooter";
 import KeyboardShortcutsDialog from "@/components/KeyboardShortcutsDialog";
 import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
-import Templates from "./pages/Templates";
-import History from "./pages/History";
-import Collections from "./pages/Collections";
 import SharedScript from "./pages/SharedScript";
-import Profile from "./pages/Profile";
-import Compare from "./pages/Compare";
-import Settings from "./pages/Settings";
-import Dashboard from "./pages/Dashboard";
-import About from "./pages/About";
-import Feedback from "./pages/Feedback";
-import IosInstallHint from "@/components/IosInstallHint";
 import NotFound from "./pages/NotFound";
+import IosInstallHint from "@/components/IosInstallHint";
 import { useThemePalette } from "@/hooks/useThemePalette";
 
-// Heavy modules — code-split them.
+// Heavy modules — code-split them so the initial bundle stays small.
+const Templates = lazy(() => import("./pages/Templates"));
+const History = lazy(() => import("./pages/History"));
+const Collections = lazy(() => import("./pages/Collections"));
+const Profile = lazy(() => import("./pages/Profile"));
+const Compare = lazy(() => import("./pages/Compare"));
+const Settings = lazy(() => import("./pages/Settings"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const About = lazy(() => import("./pages/About"));
+const Feedback = lazy(() => import("./pages/Feedback"));
 const SAP = lazy(() => import("./pages/SAP"));
 const Salesforce = lazy(() => import("./pages/Salesforce"));
 const PlatformPage = lazy(() => import("./pages/PlatformPage"));
