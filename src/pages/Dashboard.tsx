@@ -116,17 +116,17 @@ const Dashboard = () => {
         </header>
 
         {/* Stats */}
-        <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
           {stats.map((s) => (
-            <Card key={s.label} className="p-5 bg-card border-border flex items-center gap-4">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
-                <s.icon className="w-5 h-5 text-primary" />
+            <Card key={s.label} className="p-4 bg-card border-border flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+                <s.icon className="w-4 h-4 text-primary" />
               </div>
               <div className="min-w-0">
-                <div className="text-2xl font-bold text-foreground truncate">
+                <div className="text-lg font-bold text-foreground truncate">
                   {s.value}
                 </div>
-                <div className="text-[11px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
               </div>
             </Card>
           ))}
@@ -213,7 +213,7 @@ const Dashboard = () => {
         </section>
 
         {/* Find by ID */}
-        <section className="mb-10">
+        <section className="mb-6">
           <Card className="p-5 bg-card border-border">
             <div className="flex items-center gap-2 mb-3">
               <Search className="w-4 h-4 text-primary" />
@@ -223,7 +223,7 @@ const Dashboard = () => {
               <Input
                 value={idQuery}
                 onChange={(e) => setIdQuery(e.target.value)}
-                placeholder="e.g. SF-HC-00005, SAP-001, WD-PAY-042"
+                placeholder="e.g. SF-HC-00005, SAP-FI-001, WD-PAY-042"
                 className="flex-1 bg-background"
                 aria-label="Test case ID lookup"
               />
@@ -232,9 +232,17 @@ const Dashboard = () => {
               </Button>
             </form>
             <p className="text-xs text-muted-foreground mt-2">
-              Routes the ID into the generator (for SPA platforms) or opens the platform launcher.
+              Resolves the ID against the global index across every product and opens its detail view.
             </p>
           </Card>
+        </section>
+
+        {/* Global search */}
+        <section className="mb-10">
+          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
+            <Search className="w-4 h-4 text-primary" /> Search every product
+          </h2>
+          <GlobalCaseBrowser />
         </section>
 
         {/* Quick links */}
