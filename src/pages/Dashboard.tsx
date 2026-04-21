@@ -295,16 +295,22 @@ const Dashboard = () => {
                 <Card
                   className={`p-5 bg-card border-2 transition-all h-full flex flex-col ${ACCENT_CLASSES[p.accent]}`}
                 >
-                  <div className="flex items-start justify-between mb-2">
-                    <h3
-                      className="text-lg font-semibold text-foreground"
-                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                    >
-                      {p.label}
-                    </h3>
-                    <span className="text-[10px] font-mono text-muted-foreground bg-muted/40 px-1.5 py-0.5 rounded">
-                      {p.modules.length} mods
-                    </span>
+                  <div className="flex items-start gap-3 mb-2">
+                    <ProductLogo productKey={p.key} label={p.label} size={44} />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2">
+                        <h3
+                          className="text-lg font-semibold text-foreground leading-tight truncate"
+                          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                          title={p.label}
+                        >
+                          {p.label}
+                        </h3>
+                        <span className="text-[10px] font-mono text-muted-foreground bg-muted/40 px-1.5 py-0.5 rounded shrink-0">
+                          {p.modules.length} mods
+                        </span>
+                      </div>
+                    </div>
                   </div>
                   <p className="text-xs text-muted-foreground mb-3 flex-1">{p.description}</p>
                   <div className="flex flex-wrap gap-1 mb-3">
