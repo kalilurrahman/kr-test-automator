@@ -18,6 +18,7 @@ import {
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
+import { ProductLogo } from "@/components/ProductLogo";
 
 // Defer the heavy global browser — its first render builds the entire index.
 const GlobalCaseBrowser = lazy(() =>
