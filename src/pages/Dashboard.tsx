@@ -1,7 +1,7 @@
 import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock, Factory, Cpu } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
@@ -20,6 +20,8 @@ import {
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
+import { getIndustryIndex, type IndustryIndex } from "@/data/industryScenarios";
+import { INDUSTRY_BY_NAME, AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
 
 // Defer the heavy global browser — its first render builds the entire index.
 const GlobalCaseBrowser = lazy(() =>
@@ -158,6 +160,7 @@ const Dashboard = () => {
   const [idQuery, setIdQuery] = useState("");
   const [globalStats, setGlobalStats] = useState<GlobalStats | null>(null);
   const [statsLoading, setStatsLoading] = useState(true);
+  const [industryIndex, setIndustryIndex] = useState<IndustryIndex | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -165,6 +168,10 @@ const Dashboard = () => {
     getGlobalStats()
       .then((s) => !cancelled && setGlobalStats(s))
       .finally(() => !cancelled && setStatsLoading(false));
+    // Industries data is non-blocking — load in parallel and render when ready.
+    getIndustryIndex()
+      .then((idx) => !cancelled && setIndustryIndex(idx))
+      .catch(() => undefined);
     return () => { cancelled = true; };
   }, []);
 
