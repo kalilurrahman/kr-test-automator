@@ -10,7 +10,7 @@ import {
 import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
-import { parseCsvAsObjects } from "@/lib/csv";
+import { getCachedCsv } from "@/lib/csvCache";
 import type { PlatformDef, PlatformModule } from "@/data/platformManifests";
 
 const PAGE_SIZE = 25;
@@ -68,14 +68,13 @@ export function PlatformRepository({ platform, selectedModule, onSelectModule }:
     setModuleFilter("All");
     setPriorityFilter("All");
 
-    fetch(csvUrl)
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.text();
-      })
-      .then((text) => {
+    getCachedCsv(csvUrl)
+      .then((parsed) => {
         if (cancelled) return;
-        const parsed = parseCsvAsObjects(text);
+        if (!parsed) {
+          setError(`Could not load ${csvUrl}`);
+          return;
+        }
         setHeaders(parsed.headers);
         setRows(parsed.rows);
       })

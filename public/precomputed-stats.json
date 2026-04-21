@@ -1,0 +1,1152 @@
+{
+  "totalCases": 131660,
+  "totalModules": 477,
+  "uniqueIds": 131660,
+  "duplicatesRemoved": 6740,
+  "lastUpdated": 1776746956832,
+  "byPriority": [
+    {
+      "name": "High",
+      "value": 43662
+    },
+    {
+      "name": "Medium",
+      "value": 43604
+    },
+    {
+      "name": "Low",
+      "value": 44394
+    }
+  ],
+  "topPlatforms": [
+    {
+      "name": "Salesforce",
+      "value": 20520
+    },
+    {
+      "name": "SAP",
+      "value": 13000
+    },
+    {
+      "name": "Veeva",
+      "value": 12500
+    },
+    {
+      "name": "Workday",
+      "value": 11500
+    },
+    {
+      "name": "ServiceNow",
+      "value": 10000
+    },
+    {
+      "name": "SageIntacct",
+      "value": 1680
+    },
+    {
+      "name": "Odoo",
+      "value": 1540
+    },
+    {
+      "name": "InforCloudSuite",
+      "value": 1540
+    },
+    {
+      "name": "NetSuite",
+      "value": 1540
+    },
+    {
+      "name": "Asana",
+      "value": 1440
+    },
+    {
+      "name": "CyberArk",
+      "value": 1440
+    },
+    {
+      "name": "DocuSign",
+      "value": 1440
+    },
+    {
+      "name": "GoogleWorkspace",
+      "value": 1440
+    },
+    {
+      "name": "Medallia",
+      "value": 1440
+    },
+    {
+      "name": "Procore",
+      "value": 1440
+    },
+    {
+      "name": "PTCWindchill",
+      "value": 1440
+    },
+    {
+      "name": "QAD",
+      "value": 1440
+    },
+    {
+      "name": "Smartsheet",
+      "value": 1440
+    },
+    {
+      "name": "Zoho",
+      "value": 1440
+    },
+    {
+      "name": "Zoom",
+      "value": 1440
+    },
+    {
+      "name": "3DEXPERIENCE",
+      "value": 1440
+    },
+    {
+      "name": "AdobeExperienceCloud",
+      "value": 1440
+    },
+    {
+      "name": "ADPWorkforceNow",
+      "value": 1440
+    },
+    {
+      "name": "Anaplan",
+      "value": 1440
+    },
+    {
+      "name": "AutomationAnywhere",
+      "value": 1440
+    },
+    {
+      "name": "BlackLine",
+      "value": 1440
+    },
+    {
+      "name": "Coupa",
+      "value": 1440
+    },
+    {
+      "name": "CrowdStrike",
+      "value": 1440
+    },
+    {
+      "name": "Epicor",
+      "value": 1440
+    },
+    {
+      "name": "HubSpot",
+      "value": 1440
+    },
+    {
+      "name": "Jira",
+      "value": 1440
+    },
+    {
+      "name": "MuleSoft",
+      "value": 1440
+    },
+    {
+      "name": "Okta",
+      "value": 1440
+    },
+    {
+      "name": "PalantirFoundry",
+      "value": 1440
+    },
+    {
+      "name": "QlikSense",
+      "value": 1440
+    },
+    {
+      "name": "Qualtrics",
+      "value": 1440
+    },
+    {
+      "name": "RHEL",
+      "value": 1440
+    },
+    {
+      "name": "Snowflake",
+      "value": 1440
+    },
+    {
+      "name": "Splunk",
+      "value": 1440
+    },
+    {
+      "name": "Tableau",
+      "value": 1440
+    },
+    {
+      "name": "Teamcenter",
+      "value": 1440
+    },
+    {
+      "name": "UiPath",
+      "value": 1440
+    },
+    {
+      "name": "UKGPro",
+      "value": 1440
+    },
+    {
+      "name": "vSphere",
+      "value": 1440
+    },
+    {
+      "name": "Zendesk",
+      "value": 1440
+    },
+    {
+      "name": "Zscaler",
+      "value": 1200
+    },
+    {
+      "name": "Boomi",
+      "value": 1200
+    },
+    {
+      "name": "Datadog",
+      "value": 1200
+    },
+    {
+      "name": "IBMMaximo",
+      "value": 1200
+    },
+    {
+      "name": "Strata",
+      "value": 1200
+    }
+  ],
+  "bySource": {
+    "veeva": {
+      "label": "Veeva",
+      "total": 12500,
+      "modules": [
+        "Study Setup",
+        "Site Management",
+        "TMF",
+        "CTMS",
+        "eTMF",
+        "Enrollment",
+        "Monitoring",
+        "RIM",
+        "Submissions",
+        "Labels",
+        "Publishing",
+        "HA Correspondence",
+        "QMS",
+        "QualityDocs",
+        "Training",
+        "CAPA",
+        "Change Control",
+        "Audit Management",
+        "Complaints",
+        "MedComms",
+        "Medical Info",
+        "Approved Email",
+        "Content Management",
+        "MLR Review",
+        "Vault CRM",
+        "PromoMats",
+        "Sample Management",
+        "Call Reporting",
+        "Territory Management",
+        "Engage"
+      ],
+      "high": 4199,
+      "medium": 4127,
+      "low": 4174
+    },
+    "workday": {
+      "label": "Workday",
+      "total": 11500,
+      "modules": [
+        "Core HCM",
+        "Worker Profile",
+        "Job Requisition",
+        "Hiring",
+        "Onboarding",
+        "Time Tracking",
+        "Absence",
+        "Benefits",
+        "Compensation",
+        "Talent",
+        "Learning",
+        "Succession",
+        "Payroll Setup",
+        "Payroll Input",
+        "Payroll Calculation",
+        "Gross-to-Net",
+        "Tax",
+        "Year End",
+        "Payments",
+        "Retro",
+        "Requisition",
+        "Sourcing",
+        "Interview",
+        "Offer",
+        "Candidate Pipeline",
+        "Background Check",
+        "Supplier Invoice",
+        "Expense",
+        "Accounting",
+        "Budget",
+        "Journal",
+        "Asset Management",
+        "Procurement",
+        "Cash Management",
+        "EIB",
+        "Core Connector",
+        "Studio",
+        "API",
+        "Security",
+        "Error Handling",
+        "Reprocess",
+        "Reports",
+        "Dashboards",
+        "Prism Analytics",
+        "Advanced Reporting",
+        "Hire to Pay",
+        "Recruit to Hire",
+        "Procure to Pay",
+        "Order to Cash",
+        "Expense to Reimburse",
+        "Plan to Perform"
+      ],
+      "high": 3809,
+      "medium": 3797,
+      "low": 3894
+    },
+    "servicenow": {
+      "label": "ServiceNow",
+      "total": 10000,
+      "modules": [
+        "Incident",
+        "Problem",
+        "Change",
+        "Request",
+        "Catalog",
+        "Knowledge",
+        "SLA",
+        "CMDB",
+        "Service Desk",
+        "Major Incident",
+        "Event Management",
+        "Discovery",
+        "Service Mapping",
+        "Operational Intelligence",
+        "Cloud Management",
+        "Orchestration",
+        "Case",
+        "Customer Portal",
+        "Agent Workspace",
+        "Order Management",
+        "Entitlements",
+        "Surveys",
+        "HR Case",
+        "Employee Center",
+        "Onboarding",
+        "Offboarding",
+        "Lifecycle Events",
+        "Tasks"
+      ],
+      "high": 3231,
+      "medium": 3363,
+      "low": 3406
+    },
+    "asana": {
+      "label": "Asana",
+      "total": 1440,
+      "modules": [
+        "automation",
+        "forms",
+        "portfolios",
+        "projects",
+        "tasks",
+        "timeline"
+      ],
+      "high": 484,
+      "medium": 496,
+      "low": 460
+    },
+    "cyberark": {
+      "label": "CyberArk",
+      "total": 1440,
+      "modules": [
+        "conjur",
+        "ediscovery",
+        "privileged_access",
+        "rotation",
+        "session_management",
+        "vault"
+      ],
+      "high": 492,
+      "medium": 458,
+      "low": 490
+    },
+    "docusign": {
+      "label": "DocuSign",
+      "total": 1440,
+      "modules": [
+        "admin",
+        "clm",
+        "envelopes",
+        "routing",
+        "signing",
+        "templates"
+      ],
+      "high": 467,
+      "medium": 473,
+      "low": 500
+    },
+    "googleworkspace": {
+      "label": "GoogleWorkspace",
+      "total": 1440,
+      "modules": [
+        "admin",
+        "docs",
+        "drive",
+        "gmail",
+        "meet",
+        "sheets"
+      ],
+      "high": 467,
+      "medium": 494,
+      "low": 479
+    },
+    "medallia": {
+      "label": "Medallia",
+      "total": 1440,
+      "modules": [
+        "alerts",
+        "analytics",
+        "cases",
+        "journeys",
+        "listening",
+        "programs"
+      ],
+      "high": 446,
+      "medium": 524,
+      "low": 470
+    },
+    "odoo": {
+      "label": "Odoo",
+      "total": 1540,
+      "modules": [
+        "accounting",
+        "hr",
+        "inventory",
+        "manufacturing",
+        "purchase",
+        "sales",
+        "website"
+      ],
+      "high": 534,
+      "medium": 506,
+      "low": 500
+    },
+    "procore": {
+      "label": "Procore",
+      "total": 1440,
+      "modules": [
+        "financials",
+        "projects",
+        "quality",
+        "rfis",
+        "safety",
+        "submittals"
+      ],
+      "high": 488,
+      "medium": 450,
+      "low": 502
+    },
+    "ptcwindchill": {
+      "label": "PTCWindchill",
+      "total": 1440,
+      "modules": [
+        "bom",
+        "cad",
+        "change_mgmt",
+        "documents",
+        "plm",
+        "workflow"
+      ],
+      "high": 478,
+      "medium": 493,
+      "low": 469
+    },
+    "qad": {
+      "label": "QAD",
+      "total": 1440,
+      "modules": [
+        "finance",
+        "logistics",
+        "manufacturing",
+        "planning",
+        "quality",
+        "supply_chain"
+      ],
+      "high": 492,
+      "medium": 492,
+      "low": 456
+    },
+    "smartsheet": {
+      "label": "Smartsheet",
+      "total": 1440,
+      "modules": [
+        "automation",
+        "dashboards",
+        "forms",
+        "reports",
+        "resource_management",
+        "sheets"
+      ],
+      "high": 482,
+      "medium": 475,
+      "low": 483
+    },
+    "zoho": {
+      "label": "Zoho",
+      "total": 1440,
+      "modules": [
+        "books",
+        "creator",
+        "crm",
+        "desk",
+        "people",
+        "projects"
+      ],
+      "high": 502,
+      "medium": 444,
+      "low": 494
+    },
+    "zoom": {
+      "label": "Zoom",
+      "total": 1440,
+      "modules": [
+        "contact_center",
+        "meetings",
+        "phone",
+        "recordings",
+        "rooms",
+        "webinars"
+      ],
+      "high": 487,
+      "medium": 456,
+      "low": 497
+    },
+    "zscaler": {
+      "label": "Zscaler",
+      "total": 1200,
+      "modules": [
+        "dlp",
+        "internet_access",
+        "policy",
+        "private_access",
+        "sandbox"
+      ],
+      "high": 407,
+      "medium": 406,
+      "low": 387
+    },
+    "3dexperience": {
+      "label": "3DEXPERIENCE",
+      "total": 1440,
+      "modules": [
+        "cad",
+        "manufacturing",
+        "plm",
+        "quality",
+        "simulation",
+        "supply_chain"
+      ],
+      "high": 503,
+      "medium": 479,
+      "low": 458
+    },
+    "adobeexperiencecloud": {
+      "label": "AdobeExperienceCloud",
+      "total": 1440,
+      "modules": [
+        "aem",
+        "analytics",
+        "campaign",
+        "identity_service",
+        "journey_optimizer",
+        "target"
+      ],
+      "high": 492,
+      "medium": 525,
+      "low": 423
+    },
+    "adpworkforcenow": {
+      "label": "ADPWorkforceNow",
+      "total": 1440,
+      "modules": [
+        "benefits",
+        "core_hr",
+        "payroll",
+        "recruiting",
+        "talent",
+        "time"
+      ],
+      "high": 496,
+      "medium": 452,
+      "low": 492
+    },
+    "anaplan": {
+      "label": "Anaplan",
+      "total": 1440,
+      "modules": [
+        "access_control",
+        "forecasting",
+        "models",
+        "planning",
+        "sheets",
+        "workflow"
+      ],
+      "high": 508,
+      "medium": 447,
+      "low": 485
+    },
+    "automationanywhere": {
+      "label": "AutomationAnywhere",
+      "total": 1440,
+      "modules": [
+        "bots",
+        "control_room",
+        "documents",
+        "iq_bot",
+        "queues",
+        "runner"
+      ],
+      "high": 480,
+      "medium": 462,
+      "low": 498
+    },
+    "blackline": {
+      "label": "BlackLine",
+      "total": 1440,
+      "modules": [
+        "controls",
+        "journals",
+        "matching",
+        "reconciliations",
+        "tasks",
+        "variance"
+      ],
+      "high": 464,
+      "medium": 482,
+      "low": 494
+    },
+    "boomi": {
+      "label": "Boomi",
+      "total": 1200,
+      "modules": [
+        "api_management",
+        "atomsphere",
+        "integration_process",
+        "master_data",
+        "monitoring"
+      ],
+      "high": 410,
+      "medium": 376,
+      "low": 414
+    },
+    "coupa": {
+      "label": "Coupa",
+      "total": 1440,
+      "modules": [
+        "analytics",
+        "expenses",
+        "invoicing",
+        "procurement",
+        "sourcing",
+        "supplier_mgmt"
+      ],
+      "high": 472,
+      "medium": 512,
+      "low": 456
+    },
+    "crowdstrike": {
+      "label": "CrowdStrike",
+      "total": 1440,
+      "modules": [
+        "detection",
+        "endpoint",
+        "falcon_identity",
+        "hunt",
+        "prevention",
+        "sensor"
+      ],
+      "high": 487,
+      "medium": 479,
+      "low": 474
+    },
+    "datadog": {
+      "label": "Datadog",
+      "total": 1200,
+      "modules": [
+        "apm",
+        "infra",
+        "rum",
+        "security",
+        "synthetics"
+      ],
+      "high": 400,
+      "medium": 395,
+      "low": 405
+    },
+    "epicor": {
+      "label": "Epicor",
+      "total": 1440,
+      "modules": [
+        "crm",
+        "distribution",
+        "finance",
+        "manufacturing",
+        "quality",
+        "supply_chain"
+      ],
+      "high": 462,
+      "medium": 508,
+      "low": 470
+    },
+    "hubspot": {
+      "label": "HubSpot",
+      "total": 1440,
+      "modules": [
+        "cms",
+        "crm",
+        "marketing",
+        "operations",
+        "sales",
+        "service"
+      ],
+      "high": 478,
+      "medium": 483,
+      "low": 479
+    },
+    "ibmmaximo": {
+      "label": "IBMMaximo",
+      "total": 1200,
+      "modules": [
+        "asset_mgmt",
+        "inventory",
+        "predictive_maintenance",
+        "service_requests",
+        "work_management"
+      ],
+      "high": 397,
+      "medium": 414,
+      "low": 389
+    },
+    "inforcloudsuite": {
+      "label": "InforCloudSuite",
+      "total": 1540,
+      "modules": [
+        "assets",
+        "finance",
+        "hr",
+        "manufacturing",
+        "projects",
+        "quality",
+        "supply_chain"
+      ],
+      "high": 505,
+      "medium": 540,
+      "low": 495
+    },
+    "jira": {
+      "label": "Jira",
+      "total": 1440,
+      "modules": [
+        "agile",
+        "automation",
+        "boards",
+        "issues",
+        "projects",
+        "service_management"
+      ],
+      "high": 502,
+      "medium": 460,
+      "low": 478
+    },
+    "mulesoft": {
+      "label": "MuleSoft",
+      "total": 1440,
+      "modules": [
+        "api_manager",
+        "design_center",
+        "exchange",
+        "monitoring",
+        "raml",
+        "runtime_manager"
+      ],
+      "high": 497,
+      "medium": 500,
+      "low": 443
+    },
+    "netsuite": {
+      "label": "NetSuite",
+      "total": 1540,
+      "modules": [
+        "crm",
+        "financials",
+        "hcm",
+        "inventory",
+        "manufacturing",
+        "order_management",
+        "procurement"
+      ],
+      "high": 520,
+      "medium": 514,
+      "low": 506
+    },
+    "okta": {
+      "label": "Okta",
+      "total": 1440,
+      "modules": [
+        "access",
+        "api",
+        "directory",
+        "lifecycle",
+        "mfa",
+        "signin"
+      ],
+      "high": 489,
+      "medium": 478,
+      "low": 473
+    },
+    "palantirfoundry": {
+      "label": "PalantirFoundry",
+      "total": 1440,
+      "modules": [
+        "analytics",
+        "data_integration",
+        "ontology",
+        "pipelines",
+        "security",
+        "workflow"
+      ],
+      "high": 523,
+      "medium": 457,
+      "low": 460
+    },
+    "qliksense": {
+      "label": "QlikSense",
+      "total": 1440,
+      "modules": [
+        "apps",
+        "automation",
+        "data_load",
+        "governance",
+        "security",
+        "visualizations"
+      ],
+      "high": 506,
+      "medium": 474,
+      "low": 460
+    },
+    "qualtrics": {
+      "label": "Qualtrics",
+      "total": 1440,
+      "modules": [
+        "actions",
+        "analytics",
+        "dashboards",
+        "distribution",
+        "surveys",
+        "xm_programs"
+      ],
+      "high": 451,
+      "medium": 493,
+      "low": 496
+    },
+    "rhel": {
+      "label": "RHEL",
+      "total": 1440,
+      "modules": [
+        "networking",
+        "package_mgmt",
+        "security",
+        "services",
+        "storage",
+        "subscription"
+      ],
+      "high": 485,
+      "medium": 481,
+      "low": 474
+    },
+    "sageintacct": {
+      "label": "SageIntacct",
+      "total": 1680,
+      "modules": [
+        "ap",
+        "ar",
+        "cash",
+        "general_ledger",
+        "projects",
+        "reporting",
+        "subscriptions"
+      ],
+      "high": 546,
+      "medium": 558,
+      "low": 576
+    },
+    "snowflake": {
+      "label": "Snowflake",
+      "total": 1440,
+      "modules": [
+        "access_control",
+        "data_warehouse",
+        "governance",
+        "pipelines",
+        "sharing",
+        "storage"
+      ],
+      "high": 482,
+      "medium": 480,
+      "low": 478
+    },
+    "splunk": {
+      "label": "Splunk",
+      "total": 1440,
+      "modules": [
+        "alerts",
+        "dashboards",
+        "observability",
+        "reports",
+        "search",
+        "siem"
+      ],
+      "high": 488,
+      "medium": 471,
+      "low": 481
+    },
+    "strata": {
+      "label": "Strata",
+      "total": 1200,
+      "modules": [
+        "firewall",
+        "policy",
+        "threat_prevention",
+        "url_filtering",
+        "vpn"
+      ],
+      "high": 409,
+      "medium": 399,
+      "low": 392
+    },
+    "tableau": {
+      "label": "Tableau",
+      "total": 1440,
+      "modules": [
+        "dashboards",
+        "data_sources",
+        "extracts",
+        "permissions",
+        "prep",
+        "server"
+      ],
+      "high": 476,
+      "medium": 488,
+      "low": 476
+    },
+    "teamcenter": {
+      "label": "Teamcenter",
+      "total": 1440,
+      "modules": [
+        "bom",
+        "change_mgmt",
+        "documentation",
+        "plm",
+        "requirements",
+        "workflow"
+      ],
+      "high": 475,
+      "medium": 486,
+      "low": 479
+    },
+    "uipath": {
+      "label": "UiPath",
+      "total": 1440,
+      "modules": [
+        "assets",
+        "attended",
+        "orchestrator",
+        "queues",
+        "studio",
+        "unattended"
+      ],
+      "high": 486,
+      "medium": 471,
+      "low": 483
+    },
+    "ukgpro": {
+      "label": "UKGPro",
+      "total": 1440,
+      "modules": [
+        "benefits",
+        "core_hr",
+        "payroll",
+        "talent",
+        "timekeeping",
+        "workforce_management"
+      ],
+      "high": 466,
+      "medium": 511,
+      "low": 463
+    },
+    "vsphere": {
+      "label": "vSphere",
+      "total": 1440,
+      "modules": [
+        "cluster",
+        "drs",
+        "ha",
+        "network",
+        "storage",
+        "vm"
+      ],
+      "high": 511,
+      "medium": 477,
+      "low": 452
+    },
+    "zendesk": {
+      "label": "Zendesk",
+      "total": 1440,
+      "modules": [
+        "chat",
+        "explore",
+        "guide",
+        "help_center",
+        "talk",
+        "tickets"
+      ],
+      "high": 460,
+      "medium": 495,
+      "low": 485
+    },
+    "salesforce": {
+      "label": "Salesforce",
+      "total": 20520,
+      "modules": [
+        "Lead",
+        "Opportunity",
+        "Account",
+        "Contact",
+        "Campaign",
+        "Quote",
+        "Order",
+        "Pricebook",
+        "Product",
+        "Forecast",
+        "Journey Builder",
+        "Email Studio",
+        "Mobile Studio",
+        "Advertising Studio",
+        "Automation Studio",
+        "Content Builder",
+        "Audience Builder",
+        "Personalization",
+        "Marketing Cloud Connect",
+        "Consent Management",
+        "Patient 360",
+        "Person Account",
+        "Care Plan",
+        "Care Team",
+        "Clinical Case",
+        "Referral",
+        "Intake & Routing",
+        "Provider Network",
+        "Social Determinants",
+        "Household",
+        "Financial Account",
+        "Actionable Relationship Center",
+        "Relationship Group",
+        "Client Onboarding",
+        "KYC/AML",
+        "Wealth Management",
+        "Investment Account",
+        "Loan Application",
+        "Insurance Policy",
+        "Claims Processing",
+        "Compliance Workflow",
+        "Audit Trail",
+        "Rollup Summary",
+        "Financial Goal",
+        "Portfolio Management",
+        "Risk Assessment",
+        "Cross‑Sell Opportunity"
+      ],
+      "high": 6919,
+      "medium": 6910,
+      "low": 6691
+    },
+    "sap": {
+      "label": "SAP",
+      "total": 13000,
+      "modules": [
+        "Cost Center",
+        "Internal Orders",
+        "Product Costing",
+        "COPA",
+        "Profit Center",
+        "Planning",
+        "GL",
+        "AR",
+        "AP",
+        "AA",
+        "Cash Management",
+        "Treasury",
+        "Closing",
+        "Personnel Admin",
+        "Time Mgmt",
+        "Payroll",
+        "Org Mgmt",
+        "Recruitment",
+        "Training",
+        "Purchasing",
+        "Inventory",
+        "LIV",
+        "Service Procurement",
+        "Vendor Master",
+        "MRP",
+        "Core",
+        "Maintenance Order",
+        "Notification",
+        "Preventive Maintenance",
+        "Breakdown",
+        "Production Order",
+        "Capacity",
+        "Shop Floor",
+        "Project Definition",
+        "WBS",
+        "Networks",
+        "Billing",
+        "Settlement",
+        "Inspection Lot",
+        "Usage Decision",
+        "Quality Notification",
+        "Certificate",
+        "Demand Planning",
+        "Supply Planning",
+        "ATP",
+        "Warehouse",
+        "Transportation",
+        "Sales Order",
+        "Pricing",
+        "Delivery",
+        "Returns",
+        "Credit Management"
+      ],
+      "high": 3952,
+      "medium": 3993,
+      "low": 5055
+    }
+  }
+}

@@ -1,7 +1,7 @@
-import { useEffect, useState, FormEvent } from "react";
+import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
-import { Search, ArrowRight, Sparkles, Package, Layers, FileCode2, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock } from "lucide-react";
 import {
   PRODUCT_CATALOG,
   TOTAL_PRODUCTS,
@@ -13,17 +13,144 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import {
-  PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
-  BarChart, Bar, XAxis, YAxis, CartesianGrid,
+  ResponsiveContainer, Tooltip, Cell,
+  BarChart, Bar, XAxis, YAxis,
+  Treemap,
 } from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
-import { GlobalCaseBrowser } from "@/components/GlobalCaseBrowser";
+import { ProductLogo } from "@/components/ProductLogo";
+
+// Defer the heavy global browser — its first render builds the entire index.
+const GlobalCaseBrowser = lazy(() =>
+  import("@/components/GlobalCaseBrowser").then((m) => ({ default: m.GlobalCaseBrowser })),
+);
 
 const PRIORITY_COLORS: Record<string, string> = {
   High: "hsl(var(--destructive))",
   Medium: "hsl(var(--primary))",
   Low: "hsl(var(--muted-foreground))",
+};
+
+/**
+ * Vivid, evenly-spaced hues used to colour heatmap tiles. We sweep around the
+ * colour wheel so neighbouring tiles always contrast, then modulate lightness
+ * by rank so the densest tile still feels "hottest". Picked to stay legible
+ * on both the dark default theme and the new light mode.
+ */
+const HEATMAP_HUES = [
+  12, 28, 45, 95, 140, 165, 190, 210, 235, 260, 285, 310, 330, 355,
+];
+
+const tileColor = (index: number, total: number) => {
+  const hue = HEATMAP_HUES[index % HEATMAP_HUES.length];
+  const t = total > 1 ? index / (total - 1) : 0;
+  const saturation = Math.round(78 - t * 18); // 78 → 60
+  const lightness = Math.round(58 + t * 10); // 58 → 68 — bright enough that dark text stays legible
+  return `hsl(${hue} ${saturation}% ${lightness}%)`;
+};
+
+/**
+ * Custom Treemap tile that renders the platform name and case count directly
+ * inside each rectangle, using a distinct vivid colour per tile so the chart
+ * reads as a true multi-colour heatmap. Recharts injects all geometry props
+ * (x, y, width, height, name, value, index) at render time.
+ */
+interface HeatmapTileProps {
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+  name?: string;
+  value?: number;
+  index?: number;
+  total: number;
+}
+
+const HeatmapTile = (props: HeatmapTileProps) => {
+  const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, index = 0, total } = props;
+  if (width <= 0 || height <= 0) return null;
+  const fill = tileColor(index, total);
+  const showLabel = width > 50 && height > 30;
+  const showValue = width > 70 && height > 50;
+  const maxChars = Math.max(3, Math.floor(width / 7));
+  const label = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
+
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        fill={fill}
+        stroke="hsl(var(--background))"
+        strokeWidth={2}
+      />
+      {showLabel && (
+        <text
+          x={x + width / 2}
+          y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
+          textAnchor="middle"
+          fontSize={Math.min(13, Math.max(10, width / 10))}
+          fontWeight={700}
+          fill="#0b0f1a"
+          style={{ pointerEvents: "none" }}
+        >
+          {label}
+        </text>
+      )}
+      {showValue && (
+        <text
+          x={x + width / 2}
+          y={y + height / 2 + 12}
+          textAnchor="middle"
+          fontSize={11}
+          fontFamily="JetBrains Mono, monospace"
+          fontWeight={600}
+          fill="#0b0f1a"
+          style={{ pointerEvents: "none" }}
+        >
+          {value.toLocaleString()}
+        </text>
+      )}
+    </g>
+  );
+};
+
+/**
+ * Recharts' default Tooltip renders nothing useful for Treemap, so we ship a
+ * custom popover that always shows the full platform name + case count. This
+ * makes hover legible even when the tile itself is too narrow for a label.
+ */
+interface HeatmapTooltipProps {
+  active?: boolean;
+  payload?: Array<{ payload?: { name?: string; value?: number } }>;
+}
+
+const HeatmapTooltip = ({ active, payload }: HeatmapTooltipProps) => {
+  if (!active || !payload || payload.length === 0) return null;
+  const data = payload[0]?.payload;
+  if (!data?.name) return null;
+  return (
+    <div
+      className="rounded-md border border-border px-3 py-2 shadow-lg"
+      style={{
+        background: "hsl(var(--popover))",
+        color: "hsl(var(--popover-foreground))",
+      }}
+    >
+      <div className="text-sm font-semibold" style={{ color: "hsl(var(--popover-foreground))" }}>
+        {data.name}
+      </div>
+      <div
+        className="text-xs font-mono mt-0.5"
+        style={{ color: "hsl(var(--muted-foreground))" }}
+      >
+        {(data.value ?? 0).toLocaleString()} cases
+      </div>
+    </div>
+  );
 };
 
 const Dashboard = () => {
@@ -61,26 +188,18 @@ const Dashboard = () => {
     toast.error(`Unknown ID "${id}". Try SF-HC-00005, SAP-FI-001, WD-PAY-042…`);
   };
 
+  // Compact stats row — duplicates-removed + loaded-platforms cards were
+  // dropped per dashboard cleanup; kept the four metrics that matter most.
   const stats = [
     { label: "Platforms", value: TOTAL_PRODUCTS, icon: Package },
     { label: "Modules", value: TOTAL_MODULES, icon: Layers },
     {
-      label: "Unique test IDs",
+      label: "Unique test cases",
       value: globalStats ? globalStats.uniqueIds.toLocaleString() : "…",
       icon: Fingerprint,
     },
     {
-      label: "Live test cases",
-      value: globalStats ? globalStats.totalCases.toLocaleString() : "…",
-      icon: Database,
-    },
-    {
-      label: "Duplicates removed",
-      value: globalStats ? globalStats.duplicatesRemoved.toLocaleString() : "…",
-      icon: Copy,
-    },
-    {
-      label: "Index updated",
+      label: "Last updated",
       value: globalStats ? new Date(globalStats.lastUpdated).toLocaleTimeString() : "…",
       icon: Clock,
     },
@@ -100,7 +219,7 @@ const Dashboard = () => {
     <>
       <SeoHead
         title="Dashboard · TestForge AI Enterprise Test Hub"
-        description="Master dashboard for 15 enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, AWS, GCP, Azure, iOS, Android and more."
+        description={`Master dashboard for ${TOTAL_PRODUCTS}+ enterprise test platforms — SAP, Salesforce, Workday, ServiceNow, Veeva, Dynamics 365, Oracle, Snowflake, Datadog, Jira and more.`}
         canonical="/dashboard"
       />
 
@@ -116,27 +235,37 @@ const Dashboard = () => {
         </header>
 
         {/* Stats */}
-        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+        <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-8">
           {stats.map((s) => (
-            <Card key={s.label} className="p-4 bg-card border-border flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+            <Card
+              key={s.label}
+              className="p-3 sm:p-4 bg-card border-border flex items-center gap-2 sm:gap-3 min-w-0"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
                 <s.icon className="w-4 h-4 text-primary" />
               </div>
-              <div className="min-w-0">
-                <div className="text-lg font-bold text-foreground truncate">
+              <div className="min-w-0 flex-1">
+                <div
+                  className="font-bold text-foreground leading-tight break-words"
+                  style={{ fontSize: "clamp(0.95rem, 1.6vw, 1.25rem)" }}
+                  title={typeof s.value === "string" ? s.value : String(s.value)}
+                >
                   {s.value}
                 </div>
-                <div className="text-[10px] text-muted-foreground uppercase tracking-wider">{s.label}</div>
+                <div className="text-[10px] sm:text-[11px] text-muted-foreground uppercase tracking-wider mt-0.5 leading-tight break-words">
+                  {s.label}
+                </div>
               </div>
             </Card>
           ))}
         </section>
 
-        {/* Live charts */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10">
-          <Card className="p-5 bg-card border-border">
+        {/* Live charts — priority (compact horizontal bar) + platforms (heatmap treemap) */}
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-10">
+          {/* Priority — small horizontal bar chart */}
+          <Card className="p-5 bg-card border-border lg:col-span-1">
             <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-              Cases by priority (all platforms)
+              Cases by priority
             </h2>
             <div className="h-56">
               {statsLoading ? (
@@ -145,21 +274,24 @@ const Dashboard = () => {
                 </div>
               ) : globalStats && globalStats.byPriority.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={globalStats.byPriority}
-                      dataKey="value"
-                      nameKey="name"
-                      innerRadius={45}
-                      outerRadius={80}
-                      paddingAngle={2}
-                      label={(e) => `${e.name}: ${e.value.toLocaleString()}`}
-                    >
-                      {globalStats.byPriority.map((d) => (
-                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
-                      ))}
-                    </Pie>
+                  <BarChart
+                    data={globalStats.byPriority}
+                    layout="vertical"
+                    margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
+                    barCategoryGap={12}
+                  >
+                    <XAxis type="number" hide />
+                    <YAxis
+                      type="category"
+                      dataKey="name"
+                      tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 600 }}
+                      width={70}
+                      axisLine={false}
+                      tickLine={false}
+                    />
                     <Tooltip
+                      cursor={{ fill: "hsl(var(--muted) / 0.3)" }}
+                      formatter={(v: number) => v.toLocaleString()}
                       contentStyle={{
                         background: "hsl(var(--card))",
                         border: "1px solid hsl(var(--border))",
@@ -167,7 +299,21 @@ const Dashboard = () => {
                         fontSize: 12,
                       }}
                     />
-                  </PieChart>
+                    <Bar
+                      dataKey="value"
+                      radius={[0, 6, 6, 0]}
+                      label={{
+                        position: "right",
+                        fill: "hsl(var(--foreground))",
+                        fontSize: 11,
+                        formatter: (v: number) => v.toLocaleString(),
+                      }}
+                    >
+                      {globalStats.byPriority.map((d) => (
+                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
+                      ))}
+                    </Bar>
+                  </BarChart>
                 </ResponsiveContainer>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
@@ -177,31 +323,35 @@ const Dashboard = () => {
             </div>
           </Card>
 
-          <Card className="p-5 bg-card border-border">
-            <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-              Top platforms by case volume
-            </h2>
-            <div className="h-56">
+          {/* Top platforms — heatmap-style treemap */}
+          <Card className="p-5 bg-card border-border lg:col-span-2">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+                Top platforms by case volume
+              </h2>
+              {globalStats && (
+                <span className="text-[10px] font-mono text-muted-foreground">
+                  {globalStats.topPlatforms.length} platforms · larger tile = more cases
+                </span>
+              )}
+            </div>
+            <div className="h-72 sm:h-80">
               {statsLoading ? (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
               ) : globalStats && globalStats.topPlatforms.length > 0 ? (
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={globalStats.topPlatforms} margin={{ top: 5, right: 10, left: -10, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                    <XAxis dataKey="name" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
-                    <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
-                    <Tooltip
-                      contentStyle={{
-                        background: "hsl(var(--card))",
-                        border: "1px solid hsl(var(--border))",
-                        borderRadius: 8,
-                        fontSize: 12,
-                      }}
-                    />
-                    <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-                  </BarChart>
+                  <Treemap
+                    data={globalStats.topPlatforms}
+                    dataKey="value"
+                    nameKey="name"
+                    stroke="hsl(var(--background))"
+                    content={<HeatmapTile total={globalStats.topPlatforms.length} />}
+                    isAnimationActive={false}
+                  >
+                    <Tooltip content={<HeatmapTooltip />} />
+                  </Treemap>
                 </ResponsiveContainer>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
@@ -237,15 +387,8 @@ const Dashboard = () => {
           </Card>
         </section>
 
-        {/* Global search */}
-        <section className="mb-10">
-          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
-            <Search className="w-4 h-4 text-primary" /> Search every product
-          </h2>
-          <GlobalCaseBrowser />
-        </section>
+        {/* Quick links — moved up so search can sit at the very bottom */}
 
-        {/* Quick links */}
         <section className="mb-10">
           <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">Quick links</h2>
           <div className="flex flex-wrap gap-2">
@@ -271,16 +414,22 @@ const Dashboard = () => {
                 <Card
                   className={`p-5 bg-card border-2 transition-all h-full flex flex-col ${ACCENT_CLASSES[p.accent]}`}
                 >
-                  <div className="flex items-start justify-between mb-2">
-                    <h3
-                      className="text-lg font-semibold text-foreground"
-                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                    >
-                      {p.label}
-                    </h3>
-                    <span className="text-[10px] font-mono text-muted-foreground bg-muted/40 px-1.5 py-0.5 rounded">
-                      {p.modules.length} mods
-                    </span>
+                  <div className="flex items-start gap-3 mb-2">
+                    <ProductLogo productKey={p.key} label={p.label} size={44} />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2">
+                        <h3
+                          className="text-lg font-semibold text-foreground leading-tight truncate"
+                          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                          title={p.label}
+                        >
+                          {p.label}
+                        </h3>
+                        <span className="text-[10px] font-mono text-muted-foreground bg-muted/40 px-1.5 py-0.5 rounded shrink-0">
+                          {p.modules.length} mods
+                        </span>
+                      </div>
+                    </div>
                   </div>
                   <p className="text-xs text-muted-foreground mb-3 flex-1">{p.description}</p>
                   <div className="flex flex-wrap gap-1 mb-3">
@@ -309,6 +458,22 @@ const Dashboard = () => {
               );
             })}
           </div>
+        </section>
+
+        {/* Global search — moved below the product grid per dashboard layout request */}
+        <section className="mt-10">
+          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
+            <Search className="w-4 h-4 text-primary" /> Search every product
+          </h2>
+          <Suspense
+            fallback={
+              <div className="rounded-xl border border-border bg-card p-12 flex items-center justify-center text-sm text-muted-foreground">
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Preparing search…
+              </div>
+            }
+          >
+            <GlobalCaseBrowser />
+          </Suspense>
         </section>
       </div>
     </>

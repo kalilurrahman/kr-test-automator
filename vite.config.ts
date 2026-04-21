@@ -1,9 +1,31 @@
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import { spawnSync } from "node:child_process";
 import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
 import { viteStaticCopy } from "vite-plugin-static-copy";
+
+/**
+ * Runs scripts/build_precomputed_stats.mjs before each build so the Dashboard
+ * loads its global stats from a tiny static JSON instead of fetching ~140 CSVs
+ * at runtime. Failures are non-fatal — the runtime falls back to live scans.
+ */
+function precomputeStatsPlugin(): Plugin {
+  return {
+    name: "precompute-stats",
+    apply: "build",
+    buildStart() {
+      const r = spawnSync("node", ["scripts/build_precomputed_stats.mjs"], {
+        stdio: "inherit",
+        cwd: __dirname,
+      });
+      if (r.status !== 0) {
+        this.warn("Precompute stats script failed — runtime falls back to live CSV scan.");
+      }
+    },
+  };
+}
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -15,6 +37,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [
+    precomputeStatsPlugin(),
     react(),
     mode === "development" && componentTagger(),
     viteStaticCopy({
@@ -47,6 +70,38 @@ export default defineConfig(({ mode }) => ({
         { src: 'Zoho/*', dest: 'Zoho' },
         { src: 'Zoom/*', dest: 'Zoom' },
         { src: 'Zscaler/*', dest: 'Zscaler' },
+        { src: '3DEXPERIENCE/*', dest: '3DEXPERIENCE' },
+        { src: 'AdobeExperienceCloud/*', dest: 'AdobeExperienceCloud' },
+        { src: 'ADPWorkforceNow/*', dest: 'ADPWorkforceNow' },
+        { src: 'Anaplan/*', dest: 'Anaplan' },
+        { src: 'AutomationAnywhere/*', dest: 'AutomationAnywhere' },
+        { src: 'BlackLine/*', dest: 'BlackLine' },
+        { src: 'Boomi/*', dest: 'Boomi' },
+        { src: 'Coupa/*', dest: 'Coupa' },
+        { src: 'CrowdStrike/*', dest: 'CrowdStrike' },
+        { src: 'Datadog/*', dest: 'Datadog' },
+        { src: 'Epicor/*', dest: 'Epicor' },
+        { src: 'HubSpot/*', dest: 'HubSpot' },
+        { src: 'IBMMaximo/*', dest: 'IBMMaximo' },
+        { src: 'InforCloudSuite/*', dest: 'InforCloudSuite' },
+        { src: 'Jira/*', dest: 'Jira' },
+        { src: 'MuleSoft/*', dest: 'MuleSoft' },
+        { src: 'NetSuite/*', dest: 'NetSuite' },
+        { src: 'Okta/*', dest: 'Okta' },
+        { src: 'PalantirFoundry/*', dest: 'PalantirFoundry' },
+        { src: 'QlikSense/*', dest: 'QlikSense' },
+        { src: 'Qualtrics/*', dest: 'Qualtrics' },
+        { src: 'RHEL/*', dest: 'RHEL' },
+        { src: 'SageIntacct/*', dest: 'SageIntacct' },
+        { src: 'Snowflake/*', dest: 'Snowflake' },
+        { src: 'Splunk/*', dest: 'Splunk' },
+        { src: 'Strata/*', dest: 'Strata' },
+        { src: 'Tableau/*', dest: 'Tableau' },
+        { src: 'Teamcenter/*', dest: 'Teamcenter' },
+        { src: 'UiPath/*', dest: 'UiPath' },
+        { src: 'UKGPro/*', dest: 'UKGPro' },
+        { src: 'vSphere/*', dest: 'vSphere' },
+        { src: 'Zendesk/*', dest: 'Zendesk' },
       ]
     }),
     VitePWA({
