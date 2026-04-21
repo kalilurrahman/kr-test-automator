@@ -204,33 +204,26 @@ async function build(): Promise<GlobalIndex> {
   // ---- 2. Salesforce clouds (parse each CSV) -------------------------------
   await Promise.all(
     SALESFORCE_CLOUDS.map(async (cloud) => {
-      try {
-        const res = await fetch(cloud.csv);
-        if (!res.ok) return;
-        const text = await res.text();
-        if (text.trimStart().startsWith("<")) return;
-        const { rows } = parseCsvAsObjects(text);
-        for (const r of rows) {
-          const id = pick(r, ["Test Case ID", "id", "ID"]);
-          if (!id) continue;
-          tryAdd({
-            id,
-            source: "salesforce",
-            sourceLabel: "Salesforce",
-            module: cloud.name,
-            scenario: pick(r, ["Test Scenario", "Scenario"]),
-            priority: pick(r, ["Priority"]),
-            testType: pick(r, ["Test Type", "Type"]),
-            preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
-            steps: pick(r, ["Steps"]),
-            expected: pick(r, ["Expected Result", "Expected"]),
-            productRoute: "/salesforce",
-            moduleId: cloud.id,
-            raw: r,
-          });
-        }
-      } catch {
-        // ignore per-cloud failures
+      const parsed = await getCachedCsv(cloud.csv);
+      if (!parsed) return;
+      for (const r of parsed.rows) {
+        const id = pick(r, ["Test Case ID", "id", "ID"]);
+        if (!id) continue;
+        tryAdd({
+          id,
+          source: "salesforce",
+          sourceLabel: "Salesforce",
+          module: cloud.name,
+          scenario: pick(r, ["Test Scenario", "Scenario"]),
+          priority: pick(r, ["Priority"]),
+          testType: pick(r, ["Test Type", "Type"]),
+          preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
+          steps: pick(r, ["Steps"]),
+          expected: pick(r, ["Expected Result", "Expected"]),
+          productRoute: "/salesforce",
+          moduleId: cloud.id,
+          raw: r,
+        });
       }
     }),
   );
@@ -241,33 +234,26 @@ async function build(): Promise<GlobalIndex> {
       await Promise.all(
         p.modules.map(async (mod) => {
           const url = `${p.publicBase}/${mod.folder}/${mod.prefix}.csv`;
-          try {
-            const res = await fetch(url);
-            if (!res.ok) return;
-            const text = await res.text();
-            if (text.trimStart().startsWith("<")) return;
-            const { rows } = parseCsvAsObjects(text);
-            for (const r of rows) {
-              const id = pick(r, ["Test Case ID", "id", "ID", "Case ID"]);
-              if (!id) continue;
-              tryAdd({
-                id,
-                source: p.id,
-                sourceLabel: p.label,
-                module: pick(r, ["Module", "Domain"]) || mod.label,
-                scenario: pick(r, ["Test Scenario", "Scenario", "scenario"]),
-                priority: pick(r, ["Priority", "priority"]),
-                testType: pick(r, ["Test Type", "Type", "type"]),
-                preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
-                steps: pick(r, ["Steps", "steps"]),
-                expected: pick(r, ["Expected Result", "Expected"]),
-                productRoute: `/p/${p.id}`,
-                moduleId: mod.id,
-                raw: r,
-              });
-            }
-          } catch {
-            // ignore
+          const parsed = await getCachedCsv(url);
+          if (!parsed) return;
+          for (const r of parsed.rows) {
+            const id = pick(r, ["Test Case ID", "id", "ID", "Case ID"]);
+            if (!id) continue;
+            tryAdd({
+              id,
+              source: p.id,
+              sourceLabel: p.label,
+              module: pick(r, ["Module", "Domain"]) || mod.label,
+              scenario: pick(r, ["Test Scenario", "Scenario", "scenario"]),
+              priority: pick(r, ["Priority", "priority"]),
+              testType: pick(r, ["Test Type", "Type", "type"]),
+              preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
+              steps: pick(r, ["Steps", "steps"]),
+              expected: pick(r, ["Expected Result", "Expected"]),
+              productRoute: `/p/${p.id}`,
+              moduleId: mod.id,
+              raw: r,
+            });
           }
         }),
       );
