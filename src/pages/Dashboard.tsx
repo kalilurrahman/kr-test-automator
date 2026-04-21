@@ -340,6 +340,22 @@ const Dashboard = () => {
             })}
           </div>
         </section>
+
+        {/* Global search — moved below the product grid per dashboard layout request */}
+        <section className="mt-10">
+          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
+            <Search className="w-4 h-4 text-primary" /> Search every product
+          </h2>
+          <Suspense
+            fallback={
+              <div className="rounded-xl border border-border bg-card p-12 flex items-center justify-center text-sm text-muted-foreground">
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Preparing search…
+              </div>
+            }
+          >
+            <GlobalCaseBrowser />
+          </Suspense>
+        </section>
       </div>
     </>
   );
