@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "listening",
+      "path": "/Medallia/listening/index.html"
+    },
+    {
+      "key": "journeys",
+      "path": "/Medallia/journeys/index.html"
+    },
+    {
+      "key": "analytics",
+      "path": "/Medallia/analytics/index.html"
+    },
+    {
+      "key": "alerts",
+      "path": "/Medallia/alerts/index.html"
+    },
+    {
+      "key": "cases",
+      "path": "/Medallia/cases/index.html"
+    },
+    {
+      "key": "programs",
+      "path": "/Medallia/programs/index.html"
+    }
+  ]
+}

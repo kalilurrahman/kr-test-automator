@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "projects",
+      "path": "/Asana/projects/index.html"
+    },
+    {
+      "key": "tasks",
+      "path": "/Asana/tasks/index.html"
+    },
+    {
+      "key": "timeline",
+      "path": "/Asana/timeline/index.html"
+    },
+    {
+      "key": "portfolios",
+      "path": "/Asana/portfolios/index.html"
+    },
+    {
+      "key": "forms",
+      "path": "/Asana/forms/index.html"
+    },
+    {
+      "key": "automation",
+      "path": "/Asana/automation/index.html"
+    }
+  ]
+}

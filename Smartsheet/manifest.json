@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "sheets",
+      "path": "/Smartsheet/sheets/index.html"
+    },
+    {
+      "key": "forms",
+      "path": "/Smartsheet/forms/index.html"
+    },
+    {
+      "key": "reports",
+      "path": "/Smartsheet/reports/index.html"
+    },
+    {
+      "key": "dashboards",
+      "path": "/Smartsheet/dashboards/index.html"
+    },
+    {
+      "key": "automation",
+      "path": "/Smartsheet/automation/index.html"
+    },
+    {
+      "key": "resource_management",
+      "path": "/Smartsheet/resource_management/index.html"
+    }
+  ]
+}

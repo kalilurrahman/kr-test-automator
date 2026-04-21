@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "manufacturing",
+      "path": "/QAD/manufacturing/index.html"
+    },
+    {
+      "key": "supply_chain",
+      "path": "/QAD/supply_chain/index.html"
+    },
+    {
+      "key": "finance",
+      "path": "/QAD/finance/index.html"
+    },
+    {
+      "key": "quality",
+      "path": "/QAD/quality/index.html"
+    },
+    {
+      "key": "logistics",
+      "path": "/QAD/logistics/index.html"
+    },
+    {
+      "key": "planning",
+      "path": "/QAD/planning/index.html"
+    }
+  ]
+}

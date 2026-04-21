@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "internet_access",
+      "path": "/Zscaler/internet_access/index.html"
+    },
+    {
+      "key": "private_access",
+      "path": "/Zscaler/private_access/index.html"
+    },
+    {
+      "key": "dlp",
+      "path": "/Zscaler/dlp/index.html"
+    },
+    {
+      "key": "sandbox",
+      "path": "/Zscaler/sandbox/index.html"
+    },
+    {
+      "key": "policy",
+      "path": "/Zscaler/policy/index.html"
+    },
+    {
+      "key": "logs",
+      "path": "/Zscaler/logs/index.html"
+    }
+  ]
+}

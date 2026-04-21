@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "gmail",
+      "path": "/GoogleWorkspace/gmail/index.html"
+    },
+    {
+      "key": "drive",
+      "path": "/GoogleWorkspace/drive/index.html"
+    },
+    {
+      "key": "docs",
+      "path": "/GoogleWorkspace/docs/index.html"
+    },
+    {
+      "key": "sheets",
+      "path": "/GoogleWorkspace/sheets/index.html"
+    },
+    {
+      "key": "meet",
+      "path": "/GoogleWorkspace/meet/index.html"
+    },
+    {
+      "key": "admin",
+      "path": "/GoogleWorkspace/admin/index.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "key": "crm",
+      "path": "/Zoho/crm/index.html"
+    },
+    {
+      "key": "books",
+      "path": "/Zoho/books/index.html"
+    },
+    {
+      "key": "projects",
+      "path": "/Zoho/projects/index.html"
+    },
+    {
+      "key": "desk",
+      "path": "/Zoho/desk/index.html"
+    },
+    {
+      "key": "creator",
+      "path": "/Zoho/creator/index.html"
+    },
+    {
+      "key": "people",
+      "path": "/Zoho/people/index.html"
+    }
+  ]
+}
