@@ -1,37 +1,12 @@
 {
   "routes": [
-    {
-      "key": "sales",
-      "path": "/Dynamics365/sales/index.html"
-    },
-    {
-      "key": "customer_service",
-      "path": "/Dynamics365/customer_service/index.html"
-    },
-    {
-      "key": "finance",
-      "path": "/Dynamics365/finance/index.html"
-    },
-    {
-      "key": "supply_chain",
-      "path": "/Dynamics365/supply_chain/index.html"
-    },
-    {
-      "key": "project_ops",
-      "path": "/Dynamics365/project_ops/index.html"
-    },
-    {
-<<<<<<< Updated upstream
-      "key": "m365",
-      "path": "/Dynamics365/m365/index.html"
-    },
-    {
-      "key": "marketing",
-      "path": "/Dynamics365/marketing/index.html"
-=======
-      "key": "field_service",
-      "path": "/Dynamics365/field_service/index.html"
->>>>>>> Stashed changes
-    }
+    { "key": "sales", "path": "/Dynamics365/sales/index.html" },
+    { "key": "customer_service", "path": "/Dynamics365/customer_service/index.html" },
+    { "key": "finance", "path": "/Dynamics365/finance/index.html" },
+    { "key": "supply_chain", "path": "/Dynamics365/supply_chain/index.html" },
+    { "key": "project_ops", "path": "/Dynamics365/project_ops/index.html" },
+    { "key": "m365", "path": "/Dynamics365/m365/index.html" },
+    { "key": "marketing", "path": "/Dynamics365/marketing/index.html" },
+    { "key": "field_service", "path": "/Dynamics365/field_service/index.html" }
   ]
 }

@@ -1,19 +1,9 @@
 {
   "routes": [
-    {
-      "itsm": "/ServiceNow/itsm/index.html"
-    },
-    {
-      "itom": "/ServiceNow/itom/index.html"
-    },
-    {
-      "csm": "/ServiceNow/csm/index.html"
-    },
-    {
-      "hrsd": "/ServiceNow/hrsd/index.html"
-    },
-    {
-      "secops": "/ServiceNow/secops/index.html"
-    }
+    { "key": "itsm", "path": "/ServiceNow/itsm/index.html" },
+    { "key": "itom", "path": "/ServiceNow/itom/index.html" },
+    { "key": "csm", "path": "/ServiceNow/csm/index.html" },
+    { "key": "hrsd", "path": "/ServiceNow/hrsd/index.html" },
+    { "key": "secops", "path": "/ServiceNow/secops/index.html" }
   ]
 }

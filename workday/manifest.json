@@ -1,54 +1,14 @@
 {
   "routes": [
-    {
-      "key": "hcm",
-      "path": "/Workday/hcm/index.html",
-      "title": "HCM"
-    },
-    {
-      "key": "payroll",
-      "path": "/Workday/payroll/index.html",
-      "title": "Payroll"
-    },
-    {
-      "key": "recruiting",
-      "path": "/Workday/recruiting/index.html",
-      "title": "Recruiting"
-    },
-    {
-      "key": "finance",
-      "path": "/Workday/finance/index.html",
-      "title": "Finance"
-    },
-    {
-      "key": "integrations",
-      "path": "/Workday/integrations/index.html",
-      "title": "Integrations"
-    },
-    {
-      "key": "reporting",
-      "path": "/Workday/reporting/index.html",
-      "title": "Reporting"
-    },
-    {
-      "key": "e2e",
-      "path": "/Workday/e2e/index.html",
-      "title": "E2E"
-    },
-    {
-      "key": "finance_5000",
-      "path": "/workday/finance/index.html",
-      "title": "Finance 5000"
-    },
-    {
-      "key": "e2e_5000",
-      "path": "/workday/e2e/index.html",
-      "title": "E2E 5000"
-      "path": "/Workday/e2e/index.html"
-    },
-    {
-      "key": "expanded_packs",
-      "path": "/Workday/expanded_packs/index.html"
-    }
+    { "key": "hcm", "path": "/Workday/hcm/index.html", "title": "HCM" },
+    { "key": "payroll", "path": "/Workday/payroll/index.html", "title": "Payroll" },
+    { "key": "recruiting", "path": "/Workday/recruiting/index.html", "title": "Recruiting" },
+    { "key": "finance", "path": "/Workday/finance/index.html", "title": "Finance" },
+    { "key": "integrations", "path": "/Workday/integrations/index.html", "title": "Integrations" },
+    { "key": "reporting", "path": "/Workday/reporting/index.html", "title": "Reporting" },
+    { "key": "e2e", "path": "/Workday/e2e/index.html", "title": "E2E" },
+    { "key": "finance_5000", "path": "/workday/finance/index.html", "title": "Finance 5000" },
+    { "key": "e2e_5000", "path": "/workday/e2e/index.html", "title": "E2E 5000" },
+    { "key": "expanded_packs", "path": "/Workday/expanded_packs/index.html", "title": "Expanded Packs" }
   ]
 }
