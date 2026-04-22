@@ -68,6 +68,10 @@ export interface IndustryIndex {
     high: number;
     autoReady: number;
     integrationCoverage: number;
+    /** Strict-validated E2E rows */
+    strict: number;
+    /** Original v3 batch rows */
+    v3: number;
   };
   /** Distribution of test_type values */
   testTypeCounts: Record<string, number>;
