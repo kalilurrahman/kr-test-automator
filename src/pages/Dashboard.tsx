@@ -394,13 +394,14 @@ const Dashboard = () => {
           </Card>
         </section>
 
-        {/* Industries summary — top industries by scenario count + script-type breakdown */}
+        {/* Industry E2E counts — overall summary + per-industry breakdown */}
         {industryIndex && (
-          <section className="mb-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <Card className="p-5 bg-card border-border lg:col-span-2">
-              <div className="flex items-center justify-between mb-3 gap-2 flex-wrap">
+          <section className="mb-8 space-y-4">
+            {/* Overall summary strip */}
+            <Card className="p-5 bg-card border-border">
+              <div className="flex items-center justify-between mb-4 gap-2 flex-wrap">
                 <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider inline-flex items-center gap-2">
-                  <Factory className="w-4 h-4 text-primary" /> Top industries by scenario count
+                  <Factory className="w-4 h-4 text-primary" /> Industry E2E test scenarios — overall summary
                 </h2>
                 <Link
                   to="/industries"
@@ -409,32 +410,15 @@ const Dashboard = () => {
                   Browse all <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-                {industryIndex.summaries.slice(0, 12).map((s) => {
-                  const meta = INDUSTRY_BY_NAME.get(s.industry);
-                  return (
-                    <Link
-                      key={s.industry}
-                      to={`/industries/${s.slug}`}
-                      className="rounded-md border border-border bg-background/40 hover:border-primary/40 px-3 py-2 transition-colors min-w-0"
-                    >
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-base leading-none" aria-hidden>{meta?.glyph ?? "🏷"}</span>
-                        <span className="text-xs font-semibold text-foreground truncate" title={s.industry}>
-                          {s.industry}
-                        </span>
-                      </div>
-                      <div className="text-sm font-mono text-foreground">{s.total.toLocaleString()}</div>
-                      <div className="text-[10px] text-muted-foreground uppercase tracking-wider">scenarios</div>
-                    </Link>
-                  );
-                })}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                <SummaryStat label="Total E2E scenarios" value={industryIndex.totals.scenarios.toLocaleString()} />
+                <SummaryStat label="Industries" value={industryIndex.totals.industries.toLocaleString()} />
+                <SummaryStat label="Products / ERPs" value={industryIndex.totals.products.toLocaleString()} />
+                <SummaryStat label="Strict-validated" value={industryIndex.totals.strict.toLocaleString()} sub={`${Math.round((industryIndex.totals.strict / industryIndex.totals.scenarios) * 100)}% of total`} />
+                <SummaryStat label="V3 library" value={industryIndex.totals.v3.toLocaleString()} sub={`${Math.round((industryIndex.totals.v3 / industryIndex.totals.scenarios) * 100)}% of total`} />
+                <SummaryStat label="High priority" value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`} sub={`${industryIndex.totals.high.toLocaleString()} rows`} />
               </div>
-              <div className="grid grid-cols-3 gap-3 mt-4">
-                <SuccessMetric
-                  label="High-priority"
-                  value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`}
-                />
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
                 <SuccessMetric
                   label="Auto-ready"
                   value={`${Math.round((industryIndex.totals.autoReady / industryIndex.totals.scenarios) * 100)}%`}
@@ -443,28 +427,104 @@ const Dashboard = () => {
                   label="Integration covered"
                   value={`${Math.round((industryIndex.totals.integrationCoverage / industryIndex.totals.scenarios) * 100)}%`}
                 />
+                <SuccessMetric
+                  label="Script options"
+                  value={AUTOMATION_SCRIPT_OPTIONS.length.toString()}
+                />
               </div>
             </Card>
 
-            <Card className="p-5 bg-card border-border">
-              <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 inline-flex items-center gap-2">
-                <Cpu className="w-4 h-4 text-primary" /> Script options
-              </h2>
-              <div className="space-y-1.5 max-h-[280px] overflow-y-auto pr-1">
-                {AUTOMATION_SCRIPT_OPTIONS.map((opt) => (
-                  <div
-                    key={opt.value}
-                    className="flex items-center justify-between text-xs px-2 py-1.5 rounded bg-background/40 border border-border/60"
-                  >
-                    <span className="text-foreground truncate" title={opt.label}>{opt.label}</span>
-                    <span className="text-[10px] font-mono text-muted-foreground uppercase">{opt.language}</span>
+            {/* Per-industry table + script-options sidebar */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              <Card className="p-5 bg-card border-border lg:col-span-2 min-w-0">
+                <div className="flex items-center justify-between mb-3 gap-2 flex-wrap">
+                  <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider inline-flex items-center gap-2">
+                    <Factory className="w-4 h-4 text-primary" /> E2E scenarios by industry
+                  </h2>
+                  <span className="text-[11px] text-muted-foreground font-mono">
+                    {industryIndex.summaries.length.toLocaleString()} industries
+                  </span>
+                </div>
+                <div className="overflow-x-auto -mx-2 px-2">
+                  <div className="max-h-[420px] overflow-y-auto rounded-md border border-border/60">
+                    <table className="w-full text-xs">
+                      <thead className="sticky top-0 bg-card border-b border-border z-10">
+                        <tr className="text-left text-muted-foreground uppercase tracking-wider">
+                          <th className="px-3 py-2 font-medium">Industry</th>
+                          <th className="px-2 py-2 font-medium text-right">E2E</th>
+                          <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">Strict</th>
+                          <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">V3</th>
+                          <th className="px-2 py-2 font-medium text-right hidden md:table-cell">High</th>
+                          <th className="px-2 py-2 font-medium text-right hidden md:table-cell">Auto</th>
+                          <th className="px-2 py-2 font-medium text-right hidden lg:table-cell">Products</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {industryIndex.summaries.map((s) => {
+                          const meta = INDUSTRY_BY_NAME.get(s.industry);
+                          return (
+                            <tr key={s.industry} className="border-b border-border/40 hover:bg-background/40">
+                              <td className="px-3 py-2 min-w-0">
+                                <Link
+                                  to={`/industries/${s.slug}`}
+                                  className="inline-flex items-center gap-2 text-foreground hover:text-primary truncate"
+                                >
+                                  <span aria-hidden>{meta?.glyph ?? "🏷"}</span>
+                                  <span className="truncate" title={s.industry}>{s.industry}</span>
+                                </Link>
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono font-semibold text-foreground">
+                                {s.total.toLocaleString()}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-emerald-400/90 hidden sm:table-cell">
+                                {s.strict ? s.strict.toLocaleString() : "—"}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden sm:table-cell">
+                                {s.v3 ? s.v3.toLocaleString() : "—"}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-destructive/90 hidden md:table-cell">
+                                {s.high.toLocaleString()}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden md:table-cell">
+                                {s.autoReady.toLocaleString()}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden lg:table-cell">
+                                {s.products.length}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
                   </div>
-                ))}
-              </div>
-              <div className="text-[10px] text-muted-foreground mt-3 leading-relaxed">
-                Pick a script flavour inside any industry tile to seed the generator with the right framework hint.
-              </div>
-            </Card>
+                </div>
+                <div className="text-[10px] text-muted-foreground mt-2 leading-relaxed">
+                  <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).
+                  <span className="text-muted-foreground"> V3</span> = original 9.5k library.
+                  Click any row to open that industry's scenario detail.
+                </div>
+              </Card>
+
+              <Card className="p-5 bg-card border-border">
+                <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 inline-flex items-center gap-2">
+                  <Cpu className="w-4 h-4 text-primary" /> Script options
+                </h2>
+                <div className="space-y-1.5 max-h-[420px] overflow-y-auto pr-1">
+                  {AUTOMATION_SCRIPT_OPTIONS.map((opt) => (
+                    <div
+                      key={opt.value}
+                      className="flex items-center justify-between text-xs px-2 py-1.5 rounded bg-background/40 border border-border/60"
+                    >
+                      <span className="text-foreground truncate" title={opt.label}>{opt.label}</span>
+                      <span className="text-[10px] font-mono text-muted-foreground uppercase">{opt.language}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="text-[10px] text-muted-foreground mt-3 leading-relaxed">
+                  Pick a script flavour inside any industry tile to seed the generator with the right framework hint.
+                </div>
+              </Card>
+            </div>
           </section>
         )}
 
@@ -565,6 +625,18 @@ const SuccessMetric = ({ label, value }: { label: string; value: string }) => (
   <div className="rounded-md border border-border bg-background/40 px-3 py-2">
     <div className="text-base font-bold text-foreground leading-none">{value}</div>
     <div className="text-[10px] text-muted-foreground uppercase tracking-wider mt-1">{label}</div>
+  </div>
+);
+
+const SummaryStat = ({ label, value, sub }: { label: string; value: string; sub?: string }) => (
+  <div className="rounded-md border border-border bg-background/40 px-3 py-2.5 min-w-0">
+    <div className="text-lg font-bold text-foreground leading-none truncate" title={value}>
+      {value}
+    </div>
+    <div className="text-[10px] text-muted-foreground uppercase tracking-wider mt-1.5">{label}</div>
+    {sub && (
+      <div className="text-[10px] text-muted-foreground/80 mt-0.5 font-mono">{sub}</div>
+    )}
   </div>
 );
 
