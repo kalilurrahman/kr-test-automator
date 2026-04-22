@@ -1,14 +1,14 @@
 /**
  * Industry-first scenario index
  * --------------------------------------------------------------------------
- * Loads the bundled `public/data/industry_scenarios.json` (9,500 unique E2E
- * scenarios across 32 industries × N products) once per session and exposes
- * a typed query surface for the Industries section, generator prefill and
- * dashboard aggregations.
+ * Loads the bundled `public/data/industry_scenarios.json` (12,000 unified
+ * strict E2E scenarios across 120 industries × N products) once per session
+ * and exposes a typed query surface for the Industries section, generator
+ * prefill and dashboard aggregations.
  *
- * The file is fetched lazily on first call (~5 MB) and cached on the module
+ * The file is fetched lazily on first call (~7 MB) and cached on the module
  * scope so all consumers share one parse pass. Per-industry / per-product
- * indices are built up-front so the UI never has to scan 9.5k rows again.
+ * indices are built up-front so the UI never has to scan 12k rows again.
  */
 
 export interface IndustryScenario {
