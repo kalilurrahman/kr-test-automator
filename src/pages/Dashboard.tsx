@@ -628,4 +628,16 @@ const SuccessMetric = ({ label, value }: { label: string; value: string }) => (
   </div>
 );
 
+const SummaryStat = ({ label, value, sub }: { label: string; value: string; sub?: string }) => (
+  <div className="rounded-md border border-border bg-background/40 px-3 py-2.5 min-w-0">
+    <div className="text-lg font-bold text-foreground leading-none truncate" title={value}>
+      {value}
+    </div>
+    <div className="text-[10px] text-muted-foreground uppercase tracking-wider mt-1.5">{label}</div>
+    {sub && (
+      <div className="text-[10px] text-muted-foreground/80 mt-0.5 font-mono">{sub}</div>
+    )}
+  </div>
+);
+
 export default Dashboard;
