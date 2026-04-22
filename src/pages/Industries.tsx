@@ -60,8 +60,8 @@ const Industries = () => {
   return (
     <div className="min-h-[calc(100vh-64px)]">
       <SeoHead
-        title="Industries · Strict E2E Test Repository"
-        description="Browse 12,000 strict E2E test scenarios across 120 industries — Pharma, Banking, Manufacturing, Telecom, Cloud Ops and more."
+        title="Industries · E2E Test Repository"
+        description="Browse 21,500 E2E test scenarios across 144 industries — combining the v3 industry library and the strict-validated E2E master."
         canonical="/industries"
       />
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
