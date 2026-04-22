@@ -135,6 +135,10 @@ You can edit files directly via GitHub, use GitHub Codespaces, or utilize your p
 ![Settings Dark](docs/assets/screenshots/settings_dark.png)
 ![Settings Light](docs/assets/screenshots/settings_light.png)
 
+### Industries
+![Industries Dark](docs/assets/screenshots/industries_dark.png)
+![Industries Light](docs/assets/screenshots/industries_light.png)
+
 ### SAP
 ![SAP Dark](docs/assets/screenshots/sap_dark.png)
 ![SAP Light](docs/assets/screenshots/sap_light.png)
