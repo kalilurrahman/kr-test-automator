@@ -1,0 +1,607 @@
+{
+  "summary": {
+    "total": 12000,
+    "high": 6000,
+    "autoReady": 8040
+  },
+  "Pharma": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Healthcare": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Telecom": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Banking": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Manufacturing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Insurance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Logistics": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Public Sector": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Life Sciences": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Aviation": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Maritime": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Pharma Manufacturing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Energy Trading": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Higher Education": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Insurance Claims": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Customer Service": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Supply Network": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Digital Commerce": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Public Health": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Pharmacy Ops": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Surgical Care": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Wholesale Distribution": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Utilities Field Service": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Manufacturing Traceability": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Life Sciences QA": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Returns": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Cloud Security": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Government Benefits": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Digital Subscriptions": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Pharma": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Hospice Care": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Manufacturing Service": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Cloud Platform Ops": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Government Tax": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Wholesale Pharma": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Medical Devices": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Education Finance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Banking Ops": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Logistics Control Tower": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Clinical Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Health": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Field Service": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Energy Retail": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Industrial Maintenance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Government Licensing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Ecommerce Ops": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Observability": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Hospital Revenue": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Logistics Brokerage": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Emergency Response": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Precision Medicine": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Supply Finance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "B2B Commerce": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Utility Billing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Warehouse Ops": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Health Claims": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Cyber Resilience": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Service Procurement": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Academic Research": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Elder Care": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Logistics": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Corporate Finance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Factory Automation": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Energy Efficiency": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Medical Supplies": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Public Insurance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Digital Platform": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Subscription Billing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Revenue Cycle": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Home Healthcare": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Retail Manufacturing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Shared Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Smart Grid": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Quality Engineering": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Regulatory Affairs": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Claims Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Platform Engineering": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Online Learning": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Transportation Fleet": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Patient Access": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Consumer Goods": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Procurement Shared Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Water Utilities": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Asset Quality": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Publishing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Disability Claims": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "DevSecOps": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Training Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Freight Forwarding": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Patient Billing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Consumer Supply": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Vendor Management": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Grid Reliability": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Inspection Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Clinical Publishing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Benefits Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Build Engineering": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "LMS Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Port Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Care Coordination": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Brand Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Revenue Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Distributed Energy": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Supplier Quality": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Content Lifecycle": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Risk Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "SRE Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Student Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Cargo Operations": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Patient Experience": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Consumer Pricing": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Order Finance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Grid Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Production Planning": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "R&D Governance": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Case Management": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Release Engineering": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Learning Services": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  },
+  "Cross-Border Freight": {
+    "total": 100,
+    "high": 50,
+    "autoReady": 67
+  }
+}
