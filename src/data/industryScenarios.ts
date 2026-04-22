@@ -11,6 +11,8 @@
  * indices are built up-front so the UI never has to scan 12k rows again.
  */
 
+export type ScenarioBatch = "v3" | "strict";
+
 export interface IndustryScenario {
   scenario_id: string;
   industry: string;
@@ -25,6 +27,10 @@ export interface IndustryScenario {
   test_type: string;
   auto_feasibility: "High" | "Medium" | "Low" | string;
   integration_hint: string;
+  /** Source batch — `v3` = original 9.5k library, `strict` = validated strict E2E set. */
+  batch: ScenarioBatch;
+  /** True when the row passes the strict E2E validation rules. */
+  strict_e2e: boolean;
 }
 
 export interface IndustrySummary {
@@ -38,6 +44,10 @@ export interface IndustrySummary {
   high: number;
   /** Auto-feasibility = "High" count */
   autoReady: number;
+  /** Strict-E2E-validated count (subset of total) */
+  strict: number;
+  /** Original v3 batch count (subset of total) */
+  v3: number;
   /** Distinct products / ERPs covered */
   products: string[];
   /** Distinct ERP systems covered (e.g. "SAP S/4HANA", "Salesforce") */
