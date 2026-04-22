@@ -60,8 +60,8 @@ const Industries = () => {
   return (
     <div className="min-h-[calc(100vh-64px)]">
       <SeoHead
-        title="Industries · Enterprise Test Repository"
-        description="Browse 9,500 industry-grounded E2E test scenarios across 32 industries — Pharma, Banking, Manufacturing, Telecom and more."
+        title="Industries · Strict E2E Test Repository"
+        description="Browse 12,000 strict E2E test scenarios across 120 industries — Pharma, Banking, Manufacturing, Telecom, Cloud Ops and more."
         canonical="/industries"
       />
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
@@ -168,19 +168,36 @@ const Industries = () => {
           )}
         </section>
 
-        {/* Bulk export */}
+        {/* Bulk export — strict E2E master bundle */}
         {totals && (
-          <Card className="p-4 bg-card border-border flex flex-col sm:flex-row items-start sm:items-center gap-3 justify-between">
+          <Card className="p-4 bg-card border-border space-y-3">
             <div className="flex items-center gap-2">
               <Download className="w-4 h-4 text-primary" />
               <div className="text-sm text-foreground">
-                Download the full industry scenario library — every record across all 32 industries.
+                <span className="font-semibold">Unified strict E2E master</span> —{" "}
+                {totals.scenarios.toLocaleString()} validated scenarios across {totals.industries} industries.
+                Each row spans 3+ business stages and 2+ systems with a downstream outcome.
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
+              <Button asChild variant="default" size="sm">
+                <a href="/data/unified_strict_e2e_final.xlsx" download>
+                  XLSX · 738 KB
+                </a>
+              </Button>
               <Button asChild variant="outline" size="sm">
-                <a href="/data/industry_scenarios.json" download>
-                  JSON · 5.3 MB
+                <a href="/data/unified_strict_e2e_final.csv" download>
+                  CSV · 5.2 MB
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="sm">
+                <a href="/data/unified_strict_e2e_final.json" download>
+                  JSON · 8.7 MB
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="sm">
+                <a href="/data/unified_strict_e2e_final.ts" download>
+                  TS module
                 </a>
               </Button>
               <Button asChild variant="outline" size="sm">
@@ -189,10 +206,27 @@ const Industries = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="sm">
+                <a href="/data/e2e_master_summary.csv" download>
+                  Summary CSV
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="sm">
                 <Link to="/" className="gap-1.5">
                   <Sparkles className="w-3.5 h-3.5" /> Open Generator
                 </Link>
               </Button>
+            </div>
+            <div className="text-[11px] text-muted-foreground">
+              Working set (pre-strict): {" "}
+              <a className="text-primary hover:underline" href="/data/unified_master_current.xlsx" download>
+                XLSX
+              </a>{" "}·{" "}
+              <a className="text-primary hover:underline" href="/data/unified_master_current.csv" download>
+                CSV
+              </a>{" "}·{" "}
+              <a className="text-primary hover:underline" href="/data/unified_master_current_stats.json" download>
+                stats
+              </a>
             </div>
           </Card>
         )}
