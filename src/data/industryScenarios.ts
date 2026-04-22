@@ -114,20 +114,25 @@ const build = async (): Promise<IndustryIndex> => {
   if (!res.ok) throw new Error(`Failed to load industry scenarios (${res.status})`);
   const raw = (await res.json()) as Array<Record<string, unknown>>;
 
-  const scenarios: IndustryScenario[] = raw.map((r) => ({
-    scenario_id: String(r.scenario_id ?? ""),
-    industry: String(r.industry ?? "Unknown"),
-    erp_system: String(r.erp_system ?? ""),
-    product: String(r.product ?? ""),
-    e2e_scenario_name: String(r.e2e_scenario_name ?? ""),
-    business_description: String(r.business_description ?? ""),
-    modules: parseList(r.modules),
-    data_sources: parseList(r.data_sources),
-    priority: String(r.priority ?? ""),
-    test_type: String(r.test_type ?? ""),
-    auto_feasibility: String(r.auto_feasibility ?? ""),
-    integration_hint: String(r.integration_hint ?? ""),
-  }));
+  const scenarios: IndustryScenario[] = raw.map((r) => {
+    const batch: ScenarioBatch = r.batch === "strict" ? "strict" : "v3";
+    return {
+      scenario_id: String(r.scenario_id ?? ""),
+      industry: String(r.industry ?? "Unknown"),
+      erp_system: String(r.erp_system ?? ""),
+      product: String(r.product ?? ""),
+      e2e_scenario_name: String(r.e2e_scenario_name ?? ""),
+      business_description: String(r.business_description ?? ""),
+      modules: parseList(r.modules),
+      data_sources: parseList(r.data_sources),
+      priority: String(r.priority ?? ""),
+      test_type: String(r.test_type ?? ""),
+      auto_feasibility: String(r.auto_feasibility ?? ""),
+      integration_hint: String(r.integration_hint ?? ""),
+      batch,
+      strict_e2e: typeof r.strict_e2e === "boolean" ? r.strict_e2e : batch === "strict",
+    };
+  });
 
   const byIndustry = new Map<string, IndustryScenario[]>();
   const byProduct = new Map<string, IndustryScenario[]>();
@@ -136,6 +141,8 @@ const build = async (): Promise<IndustryIndex> => {
   let high = 0;
   let autoReady = 0;
   let integrationCoverage = 0;
+  let strict = 0;
+  let v3 = 0;
 
   for (const s of scenarios) {
     if (s.scenario_id) byId.set(s.scenario_id, s);
@@ -148,6 +155,8 @@ const build = async (): Promise<IndustryIndex> => {
     if (s.priority === "High") high += 1;
     if (s.auto_feasibility === "High") autoReady += 1;
     if (s.integration_hint && s.integration_hint.trim().length > 0) integrationCoverage += 1;
+    if (s.batch === "strict") strict += 1;
+    else v3 += 1;
     testTypeCounts[s.test_type] = (testTypeCounts[s.test_type] ?? 0) + 1;
   }
 
@@ -157,11 +166,15 @@ const build = async (): Promise<IndustryIndex> => {
       const ervSystems = new Set<string>();
       let h = 0;
       let a = 0;
+      let s = 0;
+      let v = 0;
       for (const row of list) {
         if (row.product) products.add(row.product);
         if (row.erp_system) ervSystems.add(row.erp_system);
         if (row.priority === "High") h += 1;
         if (row.auto_feasibility === "High") a += 1;
+        if (row.batch === "strict") s += 1;
+        else v += 1;
       }
       return {
         industry,
@@ -169,6 +182,8 @@ const build = async (): Promise<IndustryIndex> => {
         total: list.length,
         high: h,
         autoReady: a,
+        strict: s,
+        v3: v,
         products: [...products].sort(),
         ervSystems: [...ervSystems].sort(),
       };
@@ -188,6 +203,8 @@ const build = async (): Promise<IndustryIndex> => {
       high,
       autoReady,
       integrationCoverage,
+      strict,
+      v3,
     },
     testTypeCounts,
   };
