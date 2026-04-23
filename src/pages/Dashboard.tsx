@@ -22,6 +22,7 @@ import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
 import { getIndustryIndex, type IndustryIndex } from "@/data/industryScenarios";
 import { INDUSTRY_BY_NAME, AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
+import { PRODUCT_FAMILIES, groupProductsByFamily } from "@/data/productFamilies";
 
 // Defer the heavy global browser — its first render builds the entire index.
 const GlobalCaseBrowser = lazy(() =>
@@ -542,6 +543,55 @@ const Dashboard = () => {
                 <q.icon className="w-3.5 h-3.5" />
                 {q.label}
               </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Product families overview — quick way to scan grouped products */}
+        <section className="mb-10">
+          <div className="flex items-baseline justify-between mb-4 gap-2 flex-wrap">
+            <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+              Product families
+            </h2>
+            <Link to="/platforms" className="text-xs text-primary hover:underline inline-flex items-center gap-1">
+              Browse all <ArrowRight className="w-3 h-3" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            {groupProductsByFamily().map((bucket) => (
+              <Card key={bucket.family.key} className="p-4 bg-card border-border flex flex-col gap-2">
+                <div className="flex items-baseline justify-between gap-2">
+                  <h3
+                    className="font-semibold text-foreground leading-tight"
+                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  >
+                    {bucket.family.label}
+                  </h3>
+                  <span className="text-[10px] font-mono text-muted-foreground">
+                    {bucket.products.length}
+                  </span>
+                </div>
+                <p className="text-xs text-muted-foreground line-clamp-2">{bucket.family.blurb}</p>
+                <div className="flex flex-wrap gap-1 mt-1">
+                  {bucket.products.slice(0, 6).map((p) => (
+                    <Link
+                      key={p.key}
+                      to={p.route}
+                      className="text-[10px] px-1.5 py-0.5 rounded bg-muted/30 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      {p.shortLabel}
+                    </Link>
+                  ))}
+                  {bucket.products.length > 6 && (
+                    <Link
+                      to={`/platforms`}
+                      className="text-[10px] px-1.5 py-0.5 rounded bg-muted/30 text-muted-foreground hover:text-primary"
+                    >
+                      +{bucket.products.length - 6}
+                    </Link>
+                  )}
+                </div>
+              </Card>
             ))}
           </div>
         </section>
