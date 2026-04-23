@@ -1,5 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown, LayoutDashboard, Info, MessageSquare, Factory } from "lucide-react";
+import {
+  Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown,
+  LayoutDashboard, Info, MessageSquare, Factory, Package, Cpu, TestTube2, BookOpen,
+} from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useAuth } from "@/contexts/AuthContext";
@@ -9,7 +12,7 @@ import { PaletteSwitcher } from "@/components/PaletteSwitcher";
 import { FontSwitcher } from "@/components/FontSwitcher";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Button } from "@/components/ui/button";
-import { PRODUCT_CATALOG } from "@/data/productCatalog";
+import { groupProductsByFamily } from "@/data/productFamilies";
 import {
   Accordion,
   AccordionContent,
@@ -24,6 +27,24 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
+
+/**
+ * Top-level navigation order (per latest IA refresh):
+ *   Industries → Products/Platforms → Services → Generated Scenarios →
+ *   Dashboard → Downloads → README
+ *
+ * "Generate" stays as the entry to "/" so users can always jump back to the
+ * generator without losing the new IA.
+ */
+const PRIMARY_LINKS = [
+  { to: "/industries", label: "Industries", icon: Factory, match: "/industries" },
+  { to: "/platforms", label: "Products", icon: Package, match: "/platforms" },
+  { to: "/services", label: "Services", icon: Cpu, match: "/services" },
+  { to: "/scenarios", label: "Scenarios", icon: TestTube2, match: "/scenarios" },
+  { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard, match: "/dashboard" },
+  { to: "/downloads", label: "Downloads", icon: Download, match: "/downloads" },
+  { to: "/readme", label: "README", icon: BookOpen, match: "/readme" },
+] as const;
 
 const libraryLinks = [
   { to: "/templates", label: "Templates" },
@@ -40,8 +61,9 @@ const KRHeader = () => {
   const { user, loading, signOut } = useAuth();
 
   const isActive = (path: string) => location.pathname === path;
-  const productActive = PRODUCT_CATALOG.some((p) => location.pathname === p.route || location.pathname.startsWith(p.route + "/"));
+  const startsWith = (path: string) => location.pathname === path || location.pathname.startsWith(path + "/");
   const libraryActive = libraryLinks.some((l) => location.pathname === l.to);
+  const productGroups = groupProductsByFamily();
 
   const closeMobile = () => setMobileOpen(false);
 
@@ -79,38 +101,54 @@ const KRHeader = () => {
           {/* RIGHT: Nav + Auth + Install */}
           <div className="hidden lg:flex items-center gap-1">
             <NavLink to="/" label="Generate" active={isActive("/")} />
-            <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
-            <NavLink to="/industries" label="Industries" icon={Factory} active={location.pathname.startsWith("/industries")} />
+            <NavLink to="/industries" label="Industries" icon={Factory} active={startsWith("/industries")} />
 
-            {/* Products dropdown */}
+            {/* Products dropdown (grouped by family) */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors inline-flex items-center gap-1 ${
-                    productActive
+                    startsWith("/platforms") || location.pathname.startsWith("/p/") || isActive("/sap") || isActive("/salesforce")
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   }`}
                 >
+                  <Package className="w-3.5 h-3.5" />
                   Products <ChevronDown className="w-3 h-3" />
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="bg-card border-border w-64 max-h-[70vh] overflow-y-auto">
-                <DropdownMenuLabel className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                  All platforms
-                </DropdownMenuLabel>
-                {PRODUCT_CATALOG.map((p) => (
-                  <DropdownMenuItem key={p.key} asChild>
-                    <Link to={p.route} className="cursor-pointer flex items-center justify-between">
-                      <span>{p.label}</span>
-                      <span className="text-[10px] font-mono text-muted-foreground">{p.idPrefix}</span>
-                    </Link>
-                  </DropdownMenuItem>
+              <DropdownMenuContent align="end" className="bg-card border-border w-72 max-h-[70vh] overflow-y-auto">
+                <DropdownMenuItem asChild>
+                  <Link to="/platforms" className="cursor-pointer font-medium">
+                    Browse all products →
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                {productGroups.map((group) => (
+                  <div key={group.family.key} className="py-1">
+                    <DropdownMenuLabel className="text-[10px] uppercase tracking-wider text-muted-foreground py-1">
+                      {group.family.label}
+                    </DropdownMenuLabel>
+                    {group.products.map((p) => (
+                      <DropdownMenuItem key={p.key} asChild>
+                        <Link to={p.route} className="cursor-pointer flex items-center justify-between text-sm">
+                          <span className="truncate">{p.label}</span>
+                          <span className="text-[10px] font-mono text-muted-foreground ml-2">{p.idPrefix}</span>
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </div>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Library dropdown */}
+            <NavLink to="/services" label="Services" icon={Cpu} active={startsWith("/services")} />
+            <NavLink to="/scenarios" label="Scenarios" icon={TestTube2} active={startsWith("/scenarios")} />
+            <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
+            <NavLink to="/downloads" label="Downloads" icon={Download} active={startsWith("/downloads")} />
+            <NavLink to="/readme" label="README" icon={BookOpen} active={startsWith("/readme")} />
+
+            {/* Library dropdown (kept for templates/history/etc.) */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button
@@ -120,7 +158,7 @@ const KRHeader = () => {
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   }`}
                 >
-                  Library <ChevronDown className="w-3 h-3" />
+                  More <ChevronDown className="w-3 h-3" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-card border-border">
@@ -129,11 +167,19 @@ const KRHeader = () => {
                     <Link to={l.to} className="cursor-pointer">{l.label}</Link>
                   </DropdownMenuItem>
                 ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link to="/about" className="cursor-pointer inline-flex items-center gap-2">
+                    <Info className="w-3.5 h-3.5" /> About
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/feedback" className="cursor-pointer inline-flex items-center gap-2">
+                    <MessageSquare className="w-3.5 h-3.5" /> Feedback
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-
-            <NavLink to="/about" label="About" icon={Info} active={isActive("/about")} />
-            <NavLink to="/feedback" label="Feedback" icon={MessageSquare} active={isActive("/feedback")} />
 
             {/* Auth */}
             {!loading && (
@@ -211,32 +257,46 @@ const KRHeader = () => {
         {mobileOpen && (
           <nav className="lg:hidden border-t border-border bg-background px-4 py-3 max-h-[80vh] overflow-y-auto">
             <MobileLink to="/" label="Generate" onNavigate={closeMobile} active={isActive("/")} />
-            <MobileLink to="/dashboard" label="Dashboard" onNavigate={closeMobile} active={isActive("/dashboard")} />
-            <MobileLink to="/industries" label="Industries" onNavigate={closeMobile} active={location.pathname.startsWith("/industries")} />
+            {PRIMARY_LINKS.map((link) => (
+              <MobileLink
+                key={link.to}
+                to={link.to}
+                label={link.label}
+                onNavigate={closeMobile}
+                active={startsWith(link.match)}
+              />
+            ))}
 
             <Accordion type="multiple" className="border-none">
               <AccordionItem value="products" className="border-none">
-                <AccordionTrigger className="py-2 px-3 text-sm hover:no-underline">Products</AccordionTrigger>
+                <AccordionTrigger className="py-2 px-3 text-sm hover:no-underline">All products by family</AccordionTrigger>
                 <AccordionContent className="pb-1">
-                  <div className="pl-3 space-y-0.5">
-                    {PRODUCT_CATALOG.map((p) => (
-                      <Link
-                        key={p.key}
-                        to={p.route}
-                        onClick={closeMobile}
-                        className={`block px-3 py-1.5 text-sm rounded-md ${
-                          isActive(p.route) ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
-                        }`}
-                      >
-                        {p.label}
-                      </Link>
+                  <div className="pl-3 space-y-2">
+                    {productGroups.map((group) => (
+                      <div key={group.family.key}>
+                        <div className="text-[10px] uppercase tracking-wider text-muted-foreground px-3 py-1">
+                          {group.family.label}
+                        </div>
+                        {group.products.map((p) => (
+                          <Link
+                            key={p.key}
+                            to={p.route}
+                            onClick={closeMobile}
+                            className={`block px-3 py-1.5 text-sm rounded-md ${
+                              isActive(p.route) ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+                            }`}
+                          >
+                            {p.label}
+                          </Link>
+                        ))}
+                      </div>
                     ))}
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="library" className="border-none">
-                <AccordionTrigger className="py-2 px-3 text-sm hover:no-underline">Library</AccordionTrigger>
+                <AccordionTrigger className="py-2 px-3 text-sm hover:no-underline">More</AccordionTrigger>
                 <AccordionContent className="pb-1">
                   <div className="pl-3 space-y-0.5">
                     {libraryLinks.map((l) => (
@@ -251,13 +311,28 @@ const KRHeader = () => {
                         {l.label}
                       </Link>
                     ))}
+                    <Link
+                      to="/about"
+                      onClick={closeMobile}
+                      className={`block px-3 py-1.5 text-sm rounded-md ${
+                        isActive("/about") ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      About
+                    </Link>
+                    <Link
+                      to="/feedback"
+                      onClick={closeMobile}
+                      className={`block px-3 py-1.5 text-sm rounded-md ${
+                        isActive("/feedback") ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      Feedback
+                    </Link>
                   </div>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-
-            <MobileLink to="/about" label="About" onNavigate={closeMobile} active={isActive("/about")} />
-            <MobileLink to="/feedback" label="Feedback" onNavigate={closeMobile} active={isActive("/feedback")} />
 
             {isInstallable && (
               <button

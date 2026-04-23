@@ -32,6 +32,11 @@ const PlatformPage = lazy(() => import("./pages/PlatformPage"));
 const TestCaseDetail = lazy(() => import("./pages/TestCaseDetail"));
 const Industries = lazy(() => import("./pages/Industries"));
 const IndustryDetail = lazy(() => import("./pages/IndustryDetail"));
+const Platforms = lazy(() => import("./pages/Platforms"));
+const Services = lazy(() => import("./pages/Services"));
+const Scenarios = lazy(() => import("./pages/Scenarios"));
+const Downloads = lazy(() => import("./pages/Downloads"));
+const Readme = lazy(() => import("./pages/Readme"));
 
 const ModuleFallback = ({ label }: { label: string }) => (
   <div className="min-h-[calc(100vh-64px)] flex items-center justify-center text-muted-foreground text-sm">
@@ -66,6 +71,11 @@ function AppShell() {
             <Route path="/sap" element={<SAP />} />
             <Route path="/salesforce" element={<Salesforce />} />
             <Route path="/p/:platformId" element={<PlatformPage />} />
+            <Route path="/platforms" element={<Platforms />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/scenarios" element={<Scenarios />} />
+            <Route path="/downloads" element={<Downloads />} />
+            <Route path="/readme" element={<Readme />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/industries/:slug" element={<IndustryDetail />} />
             <Route path="/t/:id" element={<TestCaseDetail />} />
