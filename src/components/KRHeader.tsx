@@ -148,7 +148,6 @@ const KRHeader = () => {
             <NavLink to="/scenarios" label="Scenarios" icon={TestTube2} active={startsWith("/scenarios")} />
             <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
             <NavLink to="/downloads" label="Downloads" icon={Download} active={startsWith("/downloads")} />
-            <NavLink to="/readme" label="README" icon={BookOpen} active={startsWith("/readme")} />
 
             {/* Library dropdown (kept for templates/history/etc.) */}
             <DropdownMenu>
@@ -182,6 +181,10 @@ const KRHeader = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* README sits immediately before the user / settings cluster so
+                reference docs are the last nav stop before account controls. */}
+            <NavLink to="/readme" label="README" icon={BookOpen} active={startsWith("/readme")} />
 
             {/* Auth */}
             {!loading && (
