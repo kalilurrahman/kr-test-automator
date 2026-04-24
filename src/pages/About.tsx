@@ -28,6 +28,8 @@ const About = () => {
             TestForge AI is an enterprise test-automation hub. It bundles 130,000+ curated test cases
             across {TOTAL_PRODUCTS} platforms and pairs them with an AI script generator that turns plain-English business cases
             into Selenium, Cypress, Playwright, REST-Assured, Karate, Postman or Robot Framework code.
+            On top of the curated catalogue it ships <strong className="text-foreground">36,500 industry E2E scenarios</strong>{" "}
+            (9.5k v3 library + 12k strict-validated set + 15k incremental B21–B35 batches) across <strong className="text-foreground">280+ industries</strong>.
           </p>
         </header>
 
