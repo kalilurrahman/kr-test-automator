@@ -228,3 +228,19 @@ Each platform page (`/sap`, `/salesforce`, `/p/<platform>`) shows the same SAP-s
 
 *(Built by Global IT Executive & Builder Kalilur Rahman)*
 
+
+---
+
+## 🙏 Thanks & acknowledgements
+
+TestForge AI was built solo at AI-assisted velocity. Sincere thanks to:
+
+- **[Anthropic Claude](https://www.anthropic.com/claude)** — primary code, prompt-design and reasoning partner powering both the in-app generator and much of the hand-written architecture.
+- **[Perplexity](https://www.perplexity.ai/)** — research, cross-referencing of platform/module taxonomies and on-the-fly fact checks.
+- **[Google Jules](https://jules.google/)** — autonomous repository-level coding assistant used for batch refactors and PR-style edits.
+- **[Google Gemini](https://gemini.google.com/)** — secondary reasoning model and large-context summariser for the strict E2E batches.
+- **[Lovable](https://lovable.dev/)** — the build-and-deploy platform behind this site. Lovable orchestrates a Vite + React + TypeScript stack with shadcn/ui, Tailwind, React Router and **Lovable Cloud** (managed Supabase under the hood) for auth, database and edge functions; it pairs an AI code-edit workflow with a live preview, GitHub sync and one-click publishing. The streaming script generator on this site uses the **Lovable AI Gateway** with Anthropic Claude as the underlying model.
+
+---
+
+*(Built by Global IT Executive & Builder Kalilur Rahman)*
