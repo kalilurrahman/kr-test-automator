@@ -1,177 +1,587 @@
 {
   "summary": {
-    "total": 9500,
-    "high": 6380,
-    "autoReady": 6900
+    "total": 21500,
+    "v3": 9500,
+    "strict": 12000,
+    "high": 12380,
+    "autoReady": 14940
   },
-  "Pharma": {
-    "total": 250,
-    "high": 63,
-    "autoReady": 250
-  },
-  "Healthcare": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 0
-  },
-  "Telecom": {
-    "total": 200,
-    "high": 200,
-    "autoReady": 200
-  },
-  "CPG": {
-    "total": 150,
-    "high": 0,
-    "autoReady": 0
-  },
-  "Retail": {
-    "total": 150,
-    "high": 150,
-    "autoReady": 150
-  },
-  "Banking": {
-    "total": 500,
-    "high": 167,
-    "autoReady": 500
-  },
-  "Manufacturing": {
-    "total": 500,
-    "high": 500,
-    "autoReady": 0
-  },
-  "Insurance": {
-    "total": 300,
-    "high": 100,
-    "autoReady": 300
-  },
-  "Automotive": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Logistics": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Aerospace": {
-    "total": 200,
-    "high": 200,
-    "autoReady": 0
-  },
-  "Public Sector": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Energy & Utilities": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 0
-  },
-  "Education": {
-    "total": 250,
-    "high": 0,
-    "autoReady": 250
-  },
-  "IT Services": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Finance": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "HCM": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Real Estate": {
-    "total": 250,
-    "high": 0,
-    "autoReady": 0
-  },
-  "Travel": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "High Tech": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 0
-  },
-  "Media": {
-    "total": 250,
-    "high": 0,
-    "autoReady": 250
-  },
-  "Life Sciences": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Consumer Finance": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Cybersecurity": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Supply Chain": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Platform & Cloud": {
-    "total": 250,
-    "high": 0,
-    "autoReady": 250
-  },
-  "Commerce": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Government": {
-    "total": 500,
-    "high": 0,
-    "autoReady": 500
-  },
-  "Edge/IoT": {
-    "total": 500,
-    "high": 500,
-    "autoReady": 0
-  },
-  "Research": {
-    "total": 500,
-    "high": 0,
-    "autoReady": 500
-  },
-  "GovTech": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Retail & eCommerce": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 250
-  },
-  "Transportation": {
-    "total": 250,
-    "high": 0,
-    "autoReady": 250
-  },
-  "Chemicals": {
-    "total": 250,
-    "high": 250,
-    "autoReady": 0
+  "byIndustry": {
+    "Pharma": {
+      "v3": 250,
+      "strict": 100
+    },
+    "Healthcare": {
+      "v3": 250,
+      "strict": 100
+    },
+    "Telecom": {
+      "v3": 200,
+      "strict": 100
+    },
+    "CPG": {
+      "v3": 150,
+      "strict": 0
+    },
+    "Retail": {
+      "v3": 150,
+      "strict": 100
+    },
+    "Banking": {
+      "v3": 500,
+      "strict": 100
+    },
+    "Manufacturing": {
+      "v3": 500,
+      "strict": 100
+    },
+    "Insurance": {
+      "v3": 300,
+      "strict": 100
+    },
+    "Automotive": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Logistics": {
+      "v3": 250,
+      "strict": 100
+    },
+    "Aerospace": {
+      "v3": 200,
+      "strict": 0
+    },
+    "Public Sector": {
+      "v3": 250,
+      "strict": 100
+    },
+    "Energy & Utilities": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Education": {
+      "v3": 250,
+      "strict": 0
+    },
+    "IT Services": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Finance": {
+      "v3": 250,
+      "strict": 0
+    },
+    "HCM": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Real Estate": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Travel": {
+      "v3": 250,
+      "strict": 0
+    },
+    "High Tech": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Media": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Life Sciences": {
+      "v3": 250,
+      "strict": 100
+    },
+    "Consumer Finance": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Cybersecurity": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Supply Chain": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Platform & Cloud": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Commerce": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Government": {
+      "v3": 500,
+      "strict": 0
+    },
+    "Edge/IoT": {
+      "v3": 500,
+      "strict": 0
+    },
+    "Research": {
+      "v3": 500,
+      "strict": 0
+    },
+    "GovTech": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Retail & eCommerce": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Transportation": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Chemicals": {
+      "v3": 250,
+      "strict": 0
+    },
+    "Aviation": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Maritime": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Pharma Manufacturing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Energy Trading": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Higher Education": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Insurance Claims": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Customer Service": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Supply Network": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Digital Commerce": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Public Health": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Pharmacy Ops": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Surgical Care": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Wholesale Distribution": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Utilities Field Service": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Manufacturing Traceability": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Life Sciences QA": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Returns": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Cloud Security": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Government Benefits": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Digital Subscriptions": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Pharma": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Hospice Care": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Manufacturing Service": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Cloud Platform Ops": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Government Tax": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Wholesale Pharma": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Medical Devices": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Education Finance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Banking Ops": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Logistics Control Tower": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Clinical Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Health": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Field Service": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Energy Retail": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Industrial Maintenance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Government Licensing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Ecommerce Ops": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Observability": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Hospital Revenue": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Logistics Brokerage": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Emergency Response": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Precision Medicine": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Supply Finance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "B2B Commerce": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Utility Billing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Warehouse Ops": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Health Claims": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Cyber Resilience": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Service Procurement": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Academic Research": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Elder Care": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Logistics": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Corporate Finance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Factory Automation": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Energy Efficiency": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Medical Supplies": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Public Insurance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Digital Platform": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Subscription Billing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Revenue Cycle": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Home Healthcare": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Retail Manufacturing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Shared Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Smart Grid": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Quality Engineering": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Regulatory Affairs": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Claims Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Platform Engineering": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Online Learning": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Transportation Fleet": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Patient Access": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Consumer Goods": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Procurement Shared Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Water Utilities": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Asset Quality": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Publishing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Disability Claims": {
+      "v3": 0,
+      "strict": 100
+    },
+    "DevSecOps": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Training Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Freight Forwarding": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Patient Billing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Consumer Supply": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Vendor Management": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Grid Reliability": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Inspection Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Clinical Publishing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Benefits Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Build Engineering": {
+      "v3": 0,
+      "strict": 100
+    },
+    "LMS Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Port Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Care Coordination": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Brand Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Revenue Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Distributed Energy": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Supplier Quality": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Content Lifecycle": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Risk Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "SRE Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Student Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Cargo Operations": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Patient Experience": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Consumer Pricing": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Order Finance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Grid Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Production Planning": {
+      "v3": 0,
+      "strict": 100
+    },
+    "R&D Governance": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Case Management": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Release Engineering": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Learning Services": {
+      "v3": 0,
+      "strict": 100
+    },
+    "Cross-Border Freight": {
+      "v3": 0,
+      "strict": 100
+    }
   }
 }

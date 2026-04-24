@@ -2,6 +2,7 @@ import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { spawnSync } from "node:child_process";
+import { copyFileSync, existsSync } from "node:fs";
 import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
 import { viteStaticCopy } from "vite-plugin-static-copy";
@@ -27,6 +28,27 @@ function precomputeStatsPlugin(): Plugin {
   };
 }
 
+/**
+ * Keeps `public/README.md` in sync with the repo-root README so the in-app
+ * /readme page always renders the latest copy. Runs in both dev (on server
+ * start) and build (on bundle start) so changes show up immediately.
+ */
+function syncReadmePlugin(): Plugin {
+  const sync = () => {
+    const src = path.resolve(__dirname, "README.md");
+    const dest = path.resolve(__dirname, "public/README.md");
+    if (existsSync(src)) {
+      try { copyFileSync(src, dest); } catch (_e) { /* non-fatal */ }
+    }
+  };
+  return {
+    name: "sync-readme",
+    configResolved: sync,
+    buildStart: sync,
+  };
+}
+
+
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
@@ -38,6 +60,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     precomputeStatsPlugin(),
+    syncReadmePlugin(),
     react(),
     mode === "development" && componentTagger(),
     viteStaticCopy({
