@@ -446,13 +446,30 @@ const Dashboard = () => {
                   Browse all <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
                 <SummaryStat label="Total E2E scenarios" value={industryIndex.totals.scenarios.toLocaleString()} />
                 <SummaryStat label="Industries" value={industryIndex.totals.industries.toLocaleString()} />
                 <SummaryStat label="Products / ERPs" value={industryIndex.totals.products.toLocaleString()} />
-                <SummaryStat label="Strict-validated" value={industryIndex.totals.strict.toLocaleString()} sub={`${Math.round((industryIndex.totals.strict / industryIndex.totals.scenarios) * 100)}% of total`} />
-                <SummaryStat label="V3 library" value={industryIndex.totals.v3.toLocaleString()} sub={`${Math.round((industryIndex.totals.v3 / industryIndex.totals.scenarios) * 100)}% of total`} />
-                <SummaryStat label="High priority" value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`} sub={`${industryIndex.totals.high.toLocaleString()} rows`} />
+                <SummaryStat
+                  label="Strict-validated"
+                  value={industryIndex.totals.strict.toLocaleString()}
+                  sub={`${Math.round((industryIndex.totals.strict / industryIndex.totals.scenarios) * 100)}% of total`}
+                />
+                <SummaryStat
+                  label="Incremental B21+"
+                  value={industryIndex.totals.incremental.toLocaleString()}
+                  sub={`${Math.round((industryIndex.totals.incremental / industryIndex.totals.scenarios) * 100)}% of total`}
+                />
+                <SummaryStat
+                  label="V3 library"
+                  value={industryIndex.totals.v3.toLocaleString()}
+                  sub={`${Math.round((industryIndex.totals.v3 / industryIndex.totals.scenarios) * 100)}% of total`}
+                />
+                <SummaryStat
+                  label="High priority"
+                  value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`}
+                  sub={`${industryIndex.totals.high.toLocaleString()} rows`}
+                />
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
                 <SuccessMetric
