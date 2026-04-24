@@ -263,6 +263,47 @@ async function build(): Promise<GlobalIndex> {
     }),
   );
 
+  // ---- 4. Industry-grounded scenarios (36k+ rows from industry_scenarios.json) ----
+  try {
+    const industryIdx = await getIndustryIndex();
+    for (const s of industryIdx.scenarios) {
+      const platformKey = erpToPlatform(s.erp_system, s.product);
+      const domain = resolveDomain(s.industry);
+      tryAdd({
+        id: s.scenario_id,
+        source: platformKey,
+        sourceLabel: s.erp_system || s.product || "Industry",
+        module: s.product || s.modules[0] || s.industry,
+        scenario: s.e2e_scenario_name,
+        priority: s.priority,
+        testType: s.test_type,
+        preconditions: s.integration_hint,
+        steps: s.business_description,
+        expected: "End-to-end flow completes without functional or data errors.",
+        productRoute: `/industries/${domain.slug}`,
+        raw: {
+          "Test Case ID": s.scenario_id,
+          "Test Scenario": s.e2e_scenario_name,
+          Industry: s.industry,
+          Domain: domain.name,
+          Product: s.product,
+          "ERP System": s.erp_system,
+          Module: s.modules.join(", "),
+          "Data Sources": s.data_sources.join(", "),
+          Priority: s.priority,
+          "Test Type": s.test_type,
+          "Auto Feasibility": s.auto_feasibility,
+          Preconditions: s.integration_hint,
+          Steps: s.business_description,
+          "Expected Result": "End-to-end flow completes without functional or data errors.",
+          Batch: s.batch,
+        },
+      });
+    }
+  } catch {
+    // Industry index unavailable — keep going.
+  }
+
   // Help fuzzy lookup for known prefixes that may not have appeared yet
   const STATIC_PREFIXES: Record<string, string> = {
     SAP: "sap",
