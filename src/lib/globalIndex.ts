@@ -17,6 +17,9 @@ import { SAP_TEST_CASES } from "@/data/sapTestCases";
 import { SALESFORCE_CLOUDS } from "@/data/salesforceClouds";
 import { readCache, writeCache, TTL_MS } from "@/lib/indexCache";
 import { getCachedCsv } from "@/lib/csvCache";
+import { getIndustryIndex } from "@/data/industryScenarios";
+import { resolveDomain } from "@/data/industryDomains";
+import { erpToPlatform } from "@/data/industryScenarios";
 
 export interface IndexedCase {
   id: string;
