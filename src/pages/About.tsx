@@ -147,6 +147,48 @@ const About = () => {
           </ul>
         </section>
 
+        {/* Acknowledgements */}
+        <section>
+          <h2
+            className="text-2xl font-semibold text-foreground mb-4"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          >
+            Thanks &amp; acknowledgements
+          </h2>
+          <p className="text-sm text-muted-foreground mb-4 max-w-3xl">
+            TestForge AI exists because a small constellation of AI tools made it possible to build,
+            iterate and ship at solo-builder velocity. Sincere thanks to:
+          </p>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-muted-foreground">
+            <li className="p-3 rounded border border-border bg-card">
+              <strong className="text-foreground">Anthropic Claude</strong> — primary code,
+              prompt-design and reasoning partner powering both the in-app generator and
+              much of the hand-written architecture.
+            </li>
+            <li className="p-3 rounded border border-border bg-card">
+              <strong className="text-foreground">Perplexity</strong> — research,
+              cross-referencing of platform/module taxonomies and on-the-fly fact checks.
+            </li>
+            <li className="p-3 rounded border border-border bg-card">
+              <strong className="text-foreground">Google Jules</strong> — autonomous
+              repository-level coding assistant used for batch refactors and PR-style edits.
+            </li>
+            <li className="p-3 rounded border border-border bg-card">
+              <strong className="text-foreground">Google Gemini</strong> — secondary
+              reasoning model and large-context summariser for the strict E2E batches.
+            </li>
+            <li className="p-3 rounded border border-border bg-card md:col-span-2">
+              <strong className="text-foreground">Lovable</strong> — the build-and-deploy
+              platform behind this site. Lovable orchestrates a Vite + React + TypeScript
+              stack with shadcn/ui, Tailwind, React Router and Lovable Cloud (Supabase
+              under the hood) for auth, database and edge functions; it pairs an AI
+              code-edit workflow with a live preview, GitHub sync and one-click publishing.
+              The streaming script generator on this site uses the Lovable AI Gateway
+              with Anthropic Claude as the underlying model.
+            </li>
+          </ul>
+        </section>
+
         <section className="pt-4 border-t border-border text-xs text-muted-foreground">
           Built by <a href="https://www.linkedin.com/in/kalilurrahman" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Kalilur Rahman</a> — a global IT executive's working tool, not a commercial product. Have feedback? Use the <Link to="/feedback" className="text-primary hover:underline">Feedback</Link> form.
         </section>
