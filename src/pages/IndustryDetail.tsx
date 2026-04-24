@@ -21,6 +21,11 @@ import {
   type IndustryIndex,
   type IndustryScenario,
 } from "@/data/industryScenarios";
+import {
+  DOMAIN_BY_SLUG,
+  resolveDomain,
+  type DomainMeta,
+} from "@/data/industryDomains";
 import { toast } from "sonner";
 
 const PRIORITY_CLS: Record<string, string> = {
@@ -35,15 +40,23 @@ const AUTO_CLS: Record<string, string> = {
   Low: "bg-muted text-muted-foreground border-border",
 };
 
+interface ResolvedView {
+  meta: DomainMeta;
+  /** True when the slug refers to a parent domain (rolled up). */
+  isDomain: boolean;
+  /** When isDomain, the set of sub-industry names contained in this view. */
+  subIndustryFilter: Set<string> | null;
+}
+
 const IndustryDetail = () => {
   const { slug = "" } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const meta = INDUSTRY_BY_SLUG.get(slug);
   const [index, setIndex] = useState<IndustryIndex | null>(null);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [productFilter, setProductFilter] = useState<string>("All");
   const [priorityFilter, setPriorityFilter] = useState<string>("All");
+  const [subIndustryFilter, setSubIndustryFilter] = useState<string>("All");
   const [scriptType, setScriptType] = useState<string>("playwright_ts");
 
   useEffect(() => {
@@ -56,10 +69,76 @@ const IndustryDetail = () => {
     };
   }, []);
 
+  /**
+   * Resolve the slug to either:
+   *  1. A parent-domain bucket (e.g. /industries/healthcare → 49 sub-industries)
+   *  2. A legacy single-industry tile (e.g. /industries/pharma → exact match)
+   *  3. A sub-industry slug from the loaded data (e.g. /industries/icu-operations)
+   */
+  const view = useMemo<ResolvedView | null>(() => {
+    // 1. Parent domain match
+    const domain = DOMAIN_BY_SLUG.get(slug);
+    if (domain && index) {
+      const subSet = new Set<string>();
+      for (const s of index.scenarios) {
+        if (resolveDomain(s.industry).slug === slug) subSet.add(s.industry);
+      }
+      if (subSet.size > 0) {
+        return { meta: domain, isDomain: true, subIndustryFilter: subSet };
+      }
+    }
+    // 2. Legacy hand-curated tile
+    const legacy = INDUSTRY_BY_SLUG.get(slug);
+    if (legacy) {
+      return {
+        meta: { slug: legacy.slug, name: legacy.name, blurb: legacy.blurb, glyph: legacy.glyph, accent: legacy.accent },
+        isDomain: false,
+        subIndustryFilter: null,
+      };
+    }
+    // 3. Sub-industry fallback (find by slugified name)
+    if (index) {
+      const summary = index.summaries.find((s) => s.slug === slug);
+      if (summary) {
+        const inferred = resolveDomain(summary.industry);
+        return {
+          meta: {
+            slug,
+            name: summary.industry,
+            blurb: `${summary.industry} sub-domain (rolled under ${inferred.name}).`,
+            glyph: inferred.glyph,
+            accent: inferred.accent,
+          },
+          isDomain: false,
+          subIndustryFilter: null,
+        };
+      }
+    }
+    return null;
+  }, [slug, index]);
+
+  const meta = view?.meta;
+
   const scenarios = useMemo<IndustryScenario[]>(() => {
-    if (!index || !meta) return [];
-    return index.byIndustry.get(meta.name) ?? [];
-  }, [index, meta]);
+    if (!index || !view) return [];
+    if (view.isDomain && view.subIndustryFilter) {
+      return index.scenarios.filter((s) => view.subIndustryFilter!.has(s.industry));
+    }
+    // Legacy / sub-industry view: exact name match
+    return index.byIndustry.get(view.meta.name) ?? [];
+  }, [index, view]);
+
+  const subIndustries = useMemo(() => {
+    if (!view?.isDomain) return ["All"] as string[];
+    const counts = new Map<string, number>();
+    for (const s of scenarios) counts.set(s.industry, (counts.get(s.industry) ?? 0) + 1);
+    return [
+      "All",
+      ...[...counts.entries()]
+        .sort((a, z) => z[1] - a[1])
+        .map(([name]) => name),
+    ];
+  }, [scenarios, view]);
 
   const products = useMemo(() => {
     const set = new Set<string>();
@@ -72,15 +151,17 @@ const IndustryDetail = () => {
     return scenarios.filter((s) => {
       if (productFilter !== "All" && s.product !== productFilter) return false;
       if (priorityFilter !== "All" && s.priority !== priorityFilter) return false;
+      if (subIndustryFilter !== "All" && s.industry !== subIndustryFilter) return false;
       if (!q) return true;
       return (
         s.scenario_id.toLowerCase().includes(q) ||
         s.e2e_scenario_name.toLowerCase().includes(q) ||
         s.business_description.toLowerCase().includes(q) ||
+        s.industry.toLowerCase().includes(q) ||
         s.modules.some((m) => m.toLowerCase().includes(q))
       );
     });
-  }, [scenarios, query, productFilter, priorityFilter]);
+  }, [scenarios, query, productFilter, priorityFilter, subIndustryFilter]);
 
   const totals = useMemo(() => {
     let high = 0;
@@ -94,8 +175,15 @@ const IndustryDetail = () => {
     return { high, auto, integrationCovered };
   }, [scenarios]);
 
-  if (!meta) {
+  if (!loading && !view) {
     return <Navigate to="/industries" replace />;
+  }
+  if (!meta || !view) {
+    return (
+      <div className="min-h-[calc(100vh-64px)] flex items-center justify-center text-sm text-muted-foreground gap-2">
+        <Loader2 className="w-4 h-4 animate-spin" /> Loading industry…
+      </div>
+    );
   }
 
   const handleGenerate = (s: IndustryScenario) => {
