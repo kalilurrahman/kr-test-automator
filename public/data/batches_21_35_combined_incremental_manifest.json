@@ -1,0 +1,29 @@
+{
+  "included_files": [
+    "batches_21_35_combined_incremental.csv",
+    "batches_21_35_combined_incremental.xlsx",
+    "batches_21_35_combined_incremental.json",
+    "batches_21_35_combined_incremental.ts",
+    "batches_21_35_combined_incremental.html",
+    "batches_21_35_combined_incremental.md",
+    "batches_21_35_combined_incremental_stats.json"
+  ],
+  "source_files": [
+    "batch21_e2e_1000.csv",
+    "incremental_batch22_e2e_1000.csv",
+    "incremental_batch23_e2e_1000.csv",
+    "incremental_batch24_e2e_1000.csv",
+    "incremental_batch25_e2e_1000.csv",
+    "incremental_batch26_e2e_1000.csv",
+    "incremental_batch27_e2e_1000.csv",
+    "incremental_batch28_e2e_1000.csv",
+    "incremental_batch29_edge_e2e_1000.csv",
+    "incremental_batch30_progressive_e2e_1000.csv",
+    "incremental_batch31_e2e_1000.csv",
+    "incremental_batch32_e2e_1000.csv",
+    "incremental_batch33_e2e_1000.csv",
+    "incremental_batch34_e2e_1000.csv",
+    "incremental_batch35_e2e_1000.csv"
+  ],
+  "row_count": 15000
+}
