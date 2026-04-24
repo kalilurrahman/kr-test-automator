@@ -1,0 +1,8 @@
+{
+  "summary": {
+    "total": 15000,
+    "unique_scenario_ids": true,
+    "unique_incremental_tags": true,
+    "source_batches": 15
+  }
+}

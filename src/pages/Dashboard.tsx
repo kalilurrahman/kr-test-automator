@@ -70,14 +70,49 @@ interface HeatmapTileProps {
   total: number;
 }
 
+/**
+ * Build a short, readable acronym for any platform name so we can always
+ * render *something* in a heatmap tile, even when full text would overflow.
+ * Strategy:
+ *   • Strip parenthetical suffixes ("SAP S/4HANA (FI)" → "SAP S/4HANA")
+ *   • Take the first letter of each significant word, max 4 chars
+ *   • Fall back to the first 4 chars of the cleaned name
+ */
+const acronymFor = (name: string): string => {
+  const cleaned = name.replace(/\(.*?\)/g, "").trim();
+  if (!cleaned) return "?";
+  const words = cleaned.split(/[\s\-/_]+/).filter(Boolean);
+  if (words.length === 1) {
+    // Single word → take leading caps if any (e.g. "ServiceNow" → "SN")
+    const caps = cleaned.match(/[A-Z0-9]/g);
+    if (caps && caps.length >= 2) return caps.slice(0, 4).join("");
+    return cleaned.slice(0, 4).toUpperCase();
+  }
+  const initials = words
+    .filter((w) => /[A-Za-z0-9]/.test(w[0]))
+    .slice(0, 4)
+    .map((w) => w[0]!.toUpperCase())
+    .join("");
+  return initials || cleaned.slice(0, 4).toUpperCase();
+};
+
 const HeatmapTile = (props: HeatmapTileProps) => {
   const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, index = 0, total } = props;
   if (width <= 0 || height <= 0) return null;
   const fill = tileColor(index, total);
-  const showLabel = width > 50 && height > 30;
-  const showValue = width > 70 && height > 50;
-  const maxChars = Math.max(3, Math.floor(width / 7));
-  const label = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
+  // Compute the longest label that will fit in the tile. If the full name
+  // does not fit, fall back to the acronym so the cell never renders blank.
+  const maxChars = Math.max(2, Math.floor((width - 6) / 6.5));
+  const acronym = acronymFor(name);
+  let label = "";
+  if (name.length <= maxChars) label = name;
+  else if (acronym.length <= maxChars) label = acronym;
+  else label = acronym.slice(0, Math.max(2, maxChars));
+  // Always show the label as long as the tile has any reasonable footprint.
+  const showLabel = width >= 24 && height >= 16;
+  const showValue = width > 70 && height > 50 && name.length <= maxChars;
+  // Scale font size to tile width so very small tiles still get a visible glyph.
+  const fontSize = Math.min(13, Math.max(9, Math.floor(width / 8)));
 
   return (
     <g>
@@ -95,7 +130,7 @@ const HeatmapTile = (props: HeatmapTileProps) => {
           x={x + width / 2}
           y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
           textAnchor="middle"
-          fontSize={Math.min(13, Math.max(10, width / 10))}
+          fontSize={fontSize}
           fontWeight={700}
           fill="#0b0f1a"
           style={{ pointerEvents: "none" }}
@@ -411,13 +446,30 @@ const Dashboard = () => {
                   Browse all <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
                 <SummaryStat label="Total E2E scenarios" value={industryIndex.totals.scenarios.toLocaleString()} />
                 <SummaryStat label="Industries" value={industryIndex.totals.industries.toLocaleString()} />
                 <SummaryStat label="Products / ERPs" value={industryIndex.totals.products.toLocaleString()} />
-                <SummaryStat label="Strict-validated" value={industryIndex.totals.strict.toLocaleString()} sub={`${Math.round((industryIndex.totals.strict / industryIndex.totals.scenarios) * 100)}% of total`} />
-                <SummaryStat label="V3 library" value={industryIndex.totals.v3.toLocaleString()} sub={`${Math.round((industryIndex.totals.v3 / industryIndex.totals.scenarios) * 100)}% of total`} />
-                <SummaryStat label="High priority" value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`} sub={`${industryIndex.totals.high.toLocaleString()} rows`} />
+                <SummaryStat
+                  label="Strict-validated"
+                  value={industryIndex.totals.strict.toLocaleString()}
+                  sub={`${Math.round((industryIndex.totals.strict / industryIndex.totals.scenarios) * 100)}% of total`}
+                />
+                <SummaryStat
+                  label="Incremental B21+"
+                  value={industryIndex.totals.incremental.toLocaleString()}
+                  sub={`${Math.round((industryIndex.totals.incremental / industryIndex.totals.scenarios) * 100)}% of total`}
+                />
+                <SummaryStat
+                  label="V3 library"
+                  value={industryIndex.totals.v3.toLocaleString()}
+                  sub={`${Math.round((industryIndex.totals.v3 / industryIndex.totals.scenarios) * 100)}% of total`}
+                />
+                <SummaryStat
+                  label="High priority"
+                  value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`}
+                  sub={`${industryIndex.totals.high.toLocaleString()} rows`}
+                />
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
                 <SuccessMetric
@@ -454,9 +506,10 @@ const Dashboard = () => {
                           <th className="px-3 py-2 font-medium">Industry</th>
                           <th className="px-2 py-2 font-medium text-right">E2E</th>
                           <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">Strict</th>
-                          <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">V3</th>
+                          <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">Incr.</th>
+                          <th className="px-2 py-2 font-medium text-right hidden md:table-cell">V3</th>
                           <th className="px-2 py-2 font-medium text-right hidden md:table-cell">High</th>
-                          <th className="px-2 py-2 font-medium text-right hidden md:table-cell">Auto</th>
+                          <th className="px-2 py-2 font-medium text-right hidden lg:table-cell">Auto</th>
                           <th className="px-2 py-2 font-medium text-right hidden lg:table-cell">Products</th>
                         </tr>
                       </thead>
@@ -480,13 +533,16 @@ const Dashboard = () => {
                               <td className="px-2 py-2 text-right font-mono text-emerald-400/90 hidden sm:table-cell">
                                 {s.strict ? s.strict.toLocaleString() : "—"}
                               </td>
-                              <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden sm:table-cell">
+                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden sm:table-cell">
+                                {s.incremental ? s.incremental.toLocaleString() : "—"}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden md:table-cell">
                                 {s.v3 ? s.v3.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-destructive/90 hidden md:table-cell">
                                 {s.high.toLocaleString()}
                               </td>
-                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden md:table-cell">
+                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden lg:table-cell">
                                 {s.autoReady.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden lg:table-cell">
@@ -500,8 +556,9 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className="text-[10px] text-muted-foreground mt-2 leading-relaxed">
-                  <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).
-                  <span className="text-muted-foreground"> V3</span> = original 9.5k library.
+                  <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).{" "}
+                  <span className="text-primary/90">Incr.</span> = incremental B21–B35 strict batches (15k rows).{" "}
+                  <span className="text-muted-foreground">V3</span> = original 9.5k library.
                   Click any row to open that industry's scenario detail.
                 </div>
               </Card>

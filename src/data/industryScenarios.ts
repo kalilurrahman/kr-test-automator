@@ -11,7 +11,7 @@
  * indices are built up-front so the UI never has to scan 12k rows again.
  */
 
-export type ScenarioBatch = "v3" | "strict";
+export type ScenarioBatch = "v3" | "strict" | "incremental";
 
 export interface IndustryScenario {
   scenario_id: string;
@@ -27,7 +27,12 @@ export interface IndustryScenario {
   test_type: string;
   auto_feasibility: "High" | "Medium" | "Low" | string;
   integration_hint: string;
-  /** Source batch — `v3` = original 9.5k library, `strict` = validated strict E2E set. */
+  /**
+   * Source batch:
+   *  - `v3`           = original 9,500 industry library
+   *  - `strict`       = 12,000 strict-validated E2E set
+   *  - `incremental`  = 15,000 incremental B21–B35 strict E2E batches
+   */
   batch: ScenarioBatch;
   /** True when the row passes the strict E2E validation rules. */
   strict_e2e: boolean;
@@ -48,6 +53,8 @@ export interface IndustrySummary {
   strict: number;
   /** Original v3 batch count (subset of total) */
   v3: number;
+  /** Incremental B21–B35 strict E2E count (subset of total) */
+  incremental: number;
   /** Distinct products / ERPs covered */
   products: string[];
   /** Distinct ERP systems covered (e.g. "SAP S/4HANA", "Salesforce") */
@@ -72,6 +79,8 @@ export interface IndustryIndex {
     strict: number;
     /** Original v3 batch rows */
     v3: number;
+    /** Incremental B21–B35 rows (strict E2E, future batches will append here) */
+    incremental: number;
   };
   /** Distribution of test_type values */
   testTypeCounts: Record<string, number>;
@@ -115,7 +124,9 @@ const build = async (): Promise<IndustryIndex> => {
   const raw = (await res.json()) as Array<Record<string, unknown>>;
 
   const scenarios: IndustryScenario[] = raw.map((r) => {
-    const batch: ScenarioBatch = r.batch === "strict" ? "strict" : "v3";
+    const rawBatch = String(r.batch ?? "v3");
+    const batch: ScenarioBatch =
+      rawBatch === "strict" ? "strict" : rawBatch === "incremental" ? "incremental" : "v3";
     return {
       scenario_id: String(r.scenario_id ?? ""),
       industry: String(r.industry ?? "Unknown"),
@@ -130,7 +141,8 @@ const build = async (): Promise<IndustryIndex> => {
       auto_feasibility: String(r.auto_feasibility ?? ""),
       integration_hint: String(r.integration_hint ?? ""),
       batch,
-      strict_e2e: typeof r.strict_e2e === "boolean" ? r.strict_e2e : batch === "strict",
+      strict_e2e:
+        typeof r.strict_e2e === "boolean" ? r.strict_e2e : batch !== "v3",
     };
   });
 
@@ -143,6 +155,7 @@ const build = async (): Promise<IndustryIndex> => {
   let integrationCoverage = 0;
   let strict = 0;
   let v3 = 0;
+  let incremental = 0;
 
   for (const s of scenarios) {
     if (s.scenario_id) byId.set(s.scenario_id, s);
@@ -156,6 +169,7 @@ const build = async (): Promise<IndustryIndex> => {
     if (s.auto_feasibility === "High") autoReady += 1;
     if (s.integration_hint && s.integration_hint.trim().length > 0) integrationCoverage += 1;
     if (s.batch === "strict") strict += 1;
+    else if (s.batch === "incremental") incremental += 1;
     else v3 += 1;
     testTypeCounts[s.test_type] = (testTypeCounts[s.test_type] ?? 0) + 1;
   }
@@ -168,12 +182,14 @@ const build = async (): Promise<IndustryIndex> => {
       let a = 0;
       let s = 0;
       let v = 0;
+      let inc = 0;
       for (const row of list) {
         if (row.product) products.add(row.product);
         if (row.erp_system) ervSystems.add(row.erp_system);
         if (row.priority === "High") h += 1;
         if (row.auto_feasibility === "High") a += 1;
         if (row.batch === "strict") s += 1;
+        else if (row.batch === "incremental") inc += 1;
         else v += 1;
       }
       return {
@@ -184,6 +200,7 @@ const build = async (): Promise<IndustryIndex> => {
         autoReady: a,
         strict: s,
         v3: v,
+        incremental: inc,
         products: [...products].sort(),
         ervSystems: [...ervSystems].sort(),
       };
@@ -205,6 +222,7 @@ const build = async (): Promise<IndustryIndex> => {
       integrationCoverage,
       strict,
       v3,
+      incremental,
     },
     testTypeCounts,
   };

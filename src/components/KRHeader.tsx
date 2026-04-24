@@ -31,8 +31,10 @@ import {
 /**
  * Top-level navigation order (per latest IA refresh):
  *   Industries → Products/Platforms → Services → Generated Scenarios →
- *   Dashboard → Downloads → README
+ *   Dashboard → Downloads → More (library) → README → (Config / Settings)
  *
+ * README sits immediately before the user / settings cluster on the right
+ * so reference docs are the last thing users see before account controls.
  * "Generate" stays as the entry to "/" so users can always jump back to the
  * generator without losing the new IA.
  */
@@ -43,6 +45,7 @@ const PRIMARY_LINKS = [
   { to: "/scenarios", label: "Scenarios", icon: TestTube2, match: "/scenarios" },
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard, match: "/dashboard" },
   { to: "/downloads", label: "Downloads", icon: Download, match: "/downloads" },
+  // README sits last so it appears immediately before the user/settings cluster.
   { to: "/readme", label: "README", icon: BookOpen, match: "/readme" },
 ] as const;
 
@@ -146,7 +149,6 @@ const KRHeader = () => {
             <NavLink to="/scenarios" label="Scenarios" icon={TestTube2} active={startsWith("/scenarios")} />
             <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
             <NavLink to="/downloads" label="Downloads" icon={Download} active={startsWith("/downloads")} />
-            <NavLink to="/readme" label="README" icon={BookOpen} active={startsWith("/readme")} />
 
             {/* Library dropdown (kept for templates/history/etc.) */}
             <DropdownMenu>
@@ -180,6 +182,10 @@ const KRHeader = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* README sits immediately before the user / settings cluster so
+                reference docs are the last nav stop before account controls. */}
+            <NavLink to="/readme" label="README" icon={BookOpen} active={startsWith("/readme")} />
 
             {/* Auth */}
             {!loading && (

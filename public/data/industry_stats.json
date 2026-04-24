@@ -1,587 +1,1417 @@
 {
   "summary": {
-    "total": 21500,
+    "total": 36500,
     "v3": 9500,
     "strict": 12000,
-    "high": 12380,
-    "autoReady": 14940
+    "incremental": 15000,
+    "high": 19880,
+    "autoReady": 24990
   },
   "byIndustry": {
     "Pharma": {
       "v3": 250,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Healthcare": {
       "v3": 250,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Telecom": {
       "v3": 200,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "CPG": {
       "v3": 150,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Retail": {
       "v3": 150,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Banking": {
       "v3": 500,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Manufacturing": {
       "v3": 500,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Insurance": {
       "v3": 300,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Automotive": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Logistics": {
       "v3": 250,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Aerospace": {
       "v3": 200,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Public Sector": {
       "v3": 250,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Energy & Utilities": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Education": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "IT Services": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Finance": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "HCM": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Real Estate": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Travel": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "High Tech": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Media": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Life Sciences": {
       "v3": 250,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Consumer Finance": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Cybersecurity": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Supply Chain": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Platform & Cloud": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Commerce": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Government": {
       "v3": 500,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Edge/IoT": {
       "v3": 500,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Research": {
       "v3": 500,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "GovTech": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Retail & eCommerce": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Transportation": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Chemicals": {
       "v3": 250,
-      "strict": 0
+      "strict": 0,
+      "incremental": 0
     },
     "Aviation": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Maritime": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Pharma Manufacturing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Energy Trading": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Higher Education": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Insurance Claims": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Customer Service": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Supply Network": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Digital Commerce": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 100
     },
     "Public Health": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Pharmacy Ops": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Surgical Care": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Wholesale Distribution": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Utilities Field Service": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Manufacturing Traceability": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 100
     },
     "Life Sciences QA": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Returns": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Cloud Security": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Government Benefits": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Digital Subscriptions": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Pharma": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Hospice Care": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Manufacturing Service": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Cloud Platform Ops": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Government Tax": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Wholesale Pharma": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Medical Devices": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Education Finance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Banking Ops": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Logistics Control Tower": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Clinical Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Health": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Field Service": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Energy Retail": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Industrial Maintenance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Government Licensing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Ecommerce Ops": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Observability": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Hospital Revenue": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Logistics Brokerage": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Emergency Response": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Precision Medicine": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Supply Finance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "B2B Commerce": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Utility Billing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Warehouse Ops": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Health Claims": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Cyber Resilience": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Service Procurement": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Academic Research": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Elder Care": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Logistics": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Corporate Finance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Factory Automation": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Energy Efficiency": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Medical Supplies": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Public Insurance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Digital Platform": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Subscription Billing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Revenue Cycle": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Home Healthcare": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Retail Manufacturing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Shared Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Smart Grid": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Quality Engineering": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Regulatory Affairs": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Claims Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Platform Engineering": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Online Learning": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Transportation Fleet": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Patient Access": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Consumer Goods": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Procurement Shared Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Water Utilities": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Asset Quality": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Publishing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Disability Claims": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "DevSecOps": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Training Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Freight Forwarding": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Patient Billing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Consumer Supply": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Vendor Management": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Grid Reliability": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Inspection Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Clinical Publishing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Benefits Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Build Engineering": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "LMS Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Port Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Care Coordination": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Brand Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Revenue Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Distributed Energy": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Supplier Quality": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Content Lifecycle": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Risk Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "SRE Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Student Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Cargo Operations": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Patient Experience": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Consumer Pricing": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Order Finance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Grid Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Production Planning": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "R&D Governance": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Case Management": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Release Engineering": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Learning Services": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
     },
     "Cross-Border Freight": {
       "v3": 0,
-      "strict": 100
+      "strict": 100,
+      "incremental": 0
+    },
+    "Pharmaceutical Logistics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Hospital Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Enterprise Procurement": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Power Distribution": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Industrial Production": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Clinical Compliance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Public Assistance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Cloud Reliability": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 300
+    },
+    "Education Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Global Freight": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 200
+    },
+    "Retail Pharma Distribution": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Acute Care Ops": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Sourcing Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Transmission Grid": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Regulatory Compliance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Benefits Eligibility": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Platform SRE": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Academic Finance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "International Logistics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Retail Fulfillment": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Inpatient Care": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Indirect Procurement": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Network Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Quality Control": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Pharmacovigilance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Citizen Services": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Site Reliability": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Learning Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Import Export Logistics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Ecommerce Delivery": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Emergency Ward": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Global Sourcing": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Utility Metering": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Assembly Quality": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Safety Reporting": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Public Casework": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Release Reliability": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Training Compliance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "International Shipping": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Online Retail Ops": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Critical Care": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Strategic Sourcing": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Grid Monitoring": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Plant Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Clinical Safety": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Government Intake": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Platform Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Workforce Learning": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Trade Logistics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Emergency Surgery": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Supplier Collaboration": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Electric Grid Control": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Production Execution": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Regulatory Quality": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Public Benefits": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "DevOps Platform": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Academy Services": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Cross-border Freight": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Pharmacy Fulfillment": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Surgical Recovery": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Supplier Network": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Grid Dispatch": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Batch Manufacturing": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Quality Assurance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Benefit Review": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Cloud Incident": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Learning Admin": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "International Cargo": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Returns & Refunds": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Emergency Dispatch": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Contract Sourcing": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Grid Outages": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Manufacturing Defects": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Quality Events": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Public Appeals": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Cloud Resilience": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Learning Exceptions": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Global Freight Claims": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Subscription Returns": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "ER Incident Command": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Supplier Dispute": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Network Failover": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Factory Rework": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Compliance Exception": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Citizen Appeals": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "SRE Automation": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Course Corrections": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Customs Exceptions": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Retail Promotions": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "ICU Operations": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Bid Management": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Grid Balancing": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Assembly Rework": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Compliance Monitoring": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Benefits Appeals": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Infrastructure Observability": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Enrollment Services": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Freight Exceptions": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Intensive Care": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Catalog Management": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Bid-to-Bill": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Grid Forecasting": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Defect Analytics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "GxP Documentation": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Child Benefits": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "SRE Incident": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Student Retention": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Port Clearance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Promotion Analytics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Cardiology Care": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Supplier Negotiation": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Outage Response": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Quality Hold": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Safety Case": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Permit Appeals": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Cloud Alerting": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Admissions": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Container Shipping": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Sales Order Exceptions": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Neurology Care": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Contract Lifecycle": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Voltage Events": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Batch Release": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Labeling Compliance": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Service Eligibility": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Ops Monitoring": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Academic Billing": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Ocean Freight": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Demand Planning": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Orthopedic Care": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Vendor Onboarding": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Voltage Recovery": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Manufacturing Audit": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Clinical Change Control": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Program Eligibility": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Academic Services": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
+    },
+    "Ocean Logistics": {
+      "v3": 0,
+      "strict": 0,
+      "incremental": 100
     }
   }
 }
