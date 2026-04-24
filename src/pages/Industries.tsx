@@ -4,20 +4,14 @@ import { Search, Loader2, Sparkles, Factory, Download } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import SeoHead from "@/components/SeoHead";
-import {
-  INDUSTRIES,
-  ACCENT_BG,
-  type IndustryMeta,
-} from "@/data/industryMeta";
+import { ACCENT_BG } from "@/data/industryMeta";
 import { getIndustryIndex, type IndustryIndex } from "@/data/industryScenarios";
-
-interface IndustryRow extends IndustryMeta {
-  total: number;
-  high: number;
-  autoReady: number;
-  products: number;
-}
+import {
+  buildDomainBuckets,
+  type DomainBucket,
+} from "@/data/industryDomains";
 
 const Industries = () => {
   const [index, setIndex] = useState<IndustryIndex | null>(null);
@@ -34,26 +28,28 @@ const Industries = () => {
     };
   }, []);
 
-  const rows = useMemo<IndustryRow[]>(() => {
-    return INDUSTRIES.map((meta) => {
-      const summary = index?.summaries.find((s) => s.industry === meta.name);
-      return {
-        ...meta,
-        total: summary?.total ?? 0,
-        high: summary?.high ?? 0,
-        autoReady: summary?.autoReady ?? 0,
-        products: summary?.products.length ?? 0,
-      };
-    }).sort((a, b) => b.total - a.total);
+  const buckets = useMemo<DomainBucket[]>(() => {
+    if (!index) return [];
+    return buildDomainBuckets(index.scenarios);
   }, [index]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return rows;
-    return rows.filter(
-      (r) => r.name.toLowerCase().includes(q) || r.blurb.toLowerCase().includes(q),
-    );
-  }, [rows, query]);
+    if (!q) return buckets;
+    return buckets
+      .map((b) => ({
+        ...b,
+        subIndustries: b.subIndustries.filter(
+          (s) => s.name.toLowerCase().includes(q) || b.name.toLowerCase().includes(q),
+        ),
+      }))
+      .filter(
+        (b) =>
+          b.name.toLowerCase().includes(q) ||
+          b.blurb.toLowerCase().includes(q) ||
+          b.subIndustries.length > 0,
+      );
+  }, [buckets, query]);
 
   const totals = index?.totals;
 
@@ -61,7 +57,7 @@ const Industries = () => {
     <div className="min-h-[calc(100vh-64px)]">
       <SeoHead
         title="Industries · E2E Test Repository"
-        description="Browse 21,500 E2E test scenarios across 144 industries — combining the v3 industry library and the strict-validated E2E master."
+        description={`Browse ${(totals?.scenarios ?? 36500).toLocaleString()} E2E test scenarios grouped under parent industry domains.`}
         canonical="/industries"
       />
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
@@ -74,11 +70,11 @@ const Industries = () => {
               className="text-2xl md:text-3xl font-bold text-foreground leading-tight"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              Industries
+              Industry Domains
             </h1>
             <p className="text-sm text-muted-foreground mt-1">
               {totals
-                ? `${totals.scenarios.toLocaleString()} unique E2E scenarios across ${totals.industries} industries and ${totals.products.toLocaleString()} products.`
+                ? `${totals.scenarios.toLocaleString()} unique E2E scenarios grouped under ${buckets.length} parent industry domains (rolled up from ${totals.industries} fine-grained sub-domains).`
                 : "Loading industry-grounded scenario library…"}
             </p>
           </div>
@@ -86,15 +82,11 @@ const Industries = () => {
 
         {/* Headline metrics */}
         <section className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <MetricCard label="Industries" value={totals?.industries ?? "—"} />
-          <MetricCard label="E2E scenarios" value={totals?.scenarios.toLocaleString() ?? "—"} />
+          <MetricCard label="Parent domains" value={buckets.length || "—"} />
+          <MetricCard label="Sub-domains" value={totals?.industries ?? "—"} />
           <MetricCard
-            label="High-priority %"
-            value={
-              totals && totals.scenarios > 0
-                ? `${Math.round((totals.high / totals.scenarios) * 100)}%`
-                : "—"
-            }
+            label="E2E scenarios"
+            value={totals?.scenarios.toLocaleString() ?? "—"}
           />
           <MetricCard
             label="Auto-ready %"
@@ -111,13 +103,13 @@ const Industries = () => {
           <div className="flex items-center gap-2 mb-2">
             <Search className="w-4 h-4 text-primary" />
             <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
-              Filter industries
+              Filter domains and sub-industries
             </h2>
           </div>
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Try Pharma, Banking, Telecom, IoT…"
+            placeholder="Try Pharma, ICU, Banking, Telecom, IoT…"
             className="bg-background"
             aria-label="Filter industries"
           />
@@ -129,7 +121,7 @@ const Industries = () => {
           </div>
         )}
 
-        {/* Tile grid */}
+        {/* Parent-domain tile grid */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((row) => (
             <Link
@@ -143,7 +135,7 @@ const Industries = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3
-                    className="text-lg font-semibold text-foreground leading-tight truncate"
+                    className="text-lg font-semibold text-foreground leading-tight"
                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     title={row.name}
                   >
@@ -154,28 +146,59 @@ const Industries = () => {
                   </p>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 text-center mt-2">
+
+              <div className="grid grid-cols-3 gap-2 text-center mb-3">
                 <Pill label="Scenarios" value={row.total.toLocaleString()} />
                 <Pill label="High prio" value={row.high.toLocaleString()} />
                 <Pill label="Auto-ready" value={row.autoReady.toLocaleString()} />
               </div>
+
+              {row.subIndustries.length > 0 && (
+                <div className="space-y-1.5">
+                  <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                    {row.subIndustries.length} sub-industries
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    {row.subIndustries.slice(0, 6).map((s) => (
+                      <Badge
+                        key={s.name}
+                        variant="outline"
+                        className="text-[10px] font-normal bg-background/40 border-border/50"
+                      >
+                        {s.name}
+                        <span className="ml-1 text-muted-foreground">
+                          {s.total}
+                        </span>
+                      </Badge>
+                    ))}
+                    {row.subIndustries.length > 6 && (
+                      <Badge
+                        variant="outline"
+                        className="text-[10px] font-normal bg-background/40 border-border/50"
+                      >
+                        +{row.subIndustries.length - 6}
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+              )}
             </Link>
           ))}
           {filtered.length === 0 && !loading && (
             <Card className="col-span-full p-8 text-center text-muted-foreground text-sm">
-              No industries match your filter.
+              No domains match your filter.
             </Card>
           )}
         </section>
 
-        {/* Bulk export — strict E2E master bundle */}
+        {/* Bulk export */}
         {totals && (
           <Card className="p-4 bg-card border-border space-y-3">
             <div className="flex items-center gap-2">
               <Download className="w-4 h-4 text-primary" />
               <div className="text-sm text-foreground">
                 <span className="font-semibold">Unified strict E2E master</span> —{" "}
-                {totals.scenarios.toLocaleString()} validated scenarios across {totals.industries} industries.
+                {totals.scenarios.toLocaleString()} validated scenarios across {totals.industries} fine-grained sub-domains.
                 Each row spans 3+ business stages and 2+ systems with a downstream outcome.
               </div>
             </div>
@@ -215,18 +238,6 @@ const Industries = () => {
                   <Sparkles className="w-3.5 h-3.5" /> Open Generator
                 </Link>
               </Button>
-            </div>
-            <div className="text-[11px] text-muted-foreground">
-              Working set (pre-strict): {" "}
-              <a className="text-primary hover:underline" href="/data/unified_master_current.xlsx" download>
-                XLSX
-              </a>{" "}·{" "}
-              <a className="text-primary hover:underline" href="/data/unified_master_current.csv" download>
-                CSV
-              </a>{" "}·{" "}
-              <a className="text-primary hover:underline" href="/data/unified_master_current_stats.json" download>
-                stats
-              </a>
             </div>
           </Card>
         )}
