@@ -8,7 +8,8 @@
 const DB_NAME = "tf-cache";
 const DB_VERSION = 1;
 const STORE = "global-index";
-const KEY = "v1";
+// v2: include 36k+ industry-grounded scenarios in the global ID index.
+const KEY = "v2";
 /** 24h freshness window — refresh in the background after this. */
 export const TTL_MS = 24 * 60 * 60 * 1000;
 
