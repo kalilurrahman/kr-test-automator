@@ -70,14 +70,49 @@ interface HeatmapTileProps {
   total: number;
 }
 
+/**
+ * Build a short, readable acronym for any platform name so we can always
+ * render *something* in a heatmap tile, even when full text would overflow.
+ * Strategy:
+ *   • Strip parenthetical suffixes ("SAP S/4HANA (FI)" → "SAP S/4HANA")
+ *   • Take the first letter of each significant word, max 4 chars
+ *   • Fall back to the first 4 chars of the cleaned name
+ */
+const acronymFor = (name: string): string => {
+  const cleaned = name.replace(/\(.*?\)/g, "").trim();
+  if (!cleaned) return "?";
+  const words = cleaned.split(/[\s\-/_]+/).filter(Boolean);
+  if (words.length === 1) {
+    // Single word → take leading caps if any (e.g. "ServiceNow" → "SN")
+    const caps = cleaned.match(/[A-Z0-9]/g);
+    if (caps && caps.length >= 2) return caps.slice(0, 4).join("");
+    return cleaned.slice(0, 4).toUpperCase();
+  }
+  const initials = words
+    .filter((w) => /[A-Za-z0-9]/.test(w[0]))
+    .slice(0, 4)
+    .map((w) => w[0]!.toUpperCase())
+    .join("");
+  return initials || cleaned.slice(0, 4).toUpperCase();
+};
+
 const HeatmapTile = (props: HeatmapTileProps) => {
   const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, index = 0, total } = props;
   if (width <= 0 || height <= 0) return null;
   const fill = tileColor(index, total);
-  const showLabel = width > 50 && height > 30;
-  const showValue = width > 70 && height > 50;
-  const maxChars = Math.max(3, Math.floor(width / 7));
-  const label = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
+  // Compute the longest label that will fit in the tile. If the full name
+  // does not fit, fall back to the acronym so the cell never renders blank.
+  const maxChars = Math.max(2, Math.floor((width - 6) / 6.5));
+  const acronym = acronymFor(name);
+  let label = "";
+  if (name.length <= maxChars) label = name;
+  else if (acronym.length <= maxChars) label = acronym;
+  else label = acronym.slice(0, Math.max(2, maxChars));
+  // Always show the label as long as the tile has any reasonable footprint.
+  const showLabel = width >= 24 && height >= 16;
+  const showValue = width > 70 && height > 50 && name.length <= maxChars;
+  // Scale font size to tile width so very small tiles still get a visible glyph.
+  const fontSize = Math.min(13, Math.max(9, Math.floor(width / 8)));
 
   return (
     <g>
@@ -95,7 +130,7 @@ const HeatmapTile = (props: HeatmapTileProps) => {
           x={x + width / 2}
           y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
           textAnchor="middle"
-          fontSize={Math.min(13, Math.max(10, width / 10))}
+          fontSize={fontSize}
           fontWeight={700}
           fill="#0b0f1a"
           style={{ pointerEvents: "none" }}
