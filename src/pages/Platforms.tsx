@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Search, LayoutGrid, List as ListIcon, Package } from "lucide-react";
+import { ArrowRight, Search, LayoutGrid, List as ListIcon, Package, Star } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -27,6 +27,23 @@ import {
   familyForProduct,
   type FamilyKey,
 } from "@/data/productFamilies";
+
+/**
+ * Pinned "Top Products" group — highest-impact enterprise platforms shown
+ * first on the Products page. They still appear in their normal family
+ * group below so nothing disappears from the regular taxonomy.
+ *
+ * M365 maps to Dynamics 365 because the Microsoft 365 productivity surface
+ * is bundled inside the D365 catalogue (modules array contains "M365").
+ */
+const TOP_PRODUCT_KEYS = [
+  "sap",
+  "salesforce",
+  "servicenow",
+  "oracle",
+  "dynamics365", // serves as the M365 / Microsoft 365 launcher
+  "veeva",
+] as const;
 
 type SortKey = "name" | "modules" | "family";
 
