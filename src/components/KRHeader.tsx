@@ -31,8 +31,10 @@ import {
 /**
  * Top-level navigation order (per latest IA refresh):
  *   Industries → Products/Platforms → Services → Generated Scenarios →
- *   Dashboard → Downloads → README
+ *   Dashboard → Downloads → More (library) → README → (Config / Settings)
  *
+ * README sits immediately before the user / settings cluster on the right
+ * so reference docs are the last thing users see before account controls.
  * "Generate" stays as the entry to "/" so users can always jump back to the
  * generator without losing the new IA.
  */
