@@ -75,6 +75,18 @@ const Platforms = () => {
     return groupProductsByFamily(filtered);
   }, [filtered, sortKey]);
 
+  /**
+   * Pinned top-products band — only shown when no search/family filter is
+   * active so it never feels misleading. Order matches TOP_PRODUCT_KEYS.
+   */
+  const topProducts = useMemo<ProductEntry[]>(() => {
+    if (query.trim().length > 0 || familyFilter !== "all") return [];
+    const byKey = new Map(PRODUCT_CATALOG.map((p) => [p.key, p]));
+    return TOP_PRODUCT_KEYS.map((k) => byKey.get(k)).filter(
+      (p): p is ProductEntry => Boolean(p),
+    );
+  }, [query, familyFilter]);
+
   return (
     <>
       <SeoHead
