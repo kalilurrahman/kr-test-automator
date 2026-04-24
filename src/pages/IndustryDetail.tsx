@@ -328,13 +328,22 @@ const IndustryDetail = () => {
               <Stat label="Auto-ready" value={totals.auto.toLocaleString()} />
               <Stat label="Integration coverage" value={totals.integrationCovered.toLocaleString()} />
               <Stat label="Products" value={(products.length - 1).toString()} />
+              {view.isDomain && (
+                <Stat label="Sub-industries" value={(subIndustries.length - 1).toString()} />
+              )}
             </div>
           </div>
         </header>
 
         {/* Toolbar */}
         <Card className="p-4 bg-card border-border space-y-3">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr,180px,160px,200px] gap-2 items-center">
+          <div
+            className={
+              view.isDomain
+                ? "grid grid-cols-1 md:grid-cols-[1fr,180px,180px,140px,180px] gap-2 items-center"
+                : "grid grid-cols-1 md:grid-cols-[1fr,180px,160px,200px] gap-2 items-center"
+            }
+          >
             <div className="relative">
               <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
               <Input
@@ -345,6 +354,20 @@ const IndustryDetail = () => {
                 aria-label="Search scenarios"
               />
             </div>
+            {view.isDomain && (
+              <select
+                value={subIndustryFilter}
+                onChange={(e) => setSubIndustryFilter(e.target.value)}
+                className="h-9 rounded-md bg-background border border-border px-2 text-sm"
+                aria-label="Filter by sub-industry"
+              >
+                {subIndustries.map((s) => (
+                  <option key={s} value={s}>
+                    {s === "All" ? "All sub-industries" : s}
+                  </option>
+                ))}
+              </select>
+            )}
             <select
               value={productFilter}
               onChange={(e) => setProductFilter(e.target.value)}
@@ -389,10 +412,10 @@ const IndustryDetail = () => {
             </div>
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" size="sm" onClick={downloadIndustryCsv} className="gap-1.5">
-                <Download className="w-3.5 h-3.5" /> Industry CSV
+                <Download className="w-3.5 h-3.5" /> Domain CSV
               </Button>
               <Button variant="outline" size="sm" onClick={downloadIndustryJson} className="gap-1.5">
-                <Download className="w-3.5 h-3.5" /> Industry JSON
+                <Download className="w-3.5 h-3.5" /> Domain JSON
               </Button>
             </div>
           </div>
