@@ -45,6 +45,7 @@ const PRIMARY_LINKS = [
   { to: "/scenarios", label: "Scenarios", icon: TestTube2, match: "/scenarios" },
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard, match: "/dashboard" },
   { to: "/downloads", label: "Downloads", icon: Download, match: "/downloads" },
+  // README sits last so it appears immediately before the user/settings cluster.
   { to: "/readme", label: "README", icon: BookOpen, match: "/readme" },
 ] as const;
 
