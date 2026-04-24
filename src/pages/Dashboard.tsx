@@ -506,9 +506,10 @@ const Dashboard = () => {
                           <th className="px-3 py-2 font-medium">Industry</th>
                           <th className="px-2 py-2 font-medium text-right">E2E</th>
                           <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">Strict</th>
-                          <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">V3</th>
+                          <th className="px-2 py-2 font-medium text-right hidden sm:table-cell">Incr.</th>
+                          <th className="px-2 py-2 font-medium text-right hidden md:table-cell">V3</th>
                           <th className="px-2 py-2 font-medium text-right hidden md:table-cell">High</th>
-                          <th className="px-2 py-2 font-medium text-right hidden md:table-cell">Auto</th>
+                          <th className="px-2 py-2 font-medium text-right hidden lg:table-cell">Auto</th>
                           <th className="px-2 py-2 font-medium text-right hidden lg:table-cell">Products</th>
                         </tr>
                       </thead>
@@ -532,13 +533,16 @@ const Dashboard = () => {
                               <td className="px-2 py-2 text-right font-mono text-emerald-400/90 hidden sm:table-cell">
                                 {s.strict ? s.strict.toLocaleString() : "—"}
                               </td>
-                              <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden sm:table-cell">
+                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden sm:table-cell">
+                                {s.incremental ? s.incremental.toLocaleString() : "—"}
+                              </td>
+                              <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden md:table-cell">
                                 {s.v3 ? s.v3.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-destructive/90 hidden md:table-cell">
                                 {s.high.toLocaleString()}
                               </td>
-                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden md:table-cell">
+                              <td className="px-2 py-2 text-right font-mono text-primary/90 hidden lg:table-cell">
                                 {s.autoReady.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden lg:table-cell">
@@ -552,8 +556,9 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className="text-[10px] text-muted-foreground mt-2 leading-relaxed">
-                  <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).
-                  <span className="text-muted-foreground"> V3</span> = original 9.5k library.
+                  <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).{" "}
+                  <span className="text-primary/90">Incr.</span> = incremental B21–B35 strict batches (15k rows).{" "}
+                  <span className="text-muted-foreground">V3</span> = original 9.5k library.
                   Click any row to open that industry's scenario detail.
                 </div>
               </Card>
