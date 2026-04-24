@@ -247,6 +247,10 @@ export const DOMAINS: Array<DomainMeta & { keywords: string[] }> = [
       "returns",
       "brand operations",
       "customer service",
+      "catalog management",
+      "revenue operations",
+      "compliance exception",
+      "compliance monitoring",
     ],
   },
   {
