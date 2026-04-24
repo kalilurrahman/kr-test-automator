@@ -4,9 +4,24 @@
 
 [View Showcase Video](docs/assets/media/showcase.mp4)
 
-**TestForge AI** is an innovative platform tailored for creating, exploring, and saving automated test scripts across various platforms and frameworks. Powered by Generative AI, TestForge provides developers, QA engineers, and IT executives an intuitive interface to rapidly draft test cases for different test scopes.
+**TestForge AI** is an innovative platform tailored for creating, exploring, and saving automated test scripts across various platforms and frameworks. Powered by Generative AI, TestForge gives developers, QA engineers and IT executives an intuitive interface to rapidly draft test cases for any test scope.
 
 **Live Application:** [TestForge AI](https://kr-test-automator.lovable.app/)
+
+---
+
+## 📊 What ships in the box (current snapshot)
+
+| Asset | Count |
+| --- | --- |
+| Curated platform test cases | **130,000+** across SAP, Salesforce, Workday, ServiceNow, Veeva, D365, Oracle, AWS, GCP, Azure, API, iOS, Android, WebApps, TopProducts |
+| Industry E2E scenarios — v3 library | **9,500** rows across 32 base industries |
+| Industry E2E scenarios — strict-validated | **12,000** rows across 120 industries |
+| Industry E2E scenarios — incremental B21–B35 | **15,000** rows (1k per batch × 15) |
+| **Total industry E2E** | **36,500** scenarios across **280+ industries** |
+| Automation script flavours surfaced in the generator | **12+** (Tosca, Playwright TS/PY, Cypress JS, Selenium Java/PY/C#, Robot, Katalon, UFT, Postman, Appium) |
+
+The incremental B21–B35 set is delivered as `public/data/batches_21_35_combined_incremental.{csv,xlsx,json,ts,html,md}` and rolled into the unified industry index automatically. Future B36+ batches drop in the same way without code changes.
 
 ---
 
