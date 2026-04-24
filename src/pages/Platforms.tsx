@@ -202,7 +202,35 @@ const Platforms = () => {
           })}
         </div>
 
-        {/* Output */}
+        {/* Pinned Top Products — highest-impact platforms surfaced at the top.
+           Each product still appears in its normal family group below. */}
+        {topProducts.length > 0 && (
+          <section
+            className="rounded-xl border-2 border-primary/30 bg-primary/[0.04] p-4 sm:p-5 space-y-3"
+            aria-labelledby="top-products-heading"
+          >
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <div className="flex items-center gap-2">
+                <Star className="w-4 h-4 text-primary fill-primary/30" />
+                <h2
+                  id="top-products-heading"
+                  className="text-lg font-semibold text-foreground"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                >
+                  Top Products
+                </h2>
+              </div>
+              <span className="text-[11px] text-muted-foreground font-mono">
+                Pinned · {topProducts.length} flagship platforms
+              </span>
+            </div>
+            <p className="text-xs text-muted-foreground">
+              Highest-impact enterprise platforms — SAP, Salesforce, ServiceNow, Oracle, Microsoft 365 (D365 launcher) and Veeva.
+              They also appear in their respective family groups below.
+            </p>
+            <Layout view={view} products={topProducts} />
+          </section>
+        )}
         {grouped ? (
           <div className="space-y-8">
             {grouped.map((bucket) => (
