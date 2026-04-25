@@ -291,7 +291,7 @@ const build = async (): Promise<IndustryIndex> => {
 
 export const getIndustryStatsSnapshot = (): Promise<IndustryStatsSnapshot> => {
   if (!statsCached) {
-    statsCached = fetch("/data/industry_stats.json", { cache: "force-cache" }).then((res) => {
+    statsCached = fetch("/data/industry_stats_summary.json", { cache: "force-cache" }).then((res) => {
       if (!res.ok) throw new Error(`Failed to load industry stats (${res.status})`);
       return res.json() as Promise<IndustryStatsSnapshot>;
     });
