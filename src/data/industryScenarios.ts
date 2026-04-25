@@ -95,6 +95,33 @@ export interface IndustryIndex {
   testTypeCounts: Record<string, number>;
 }
 
+export interface IndustryStatsSnapshot {
+  summary: {
+    total: number;
+    v3: number;
+    strict: number;
+    incremental: number;
+    high: number;
+    autoReady: number;
+    integrationCoverage?: number;
+    unique_scenario_ids?: number;
+    duplicates_removed?: number;
+    latest_batch?: string;
+    incremental_range?: string;
+  };
+  byIndustry: Record<string, {
+    total: number;
+    v3: number;
+    strict: number;
+    incremental: number;
+    high: number;
+    autoReady: number;
+    products: string[];
+    erpSystems: string[];
+    lineage?: string[];
+  }>;
+}
+
 const PYTHON_LIST_RE = /^\[.*\]$/;
 
 const parseLineage = (raw: unknown, fallback: string): string[] => {
@@ -135,6 +162,7 @@ export const industrySlug = (name: string): string =>
     .replace(/^-|-$/g, "");
 
 let cached: Promise<IndustryIndex> | null = null;
+let statsCached: Promise<IndustryStatsSnapshot> | null = null;
 
 const build = async (): Promise<IndustryIndex> => {
   const res = await fetch("/data/industry_scenarios.json", { cache: "force-cache" });
@@ -180,6 +208,7 @@ const build = async (): Promise<IndustryIndex> => {
   const byProduct = new Map<string, IndustryScenario[]>();
   const byId = new Map<string, IndustryScenario>();
   const testTypeCounts: Record<string, number> = {};
+  const batchNumbers = new Set<number>();
   let high = 0;
   let autoReady = 0;
   let integrationCoverage = 0;
@@ -201,6 +230,7 @@ const build = async (): Promise<IndustryIndex> => {
     if (s.batch === "strict") strict += 1;
     else if (s.batch === "incremental") incremental += 1;
     else v3 += 1;
+    if (typeof s.batch_number === "number") batchNumbers.add(s.batch_number);
     testTypeCounts[s.test_type] = (testTypeCounts[s.test_type] ?? 0) + 1;
   }
 
@@ -253,9 +283,23 @@ const build = async (): Promise<IndustryIndex> => {
       strict,
       v3,
       incremental,
+      latestBatch: batchNumbers.size > 0 ? `B${Math.max(...batchNumbers).toString().padStart(2, "0")}` : undefined,
     },
     testTypeCounts,
   };
+};
+
+export const getIndustryStatsSnapshot = (): Promise<IndustryStatsSnapshot> => {
+  if (!statsCached) {
+    statsCached = fetch("/data/industry_stats.json", { cache: "force-cache" }).then((res) => {
+      if (!res.ok) throw new Error(`Failed to load industry stats (${res.status})`);
+      return res.json() as Promise<IndustryStatsSnapshot>;
+    });
+    statsCached.catch(() => {
+      statsCached = null;
+    });
+  }
+  return statsCached;
 };
 
 export const getIndustryIndex = (): Promise<IndustryIndex> => {
