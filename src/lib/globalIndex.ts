@@ -459,6 +459,19 @@ export async function findCaseById(id: string): Promise<IndexedCase | null> {
   return idx.byId.get(id.trim()) ?? null;
 }
 
+/** Hydrate a single detail page with the full row only when needed. */
+export async function findFullCaseById(id: string): Promise<IndexedCase | null> {
+  const fresh = await build();
+  void writeCache({
+    cases: fresh.cases,
+    prefixes: [...fresh.prefixToSource.entries()],
+    duplicatesRemoved: fresh.duplicatesRemoved,
+    builtAt: fresh.builtAt,
+  });
+  cached = Promise.resolve(fresh);
+  return fresh.byId.get(id.trim()) ?? null;
+}
+
 /** Best-effort source key from an ID prefix (synchronous after first build). */
 export async function guessSourceFromId(id: string): Promise<string | null> {
   const idx = await getGlobalIndex();
