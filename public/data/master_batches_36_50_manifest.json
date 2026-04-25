@@ -1,0 +1,13 @@
+{
+  "package": "master_batches_36_50",
+  "description": "Strict incremental industry E2E batches 36 through 50.",
+  "scenario_count": 15000,
+  "source_batches": 15,
+  "files": [
+  "master_batches_36_50.csv",
+  "master_batches_36_50.json",
+  "master_batches_36_50.xlsx",
+  "master_batches_36_50_full.ts",
+  "master_batches_36_50_testcases.md"
+]
+}
