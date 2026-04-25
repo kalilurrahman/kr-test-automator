@@ -17,9 +17,12 @@ import { SAP_TEST_CASES } from "@/data/sapTestCases";
 import { SALESFORCE_CLOUDS } from "@/data/salesforceClouds";
 import { readCache, writeCache, TTL_MS } from "@/lib/indexCache";
 import { getCachedCsv } from "@/lib/csvCache";
-import { getIndustryIndex } from "@/data/industryScenarios";
 import { resolveDomain } from "@/data/industryDomains";
-import { erpToPlatform } from "@/data/industryScenarios";
+
+type PrecomputedIndexPayload = {
+  builtAt: number;
+  ids: Record<string, [source: string, module: string]>;
+};
 
 export interface IndexedCase {
   id: string;
@@ -65,6 +68,60 @@ const pick = (row: Record<string, string>, keys: string[]) => {
 };
 
 let cached: Promise<GlobalIndex> | null = null;
+
+const labelForSource = (source: string): string => {
+  if (source === "sap") return "SAP";
+  if (source === "salesforce") return "Salesforce";
+  return PLATFORMS.find((p) => p.id === source)?.label ?? source;
+};
+
+const routeForSource = (source: string): string => {
+  if (source === "sap") return "/sap";
+  if (source === "salesforce") return "/salesforce";
+  return PLATFORMS.some((p) => p.id === source) ? `/p/${source}` : "/dashboard";
+};
+
+const buildPrefixMap = (cases: IndexedCase[]): Map<string, string> => {
+  const prefixToSource = new Map<string, string>();
+  for (const c of cases) {
+    const parts = c.id.toUpperCase().split("-");
+    const two = parts.slice(0, 2).join("-");
+    if (two && !prefixToSource.has(two)) prefixToSource.set(two, c.source);
+    const one = parts[0];
+    if (one && !prefixToSource.has(one)) prefixToSource.set(one, c.source);
+  }
+  return prefixToSource;
+};
+
+async function tryPrecomputedIndex(): Promise<GlobalIndex | null> {
+  try {
+    const res = await fetch("/precomputed-index.json", { cache: "force-cache" });
+    if (!res.ok) return null;
+    const payload = (await res.json()) as PrecomputedIndexPayload;
+    const cases: IndexedCase[] = Object.entries(payload.ids).map(([id, [source, module]]) => ({
+      id,
+      source,
+      sourceLabel: labelForSource(source),
+      module,
+      scenario: id,
+      priority: "",
+      testType: "",
+      preconditions: "",
+      steps: "",
+      expected: "",
+      productRoute: routeForSource(source),
+      raw: { "Test Case ID": id, Module: module, Source: labelForSource(source) },
+    }));
+    return fromPersisted({
+      cases,
+      prefixes: [...buildPrefixMap(cases).entries()],
+      duplicatesRemoved: 0,
+      builtAt: payload.builtAt,
+    });
+  } catch {
+    return null;
+  }
+}
 
 /** Hydrate the in-memory index from a persisted snapshot. */
 function fromPersisted(p: {
@@ -121,7 +178,10 @@ export function getGlobalIndex(): Promise<GlobalIndex> {
       }).catch(() => undefined);
       return idx;
     }
-    // 2. Cold path — build from scratch and persist.
+    // 2. Fast static snapshot — avoids fetching/parsing tens of MB of CSV/JSON on first search.
+    const precomputed = await tryPrecomputedIndex();
+    if (precomputed) return precomputed;
+    // 3. Cold fallback — build from scratch and persist.
     const fresh = await build();
     void writeCache({
       cases: fresh.cases,
