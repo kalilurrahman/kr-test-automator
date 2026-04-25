@@ -166,7 +166,7 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{css,html,ico,png,svg,woff2}"],
+        globPatterns: ["index.html", "assets/*.css", "*.{ico,png,svg,webmanifest}", "icons/*.{png,svg}"],
         // Keep the install payload lean; lazy JS/data is cached on demand below.
         maximumFileSizeToCacheInBytes: 1024 * 1024,
         runtimeCaching: [
