@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import SeoHead from "@/components/SeoHead";
-import { findCaseById, type IndexedCase } from "@/lib/globalIndex";
+import { findCaseById, findFullCaseById, type IndexedCase } from "@/lib/globalIndex";
 import { toast } from "sonner";
 
 const priorityTone = (p: string) => {
@@ -26,7 +26,14 @@ const TestCaseDetail = () => {
     let cancelled = false;
     setLoading(true);
     findCaseById(id)
-      .then((hit) => !cancelled && setTc(hit))
+      .then(async (hit) => {
+        if (cancelled) return;
+        setTc(hit);
+        if (hit && (!hit.scenario || hit.scenario === hit.id)) {
+          const full = await findFullCaseById(id);
+          if (!cancelled && full) setTc(full);
+        }
+      })
       .finally(() => !cancelled && setLoading(false));
     return () => { cancelled = true; };
   }, [id]);
