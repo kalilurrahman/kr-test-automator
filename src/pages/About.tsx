@@ -28,8 +28,8 @@ const About = () => {
             TestForge AI is an enterprise test-automation hub. It bundles 130,000+ curated test cases
             across {TOTAL_PRODUCTS} platforms and pairs them with an AI script generator that turns plain-English business cases
             into Selenium, Cypress, Playwright, REST-Assured, Karate, Postman or Robot Framework code.
-            On top of the curated catalogue it ships <strong className="text-foreground">36,500 industry E2E scenarios</strong>{" "}
-            (9.5k v3 library + 12k strict-validated set + 15k incremental B21–B35 batches) across <strong className="text-foreground">280+ industries</strong>.
+            On top of the curated catalogue it ships <strong className="text-foreground">51,500 industry E2E scenarios</strong>{" "}
+            (9.5k v3 library + 12k strict-validated set + 30k incremental B21–B50 batches) across fine-grained industry domains.
           </p>
         </header>
 
@@ -38,7 +38,7 @@ const About = () => {
           <Stat icon={Package} value={TOTAL_PRODUCTS} label="Platforms" />
           <Stat icon={Layers} value={TOTAL_MODULES} label="Modules" />
           <Stat icon={FileCode2} value={totalCases.toLocaleString()} label="Bundled cases" />
-          <Stat icon={Workflow} value="7" label="Frameworks" />
+          <Stat icon={Workflow} value="51,500" label="Industry E2E" />
         </section>
 
         {/* How it's organised */}
@@ -55,6 +55,9 @@ const About = () => {
             </p>
             <p>
               <strong className="text-foreground">Dashboard (/dashboard)</strong> — landing page with stats, quick links and the {TOTAL_PRODUCTS}-platform grid. Includes a <em>Find by ID</em> box that deep-links any test case (e.g. <code className="font-mono text-primary">SF-HC-00005</code>) into the generator with the prompt pre-filled.
+            </p>
+            <p>
+              <strong className="text-foreground">Industries (/industries)</strong> — parent industry domains roll up split sub-domains and expose product lineage such as SAP S/4HANA → module/product plus industry lineage such as Finance → Revenue Management.
             </p>
             <p>
               <strong className="text-foreground">SAP & Salesforce SPA modules</strong> — interactive React pages with searchable tables, analytics charts and one-click "Send to generator".
