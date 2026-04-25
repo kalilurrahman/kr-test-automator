@@ -171,6 +171,19 @@ export default defineConfig(({ mode }) => ({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
+            urlPattern: ({ url }) =>
+              url.origin === self.location.origin &&
+              (url.pathname.endsWith(".json") || url.pathname.endsWith(".csv")),
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "data-snapshots-cache",
+              expiration: {
+                maxEntries: 80,
+                maxAgeSeconds: 60 * 60 * 24 * 7,
+              },
+            },
+          },
+          {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: "CacheFirst",
             options: {
@@ -188,6 +201,17 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          charts: ["recharts"],
+          markdown: ["react-markdown", "remark-gfm"],
+          cloud: ["@supabase/supabase-js"],
+        },
+      },
     },
   },
 }));
