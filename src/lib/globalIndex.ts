@@ -263,7 +263,7 @@ async function build(): Promise<GlobalIndex> {
     }),
   );
 
-  // ---- 4. Industry-grounded scenarios (36k+ rows from industry_scenarios.json) ----
+  // ---- 4. Industry-grounded scenarios (51k+ rows from industry_scenarios.json) ----
   try {
     const industryIdx = await getIndustryIndex();
     for (const s of industryIdx.scenarios) {
@@ -286,7 +286,9 @@ async function build(): Promise<GlobalIndex> {
           "Test Scenario": s.e2e_scenario_name,
           Industry: s.industry,
           Domain: domain.name,
+          "Industry Lineage": s.industry_lineage.join(" > "),
           Product: s.product,
+          "Product Lineage": s.product_lineage.join(" > "),
           "ERP System": s.erp_system,
           Module: s.modules.join(", "),
           "Data Sources": s.data_sources.join(", "),

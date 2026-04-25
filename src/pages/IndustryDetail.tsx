@@ -192,7 +192,9 @@ const IndustryDetail = () => {
     const prose =
       `[${s.scenario_id}] ${s.e2e_scenario_name}\n\n` +
       `Industry: ${s.industry}\n` +
+      `Industry lineage: ${s.industry_lineage.join(" > ")}\n` +
       `Product: ${s.product} (${s.erp_system})\n` +
+      `Product lineage: ${s.product_lineage.join(" > ")}\n` +
       (s.modules.length ? `Modules: ${s.modules.join(", ")}\n` : "") +
       (s.data_sources.length ? `Data sources: ${s.data_sources.join(", ")}\n` : "") +
       `Test type: ${s.test_type}\n` +
@@ -212,6 +214,7 @@ const IndustryDetail = () => {
             "Test Scenario": s.e2e_scenario_name,
             Module: s.modules.join(", "),
             Industry: s.industry,
+            "Industry Lineage": s.industry_lineage.join(" > "),
             Priority: s.priority,
             "Test Type": s.test_type,
             Preconditions: s.integration_hint,
@@ -223,6 +226,8 @@ const IndustryDetail = () => {
           /** Hint passed through to the generator for hybrid prefill. */
           prose,
           industry: s.industry,
+          industryLineage: s.industry_lineage,
+          productLineage: s.product_lineage,
           scriptType,
         }),
       );
@@ -328,6 +333,7 @@ const IndustryDetail = () => {
               <Stat label="Auto-ready" value={totals.auto.toLocaleString()} />
               <Stat label="Integration coverage" value={totals.integrationCovered.toLocaleString()} />
               <Stat label="Products" value={(products.length - 1).toString()} />
+              <Stat label="Latest batch" value={scenarios.reduce((max, row) => Math.max(max, row.batch_number ?? 0), 0) ? `B${scenarios.reduce((max, row) => Math.max(max, row.batch_number ?? 0), 0).toString().padStart(2, "0")}` : "—"} />
               {view.isDomain && (
                 <Stat label="Sub-industries" value={(subIndustries.length - 1).toString()} />
               )}
@@ -434,6 +440,7 @@ const IndustryDetail = () => {
                     <TableHead className="w-[140px]">ID</TableHead>
                     <TableHead>Scenario</TableHead>
                     <TableHead className="hidden md:table-cell">Product / ERP</TableHead>
+                    <TableHead className="hidden xl:table-cell">Lineage</TableHead>
                     <TableHead className="hidden lg:table-cell">Modules</TableHead>
                     <TableHead className="w-[100px]">Priority</TableHead>
                     <TableHead className="w-[110px]">Auto-feas.</TableHead>
@@ -462,6 +469,10 @@ const IndustryDetail = () => {
                       <TableCell className="hidden md:table-cell">
                         <div className="text-xs text-foreground">{s.product}</div>
                         <div className="text-[10px] text-muted-foreground">{s.erp_system}</div>
+                      </TableCell>
+                      <TableCell className="hidden xl:table-cell max-w-[220px]">
+                        <div className="text-[10px] text-muted-foreground truncate" title={s.industry_lineage.join(" > ")}>{s.industry_lineage.join(" › ")}</div>
+                        <div className="text-[10px] text-primary/90 truncate" title={s.product_lineage.join(" > ")}>{s.product_lineage.join(" › ")}</div>
                       </TableCell>
                       <TableCell className="hidden lg:table-cell">
                         <div className="flex flex-wrap gap-1 max-w-[220px]">

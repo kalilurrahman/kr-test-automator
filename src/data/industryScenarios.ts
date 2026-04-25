@@ -1,12 +1,12 @@
 /**
  * Industry-first scenario index
  * --------------------------------------------------------------------------
- * Loads the bundled `public/data/industry_scenarios.json` (12,000 unified
- * strict E2E scenarios across 120 industries × N products) once per session
+ * Loads the bundled `public/data/industry_scenarios.json` (51,500 unified
+ * industry E2E scenarios across fine-grained domains × products) once per session
  * and exposes a typed query surface for the Industries section, generator
  * prefill and dashboard aggregations.
  *
- * The file is fetched lazily on first call (~7 MB) and cached on the module
+ * The file is fetched lazily on first call and cached on the module
  * scope so all consumers share one parse pass. Per-industry / per-product
  * indices are built up-front so the UI never has to scan 12k rows again.
  */
@@ -27,11 +27,18 @@ export interface IndustryScenario {
   test_type: string;
   auto_feasibility: "High" | "Medium" | "Low" | string;
   integration_hint: string;
+  industry_lineage: string[];
+  industry_parent: string;
+  industry_leaf: string;
+  product_lineage: string[];
+  product_parent: string;
+  product_leaf: string;
+  batch_number?: number;
   /**
    * Source batch:
    *  - `v3`           = original 9,500 industry library
    *  - `strict`       = 12,000 strict-validated E2E set
-   *  - `incremental`  = 15,000 incremental B21–B35 strict E2E batches
+   *  - `incremental`  = 30,000 incremental B21–B50 strict E2E batches
    */
   batch: ScenarioBatch;
   /** True when the row passes the strict E2E validation rules. */
@@ -53,7 +60,7 @@ export interface IndustrySummary {
   strict: number;
   /** Original v3 batch count (subset of total) */
   v3: number;
-  /** Incremental B21–B35 strict E2E count (subset of total) */
+  /** Incremental B21–B50 strict E2E count (subset of total) */
   incremental: number;
   /** Distinct products / ERPs covered */
   products: string[];
@@ -79,14 +86,52 @@ export interface IndustryIndex {
     strict: number;
     /** Original v3 batch rows */
     v3: number;
-    /** Incremental B21–B35 rows (strict E2E, future batches will append here) */
+    /** Incremental B21–B50 rows (strict E2E, future batches will append here) */
     incremental: number;
+    latestBatch?: string;
+    duplicatesRemoved?: number;
   };
   /** Distribution of test_type values */
   testTypeCounts: Record<string, number>;
 }
 
+export interface IndustryStatsSnapshot {
+  summary: {
+    total: number;
+    v3: number;
+    strict: number;
+    incremental: number;
+    high: number;
+    autoReady: number;
+    integrationCoverage?: number;
+    unique_scenario_ids?: number;
+    duplicates_removed?: number;
+    latest_batch?: string;
+    incremental_range?: string;
+  };
+  byIndustry: Record<string, {
+    total: number;
+    v3: number;
+    strict: number;
+    incremental: number;
+    high: number;
+    autoReady: number;
+    products: string[];
+    erpSystems: string[];
+    lineage?: string[];
+  }>;
+}
+
 const PYTHON_LIST_RE = /^\[.*\]$/;
+
+const parseLineage = (raw: unknown, fallback: string): string[] => {
+  const parsed = parseList(raw);
+  if (parsed.length > 0) return parsed;
+  return fallback
+    .split(">")
+    .map((part) => part.trim())
+    .filter(Boolean);
+};
 
 /** Parse a Python-style list literal ("['MM', 'SD']") into a string[]. */
 const parseList = (raw: unknown): string[] => {
@@ -117,6 +162,7 @@ export const industrySlug = (name: string): string =>
     .replace(/^-|-$/g, "");
 
 let cached: Promise<IndustryIndex> | null = null;
+let statsCached: Promise<IndustryStatsSnapshot> | null = null;
 
 const build = async (): Promise<IndustryIndex> => {
   const res = await fetch("/data/industry_scenarios.json", { cache: "force-cache" });
@@ -127,11 +173,16 @@ const build = async (): Promise<IndustryIndex> => {
     const rawBatch = String(r.batch ?? "v3");
     const batch: ScenarioBatch =
       rawBatch === "strict" ? "strict" : rawBatch === "incremental" ? "incremental" : "v3";
+    const industry = String(r.industry ?? "Unknown");
+    const erpSystem = String(r.erp_system ?? "");
+    const product = String(r.product ?? "");
+    const industryLineage = parseLineage(r.industry_lineage, industry);
+    const productLineage = parseLineage(r.product_lineage, product || erpSystem || "Unknown");
     return {
       scenario_id: String(r.scenario_id ?? ""),
-      industry: String(r.industry ?? "Unknown"),
-      erp_system: String(r.erp_system ?? ""),
-      product: String(r.product ?? ""),
+      industry,
+      erp_system: erpSystem,
+      product,
       e2e_scenario_name: String(r.e2e_scenario_name ?? ""),
       business_description: String(r.business_description ?? ""),
       modules: parseList(r.modules),
@@ -140,6 +191,13 @@ const build = async (): Promise<IndustryIndex> => {
       test_type: String(r.test_type ?? ""),
       auto_feasibility: String(r.auto_feasibility ?? ""),
       integration_hint: String(r.integration_hint ?? ""),
+      industry_lineage: industryLineage,
+      industry_parent: String(r.industry_parent ?? "").trim() || industryLineage[0] || "Unknown",
+      industry_leaf: String(r.industry_leaf ?? "").trim() || industryLineage.at(-1) || industry,
+      product_lineage: productLineage,
+      product_parent: String(r.product_parent ?? "").trim() || productLineage[0] || erpSystem || product || "Unknown",
+      product_leaf: String(r.product_leaf ?? "").trim() || productLineage.at(-1) || product || erpSystem || "Unknown",
+      batch_number: typeof r.batch_number === "number" ? r.batch_number : undefined,
       batch,
       strict_e2e:
         typeof r.strict_e2e === "boolean" ? r.strict_e2e : batch !== "v3",
@@ -150,6 +208,7 @@ const build = async (): Promise<IndustryIndex> => {
   const byProduct = new Map<string, IndustryScenario[]>();
   const byId = new Map<string, IndustryScenario>();
   const testTypeCounts: Record<string, number> = {};
+  const batchNumbers = new Set<number>();
   let high = 0;
   let autoReady = 0;
   let integrationCoverage = 0;
@@ -171,6 +230,7 @@ const build = async (): Promise<IndustryIndex> => {
     if (s.batch === "strict") strict += 1;
     else if (s.batch === "incremental") incremental += 1;
     else v3 += 1;
+    if (typeof s.batch_number === "number") batchNumbers.add(s.batch_number);
     testTypeCounts[s.test_type] = (testTypeCounts[s.test_type] ?? 0) + 1;
   }
 
@@ -223,9 +283,23 @@ const build = async (): Promise<IndustryIndex> => {
       strict,
       v3,
       incremental,
+      latestBatch: batchNumbers.size > 0 ? `B${Math.max(...batchNumbers).toString().padStart(2, "0")}` : undefined,
     },
     testTypeCounts,
   };
+};
+
+export const getIndustryStatsSnapshot = (): Promise<IndustryStatsSnapshot> => {
+  if (!statsCached) {
+    statsCached = fetch("/data/industry_stats.json", { cache: "force-cache" }).then((res) => {
+      if (!res.ok) throw new Error(`Failed to load industry stats (${res.status})`);
+      return res.json() as Promise<IndustryStatsSnapshot>;
+    });
+    statsCached.catch(() => {
+      statsCached = null;
+    });
+  }
+  return statsCached;
 };
 
 export const getIndustryIndex = (): Promise<IndustryIndex> => {

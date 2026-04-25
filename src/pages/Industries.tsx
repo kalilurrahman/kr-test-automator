@@ -7,21 +7,24 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import SeoHead from "@/components/SeoHead";
 import { ACCENT_BG } from "@/data/industryMeta";
-import { getIndustryIndex, type IndustryIndex } from "@/data/industryScenarios";
 import {
-  buildDomainBuckets,
+  getIndustryStatsSnapshot,
+  type IndustryStatsSnapshot,
+} from "@/data/industryScenarios";
+import {
   type DomainBucket,
+  resolveDomain,
 } from "@/data/industryDomains";
 
 const Industries = () => {
-  const [index, setIndex] = useState<IndustryIndex | null>(null);
+  const [stats, setStats] = useState<IndustryStatsSnapshot | null>(null);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
 
   useEffect(() => {
     let cancelled = false;
-    getIndustryIndex()
-      .then((idx) => !cancelled && setIndex(idx))
+    getIndustryStatsSnapshot()
+      .then((snapshot) => !cancelled && setStats(snapshot))
       .finally(() => !cancelled && setLoading(false));
     return () => {
       cancelled = true;
@@ -29,9 +32,34 @@ const Industries = () => {
   }, []);
 
   const buckets = useMemo<DomainBucket[]>(() => {
-    if (!index) return [];
-    return buildDomainBuckets(index.scenarios);
-  }, [index]);
+    if (!stats) return [];
+    const map = new Map<string, DomainBucket>();
+    for (const [industry, row] of Object.entries(stats.byIndustry)) {
+      const meta = resolveDomain(industry);
+      const existing = map.get(meta.slug) ?? {
+        ...meta,
+        total: 0,
+        high: 0,
+        autoReady: 0,
+        strict: 0,
+        v3: 0,
+        incremental: 0,
+        subIndustries: [],
+        products: [],
+        scenarios: [],
+      };
+      existing.total += row.total;
+      existing.high += row.high;
+      existing.autoReady += row.autoReady;
+      existing.strict += row.strict;
+      existing.v3 += row.v3;
+      existing.incremental += row.incremental;
+      existing.subIndustries.push({ name: industry, total: row.total });
+      existing.products = [...new Set([...existing.products, ...row.products])].sort();
+      map.set(meta.slug, existing);
+    }
+    return [...map.values()].sort((a, b) => b.total - a.total);
+  }, [stats]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -51,13 +79,13 @@ const Industries = () => {
       );
   }, [buckets, query]);
 
-  const totals = index?.totals;
+  const totals = stats?.summary;
 
   return (
     <div className="min-h-[calc(100vh-64px)]">
       <SeoHead
         title="Industries · E2E Test Repository"
-        description={`Browse ${(totals?.scenarios ?? 36500).toLocaleString()} E2E test scenarios grouped under parent industry domains.`}
+        description={`Browse ${(totals?.total ?? 51500).toLocaleString()} E2E test scenarios grouped under parent industry domains.`}
         canonical="/industries"
       />
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
@@ -74,7 +102,7 @@ const Industries = () => {
             </h1>
             <p className="text-sm text-muted-foreground mt-1">
               {totals
-                ? `${totals.scenarios.toLocaleString()} unique E2E scenarios grouped under ${buckets.length} parent industry domains (rolled up from ${totals.industries} fine-grained sub-domains).`
+                ? `${totals.total.toLocaleString()} unique E2E scenarios grouped under ${buckets.length} parent industry domains (rolled up from ${Object.keys(stats.byIndustry).length} fine-grained sub-domains).`
                 : "Loading industry-grounded scenario library…"}
             </p>
           </div>
@@ -83,16 +111,16 @@ const Industries = () => {
         {/* Headline metrics */}
         <section className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <MetricCard label="Parent domains" value={buckets.length || "—"} />
-          <MetricCard label="Sub-domains" value={totals?.industries ?? "—"} />
+          <MetricCard label="Sub-domains" value={stats ? Object.keys(stats.byIndustry).length : "—"} />
           <MetricCard
             label="E2E scenarios"
-            value={totals?.scenarios.toLocaleString() ?? "—"}
+            value={totals?.total.toLocaleString() ?? "—"}
           />
           <MetricCard
             label="Auto-ready %"
             value={
-              totals && totals.scenarios > 0
-                ? `${Math.round((totals.autoReady / totals.scenarios) * 100)}%`
+              totals && totals.total > 0
+                ? `${Math.round((totals.autoReady / totals.total) * 100)}%`
                 : "—"
             }
           />
@@ -115,7 +143,7 @@ const Industries = () => {
           />
         </Card>
 
-        {loading && !index && (
+        {loading && !stats && (
           <div className="flex items-center justify-center py-20 text-muted-foreground text-sm gap-2">
             <Loader2 className="w-4 h-4 animate-spin" /> Loading scenarios…
           </div>
@@ -198,7 +226,7 @@ const Industries = () => {
               <Download className="w-4 h-4 text-primary" />
               <div className="text-sm text-foreground">
                 <span className="font-semibold">Unified strict E2E master</span> —{" "}
-                {totals.scenarios.toLocaleString()} validated scenarios across {totals.industries} fine-grained sub-domains.
+                 {totals.total.toLocaleString()} validated scenarios across {Object.keys(stats.byIndustry).length} fine-grained sub-domains.
                 Each row spans 3+ business stages and 2+ systems with a downstream outcome.
               </div>
             </div>
