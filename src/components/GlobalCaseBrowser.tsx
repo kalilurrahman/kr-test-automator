@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { getGlobalIndex, type IndexedCase } from "@/lib/globalIndex";
 
 const PAGE_SIZE = 25;
+const MIN_QUERY_LENGTH = 2;
 
 const priorityTone = (p: string) => {
   const lower = (p || "").toLowerCase();
@@ -53,6 +54,8 @@ export function GlobalCaseBrowser() {
   const filtered = useMemo(() => {
     if (!cases) return [];
     const needle = q.trim().toLowerCase();
+    if (!needle && source === "All" && priority === "All") return cases.slice(0, PAGE_SIZE * 4);
+    if (needle && needle.length < MIN_QUERY_LENGTH) return [];
     return cases.filter((c) => {
       if (source !== "All" && c.sourceLabel !== source) return false;
       if (priority !== "All" && c.priority !== priority) return false;
