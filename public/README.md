@@ -4,24 +4,9 @@
 
 [View Showcase Video](docs/assets/media/showcase.mp4)
 
-**TestForge AI** is an innovative platform tailored for creating, exploring, and saving automated test scripts across various platforms and frameworks. Powered by Generative AI, TestForge gives developers, QA engineers and IT executives an intuitive interface to rapidly draft test cases for any test scope.
+**TestForge AI** is an innovative platform tailored for creating, exploring, and saving automated test scripts across various platforms and frameworks. Powered by Generative AI, TestForge provides developers, QA engineers, and IT executives an intuitive interface to rapidly draft test cases for different test scopes.
 
 **Live Application:** [TestForge AI](https://kr-test-automator.lovable.app/)
-
----
-
-## 📊 What ships in the box (current snapshot)
-
-| Asset | Count |
-| --- | --- |
-| Curated platform test cases | **130,000+** across SAP, Salesforce, Workday, ServiceNow, Veeva, D365, Oracle, AWS, GCP, Azure, API, iOS, Android, WebApps, TopProducts |
-| Industry E2E scenarios — v3 library | **9,500** rows across 32 base industries |
-| Industry E2E scenarios — strict-validated | **12,000** rows across 120 industries |
-| Industry E2E scenarios — incremental B21–B35 | **15,000** rows (1k per batch × 15) |
-| **Total industry E2E** | **36,500** scenarios across **280+ industries** |
-| Automation script flavours surfaced in the generator | **12+** (Tosca, Playwright TS/PY, Cypress JS, Selenium Java/PY/C#, Robot, Katalon, UFT, Postman, Appium) |
-
-The incremental B21–B35 set is delivered as `public/data/batches_21_35_combined_incremental.{csv,xlsx,json,ts,html,md}` and rolled into the unified industry index automatically. Future B36+ batches drop in the same way without code changes.
 
 ---
 
@@ -228,19 +213,3 @@ Each platform page (`/sap`, `/salesforce`, `/p/<platform>`) shows the same SAP-s
 
 *(Built by Global IT Executive & Builder Kalilur Rahman)*
 
-
----
-
-## 🙏 Thanks & acknowledgements
-
-TestForge AI was built solo at AI-assisted velocity. Sincere thanks to:
-
-- **[Anthropic Claude](https://www.anthropic.com/claude)** — primary code, prompt-design and reasoning partner powering both the in-app generator and much of the hand-written architecture.
-- **[Perplexity](https://www.perplexity.ai/)** — research, cross-referencing of platform/module taxonomies and on-the-fly fact checks.
-- **[Google Jules](https://jules.google/)** — autonomous repository-level coding assistant used for batch refactors and PR-style edits.
-- **[Google Gemini](https://gemini.google.com/)** — secondary reasoning model and large-context summariser for the strict E2E batches.
-- **[Lovable](https://lovable.dev/)** — the build-and-deploy platform behind this site. Lovable orchestrates a Vite + React + TypeScript stack with shadcn/ui, Tailwind, React Router and **Lovable Cloud** (managed Supabase under the hood) for auth, database and edge functions; it pairs an AI code-edit workflow with a live preview, GitHub sync and one-click publishing. The streaming script generator on this site uses the **Lovable AI Gateway** with Anthropic Claude as the underlying model.
-
----
-
-*(Built by Global IT Executive & Builder Kalilur Rahman)*
