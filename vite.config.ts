@@ -171,9 +171,7 @@ export default defineConfig(({ mode }) => ({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
-            urlPattern: ({ url }) =>
-              url.origin === "https://kr-test-automator.lovable.app" &&
-              (url.pathname.endsWith(".json") || url.pathname.endsWith(".csv")),
+            urlPattern: ({ url }) => url.pathname.endsWith(".json") || url.pathname.endsWith(".csv"),
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "data-snapshots-cache",
