@@ -166,10 +166,21 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
-        // 5 MiB — main bundle ships the SAP test repo (841 cases) and Recharts.
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        globPatterns: ["**/*.{css,html,ico,png,svg,woff2}"],
+        // Keep the install payload lean; lazy JS/data is cached on demand below.
+        maximumFileSizeToCacheInBytes: 1024 * 1024,
         runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.destination === "script" || request.destination === "style",
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "app-assets-cache",
+              expiration: {
+                maxEntries: 120,
+                maxAgeSeconds: 60 * 60 * 24 * 14,
+              },
+            },
+          },
           {
             urlPattern: ({ url }) => url.pathname.endsWith(".json") || url.pathname.endsWith(".csv"),
             handler: "StaleWhileRevalidate",
