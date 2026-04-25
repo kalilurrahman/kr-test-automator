@@ -145,11 +145,16 @@ const build = async (): Promise<IndustryIndex> => {
     const rawBatch = String(r.batch ?? "v3");
     const batch: ScenarioBatch =
       rawBatch === "strict" ? "strict" : rawBatch === "incremental" ? "incremental" : "v3";
+    const industry = String(r.industry ?? "Unknown");
+    const erpSystem = String(r.erp_system ?? "");
+    const product = String(r.product ?? "");
+    const industryLineage = parseLineage(r.industry_lineage, industry);
+    const productLineage = parseLineage(r.product_lineage, product || erpSystem || "Unknown");
     return {
       scenario_id: String(r.scenario_id ?? ""),
-      industry: String(r.industry ?? "Unknown"),
-      erp_system: String(r.erp_system ?? ""),
-      product: String(r.product ?? ""),
+      industry,
+      erp_system: erpSystem,
+      product,
       e2e_scenario_name: String(r.e2e_scenario_name ?? ""),
       business_description: String(r.business_description ?? ""),
       modules: parseList(r.modules),
@@ -158,12 +163,12 @@ const build = async (): Promise<IndustryIndex> => {
       test_type: String(r.test_type ?? ""),
       auto_feasibility: String(r.auto_feasibility ?? ""),
       integration_hint: String(r.integration_hint ?? ""),
-      industry_lineage: parseLineage(r.industry_lineage, String(r.industry ?? "Unknown")),
-      industry_parent: String(r.industry_parent ?? "").trim() || parseLineage(r.industry_lineage, String(r.industry ?? "Unknown"))[0] || "Unknown",
-      industry_leaf: String(r.industry_leaf ?? "").trim() || parseLineage(r.industry_lineage, String(r.industry ?? "Unknown"))).at(-1) || String(r.industry ?? "Unknown"),
-      product_lineage: parseLineage(r.product_lineage, String(r.product ?? r.erp_system ?? "Unknown")),
-      product_parent: String(r.product_parent ?? "").trim() || String(r.erp_system ?? r.product ?? "Unknown"),
-      product_leaf: String(r.product_leaf ?? "").trim() || String(r.product ?? r.erp_system ?? "Unknown"),
+      industry_lineage: industryLineage,
+      industry_parent: String(r.industry_parent ?? "").trim() || industryLineage[0] || "Unknown",
+      industry_leaf: String(r.industry_leaf ?? "").trim() || industryLineage.at(-1) || industry,
+      product_lineage: productLineage,
+      product_parent: String(r.product_parent ?? "").trim() || productLineage[0] || erpSystem || product || "Unknown",
+      product_leaf: String(r.product_leaf ?? "").trim() || productLineage.at(-1) || product || erpSystem || "Unknown",
       batch_number: typeof r.batch_number === "number" ? r.batch_number : undefined,
       batch,
       strict_e2e:
