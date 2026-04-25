@@ -44,6 +44,39 @@ const DOWNLOADS: DownloadEntry[] = [
     category: "Strict E2E",
     blurb: "Validated 12k strict E2E set — ≥3 stages, ≥2 systems, downstream outcome.",
   },
+
+  // ── Incremental strict E2E batches ───────────────────────────────────────
+  {
+    href: "/data/master_batches_36_50.xlsx",
+    label: "Master batches B36-B50",
+    format: "XLSX",
+    size: "1.1 MB",
+    category: "Strict E2E",
+    blurb: "Latest 15k strict incremental industry E2E scenarios, deduplicated into the main industry library.",
+  },
+  {
+    href: "/data/master_batches_36_50.csv",
+    label: "Master batches B36-B50",
+    format: "CSV",
+    size: "7.1 MB",
+    category: "Strict E2E",
+    blurb: "CSV source for batches 36 through 50 with product and industry lineage fields in the consolidated dataset.",
+  },
+  {
+    href: "/data/master_batches_36_50.json",
+    label: "Master batches B36-B50",
+    format: "JSON",
+    size: "13.1 MB",
+    category: "Strict E2E",
+    blurb: "Raw JSON upload for the latest strict incremental B36-B50 package.",
+  },
+  {
+    href: "/data/batches_21_35_combined_incremental.xlsx",
+    label: "Incremental batches B21-B35",
+    format: "XLSX",
+    category: "Strict E2E",
+    blurb: "Previous 15k strict incremental industry E2E batch package retained for lineage and reference.",
+  },
   {
     href: "/data/unified_strict_e2e_final.csv",
     label: "Unified Strict E2E master",
