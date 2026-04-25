@@ -519,7 +519,7 @@ const Dashboard = () => {
                       </thead>
                       <tbody>
                         {Object.entries(industryStats.byIndustry).map(([industry, s]) => {
-                          const meta = INDUSTRY_BY_NAME.get(s.industry);
+                          const meta = INDUSTRY_BY_NAME.get(industry);
                           const slug = industrySlug(industry);
                           return (
                             <tr key={industry} className="border-b border-border/40 hover:bg-background/40">
