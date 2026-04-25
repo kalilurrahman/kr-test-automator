@@ -97,6 +97,15 @@ export interface IndustryIndex {
 
 const PYTHON_LIST_RE = /^\[.*\]$/;
 
+const parseLineage = (raw: unknown, fallback: string): string[] => {
+  const parsed = parseList(raw);
+  if (parsed.length > 0) return parsed;
+  return fallback
+    .split(">")
+    .map((part) => part.trim())
+    .filter(Boolean);
+};
+
 /** Parse a Python-style list literal ("['MM', 'SD']") into a string[]. */
 const parseList = (raw: unknown): string[] => {
   if (Array.isArray(raw)) return raw.map((s) => String(s));
@@ -149,6 +158,13 @@ const build = async (): Promise<IndustryIndex> => {
       test_type: String(r.test_type ?? ""),
       auto_feasibility: String(r.auto_feasibility ?? ""),
       integration_hint: String(r.integration_hint ?? ""),
+      industry_lineage: parseLineage(r.industry_lineage, String(r.industry ?? "Unknown")),
+      industry_parent: String(r.industry_parent ?? "").trim() || parseLineage(r.industry_lineage, String(r.industry ?? "Unknown"))[0] || "Unknown",
+      industry_leaf: String(r.industry_leaf ?? "").trim() || parseLineage(r.industry_lineage, String(r.industry ?? "Unknown"))).at(-1) || String(r.industry ?? "Unknown"),
+      product_lineage: parseLineage(r.product_lineage, String(r.product ?? r.erp_system ?? "Unknown")),
+      product_parent: String(r.product_parent ?? "").trim() || String(r.erp_system ?? r.product ?? "Unknown"),
+      product_leaf: String(r.product_leaf ?? "").trim() || String(r.product ?? r.erp_system ?? "Unknown"),
+      batch_number: typeof r.batch_number === "number" ? r.batch_number : undefined,
       batch,
       strict_e2e:
         typeof r.strict_e2e === "boolean" ? r.strict_e2e : batch !== "v3",
