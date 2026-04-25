@@ -499,7 +499,7 @@ const Dashboard = () => {
                     <Factory className="w-4 h-4 text-primary" /> E2E scenarios by industry
                   </h2>
                   <span className="text-[11px] text-muted-foreground font-mono">
-                    {industryIndex.summaries.length.toLocaleString()} industries
+                    {Object.keys(industryStats.byIndustry).length.toLocaleString()} industries
                   </span>
                 </div>
                 <div className="overflow-x-auto -mx-2 px-2">
@@ -518,17 +518,18 @@ const Dashboard = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {industryIndex.summaries.map((s) => {
+                        {Object.entries(industryStats.byIndustry).map(([industry, s]) => {
                           const meta = INDUSTRY_BY_NAME.get(s.industry);
+                          const slug = industrySlug(industry);
                           return (
-                            <tr key={s.industry} className="border-b border-border/40 hover:bg-background/40">
+                            <tr key={industry} className="border-b border-border/40 hover:bg-background/40">
                               <td className="px-3 py-2 min-w-0">
                                 <Link
-                                  to={`/industries/${s.slug}`}
+                                  to={`/industries/${slug}`}
                                   className="inline-flex items-center gap-2 text-foreground hover:text-primary truncate"
                                 >
                                   <span aria-hidden>{meta?.glyph ?? "🏷"}</span>
-                                  <span className="truncate" title={s.industry}>{s.industry}</span>
+                                  <span className="truncate" title={industry}>{industry}</span>
                                 </Link>
                               </td>
                               <td className="px-2 py-2 text-right font-mono font-semibold text-foreground">
