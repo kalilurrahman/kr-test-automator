@@ -85,7 +85,7 @@ const Industries = () => {
     <div className="min-h-[calc(100vh-64px)]">
       <SeoHead
         title="Industries · E2E Test Repository"
-        description={`Browse ${(totals?.scenarios ?? 36500).toLocaleString()} E2E test scenarios grouped under parent industry domains.`}
+        description={`Browse ${(totals?.total ?? 51500).toLocaleString()} E2E test scenarios grouped under parent industry domains.`}
         canonical="/industries"
       />
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">
