@@ -172,7 +172,7 @@ export default defineConfig(({ mode }) => ({
         runtimeCaching: [
           {
             urlPattern: ({ url }) =>
-              url.origin === self.location.origin &&
+              url.origin === "https://kr-test-automator.lovable.app" &&
               (url.pathname.endsWith(".json") || url.pathname.endsWith(".csv")),
             handler: "StaleWhileRevalidate",
             options: {
