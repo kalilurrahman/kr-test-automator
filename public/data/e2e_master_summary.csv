@@ -1,35 +1,430 @@
-industry,count
-Edge/IoT,500
-Banking,500
-Research,500
-Manufacturing,500
-Government,500
-Insurance,300
-Public Sector,250
-Automotive,250
-Cybersecurity,250
-Commerce,250
-HCM,250
-Energy & Utilities,250
-Finance,250
-GovTech,250
-High Tech,250
-Consumer Finance,250
-Education,250
-Chemicals,250
-Travel,250
-IT Services,250
-Healthcare,250
-Life Sciences,250
-Media,250
-Pharma,250
-Platform & Cloud,250
-Logistics,250
-Transportation,250
-Real Estate,250
-Retail & eCommerce,250
-Supply Chain,250
-Aerospace,200
-Telecom,200
-CPG,150
-Retail,150
+industry,count,v3,strict,incremental,high,autoReady,products,lineage
+Banking,600,500,100,0,217,567,600,Banking
+Manufacturing,600,500,100,0,550,67,600,Manufacturing
+Edge/IoT,500,500,0,0,500,0,500,Edge/IoT
+Government,500,500,0,0,0,500,500,Government
+Research,500,500,0,0,0,500,500,Research
+Insurance,400,300,100,0,150,367,400,Insurance
+Healthcare,350,250,100,0,300,67,350,Healthcare
+Life Sciences,350,250,100,0,300,317,350,Life Sciences
+Logistics,350,250,100,0,300,317,350,Logistics
+Pharma,350,250,100,0,113,317,350,Pharma
+Public Sector,350,250,100,0,300,317,350,Public Sector
+Cloud Reliability,300,0,0,300,150,201,100,Cloud Reliability
+Telecom,300,200,100,0,250,267,300,Telecom
+Retail,250,150,100,0,200,217,250,Retail
+Automotive,250,250,0,0,250,250,250,Automotive
+Platform & Cloud,250,250,0,0,0,250,250,Platform & Cloud
+Consumer Finance,250,250,0,0,250,250,250,Consumer Finance
+Chemicals,250,250,0,0,250,0,250,Chemicals
+Commerce,250,250,0,0,250,250,250,Commerce
+Cybersecurity,250,250,0,0,250,250,250,Cybersecurity
+Education,250,250,0,0,0,250,250,Education
+Energy & Utilities,250,250,0,0,250,0,250,Energy & Utilities
+Finance,250,250,0,0,250,250,250,Finance
+GovTech,250,250,0,0,250,250,250,GovTech
+HCM,250,250,0,0,250,250,250,HCM
+High Tech,250,250,0,0,250,0,250,High Tech
+IT Services,250,250,0,0,250,250,250,IT Services
+Media,250,250,0,0,0,250,250,Media
+Real Estate,250,250,0,0,0,0,250,Real Estate
+Retail & eCommerce,250,250,0,0,250,250,250,Retail & eCommerce
+Supply Chain,250,250,0,0,250,250,250,Supply Chain
+Transportation,250,250,0,0,0,250,250,Transportation
+Travel,250,250,0,0,250,250,250,Travel
+Pharmaceutical Logistics,200,0,0,200,100,134,100,Pharmaceutical Logistics
+Hospital Operations,200,0,0,200,100,134,100,Hospital Operations
+Enterprise Procurement,200,0,0,200,100,134,100,Enterprise Procurement
+Power Distribution,200,0,0,200,100,134,100,Power Distribution
+Industrial Production,200,0,0,200,100,134,100,Industrial Production
+Clinical Compliance,200,0,0,200,100,134,100,Clinical Compliance
+Public Assistance,200,0,0,200,100,134,100,Public Assistance
+Education Operations,200,0,0,200,100,134,100,Education Operations
+Global Freight,200,0,0,200,100,134,100,Global Freight
+Manufacturing Traceability,200,0,100,100,100,134,100,Manufacturing Traceability
+Digital Commerce,200,0,100,100,100,134,200,Digital Commerce
+Technology > Observability,200,0,0,200,100,134,200,Technology > Observability
+Procurement > Operations,200,0,0,200,100,134,100,Procurement > Operations
+Aerospace,200,200,0,0,200,0,200,Aerospace
+CPG,150,150,0,0,0,0,150,CPG
+Retail Pharma Distribution,100,0,0,100,50,67,100,Retail Pharma Distribution
+Acute Care Ops,100,0,0,100,50,67,100,Acute Care Ops
+Sourcing Operations,100,0,0,100,50,67,100,Sourcing Operations
+Transmission Grid,100,0,0,100,50,67,100,Transmission Grid
+Regulatory Compliance,100,0,0,100,50,67,100,Regulatory Compliance
+Benefits Eligibility,100,0,0,100,50,67,100,Benefits Eligibility
+Platform SRE,100,0,0,100,50,67,100,Platform SRE
+Academic Finance,100,0,0,100,50,67,100,Academic Finance
+International Logistics,100,0,0,100,50,67,100,International Logistics
+Retail Fulfillment,100,0,0,100,50,67,100,Retail Fulfillment
+Inpatient Care,100,0,0,100,50,67,100,Inpatient Care
+Indirect Procurement,100,0,0,100,50,67,100,Indirect Procurement
+Network Operations,100,0,0,100,50,67,100,Network Operations
+Quality Control,100,0,0,100,50,67,100,Quality Control
+Pharmacovigilance,100,0,0,100,50,67,100,Pharmacovigilance
+Citizen Services,100,0,0,100,50,67,100,Citizen Services
+Site Reliability,100,0,0,100,50,67,100,Site Reliability
+Learning Operations,100,0,0,100,50,67,100,Learning Operations
+Import Export Logistics,100,0,0,100,50,67,100,Import Export Logistics
+Ecommerce Delivery,100,0,0,100,50,67,100,Ecommerce Delivery
+Emergency Ward,100,0,0,100,50,67,100,Emergency Ward
+Global Sourcing,100,0,0,100,50,67,100,Global Sourcing
+Utility Metering,100,0,0,100,50,67,100,Utility Metering
+Assembly Quality,100,0,0,100,50,67,100,Assembly Quality
+Safety Reporting,100,0,0,100,50,67,100,Safety Reporting
+Public Casework,100,0,0,100,50,67,100,Public Casework
+Release Reliability,100,0,0,100,50,67,100,Release Reliability
+Training Compliance,100,0,0,100,50,67,100,Training Compliance
+International Shipping,100,0,0,100,50,67,100,International Shipping
+Online Retail Ops,100,0,0,100,50,67,100,Online Retail Ops
+Critical Care,100,0,0,100,50,67,100,Critical Care
+Strategic Sourcing,100,0,0,100,50,67,100,Strategic Sourcing
+Grid Monitoring,100,0,0,100,50,67,100,Grid Monitoring
+Plant Operations,100,0,0,100,50,67,100,Plant Operations
+Clinical Safety,100,0,0,100,50,67,100,Clinical Safety
+Government Intake,100,0,0,100,50,67,100,Government Intake
+Platform Operations,100,0,0,100,50,67,100,Platform Operations
+Workforce Learning,100,0,0,100,50,67,100,Workforce Learning
+Trade Logistics,100,0,0,100,50,67,100,Trade Logistics
+Emergency Surgery,100,0,0,100,50,67,100,Emergency Surgery
+Supplier Collaboration,100,0,0,100,50,67,100,Supplier Collaboration
+Electric Grid Control,100,0,0,100,50,67,100,Electric Grid Control
+Production Execution,100,0,0,100,50,67,100,Production Execution
+Regulatory Quality,100,0,0,100,50,67,100,Regulatory Quality
+Public Benefits,100,0,0,100,50,67,100,Public Benefits
+DevOps Platform,100,0,0,100,50,67,100,DevOps Platform
+Academy Services,100,0,0,100,50,67,100,Academy Services
+Cross-border Freight,100,0,0,100,50,67,100,Cross-border Freight
+Pharmacy Fulfillment,100,0,0,100,50,67,100,Pharmacy Fulfillment
+Surgical Recovery,100,0,0,100,50,67,100,Surgical Recovery
+Supplier Network,100,0,0,100,50,67,100,Supplier Network
+Grid Dispatch,100,0,0,100,50,67,100,Grid Dispatch
+Batch Manufacturing,100,0,0,100,50,67,100,Batch Manufacturing
+Quality Assurance,100,0,0,100,50,67,100,Quality Assurance
+Benefit Review,100,0,0,100,50,67,100,Benefit Review
+Cloud Incident,100,0,0,100,50,67,100,Cloud Incident
+Learning Admin,100,0,0,100,50,67,100,Learning Admin
+International Cargo,100,0,0,100,50,67,100,International Cargo
+Returns & Refunds,100,0,0,100,50,67,100,Returns & Refunds
+Emergency Dispatch,100,0,0,100,50,67,100,Emergency Dispatch
+Contract Sourcing,100,0,0,100,50,67,100,Contract Sourcing
+Grid Outages,100,0,0,100,50,67,100,Grid Outages
+Manufacturing Defects,100,0,0,100,50,67,100,Manufacturing Defects
+Quality Events,100,0,0,100,50,67,100,Quality Events
+Public Appeals,100,0,0,100,50,67,100,Public Appeals
+Cloud Resilience,100,0,0,100,50,67,100,Cloud Resilience
+Learning Exceptions,100,0,0,100,50,67,100,Learning Exceptions
+Global Freight Claims,100,0,0,100,50,67,100,Global Freight Claims
+Subscription Returns,100,0,0,100,50,67,100,Subscription Returns
+ER Incident Command,100,0,0,100,50,67,100,ER Incident Command
+Supplier Dispute,100,0,0,100,50,67,100,Supplier Dispute
+Network Failover,100,0,0,100,50,67,100,Network Failover
+Factory Rework,100,0,0,100,50,67,100,Factory Rework
+Compliance Exception,100,0,0,100,50,67,100,Compliance Exception
+Citizen Appeals,100,0,0,100,50,67,100,Citizen Appeals
+SRE Automation,100,0,0,100,50,67,100,SRE Automation
+Course Corrections,100,0,0,100,50,67,100,Course Corrections
+Customs Exceptions,100,0,0,100,50,67,100,Customs Exceptions
+Retail Promotions,100,0,0,100,50,67,100,Retail Promotions
+ICU Operations,100,0,0,100,50,67,100,ICU Operations
+Bid Management,100,0,0,100,50,67,100,Bid Management
+Grid Balancing,100,0,0,100,50,67,100,Grid Balancing
+Assembly Rework,100,0,0,100,50,67,100,Assembly Rework
+Compliance Monitoring,100,0,0,100,50,67,100,Compliance Monitoring
+Benefits Appeals,100,0,0,100,50,67,100,Benefits Appeals
+Infrastructure Observability,100,0,0,100,50,67,100,Infrastructure Observability
+Enrollment Services,100,0,0,100,50,67,100,Enrollment Services
+Freight Exceptions,100,0,0,100,50,67,100,Freight Exceptions
+Intensive Care,100,0,0,100,50,67,100,Intensive Care
+Catalog Management,100,0,0,100,50,67,100,Catalog Management
+Bid-to-Bill,100,0,0,100,50,67,100,Bid-to-Bill
+Grid Forecasting,100,0,0,100,50,67,100,Grid Forecasting
+Defect Analytics,100,0,0,100,50,67,100,Defect Analytics
+GxP Documentation,100,0,0,100,50,67,100,GxP Documentation
+Child Benefits,100,0,0,100,50,67,100,Child Benefits
+SRE Incident,100,0,0,100,50,67,100,SRE Incident
+Student Retention,100,0,0,100,50,67,100,Student Retention
+Port Clearance,100,0,0,100,50,67,100,Port Clearance
+Promotion Analytics,100,0,0,100,50,67,100,Promotion Analytics
+Cardiology Care,100,0,0,100,50,67,100,Cardiology Care
+Supplier Negotiation,100,0,0,100,50,67,100,Supplier Negotiation
+Outage Response,100,0,0,100,50,67,100,Outage Response
+Quality Hold,100,0,0,100,50,67,100,Quality Hold
+Safety Case,100,0,0,100,50,67,100,Safety Case
+Permit Appeals,100,0,0,100,50,67,100,Permit Appeals
+Cloud Alerting,100,0,0,100,50,67,100,Cloud Alerting
+Admissions,100,0,0,100,50,67,100,Admissions
+Container Shipping,100,0,0,100,50,67,100,Container Shipping
+Sales Order Exceptions,100,0,0,100,50,67,100,Sales Order Exceptions
+Neurology Care,100,0,0,100,50,67,100,Neurology Care
+Contract Lifecycle,100,0,0,100,50,67,100,Contract Lifecycle
+Voltage Events,100,0,0,100,50,67,100,Voltage Events
+Batch Release,100,0,0,100,50,67,100,Batch Release
+Labeling Compliance,100,0,0,100,50,67,100,Labeling Compliance
+Service Eligibility,100,0,0,100,50,67,100,Service Eligibility
+Ops Monitoring,100,0,0,100,50,67,100,Ops Monitoring
+Academic Billing,100,0,0,100,50,67,100,Academic Billing
+Ocean Freight,100,0,0,100,50,67,100,Ocean Freight
+Demand Planning,100,0,0,100,50,67,100,Demand Planning
+Orthopedic Care,100,0,0,100,50,67,100,Orthopedic Care
+Vendor Onboarding,100,0,0,100,50,67,100,Vendor Onboarding
+Voltage Recovery,100,0,0,100,50,67,100,Voltage Recovery
+Manufacturing Audit,100,0,0,100,50,67,100,Manufacturing Audit
+Clinical Change Control,100,0,0,100,50,67,100,Clinical Change Control
+Program Eligibility,100,0,0,100,50,67,100,Program Eligibility
+Academic Services,100,0,0,100,50,67,100,Academic Services
+Ocean Logistics,100,0,0,100,50,67,100,Ocean Logistics
+Finance > Revenue Management,100,0,0,100,50,67,100,Finance > Revenue Management
+Healthcare > Acute Care,100,0,0,100,50,67,100,Healthcare > Acute Care
+Procurement > Strategic Sourcing,100,0,0,100,50,67,100,Procurement > Strategic Sourcing
+Utilities > Energy Billing,100,0,0,100,50,67,100,Utilities > Energy Billing
+Manufacturing > Quality & Traceability,100,0,0,100,50,67,100,Manufacturing > Quality & Traceability
+Life Sciences > Regulatory Affairs,100,0,0,100,50,67,100,Life Sciences > Regulatory Affairs
+Customer Operations > Case Management,100,0,0,100,50,67,100,Customer Operations > Case Management
+HR > Learning & Development,100,0,0,100,50,67,100,HR > Learning & Development
+Logistics > International Trade,100,0,0,100,50,67,100,Logistics > International Trade
+Supply Chain > Capacity Management,100,0,0,100,50,67,100,Supply Chain > Capacity Management
+Healthcare > Neonatal,100,0,0,100,50,67,100,Healthcare > Neonatal
+Procurement > Supplier Performance,100,0,0,100,50,67,100,Procurement > Supplier Performance
+Utilities > Field Operations,100,0,0,100,50,67,100,Utilities > Field Operations
+Manufacturing > Process Excellence,100,0,0,100,50,67,100,Manufacturing > Process Excellence
+Life Sciences > Content Compliance,100,0,0,100,50,67,100,Life Sciences > Content Compliance
+Customer Operations > Appeals,100,0,0,100,50,67,100,Customer Operations > Appeals
+Technology > Incident Response,100,0,0,100,50,67,100,Technology > Incident Response
+HR > Talent Development,100,0,0,100,50,67,100,HR > Talent Development
+Logistics > Trade Documentation,100,0,0,100,50,67,100,Logistics > Trade Documentation
+Supply Chain > Order Management,100,0,0,100,50,67,100,Supply Chain > Order Management
+Healthcare > Surgical Services,100,0,0,100,50,67,100,Healthcare > Surgical Services
+Procurement > Rebates & Claims,100,0,0,100,50,67,100,Procurement > Rebates & Claims
+Utilities > Meter Data Management,100,0,0,100,50,67,100,Utilities > Meter Data Management
+Manufacturing > Release Management,100,0,0,100,50,67,100,Manufacturing > Release Management
+Life Sciences > Safety & PV,100,0,0,100,50,67,100,Life Sciences > Safety & PV
+Insurance > Claims Operations,100,0,0,100,50,67,100,Insurance > Claims Operations
+Technology > Security Operations,100,0,0,100,50,67,100,Technology > Security Operations
+HR > Performance Management,100,0,0,100,50,67,100,HR > Performance Management
+Logistics > Freight Execution,100,0,0,100,50,67,100,Logistics > Freight Execution
+Finance > Cash Application,100,0,0,100,50,67,100,Finance > Cash Application
+Healthcare > Oncology,100,0,0,100,50,67,100,Healthcare > Oncology
+Procurement > Contracting,100,0,0,100,50,67,100,Procurement > Contracting
+Utilities > Service Billing,100,0,0,100,50,67,100,Utilities > Service Billing
+Manufacturing > Maintenance,100,0,0,100,50,67,100,Manufacturing > Maintenance
+Life Sciences > Clinical Ops,100,0,0,100,50,67,100,Life Sciences > Clinical Ops
+Customer Operations > Support,100,0,0,100,50,67,100,Customer Operations > Support
+Technology > Reliability,100,0,0,100,50,67,100,Technology > Reliability
+HR > Onboarding,100,0,0,100,50,67,100,HR > Onboarding
+Logistics > Ocean Freight,100,0,0,100,50,67,100,Logistics > Ocean Freight
+Finance > Treasury,100,0,0,100,50,67,100,Finance > Treasury
+Healthcare > Cardiology,100,0,0,100,50,67,100,Healthcare > Cardiology
+Procurement > Supplier Onboarding,100,0,0,100,50,67,100,Procurement > Supplier Onboarding
+Utilities > Outage Management,100,0,0,100,50,67,100,Utilities > Outage Management
+Manufacturing > Shop Floor,100,0,0,100,50,67,100,Manufacturing > Shop Floor
+Life Sciences > Quality Systems,100,0,0,100,50,67,100,Life Sciences > Quality Systems
+Customer Operations > Retention,100,0,0,100,50,67,100,Customer Operations > Retention
+Technology > Platform Ops,100,0,0,100,50,67,100,Technology > Platform Ops
+HR > Compensation,100,0,0,100,50,67,100,HR > Compensation
+Logistics > Warehouse,100,0,0,100,50,67,100,Logistics > Warehouse
+Finance > Payables,100,0,0,100,50,67,100,Finance > Payables
+Healthcare > Radiology,100,0,0,100,50,67,100,Healthcare > Radiology
+Procurement > Spend Control,100,0,0,100,50,67,100,Procurement > Spend Control
+Utilities > Demand Response,100,0,0,100,50,67,100,Utilities > Demand Response
+Manufacturing > Planning,100,0,0,100,50,67,100,Manufacturing > Planning
+Life Sciences > Labeling,100,0,0,100,50,67,100,Life Sciences > Labeling
+Customer Operations > Billing,100,0,0,100,50,67,100,Customer Operations > Billing
+Technology > SRE,100,0,0,100,50,67,100,Technology > SRE
+HR > Recruiting,100,0,0,100,50,67,100,HR > Recruiting
+Logistics > Inbound,100,0,0,100,50,67,100,Logistics > Inbound
+Finance > Collections,100,0,0,100,50,67,100,Finance > Collections
+Healthcare > Pharmacy,100,0,0,100,50,67,100,Healthcare > Pharmacy
+Procurement > Catalog,100,0,0,100,50,67,100,Procurement > Catalog
+Utilities > Billing Operations,100,0,0,100,50,67,100,Utilities > Billing Operations
+Manufacturing > Production,100,0,0,100,50,67,100,Manufacturing > Production
+Life Sciences > Pharmacovigilance,100,0,0,100,50,67,100,Life Sciences > Pharmacovigilance
+Customer Operations > Disputes,100,0,0,100,50,67,100,Customer Operations > Disputes
+Technology > DevOps,100,0,0,100,50,67,100,Technology > DevOps
+HR > Talent,100,0,0,100,50,67,100,HR > Talent
+Logistics > Exports,100,0,0,100,50,67,100,Logistics > Exports
+Finance > Revenue Accounting,100,0,0,100,50,67,100,Finance > Revenue Accounting
+Healthcare > Lab,100,0,0,100,50,67,100,Healthcare > Lab
+Procurement > RFx,100,0,0,100,50,67,100,Procurement > RFx
+Utilities > Collections,100,0,0,100,50,67,100,Utilities > Collections
+Manufacturing > Inventory,100,0,0,100,50,67,100,Manufacturing > Inventory
+Life Sciences > Manufacturing,100,0,0,100,50,67,100,Life Sciences > Manufacturing
+Customer Operations > Loyalty,100,0,0,100,50,67,100,Customer Operations > Loyalty
+Technology > Cloud Cost,100,0,0,100,50,67,100,Technology > Cloud Cost
+HR > Timekeeping,100,0,0,100,50,67,100,HR > Timekeeping
+Logistics > Returns,100,0,0,100,50,67,100,Logistics > Returns
+Finance > Billing,100,0,0,100,50,67,100,Finance > Billing
+Healthcare > Intake,100,0,0,100,50,67,100,Healthcare > Intake
+Procurement > Supplier Risk,100,0,0,100,50,67,100,Procurement > Supplier Risk
+Utilities > Meter Ops,100,0,0,100,50,67,100,Utilities > Meter Ops
+Manufacturing > Dispatch,100,0,0,100,50,67,100,Manufacturing > Dispatch
+Life Sciences > Study Ops,100,0,0,100,50,67,100,Life Sciences > Study Ops
+Customer Operations > Service,100,0,0,100,50,67,100,Customer Operations > Service
+Technology > FinOps,100,0,0,100,50,67,100,Technology > FinOps
+HR > Benefits,100,0,0,100,50,67,100,HR > Benefits
+Logistics > Last Mile,100,0,0,100,50,67,100,Logistics > Last Mile
+Finance > Projects,100,0,0,100,50,67,100,Finance > Projects
+Healthcare > Emergency,100,0,0,100,50,67,100,Healthcare > Emergency
+Procurement > Budgeting,100,0,0,100,50,67,100,Procurement > Budgeting
+Utilities > Revenue Protection,100,0,0,100,50,67,100,Utilities > Revenue Protection
+Manufacturing > Scheduling,100,0,0,100,50,67,100,Manufacturing > Scheduling
+Life Sciences > Document Control,100,0,0,100,50,67,100,Life Sciences > Document Control
+Customer Operations > Field Service,100,0,0,100,50,67,100,Customer Operations > Field Service
+Technology > Infrastructure,100,0,0,100,50,67,100,Technology > Infrastructure
+HR > Learning,100,0,0,100,50,67,100,HR > Learning
+Logistics > Customs,100,0,0,100,50,67,100,Logistics > Customs
+Finance > Fixed Assets,100,0,0,100,50,67,100,Finance > Fixed Assets
+Healthcare > Surgery,100,0,0,100,50,67,100,Healthcare > Surgery
+Procurement > Contracts,100,0,0,100,50,67,100,Procurement > Contracts
+Utilities > Finance,100,0,0,100,50,67,100,Utilities > Finance
+Manufacturing > Quality,100,0,0,100,50,67,100,Manufacturing > Quality
+Life Sciences > Trials,100,0,0,100,50,67,100,Life Sciences > Trials
+Customer Operations > Contact Center,100,0,0,100,50,67,100,Customer Operations > Contact Center
+Technology > Security,100,0,0,100,50,67,100,Technology > Security
+HR > Workforce,100,0,0,100,50,67,100,HR > Workforce
+Logistics > Transportation,100,0,0,100,50,67,100,Logistics > Transportation
+Finance > Reporting,100,0,0,100,50,67,100,Finance > Reporting
+Healthcare > Admissions,100,0,0,100,50,67,100,Healthcare > Admissions
+Utilities > Asset Mgmt,100,0,0,100,50,67,100,Utilities > Asset Mgmt
+Manufacturing > Engineering,100,0,0,100,50,67,100,Manufacturing > Engineering
+Life Sciences > Research,100,0,0,100,50,67,100,Life Sciences > Research
+Customer Operations > Success,100,0,0,100,50,67,100,Customer Operations > Success
+Technology > Data Platform,100,0,0,100,50,67,100,Technology > Data Platform
+HR > Payroll,100,0,0,100,50,67,100,HR > Payroll
+Logistics > Fulfillment,100,0,0,100,50,67,100,Logistics > Fulfillment
+Finance > Governance,100,0,0,100,50,67,100,Finance > Governance
+Healthcare > Care Management,100,0,0,100,50,67,100,Healthcare > Care Management
+Procurement > Intake,100,0,0,100,50,67,100,Procurement > Intake
+Utilities > Field Service,100,0,0,100,50,67,100,Utilities > Field Service
+Manufacturing > Logistics,100,0,0,100,50,67,100,Manufacturing > Logistics
+Life Sciences > Submission,100,0,0,100,50,67,100,Life Sciences > Submission
+Customer Operations > Analytics,100,0,0,100,50,67,100,Customer Operations > Analytics
+Technology > ML Ops,100,0,0,100,50,67,100,Technology > ML Ops
+HR > Succession,100,0,0,100,50,67,100,HR > Succession
+Logistics > Delivery,100,0,0,100,50,67,100,Logistics > Delivery
+Finance > Audit,100,0,0,100,50,67,100,Finance > Audit
+Healthcare > Utilization,100,0,0,100,50,67,100,Healthcare > Utilization
+Utilities > Planning,100,0,0,100,50,67,100,Utilities > Planning
+Manufacturing > Performance,100,0,0,100,50,67,100,Manufacturing > Performance
+Life Sciences > Safety,100,0,0,100,50,67,100,Life Sciences > Safety
+Customer Operations > Recovery,100,0,0,100,50,67,100,Customer Operations > Recovery
+HR > Mobility,100,0,0,100,50,67,100,HR > Mobility
+Logistics > Planning,100,0,0,100,50,67,100,Logistics > Planning
+Finance > Settlement,100,0,0,100,50,67,100,Finance > Settlement
+Healthcare > Discharge,100,0,0,100,50,67,100,Healthcare > Discharge
+Procurement > Invoice,100,0,0,100,50,67,100,Procurement > Invoice
+Utilities > Settlement,100,0,0,100,50,67,100,Utilities > Settlement
+Manufacturing > Throughput,100,0,0,100,50,67,100,Manufacturing > Throughput
+Life Sciences > Operations,100,0,0,100,50,67,100,Life Sciences > Operations
+Customer Operations > Churn,100,0,0,100,50,67,100,Customer Operations > Churn
+Technology > Incident,100,0,0,100,50,67,100,Technology > Incident
+HR > Promotions,100,0,0,100,50,67,100,HR > Promotions
+Logistics > Handover,100,0,0,100,50,67,100,Logistics > Handover
+Pharmacy Ops,100,0,100,0,50,67,100,Pharmacy Ops
+Surgical Care,100,0,100,0,50,67,100,Surgical Care
+Wholesale Distribution,100,0,100,0,50,67,100,Wholesale Distribution
+Utilities Field Service,100,0,100,0,50,67,100,Utilities Field Service
+Life Sciences QA,100,0,100,0,50,67,100,Life Sciences QA
+Retail Returns,100,0,100,0,50,67,100,Retail Returns
+Cloud Security,100,0,100,0,50,67,100,Cloud Security
+Government Benefits,100,0,100,0,50,67,100,Government Benefits
+Digital Subscriptions,100,0,100,0,50,67,100,Digital Subscriptions
+Retail Pharma,100,0,100,0,50,67,100,Retail Pharma
+Hospice Care,100,0,100,0,50,67,100,Hospice Care
+Manufacturing Service,100,0,100,0,50,67,100,Manufacturing Service
+Cloud Platform Ops,100,0,100,0,50,67,100,Cloud Platform Ops
+Government Tax,100,0,100,0,50,67,100,Government Tax
+Wholesale Pharma,100,0,100,0,50,67,100,Wholesale Pharma
+Medical Devices,100,0,100,0,50,67,100,Medical Devices
+Education Finance,100,0,100,0,50,67,100,Education Finance
+Retail Banking Ops,100,0,100,0,50,67,100,Retail Banking Ops
+Logistics Control Tower,100,0,100,0,50,67,100,Logistics Control Tower
+Clinical Operations,100,0,100,0,50,67,100,Clinical Operations
+Retail Health,100,0,100,0,50,67,100,Retail Health
+Field Service,100,0,100,0,50,67,100,Field Service
+Energy Retail,100,0,100,0,50,67,100,Energy Retail
+Industrial Maintenance,100,0,100,0,50,67,100,Industrial Maintenance
+Government Licensing,100,0,100,0,50,67,100,Government Licensing
+Ecommerce Ops,100,0,100,0,50,67,100,Ecommerce Ops
+Observability,100,0,100,0,50,67,100,Observability
+Hospital Revenue,100,0,100,0,50,67,100,Hospital Revenue
+Logistics Brokerage,100,0,100,0,50,67,100,Logistics Brokerage
+Emergency Response,100,0,100,0,50,67,100,Emergency Response
+Precision Medicine,100,0,100,0,50,67,100,Precision Medicine
+Retail Supply Finance,100,0,100,0,50,67,100,Retail Supply Finance
+B2B Commerce,100,0,100,0,50,67,100,B2B Commerce
+Utility Billing,100,0,100,0,50,67,100,Utility Billing
+Warehouse Ops,100,0,100,0,50,67,100,Warehouse Ops
+Health Claims,100,0,100,0,50,67,100,Health Claims
+Cyber Resilience,100,0,100,0,50,67,100,Cyber Resilience
+Service Procurement,100,0,100,0,50,67,100,Service Procurement
+Academic Research,100,0,100,0,50,67,100,Academic Research
+Elder Care,100,0,100,0,50,67,100,Elder Care
+Retail Logistics,100,0,100,0,50,67,100,Retail Logistics
+Corporate Finance,100,0,100,0,50,67,100,Corporate Finance
+Factory Automation,100,0,100,0,50,67,100,Factory Automation
+Energy Efficiency,100,0,100,0,50,67,100,Energy Efficiency
+Medical Supplies,100,0,100,0,50,67,100,Medical Supplies
+Public Insurance,100,0,100,0,50,67,100,Public Insurance
+Digital Platform,100,0,100,0,50,67,100,Digital Platform
+Subscription Billing,100,0,100,0,50,67,100,Subscription Billing
+Revenue Cycle,100,0,100,0,50,67,100,Revenue Cycle
+Home Healthcare,100,0,100,0,50,67,100,Home Healthcare
+Retail Manufacturing,100,0,100,0,50,67,100,Retail Manufacturing
+Shared Services,100,0,100,0,50,67,100,Shared Services
+Smart Grid,100,0,100,0,50,67,100,Smart Grid
+Quality Engineering,100,0,100,0,50,67,100,Quality Engineering
+Regulatory Affairs,100,0,100,0,50,67,100,Regulatory Affairs
+Claims Operations,100,0,100,0,50,67,100,Claims Operations
+Platform Engineering,100,0,100,0,50,67,100,Platform Engineering
+Online Learning,100,0,100,0,50,67,100,Online Learning
+Transportation Fleet,100,0,100,0,50,67,100,Transportation Fleet
+Patient Access,100,0,100,0,50,67,100,Patient Access
+Consumer Goods,100,0,100,0,50,67,100,Consumer Goods
+Procurement Shared Services,100,0,100,0,50,67,100,Procurement Shared Services
+Water Utilities,100,0,100,0,50,67,100,Water Utilities
+Asset Quality,100,0,100,0,50,67,100,Asset Quality
+Publishing,100,0,100,0,50,67,100,Publishing
+Disability Claims,100,0,100,0,50,67,100,Disability Claims
+DevSecOps,100,0,100,0,50,67,100,DevSecOps
+Training Services,100,0,100,0,50,67,100,Training Services
+Freight Forwarding,100,0,100,0,50,67,100,Freight Forwarding
+Patient Billing,100,0,100,0,50,67,100,Patient Billing
+Consumer Supply,100,0,100,0,50,67,100,Consumer Supply
+Vendor Management,100,0,100,0,50,67,100,Vendor Management
+Grid Reliability,100,0,100,0,50,67,100,Grid Reliability
+Inspection Services,100,0,100,0,50,67,100,Inspection Services
+Clinical Publishing,100,0,100,0,50,67,100,Clinical Publishing
+Benefits Operations,100,0,100,0,50,67,100,Benefits Operations
+Build Engineering,100,0,100,0,50,67,100,Build Engineering
+LMS Operations,100,0,100,0,50,67,100,LMS Operations
+Port Operations,100,0,100,0,50,67,100,Port Operations
+Care Coordination,100,0,100,0,50,67,100,Care Coordination
+Brand Operations,100,0,100,0,50,67,100,Brand Operations
+Revenue Operations,100,0,100,0,50,67,100,Revenue Operations
+Distributed Energy,100,0,100,0,50,67,100,Distributed Energy
+Supplier Quality,100,0,100,0,50,67,100,Supplier Quality
+Content Lifecycle,100,0,100,0,50,67,100,Content Lifecycle
+Risk Operations,100,0,100,0,50,67,100,Risk Operations
+SRE Operations,100,0,100,0,50,67,100,SRE Operations
+Student Services,100,0,100,0,50,67,100,Student Services
+Cargo Operations,100,0,100,0,50,67,100,Cargo Operations
+Patient Experience,100,0,100,0,50,67,100,Patient Experience
+Consumer Pricing,100,0,100,0,50,67,100,Consumer Pricing
+Order Finance,100,0,100,0,50,67,100,Order Finance
+Grid Services,100,0,100,0,50,67,100,Grid Services
+Production Planning,100,0,100,0,50,67,100,Production Planning
+R&D Governance,100,0,100,0,50,67,100,R&D Governance
+Case Management,100,0,100,0,50,67,100,Case Management
+Release Engineering,100,0,100,0,50,67,100,Release Engineering
+Learning Services,100,0,100,0,50,67,100,Learning Services
+Cross-Border Freight,100,0,100,0,50,67,100,Cross-Border Freight
+Aviation,100,0,100,0,50,67,100,Aviation
+Maritime,100,0,100,0,50,67,100,Maritime
+Pharma Manufacturing,100,0,100,0,50,67,100,Pharma Manufacturing
+Energy Trading,100,0,100,0,50,67,100,Energy Trading
+Higher Education,100,0,100,0,50,67,100,Higher Education
+Insurance Claims,100,0,100,0,50,67,100,Insurance Claims
+Customer Service,100,0,100,0,50,67,100,Customer Service
+Supply Network,100,0,100,0,50,67,100,Supply Network
+Public Health,100,0,100,0,50,67,100,Public Health
