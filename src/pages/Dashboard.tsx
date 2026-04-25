@@ -34,6 +34,12 @@ const PlatformTreemap = lazy(() =>
   import("@/components/DashboardCharts").then((m) => ({ default: m.PlatformTreemap })),
 );
 
+const ChartFallback = () => (
+  <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
+    <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Drawing chart…
+  </div>
+);
+
 const Dashboard = () => {
   const navigate = useNavigate();
   const [idQuery, setIdQuery] = useState("");
