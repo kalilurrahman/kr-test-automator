@@ -159,48 +159,9 @@ const Dashboard = () => {
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
               ) : globalStats && globalStats.byPriority.length > 0 ? (
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    data={globalStats.byPriority}
-                    layout="vertical"
-                    margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
-                    barCategoryGap={12}
-                  >
-                    <XAxis type="number" hide />
-                    <YAxis
-                      type="category"
-                      dataKey="name"
-                      tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 600 }}
-                      width={70}
-                      axisLine={false}
-                      tickLine={false}
-                    />
-                    <Tooltip
-                      cursor={{ fill: "hsl(var(--muted) / 0.3)" }}
-                      formatter={(v: number) => v.toLocaleString()}
-                      contentStyle={{
-                        background: "hsl(var(--card))",
-                        border: "1px solid hsl(var(--border))",
-                        borderRadius: 8,
-                        fontSize: 12,
-                      }}
-                    />
-                    <Bar
-                      dataKey="value"
-                      radius={[0, 6, 6, 0]}
-                      label={{
-                        position: "right",
-                        fill: "hsl(var(--foreground))",
-                        fontSize: 11,
-                        formatter: (v: number) => v.toLocaleString(),
-                      }}
-                    >
-                      {globalStats.byPriority.map((d) => (
-                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
+                <Suspense fallback={<ChartFallback />}>
+                  <PriorityBarChart stats={globalStats} />
+                </Suspense>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   No data
@@ -227,18 +188,9 @@ const Dashboard = () => {
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
               ) : globalStats && globalStats.topPlatforms.length > 0 ? (
-                <ResponsiveContainer width="100%" height="100%">
-                  <Treemap
-                    data={globalStats.topPlatforms}
-                    dataKey="value"
-                    nameKey="name"
-                    stroke="hsl(var(--background))"
-                    content={<HeatmapTile total={globalStats.topPlatforms.length} />}
-                    isAnimationActive={false}
-                  >
-                    <Tooltip content={<HeatmapTooltip />} />
-                  </Treemap>
-                </ResponsiveContainer>
+                <Suspense fallback={<ChartFallback />}>
+                  <PlatformTreemap stats={globalStats} />
+                </Suspense>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   No data
