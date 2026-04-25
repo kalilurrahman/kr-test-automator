@@ -1,12 +1,12 @@
 /**
  * Industry-first scenario index
  * --------------------------------------------------------------------------
- * Loads the bundled `public/data/industry_scenarios.json` (12,000 unified
- * strict E2E scenarios across 120 industries × N products) once per session
+ * Loads the bundled `public/data/industry_scenarios.json` (51,500 unified
+ * industry E2E scenarios across fine-grained domains × products) once per session
  * and exposes a typed query surface for the Industries section, generator
  * prefill and dashboard aggregations.
  *
- * The file is fetched lazily on first call (~7 MB) and cached on the module
+ * The file is fetched lazily on first call and cached on the module
  * scope so all consumers share one parse pass. Per-industry / per-product
  * indices are built up-front so the UI never has to scan 12k rows again.
  */
@@ -27,11 +27,18 @@ export interface IndustryScenario {
   test_type: string;
   auto_feasibility: "High" | "Medium" | "Low" | string;
   integration_hint: string;
+  industry_lineage: string[];
+  industry_parent: string;
+  industry_leaf: string;
+  product_lineage: string[];
+  product_parent: string;
+  product_leaf: string;
+  batch_number?: number;
   /**
    * Source batch:
    *  - `v3`           = original 9,500 industry library
    *  - `strict`       = 12,000 strict-validated E2E set
-   *  - `incremental`  = 15,000 incremental B21–B35 strict E2E batches
+   *  - `incremental`  = 30,000 incremental B21–B50 strict E2E batches
    */
   batch: ScenarioBatch;
   /** True when the row passes the strict E2E validation rules. */
@@ -53,7 +60,7 @@ export interface IndustrySummary {
   strict: number;
   /** Original v3 batch count (subset of total) */
   v3: number;
-  /** Incremental B21–B35 strict E2E count (subset of total) */
+  /** Incremental B21–B50 strict E2E count (subset of total) */
   incremental: number;
   /** Distinct products / ERPs covered */
   products: string[];
@@ -79,8 +86,10 @@ export interface IndustryIndex {
     strict: number;
     /** Original v3 batch rows */
     v3: number;
-    /** Incremental B21–B35 rows (strict E2E, future batches will append here) */
+    /** Incremental B21–B50 rows (strict E2E, future batches will append here) */
     incremental: number;
+    latestBatch?: string;
+    duplicatesRemoved?: number;
   };
   /** Distribution of test_type values */
   testTypeCounts: Record<string, number>;
