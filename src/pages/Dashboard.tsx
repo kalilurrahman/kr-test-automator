@@ -20,7 +20,11 @@ import {
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
-import { getIndustryIndex, type IndustryIndex } from "@/data/industryScenarios";
+import {
+  getIndustryStatsSnapshot,
+  industrySlug,
+  type IndustryStatsSnapshot,
+} from "@/data/industryScenarios";
 import { INDUSTRY_BY_NAME, AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
 import { PRODUCT_FAMILIES, groupProductsByFamily } from "@/data/productFamilies";
 
@@ -196,7 +200,7 @@ const Dashboard = () => {
   const [idQuery, setIdQuery] = useState("");
   const [globalStats, setGlobalStats] = useState<GlobalStats | null>(null);
   const [statsLoading, setStatsLoading] = useState(true);
-  const [industryIndex, setIndustryIndex] = useState<IndustryIndex | null>(null);
+  const [industryStats, setIndustryStats] = useState<IndustryStatsSnapshot | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -204,9 +208,9 @@ const Dashboard = () => {
     getGlobalStats()
       .then((s) => !cancelled && setGlobalStats(s))
       .finally(() => !cancelled && setStatsLoading(false));
-    // Industries data is non-blocking — load in parallel and render when ready.
-    getIndustryIndex()
-      .then((idx) => !cancelled && setIndustryIndex(idx))
+    // Industries stats use a small precomputed snapshot; the full 51.5k rows load only on industry pages.
+    getIndustryStatsSnapshot()
+      .then((stats) => !cancelled && setIndustryStats(stats))
       .catch(() => undefined);
     return () => { cancelled = true; };
   }, []);
@@ -431,7 +435,7 @@ const Dashboard = () => {
         </section>
 
         {/* Industry E2E counts — overall summary + per-industry breakdown */}
-        {industryIndex && (
+        {industryStats && (
           <section className="mb-8 space-y-4">
             {/* Overall summary strip */}
             <Card className="p-5 bg-card border-border">
@@ -447,38 +451,38 @@ const Dashboard = () => {
                 </Link>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
-                <SummaryStat label="Total E2E scenarios" value={industryIndex.totals.scenarios.toLocaleString()} />
-                <SummaryStat label="Industries" value={industryIndex.totals.industries.toLocaleString()} />
-                <SummaryStat label="Products / ERPs" value={industryIndex.totals.products.toLocaleString()} />
+                <SummaryStat label="Total E2E scenarios" value={industryStats.summary.total.toLocaleString()} />
+                <SummaryStat label="Industries" value={Object.keys(industryStats.byIndustry).length.toLocaleString()} />
+                <SummaryStat label="Latest batch" value={industryStats.summary.latest_batch ?? "B50"} />
                 <SummaryStat
                   label="Strict-validated"
-                  value={industryIndex.totals.strict.toLocaleString()}
-                  sub={`${Math.round((industryIndex.totals.strict / industryIndex.totals.scenarios) * 100)}% of total`}
+                  value={industryStats.summary.strict.toLocaleString()}
+                  sub={`${Math.round((industryStats.summary.strict / industryStats.summary.total) * 100)}% of total`}
                 />
                 <SummaryStat
-                  label="Incremental B21+"
-                  value={industryIndex.totals.incremental.toLocaleString()}
-                  sub={`${Math.round((industryIndex.totals.incremental / industryIndex.totals.scenarios) * 100)}% of total`}
+                  label="Incremental B21-B50"
+                  value={industryStats.summary.incremental.toLocaleString()}
+                  sub={`${Math.round((industryStats.summary.incremental / industryStats.summary.total) * 100)}% of total`}
                 />
                 <SummaryStat
                   label="V3 library"
-                  value={industryIndex.totals.v3.toLocaleString()}
-                  sub={`${Math.round((industryIndex.totals.v3 / industryIndex.totals.scenarios) * 100)}% of total`}
+                  value={industryStats.summary.v3.toLocaleString()}
+                  sub={`${Math.round((industryStats.summary.v3 / industryStats.summary.total) * 100)}% of total`}
                 />
                 <SummaryStat
                   label="High priority"
-                  value={`${Math.round((industryIndex.totals.high / industryIndex.totals.scenarios) * 100)}%`}
-                  sub={`${industryIndex.totals.high.toLocaleString()} rows`}
+                  value={`${Math.round((industryStats.summary.high / industryStats.summary.total) * 100)}%`}
+                  sub={`${industryStats.summary.high.toLocaleString()} rows`}
                 />
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
                 <SuccessMetric
                   label="Auto-ready"
-                  value={`${Math.round((industryIndex.totals.autoReady / industryIndex.totals.scenarios) * 100)}%`}
+                  value={`${Math.round((industryStats.summary.autoReady / industryStats.summary.total) * 100)}%`}
                 />
                 <SuccessMetric
                   label="Integration covered"
-                  value={`${Math.round((industryIndex.totals.integrationCoverage / industryIndex.totals.scenarios) * 100)}%`}
+                  value={`${Math.round(((industryStats.summary.integrationCoverage ?? industryStats.summary.total) / industryStats.summary.total) * 100)}%`}
                 />
                 <SuccessMetric
                   label="Script options"
