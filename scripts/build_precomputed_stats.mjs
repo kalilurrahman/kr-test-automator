@@ -190,6 +190,24 @@ function addCase(id, source, sourceLabel, moduleName, priority) {
   totalCases++;
 }
 
+function erpToPlatform(erp = "", product = "") {
+  const haystack = `${erp} ${product}`.toLowerCase();
+  if (haystack.includes("sap")) return "sap";
+  if (haystack.includes("salesforce")) return "salesforce";
+  if (haystack.includes("workday")) return "workday";
+  if (haystack.includes("servicenow")) return "servicenow";
+  if (haystack.includes("veeva")) return "veeva";
+  if (haystack.includes("oracle")) return "oracle";
+  if (haystack.includes("dynamics")) return "dynamics365";
+  if (haystack.includes("aws")) return "aws";
+  if (haystack.includes("azure")) return "azure";
+  if (haystack.includes("gcp") || haystack.includes("google cloud")) return "gcp";
+  if (haystack.includes("ios")) return "ios";
+  if (haystack.includes("android")) return "android";
+  if (haystack.includes("api")) return "api";
+  return "webapps";
+}
+
 async function ingestCsv(file, source, sourceLabel, defaultModule) {
   const text = await safeRead(file);
   if (!text || text.trimStart().startsWith("<")) return;
@@ -243,6 +261,25 @@ if (existsSync(SAP_DATA_DIR)) {
   }
 }
 
+const INDUSTRY_FILE = path.join(PUBLIC, "data", "industry_scenarios.json");
+if (existsSync(INDUSTRY_FILE)) {
+  try {
+    console.log("⏳ Adding industry E2E IDs…");
+    const rows = JSON.parse(await readFile(INDUSTRY_FILE, "utf8"));
+    for (const r of rows) {
+      addCase(
+        String(r.scenario_id || ""),
+        erpToPlatform(String(r.erp_system || ""), String(r.product || "")),
+        String(r.erp_system || r.product || "Industry"),
+        String(r.product || r.industry || "Industry"),
+        String(r.priority || ""),
+      );
+    }
+  } catch (e) {
+    console.warn("Industry scenarios skipped in precomputed index", e?.message || e);
+  }
+}
+
 for (const [src, s] of bySource) {
   perPlatform.push({ name: s.label, value: s.total });
   totalModules += s.modules.size;
@@ -271,6 +308,20 @@ const stats = {
 
 await writeFile(path.join(PUBLIC, "precomputed-stats.json"), JSON.stringify(stats, null, 2));
 console.log(`✅ precomputed-stats.json — ${totalCases.toLocaleString()} cases, ${byId.size.toLocaleString()} unique IDs, ${duplicatesRemoved.toLocaleString()} duplicates removed.`);
+
+const industryStatsFile = path.join(PUBLIC, "data", "industry_stats.json");
+if (existsSync(industryStatsFile)) {
+  try {
+    const industryStats = JSON.parse(await readFile(industryStatsFile, "utf8"));
+    await writeFile(
+      path.join(PUBLIC, "data", "industry_stats_summary.json"),
+      JSON.stringify({ summary: industryStats.summary, byIndustry: industryStats.byIndustry }),
+    );
+    console.log("✅ industry_stats_summary.json — lightweight industry dashboard payload.");
+  } catch (e) {
+    console.warn("Industry stats summary skipped", e?.message || e);
+  }
+}
 
 const indexPayload = {
   builtAt: Date.now(),

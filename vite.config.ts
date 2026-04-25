@@ -166,10 +166,32 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
-        // 5 MiB — main bundle ships the SAP test repo (841 cases) and Recharts.
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        globPatterns: ["index.html", "assets/*.css", "*.{ico,png,svg,webmanifest}", "icons/*.{png,svg}"],
+        // Keep the install payload lean; lazy JS/data is cached on demand below.
+        maximumFileSizeToCacheInBytes: 1024 * 1024,
         runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.destination === "script" || request.destination === "style",
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "app-assets-cache",
+              expiration: {
+                maxEntries: 120,
+                maxAgeSeconds: 60 * 60 * 24 * 14,
+              },
+            },
+          },
+          {
+            urlPattern: ({ url }) => url.pathname.endsWith(".json") || url.pathname.endsWith(".csv"),
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "data-snapshots-cache",
+              expiration: {
+                maxEntries: 80,
+                maxAgeSeconds: 60 * 60 * 24 * 7,
+              },
+            },
+          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: "CacheFirst",
@@ -188,6 +210,17 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          charts: ["recharts"],
+          markdown: ["react-markdown", "remark-gfm"],
+          cloud: ["@supabase/supabase-js"],
+        },
+      },
     },
   },
 }));

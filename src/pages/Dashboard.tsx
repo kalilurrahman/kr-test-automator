@@ -12,11 +12,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
-import {
-  ResponsiveContainer, Tooltip, Cell,
-  BarChart, Bar, XAxis, YAxis,
-  Treemap,
-} from "recharts";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
@@ -32,168 +27,18 @@ import { PRODUCT_FAMILIES, groupProductsByFamily } from "@/data/productFamilies"
 const GlobalCaseBrowser = lazy(() =>
   import("@/components/GlobalCaseBrowser").then((m) => ({ default: m.GlobalCaseBrowser })),
 );
+const PriorityBarChart = lazy(() =>
+  import("@/components/DashboardCharts").then((m) => ({ default: m.PriorityBarChart })),
+);
+const PlatformTreemap = lazy(() =>
+  import("@/components/DashboardCharts").then((m) => ({ default: m.PlatformTreemap })),
+);
 
-const PRIORITY_COLORS: Record<string, string> = {
-  High: "hsl(var(--destructive))",
-  Medium: "hsl(var(--primary))",
-  Low: "hsl(var(--muted-foreground))",
-};
-
-/**
- * Vivid, evenly-spaced hues used to colour heatmap tiles. We sweep around the
- * colour wheel so neighbouring tiles always contrast, then modulate lightness
- * by rank so the densest tile still feels "hottest". Picked to stay legible
- * on both the dark default theme and the new light mode.
- */
-const HEATMAP_HUES = [
-  12, 28, 45, 95, 140, 165, 190, 210, 235, 260, 285, 310, 330, 355,
-];
-
-const tileColor = (index: number, total: number) => {
-  const hue = HEATMAP_HUES[index % HEATMAP_HUES.length];
-  const t = total > 1 ? index / (total - 1) : 0;
-  const saturation = Math.round(78 - t * 18); // 78 → 60
-  const lightness = Math.round(58 + t * 10); // 58 → 68 — bright enough that dark text stays legible
-  return `hsl(${hue} ${saturation}% ${lightness}%)`;
-};
-
-/**
- * Custom Treemap tile that renders the platform name and case count directly
- * inside each rectangle, using a distinct vivid colour per tile so the chart
- * reads as a true multi-colour heatmap. Recharts injects all geometry props
- * (x, y, width, height, name, value, index) at render time.
- */
-interface HeatmapTileProps {
-  x?: number;
-  y?: number;
-  width?: number;
-  height?: number;
-  name?: string;
-  value?: number;
-  index?: number;
-  total: number;
-}
-
-/**
- * Build a short, readable acronym for any platform name so we can always
- * render *something* in a heatmap tile, even when full text would overflow.
- * Strategy:
- *   • Strip parenthetical suffixes ("SAP S/4HANA (FI)" → "SAP S/4HANA")
- *   • Take the first letter of each significant word, max 4 chars
- *   • Fall back to the first 4 chars of the cleaned name
- */
-const acronymFor = (name: string): string => {
-  const cleaned = name.replace(/\(.*?\)/g, "").trim();
-  if (!cleaned) return "?";
-  const words = cleaned.split(/[\s\-/_]+/).filter(Boolean);
-  if (words.length === 1) {
-    // Single word → take leading caps if any (e.g. "ServiceNow" → "SN")
-    const caps = cleaned.match(/[A-Z0-9]/g);
-    if (caps && caps.length >= 2) return caps.slice(0, 4).join("");
-    return cleaned.slice(0, 4).toUpperCase();
-  }
-  const initials = words
-    .filter((w) => /[A-Za-z0-9]/.test(w[0]))
-    .slice(0, 4)
-    .map((w) => w[0]!.toUpperCase())
-    .join("");
-  return initials || cleaned.slice(0, 4).toUpperCase();
-};
-
-const HeatmapTile = (props: HeatmapTileProps) => {
-  const { x = 0, y = 0, width = 0, height = 0, name = "", value = 0, index = 0, total } = props;
-  if (width <= 0 || height <= 0) return null;
-  const fill = tileColor(index, total);
-  // Compute the longest label that will fit in the tile. If the full name
-  // does not fit, fall back to the acronym so the cell never renders blank.
-  const maxChars = Math.max(2, Math.floor((width - 6) / 6.5));
-  const acronym = acronymFor(name);
-  let label = "";
-  if (name.length <= maxChars) label = name;
-  else if (acronym.length <= maxChars) label = acronym;
-  else label = acronym.slice(0, Math.max(2, maxChars));
-  // Always show the label as long as the tile has any reasonable footprint.
-  const showLabel = width >= 24 && height >= 16;
-  const showValue = width > 70 && height > 50 && name.length <= maxChars;
-  // Scale font size to tile width so very small tiles still get a visible glyph.
-  const fontSize = Math.min(13, Math.max(9, Math.floor(width / 8)));
-
-  return (
-    <g>
-      <rect
-        x={x}
-        y={y}
-        width={width}
-        height={height}
-        fill={fill}
-        stroke="hsl(var(--background))"
-        strokeWidth={2}
-      />
-      {showLabel && (
-        <text
-          x={x + width / 2}
-          y={showValue ? y + height / 2 - 6 : y + height / 2 + 4}
-          textAnchor="middle"
-          fontSize={fontSize}
-          fontWeight={700}
-          fill="#0b0f1a"
-          style={{ pointerEvents: "none" }}
-        >
-          {label}
-        </text>
-      )}
-      {showValue && (
-        <text
-          x={x + width / 2}
-          y={y + height / 2 + 12}
-          textAnchor="middle"
-          fontSize={11}
-          fontFamily="JetBrains Mono, monospace"
-          fontWeight={600}
-          fill="#0b0f1a"
-          style={{ pointerEvents: "none" }}
-        >
-          {value.toLocaleString()}
-        </text>
-      )}
-    </g>
-  );
-};
-
-/**
- * Recharts' default Tooltip renders nothing useful for Treemap, so we ship a
- * custom popover that always shows the full platform name + case count. This
- * makes hover legible even when the tile itself is too narrow for a label.
- */
-interface HeatmapTooltipProps {
-  active?: boolean;
-  payload?: Array<{ payload?: { name?: string; value?: number } }>;
-}
-
-const HeatmapTooltip = ({ active, payload }: HeatmapTooltipProps) => {
-  if (!active || !payload || payload.length === 0) return null;
-  const data = payload[0]?.payload;
-  if (!data?.name) return null;
-  return (
-    <div
-      className="rounded-md border border-border px-3 py-2 shadow-lg"
-      style={{
-        background: "hsl(var(--popover))",
-        color: "hsl(var(--popover-foreground))",
-      }}
-    >
-      <div className="text-sm font-semibold" style={{ color: "hsl(var(--popover-foreground))" }}>
-        {data.name}
-      </div>
-      <div
-        className="text-xs font-mono mt-0.5"
-        style={{ color: "hsl(var(--muted-foreground))" }}
-      >
-        {(data.value ?? 0).toLocaleString()} cases
-      </div>
-    </div>
-  );
-};
+const ChartFallback = () => (
+  <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
+    <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Drawing chart…
+  </div>
+);
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -320,48 +165,9 @@ const Dashboard = () => {
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
               ) : globalStats && globalStats.byPriority.length > 0 ? (
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    data={globalStats.byPriority}
-                    layout="vertical"
-                    margin={{ top: 4, right: 16, left: 4, bottom: 4 }}
-                    barCategoryGap={12}
-                  >
-                    <XAxis type="number" hide />
-                    <YAxis
-                      type="category"
-                      dataKey="name"
-                      tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 600 }}
-                      width={70}
-                      axisLine={false}
-                      tickLine={false}
-                    />
-                    <Tooltip
-                      cursor={{ fill: "hsl(var(--muted) / 0.3)" }}
-                      formatter={(v: number) => v.toLocaleString()}
-                      contentStyle={{
-                        background: "hsl(var(--card))",
-                        border: "1px solid hsl(var(--border))",
-                        borderRadius: 8,
-                        fontSize: 12,
-                      }}
-                    />
-                    <Bar
-                      dataKey="value"
-                      radius={[0, 6, 6, 0]}
-                      label={{
-                        position: "right",
-                        fill: "hsl(var(--foreground))",
-                        fontSize: 11,
-                        formatter: (v: number) => v.toLocaleString(),
-                      }}
-                    >
-                      {globalStats.byPriority.map((d) => (
-                        <Cell key={d.name} fill={PRIORITY_COLORS[d.name] ?? "hsl(var(--muted))"} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
+                <Suspense fallback={<ChartFallback />}>
+                  <PriorityBarChart stats={globalStats} />
+                </Suspense>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   No data
@@ -388,18 +194,9 @@ const Dashboard = () => {
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
               ) : globalStats && globalStats.topPlatforms.length > 0 ? (
-                <ResponsiveContainer width="100%" height="100%">
-                  <Treemap
-                    data={globalStats.topPlatforms}
-                    dataKey="value"
-                    nameKey="name"
-                    stroke="hsl(var(--background))"
-                    content={<HeatmapTile total={globalStats.topPlatforms.length} />}
-                    isAnimationActive={false}
-                  >
-                    <Tooltip content={<HeatmapTooltip />} />
-                  </Treemap>
-                </ResponsiveContainer>
+                <Suspense fallback={<ChartFallback />}>
+                  <PlatformTreemap stats={globalStats} />
+                </Suspense>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   No data
