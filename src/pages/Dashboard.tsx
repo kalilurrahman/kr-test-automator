@@ -562,7 +562,7 @@ const Dashboard = () => {
                 </div>
                 <div className="text-[10px] text-muted-foreground mt-2 leading-relaxed">
                   <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).{" "}
-                  <span className="text-primary/90">Incr.</span> = incremental B21–B35 strict batches (15k rows).{" "}
+                  <span className="text-primary/90">Incr.</span> = incremental B21–B50 strict batches (30k rows).{" "}
                   <span className="text-muted-foreground">V3</span> = original 9.5k library.
                   Click any row to open that industry's scenario detail.
                 </div>
