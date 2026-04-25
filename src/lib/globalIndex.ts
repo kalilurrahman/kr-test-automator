@@ -325,6 +325,7 @@ async function build(): Promise<GlobalIndex> {
 
   // ---- 4. Industry-grounded scenarios (51k+ rows from industry_scenarios.json) ----
   try {
+    const { getIndustryIndex, erpToPlatform } = await import("@/data/industryScenarios");
     const industryIdx = await getIndustryIndex();
     for (const s of industryIdx.scenarios) {
       const platformKey = erpToPlatform(s.erp_system, s.product);
