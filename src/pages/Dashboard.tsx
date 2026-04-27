@@ -320,40 +320,44 @@ const Dashboard = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {Object.entries(industryStats.byIndustry).map(([industry, s]) => {
-                          const meta = INDUSTRY_BY_NAME.get(industry);
-                          const slug = industrySlug(industry);
+                        {industryDomainRows.map((row) => {
                           return (
-                            <tr key={industry} className="border-b border-border/40 hover:bg-background/40">
+                            <tr key={row.slug} className="border-b border-border/40 hover:bg-background/40 align-top">
                               <td className="px-3 py-2 min-w-0">
                                 <Link
-                                  to={`/industries/${slug}`}
-                                  className="inline-flex items-center gap-2 text-foreground hover:text-primary truncate"
+                                  to={`/industries/${row.slug}`}
+                                  className="inline-flex items-start gap-2 text-foreground hover:text-primary min-w-0"
                                 >
-                                  <span aria-hidden>{meta?.glyph ?? "🏷"}</span>
-                                  <span className="truncate" title={industry}>{industry}</span>
+                                  <span aria-hidden>{row.glyph}</span>
+                                  <span className="min-w-0">
+                                    <span className="block truncate" title={row.name}>{row.name}</span>
+                                    <span className="block text-[10px] text-muted-foreground font-normal leading-snug">
+                                      {row.subIndustries.slice(0, 3).map((sub) => sub.name).join(" · ")}
+                                      {row.subIndustries.length > 3 ? ` +${row.subIndustries.length - 3}` : ""}
+                                    </span>
+                                  </span>
                                 </Link>
                               </td>
                               <td className="px-2 py-2 text-right font-mono font-semibold text-foreground">
-                                {s.total.toLocaleString()}
+                                {row.total.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-emerald-400/90 hidden sm:table-cell">
-                                {s.strict ? s.strict.toLocaleString() : "—"}
+                                {row.strict ? row.strict.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-primary/90 hidden sm:table-cell">
-                                {s.incremental ? s.incremental.toLocaleString() : "—"}
+                                {row.incremental ? row.incremental.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden md:table-cell">
-                                {s.v3 ? s.v3.toLocaleString() : "—"}
+                                {row.v3 ? row.v3.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-destructive/90 hidden md:table-cell">
-                                {s.high.toLocaleString()}
+                                {row.high.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-primary/90 hidden lg:table-cell">
-                                {s.autoReady.toLocaleString()}
+                                {row.autoReady.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden lg:table-cell">
-                                {s.products.length}
+                                {row.products.size}
                               </td>
                             </tr>
                           );
