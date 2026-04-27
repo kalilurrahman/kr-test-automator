@@ -1,4 +1,4 @@
-import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
+import { useEffect, useMemo, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
 import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock, Factory, Cpu } from "lucide-react";
@@ -17,10 +17,10 @@ import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
 import {
   getIndustryStatsSnapshot,
-  industrySlug,
   type IndustryStatsSnapshot,
 } from "@/data/industryScenarios";
-import { INDUSTRY_BY_NAME, AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
+import { AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
+import { resolveDomain } from "@/data/industryDomains";
 import { PRODUCT_FAMILIES, groupProductsByFamily } from "@/data/productFamilies";
 
 // Defer the heavy global browser — its first render builds the entire index.
@@ -106,6 +106,11 @@ const Dashboard = () => {
     { to: "/about", label: "About", icon: Info },
     { to: "/feedback", label: "Feedback", icon: MessageSquare },
   ];
+
+  const industryDomainRows = useMemo(
+    () => (industryStats ? buildIndustryDomainRows(industryStats) : []),
+    [industryStats],
+  );
 
   return (
     <>
