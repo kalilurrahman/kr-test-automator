@@ -1,4 +1,4 @@
-import { useEffect, useState, FormEvent, lazy, Suspense } from "react";
+import { useEffect, useMemo, useState, FormEvent, lazy, Suspense } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
 import { Search, ArrowRight, Sparkles, Package, Layers, BookMarked, History as HistoryIcon, FolderOpen, GitCompare, Info, MessageSquare, Database, Loader2, Fingerprint, Copy, Clock, Factory, Cpu } from "lucide-react";
@@ -17,10 +17,10 @@ import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
 import { ProductLogo } from "@/components/ProductLogo";
 import {
   getIndustryStatsSnapshot,
-  industrySlug,
   type IndustryStatsSnapshot,
 } from "@/data/industryScenarios";
-import { INDUSTRY_BY_NAME, AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
+import { AUTOMATION_SCRIPT_OPTIONS } from "@/data/industryMeta";
+import { resolveDomain } from "@/data/industryDomains";
 import { PRODUCT_FAMILIES, groupProductsByFamily } from "@/data/productFamilies";
 
 // Defer the heavy global browser — its first render builds the entire index.
@@ -106,6 +106,11 @@ const Dashboard = () => {
     { to: "/about", label: "About", icon: Info },
     { to: "/feedback", label: "Feedback", icon: MessageSquare },
   ];
+
+  const industryDomainRows = useMemo(
+    () => (industryStats ? buildIndustryDomainRows(industryStats) : []),
+    [industryStats],
+  );
 
   return (
     <>
@@ -249,7 +254,7 @@ const Dashboard = () => {
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
                 <SummaryStat label="Total E2E scenarios" value={industryStats.summary.total.toLocaleString()} />
-                <SummaryStat label="Industries" value={Object.keys(industryStats.byIndustry).length.toLocaleString()} />
+                <SummaryStat label="Parent domains" value={industryDomainRows.length.toLocaleString()} />
                 <SummaryStat label="Latest batch" value={industryStats.summary.latest_batch ?? "B50"} />
                 <SummaryStat
                   label="Strict-validated"
@@ -296,7 +301,7 @@ const Dashboard = () => {
                     <Factory className="w-4 h-4 text-primary" /> E2E scenarios by industry
                   </h2>
                   <span className="text-[11px] text-muted-foreground font-mono">
-                    {Object.keys(industryStats.byIndustry).length.toLocaleString()} industries
+                    {industryDomainRows.length.toLocaleString()} parent domains · {Object.keys(industryStats.byIndustry).length.toLocaleString()} sub-domains
                   </span>
                 </div>
                 <div className="overflow-x-auto -mx-2 px-2">
@@ -315,40 +320,44 @@ const Dashboard = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {Object.entries(industryStats.byIndustry).map(([industry, s]) => {
-                          const meta = INDUSTRY_BY_NAME.get(industry);
-                          const slug = industrySlug(industry);
+                        {industryDomainRows.map((row) => {
                           return (
-                            <tr key={industry} className="border-b border-border/40 hover:bg-background/40">
+                            <tr key={row.slug} className="border-b border-border/40 hover:bg-background/40 align-top">
                               <td className="px-3 py-2 min-w-0">
                                 <Link
-                                  to={`/industries/${slug}`}
-                                  className="inline-flex items-center gap-2 text-foreground hover:text-primary truncate"
+                                  to={`/industries/${row.slug}`}
+                                  className="inline-flex items-start gap-2 text-foreground hover:text-primary min-w-0"
                                 >
-                                  <span aria-hidden>{meta?.glyph ?? "🏷"}</span>
-                                  <span className="truncate" title={industry}>{industry}</span>
+                                  <span aria-hidden>{row.glyph}</span>
+                                  <span className="min-w-0">
+                                    <span className="block truncate" title={row.name}>{row.name}</span>
+                                    <span className="block text-[10px] text-muted-foreground font-normal leading-snug">
+                                      {row.subIndustries.slice(0, 3).map((sub) => sub.name).join(" · ")}
+                                      {row.subIndustries.length > 3 ? ` +${row.subIndustries.length - 3}` : ""}
+                                    </span>
+                                  </span>
                                 </Link>
                               </td>
                               <td className="px-2 py-2 text-right font-mono font-semibold text-foreground">
-                                {s.total.toLocaleString()}
+                                {row.total.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-emerald-400/90 hidden sm:table-cell">
-                                {s.strict ? s.strict.toLocaleString() : "—"}
+                                {row.strict ? row.strict.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-primary/90 hidden sm:table-cell">
-                                {s.incremental ? s.incremental.toLocaleString() : "—"}
+                                {row.incremental ? row.incremental.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden md:table-cell">
-                                {s.v3 ? s.v3.toLocaleString() : "—"}
+                                {row.v3 ? row.v3.toLocaleString() : "—"}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-destructive/90 hidden md:table-cell">
-                                {s.high.toLocaleString()}
+                                {row.high.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-primary/90 hidden lg:table-cell">
-                                {s.autoReady.toLocaleString()}
+                                {row.autoReady.toLocaleString()}
                               </td>
                               <td className="px-2 py-2 text-right font-mono text-muted-foreground hidden lg:table-cell">
-                                {s.products.length}
+                                {row.products.size}
                               </td>
                             </tr>
                           );
@@ -361,7 +370,7 @@ const Dashboard = () => {
                   <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).{" "}
                   <span className="text-primary/90">Incr.</span> = incremental B21–B50 strict batches (30k rows).{" "}
                   <span className="text-muted-foreground">V3</span> = original 9.5k library.
-                  Click any row to open that industry's scenario detail.
+                  Click any parent-domain row to open its grouped industry scenario detail, with sub-domain filters preserved.
                 </div>
               </Card>
 
@@ -528,6 +537,58 @@ const Dashboard = () => {
       </div>
     </>
   );
+};
+
+interface IndustryDomainRow {
+  slug: string;
+  name: string;
+  glyph: string;
+  total: number;
+  strict: number;
+  incremental: number;
+  v3: number;
+  high: number;
+  autoReady: number;
+  products: Set<string>;
+  subIndustries: Array<{ name: string; total: number }>;
+}
+
+const buildIndustryDomainRows = (stats: IndustryStatsSnapshot): IndustryDomainRow[] => {
+  const rows = new Map<string, IndustryDomainRow>();
+
+  Object.entries(stats.byIndustry).forEach(([industry, item]) => {
+    const domain = resolveDomain(industry);
+    const existing = rows.get(domain.slug) ?? {
+      slug: domain.slug,
+      name: domain.name,
+      glyph: domain.glyph,
+      total: 0,
+      strict: 0,
+      incremental: 0,
+      v3: 0,
+      high: 0,
+      autoReady: 0,
+      products: new Set<string>(),
+      subIndustries: [],
+    };
+
+    existing.total += item.total;
+    existing.strict += item.strict;
+    existing.incremental += item.incremental;
+    existing.v3 += item.v3;
+    existing.high += item.high;
+    existing.autoReady += item.autoReady;
+    item.products.forEach((product) => existing.products.add(product));
+    existing.subIndustries.push({ name: industry, total: item.total });
+    rows.set(domain.slug, existing);
+  });
+
+  return [...rows.values()]
+    .map((row) => ({
+      ...row,
+      subIndustries: row.subIndustries.sort((a, z) => z.total - a.total),
+    }))
+    .sort((a, z) => z.total - a.total);
 };
 
 const SuccessMetric = ({ label, value }: { label: string; value: string }) => (
