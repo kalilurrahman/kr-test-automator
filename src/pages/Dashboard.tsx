@@ -254,7 +254,7 @@ const Dashboard = () => {
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
                 <SummaryStat label="Total E2E scenarios" value={industryStats.summary.total.toLocaleString()} />
-                <SummaryStat label="Industries" value={Object.keys(industryStats.byIndustry).length.toLocaleString()} />
+                <SummaryStat label="Parent domains" value={industryDomainRows.length.toLocaleString()} />
                 <SummaryStat label="Latest batch" value={industryStats.summary.latest_batch ?? "B50"} />
                 <SummaryStat
                   label="Strict-validated"
@@ -301,7 +301,7 @@ const Dashboard = () => {
                     <Factory className="w-4 h-4 text-primary" /> E2E scenarios by industry
                   </h2>
                   <span className="text-[11px] text-muted-foreground font-mono">
-                    {Object.keys(industryStats.byIndustry).length.toLocaleString()} industries
+                    {industryDomainRows.length.toLocaleString()} parent domains · {Object.keys(industryStats.byIndustry).length.toLocaleString()} sub-domains
                   </span>
                 </div>
                 <div className="overflow-x-auto -mx-2 px-2">
@@ -370,7 +370,7 @@ const Dashboard = () => {
                   <span className="text-emerald-400/90">Strict</span> = validated strict E2E (≥3 stages, ≥2 systems, downstream outcome).{" "}
                   <span className="text-primary/90">Incr.</span> = incremental B21–B50 strict batches (30k rows).{" "}
                   <span className="text-muted-foreground">V3</span> = original 9.5k library.
-                  Click any row to open that industry's scenario detail.
+                  Click any parent-domain row to open its grouped industry scenario detail, with sub-domain filters preserved.
                 </div>
               </Card>
 
