@@ -63,6 +63,9 @@ export const frameworkGroups = [
   {
     label: "Specialised",
     options: [
+      { value: "tricentis_tosca", label: "Tricentis Tosca (Model-based)", lang: "model-based" },
+      { value: "uft_one", label: "UFT One (VBScript)", lang: "vbscript" },
+      { value: "katalon", label: "Katalon Studio (Groovy)", lang: "groovy" },
       { value: "postman_newman", label: "Postman / Newman (CLI)", lang: "json" },
       { value: "pact", label: "Pact (Consumer-Driven Contract)", lang: "javascript" },
     ],

@@ -18,6 +18,8 @@ serve(async (req) => {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
+    const outputGuidance = getOutputGuidance(framework, language);
+
     const systemPrompt = `You are TestForge AI, an expert test automation engineer. Generate production-ready test automation scripts.
 
 OUTPUT FORMAT (JSON):
@@ -41,12 +43,13 @@ REQUIREMENTS:
 - Test Scopes: ${testScopes.join(", ")}
 - Target Test Count: ${testCount}
 - Business Case: ${businessCase}
+${outputGuidance}
 
 Generate a comprehensive, well-documented test suite with:
 1. Page Object Model pattern where applicable
 2. Data-driven test approaches
 3. Proper assertions and error handling
-4. Clear comments explaining test logic
+4. Clear comments explaining test logic, except for model-based outputs where model metadata, module attributes and action-mode notes replace code comments
 5. Mix of positive, negative, and edge case tests
 6. Appropriate waits and synchronization`;
 
@@ -98,3 +101,30 @@ Generate a comprehensive, well-documented test suite with:
     );
   }
 });
+
+const getOutputGuidance = (framework: string, language: string): string => {
+  const normalizedFramework = String(framework).toLowerCase();
+  const normalizedLanguage = String(language).toLowerCase();
+
+  if (normalizedFramework === "tricentis_tosca" || normalizedLanguage === "model-based") {
+    return `
+SPECIAL OUTPUT REQUIREMENTS FOR MODEL-BASED AUTOMATION:
+- Do not return Selenium, Playwright, Cypress or generic code.
+- The script field must contain a Tricentis Tosca-style model-based automation specification in readable YAML.
+- Include sections for business_process, test_case_design, modules, xmodules, test_steps, action_modes, test_data, recovery_scenarios, risk_coverage and execution_notes.
+- Model UI/API controls as reusable modules with technical identifiers, steering parameters, input/verify/wait action modes and data bindings.
+- Keep it import-ready as a model specification and aligned to the requested E2E flow.`;
+  }
+
+  if (normalizedFramework === "uft_one" || normalizedLanguage === "vbscript") {
+    return `
+SPECIAL OUTPUT REQUIREMENTS FOR UFT ONE / VBSCRIPT:
+- The script field must contain executable VBScript-style UFT One automation, not JavaScript or pseudocode.
+- Use UFT object repository style references where applicable, e.g. Browser(...).Page(...).WebEdit(...).Set and WebButton(...).Click.
+- Include Option Explicit, reusable Sub/Function blocks, synchronization, checkpoint assertions, reporter events and data-table driven test iteration.
+- Use VBScript syntax only: Dim, Set, If...Then...Else, For...Next, On Error handling and Reporter.ReportEvent.
+- Keep comments concise and compatible with UFT One.`;
+  }
+
+  return "";
+};

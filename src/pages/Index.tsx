@@ -153,6 +153,17 @@ const Index = () => {
             (steps ? `\nSteps:\n${steps}\n` : "") +
             (expected ? `\nExpected: ${expected}` : "");
         store.setBusinessCase(prose);
+        if (parsed.scriptType) {
+          store.setFramework(parsed.scriptType);
+          const scriptLanguage = parsed.scriptType === "tricentis_tosca"
+            ? "model-based"
+            : parsed.scriptType === "uft_one"
+              ? "vbscript"
+              : parsed.scriptType === "katalon"
+                ? "groovy"
+                : "";
+          if (scriptLanguage) store.setLanguage(scriptLanguage);
+        }
         sessionStorage.removeItem(key);
         toast.success(`Loaded ${platformLabel} case ${id}`);
       } else {
