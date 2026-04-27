@@ -14,12 +14,14 @@ const langMap: Record<string, string> = {
   typescript: "typescript", javascript: "javascript", python: "python",
   java: "java", csharp: "csharp", robot: "python", gherkin: "gherkin",
   swift: "swift", kotlin: "kotlin", scala: "scala", xml: "xml", json: "json",
+  vbscript: "vbnet", groovy: "groovy", "model-based": "yaml",
 };
 
 const extMap: Record<string, string> = {
   typescript: ".ts", javascript: ".js", python: ".py", java: ".java",
   csharp: ".cs", robot: ".robot", gherkin: ".feature", swift: ".swift",
   kotlin: ".kt", scala: ".scala", xml: ".xml", json: ".json",
+  vbscript: ".vbs", groovy: ".groovy", "model-based": ".tosca.yaml",
 };
 
 const OutputPanel = () => {
