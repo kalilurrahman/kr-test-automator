@@ -539,6 +539,58 @@ const Dashboard = () => {
   );
 };
 
+interface IndustryDomainRow {
+  slug: string;
+  name: string;
+  glyph: string;
+  total: number;
+  strict: number;
+  incremental: number;
+  v3: number;
+  high: number;
+  autoReady: number;
+  products: Set<string>;
+  subIndustries: Array<{ name: string; total: number }>;
+}
+
+const buildIndustryDomainRows = (stats: IndustryStatsSnapshot): IndustryDomainRow[] => {
+  const rows = new Map<string, IndustryDomainRow>();
+
+  Object.entries(stats.byIndustry).forEach(([industry, item]) => {
+    const domain = resolveDomain(industry);
+    const existing = rows.get(domain.slug) ?? {
+      slug: domain.slug,
+      name: domain.name,
+      glyph: domain.glyph,
+      total: 0,
+      strict: 0,
+      incremental: 0,
+      v3: 0,
+      high: 0,
+      autoReady: 0,
+      products: new Set<string>(),
+      subIndustries: [],
+    };
+
+    existing.total += item.total;
+    existing.strict += item.strict;
+    existing.incremental += item.incremental;
+    existing.v3 += item.v3;
+    existing.high += item.high;
+    existing.autoReady += item.autoReady;
+    item.products.forEach((product) => existing.products.add(product));
+    existing.subIndustries.push({ name: industry, total: item.total });
+    rows.set(domain.slug, existing);
+  });
+
+  return [...rows.values()]
+    .map((row) => ({
+      ...row,
+      subIndustries: row.subIndustries.sort((a, z) => z.total - a.total),
+    }))
+    .sort((a, z) => z.total - a.total);
+};
+
 const SuccessMetric = ({ label, value }: { label: string; value: string }) => (
   <div className="rounded-md border border-border bg-background/40 px-3 py-2">
     <div className="text-base font-bold text-foreground leading-none">{value}</div>
