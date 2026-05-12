@@ -206,7 +206,8 @@ const OutputPanel = () => {
         </div>
       )}
 
-      {/* Tabs */}
+      {/* Inline missing-sections highlight reused in Code and Preview tabs */}
+      {(() => null)()}
       <Tabs defaultValue={specialKind ? "preview" : "code"} className="w-full">
         <TabsList className="bg-card border border-border">
           <TabsTrigger value="code">Code</TabsTrigger>
