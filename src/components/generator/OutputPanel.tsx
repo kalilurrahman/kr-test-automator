@@ -5,10 +5,16 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useGeneratorStore } from "@/store/generatorStore";
 import { progressSteps } from "@/data/platforms";
 import { Progress } from "@/components/ui/progress";
-import { Copy, Download, Save, Star, Check, Loader2, Circle, ArrowRight } from "lucide-react";
+import { Copy, Download, Save, Star, Check, Loader2, Circle, ArrowRight, AlertTriangle, ShieldCheck, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { toast } from "sonner";
+import {
+  detectSpecialKind,
+  validateSpecialOutput,
+  previewLines,
+  buildDownloadFilename,
+} from "@/lib/specialOutputValidation";
 
 const langMap: Record<string, string> = {
   typescript: "typescript", javascript: "javascript", python: "python",
@@ -25,8 +31,21 @@ const extMap: Record<string, string> = {
 };
 
 const OutputPanel = () => {
-  const { isGenerating, progress, progressStep, result, language } = useGeneratorStore();
+  const { isGenerating, progress, progressStep, result, language, framework } = useGeneratorStore();
   const [copied, setCopied] = useState(false);
+
+  const specialKind = useMemo(
+    () => detectSpecialKind(framework, result?.language || language),
+    [framework, language, result?.language],
+  );
+  const validation = useMemo(
+    () => (result ? validateSpecialOutput(result.script, specialKind) : null),
+    [result, specialKind],
+  );
+  const previewText = useMemo(
+    () => (result ? previewLines(result.script, 200) : ""),
+    [result],
+  );
 
   const handleCopy = () => {
     if (!result) return;
@@ -38,12 +57,13 @@ const OutputPanel = () => {
 
   const handleDownload = () => {
     if (!result) return;
-    const ext = extMap[result.language] || extMap[language] || ".txt";
+    const fallbackExt = extMap[result.language] || extMap[language] || ".txt";
+    const filename = buildDownloadFilename(result.title, framework, result.language || language, fallbackExt);
     const blob = new Blob([result.script], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `testforge-${result.title.toLowerCase().replace(/\s+/g, "-")}${ext}`;
+    a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -149,7 +169,7 @@ const OutputPanel = () => {
         </button>
         <button onClick={handleDownload} className="flex items-center gap-1 px-3 py-1.5 text-xs rounded-md border border-border hover:border-primary/30 text-muted-foreground hover:text-foreground transition-colors">
           <Download className="w-3 h-3" />
-          Download {extMap[result.language] || extMap[language] || ".ts"}
+          Download {specialKind === "tosca" ? ".tosca.yaml" : specialKind === "vbscript" ? ".vbs" : (extMap[result.language] || extMap[language] || ".ts")}
         </button>
         <button className="flex items-center gap-1 px-3 py-1.5 text-xs rounded-md border border-border hover:border-primary/30 text-muted-foreground hover:text-foreground transition-colors">
           <Save className="w-3 h-3" /> Save
@@ -159,10 +179,38 @@ const OutputPanel = () => {
         </button>
       </div>
 
+      {/* Validation banner — only for specialised outputs (Tosca / UFT One) */}
+      {specialKind && validation && (
+        <div
+          className={`rounded-lg border p-3 text-xs ${
+            validation.ok
+              ? "border-primary/30 bg-primary/5 text-primary"
+              : "border-destructive/40 bg-destructive/10 text-destructive"
+          }`}
+        >
+          <div className="flex items-center gap-2 font-semibold">
+            {validation.ok ? <ShieldCheck className="w-3.5 h-3.5" /> : <AlertTriangle className="w-3.5 h-3.5" />}
+            {specialKind === "tosca" ? "Tosca model-based output" : "UFT One VBScript output"} —{" "}
+            {validation.ok ? "all required sections present" : "missing required sections"}
+          </div>
+          {validation.missing.length > 0 && (
+            <div className="mt-1 text-foreground/90">
+              Missing: {validation.missing.map((m) => <code key={m} className="px-1 mx-0.5 rounded bg-background/40">{m}</code>)}
+            </div>
+          )}
+          {validation.warnings.length > 0 && (
+            <ul className="mt-1 list-disc list-inside text-muted-foreground">
+              {validation.warnings.map((w, i) => <li key={i}>{w}</li>)}
+            </ul>
+          )}
+        </div>
+      )}
+
       {/* Tabs */}
-      <Tabs defaultValue="code" className="w-full">
+      <Tabs defaultValue={specialKind ? "preview" : "code"} className="w-full">
         <TabsList className="bg-card border border-border">
           <TabsTrigger value="code">Code</TabsTrigger>
+          {specialKind && <TabsTrigger value="preview"><Eye className="w-3 h-3 mr-1" />Preview (200)</TabsTrigger>}
           <TabsTrigger value="testcases">Test Cases</TabsTrigger>
           <TabsTrigger value="coverage">Coverage</TabsTrigger>
           <TabsTrigger value="setup">Setup Guide</TabsTrigger>
@@ -180,6 +228,27 @@ const OutputPanel = () => {
             </SyntaxHighlighter>
           </div>
         </TabsContent>
+
+        {specialKind && (
+          <TabsContent value="preview" className="mt-3">
+            <div className="rounded-lg overflow-hidden border border-border">
+              <div className="px-3 py-1.5 text-[11px] text-muted-foreground border-b border-border bg-card flex items-center justify-between">
+                <span>First 200 lines · {specialKind === "tosca" ? ".tosca.yaml" : ".vbs"}</span>
+                <span>
+                  {previewText.split("\n").length} / {result.script.split(/\r?\n/).length} lines
+                </span>
+              </div>
+              <SyntaxHighlighter
+                language={syntaxLang}
+                style={vscDarkPlus}
+                customStyle={{ margin: 0, padding: "1rem", fontSize: "0.78rem", lineHeight: 1.55, background: "hsl(220, 33%, 7%)", maxHeight: "520px" }}
+                showLineNumbers
+              >
+                {previewText}
+              </SyntaxHighlighter>
+            </div>
+          </TabsContent>
+        )}
 
         <TabsContent value="testcases" className="mt-3">
           <div className="rounded-lg border border-border overflow-auto">

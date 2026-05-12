@@ -7,8 +7,10 @@ import { useAuth } from "@/contexts/AuthContext";
 import PlatformGrid from "./PlatformGrid";
 import FrameworkSelect from "./FrameworkSelect";
 import TestScopeSelect from "./TestScopeSelect";
-import { Sparkles, LayoutTemplate, Dice5, Zap } from "lucide-react";
+import { Sparkles, LayoutTemplate, Dice5, Zap, Boxes, FileCode2, RotateCcw } from "lucide-react";
 import { Link } from "react-router-dom";
+import { specializedExamples } from "@/data/specializedExamples";
+import { detectSpecialKind } from "@/lib/specialOutputValidation";
 
 interface InputPanelProps {
   onGenerate: () => void;
@@ -17,8 +19,21 @@ interface InputPanelProps {
 
 const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
   const {
-    platform, testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
+    platform, framework, language, setFramework, setLanguage,
+    testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
   } = useGeneratorStore();
+  const specialKind = detectSpecialKind(framework, language);
+
+  const setScriptType = (kind: "tosca" | "vbscript" | "default") => {
+    if (kind === "tosca") { setFramework("tricentis_tosca"); setLanguage("model-based"); }
+    else if (kind === "vbscript") { setFramework("uft_one"); setLanguage("vbscript"); }
+    else { setFramework("playwright_ts"); setLanguage("typescript"); }
+  };
+
+  const filteredExamples = specialKind
+    ? specializedExamples.filter((e) =>
+        specialKind === "tosca" ? e.framework === "tricentis_tosca" : e.framework === "uft_one")
+    : [];
   const { user } = useAuth();
   const { used, limit, remaining, isAtLimit } = useDailyUsage();
 
@@ -44,6 +59,62 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
           ② Framework + Language
         </label>
         <FrameworkSelect />
+
+        {/* Script type quick selector — forces framework/language regardless of presets */}
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          <button
+            type="button"
+            onClick={() => setScriptType("tosca")}
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-[11px] transition-colors ${
+              specialKind === "tosca"
+                ? "border-primary/60 bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:text-foreground hover:border-primary/30"
+            }`}
+            title="Force Tricentis Tosca model-based YAML output"
+          >
+            <Boxes className="w-3 h-3" /> Tosca (model-based)
+          </button>
+          <button
+            type="button"
+            onClick={() => setScriptType("vbscript")}
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-[11px] transition-colors ${
+              specialKind === "vbscript"
+                ? "border-primary/60 bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:text-foreground hover:border-primary/30"
+            }`}
+            title="Force UFT One VBScript output"
+          >
+            <FileCode2 className="w-3 h-3" /> UFT One (VBScript)
+          </button>
+          {specialKind && (
+            <button
+              type="button"
+              onClick={() => setScriptType("default")}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-md border border-border text-[11px] text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+              title="Reset to default Playwright/TypeScript"
+            >
+              <RotateCcw className="w-3 h-3" /> Reset
+            </button>
+          )}
+        </div>
+
+        {filteredExamples.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            <span className="text-[10px] uppercase tracking-wider text-muted-foreground self-center mr-1">
+              Curated examples:
+            </span>
+            {filteredExamples.map((ex) => (
+              <button
+                key={ex.id}
+                type="button"
+                onClick={() => setBusinessCase(ex.businessCase)}
+                className="px-2 py-0.5 rounded border border-border text-[11px] text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+              >
+                {ex.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* 3. Test Scope */}
