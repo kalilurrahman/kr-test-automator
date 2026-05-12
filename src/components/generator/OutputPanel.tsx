@@ -169,7 +169,7 @@ const OutputPanel = () => {
         </button>
         <button onClick={handleDownload} className="flex items-center gap-1 px-3 py-1.5 text-xs rounded-md border border-border hover:border-primary/30 text-muted-foreground hover:text-foreground transition-colors">
           <Download className="w-3 h-3" />
-          Download {extMap[result.language] || extMap[language] || ".ts"}
+          Download {specialKind === "tosca" ? ".tosca.yaml" : specialKind === "vbscript" ? ".vbs" : (extMap[result.language] || extMap[language] || ".ts")}
         </button>
         <button className="flex items-center gap-1 px-3 py-1.5 text-xs rounded-md border border-border hover:border-primary/30 text-muted-foreground hover:text-foreground transition-colors">
           <Save className="w-3 h-3" /> Save
