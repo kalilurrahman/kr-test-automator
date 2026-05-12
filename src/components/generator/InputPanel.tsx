@@ -59,14 +59,6 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
           ② Framework + Language
         </label>
         <FrameworkSelect />
-      </div>
-
-      {/* 2. Framework */}
-      <div>
-        <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ② Framework + Language
-        </label>
-        <FrameworkSelect />
 
         {/* Script type quick selector — forces framework/language regardless of presets */}
         <div className="mt-2 flex flex-wrap gap-1.5">
