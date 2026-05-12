@@ -206,9 +206,6 @@ const OutputPanel = () => {
         </div>
       )}
 
-      {/* Reusable inline highlight surfaced inside Code + Preview tabs */}
-      {(() => null)()}
-      {(() => null)()}
       <Tabs defaultValue={specialKind ? "preview" : "code"} className="w-full">
         <TabsList className="bg-card border border-border">
           <TabsTrigger value="code">Code</TabsTrigger>
