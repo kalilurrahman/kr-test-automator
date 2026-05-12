@@ -141,6 +141,30 @@ const OutputPanel = () => {
 
   const syntaxLang = langMap[result.language] || langMap[language] || "typescript";
 
+  const missingItems = validation?.missing ?? [];
+  const hasMissing = specialKind && missingItems.length > 0;
+
+  const MissingStrip = ({ where }: { where: "code" | "preview" }) =>
+    hasMissing ? (
+      <div
+        data-testid={`missing-strip-${where}`}
+        className="px-3 py-2 text-[11px] border-b border-destructive/40 bg-destructive/10 text-destructive flex flex-wrap items-center gap-1.5"
+      >
+        <AlertTriangle className="w-3.5 h-3.5" />
+        <span className="font-semibold">
+          {specialKind === "tosca" ? "Tosca YAML" : "UFT One VBScript"} validation failed — missing:
+        </span>
+        {missingItems.map((m) => (
+          <code
+            key={m}
+            className="px-1.5 py-0.5 rounded bg-background/40 border border-destructive/30 text-destructive font-code"
+          >
+            {m}
+          </code>
+        ))}
+      </div>
+    ) : null;
+
   return (
     <motion.div
       initial={{ opacity: 0, x: 30 }}
