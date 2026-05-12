@@ -31,8 +31,21 @@ const extMap: Record<string, string> = {
 };
 
 const OutputPanel = () => {
-  const { isGenerating, progress, progressStep, result, language } = useGeneratorStore();
+  const { isGenerating, progress, progressStep, result, language, framework } = useGeneratorStore();
   const [copied, setCopied] = useState(false);
+
+  const specialKind = useMemo(
+    () => detectSpecialKind(framework, result?.language || language),
+    [framework, language, result?.language],
+  );
+  const validation = useMemo(
+    () => (result ? validateSpecialOutput(result.script, specialKind) : null),
+    [result, specialKind],
+  );
+  const previewText = useMemo(
+    () => (result ? previewLines(result.script, 200) : ""),
+    [result],
+  );
 
   const handleCopy = () => {
     if (!result) return;
@@ -44,12 +57,13 @@ const OutputPanel = () => {
 
   const handleDownload = () => {
     if (!result) return;
-    const ext = extMap[result.language] || extMap[language] || ".txt";
+    const fallbackExt = extMap[result.language] || extMap[language] || ".txt";
+    const filename = buildDownloadFilename(result.title, framework, result.language || language, fallbackExt);
     const blob = new Blob([result.script], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `testforge-${result.title.toLowerCase().replace(/\s+/g, "-")}${ext}`;
+    a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
   };
