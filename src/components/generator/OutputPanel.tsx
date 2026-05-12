@@ -262,6 +262,7 @@ const OutputPanel = () => {
                   {previewText.split("\n").length} / {result.script.split(/\r?\n/).length} lines
                 </span>
               </div>
+              <MissingStrip where="preview" />
               <SyntaxHighlighter
                 language={syntaxLang}
                 style={vscDarkPlus}
