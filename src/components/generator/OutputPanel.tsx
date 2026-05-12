@@ -206,7 +206,8 @@ const OutputPanel = () => {
         </div>
       )}
 
-      {/* Inline missing-sections highlight reused in Code and Preview tabs */}
+      {/* Reusable inline highlight surfaced inside Code + Preview tabs */}
+      {(() => null)()}
       {(() => null)()}
       <Tabs defaultValue={specialKind ? "preview" : "code"} className="w-full">
         <TabsList className="bg-card border border-border">
