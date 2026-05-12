@@ -5,10 +5,16 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useGeneratorStore } from "@/store/generatorStore";
 import { progressSteps } from "@/data/platforms";
 import { Progress } from "@/components/ui/progress";
-import { Copy, Download, Save, Star, Check, Loader2, Circle, ArrowRight } from "lucide-react";
+import { Copy, Download, Save, Star, Check, Loader2, Circle, ArrowRight, AlertTriangle, ShieldCheck, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { toast } from "sonner";
+import {
+  detectSpecialKind,
+  validateSpecialOutput,
+  previewLines,
+  buildDownloadFilename,
+} from "@/lib/specialOutputValidation";
 
 const langMap: Record<string, string> = {
   typescript: "typescript", javascript: "javascript", python: "python",
