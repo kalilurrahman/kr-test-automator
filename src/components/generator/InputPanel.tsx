@@ -7,8 +7,10 @@ import { useAuth } from "@/contexts/AuthContext";
 import PlatformGrid from "./PlatformGrid";
 import FrameworkSelect from "./FrameworkSelect";
 import TestScopeSelect from "./TestScopeSelect";
-import { Sparkles, LayoutTemplate, Dice5, Zap } from "lucide-react";
+import { Sparkles, LayoutTemplate, Dice5, Zap, Boxes, FileCode2, RotateCcw } from "lucide-react";
 import { Link } from "react-router-dom";
+import { specializedExamples } from "@/data/specializedExamples";
+import { detectSpecialKind } from "@/lib/specialOutputValidation";
 
 interface InputPanelProps {
   onGenerate: () => void;
@@ -17,8 +19,21 @@ interface InputPanelProps {
 
 const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
   const {
-    platform, testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
+    platform, framework, language, setFramework, setLanguage,
+    testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
   } = useGeneratorStore();
+  const specialKind = detectSpecialKind(framework, language);
+
+  const setScriptType = (kind: "tosca" | "vbscript" | "default") => {
+    if (kind === "tosca") { setFramework("tricentis_tosca"); setLanguage("model-based"); }
+    else if (kind === "vbscript") { setFramework("uft_one"); setLanguage("vbscript"); }
+    else { setFramework("playwright_ts"); setLanguage("typescript"); }
+  };
+
+  const filteredExamples = specialKind
+    ? specializedExamples.filter((e) =>
+        specialKind === "tosca" ? e.framework === "tricentis_tosca" : e.framework === "uft_one")
+    : [];
   const { user } = useAuth();
   const { used, limit, remaining, isAtLimit } = useDailyUsage();
 
