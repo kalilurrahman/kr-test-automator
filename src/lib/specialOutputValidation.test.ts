@@ -23,8 +23,8 @@ action_modes:
 const validVbScript = `
 Option Explicit
 Sub LoginFlow()
-  Browser("Bank").Page("Login").WebEdit("user").Set "alice"
-  Browser("Bank").Page("Login").WebButton("Sign in").Click
+  Browser("Bank").Page("Login").WebEdit("user").Set("alice")
+  Browser("Bank").Page("Login").WebButton("Sign in").Click()
   Reporter.ReportEvent micPass, "Login", "OK"
 End Sub
 `;
