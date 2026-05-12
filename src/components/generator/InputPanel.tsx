@@ -61,6 +61,70 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         <FrameworkSelect />
       </div>
 
+      {/* 2. Framework */}
+      <div>
+        <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
+          ② Framework + Language
+        </label>
+        <FrameworkSelect />
+
+        {/* Script type quick selector — forces framework/language regardless of presets */}
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          <button
+            type="button"
+            onClick={() => setScriptType("tosca")}
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-[11px] transition-colors ${
+              specialKind === "tosca"
+                ? "border-primary/60 bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:text-foreground hover:border-primary/30"
+            }`}
+            title="Force Tricentis Tosca model-based YAML output"
+          >
+            <Boxes className="w-3 h-3" /> Tosca (model-based)
+          </button>
+          <button
+            type="button"
+            onClick={() => setScriptType("vbscript")}
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-[11px] transition-colors ${
+              specialKind === "vbscript"
+                ? "border-primary/60 bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:text-foreground hover:border-primary/30"
+            }`}
+            title="Force UFT One VBScript output"
+          >
+            <FileCode2 className="w-3 h-3" /> UFT One (VBScript)
+          </button>
+          {specialKind && (
+            <button
+              type="button"
+              onClick={() => setScriptType("default")}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-md border border-border text-[11px] text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+              title="Reset to default Playwright/TypeScript"
+            >
+              <RotateCcw className="w-3 h-3" /> Reset
+            </button>
+          )}
+        </div>
+
+        {filteredExamples.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            <span className="text-[10px] uppercase tracking-wider text-muted-foreground self-center mr-1">
+              Curated examples:
+            </span>
+            {filteredExamples.map((ex) => (
+              <button
+                key={ex.id}
+                type="button"
+                onClick={() => setBusinessCase(ex.businessCase)}
+                className="px-2 py-0.5 rounded border border-border text-[11px] text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+              >
+                {ex.label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
       {/* 3. Test Scope */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
