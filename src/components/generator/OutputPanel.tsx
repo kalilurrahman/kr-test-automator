@@ -241,6 +241,7 @@ const OutputPanel = () => {
 
         <TabsContent value="code" className="mt-3">
           <div className="rounded-lg overflow-hidden border border-border">
+            <MissingStrip where="code" />
             <SyntaxHighlighter
               language={syntaxLang}
               style={vscDarkPlus}
