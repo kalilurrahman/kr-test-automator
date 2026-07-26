@@ -6,10 +6,11 @@ changes the launch plan.
 
 ## The headline finding
 
-**571 of the 841 curated SAP cases clear the paid quality bar; 270 are held back.**
+**615 of the 841 curated SAP cases clear the paid quality bar (73%); 226 are held back.**
 
-Getting to a trustworthy number took two passes, and the first one was wrong in
-an instructive way.
+Getting to a trustworthy number took three passes, and the first two were wrong
+in instructive ways — both times because of defects in the measuring tool, not
+the content.
 
 The first run reported only 201 passing (24%). That was a measurement artefact:
 the linter judged each expected-result *fragment* independently, but curated
@@ -21,7 +22,25 @@ hesitation, so the bar was measuring the wrong thing.
 The corrected rule judges falsifiability **at case level**: a case fails only
 when *nothing* in it is checkable, and individual soft clauses are recorded as
 warnings (editorial debt) instead. That is the standard a buyer actually
-applies.
+applies. This took the count to 571.
+
+The third pass came from reading the held-back cases instead of trusting the
+count. Roughly a sixth of them were failing on **tooling defects**:
+
+- The step parser split inside hyphenated transaction codes — `"1. F110 or
+  F-53. 2. Enter amount"` broke at the `53.`, destroying the very anchor that
+  proves the step is executable.
+- The anchor test required two consecutive capitals, so real SAP transaction
+  codes `S_ALR_87011963`, `F110` and `F.13` were not recognised as naming a
+  system at all.
+- A fragment containing a filler word was never credited for the observable
+  outcome beside it: "values transferred correctly" is *both* checkable and
+  sloppily worded, and the linter bailed on the warning before crediting the
+  transfer.
+
+Fixing those recovered **44 cases** (571 → 615) that had been wrongly condemned.
+The lesson generalises: when a quality gate condemns most of a hand-curated
+dataset, suspect the gate first.
 
 ### Proof the bar was corrected, not loosened
 
@@ -37,20 +56,24 @@ the generated filler nobody should ever pay for:
 | 3DEXPERIENCE | 0 / 200 (0.0%) |
 | Dynamics365 | 0 / 200 (0.0%) |
 
-**0% of skeleton content passes; 68% of curated content passes.** The bar
+**0% of skeleton content passes; 73% of curated content passes.** The bar
 discriminates perfectly between the two tiers, which is the evidence that the
-201 → 571 move was a fix rather than a concession. The control test fails the
+201 → 615 move was a fix rather than a concession. The control test fails the
 build if skeleton pass rate ever exceeds 5%.
 
 ### What still holds cases back
 
-| Rule | Findings | What it means |
+| Rule | Cases | What it means |
 | --- | ---: | --- |
-| `expected-falsifiable` | 231 | **Blocking.** Nothing in the case is checkable at all |
-| `step-anchor` | 48 | **Blocking.** No step names a transaction, screen or endpoint |
-| `expected-vague` | 990 | Warning. A soft clause alongside checkable ones |
-| `negative-variant` | 597 | Warning. P1/P2 positive case with no blocking expectation |
-| `step-anchor-density` | 375 | Warning. Few steps name a system anchor |
+| `expected-falsifiable` | 184 | **Blocking.** Nothing in the case is checkable at all |
+| `step-anchor` | 26 | **Blocking.** No step names a transaction, screen or endpoint |
+| `step-anchor` + `expected-falsifiable` | 9 | **Blocking.** Both |
+| `preconditions-required` / `precondition-filler` | 5 | **Blocking.** Cannot be set up |
+
+The remaining failures are genuine editorial weakness, verified by reading
+them: "Organizational structure aligns with enterprise model", "Planned
+activity price calculated iteratively", "All depreciation areas show correct
+values". None of these lets a tester tell pass from fail.
 
 The dataset's *inputs* are excellent — real transaction codes (UKM_CASE, F-02,
 FBL3N, ABAON), real BAPIs, real preconditions. What is thin on the held-back
@@ -59,12 +82,12 @@ tractable editorial pass, not a rewrite.
 
 ## What this means commercially
 
-**571 curated cases across 30 modules is a real product** — comfortably above
+**615 curated cases across 30 modules is a real product** — comfortably above
 the blueprint's own 300–500 target for a curated core, and enough to support the
 $149 price already on the pricing page.
 
-Recommended: **ship v1.0 with the 571**, state the count honestly, and work the
-270-case backlog into visible changelog momentum ("v1.1 adds 90 cases"). The
+Recommended: **ship v1.0 with the 615**, state the count honestly, and work the
+226-case backlog into visible changelog momentum ("v1.1 adds 90 cases"). The
 backlog in `build/quality/sap-remediation-backlog.csv` is sorted cheapest-first;
 cases with a single finding are usually one sentence from shipping.
 
@@ -99,7 +122,7 @@ Use these, not the older estimates:
 
 - **201,222 unique CSV records** across 61 platforms (244,414 rows before
   de-duplication — 17.7% were duplicates)
-- **571 SAP cases** at premium quality, of 841 curated (68%)
+- **615 SAP cases** at premium quality, of 841 curated (73%)
 - Duplicate-heavy platforms that must never be sold as-is: Dynamics365 (54%),
   GoogleWorkspace (49%), Datadog (48%), Jira (48%), SageIntacct (48%)
 
@@ -132,16 +155,16 @@ readiness**:
 - **ServiceNow** offers a cheap automation story (native ATF export) that lifts
   perceived value for modest extra effort.
 
-The curated SAP dataset at 68% remains the only genuinely near-ready asset in
+The curated SAP dataset at 73% remains the only genuinely near-ready asset in
 the estate.
 
 ## Next actions
 
-1. Human sandbox pass on a sample of the 571 so the pack can honestly say
+1. Human sandbox pass on a sample of the 615 so the pack can honestly say
    "verified against" and set `verifiedOn` — the single biggest trust upgrade
    available, and the only claim currently softened.
 2. Work `build/quality/sap-remediation-backlog.csv` cheapest-first; re-run
-   `npm run build:pack:sap` to watch the shippable count climb past 571.
+   `npm run build:pack:sap` to watch the shippable count climb past 615.
 3. Extend the same lint to the Salesforce and Workday curated cores when Wave 2
    starts — the bar is platform-agnostic.
 4. Wire `npm run verify:content` and `npm run lint:control` into CI so both a

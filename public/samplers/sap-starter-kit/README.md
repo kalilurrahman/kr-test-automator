@@ -2,7 +2,7 @@
 
 40 real cases from the SAP Enterprise Test Repository — not a
 watered-down teaser. These are the same rows, at the same quality, as the
-571-case Professional Edition.
+615-case Professional Edition.
 
 Written against S/4HANA 2026. Every case names real transaction codes,
 gives checkable preconditions and states falsifiable expected results.

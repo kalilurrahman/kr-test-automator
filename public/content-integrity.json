@@ -3,8 +3,8 @@
   "methodology": "Counts are real CSV records (not physical lines) parsed with Python's csv module. Duplicates are rows identical in every column except the ID. 'unique' is the only figure quoted in marketing.",
   "totals": {
     "rows": 245255,
-    "unique": 201852,
-    "duplicates": 43403,
+    "unique": 201896,
+    "duplicates": 43359,
     "platforms": 62,
     "files": 396
   },
@@ -359,8 +359,8 @@
     },
     "build": {
       "rows": 841,
-      "unique": 630,
-      "duplicates": 211,
+      "unique": 674,
+      "duplicates": 167,
       "files": 2
     },
     "iOS": {
@@ -3462,18 +3462,18 @@
     "build": [
       {
         "file": "build/packs/sap-professional/sap-professional-v1.0.0.csv",
-        "rows": 571,
-        "unique": 571,
+        "rows": 615,
+        "unique": 615,
         "duplicates": 0,
         "duplicate_pct": 0.0,
         "columns": 18
       },
       {
         "file": "build/quality/sap-remediation-backlog.csv",
-        "rows": 270,
+        "rows": 226,
         "unique": 59,
-        "duplicates": 211,
-        "duplicate_pct": 78.1,
+        "duplicates": 167,
+        "duplicate_pct": 73.9,
         "columns": 6
       }
     ],

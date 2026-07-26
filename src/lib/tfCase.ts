@@ -135,15 +135,28 @@ const FALSIFIABLE_SIGNALS: RegExp[] = [
   /\b(cannot|is not permitted|not allowed|no longer)\b/i,
   // A named artefact coming into existence is observable.
   /\b(created|posted|generated|logged|cleared|updated|released|archived|triggered)\b/i,
+  // So is a named state change on an existing artefact — "AuC zeroed",
+  // "balance transferred to the final asset", "invoice reversed".
+  /\b(transferred|zeroed|reversed|settled|capitalised|capitalized|reconciled|assigned|allocated|closed|approved|scheduled|calculated to|starts from|retired|acquired|matched|set to|indicator set|is set)\b/i,
 ];
 
 const looksFalsifiable = (text: string): boolean =>
   FALSIFIABLE_SIGNALS.some((re) => re.test(text));
 
-/** A real step names where the work happens. */
+/**
+ * A real step names where the work happens. Enterprise systems name it in
+ * several shapes, and missing any of them wrongly condemns a good case:
+ *   FBL3N, VA01, AIAB, AW01N   two-or-more capitals, optionally with digits
+ *   F110, S_ALR_87011963       one capital plus digits, or underscore codes
+ *   F-02, F-53                 hyphenated transaction codes
+ *   UKM_CASE, BAPI_ACC_POST    underscore-joined identifiers
+ */
 const STEP_ANCHOR = [
   /\b[A-Z]{2,}[A-Z0-9_]*\b/, // FBL3N, VA01, UKM_CASE, BAPI_ACC_DOCUMENT_POST
-  /\b[A-Z]+-\d+[A-Z0-9]*\b/, // hyphenated T-codes: F-02, F-28, KE5Z-1
+  /\b[A-Z]+-\d+[A-Z0-9]*\b/, // hyphenated T-codes: F-02, F-28
+  /\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b/, // underscore codes: S_ALR_87011963, F_UKM_COLL_AUTO
+  /\b[A-Z]\d{2,}[A-Z0-9]*\b/, // letter+digits: F110, S021
+  /\b[A-Z]+\.\d+[A-Z0-9]*\b/, // dotted T-codes: F.13, F.19, F.5D
   /\b(page|screen|app|tab|dialog|report|endpoint|api|task|worklet|form)\b/i,
   /\b(GET|POST|PUT|PATCH|DELETE)\b/,
   /\//, // path or navigation trail
@@ -237,6 +250,11 @@ export function lintCase(tc: TfCase): LintFinding[] {
         fail("expected-vague", `Expected result "${text}" is not falsifiable`, "warning");
         return;
       }
+      // Filler and falsifiability are independent judgements: "values
+      // transferred correctly" is both checkable (a transfer either happened
+      // or it did not) and sloppily worded. Warn about the wording, but still
+      // credit the observable outcome — bailing early on the filler warning
+      // would condemn cases that are perfectly usable.
       const banned = containsBanned(text);
       if (banned) {
         fail(
@@ -244,11 +262,10 @@ export function lintCase(tc: TfCase): LintFinding[] {
           `Expected result asserts a judgement, not an observation ("${banned}"): "${text}"`,
           "warning",
         );
-        return;
       }
       if (looksFalsifiable(text)) {
         falsifiableCount += 1;
-      } else {
+      } else if (!banned) {
         fail(
           "expected-vague",
           `Expected result names no observable artefact or value: "${text}"`,

@@ -86,12 +86,19 @@ const TYPE_MAP = {
   Performance: "performance",
 };
 
-/** Splits the curated "1. X\n2. Y" step string into structured steps. */
+/**
+ * Splits the curated "1. X\n2. Y" step string into structured steps.
+ *
+ * The step number must be at the start of the string or follow whitespace, and
+ * must not be preceded by a hyphen or letter — otherwise SAP transaction codes
+ * are torn apart: "1. F110 or F-53. 2. Enter amount" would split inside "F-53"
+ * at the "53." and destroy the very anchor that proves the step is executable.
+ */
 function parseSteps(raw) {
   if (!raw) return [];
   const text = String(raw).replace(/\\n/g, "\n");
   const parts = text
-    .split(/\n+|(?=\b\d+\.\s)/)
+    .split(/\n+|(?<=^|\s)(?=\d+\.\s)/)
     .map((s) => s.trim())
     .filter(Boolean);
   return parts.map((part, i) => ({
