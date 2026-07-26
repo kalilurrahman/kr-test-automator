@@ -48,16 +48,40 @@ serve(async (req) => {
 
     const findLicense = async () => {
       if (keyHash) {
-        const { data } = await admin.from("licenses").select("id,status")
+        const { data } = await admin.from("licenses").select("id,status,product_id")
           .eq("license_key_hash", keyHash).maybeSingle();
         if (data) return data;
       }
       if (saleId) {
-        const { data } = await admin.from("licenses").select("id,status")
+        const { data } = await admin.from("licenses").select("id,status,product_id")
           .eq("merchant_order_id", saleId).maybeSingle();
         if (data) return data;
       }
       return null;
+    };
+
+    // Independent confirmation against Gumroad's verify API. Pings are
+    // unsigned, so state-improving events (reinstatement) must never trust
+    // the payload alone — a leaked URL secret would otherwise let anyone
+    // resurrect revoked entitlements.
+    const confirmKeyValidWithGumroad = async (productId: string): Promise<boolean> => {
+      if (!licenseKey) return false;
+      const { data: product } = await admin.from("license_products")
+        .select("merchant_product_id").eq("id", productId).maybeSingle();
+      if (!product) return false;
+      const resp = await fetch("https://api.gumroad.com/v2/licenses/verify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          product_id: product.merchant_product_id,
+          license_key: licenseKey.trim(),
+          increment_uses_count: "false",
+        }),
+      });
+      if (!resp.ok) return false;
+      const data = await resp.json();
+      const p = data.purchase ?? {};
+      return data.success === true && !p.refunded && !p.chargebacked;
     };
 
     const revoke = async (status: "refunded" | "chargeback" | "revoked", event: string) => {
@@ -111,16 +135,27 @@ serve(async (req) => {
         await revoke("chargeback", "dispute_webhook");
         break;
       case "dispute_won": {
-        // Chargeback resolved in our favor: reinstate.
+        // Chargeback resolved in our favor: reinstate — but only after Gumroad
+        // itself confirms the key is valid again. Otherwise flag for manual
+        // review instead of trusting an unsigned payload to restore access.
         const license = await findLicense();
         if (license) {
-          await admin.from("licenses").update({ status: "active", updated_at: new Date().toISOString() })
-            .eq("id", license.id);
-          await admin.from("entitlements").update({ revoked_at: null })
-            .eq("license_id", license.id);
-          await admin.from("license_events").insert({
-            license_id: license.id, event: "dispute_won_webhook", detail: { sale_id: saleId },
-          });
+          const confirmed = await confirmKeyValidWithGumroad(license.product_id);
+          if (confirmed) {
+            await admin.from("licenses").update({ status: "active", updated_at: new Date().toISOString() })
+              .eq("id", license.id);
+            await admin.from("entitlements").update({ revoked_at: null })
+              .eq("license_id", license.id);
+            await admin.from("license_events").insert({
+              license_id: license.id, event: "dispute_won_webhook", detail: { sale_id: saleId },
+            });
+          } else {
+            await admin.from("license_events").insert({
+              license_id: license.id,
+              event: "dispute_won_manual_review",
+              detail: { sale_id: saleId, reason: "gumroad_confirmation_unavailable" },
+            });
+          }
         }
         break;
       }
@@ -149,6 +184,13 @@ serve(async (req) => {
     return new Response("ok", { status: 200 });
   } catch (error) {
     console.error("licensing-webhook error:", error);
+    // Best-effort durable record so a failed mutation isn't only in stdout.
+    try {
+      await admin.from("license_events").insert({
+        event: "webhook_processing_error",
+        detail: { error: String(error).slice(0, 500) },
+      });
+    } catch { /* stdout log above is the last resort */ }
     // 200 so Gumroad doesn't retry-storm; the event log captures failures.
     return new Response("error_logged", { status: 200 });
   }

@@ -182,28 +182,43 @@ serve(async (req) => {
       licenseId = inserted.id;
     }
 
-    // 4. Enforce the activation cap (devices per seat).
-    if (isActivation) {
-      const fingerprint = (device_fingerprint || "unknown").slice(0, 128);
-      await admin.from("license_activations").upsert(
-        {
-          license_id: licenseId,
-          user_id: user.id,
-          device_fingerprint: fingerprint,
-          user_agent: req.headers.get("user-agent")?.slice(0, 256),
-        },
-        { onConflict: "license_id,user_id,device_fingerprint", ignoreDuplicates: true },
-      );
-      const { count } = await admin
-        .from("license_activations")
-        .select("*", { count: "exact", head: true })
-        .eq("license_id", licenseId);
-      const cap = product.max_activations * product.seats;
-      if ((count ?? 0) > cap) {
-        await logEvent("cap_exceeded", licenseId, { count, cap });
-        return json({ ok: false, error: "activation_limit_reached" }, 403);
-      }
+    // 4. Enforce seat and device caps — in every mode, so "validate" can't be
+    // used to acquire entitlements while dodging enforcement.
+    const fingerprint = (device_fingerprint || "unknown").slice(0, 128);
+    const { data: acts } = await admin
+      .from("license_activations")
+      .select("user_id, device_fingerprint")
+      .eq("license_id", licenseId);
+    const existingActs = acts ?? [];
+
+    // Seats cap DISTINCT ACCOUNTS: a 5-seat key admits 5 users, not
+    // "any users until 15 device rows exist".
+    const seatHolders = new Set(existingActs.map((a) => a.user_id));
+    if (!seatHolders.has(user.id) && seatHolders.size >= product.seats) {
+      await logEvent("seat_limit_reached", licenseId, { seats: product.seats });
+      return json({ ok: false, error: "seat_limit_reached" }, 403);
     }
+
+    // Device cap applies PER USER (max_activations devices each).
+    const myDevices = existingActs.filter((a) => a.user_id === user.id);
+    const isNewDevice = !myDevices.some((a) => a.device_fingerprint === fingerprint);
+    if (isNewDevice && myDevices.length >= product.max_activations) {
+      await logEvent("cap_exceeded", licenseId, {
+        devices: myDevices.length,
+        cap: product.max_activations,
+      });
+      return json({ ok: false, error: "activation_limit_reached" }, 403);
+    }
+
+    await admin.from("license_activations").upsert(
+      {
+        license_id: licenseId,
+        user_id: user.id,
+        device_fingerprint: fingerprint,
+        user_agent: req.headers.get("user-agent")?.slice(0, 256),
+      },
+      { onConflict: "license_id,user_id,device_fingerprint", ignoreDuplicates: true },
+    );
 
     // 5. Grant entitlements (idempotent).
     const rows = (product.entitlements as string[]).map((entitlement) => ({

@@ -57,8 +57,8 @@ async function enforceQuota(
     }
 
     const salt = Deno.env.get("USAGE_SALT") ?? supabaseUrl;
-    // Rightmost x-forwarded-for entry: appended by the platform proxy, so it
-    // can't be spoofed by a client-supplied header (leftmost entries can).
+    // Rightmost x-forwarded-for entry: Supabase's proxy appends the real client
+    // IP after any client-supplied entries, so the rightmost one is trustworthy.
     const xff = (req.headers.get("x-forwarded-for") ?? "unknown").split(",");
     const ip = xff[xff.length - 1].trim();
     const ipHash = await sha256Hex(`${salt}:${ip}`);
@@ -66,39 +66,64 @@ async function enforceQuota(
     const todayStart = new Date();
     todayStart.setUTCHours(0, 0, 0, 0);
 
-    let countQuery = admin
-      .from("generation_usage")
-      .select("*", { count: "exact", head: true })
-      .gte("created_at", todayStart.toISOString());
-    countQuery = userId
-      ? countQuery.eq("user_id", userId)
-      : countQuery.eq("ip_hash", ipHash).is("user_id", null);
-    const { count, error: countError } = await countQuery;
-    if (countError) throw countError;
+    const usageCount = async () => {
+      let q = admin
+        .from("generation_usage")
+        .select("*", { count: "exact", head: true })
+        .gte("created_at", todayStart.toISOString());
+      q = userId ? q.eq("user_id", userId) : q.eq("ip_hash", ipHash).is("user_id", null);
+      const { count, error } = await q;
+      if (error) throw error; // table missing / misconfig -> outer fail-open
+      return count ?? 0;
+    };
 
     const limit = LIMITS[tier];
-    if ((count ?? 0) >= limit) {
-      return new Response(
+    const deny = (used: number) =>
+      new Response(
         JSON.stringify({
           error: userId
             ? `Daily generation limit reached (${limit}/day on your plan). Upgrade for higher limits.`
             : `Daily limit reached for anonymous use (${limit}/day). Sign in for more generations.`,
           code: "quota_exceeded",
-          used: count,
+          used,
           limit,
           tier,
         }),
         { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
-    }
 
-    await admin.from("generation_usage").insert({
+    // Fast path: already at the limit — deny without writing anything.
+    const before = await usageCount();
+    if (before >= limit) return deny(before);
+
+    // Client-supplied strings are sanitized so a crafted value (e.g. a NUL
+    // byte Postgres rejects) can't force the insert to fail and dodge metering.
+    const clean = (v: unknown) =>
+      typeof v === "string" ? v.replace(/[^\x20-\x7E]/g, "").slice(0, 64) || null : null;
+
+    const { error: insertError } = await admin.from("generation_usage").insert({
       user_id: userId,
       ip_hash: userId ? null : ipHash,
       tier,
-      platform: meta.platform ?? null,
-      framework: meta.framework ?? null,
+      platform: clean(meta.platform),
+      framework: clean(meta.framework),
     });
+    if (insertError) {
+      // The count above worked, so this isn't "metering not deployed" — the
+      // ledger is broken while looking configured. Fail closed: an unrecorded
+      // generation is exactly the unmetered spend this function exists to stop.
+      console.error("generation_usage insert failed (failing closed):", insertError);
+      return new Response(
+        JSON.stringify({ error: "Usage metering unavailable. Please try again shortly.", code: "metering_error" }),
+        { status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+      );
+    }
+
+    // Recount including our own row: closes the check-then-insert race — a
+    // concurrent burst all inserts first, and every request over the limit
+    // sees the full total and denies itself.
+    const after = await usageCount();
+    if (after > limit) return deny(after);
     return null;
   } catch (error) {
     console.error("quota enforcement error (failing open):", error);

@@ -111,6 +111,7 @@ export const ACTIVATION_ERRORS: Record<string, string> = {
   subscription_ended: "The subscription behind this license has ended. Renew to restore access.",
   key_bound_to_another_account: "This key is already in use by a different account. Contact support if you own it.",
   activation_limit_reached: "This key has reached its device limit. Deactivate an old device or contact support.",
+  seat_limit_reached: "All seats on this license are taken. Ask your license admin to free a seat or upgrade.",
   merchant_unavailable: "The license service is temporarily unreachable. Please try again in a few minutes.",
   auth_required: "Sign in first so we can attach the license to your account.",
   unknown_sku: "Pick the product this key belongs to.",
