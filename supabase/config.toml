@@ -10,3 +10,7 @@ verify_jwt = true
 # Gumroad pings carry no JWT; authenticated via LICENSING_WEBHOOK_SECRET query param.
 [functions.licensing-webhook]
 verify_jwt = false
+
+# Signed-URL delivery for premium files; requires a signed-in user.
+[functions.sign-download]
+verify_jwt = true

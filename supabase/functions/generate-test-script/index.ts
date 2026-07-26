@@ -1,9 +1,110 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
 };
+
+// Server-enforced daily quotas (the client-side "20/day" was display only).
+// Env-overridable so launch can tighten the free tier without a code change.
+const LIMITS = {
+  anon: Number(Deno.env.get("GEN_LIMIT_ANON") ?? 5),
+  free: Number(Deno.env.get("GEN_LIMIT_FREE") ?? 20),
+  pro: Number(Deno.env.get("GEN_LIMIT_PRO") ?? 100),
+};
+
+async function sha256Hex(input: string): Promise<string> {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(input));
+  return Array.from(new Uint8Array(digest)).map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+// Identify the caller and enforce the tier quota. Returns null when the request
+// may proceed, or a Response to send instead. Fails open on unexpected DB
+// errors: availability of the free tool beats strict metering, and every
+// failure is logged for follow-up.
+async function enforceQuota(
+  req: Request,
+  meta: { platform?: string; framework?: string },
+): Promise<Response | null> {
+  const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  const supabaseUrl = Deno.env.get("SUPABASE_URL");
+  if (!serviceKey || !supabaseUrl) return null; // metering not configured
+
+  try {
+    const admin = createClient(supabaseUrl, serviceKey);
+
+    // The client sends either the anon key (legacy/anonymous) or the signed-in
+    // user's JWT. Only a real user JWT resolves to a user.
+    let userId: string | null = null;
+    const token = (req.headers.get("Authorization") ?? "").replace("Bearer ", "");
+    if (token) {
+      const { data } = await admin.auth.getUser(token);
+      userId = data?.user?.id ?? null;
+    }
+
+    let tier: "anon" | "free" | "pro" = userId ? "free" : "anon";
+    if (userId) {
+      const nowIso = new Date().toISOString();
+      const { data: ents } = await admin
+        .from("entitlements")
+        .select("entitlement")
+        .eq("user_id", userId)
+        .in("entitlement", ["generator:pro", "all-access"])
+        .is("revoked_at", null)
+        .or(`expires_at.is.null,expires_at.gt.${nowIso}`);
+      if (ents && ents.length > 0) tier = "pro";
+    }
+
+    const salt = Deno.env.get("USAGE_SALT") ?? supabaseUrl;
+    // Rightmost x-forwarded-for entry: appended by the platform proxy, so it
+    // can't be spoofed by a client-supplied header (leftmost entries can).
+    const xff = (req.headers.get("x-forwarded-for") ?? "unknown").split(",");
+    const ip = xff[xff.length - 1].trim();
+    const ipHash = await sha256Hex(`${salt}:${ip}`);
+
+    const todayStart = new Date();
+    todayStart.setUTCHours(0, 0, 0, 0);
+
+    let countQuery = admin
+      .from("generation_usage")
+      .select("*", { count: "exact", head: true })
+      .gte("created_at", todayStart.toISOString());
+    countQuery = userId
+      ? countQuery.eq("user_id", userId)
+      : countQuery.eq("ip_hash", ipHash).is("user_id", null);
+    const { count, error: countError } = await countQuery;
+    if (countError) throw countError;
+
+    const limit = LIMITS[tier];
+    if ((count ?? 0) >= limit) {
+      return new Response(
+        JSON.stringify({
+          error: userId
+            ? `Daily generation limit reached (${limit}/day on your plan). Upgrade for higher limits.`
+            : `Daily limit reached for anonymous use (${limit}/day). Sign in for more generations.`,
+          code: "quota_exceeded",
+          used: count,
+          limit,
+          tier,
+        }),
+        { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+      );
+    }
+
+    await admin.from("generation_usage").insert({
+      user_id: userId,
+      ip_hash: userId ? null : ipHash,
+      tier,
+      platform: meta.platform ?? null,
+      framework: meta.framework ?? null,
+    });
+    return null;
+  } catch (error) {
+    console.error("quota enforcement error (failing open):", error);
+    return null;
+  }
+}
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
@@ -17,6 +118,9 @@ serve(async (req) => {
     if (!LOVABLE_API_KEY) {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
+
+    const quotaResponse = await enforceQuota(req, { platform, framework });
+    if (quotaResponse) return quotaResponse;
 
     const outputGuidance = getOutputGuidance(framework, language);
 

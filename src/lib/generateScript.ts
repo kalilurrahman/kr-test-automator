@@ -1,3 +1,5 @@
+import { supabase } from "@/integrations/supabase/client";
+
 const GENERATE_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-test-script`;
 
 export interface GenerateParams {
@@ -36,11 +38,17 @@ export async function streamGeneration({
   try {
     onProgress(0);
 
+    // Send the signed-in user's JWT so the server can attribute quota to the
+    // account (and grant pro-tier limits); anonymous callers fall back to the
+    // anon key and are metered per IP.
+    const { data: sessionData } = await supabase.auth.getSession();
+    const bearer = sessionData.session?.access_token ?? import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+
     const resp = await fetch(GENERATE_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        Authorization: `Bearer ${bearer}`,
       },
       body: JSON.stringify(params),
     });

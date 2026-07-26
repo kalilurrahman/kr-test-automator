@@ -17,6 +17,11 @@ This guide documents the working licensing/entitlement layer added on branch
 | Pricing page | `src/pages/Pricing.tsx` (`/pricing`) | SKU ladder, guarantees, FAQ; checkout links point at Gumroad |
 | Activate page | `src/pages/Activate.tsx` (`/activate`) | Sign-in-gated key activation flow |
 | Nav | `src/components/KRHeader.tsx`, `src/App.tsx` | “Premium” link (desktop + mobile) and the two new routes |
+| Metering migration | `supabase/migrations/20260726130000_generation_usage.sql` | Server-side generation ledger (per-user / per-IP-hash) |
+| Generator quotas | `supabase/functions/generate-test-script/index.ts` | Tier-aware daily limits enforced server-side (anon 5 / free 20 / pro 100, env-overridable); fails open if metering is unconfigured |
+| JWT-aware client | `src/lib/generateScript.ts` | Sends the user's session JWT so usage binds to the account |
+| Usage display | `src/hooks/useDailyUsage.ts` | Tier-aware limit; reads the server ledger (falls back to legacy count pre-migration) |
+| Gated delivery | `supabase/functions/sign-download/index.ts` + `getSignedDownloadUrl()` in `src/lib/licensing.ts` | Entitlement-checked 5-min signed URLs from the private `premium` bucket, with download audit trail |
 
 Design principle: **the entitlement database is ours, the merchant is a plugin.**
 Gumroad is adapter #1 inside `verify-license`; adding Lemon Squeezy or Polar later
@@ -55,15 +60,22 @@ else changes, and no customer loses access if the merchant changes.
    `supabase gen types typescript --project-id iuempyunrdkiroonwmmb > src/integrations/supabase/types.ts`.
 8. **Move premium payloads out of `public/`** — see the licensing architecture doc
    (§ content protection). A static file under `public/data/` is downloadable by
-   anyone regardless of UI gates. Premium artifacts belong in a **private Supabase
-   Storage bucket**, delivered via short-lived signed URLs issued by an
-   entitlement-checking edge function.
-9. **Meter the AI generator server-side.** `generate-test-script` currently has
-   `verify_jwt = false` and no usage enforcement — the 20/day limit in
-   `src/hooks/useDailyUsage.ts` is client-side only. Before advertising
-   `generator:pro` as a paid benefit, enforce per-user daily quotas inside the
-   edge function (count `generations` rows for `auth.uid()`; free = 20/day,
-   `generator:pro` = e.g. 200/day) and set `verify_jwt = true`.
+   anyone regardless of UI gates. The delivery mechanics are now built: create a
+   **private** Storage bucket named `premium`, upload files using the layout
+   `vault/<file>` (requires `vault:e2e`) or `packs/<platformId>/<file>` (requires
+   `pack:<platformId>`), delete the originals from `public/` and the
+   `viteStaticCopy` targets, and switch the corresponding `Downloads.tsx` entries
+   from `<a href>` anchors to buttons calling `getSignedDownloadUrl(path)`.
+   Per the launch plan, ship this cut simultaneously with the paid launch.
+9. **Generator metering is now enforced server-side.** Defaults: anonymous
+   5/day (per salted IP hash), signed-in free 20/day, `generator:pro`/All-Access
+   100/day — override via `GEN_LIMIT_ANON` / `GEN_LIMIT_FREE` / `GEN_LIMIT_PRO`
+   function secrets (the launch plan tightens free to 5/day at launch). Set a
+   `USAGE_SALT` secret for IP hashing. Note: enforcement fails open if the
+   metering table/secrets are missing, so apply the migration before relying on
+   it. `verify_jwt` stays `false` deliberately — anonymous free-tier calls are
+   part of the funnel; the function identifies callers from the bearer token
+   when present.
 
 ## Using the gate in content pages
 

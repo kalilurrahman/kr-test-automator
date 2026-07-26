@@ -73,6 +73,20 @@ export async function activateLicense(params: {
   return data as VerifyLicenseResult;
 }
 
+// Requests a short-lived signed URL for a premium file (private Storage bucket
+// "premium"). Path convention: "vault/<file>" or "packs/<platformId>/<file>".
+// Throws with a machine-readable error code on denial.
+export async function getSignedDownloadUrl(path: string): Promise<string> {
+  const { data, error } = await db.functions.invoke("sign-download", { body: { path } });
+  if (error) {
+    const context = (error as { context?: { body?: { error?: string } } }).context;
+    throw new Error(context?.body?.error ?? "network_error");
+  }
+  const result = data as { ok: boolean; url?: string; error?: string };
+  if (!result.ok || !result.url) throw new Error(result.error ?? "download_failed");
+  return result.url;
+}
+
 // Coarse, privacy-light fingerprint: enough to enforce activation caps,
 // not enough to track anyone.
 function deviceFingerprint(): string {
