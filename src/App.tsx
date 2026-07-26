@@ -37,6 +37,8 @@ const Services = lazy(() => import("./pages/Services"));
 const Scenarios = lazy(() => import("./pages/Scenarios"));
 const Downloads = lazy(() => import("./pages/Downloads"));
 const Readme = lazy(() => import("./pages/Readme"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Activate = lazy(() => import("./pages/Activate"));
 
 const ModuleFallback = ({ label }: { label: string }) => (
   <div className="min-h-[calc(100vh-64px)] flex items-center justify-center text-muted-foreground text-sm">
@@ -75,6 +77,8 @@ function AppShell() {
             <Route path="/services" element={<Services />} />
             <Route path="/scenarios" element={<Scenarios />} />
             <Route path="/downloads" element={<Downloads />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/activate" element={<Activate />} />
             <Route path="/readme" element={<Readme />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/industries/:slug" element={<IndustryDetail />} />
