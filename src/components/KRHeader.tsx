@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import {
   Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown,
-  LayoutDashboard, Info, MessageSquare, Factory, Package, Cpu, TestTube2, BookOpen,
+  LayoutDashboard, Info, MessageSquare, Factory, Package, Cpu, TestTube2, BookOpen, Sparkles,
 } from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
@@ -45,6 +45,7 @@ const PRIMARY_LINKS = [
   { to: "/scenarios", label: "Scenarios", icon: TestTube2, match: "/scenarios" },
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard, match: "/dashboard" },
   { to: "/downloads", label: "Downloads", icon: Download, match: "/downloads" },
+  { to: "/pricing", label: "Premium", icon: Sparkles, match: "/pricing" },
   // README sits last so it appears immediately before the user/settings cluster.
   { to: "/readme", label: "README", icon: BookOpen, match: "/readme" },
 ] as const;
@@ -149,6 +150,7 @@ const KRHeader = () => {
             <NavLink to="/scenarios" label="Scenarios" icon={TestTube2} active={startsWith("/scenarios")} />
             <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
             <NavLink to="/downloads" label="Downloads" icon={Download} active={startsWith("/downloads")} />
+            <NavLink to="/pricing" label="Premium" icon={Sparkles} active={startsWith("/pricing") || startsWith("/activate")} />
 
             {/* Library dropdown (kept for templates/history/etc.) */}
             <DropdownMenu>

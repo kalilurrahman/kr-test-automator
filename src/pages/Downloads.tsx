@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
-import { Download, FileText, FileSpreadsheet, FileJson, FileCode, FileArchive, Search } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Download, FileText, FileSpreadsheet, FileJson, FileCode, FileArchive, Search, Sparkles } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -214,6 +215,21 @@ const Downloads = () => {
             </p>
           </div>
         </header>
+
+        {/* Premium upsell — Downloads visitors are the highest-intent audience */}
+        <Card className="p-4 border-primary/30 bg-primary/5 flex flex-col sm:flex-row sm:items-center gap-3">
+          <Sparkles className="w-5 h-5 text-primary shrink-0" />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-medium">Go deeper with the Premium Library</p>
+            <p className="text-xs text-muted-foreground">
+              Validated test cases with full steps &amp; data, runnable automation scripts,
+              and living updates for SAP, Salesforce, Workday and more.
+            </p>
+          </div>
+          <Button asChild size="sm" className="shrink-0">
+            <Link to="/pricing">Explore Premium</Link>
+          </Button>
+        </Card>
 
         {/* Controls */}
         <Card className="p-3 sm:p-4 bg-card border-border">

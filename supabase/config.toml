@@ -2,3 +2,11 @@ project_id = "iuempyunrdkiroonwmmb"
 
 [functions.generate-test-script]
 verify_jwt = false
+
+# License activation binds entitlements to a signed-in account.
+[functions.verify-license]
+verify_jwt = true
+
+# Gumroad pings carry no JWT; authenticated via LICENSING_WEBHOOK_SECRET query param.
+[functions.licensing-webhook]
+verify_jwt = false
