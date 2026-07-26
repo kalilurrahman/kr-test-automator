@@ -1,19 +1,19 @@
 # SAP Starter Kit — TestForge AI Premium Pack v1.0.0
-# Verified against S/4HANA 2026
+# Written against S/4HANA 2026 — not yet sandbox-verified
 
 Feature: SAP Starter Kit
 
-  @P1 @positive @Asset-Accounting
-  Scenario: Retire asset ABAON
-    Given Asset exists with value
-    Given retirement GL accounts configured
-    When ABAON → Enter asset
-    And Partial/full retirement
-    And Revenue amount
-    And Post
-    Then Asset cleared
-    And gain/loss posted
-    And removed from BS at NBV
+  @P1 @positive @Credit-Management
+  Scenario: FI-AR credit exposure UKM
+    Given UKM (SAP Credit Management) active
+    Given customer credit segments defined
+    When UKM_CASE → Open credit case
+    And Review exposure (open orders + open AR)
+    And Credit decision
+    And Update credit limit
+    Then Exposure calculated correctly
+    And credit decisions logged
+    And breach of limit blocks orders automatically
 
   @P1 @positive @PC
   Scenario: Preliminary Costing PCC
@@ -23,84 +23,105 @@ Feature: SAP Starter Kit
     And Save
     Then Preliminary cost estimate updated for repetitive manufacturing
 
-  @P1 @positive @Invoice-Verification
-  Scenario: MIRO invoice with 3-way match
-    Given PO + GR exists
-    Given vendor invoice received
-    When MIRO → Enter PO reference
-    And System proposes GR quantity and price
-    And Enter vendor invoice number
-    And Check discrepancies
-    And Post
-    Then Invoice posted
-    And GR/IR cleared
-    And if price variance > tolerance → blocked for payment automatically
+  @P1 @integration @FI-MM-Integration
+  Scenario: Verify FI posting on MIGO GR
+    Given Material master price
+    Given GR movement type 101
+    When ME21N PO
+    And MIGO GR
+    And MR03 Material document
+    And FBL3N FI line items
+    Then GR/IR account credited
+    And stock account debited
+    And amounts match PO price
+    And CO doc created
 
-  @P1 @positive @Negative-Test
-  Scenario: Create order for blocked customer
-    Given Customer blocked in FD32
-    When VA01 Enter blocked customer
-    And Order entry
-    Then Order blocked immediately
-    And credit block reason
-    And no delivery possible until released
+  @P1 @integration @FI-SD-Integration
+  Scenario: Verify FI revenue on billing VFX3
+    Given Billing document
+    Given revenue account determination
+    When VF01 Customer invoice
+    And VFX3 Billing doc
+    And FB03 FI document
+    Then Revenue account credited
+    And customer AR debited
+    And tax posted
+    And COPA entry created
 
-  @P1 @positive @Negative-Test
-  Scenario: Attempt component GI for unreleased order
-    Given Production order in CRTD status
-    Given not released
-    When MIGO GI to production order
-    And Order not released
-    Then Error: order not released
-    And GI rejected
-    And order must be in REL status
+  @P1 @integration @Plan-to-Produce
+  Scenario: Complete P2P flow MD01→CO01→CO11N→MIGO→CO88
+    Given BOM
+    Given routing
+    Given work centers
+    Given MRP active
+    Given material master
+    When MD01 → Run MRP for plant
+    And CO40 → Convert planned order
+    And CO02 → Release production order
+    And MIGO 261 → Issue components
+    And CO11N → Confirm operations
+    And MIGO 101 → Receive finished goods
+    And CO88 → Settle order
+    Then FG in stock
+    And production costs settled
+    And variance < tolerance
+    And order status TECO and SETC
+    And FI balanced
 
-  @P1 @positive @Batch-Release
-  Scenario: QA11 with 21 CFR 11
-    Given Lot pending
-    When QA11
-    And Accept UD
-    And Sign
-    Then Usage decision posted compliant with digital signature audit rules
+  @P1 @positive @Quality
+  Scenario: Inspection at production operation
+    Given Inspection type 03 (in-process) active
+    Given inspection plan at routing operation
+    When Trigger inspection at operation CO11N
+    And QE11 → Record results
+    And Defect recording
+    And Rework order if needed
+    Then In-process inspection recorded
+    And defect triggers rework
+    And quality gate prevents downstream operation if failed
 
-  @P1 @positive @Equipment
-  Scenario: Dismantle equipment from functional location
-    Given Equipment installed on FL
-    Given dismantling auth
-    When IE02 → Dismantle from FL.
-    And Set date.
+  @P1 @positive @Maintenance
+  Scenario: Functional location inspection IP10
+    Given FLOC with SIL classification
+    Given maintenance strategy
+    When IP10 Maintenance plan for FLOC
+    And IP30 Schedule plan
+    And Inspection work order
+    And Complete with measurement doc
+    Then Safety inspection completed on schedule
+    And proof test results documented
+    And SIL maintained
+
+  @P1 @positive @Benefits
+  Scenario: Enroll employee in health benefit plan
+    Given Benefit plan configured
+    Given IT0168 available
+    When IT0168 → Enroll employee.
+    And Select plan.
+    And Enter coverage.
     And Save.
-    Then Equipment removed from FL
-    And installation history updated
+    Then Enrollment created
+    And premium deduction added to payroll
 
-  @P1 @integration @PY
-  Scenario: Post to Accounting
-    Given Payroll run completed
-    When PC00_M99_CIPC
-    And Create posting run
-    And Post
-    Then FI/CO documents generated reflecting salary expenses
-
-  @P1 @positive @Project-System
-  Scenario: Copy project template to new project CJ01
-    Given Template project exists
-    Given target project ID ready
-    When CJ01 → Copy from template.
-    And Adjust WBS IDs.
-    And Set dates.
-    And Save.
-    Then New project created with WBS, network, and structure from template
+  @P1 @negative @Budget
+  Scenario: Block overspend on WBS availability control
+    Given WBS with budget
+    Given availability control active
+    When Attempt cost posting exceeding WBS budget.
+    And Review system response.
+    Then System warns or blocks per tolerance profile
+    And budget usage tracked
 
   @P1 @positive @Warehouse-Management
-  Scenario: Confirm TO after physical pick LT12
-    Given TO created
-    Given physical pick complete
-    When LT12 → Enter TO number.
-    And Confirm quantities.
-    And Post.
-    Then TO confirmed
-    And bin stocks updated
-    And delivery ready for GI
+  Scenario: Execute physical inventory count in WM LI01
+    Given WH configured
+    Given stock in bins
+    When LI01 → Create count document.
+    And LI11 → Enter count.
+    And LI20 → Post differences.
+    Then Count document completed
+    And differences posted
+    And bin stocks corrected
 
   @P1 @integration @MFS
   Scenario: Conveyor Routing
@@ -109,18 +130,28 @@ Feature: SAP Starter Kit
     And Send telegram
     Then Telegram sent to PLC, HU routed automatically
 
-  @P1 @positive @Transport
-  Scenario: Create and release transport request SE09
-    Given Development system
-    Given transport route
-    When SE09 Workbench transport
-    And Assign objects
-    And Release task
-    And Release request
-    Then Request released
-    And ready for import to QAS
-    And objects locked in DEV
-    And log created
+  @P1 @positive @CTS
+  Scenario: Create and release transport CTS SE10
+    Given SAP system with workbench org
+    Given transport route configured
+    When SE10 → Create task.
+    And Assign objects.
+    And Release task.
+    And Release request.
+    Then Transport request created
+    And objects assigned
+    And released for import
+
+  @P1 @positive @Automation
+  Scenario: Automate master data creation via eCATT
+    Given eCATT configured
+    Given test script created
+    When Execute eCATT script for GL/vendor/material.
+    And Review log.
+    And Validate records.
+    Then Master data created via eCATT
+    And no manual steps
+    And reusable for regression
 
   @P1 @integration @TM/EWM
   Scenario: Freight Order to EWM
@@ -151,28 +182,41 @@ Feature: SAP Starter Kit
     And FKKINV_INV (Invoicing)
     Then Invoice created, FI-CA document posted
 
-  @P1 @positive @Billing
-  Scenario: Bill patient case
-    Given Patient discharged
-    When NA01 / NLB1
-    And Enter Case ID
-    And Execute
-    Then Invoice generated for insurance provider or patient
+  @P1 @positive @Patient-Management
+  Scenario: Admit patient IS-H NPA1
+    Given IS-H (Industry Solution Healthcare) configured
+    Given ward/bed available
+    When NPA1 → Patient admission
+    And Search/create patient master
+    And Select ward + bed
+    And Enter diagnosis
+    And Confirm insurance
+    Then Patient admitted
+    And bed occupied
+    And insurance verified
+    And case created
+    And cost object (case) for billing
 
-  @P1 @positive @Billing
-  Scenario: Execute Billing
-    Given Meter reading exists
-    When EASIBI / EA10
-    And Execute
-    Then Utility bill generated based on consumed volume
+  @P1 @positive @Device-Management
+  Scenario: Create and dispatch meter reading order EL26
+    Given IS-U configured
+    Given device
+    Given installation
+    When EL26 Reading order for route
+    And Export to mobile
+    And Import readings
+    And Plausibility check
+    Then Readings imported
+    And estimates for missed meters
+    And billing triggered after import
 
-  @P1 @positive @Replenishment
-  Scenario: Run Store Replenishment
-    Given Sales history exists
-    When WRP1
-    And Enter Store/Article
-    And Run
-    Then Purchase requisitions or STOs generated for stores
+  @P1 @integration @POS-Inbound
+  Scenario: Process POS Inbound Sales
+    Given WPUBON IDoc exists
+    When WPER
+    And Monitor IDoc processing
+    Then Revenue posted to CO-PA
+    And inventory reduced systematically
 
   @P1 @integration @JIT/JIS
   Scenario: Receive JIT Call
@@ -189,6 +233,17 @@ Feature: SAP Starter Kit
     And Save
     Then Loan contract created and registered in Loans Management
 
+  @P1 @positive @Serialization
+  Scenario: Validate DSCSA serialization on outbound shipment
+    Given Serialization active
+    Given serial numbers assigned to batch
+    When Create delivery.
+    And Verify serial numbers on each saleable unit.
+    And Transmit EPCIS.
+    Then Serial numbers verified
+    And EPCIS event transmitted
+    And DSCSA compliance confirmed
+
   @P1 @integration @Discrete-Manufacturing
   Scenario: Produce variant-configured product
     Given Variant configuration active
@@ -198,6 +253,28 @@ Feature: SAP Starter Kit
     And Produce configured product.
     Then Correct variant produced per SO configuration
     And BOM exploded per variant
+
+  @P1 @integration @Promotion
+  Scenario: Activate promotional price for article
+    Given Promotion type configured
+    Given article and validity dates set
+    When Create promotion.
+    And Set promotional price.
+    And Activate.
+    And Test POS price.
+    Then Promotional price active in POS during validity period
+    And reverting after end
+
+  @P1 @positive @Treasury
+  Scenario: Create money market transaction in SAP Treasury
+    Given Treasury module active
+    Given house bank configured
+    When TM02 → Create MM deal.
+    And Enter counterparty and rates.
+    And Confirm.
+    Then Money market deal created
+    And cash flow generated
+    And settlement scheduled
 
   @P1 @integration @Oil-&-Gas
   Scenario: Allocate joint venture costs to partners
@@ -233,20 +310,18 @@ Feature: SAP Starter Kit
     And Enter details
     Then Grant master created and activated for budget allocations
 
-  @P1 @positive @Accounts-Payable
-  Scenario: Post Vendor Invoice MIRO/FB60
-    Given Vendor master exists
-    Given AP account configured
-    Given PO with GR (for MIRO)
-    When MIRO → Enter PO number
-    And Check GR/IR match
-    And Enter vendor invoice number
-    And Check amounts
-    And Post
-    Then Vendor invoice posted
-    And PO history updated
-    And GR/IR account cleared
-    And open item in AP
+  @P1 @positive @Treasury
+  Scenario: Configure and run cash pooling
+    Given House bank
+    Given bank accounts
+    Given FSCM configured
+    When FI12 → Configure bank account
+    And F110 → Payment run across pool accounts
+    And Notional pooling calculation
+    And Interest posting
+    Then Cash pool balances consolidated
+    And interest calculated at group level
+    And intercompany clearing entries posted
 
   @P1 @positive @PA
   Scenario: Realignment Run
@@ -256,109 +331,111 @@ Feature: SAP Starter Kit
     And Execute
     Then Historical COPA documents updated with new hierarchy parameters
 
-  @P1 @positive @Invoice-Verification
-  Scenario: Post subsequent debit or credit for price
-    Given Original invoice posted
-    Given price adjustment received
-    When MIRO → Subsequent debit/credit.
-    And Enter adjustment.
-    And Post.
-    Then Price adjustment posted
-    And stock or expense account updated
+  @P1 @integration @Procure-to-Pay
+  Scenario: Complete P2P flow PR→PO→GR→MIRO→F110
+    Given Vendor master
+    Given material master
+    Given GL accounts
+    Given bank
+    Given all authorizations
+    When ME51N → Create PR
+    And Approve PR (workflow)
+    And ME21N → Create PO referencing PR
+    And MIGO → Post GR against PO
+    And MIRO → Post vendor invoice (3-way match)
+    And F110 → Payment run
+    And Verify vendor balance = 0
+    Then P2P cycle complete
+    And no open items
+    And vendor paid
+    And audit trail from PR through payment
+    And FI balanced
 
-  @P1 @integration @Interco
-  Scenario: Advanced Intercompany Sales
-    Given VCM configured
-    When Create SO in Selling Co.
-    And Save
-    Then VCM auto-creates Intercompany PO and Delivering Co. SO
+  @P1 @integration @Order-to-Cash
+  Scenario: Complete O2C flow VA01→VL01N→VF01→FI
+    Given Customer master
+    Given material in stock
+    Given pricing
+    Given billing
+    Given bank
+    When VA01 → Create standard sales order OR
+    And VL01N → Create outbound delivery
+    And VL02N → Post goods issue
+    And VF01 → Create invoice
+    And F-28 → Post incoming payment
+    And Verify customer balance = 0
+    Then O2C cycle complete
+    And stock reduced
+    And revenue recognized
+    And customer paid
+    And FI balanced
+    And no open items
 
-  @P1 @positive @Backflush
-  Scenario: Backflush MFBF for repetitive manufacturing
-    Given Repetitive manufacturing profile
-    Given production line
-    Given rate routing
-    When MFBF Production line
-    And Finished qty
-    And Post backflush
-    Then Components auto-consumed 261
-    And FG received 101
-    And no manual GI GR needed
+  @P1 @integration @PP-MM-Integration
+  Scenario: Verify MM reservation on PO release
+    Given Production order released
+    Given components in BOM
+    When CO02 Release order
+    And MB25 Reservations
+    And MB54 Reservation list
+    Then Component reservations created
+    And qty reserved in plant
+    And MRP respects reservation
 
-  @P1 @integration @Calibration
-  Scenario: Create calibration order for equipment IP10
-    Given Equipment with calibration task list
-    When IP10 → Create order.
-    And Assign equipment.
-    And Schedule.
-    And Confirm.
-    Then Calibration order created
-    And equipment blocked during
-    And released after
+  @P1 @positive @Quality
+  Scenario: GMP batch release inspection lot QA11
+    Given Batch received
+    Given inspection lot triggered
+    Given inspection plan with pharma characteristics
+    When QA11 → Usage decision on inspection lot
+    And Attach CoA
+    And QA decision = Accept (Code A)
+    And Stock posts to unrestricted
+    Then Batch released for distribution
+    And stock status changes
+    And batch classification updated with UD date
+    And audit trail per 21 CFR Part 11
 
-  @P1 @positive @Performance
-  Scenario: Run MTTR and MTBF analysis from PM data
-    Given PM notifications and orders with confirmed times
-    When Run PM analysis report.
-    And Filter by equipment.
-    And Review MTTR/MTBF.
-    Then MTTR and MTBF calculated from actual notification data
+  @P1 @positive @Maintenance
+  Scenario: Preventive maintenance for SIL-rated equipment
+    Given Equipment with SIL classification
+    Given preventive maintenance plan configured
+    When IP10 → Maintenance plan for safety valve
+    And IP30 → Schedule plan
+    And Proof test work order created automatically
+    And Complete with measurement
+    Then Proof test completed
+    And functional test result recorded
+    And equipment effectiveness calculated
+    And SIL validation maintained
 
-  @P1 @integration @SF-EC
-  Scenario: Replicate Employee Master
-    Given BTP CPI configured
-    When Hire employee in SF EC
-    And Monitor CPI
-    Then Employee BP created in S/4HANA automatically
+  @P1 @integration @Benefits
+  Scenario: Validate benefit cost posted to CO cost center
+    Given Payroll with benefits
+    Given FI/CO posting active
+    When Run payroll.
+    And Post to FI.
+    And Review CC posting for benefit cost.
+    Then Benefit cost on correct cost center
+    And reconciles to payroll result
 
-  @P1 @integration @WBS
-  Scenario: Actual Posting to WBS
-    Given WBS released
-    When FB50
-    And Enter expense amount
-    And Assign WBS as cost object
-    And Post
-    Then Actual costs reflected on WBS
-    And budget consumption updated
+  @P1 @positive @Project-System
+  Scenario: Copy project template to new project CJ01
+    Given Template project exists
+    Given target project ID ready
+    When CJ01 → Copy from template.
+    And Adjust WBS IDs.
+    And Set dates.
+    And Save.
+    Then New project created with WBS, network, and structure from template
 
-  @P1 @positive @Replenish
-  Scenario: Automatic Bin Replenishment
-    Given Fixed bin stock < Min
-    When Post GI dropping stock below Min
-    And Check WT
-    Then Replenishment Warehouse Task automatically created
-
-  @P1 @positive @Performance
-  Scenario: 100 concurrent users running SD MM transactions
-    Given Productive system
-    Given test environment
-    When Load test tool 100 users
-    And Mix of VA01 ME21N VF01 MIGO
-    And Monitor SM50 ST05
-    Then Response time under 3 seconds for all TCs at 100 users
-    And no WP shortdumps
-    And DB normal
-
-  @P1 @integration @TM/EWM
-  Scenario: Ready for WH Processing
-    Given FO sent
-    When TM dispatcher sets status "Ready for WH processing"
-    Then Block removed in EWM
-    And warehouse tasks can be created
-
-  @P1 @integration @Freight
-  Scenario: Create Freight Settlement
-    Given Freight Order executed
-    When Open FO
-    And Generate FSD
-    And Post to MM
-    Then FSD posted
-    And Service PO and SES automatically created
-
-  @P1 @integration @Compliance
-  Scenario: SPL Screening of Business Partner
-    Given BP created in S/4HANA
-    When Transfer BP to GTS
-    And Execute SPL check
-    And View log
-    Then BP blocked or released based on SPL master
+  @P1 @positive @Warehouse-Management
+  Scenario: Warehouse inventory LI01/LI20
+    Given Warehouse with stock
+    Given WM physical inventory active
+    When LI01 → Create physical inventory doc for bin
+    And LI11 → Enter count
+    And LI20 → Post differences
+    Then Bin stock adjusted
+    And differences posted
+    And IM stock synchronized with WM

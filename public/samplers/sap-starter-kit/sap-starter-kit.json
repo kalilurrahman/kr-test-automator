@@ -1,12 +1,12 @@
 [
   {
-    "id": "SAP-FI-FI-AA-004",
-    "title": "Retire asset ABAON",
+    "id": "SAP-FI-BNK-CM-001",
+    "title": "FI-AR credit exposure UKM",
     "platform": "SAP",
     "module": "FI",
-    "subModule": "Asset Accounting",
-    "businessProcess": "Asset Retirement",
-    "industry": "All",
+    "subModule": "Credit Management",
+    "businessProcess": "Credit Exposure Calculation",
+    "industry": "Banking",
     "priority": "P1",
     "type": "positive",
     "layer": "API",
@@ -15,48 +15,48 @@
       "FI functional user"
     ],
     "preconditions": [
-      "Asset exists with value",
-      "retirement GL accounts configured"
+      "UKM (SAP Credit Management) active",
+      "customer credit segments defined"
     ],
     "steps": [
       {
         "index": 1,
-        "action": "ABAON → Enter asset"
+        "action": "UKM_CASE → Open credit case"
       },
       {
         "index": 2,
-        "action": "Partial/full retirement"
+        "action": "Review exposure (open orders + open AR)"
       },
       {
         "index": 3,
-        "action": "Revenue amount"
+        "action": "Credit decision"
       },
       {
         "index": 4,
-        "action": "Post"
+        "action": "Update credit limit"
       }
     ],
     "expectedResults": [
-      "Asset cleared",
-      "gain/loss posted",
-      "removed from BS at NBV"
+      "Exposure calculated correctly",
+      "credit decisions logged",
+      "breach of limit blocks orders automatically"
     ],
     "automation": {
       "feasibility": "Medium",
-      "apiHint": "BAPI_FIXEDASSET_RETIRE_SALE",
+      "apiHint": "BAPI_CREDITMANAGEMENT_GETDETAI",
       "frameworks": [
         "Gherkin",
         "Playwright (API)"
       ]
     },
     "traceability": {
-      "businessProcessId": "FI-Asset-Accounting"
+      "businessProcessId": "FI-Credit-Management"
     },
     "compliance": [
       "Supports SOX ITGC change-control evidence; retain the executed log"
     ],
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
@@ -110,154 +110,52 @@
       "Supports SOX ITGC change-control evidence; retain the executed log"
     ],
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
   {
-    "id": "SAP-MM-MM-IV-001",
-    "title": "MIRO invoice with 3-way match",
+    "id": "SAP-MM-INT-FI-MM-001",
+    "title": "Verify FI posting on MIGO GR",
     "platform": "SAP",
     "module": "MM",
-    "subModule": "Invoice Verification",
-    "businessProcess": "3-Way Match Invoice",
+    "subModule": "FI-MM Integration",
+    "businessProcess": "GR Valuation FI Posting",
     "industry": "All",
     "priority": "P1",
-    "type": "positive",
+    "type": "integration",
     "layer": "API",
     "appVersion": "S/4HANA 2026",
     "roles": [
       "MM functional user"
     ],
     "preconditions": [
-      "PO + GR exists",
-      "vendor invoice received"
+      "Material master price",
+      "GR movement type 101"
     ],
     "steps": [
       {
         "index": 1,
-        "action": "MIRO → Enter PO reference"
+        "action": "ME21N PO"
       },
       {
         "index": 2,
-        "action": "System proposes GR quantity and price"
+        "action": "MIGO GR"
       },
       {
         "index": 3,
-        "action": "Enter vendor invoice number"
+        "action": "MR03 Material document"
       },
       {
         "index": 4,
-        "action": "Check discrepancies"
-      },
-      {
-        "index": 5,
-        "action": "Post"
+        "action": "FBL3N FI line items"
       }
     ],
     "expectedResults": [
-      "Invoice posted",
-      "GR/IR cleared",
-      "if price variance > tolerance → blocked for payment automatically"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_INCOMINGINVOICE_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "MM-Invoice-Verification"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-SD-NEG-SD-001",
-    "title": "Create order for blocked customer",
-    "platform": "SAP",
-    "module": "SD",
-    "subModule": "Negative Test",
-    "businessProcess": "Order for Credit-Blocked Customer",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "SD functional user"
-    ],
-    "preconditions": [
-      "Customer blocked in FD32"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "VA01 Enter blocked customer"
-      },
-      {
-        "index": 2,
-        "action": "Order entry"
-      }
-    ],
-    "expectedResults": [
-      "Order blocked immediately",
-      "credit block reason",
-      "no delivery possible until released"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_SALESORDER_CREATEFROMDAT2",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "SD-Negative-Test"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-PP-NEG-PP-001",
-    "title": "Attempt component GI for unreleased order",
-    "platform": "SAP",
-    "module": "PP",
-    "subModule": "Negative Test",
-    "businessProcess": "GI for Unreleased Production Order",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "PP functional user"
-    ],
-    "preconditions": [
-      "Production order in CRTD status",
-      "not released"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "MIGO GI to production order"
-      },
-      {
-        "index": 2,
-        "action": "Order not released"
-      }
-    ],
-    "expectedResults": [
-      "Error: order not released",
-      "GI rejected",
-      "order must be in REL status"
+      "GR/IR account credited",
+      "stock account debited",
+      "amounts match PO price",
+      "CO doc created"
     ],
     "automation": {
       "feasibility": "High",
@@ -268,20 +166,1787 @@
       ]
     },
     "traceability": {
-      "businessProcessId": "PP-Negative-Test"
+      "businessProcessId": "MM-FI-MM-Integration"
     },
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
   {
-    "id": "SAP-QM-PH-QM-003",
-    "title": "QA11 with 21 CFR 11",
+    "id": "SAP-SD-INT-FI-SD-001",
+    "title": "Verify FI revenue on billing VFX3",
+    "platform": "SAP",
+    "module": "SD",
+    "subModule": "FI-SD Integration",
+    "businessProcess": "Revenue Posting on Billing",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "SD functional user"
+    ],
+    "preconditions": [
+      "Billing document",
+      "revenue account determination"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "VF01 Customer invoice"
+      },
+      {
+        "index": 2,
+        "action": "VFX3 Billing doc"
+      },
+      {
+        "index": 3,
+        "action": "FB03 FI document"
+      }
+    ],
+    "expectedResults": [
+      "Revenue account credited",
+      "customer AR debited",
+      "tax posted",
+      "COPA entry created"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_BILLINGDOC_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "SD-FI-SD-Integration"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-PP-INT-P2P-002",
+    "title": "Complete P2P flow MD01→CO01→CO11N→MIGO→CO88",
+    "platform": "SAP",
+    "module": "PP",
+    "subModule": "Plan to Produce",
+    "businessProcess": "Plan-to-Produce End-to-End",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "PP functional user"
+    ],
+    "preconditions": [
+      "BOM",
+      "routing",
+      "work centers",
+      "MRP active",
+      "material master"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "MD01 → Run MRP for plant"
+      },
+      {
+        "index": 2,
+        "action": "CO40 → Convert planned order"
+      },
+      {
+        "index": 3,
+        "action": "CO02 → Release production order"
+      },
+      {
+        "index": 4,
+        "action": "MIGO 261 → Issue components"
+      },
+      {
+        "index": 5,
+        "action": "CO11N → Confirm operations"
+      },
+      {
+        "index": 6,
+        "action": "MIGO 101 → Receive finished goods"
+      },
+      {
+        "index": 7,
+        "action": "CO88 → Settle order"
+      }
+    ],
+    "expectedResults": [
+      "FG in stock",
+      "production costs settled",
+      "variance < tolerance",
+      "order status TECO and SETC",
+      "FI balanced"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_PRODORD_CREATE + BAPI_GOODSMVT_CREATE + BAPI_ORDER_SETTLE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "PP-Plan-to-Produce"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-QM-MFG-QM-001",
+    "title": "Inspection at production operation",
     "platform": "SAP",
     "module": "QM",
-    "subModule": "Batch Release",
-    "businessProcess": "Electronic Signature",
+    "subModule": "Quality",
+    "businessProcess": "In-Process Quality Check",
+    "industry": "Manufacturing",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "QM functional user"
+    ],
+    "preconditions": [
+      "Inspection type 03 (in-process) active",
+      "inspection plan at routing operation"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Trigger inspection at operation CO11N"
+      },
+      {
+        "index": 2,
+        "action": "QE11 → Record results"
+      },
+      {
+        "index": 3,
+        "action": "Defect recording"
+      },
+      {
+        "index": 4,
+        "action": "Rework order if needed"
+      }
+    ],
+    "expectedResults": [
+      "In-process inspection recorded",
+      "defect triggers rework",
+      "quality gate prevents downstream operation if failed"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_QMEL_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "QM-Quality"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-PM-IS-OG-001",
+    "title": "Functional location inspection IP10",
+    "platform": "SAP",
+    "module": "PM",
+    "subModule": "Maintenance",
+    "businessProcess": "Safety Equipment Inspection",
+    "industry": "Oil & Gas",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "PM functional user"
+    ],
+    "preconditions": [
+      "FLOC with SIL classification",
+      "maintenance strategy"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "IP10 Maintenance plan for FLOC"
+      },
+      {
+        "index": 2,
+        "action": "IP30 Schedule plan"
+      },
+      {
+        "index": 3,
+        "action": "Inspection work order"
+      },
+      {
+        "index": 4,
+        "action": "Complete with measurement doc"
+      }
+    ],
+    "expectedResults": [
+      "Safety inspection completed on schedule",
+      "proof test results documented",
+      "SIL maintained"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "BAPI_ALM_ORDER_MAINTAIN",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "PM-Maintenance"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-HCM-HCM-BEN-001",
+    "title": "Enroll employee in health benefit plan",
+    "platform": "SAP",
+    "module": "HCM",
+    "subModule": "Benefits",
+    "businessProcess": "Benefit Plan Enrollment",
+    "industry": "All",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "HCM functional user"
+    ],
+    "preconditions": [
+      "Benefit plan configured",
+      "IT0168 available"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "IT0168 → Enroll employee."
+      },
+      {
+        "index": 2,
+        "action": "Select plan."
+      },
+      {
+        "index": 3,
+        "action": "Enter coverage."
+      },
+      {
+        "index": 4,
+        "action": "Save."
+      }
+    ],
+    "expectedResults": [
+      "Enrollment created",
+      "premium deduction added to payroll"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "IT0168 / benefits",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "HCM-Benefits"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-PS-PS-BUD-001",
+    "title": "Block overspend on WBS availability control",
+    "platform": "SAP",
+    "module": "PS",
+    "subModule": "Budget",
+    "businessProcess": "WBS Budget Availability Check",
+    "industry": "All",
+    "priority": "P1",
+    "type": "negative",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "PS functional user"
+    ],
+    "preconditions": [
+      "WBS with budget",
+      "availability control active"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Attempt cost posting exceeding WBS budget."
+      },
+      {
+        "index": 2,
+        "action": "Review system response."
+      }
+    ],
+    "expectedResults": [
+      "System warns or blocks per tolerance profile",
+      "budget usage tracked"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "CJ30 / availability control",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "PS-Budget"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-WM-WM-INV-001",
+    "title": "Execute physical inventory count in WM LI01",
+    "platform": "SAP",
+    "module": "WM",
+    "subModule": "Warehouse Management",
+    "businessProcess": "WM Physical Inventory Count",
+    "industry": "All",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "WM functional user"
+    ],
+    "preconditions": [
+      "WH configured",
+      "stock in bins"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "LI01 → Create count document."
+      },
+      {
+        "index": 2,
+        "action": "LI11 → Enter count."
+      },
+      {
+        "index": 3,
+        "action": "LI20 → Post differences."
+      }
+    ],
+    "expectedResults": [
+      "Count document completed",
+      "differences posted",
+      "bin stocks corrected"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "LI01 / WM inventory count",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "WM-Warehouse-Management"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-EWM-EWM-MFS-001",
+    "title": "Conveyor Routing",
+    "platform": "SAP",
+    "module": "EWM",
+    "subModule": "MFS",
+    "businessProcess": "Material Flow",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "EWM functional user"
+    ],
+    "preconditions": [
+      "MFS configured"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create HU task to conveyor"
+      },
+      {
+        "index": 2,
+        "action": "Send telegram"
+      }
+    ],
+    "expectedResults": [
+      "Telegram sent to PLC, HU routed automatically"
+    ],
+    "automation": {
+      "feasibility": "Low",
+      "apiHint": "/SCWM/MFS_TELEG_SEND",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "EWM-MFS"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-Basis-BASIS-001",
+    "title": "Create and release transport CTS SE10",
+    "platform": "SAP",
+    "module": "Basis",
+    "subModule": "CTS",
+    "businessProcess": "Transport Request Creation and Release",
+    "industry": "All",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "Basis functional user"
+    ],
+    "preconditions": [
+      "SAP system with workbench org",
+      "transport route configured"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "SE10 → Create task."
+      },
+      {
+        "index": 2,
+        "action": "Assign objects."
+      },
+      {
+        "index": 3,
+        "action": "Release task."
+      },
+      {
+        "index": 4,
+        "action": "Release request."
+      }
+    ],
+    "expectedResults": [
+      "Transport request created",
+      "objects assigned",
+      "released for import"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "SE10 / CTS",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "Basis-CTS"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-Cross-Module-AUTO-010",
+    "title": "Automate master data creation via eCATT",
+    "platform": "SAP",
+    "module": "Cross-Module",
+    "subModule": "Automation",
+    "businessProcess": "eCATT Master Data Test",
+    "industry": "All",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "Cross-Module functional user"
+    ],
+    "preconditions": [
+      "eCATT configured",
+      "test script created"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Execute eCATT script for GL/vendor/material."
+      },
+      {
+        "index": 2,
+        "action": "Review log."
+      },
+      {
+        "index": 3,
+        "action": "Validate records."
+      }
+    ],
+    "expectedResults": [
+      "Master data created via eCATT",
+      "no manual steps",
+      "reusable for regression"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "eCATT / SCAT",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "Cross-Module-Automation"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-SCM-SCM-ASR-001",
+    "title": "Freight Order to EWM",
+    "platform": "SAP",
+    "module": "SCM",
+    "subModule": "TM/EWM",
+    "businessProcess": "Execution",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "SCM functional user"
+    ],
+    "preconditions": [
+      "FO created in TM"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create FO in TM"
+      },
+      {
+        "index": 2,
+        "action": "Assign deliveries"
+      }
+    ],
+    "expectedResults": [
+      "EWM receives FO data without generating a TU (ASR mode)"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "BAPI_OUTB_DELIVERY_CHANGE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "SCM-TM/EWM"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-TM-TM-ASR-003",
+    "title": "Multi-Pick/Multi-Drop FO",
+    "platform": "SAP",
+    "module": "TM",
+    "subModule": "EWM/TM",
+    "businessProcess": "Execution",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "TM functional user"
+    ],
+    "preconditions": [
+      "ASR configured"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create FO with 2 loading points"
+      },
+      {
+        "index": 2,
+        "action": "Check EWM"
+      }
+    ],
+    "expectedResults": [
+      "One FO triggers tasks across multiple EWM warehouses"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "Custom RFC / OData",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "TM-EWM/TM"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-GTS-GTS-EXP-001",
+    "title": "Legal Control Check on Sales Order",
+    "platform": "SAP",
+    "module": "GTS",
+    "subModule": "Export",
+    "businessProcess": "Export Control",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "GTS functional user"
+    ],
+    "preconditions": [
+      "SO created with controlled product"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create SO in S/4"
+      },
+      {
+        "index": 2,
+        "action": "Transfer to GTS"
+      },
+      {
+        "index": 3,
+        "action": "Legal control check"
+      }
+    ],
+    "expectedResults": [
+      "SO blocked due to missing export license"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "/SAPSLL/CD_XFER_SD0A",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "GTS-Export"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-BRIM-BRIM-CI-002",
+    "title": "Execute Billing & Invoicing Run",
+    "platform": "SAP",
+    "module": "BRIM",
+    "subModule": "Convergent Invoicing",
+    "businessProcess": "Billing & Invoicing",
+    "industry": "Utilities",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "BRIM functional user"
+    ],
+    "preconditions": [
+      "Billable items exist"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "FKKBIX_BILL (Billing)"
+      },
+      {
+        "index": 2,
+        "action": "FKKINV_INV (Invoicing)"
+      }
+    ],
+    "expectedResults": [
+      "Invoice created, FI-CA document posted"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_FKKINV_INV_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "BRIM-Convergent-Invoicing"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IS-H-HC-IS-001",
+    "title": "Admit patient IS-H NPA1",
+    "platform": "SAP",
+    "module": "IS-H",
+    "subModule": "Patient Management",
+    "businessProcess": "Patient Admission",
+    "industry": "Healthcare",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IS-H functional user"
+    ],
+    "preconditions": [
+      "IS-H (Industry Solution Healthcare) configured",
+      "ward/bed available"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "NPA1 → Patient admission"
+      },
+      {
+        "index": 2,
+        "action": "Search/create patient master"
+      },
+      {
+        "index": 3,
+        "action": "Select ward + bed"
+      },
+      {
+        "index": 4,
+        "action": "Enter diagnosis"
+      },
+      {
+        "index": 5,
+        "action": "Confirm insurance"
+      }
+    ],
+    "expectedResults": [
+      "Patient admitted",
+      "bed occupied",
+      "insurance verified",
+      "case created",
+      "cost object (case) for billing"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_PAT_CASE_CREATEFROMDATA",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IS-H-Patient-Management"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IS-U-IS-UT-001",
+    "title": "Create and dispatch meter reading order EL26",
+    "platform": "SAP",
+    "module": "IS-U",
+    "subModule": "Device Management",
+    "businessProcess": "Meter Reading Import",
+    "industry": "Utilities",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IS-U functional user"
+    ],
+    "preconditions": [
+      "IS-U configured",
+      "device",
+      "installation"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "EL26 Reading order for route"
+      },
+      {
+        "index": 2,
+        "action": "Export to mobile"
+      },
+      {
+        "index": 3,
+        "action": "Import readings"
+      },
+      {
+        "index": 4,
+        "action": "Plausibility check"
+      }
+    ],
+    "expectedResults": [
+      "Readings imported",
+      "estimates for missed meters",
+      "billing triggered after import"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "IDoc MREQAD01",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IS-U-Device-Management"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IS-Retail-RT-POS-001",
+    "title": "Process POS Inbound Sales",
+    "platform": "SAP",
+    "module": "IS-Retail",
+    "subModule": "POS Inbound",
+    "businessProcess": "POS Sales",
+    "industry": "Retail",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IS-Retail functional user"
+    ],
+    "preconditions": [
+      "WPUBON IDoc exists"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "WPER"
+      },
+      {
+        "index": 2,
+        "action": "Monitor IDoc processing"
+      }
+    ],
+    "expectedResults": [
+      "Revenue posted to CO-PA",
+      "inventory reduced systematically"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_POSORDER_SAVE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IS-Retail-POS-Inbound"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IS-Auto-AUTO-JIT-001",
+    "title": "Receive JIT Call",
+    "platform": "SAP",
+    "module": "IS-Auto",
+    "subModule": "JIT/JIS",
+    "businessProcess": "JIT Inbound",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IS-Auto functional user"
+    ],
+    "preconditions": [
+      "JIT scheduling active"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "JITM"
+      },
+      {
+        "index": 2,
+        "action": "Monitor inbound EDI"
+      }
+    ],
+    "expectedResults": [
+      "JIT call created automatically from customer EDI message"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_JITCALL_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IS-Auto-JIT/JIS"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IS-Banking-BNK-CML-001",
+    "title": "Create Mortgage Loan",
+    "platform": "SAP",
+    "module": "IS-Banking",
+    "subModule": "Loans Mgmt",
+    "businessProcess": "Loan Origination",
+    "industry": "Banking",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IS-Banking functional user"
+    ],
+    "preconditions": [
+      "Business Partner (FS-BP) exists"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "FN1M"
+      },
+      {
+        "index": 2,
+        "action": "Enter product type"
+      },
+      {
+        "index": 3,
+        "action": "Save"
+      }
+    ],
+    "expectedResults": [
+      "Loan contract created and registered in Loans Management"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_LOAN_CONTRACT_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IS-Banking-Loans-Mgmt"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IND-Pharma-IND-PH-009",
+    "title": "Validate DSCSA serialization on outbound shipment",
+    "platform": "SAP",
+    "module": "IND-Pharma",
+    "subModule": "Serialization",
+    "businessProcess": "DSCSA Serialization",
+    "industry": "Pharma",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IND-Pharma functional user"
+    ],
+    "preconditions": [
+      "Serialization active",
+      "serial numbers assigned to batch"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create delivery."
+      },
+      {
+        "index": 2,
+        "action": "Verify serial numbers on each saleable unit."
+      },
+      {
+        "index": 3,
+        "action": "Transmit EPCIS."
+      }
+    ],
+    "expectedResults": [
+      "Serial numbers verified",
+      "EPCIS event transmitted",
+      "DSCSA compliance confirmed"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "ATTP / EPCIS transmission",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IND-Pharma-Serialization"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IND-Mfg-IND-MFG-008",
+    "title": "Produce variant-configured product",
+    "platform": "SAP",
+    "module": "IND-Mfg",
+    "subModule": "Discrete Manufacturing",
+    "businessProcess": "Variant Configuration Production",
+    "industry": "Manufacturing",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IND-Mfg functional user"
+    ],
+    "preconditions": [
+      "Variant configuration active",
+      "SO with configuration"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create SO with configuration."
+      },
+      {
+        "index": 2,
+        "action": "MRP creates planned order."
+      },
+      {
+        "index": 3,
+        "action": "Produce configured product."
+      }
+    ],
+    "expectedResults": [
+      "Correct variant produced per SO configuration",
+      "BOM exploded per variant"
+    ],
+    "automation": {
+      "feasibility": "Low",
+      "apiHint": "CK11N / variant config / CO01",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IND-Mfg-Discrete-Manufacturing"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IND-Retail-IND-RET-007",
+    "title": "Activate promotional price for article",
+    "platform": "SAP",
+    "module": "IND-Retail",
+    "subModule": "Promotion",
+    "businessProcess": "Promotion Price Activation",
+    "industry": "Retail",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IND-Retail functional user"
+    ],
+    "preconditions": [
+      "Promotion type configured",
+      "article and validity dates set"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Create promotion."
+      },
+      {
+        "index": 2,
+        "action": "Set promotional price."
+      },
+      {
+        "index": 3,
+        "action": "Activate."
+      },
+      {
+        "index": 4,
+        "action": "Test POS price."
+      }
+    ],
+    "expectedResults": [
+      "Promotional price active in POS during validity period",
+      "reverting after end"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "VK11 / promotion pricing",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IND-Retail-Promotion"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IND-Banking-IND-BNK-005",
+    "title": "Create money market transaction in SAP Treasury",
+    "platform": "SAP",
+    "module": "IND-Banking",
+    "subModule": "Treasury",
+    "businessProcess": "Money Market Deal",
+    "industry": "Banking",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IND-Banking functional user"
+    ],
+    "preconditions": [
+      "Treasury module active",
+      "house bank configured"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "TM02 → Create MM deal."
+      },
+      {
+        "index": 2,
+        "action": "Enter counterparty and rates."
+      },
+      {
+        "index": 3,
+        "action": "Confirm."
+      }
+    ],
+    "expectedResults": [
+      "Money market deal created",
+      "cash flow generated",
+      "settlement scheduled"
+    ],
+    "automation": {
+      "feasibility": "Low",
+      "apiHint": "TM02 / money market",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IND-Banking-Treasury"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-IND-Other-IND-OG-003",
+    "title": "Allocate joint venture costs to partners",
+    "platform": "SAP",
+    "module": "IND-Other",
+    "subModule": "Oil & Gas",
+    "businessProcess": "Joint Venture Accounting",
+    "industry": "Oil & Gas",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "IND-Other functional user"
+    ],
+    "preconditions": [
+      "JVA module active",
+      "partners and percentages configured"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "Post joint venture costs."
+      },
+      {
+        "index": 2,
+        "action": "Run JVA allocation."
+      },
+      {
+        "index": 3,
+        "action": "Invoice partners."
+      }
+    ],
+    "expectedResults": [
+      "Costs allocated to JV partners per ownership percentage",
+      "partner invoices created"
+    ],
+    "automation": {
+      "feasibility": "Low",
+      "apiHint": "JVA / joint venture accounting",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "IND-Other-Oil-&-Gas"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-FI-IHC-BNK-IHC-001",
+    "title": "Process IHC Payment",
+    "platform": "SAP",
+    "module": "FI-IHC",
+    "subModule": "In-House Cash",
+    "businessProcess": "Intercompany",
+    "industry": "Banking",
+    "priority": "P2",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "FI-IHC functional user"
+    ],
+    "preconditions": [
+      "IHC routing setup"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "IHC0"
+      },
+      {
+        "index": 2,
+        "action": "Enter payment order"
+      },
+      {
+        "index": 3,
+        "action": "Post"
+      }
+    ],
+    "expectedResults": [
+      "IHC internal payment order processed through central clearing"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_IHC_PAYEXT_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "FI-IHC-In-House-Cash"
+    },
+    "compliance": [
+      "Supports SOX ITGC change-control evidence; retain the executed log"
+    ],
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-MasterData-MDG-BP-001",
+    "title": "Create BP via Change Request",
+    "platform": "SAP",
+    "module": "MasterData",
+    "subModule": "MDG",
+    "businessProcess": "Master Data",
+    "industry": "All",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "MasterData functional user"
+    ],
+    "preconditions": [
+      "MDG active"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "NWBC"
+      },
+      {
+        "index": 2,
+        "action": "Create BP Change Request"
+      },
+      {
+        "index": 3,
+        "action": "Submit"
+      }
+    ],
+    "expectedResults": [
+      "CR routed for approval",
+      "BP inactive until approved"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "USMD_OVP_GEN",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "MasterData-MDG"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-PSM-GM-PUB-GM-001",
+    "title": "Create Grant Master",
+    "platform": "SAP",
+    "module": "PSM-GM",
+    "subModule": "Grants Mgmt",
+    "businessProcess": "Grant Award",
+    "industry": "Public Sector",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "PSM-GM functional user"
+    ],
+    "preconditions": [
+      "Sponsor exists"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "GMGRANT01"
+      },
+      {
+        "index": 2,
+        "action": "Enter details"
+      }
+    ],
+    "expectedResults": [
+      "Grant master created and activated for budget allocations"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_GRANT_MAINTAIN",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "PSM-GM-Grants-Mgmt"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-FI-BNK-TR-001",
+    "title": "Configure and run cash pooling",
+    "platform": "SAP",
+    "module": "FI",
+    "subModule": "Treasury",
+    "businessProcess": "Cash Pool Header",
+    "industry": "Banking",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "FI functional user"
+    ],
+    "preconditions": [
+      "House bank",
+      "bank accounts",
+      "FSCM configured"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "FI12 → Configure bank account"
+      },
+      {
+        "index": 2,
+        "action": "F110 → Payment run across pool accounts"
+      },
+      {
+        "index": 3,
+        "action": "Notional pooling calculation"
+      },
+      {
+        "index": 4,
+        "action": "Interest posting"
+      }
+    ],
+    "expectedResults": [
+      "Cash pool balances consolidated",
+      "interest calculated at group level",
+      "intercompany clearing entries posted"
+    ],
+    "automation": {
+      "feasibility": "Medium",
+      "apiHint": "BAPI_BANK_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "FI-Treasury"
+    },
+    "compliance": [
+      "Supports SOX ITGC change-control evidence; retain the executed log"
+    ],
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-CO-CO-ADD-011",
+    "title": "Realignment Run",
+    "platform": "SAP",
+    "module": "CO",
+    "subModule": "PA",
+    "businessProcess": "Master Data",
+    "industry": "All",
+    "priority": "P1",
+    "type": "positive",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "CO functional user"
+    ],
+    "preconditions": [
+      "Organizational changes made"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "KEND"
+      },
+      {
+        "index": 2,
+        "action": "Define realignment"
+      },
+      {
+        "index": 3,
+        "action": "Execute"
+      }
+    ],
+    "expectedResults": [
+      "Historical COPA documents updated with new hierarchy parameters"
+    ],
+    "automation": {
+      "feasibility": "Low",
+      "apiHint": "SUBMIT RKERD000",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "CO-PA"
+    },
+    "compliance": [
+      "Supports SOX ITGC change-control evidence; retain the executed log"
+    ],
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-MM-INT-P2P-001",
+    "title": "Complete P2P flow PR→PO→GR→MIRO→F110",
+    "platform": "SAP",
+    "module": "MM",
+    "subModule": "Procure to Pay",
+    "businessProcess": "Procure-to-Pay End-to-End",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "MM functional user"
+    ],
+    "preconditions": [
+      "Vendor master",
+      "material master",
+      "GL accounts",
+      "bank",
+      "all authorizations"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "ME51N → Create PR"
+      },
+      {
+        "index": 2,
+        "action": "Approve PR (workflow)"
+      },
+      {
+        "index": 3,
+        "action": "ME21N → Create PO referencing PR"
+      },
+      {
+        "index": 4,
+        "action": "MIGO → Post GR against PO"
+      },
+      {
+        "index": 5,
+        "action": "MIRO → Post vendor invoice (3-way match)"
+      },
+      {
+        "index": 6,
+        "action": "F110 → Payment run"
+      },
+      {
+        "index": 7,
+        "action": "Verify vendor balance = 0"
+      }
+    ],
+    "expectedResults": [
+      "P2P cycle complete",
+      "no open items",
+      "vendor paid",
+      "audit trail from PR through payment",
+      "FI balanced"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_PR_CREATE + BAPI_PO_CREATE1 + BAPI_GOODSMVT_CREATE + BAPI_INCOMINGINVOICE_CREATE + BAPI_PAYMENT_MAINTAIN",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "MM-Procure-to-Pay"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-SD-INT-O2C-001",
+    "title": "Complete O2C flow VA01→VL01N→VF01→FI",
+    "platform": "SAP",
+    "module": "SD",
+    "subModule": "Order to Cash",
+    "businessProcess": "Order-to-Cash End-to-End",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "SD functional user"
+    ],
+    "preconditions": [
+      "Customer master",
+      "material in stock",
+      "pricing",
+      "billing",
+      "bank"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "VA01 → Create standard sales order OR"
+      },
+      {
+        "index": 2,
+        "action": "VL01N → Create outbound delivery"
+      },
+      {
+        "index": 3,
+        "action": "VL02N → Post goods issue"
+      },
+      {
+        "index": 4,
+        "action": "VF01 → Create invoice"
+      },
+      {
+        "index": 5,
+        "action": "F-28 → Post incoming payment"
+      },
+      {
+        "index": 6,
+        "action": "Verify customer balance = 0"
+      }
+    ],
+    "expectedResults": [
+      "O2C cycle complete",
+      "stock reduced",
+      "revenue recognized",
+      "customer paid",
+      "FI balanced",
+      "no open items"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_SALESORDER_CREATEFROMDAT2 + BAPI_OUTB_DELIVERY_CREATE_SLS + BAPI_BILLINGDOC_CREATE + BAPI_ACC_DOCUMENT_POST",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "SD-Order-to-Cash"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-PP-INT-PP-MM-001",
+    "title": "Verify MM reservation on PO release",
+    "platform": "SAP",
+    "module": "PP",
+    "subModule": "PP-MM Integration",
+    "businessProcess": "Component Reservation on Order Release",
+    "industry": "All",
+    "priority": "P1",
+    "type": "integration",
+    "layer": "API",
+    "appVersion": "S/4HANA 2026",
+    "roles": [
+      "PP functional user"
+    ],
+    "preconditions": [
+      "Production order released",
+      "components in BOM"
+    ],
+    "steps": [
+      {
+        "index": 1,
+        "action": "CO02 Release order"
+      },
+      {
+        "index": 2,
+        "action": "MB25 Reservations"
+      },
+      {
+        "index": 3,
+        "action": "MB54 Reservation list"
+      }
+    ],
+    "expectedResults": [
+      "Component reservations created",
+      "qty reserved in plant",
+      "MRP respects reservation"
+    ],
+    "automation": {
+      "feasibility": "High",
+      "apiHint": "BAPI_PRODORD_CREATE",
+      "frameworks": [
+        "Gherkin",
+        "Playwright (API)"
+      ]
+    },
+    "traceability": {
+      "businessProcessId": "PP-PP-MM-Integration"
+    },
+    "provenance": {
+      "authoredBy": "human",
+      "lastReviewedRelease": "S/4HANA 2026"
+    }
+  },
+  {
+    "id": "SAP-QM-PH-QM-001",
+    "title": "GMP batch release inspection lot QA11",
+    "platform": "SAP",
+    "module": "QM",
+    "subModule": "Quality",
+    "businessProcess": "Batch Release",
     "industry": "Pharma",
     "priority": "P1",
     "type": "positive",
@@ -291,27 +1956,36 @@
       "QM functional user"
     ],
     "preconditions": [
-      "Lot pending"
+      "Batch received",
+      "inspection lot triggered",
+      "inspection plan with pharma characteristics"
     ],
     "steps": [
       {
         "index": 1,
-        "action": "QA11"
+        "action": "QA11 → Usage decision on inspection lot"
       },
       {
         "index": 2,
-        "action": "Accept UD"
+        "action": "Attach CoA"
       },
       {
         "index": 3,
-        "action": "Sign"
+        "action": "QA decision = Accept (Code A)"
+      },
+      {
+        "index": 4,
+        "action": "Stock posts to unrestricted"
       }
     ],
     "expectedResults": [
-      "Usage decision posted compliant with digital signature audit rules"
+      "Batch released for distribution",
+      "stock status changes",
+      "batch classification updated with UD date",
+      "audit trail per 21 CFR Part 11"
     ],
     "automation": {
-      "feasibility": "Low",
+      "feasibility": "High",
       "apiHint": "BAPI_INSPLOT_USAGEDECISION",
       "frameworks": [
         "Gherkin",
@@ -319,21 +1993,21 @@
       ]
     },
     "traceability": {
-      "businessProcessId": "QM-Batch-Release"
+      "businessProcessId": "QM-Quality"
     },
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
   {
-    "id": "SAP-PM-PM-EQ-002",
-    "title": "Dismantle equipment from functional location",
+    "id": "SAP-PM-OG-PM-001",
+    "title": "Preventive maintenance for SIL-rated equipment",
     "platform": "SAP",
     "module": "PM",
-    "subModule": "Equipment",
-    "businessProcess": "Equipment Dismantling",
-    "industry": "All",
+    "subModule": "Maintenance",
+    "businessProcess": "Safety-Critical Equipment",
+    "industry": "Oil & Gas",
     "priority": "P1",
     "type": "positive",
     "layer": "API",
@@ -342,50 +2016,56 @@
       "PM functional user"
     ],
     "preconditions": [
-      "Equipment installed on FL",
-      "dismantling auth"
+      "Equipment with SIL classification",
+      "preventive maintenance plan configured"
     ],
     "steps": [
       {
         "index": 1,
-        "action": "IE02 → Dismantle from FL."
+        "action": "IP10 → Maintenance plan for safety valve"
       },
       {
         "index": 2,
-        "action": "Set date."
+        "action": "IP30 → Schedule plan"
       },
       {
         "index": 3,
-        "action": "Save."
+        "action": "Proof test work order created automatically"
+      },
+      {
+        "index": 4,
+        "action": "Complete with measurement"
       }
     ],
     "expectedResults": [
-      "Equipment removed from FL",
-      "installation history updated"
+      "Proof test completed",
+      "functional test result recorded",
+      "equipment effectiveness calculated",
+      "SIL validation maintained"
     ],
     "automation": {
       "feasibility": "Medium",
-      "apiHint": "BAPI_EQUI_CHANGE",
+      "apiHint": "BAPI_ALM_ORDER_MAINTAIN",
       "frameworks": [
         "Gherkin",
         "Playwright (API)"
       ]
     },
     "traceability": {
-      "businessProcessId": "PM-Equipment"
+      "businessProcessId": "PM-Maintenance"
     },
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
   {
-    "id": "SAP-HCM-HCM-PY-002",
-    "title": "Post to Accounting",
+    "id": "SAP-HCM-HCM-BEN-002",
+    "title": "Validate benefit cost posted to CO cost center",
     "platform": "SAP",
     "module": "HCM",
-    "subModule": "PY",
-    "businessProcess": "Payroll Posting",
+    "subModule": "Benefits",
+    "businessProcess": "Benefit Cost to CO",
     "industry": "All",
     "priority": "P1",
     "type": "integration",
@@ -395,38 +2075,40 @@
       "HCM functional user"
     ],
     "preconditions": [
-      "Payroll run completed"
+      "Payroll with benefits",
+      "FI/CO posting active"
     ],
     "steps": [
       {
         "index": 1,
-        "action": "PC00_M99_CIPC"
+        "action": "Run payroll."
       },
       {
         "index": 2,
-        "action": "Create posting run"
+        "action": "Post to FI."
       },
       {
         "index": 3,
-        "action": "Post"
+        "action": "Review CC posting for benefit cost."
       }
     ],
     "expectedResults": [
-      "FI/CO documents generated reflecting salary expenses"
+      "Benefit cost on correct cost center",
+      "reconciles to payroll result"
     ],
     "automation": {
       "feasibility": "Medium",
-      "apiHint": "BAPI_ACC_DOCUMENT_POST",
+      "apiHint": "RPCIPE00 / CO benefit cost",
       "frameworks": [
         "Gherkin",
         "Playwright (API)"
       ]
     },
     "traceability": {
-      "businessProcessId": "HCM-PY"
+      "businessProcessId": "HCM-Benefits"
     },
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
@@ -482,17 +2164,17 @@
       "businessProcessId": "PS-Project-System"
     },
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   },
   {
-    "id": "SAP-WM-WM-TO-002",
-    "title": "Confirm TO after physical pick LT12",
+    "id": "SAP-WM-WM-PI-001",
+    "title": "Warehouse inventory LI01/LI20",
     "platform": "SAP",
     "module": "WM",
     "subModule": "Warehouse Management",
-    "businessProcess": "Transfer Order Confirmation",
+    "businessProcess": "Warehouse Physical Inventory",
     "industry": "All",
     "priority": "P1",
     "type": "positive",
@@ -502,31 +2184,31 @@
       "WM functional user"
     ],
     "preconditions": [
-      "TO created",
-      "physical pick complete"
+      "Warehouse with stock",
+      "WM physical inventory active"
     ],
     "steps": [
       {
         "index": 1,
-        "action": "LT12 → Enter TO number."
+        "action": "LI01 → Create physical inventory doc for bin"
       },
       {
         "index": 2,
-        "action": "Confirm quantities."
+        "action": "LI11 → Enter count"
       },
       {
         "index": 3,
-        "action": "Post."
+        "action": "LI20 → Post differences"
       }
     ],
     "expectedResults": [
-      "TO confirmed",
-      "bin stocks updated",
-      "delivery ready for GI"
+      "Bin stock adjusted",
+      "differences posted",
+      "IM stock synchronized with WM"
     ],
     "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_WHSE_TO_CONFIRM",
+      "feasibility": "Medium",
+      "apiHint": "BAPI_WHSE_INVENT_CREATE",
       "frameworks": [
         "Gherkin",
         "Playwright (API)"
@@ -536,1546 +2218,7 @@
       "businessProcessId": "WM-Warehouse-Management"
     },
     "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-EWM-EWM-MFS-001",
-    "title": "Conveyor Routing",
-    "platform": "SAP",
-    "module": "EWM",
-    "subModule": "MFS",
-    "businessProcess": "Material Flow",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "EWM functional user"
-    ],
-    "preconditions": [
-      "MFS configured"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Create HU task to conveyor"
-      },
-      {
-        "index": 2,
-        "action": "Send telegram"
-      }
-    ],
-    "expectedResults": [
-      "Telegram sent to PLC, HU routed automatically"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "/SCWM/MFS_TELEG_SEND",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "EWM-MFS"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-Basis-BASIS-TR-001",
-    "title": "Create and release transport request SE09",
-    "platform": "SAP",
-    "module": "Basis",
-    "subModule": "Transport",
-    "businessProcess": "Transport Request Creation",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "Basis functional user"
-    ],
-    "preconditions": [
-      "Development system",
-      "transport route"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "SE09 Workbench transport"
-      },
-      {
-        "index": 2,
-        "action": "Assign objects"
-      },
-      {
-        "index": 3,
-        "action": "Release task"
-      },
-      {
-        "index": 4,
-        "action": "Release request"
-      }
-    ],
-    "expectedResults": [
-      "Request released",
-      "ready for import to QAS",
-      "objects locked in DEV",
-      "log created"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "TR_IMPORT",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "Basis-Transport"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-SCM-SCM-ASR-001",
-    "title": "Freight Order to EWM",
-    "platform": "SAP",
-    "module": "SCM",
-    "subModule": "TM/EWM",
-    "businessProcess": "Execution",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "SCM functional user"
-    ],
-    "preconditions": [
-      "FO created in TM"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Create FO in TM"
-      },
-      {
-        "index": 2,
-        "action": "Assign deliveries"
-      }
-    ],
-    "expectedResults": [
-      "EWM receives FO data without generating a TU (ASR mode)"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "BAPI_OUTB_DELIVERY_CHANGE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "SCM-TM/EWM"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-TM-TM-ASR-003",
-    "title": "Multi-Pick/Multi-Drop FO",
-    "platform": "SAP",
-    "module": "TM",
-    "subModule": "EWM/TM",
-    "businessProcess": "Execution",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "TM functional user"
-    ],
-    "preconditions": [
-      "ASR configured"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Create FO with 2 loading points"
-      },
-      {
-        "index": 2,
-        "action": "Check EWM"
-      }
-    ],
-    "expectedResults": [
-      "One FO triggers tasks across multiple EWM warehouses"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "Custom RFC / OData",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "TM-EWM/TM"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-GTS-GTS-EXP-001",
-    "title": "Legal Control Check on Sales Order",
-    "platform": "SAP",
-    "module": "GTS",
-    "subModule": "Export",
-    "businessProcess": "Export Control",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "GTS functional user"
-    ],
-    "preconditions": [
-      "SO created with controlled product"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Create SO in S/4"
-      },
-      {
-        "index": 2,
-        "action": "Transfer to GTS"
-      },
-      {
-        "index": 3,
-        "action": "Legal control check"
-      }
-    ],
-    "expectedResults": [
-      "SO blocked due to missing export license"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "/SAPSLL/CD_XFER_SD0A",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "GTS-Export"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-BRIM-BRIM-CI-002",
-    "title": "Execute Billing & Invoicing Run",
-    "platform": "SAP",
-    "module": "BRIM",
-    "subModule": "Convergent Invoicing",
-    "businessProcess": "Billing & Invoicing",
-    "industry": "Utilities",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "BRIM functional user"
-    ],
-    "preconditions": [
-      "Billable items exist"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "FKKBIX_BILL (Billing)"
-      },
-      {
-        "index": 2,
-        "action": "FKKINV_INV (Invoicing)"
-      }
-    ],
-    "expectedResults": [
-      "Invoice created, FI-CA document posted"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_FKKINV_INV_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "BRIM-Convergent-Invoicing"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IS-H-HC-ISH-002",
-    "title": "Bill patient case",
-    "platform": "SAP",
-    "module": "IS-H",
-    "subModule": "Billing",
-    "businessProcess": "Case Billing",
-    "industry": "Healthcare",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IS-H functional user"
-    ],
-    "preconditions": [
-      "Patient discharged"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "NA01 / NLB1"
-      },
-      {
-        "index": 2,
-        "action": "Enter Case ID"
-      },
-      {
-        "index": 3,
-        "action": "Execute"
-      }
-    ],
-    "expectedResults": [
-      "Invoice generated for insurance provider or patient"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "BAPI_BILLINGDOC_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IS-H-Billing"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IS-U-UT-ISU-003",
-    "title": "Execute Billing",
-    "platform": "SAP",
-    "module": "IS-U",
-    "subModule": "Billing",
-    "businessProcess": "Utility Billing Run",
-    "industry": "Utilities",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IS-U functional user"
-    ],
-    "preconditions": [
-      "Meter reading exists"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "EASIBI / EA10"
-      },
-      {
-        "index": 2,
-        "action": "Execute"
-      }
-    ],
-    "expectedResults": [
-      "Utility bill generated based on consumed volume"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "BAPI_ISUBILLDOC_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IS-U-Billing"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IS-Retail-RT-REP-001",
-    "title": "Run Store Replenishment",
-    "platform": "SAP",
-    "module": "IS-Retail",
-    "subModule": "Replenishment",
-    "businessProcess": "Store Replenishment",
-    "industry": "Retail",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IS-Retail functional user"
-    ],
-    "preconditions": [
-      "Sales history exists"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "WRP1"
-      },
-      {
-        "index": 2,
-        "action": "Enter Store/Article"
-      },
-      {
-        "index": 3,
-        "action": "Run"
-      }
-    ],
-    "expectedResults": [
-      "Purchase requisitions or STOs generated for stores"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "BAPI_PR_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IS-Retail-Replenishment"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IS-Auto-AUTO-JIT-001",
-    "title": "Receive JIT Call",
-    "platform": "SAP",
-    "module": "IS-Auto",
-    "subModule": "JIT/JIS",
-    "businessProcess": "JIT Inbound",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IS-Auto functional user"
-    ],
-    "preconditions": [
-      "JIT scheduling active"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "JITM"
-      },
-      {
-        "index": 2,
-        "action": "Monitor inbound EDI"
-      }
-    ],
-    "expectedResults": [
-      "JIT call created automatically from customer EDI message"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_JITCALL_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IS-Auto-JIT/JIS"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IS-Banking-BNK-CML-001",
-    "title": "Create Mortgage Loan",
-    "platform": "SAP",
-    "module": "IS-Banking",
-    "subModule": "Loans Mgmt",
-    "businessProcess": "Loan Origination",
-    "industry": "Banking",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IS-Banking functional user"
-    ],
-    "preconditions": [
-      "Business Partner (FS-BP) exists"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "FN1M"
-      },
-      {
-        "index": 2,
-        "action": "Enter product type"
-      },
-      {
-        "index": 3,
-        "action": "Save"
-      }
-    ],
-    "expectedResults": [
-      "Loan contract created and registered in Loans Management"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_LOAN_CONTRACT_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IS-Banking-Loans-Mgmt"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IND-Mfg-IND-MFG-008",
-    "title": "Produce variant-configured product",
-    "platform": "SAP",
-    "module": "IND-Mfg",
-    "subModule": "Discrete Manufacturing",
-    "businessProcess": "Variant Configuration Production",
-    "industry": "Manufacturing",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IND-Mfg functional user"
-    ],
-    "preconditions": [
-      "Variant configuration active",
-      "SO with configuration"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Create SO with configuration."
-      },
-      {
-        "index": 2,
-        "action": "MRP creates planned order."
-      },
-      {
-        "index": 3,
-        "action": "Produce configured product."
-      }
-    ],
-    "expectedResults": [
-      "Correct variant produced per SO configuration",
-      "BOM exploded per variant"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "CK11N / variant config / CO01",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IND-Mfg-Discrete-Manufacturing"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-IND-Other-IND-OG-003",
-    "title": "Allocate joint venture costs to partners",
-    "platform": "SAP",
-    "module": "IND-Other",
-    "subModule": "Oil & Gas",
-    "businessProcess": "Joint Venture Accounting",
-    "industry": "Oil & Gas",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "IND-Other functional user"
-    ],
-    "preconditions": [
-      "JVA module active",
-      "partners and percentages configured"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Post joint venture costs."
-      },
-      {
-        "index": 2,
-        "action": "Run JVA allocation."
-      },
-      {
-        "index": 3,
-        "action": "Invoice partners."
-      }
-    ],
-    "expectedResults": [
-      "Costs allocated to JV partners per ownership percentage",
-      "partner invoices created"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "JVA / joint venture accounting",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "IND-Other-Oil-&-Gas"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-FI-IHC-BNK-IHC-001",
-    "title": "Process IHC Payment",
-    "platform": "SAP",
-    "module": "FI-IHC",
-    "subModule": "In-House Cash",
-    "businessProcess": "Intercompany",
-    "industry": "Banking",
-    "priority": "P2",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "FI-IHC functional user"
-    ],
-    "preconditions": [
-      "IHC routing setup"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "IHC0"
-      },
-      {
-        "index": 2,
-        "action": "Enter payment order"
-      },
-      {
-        "index": 3,
-        "action": "Post"
-      }
-    ],
-    "expectedResults": [
-      "IHC internal payment order processed through central clearing"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_IHC_PAYEXT_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "FI-IHC-In-House-Cash"
-    },
-    "compliance": [
-      "Supports SOX ITGC change-control evidence; retain the executed log"
-    ],
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-MasterData-MDG-BP-001",
-    "title": "Create BP via Change Request",
-    "platform": "SAP",
-    "module": "MasterData",
-    "subModule": "MDG",
-    "businessProcess": "Master Data",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "MasterData functional user"
-    ],
-    "preconditions": [
-      "MDG active"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "NWBC"
-      },
-      {
-        "index": 2,
-        "action": "Create BP Change Request"
-      },
-      {
-        "index": 3,
-        "action": "Submit"
-      }
-    ],
-    "expectedResults": [
-      "CR routed for approval",
-      "BP inactive until approved"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "USMD_OVP_GEN",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "MasterData-MDG"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-PSM-GM-PUB-GM-001",
-    "title": "Create Grant Master",
-    "platform": "SAP",
-    "module": "PSM-GM",
-    "subModule": "Grants Mgmt",
-    "businessProcess": "Grant Award",
-    "industry": "Public Sector",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "PSM-GM functional user"
-    ],
-    "preconditions": [
-      "Sponsor exists"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "GMGRANT01"
-      },
-      {
-        "index": 2,
-        "action": "Enter details"
-      }
-    ],
-    "expectedResults": [
-      "Grant master created and activated for budget allocations"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_GRANT_MAINTAIN",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "PSM-GM-Grants-Mgmt"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-FI-FI-AP-001",
-    "title": "Post Vendor Invoice MIRO/FB60",
-    "platform": "SAP",
-    "module": "FI",
-    "subModule": "Accounts Payable",
-    "businessProcess": "Vendor Invoice",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "FI functional user"
-    ],
-    "preconditions": [
-      "Vendor master exists",
-      "AP account configured",
-      "PO with GR (for MIRO)"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "MIRO → Enter PO number"
-      },
-      {
-        "index": 2,
-        "action": "Check GR/IR match"
-      },
-      {
-        "index": 3,
-        "action": "Enter vendor invoice number"
-      },
-      {
-        "index": 4,
-        "action": "Check amounts"
-      },
-      {
-        "index": 5,
-        "action": "Post"
-      }
-    ],
-    "expectedResults": [
-      "Vendor invoice posted",
-      "PO history updated",
-      "GR/IR account cleared",
-      "open item in AP"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_INCOMINGINVOICE_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "FI-Accounts-Payable"
-    },
-    "compliance": [
-      "Supports SOX ITGC change-control evidence; retain the executed log"
-    ],
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-CO-CO-ADD-011",
-    "title": "Realignment Run",
-    "platform": "SAP",
-    "module": "CO",
-    "subModule": "PA",
-    "businessProcess": "Master Data",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "CO functional user"
-    ],
-    "preconditions": [
-      "Organizational changes made"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "KEND"
-      },
-      {
-        "index": 2,
-        "action": "Define realignment"
-      },
-      {
-        "index": 3,
-        "action": "Execute"
-      }
-    ],
-    "expectedResults": [
-      "Historical COPA documents updated with new hierarchy parameters"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "SUBMIT RKERD000",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "CO-PA"
-    },
-    "compliance": [
-      "Supports SOX ITGC change-control evidence; retain the executed log"
-    ],
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-MM-MM-IV-004",
-    "title": "Post subsequent debit or credit for price",
-    "platform": "SAP",
-    "module": "MM",
-    "subModule": "Invoice Verification",
-    "businessProcess": "Subsequent Price Adjustment",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "MM functional user"
-    ],
-    "preconditions": [
-      "Original invoice posted",
-      "price adjustment received"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "MIRO → Subsequent debit/credit."
-      },
-      {
-        "index": 2,
-        "action": "Enter adjustment."
-      },
-      {
-        "index": 3,
-        "action": "Post."
-      }
-    ],
-    "expectedResults": [
-      "Price adjustment posted",
-      "stock or expense account updated"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_INCOMINGINVOICE_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "MM-Invoice-Verification"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-SD-SD-ADV-001",
-    "title": "Advanced Intercompany Sales",
-    "platform": "SAP",
-    "module": "SD",
-    "subModule": "Interco",
-    "businessProcess": "Sales",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "SD functional user"
-    ],
-    "preconditions": [
-      "VCM configured"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Create SO in Selling Co."
-      },
-      {
-        "index": 2,
-        "action": "Save"
-      }
-    ],
-    "expectedResults": [
-      "VCM auto-creates Intercompany PO and Delivering Co. SO"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_SALESORDER_CREATEFROMDAT2",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "SD-Interco"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-PP-PP-BC-001",
-    "title": "Backflush MFBF for repetitive manufacturing",
-    "platform": "SAP",
-    "module": "PP",
-    "subModule": "Backflush",
-    "businessProcess": "Repetitive Manufacturing Backflush",
-    "industry": "Manufacturing",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "PP functional user"
-    ],
-    "preconditions": [
-      "Repetitive manufacturing profile",
-      "production line",
-      "rate routing"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "MFBF Production line"
-      },
-      {
-        "index": 2,
-        "action": "Finished qty"
-      },
-      {
-        "index": 3,
-        "action": "Post backflush"
-      }
-    ],
-    "expectedResults": [
-      "Components auto-consumed 261",
-      "FG received 101",
-      "no manual GI GR needed"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_REPMANCONF_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "PP-Backflush"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-QM-QM-CAL-001",
-    "title": "Create calibration order for equipment IP10",
-    "platform": "SAP",
-    "module": "QM",
-    "subModule": "Calibration",
-    "businessProcess": "Calibration Order Creation",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "QM functional user"
-    ],
-    "preconditions": [
-      "Equipment with calibration task list"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "IP10 → Create order."
-      },
-      {
-        "index": 2,
-        "action": "Assign equipment."
-      },
-      {
-        "index": 3,
-        "action": "Schedule."
-      },
-      {
-        "index": 4,
-        "action": "Confirm."
-      }
-    ],
-    "expectedResults": [
-      "Calibration order created",
-      "equipment blocked during",
-      "released after"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "IP10",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "QM-Calibration"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-PM-PM-KPI-001",
-    "title": "Run MTTR and MTBF analysis from PM data",
-    "platform": "SAP",
-    "module": "PM",
-    "subModule": "Performance",
-    "businessProcess": "MTTR MTBF Analysis",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "PM functional user"
-    ],
-    "preconditions": [
-      "PM notifications and orders with confirmed times"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Run PM analysis report."
-      },
-      {
-        "index": 2,
-        "action": "Filter by equipment."
-      },
-      {
-        "index": 3,
-        "action": "Review MTTR/MTBF."
-      }
-    ],
-    "expectedResults": [
-      "MTTR and MTBF calculated from actual notification data"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "PM analysis / MTTR MTBF",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "PM-Performance"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-HCM-HCM-SF-001",
-    "title": "Replicate Employee Master",
-    "platform": "SAP",
-    "module": "HCM",
-    "subModule": "SF-EC",
-    "businessProcess": "Integration",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "HCM functional user"
-    ],
-    "preconditions": [
-      "BTP CPI configured"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Hire employee in SF EC"
-      },
-      {
-        "index": 2,
-        "action": "Monitor CPI"
-      }
-    ],
-    "expectedResults": [
-      "Employee BP created in S/4HANA automatically"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "OData API",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "HCM-SF-EC"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-PS-PS-WBS-004",
-    "title": "Actual Posting to WBS",
-    "platform": "SAP",
-    "module": "PS",
-    "subModule": "WBS",
-    "businessProcess": "Execution",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "PS functional user"
-    ],
-    "preconditions": [
-      "WBS released"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "FB50"
-      },
-      {
-        "index": 2,
-        "action": "Enter expense amount"
-      },
-      {
-        "index": 3,
-        "action": "Assign WBS as cost object"
-      },
-      {
-        "index": 4,
-        "action": "Post"
-      }
-    ],
-    "expectedResults": [
-      "Actual costs reflected on WBS",
-      "budget consumption updated"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_ACC_DOCUMENT_POST",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "PS-WBS"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-EWM-EWM-REP-001",
-    "title": "Automatic Bin Replenishment",
-    "platform": "SAP",
-    "module": "EWM",
-    "subModule": "Replenish",
-    "businessProcess": "Execution",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "EWM functional user"
-    ],
-    "preconditions": [
-      "Fixed bin stock < Min"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Post GI dropping stock below Min"
-      },
-      {
-        "index": 2,
-        "action": "Check WT"
-      }
-    ],
-    "expectedResults": [
-      "Replenishment Warehouse Task automatically created"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "/SCWM/TO_CREATE",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "EWM-Replenish"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-Basis-PERF-BASIS-001",
-    "title": "100 concurrent users running SD MM transactions",
-    "platform": "SAP",
-    "module": "Basis",
-    "subModule": "Performance",
-    "businessProcess": "Concurrent User Stress Test",
-    "industry": "All",
-    "priority": "P1",
-    "type": "positive",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "Basis functional user"
-    ],
-    "preconditions": [
-      "Productive system",
-      "test environment"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Load test tool 100 users"
-      },
-      {
-        "index": 2,
-        "action": "Mix of VA01 ME21N VF01 MIGO"
-      },
-      {
-        "index": 3,
-        "action": "Monitor SM50 ST05"
-      }
-    ],
-    "expectedResults": [
-      "Response time under 3 seconds for all TCs at 100 users",
-      "no WP shortdumps",
-      "DB normal"
-    ],
-    "automation": {
-      "feasibility": "Low",
-      "apiHint": "RFC_SYSTEM_INFO",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "Basis-Performance"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-SCM-SCM-ASR-002",
-    "title": "Ready for WH Processing",
-    "platform": "SAP",
-    "module": "SCM",
-    "subModule": "TM/EWM",
-    "businessProcess": "Execution",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "SCM functional user"
-    ],
-    "preconditions": [
-      "FO sent"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "TM dispatcher sets status \"Ready for WH processing\""
-      }
-    ],
-    "expectedResults": [
-      "Block removed in EWM",
-      "warehouse tasks can be created"
-    ],
-    "automation": {
-      "feasibility": "Medium",
-      "apiHint": "Custom RFC / OData",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "SCM-TM/EWM"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-TM-TM-FSD-001",
-    "title": "Create Freight Settlement",
-    "platform": "SAP",
-    "module": "TM",
-    "subModule": "Freight",
-    "businessProcess": "Settlement",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "TM functional user"
-    ],
-    "preconditions": [
-      "Freight Order executed"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Open FO"
-      },
-      {
-        "index": 2,
-        "action": "Generate FSD"
-      },
-      {
-        "index": 3,
-        "action": "Post to MM"
-      }
-    ],
-    "expectedResults": [
-      "FSD posted",
-      "Service PO and SES automatically created"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "BAPI_EXCHRATE_GETDETAIL",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "TM-Freight"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
-      "lastReviewedRelease": "S/4HANA 2026"
-    }
-  },
-  {
-    "id": "SAP-GTS-GTS-SPL-001",
-    "title": "SPL Screening of Business Partner",
-    "platform": "SAP",
-    "module": "GTS",
-    "subModule": "Compliance",
-    "businessProcess": "Sanctioned Party List",
-    "industry": "All",
-    "priority": "P1",
-    "type": "integration",
-    "layer": "API",
-    "appVersion": "S/4HANA 2026",
-    "roles": [
-      "GTS functional user"
-    ],
-    "preconditions": [
-      "BP created in S/4HANA"
-    ],
-    "steps": [
-      {
-        "index": 1,
-        "action": "Transfer BP to GTS"
-      },
-      {
-        "index": 2,
-        "action": "Execute SPL check"
-      },
-      {
-        "index": 3,
-        "action": "View log"
-      }
-    ],
-    "expectedResults": [
-      "BP blocked or released based on SPL master"
-    ],
-    "automation": {
-      "feasibility": "High",
-      "apiHint": "/SAPSLL/SPL_CHECK_BUSINESS_PARTNER",
-      "frameworks": [
-        "Gherkin",
-        "Playwright (API)"
-      ]
-    },
-    "traceability": {
-      "businessProcessId": "GTS-Compliance"
-    },
-    "provenance": {
-      "authoredBy": "ai-drafted+human-verified",
+      "authoredBy": "human",
       "lastReviewedRelease": "S/4HANA 2026"
     }
   }

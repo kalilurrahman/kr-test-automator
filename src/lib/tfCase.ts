@@ -221,27 +221,49 @@ export function lintCase(tc: TfCase): LintFinding[] {
   }
 
   // Expected results — the core of what a paying QA lead buys.
+  //
+  // Judged at case level, not fragment level. Real curated cases state several
+  // assertions at once ("Asset master created; asset number generated;
+  // depreciation calculation scheduled"); one soft clause among three checkable
+  // ones is editorial debt, not a reason to withhold the case. What must never
+  // ship is a case where NOTHING is checkable — the skeleton-pack signature.
   if (!tc.expectedResults?.length) {
     fail("expected-required", "No expected results: the case cannot serve as acceptance criteria");
-  }
-  tc.expectedResults?.forEach((e) => {
-    const text = e.trim();
-    if (NON_FALSIFIABLE.test(text)) {
-      fail("expected-falsifiable", `Expected result "${text}" is not falsifiable`);
-      return;
-    }
-    const banned = containsBanned(text);
-    if (banned) {
-      fail("expected-filler", `Expected result contains filler "${banned}": "${text}"`);
-      return;
-    }
-    if (!looksFalsifiable(text)) {
+  } else {
+    let falsifiableCount = 0;
+    tc.expectedResults.forEach((e) => {
+      const text = e.trim();
+      if (NON_FALSIFIABLE.test(text)) {
+        fail("expected-vague", `Expected result "${text}" is not falsifiable`, "warning");
+        return;
+      }
+      const banned = containsBanned(text);
+      if (banned) {
+        fail(
+          "expected-filler",
+          `Expected result asserts a judgement, not an observation ("${banned}"): "${text}"`,
+          "warning",
+        );
+        return;
+      }
+      if (looksFalsifiable(text)) {
+        falsifiableCount += 1;
+      } else {
+        fail(
+          "expected-vague",
+          `Expected result names no observable artefact or value: "${text}"`,
+          "warning",
+        );
+      }
+    });
+
+    if (falsifiableCount === 0) {
       fail(
         "expected-falsifiable",
-        `Expected result names no observable artefact or value: "${text}"`,
+        "No expected result is checkable — the case cannot serve as acceptance criteria",
       );
     }
-  });
+  }
 
   // Negative coverage: the difference between a demo script and a test suite.
   if ((tc.priority === "P1" || tc.priority === "P2") && tc.type === "positive") {

@@ -1,42 +1,51 @@
-"ID","Title","Module","Sub-Module","Business Process","Industry","Priority","Type","Layer","Verified Against","Roles","Preconditions","Steps","Expected Results","Automation Feasibility","API Hint","Frameworks","Compliance"
-"SAP-FI-FI-AA-004","Retire asset ABAON","FI","Asset Accounting","Asset Retirement","All","P1","positive","API","S/4HANA 2026","FI functional user","Asset exists with value; retirement GL accounts configured","1. ABAON → Enter asset
-2. Partial/full retirement
-3. Revenue amount
-4. Post","Asset cleared; gain/loss posted; removed from BS at NBV","Medium","BAPI_FIXEDASSET_RETIRE_SALE","Gherkin; Playwright (API)","Supports SOX ITGC change-control evidence; retain the executed log"
+"ID","Title","Module","Sub-Module","Business Process","Industry","Priority","Type","Layer","Written Against","Roles","Preconditions","Steps","Expected Results","Automation Feasibility","API Hint","Frameworks","Compliance"
+"SAP-FI-BNK-CM-001","FI-AR credit exposure UKM","FI","Credit Management","Credit Exposure Calculation","Banking","P1","positive","API","S/4HANA 2026","FI functional user","UKM (SAP Credit Management) active; customer credit segments defined","1. UKM_CASE → Open credit case
+2. Review exposure (open orders + open AR)
+3. Credit decision
+4. Update credit limit","Exposure calculated correctly; credit decisions logged; breach of limit blocks orders automatically","Medium","BAPI_CREDITMANAGEMENT_GETDETAI","Gherkin; Playwright (API)","Supports SOX ITGC change-control evidence; retain the executed log"
 "SAP-CO-CO-ADD-007","Preliminary Costing PCC","CO","PC","Execution","Manufacturing","P1","positive","API","S/4HANA 2026","CO functional user","Product Cost Collector exists","1. KKF6N
 2. Trigger preliminary costing
 3. Save","Preliminary cost estimate updated for repetitive manufacturing","Medium","BAPI_COSTESTIMATE_CREATE","Gherkin; Playwright (API)","Supports SOX ITGC change-control evidence; retain the executed log"
-"SAP-MM-MM-IV-001","MIRO invoice with 3-way match","MM","Invoice Verification","3-Way Match Invoice","All","P1","positive","API","S/4HANA 2026","MM functional user","PO + GR exists; vendor invoice received","1. MIRO → Enter PO reference
-2. System proposes GR quantity and price
-3. Enter vendor invoice number
-4. Check discrepancies
-5. Post","Invoice posted; GR/IR cleared; if price variance > tolerance → blocked for payment automatically","High","BAPI_INCOMINGINVOICE_CREATE","Gherkin; Playwright (API)",""
-"SAP-SD-NEG-SD-001","Create order for blocked customer","SD","Negative Test","Order for Credit-Blocked Customer","All","P1","positive","API","S/4HANA 2026","SD functional user","Customer blocked in FD32","1. VA01 Enter blocked customer
-2. Order entry","Order blocked immediately; credit block reason; no delivery possible until released","High","BAPI_SALESORDER_CREATEFROMDAT2","Gherkin; Playwright (API)",""
-"SAP-PP-NEG-PP-001","Attempt component GI for unreleased order","PP","Negative Test","GI for Unreleased Production Order","All","P1","positive","API","S/4HANA 2026","PP functional user","Production order in CRTD status; not released","1. MIGO GI to production order
-2. Order not released","Error: order not released; GI rejected; order must be in REL status","High","BAPI_GOODSMVT_CREATE","Gherkin; Playwright (API)",""
-"SAP-QM-PH-QM-003","QA11 with 21 CFR 11","QM","Batch Release","Electronic Signature","Pharma","P1","positive","API","S/4HANA 2026","QM functional user","Lot pending","1. QA11
-2. Accept UD
-3. Sign","Usage decision posted compliant with digital signature audit rules","Low","BAPI_INSPLOT_USAGEDECISION","Gherkin; Playwright (API)",""
-"SAP-PM-PM-EQ-002","Dismantle equipment from functional location","PM","Equipment","Equipment Dismantling","All","P1","positive","API","S/4HANA 2026","PM functional user","Equipment installed on FL; dismantling auth","1. IE02 → Dismantle from FL.
-2. Set date.
-3. Save.","Equipment removed from FL; installation history updated","Medium","BAPI_EQUI_CHANGE","Gherkin; Playwright (API)",""
-"SAP-HCM-HCM-PY-002","Post to Accounting","HCM","PY","Payroll Posting","All","P1","integration","API","S/4HANA 2026","HCM functional user","Payroll run completed","1. PC00_M99_CIPC
-2. Create posting run
-3. Post","FI/CO documents generated reflecting salary expenses","Medium","BAPI_ACC_DOCUMENT_POST","Gherkin; Playwright (API)",""
-"SAP-PS-PS-PRJ-004","Copy project template to new project CJ01","PS","Project System","Project Copy from Template","All","P1","positive","API","S/4HANA 2026","PS functional user","Template project exists; target project ID ready","1. CJ01 → Copy from template.
-2. Adjust WBS IDs.
-3. Set dates.
-4. Save.","New project created with WBS, network, and structure from template","High","BAPI_PROJECT_COPY","Gherkin; Playwright (API)",""
-"SAP-WM-WM-TO-002","Confirm TO after physical pick LT12","WM","Warehouse Management","Transfer Order Confirmation","All","P1","positive","API","S/4HANA 2026","WM functional user","TO created; physical pick complete","1. LT12 → Enter TO number.
-2. Confirm quantities.
-3. Post.","TO confirmed; bin stocks updated; delivery ready for GI","High","BAPI_WHSE_TO_CONFIRM","Gherkin; Playwright (API)",""
+"SAP-MM-INT-FI-MM-001","Verify FI posting on MIGO GR","MM","FI-MM Integration","GR Valuation FI Posting","All","P1","integration","API","S/4HANA 2026","MM functional user","Material master price; GR movement type 101","1. ME21N PO
+2. MIGO GR
+3. MR03 Material document
+4. FBL3N FI line items","GR/IR account credited; stock account debited; amounts match PO price; CO doc created","High","BAPI_GOODSMVT_CREATE","Gherkin; Playwright (API)",""
+"SAP-SD-INT-FI-SD-001","Verify FI revenue on billing VFX3","SD","FI-SD Integration","Revenue Posting on Billing","All","P1","integration","API","S/4HANA 2026","SD functional user","Billing document; revenue account determination","1. VF01 Customer invoice
+2. VFX3 Billing doc
+3. FB03 FI document","Revenue account credited; customer AR debited; tax posted; COPA entry created","High","BAPI_BILLINGDOC_CREATE","Gherkin; Playwright (API)",""
+"SAP-PP-INT-P2P-002","Complete P2P flow MD01→CO01→CO11N→MIGO→CO88","PP","Plan to Produce","Plan-to-Produce End-to-End","All","P1","integration","API","S/4HANA 2026","PP functional user","BOM; routing; work centers; MRP active; material master","1. MD01 → Run MRP for plant
+2. CO40 → Convert planned order
+3. CO02 → Release production order
+4. MIGO 261 → Issue components
+5. CO11N → Confirm operations
+6. MIGO 101 → Receive finished goods
+7. CO88 → Settle order","FG in stock; production costs settled; variance < tolerance; order status TECO and SETC; FI balanced","High","BAPI_PRODORD_CREATE + BAPI_GOODSMVT_CREATE + BAPI_ORDER_SETTLE","Gherkin; Playwright (API)",""
+"SAP-QM-MFG-QM-001","Inspection at production operation","QM","Quality","In-Process Quality Check","Manufacturing","P1","positive","API","S/4HANA 2026","QM functional user","Inspection type 03 (in-process) active; inspection plan at routing operation","1. Trigger inspection at operation CO11N
+2. QE11 → Record results
+3. Defect recording
+4. Rework order if needed","In-process inspection recorded; defect triggers rework; quality gate prevents downstream operation if failed","High","BAPI_QMEL_CREATE","Gherkin; Playwright (API)",""
+"SAP-PM-IS-OG-001","Functional location inspection IP10","PM","Maintenance","Safety Equipment Inspection","Oil & Gas","P1","positive","API","S/4HANA 2026","PM functional user","FLOC with SIL classification; maintenance strategy","1. IP10 Maintenance plan for FLOC
+2. IP30 Schedule plan
+3. Inspection work order
+4. Complete with measurement doc","Safety inspection completed on schedule; proof test results documented; SIL maintained","Medium","BAPI_ALM_ORDER_MAINTAIN","Gherkin; Playwright (API)",""
+"SAP-HCM-HCM-BEN-001","Enroll employee in health benefit plan","HCM","Benefits","Benefit Plan Enrollment","All","P1","positive","API","S/4HANA 2026","HCM functional user","Benefit plan configured; IT0168 available","1. IT0168 → Enroll employee.
+2. Select plan.
+3. Enter coverage.
+4. Save.","Enrollment created; premium deduction added to payroll","Medium","IT0168 / benefits","Gherkin; Playwright (API)",""
+"SAP-PS-PS-BUD-001","Block overspend on WBS availability control","PS","Budget","WBS Budget Availability Check","All","P1","negative","API","S/4HANA 2026","PS functional user","WBS with budget; availability control active","1. Attempt cost posting exceeding WBS budget.
+2. Review system response.","System warns or blocks per tolerance profile; budget usage tracked","Medium","CJ30 / availability control","Gherkin; Playwright (API)",""
+"SAP-WM-WM-INV-001","Execute physical inventory count in WM LI01","WM","Warehouse Management","WM Physical Inventory Count","All","P1","positive","API","S/4HANA 2026","WM functional user","WH configured; stock in bins","1. LI01 → Create count document.
+2. LI11 → Enter count.
+3. LI20 → Post differences.","Count document completed; differences posted; bin stocks corrected","Medium","LI01 / WM inventory count","Gherkin; Playwright (API)",""
 "SAP-EWM-EWM-MFS-001","Conveyor Routing","EWM","MFS","Material Flow","All","P1","integration","API","S/4HANA 2026","EWM functional user","MFS configured","1. Create HU task to conveyor
 2. Send telegram","Telegram sent to PLC, HU routed automatically","Low","/SCWM/MFS_TELEG_SEND","Gherkin; Playwright (API)",""
-"SAP-Basis-BASIS-TR-001","Create and release transport request SE09","Basis","Transport","Transport Request Creation","All","P1","positive","API","S/4HANA 2026","Basis functional user","Development system; transport route","1. SE09 Workbench transport
-2. Assign objects
-3. Release task
-4. Release request","Request released; ready for import to QAS; objects locked in DEV; log created","Medium","TR_IMPORT","Gherkin; Playwright (API)",""
+"SAP-Basis-BASIS-001","Create and release transport CTS SE10","Basis","CTS","Transport Request Creation and Release","All","P1","positive","API","S/4HANA 2026","Basis functional user","SAP system with workbench org; transport route configured","1. SE10 → Create task.
+2. Assign objects.
+3. Release task.
+4. Release request.","Transport request created; objects assigned; released for import","Medium","SE10 / CTS","Gherkin; Playwright (API)",""
+"SAP-Cross-Module-AUTO-010","Automate master data creation via eCATT","Cross-Module","Automation","eCATT Master Data Test","All","P1","positive","API","S/4HANA 2026","Cross-Module functional user","eCATT configured; test script created","1. Execute eCATT script for GL/vendor/material.
+2. Review log.
+3. Validate records.","Master data created via eCATT; no manual steps; reusable for regression","High","eCATT / SCAT","Gherkin; Playwright (API)",""
 "SAP-SCM-SCM-ASR-001","Freight Order to EWM","SCM","TM/EWM","Execution","All","P1","integration","API","S/4HANA 2026","SCM functional user","FO created in TM","1. Create FO in TM
 2. Assign deliveries","EWM receives FO data without generating a TU (ASR mode)","Medium","BAPI_OUTB_DELIVERY_CHANGE","Gherkin; Playwright (API)",""
 "SAP-TM-TM-ASR-003","Multi-Pick/Multi-Drop FO","TM","EWM/TM","Execution","All","P1","integration","API","S/4HANA 2026","TM functional user","ASR configured","1. Create FO with 2 loading points
@@ -46,22 +55,35 @@
 3. Legal control check","SO blocked due to missing export license","High","/SAPSLL/CD_XFER_SD0A","Gherkin; Playwright (API)",""
 "SAP-BRIM-BRIM-CI-002","Execute Billing & Invoicing Run","BRIM","Convergent Invoicing","Billing & Invoicing","Utilities","P1","positive","API","S/4HANA 2026","BRIM functional user","Billable items exist","1. FKKBIX_BILL (Billing)
 2. FKKINV_INV (Invoicing)","Invoice created, FI-CA document posted","High","BAPI_FKKINV_INV_CREATE","Gherkin; Playwright (API)",""
-"SAP-IS-H-HC-ISH-002","Bill patient case","IS-H","Billing","Case Billing","Healthcare","P1","positive","API","S/4HANA 2026","IS-H functional user","Patient discharged","1. NA01 / NLB1
-2. Enter Case ID
-3. Execute","Invoice generated for insurance provider or patient","Medium","BAPI_BILLINGDOC_CREATE","Gherkin; Playwright (API)",""
-"SAP-IS-U-UT-ISU-003","Execute Billing","IS-U","Billing","Utility Billing Run","Utilities","P1","positive","API","S/4HANA 2026","IS-U functional user","Meter reading exists","1. EASIBI / EA10
-2. Execute","Utility bill generated based on consumed volume","Medium","BAPI_ISUBILLDOC_CREATE","Gherkin; Playwright (API)",""
-"SAP-IS-Retail-RT-REP-001","Run Store Replenishment","IS-Retail","Replenishment","Store Replenishment","Retail","P1","positive","API","S/4HANA 2026","IS-Retail functional user","Sales history exists","1. WRP1
-2. Enter Store/Article
-3. Run","Purchase requisitions or STOs generated for stores","Medium","BAPI_PR_CREATE","Gherkin; Playwright (API)",""
+"SAP-IS-H-HC-IS-001","Admit patient IS-H NPA1","IS-H","Patient Management","Patient Admission","Healthcare","P1","positive","API","S/4HANA 2026","IS-H functional user","IS-H (Industry Solution Healthcare) configured; ward/bed available","1. NPA1 → Patient admission
+2. Search/create patient master
+3. Select ward + bed
+4. Enter diagnosis
+5. Confirm insurance","Patient admitted; bed occupied; insurance verified; case created; cost object (case) for billing","High","BAPI_PAT_CASE_CREATEFROMDATA","Gherkin; Playwright (API)",""
+"SAP-IS-U-IS-UT-001","Create and dispatch meter reading order EL26","IS-U","Device Management","Meter Reading Import","Utilities","P1","positive","API","S/4HANA 2026","IS-U functional user","IS-U configured; device; installation","1. EL26 Reading order for route
+2. Export to mobile
+3. Import readings
+4. Plausibility check","Readings imported; estimates for missed meters; billing triggered after import","High","IDoc MREQAD01","Gherkin; Playwright (API)",""
+"SAP-IS-Retail-RT-POS-001","Process POS Inbound Sales","IS-Retail","POS Inbound","POS Sales","Retail","P1","integration","API","S/4HANA 2026","IS-Retail functional user","WPUBON IDoc exists","1. WPER
+2. Monitor IDoc processing","Revenue posted to CO-PA; inventory reduced systematically","High","BAPI_POSORDER_SAVE","Gherkin; Playwright (API)",""
 "SAP-IS-Auto-AUTO-JIT-001","Receive JIT Call","IS-Auto","JIT/JIS","JIT Inbound","All","P1","integration","API","S/4HANA 2026","IS-Auto functional user","JIT scheduling active","1. JITM
 2. Monitor inbound EDI","JIT call created automatically from customer EDI message","High","BAPI_JITCALL_CREATE","Gherkin; Playwright (API)",""
 "SAP-IS-Banking-BNK-CML-001","Create Mortgage Loan","IS-Banking","Loans Mgmt","Loan Origination","Banking","P1","positive","API","S/4HANA 2026","IS-Banking functional user","Business Partner (FS-BP) exists","1. FN1M
 2. Enter product type
 3. Save","Loan contract created and registered in Loans Management","High","BAPI_LOAN_CONTRACT_CREATE","Gherkin; Playwright (API)",""
+"SAP-IND-Pharma-IND-PH-009","Validate DSCSA serialization on outbound shipment","IND-Pharma","Serialization","DSCSA Serialization","Pharma","P1","positive","API","S/4HANA 2026","IND-Pharma functional user","Serialization active; serial numbers assigned to batch","1. Create delivery.
+2. Verify serial numbers on each saleable unit.
+3. Transmit EPCIS.","Serial numbers verified; EPCIS event transmitted; DSCSA compliance confirmed","Medium","ATTP / EPCIS transmission","Gherkin; Playwright (API)",""
 "SAP-IND-Mfg-IND-MFG-008","Produce variant-configured product","IND-Mfg","Discrete Manufacturing","Variant Configuration Production","Manufacturing","P1","integration","API","S/4HANA 2026","IND-Mfg functional user","Variant configuration active; SO with configuration","1. Create SO with configuration.
 2. MRP creates planned order.
 3. Produce configured product.","Correct variant produced per SO configuration; BOM exploded per variant","Low","CK11N / variant config / CO01","Gherkin; Playwright (API)",""
+"SAP-IND-Retail-IND-RET-007","Activate promotional price for article","IND-Retail","Promotion","Promotion Price Activation","Retail","P1","integration","API","S/4HANA 2026","IND-Retail functional user","Promotion type configured; article and validity dates set","1. Create promotion.
+2. Set promotional price.
+3. Activate.
+4. Test POS price.","Promotional price active in POS during validity period; reverting after end","Medium","VK11 / promotion pricing","Gherkin; Playwright (API)",""
+"SAP-IND-Banking-IND-BNK-005","Create money market transaction in SAP Treasury","IND-Banking","Treasury","Money Market Deal","Banking","P1","positive","API","S/4HANA 2026","IND-Banking functional user","Treasury module active; house bank configured","1. TM02 → Create MM deal.
+2. Enter counterparty and rates.
+3. Confirm.","Money market deal created; cash flow generated; settlement scheduled","Low","TM02 / money market","Gherkin; Playwright (API)",""
 "SAP-IND-Other-IND-OG-003","Allocate joint venture costs to partners","IND-Other","Oil & Gas","Joint Venture Accounting","Oil & Gas","P1","integration","API","S/4HANA 2026","IND-Other functional user","JVA module active; partners and percentages configured","1. Post joint venture costs.
 2. Run JVA allocation.
 3. Invoice partners.","Costs allocated to JV partners per ownership percentage; partner invoices created","Low","JVA / joint venture accounting","Gherkin; Playwright (API)",""
@@ -73,44 +95,44 @@
 3. Submit","CR routed for approval; BP inactive until approved","High","USMD_OVP_GEN","Gherkin; Playwright (API)",""
 "SAP-PSM-GM-PUB-GM-001","Create Grant Master","PSM-GM","Grants Mgmt","Grant Award","Public Sector","P1","positive","API","S/4HANA 2026","PSM-GM functional user","Sponsor exists","1. GMGRANT01
 2. Enter details","Grant master created and activated for budget allocations","High","BAPI_GRANT_MAINTAIN","Gherkin; Playwright (API)",""
-"SAP-FI-FI-AP-001","Post Vendor Invoice MIRO/FB60","FI","Accounts Payable","Vendor Invoice","All","P1","positive","API","S/4HANA 2026","FI functional user","Vendor master exists; AP account configured; PO with GR (for MIRO)","1. MIRO → Enter PO number
-2. Check GR/IR match
-3. Enter vendor invoice number
-4. Check amounts
-5. Post","Vendor invoice posted; PO history updated; GR/IR account cleared; open item in AP","High","BAPI_INCOMINGINVOICE_CREATE","Gherkin; Playwright (API)","Supports SOX ITGC change-control evidence; retain the executed log"
+"SAP-FI-BNK-TR-001","Configure and run cash pooling","FI","Treasury","Cash Pool Header","Banking","P1","positive","API","S/4HANA 2026","FI functional user","House bank; bank accounts; FSCM configured","1. FI12 → Configure bank account
+2. F110 → Payment run across pool accounts
+3. Notional pooling calculation
+4. Interest posting","Cash pool balances consolidated; interest calculated at group level; intercompany clearing entries posted","Medium","BAPI_BANK_CREATE","Gherkin; Playwright (API)","Supports SOX ITGC change-control evidence; retain the executed log"
 "SAP-CO-CO-ADD-011","Realignment Run","CO","PA","Master Data","All","P1","positive","API","S/4HANA 2026","CO functional user","Organizational changes made","1. KEND
 2. Define realignment
 3. Execute","Historical COPA documents updated with new hierarchy parameters","Low","SUBMIT RKERD000","Gherkin; Playwright (API)","Supports SOX ITGC change-control evidence; retain the executed log"
-"SAP-MM-MM-IV-004","Post subsequent debit or credit for price","MM","Invoice Verification","Subsequent Price Adjustment","All","P1","positive","API","S/4HANA 2026","MM functional user","Original invoice posted; price adjustment received","1. MIRO → Subsequent debit/credit.
-2. Enter adjustment.
-3. Post.","Price adjustment posted; stock or expense account updated","High","BAPI_INCOMINGINVOICE_CREATE","Gherkin; Playwright (API)",""
-"SAP-SD-SD-ADV-001","Advanced Intercompany Sales","SD","Interco","Sales","All","P1","integration","API","S/4HANA 2026","SD functional user","VCM configured","1. Create SO in Selling Co.
-2. Save","VCM auto-creates Intercompany PO and Delivering Co. SO","High","BAPI_SALESORDER_CREATEFROMDAT2","Gherkin; Playwright (API)",""
-"SAP-PP-PP-BC-001","Backflush MFBF for repetitive manufacturing","PP","Backflush","Repetitive Manufacturing Backflush","Manufacturing","P1","positive","API","S/4HANA 2026","PP functional user","Repetitive manufacturing profile; production line; rate routing","1. MFBF Production line
-2. Finished qty
-3. Post backflush","Components auto-consumed 261; FG received 101; no manual GI GR needed","High","BAPI_REPMANCONF_CREATE","Gherkin; Playwright (API)",""
-"SAP-QM-QM-CAL-001","Create calibration order for equipment IP10","QM","Calibration","Calibration Order Creation","All","P1","integration","API","S/4HANA 2026","QM functional user","Equipment with calibration task list","1. IP10 → Create order.
-2. Assign equipment.
-3. Schedule.
-4. Confirm.","Calibration order created; equipment blocked during; released after","Low","IP10","Gherkin; Playwright (API)",""
-"SAP-PM-PM-KPI-001","Run MTTR and MTBF analysis from PM data","PM","Performance","MTTR MTBF Analysis","All","P1","positive","API","S/4HANA 2026","PM functional user","PM notifications and orders with confirmed times","1. Run PM analysis report.
-2. Filter by equipment.
-3. Review MTTR/MTBF.","MTTR and MTBF calculated from actual notification data","Low","PM analysis / MTTR MTBF","Gherkin; Playwright (API)",""
-"SAP-HCM-HCM-SF-001","Replicate Employee Master","HCM","SF-EC","Integration","All","P1","integration","API","S/4HANA 2026","HCM functional user","BTP CPI configured","1. Hire employee in SF EC
-2. Monitor CPI","Employee BP created in S/4HANA automatically","High","OData API","Gherkin; Playwright (API)",""
-"SAP-PS-PS-WBS-004","Actual Posting to WBS","PS","WBS","Execution","All","P1","integration","API","S/4HANA 2026","PS functional user","WBS released","1. FB50
-2. Enter expense amount
-3. Assign WBS as cost object
-4. Post","Actual costs reflected on WBS; budget consumption updated","High","BAPI_ACC_DOCUMENT_POST","Gherkin; Playwright (API)",""
-"SAP-EWM-EWM-REP-001","Automatic Bin Replenishment","EWM","Replenish","Execution","All","P1","positive","API","S/4HANA 2026","EWM functional user","Fixed bin stock < Min","1. Post GI dropping stock below Min
-2. Check WT","Replenishment Warehouse Task automatically created","High","/SCWM/TO_CREATE","Gherkin; Playwright (API)",""
-"SAP-Basis-PERF-BASIS-001","100 concurrent users running SD MM transactions","Basis","Performance","Concurrent User Stress Test","All","P1","positive","API","S/4HANA 2026","Basis functional user","Productive system; test environment","1. Load test tool 100 users
-2. Mix of VA01 ME21N VF01 MIGO
-3. Monitor SM50 ST05","Response time under 3 seconds for all TCs at 100 users; no WP shortdumps; DB normal","Low","RFC_SYSTEM_INFO","Gherkin; Playwright (API)",""
-"SAP-SCM-SCM-ASR-002","Ready for WH Processing","SCM","TM/EWM","Execution","All","P1","integration","API","S/4HANA 2026","SCM functional user","FO sent","1. TM dispatcher sets status ""Ready for WH processing""","Block removed in EWM; warehouse tasks can be created","Medium","Custom RFC / OData","Gherkin; Playwright (API)",""
-"SAP-TM-TM-FSD-001","Create Freight Settlement","TM","Freight","Settlement","All","P1","integration","API","S/4HANA 2026","TM functional user","Freight Order executed","1. Open FO
-2. Generate FSD
-3. Post to MM","FSD posted; Service PO and SES automatically created","High","BAPI_EXCHRATE_GETDETAIL","Gherkin; Playwright (API)",""
-"SAP-GTS-GTS-SPL-001","SPL Screening of Business Partner","GTS","Compliance","Sanctioned Party List","All","P1","integration","API","S/4HANA 2026","GTS functional user","BP created in S/4HANA","1. Transfer BP to GTS
-2. Execute SPL check
-3. View log","BP blocked or released based on SPL master","High","/SAPSLL/SPL_CHECK_BUSINESS_PARTNER","Gherkin; Playwright (API)",""
+"SAP-MM-INT-P2P-001","Complete P2P flow PR→PO→GR→MIRO→F110","MM","Procure to Pay","Procure-to-Pay End-to-End","All","P1","integration","API","S/4HANA 2026","MM functional user","Vendor master; material master; GL accounts; bank; all authorizations","1. ME51N → Create PR
+2. Approve PR (workflow)
+3. ME21N → Create PO referencing PR
+4. MIGO → Post GR against PO
+5. MIRO → Post vendor invoice (3-way match)
+6. F110 → Payment run
+7. Verify vendor balance = 0","P2P cycle complete; no open items; vendor paid; audit trail from PR through payment; FI balanced","High","BAPI_PR_CREATE + BAPI_PO_CREATE1 + BAPI_GOODSMVT_CREATE + BAPI_INCOMINGINVOICE_CREATE + BAPI_PAYMENT_MAINTAIN","Gherkin; Playwright (API)",""
+"SAP-SD-INT-O2C-001","Complete O2C flow VA01→VL01N→VF01→FI","SD","Order to Cash","Order-to-Cash End-to-End","All","P1","integration","API","S/4HANA 2026","SD functional user","Customer master; material in stock; pricing; billing; bank","1. VA01 → Create standard sales order OR
+2. VL01N → Create outbound delivery
+3. VL02N → Post goods issue
+4. VF01 → Create invoice
+5. F-28 → Post incoming payment
+6. Verify customer balance = 0","O2C cycle complete; stock reduced; revenue recognized; customer paid; FI balanced; no open items","High","BAPI_SALESORDER_CREATEFROMDAT2 + BAPI_OUTB_DELIVERY_CREATE_SLS + BAPI_BILLINGDOC_CREATE + BAPI_ACC_DOCUMENT_POST","Gherkin; Playwright (API)",""
+"SAP-PP-INT-PP-MM-001","Verify MM reservation on PO release","PP","PP-MM Integration","Component Reservation on Order Release","All","P1","integration","API","S/4HANA 2026","PP functional user","Production order released; components in BOM","1. CO02 Release order
+2. MB25 Reservations
+3. MB54 Reservation list","Component reservations created; qty reserved in plant; MRP respects reservation","High","BAPI_PRODORD_CREATE","Gherkin; Playwright (API)",""
+"SAP-QM-PH-QM-001","GMP batch release inspection lot QA11","QM","Quality","Batch Release","Pharma","P1","positive","API","S/4HANA 2026","QM functional user","Batch received; inspection lot triggered; inspection plan with pharma characteristics","1. QA11 → Usage decision on inspection lot
+2. Attach CoA
+3. QA decision = Accept (Code A)
+4. Stock posts to unrestricted","Batch released for distribution; stock status changes; batch classification updated with UD date; audit trail per 21 CFR Part 11","High","BAPI_INSPLOT_USAGEDECISION","Gherkin; Playwright (API)",""
+"SAP-PM-OG-PM-001","Preventive maintenance for SIL-rated equipment","PM","Maintenance","Safety-Critical Equipment","Oil & Gas","P1","positive","API","S/4HANA 2026","PM functional user","Equipment with SIL classification; preventive maintenance plan configured","1. IP10 → Maintenance plan for safety valve
+2. IP30 → Schedule plan
+3. Proof test work order created automatically
+4. Complete with measurement","Proof test completed; functional test result recorded; equipment effectiveness calculated; SIL validation maintained","Medium","BAPI_ALM_ORDER_MAINTAIN","Gherkin; Playwright (API)",""
+"SAP-HCM-HCM-BEN-002","Validate benefit cost posted to CO cost center","HCM","Benefits","Benefit Cost to CO","All","P1","integration","API","S/4HANA 2026","HCM functional user","Payroll with benefits; FI/CO posting active","1. Run payroll.
+2. Post to FI.
+3. Review CC posting for benefit cost.","Benefit cost on correct cost center; reconciles to payroll result","Medium","RPCIPE00 / CO benefit cost","Gherkin; Playwright (API)",""
+"SAP-PS-PS-PRJ-004","Copy project template to new project CJ01","PS","Project System","Project Copy from Template","All","P1","positive","API","S/4HANA 2026","PS functional user","Template project exists; target project ID ready","1. CJ01 → Copy from template.
+2. Adjust WBS IDs.
+3. Set dates.
+4. Save.","New project created with WBS, network, and structure from template","High","BAPI_PROJECT_COPY","Gherkin; Playwright (API)",""
+"SAP-WM-WM-PI-001","Warehouse inventory LI01/LI20","WM","Warehouse Management","Warehouse Physical Inventory","All","P1","positive","API","S/4HANA 2026","WM functional user","Warehouse with stock; WM physical inventory active","1. LI01 → Create physical inventory doc for bin
+2. LI11 → Enter count
+3. LI20 → Post differences","Bin stock adjusted; differences posted; IM stock synchronized with WM","Medium","BAPI_WHSE_INVENT_CREATE","Gherkin; Playwright (API)",""

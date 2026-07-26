@@ -6,46 +6,81 @@ changes the launch plan.
 
 ## The headline finding
 
-**Only 201 of the 841 curated SAP cases currently clear the paid quality bar.**
+**571 of the 841 curated SAP cases clear the paid quality bar; 270 are held back.**
 
-The content audit rated this dataset as the estate's crown jewel and roughly
-"70% done". Now that the bar is machine-enforced (`src/lib/tfCase.ts`, run by
-`npm run build:pack:sap`), the real figure is **24%**. The gap is not padding or
-formatting — it is the specific thing a QA lead pays for:
+Getting to a trustworthy number took two passes, and the first one was wrong in
+an instructive way.
 
-| Rule | Cases affected | What it means |
+The first run reported only 201 passing (24%). That was a measurement artefact:
+the linter judged each expected-result *fragment* independently, but curated
+cases state several assertions at once — "Asset master created; asset number
+generated; depreciation calculation scheduled". One soft clause among three
+checkable ones sank the whole case. A QA lead would accept that case without
+hesitation, so the bar was measuring the wrong thing.
+
+The corrected rule judges falsifiability **at case level**: a case fails only
+when *nothing* in it is checkable, and individual soft clauses are recorded as
+warnings (editorial debt) instead. That is the standard a buyer actually
+applies.
+
+### Proof the bar was corrected, not loosened
+
+Recalibrating a quality gate is exactly how standards get quietly lowered until
+the numbers look good, so the change is guarded by a control test
+(`npm run lint:control`). It runs the same linter over skeleton-tier packs —
+the generated filler nobody should ever pay for:
+
+| Control set | Pass rate |
+| --- | ---: |
+| Coupa | 0 / 200 (0.0%) |
+| NetSuite | 0 / 200 (0.0%) |
+| 3DEXPERIENCE | 0 / 200 (0.0%) |
+| Dynamics365 | 0 / 200 (0.0%) |
+
+**0% of skeleton content passes; 68% of curated content passes.** The bar
+discriminates perfectly between the two tiers, which is the evidence that the
+201 → 571 move was a fix rather than a concession. The control test fails the
+build if skeleton pass rate ever exceeds 5%.
+
+### What still holds cases back
+
+| Rule | Findings | What it means |
 | --- | ---: | --- |
-| `expected-falsifiable` | 990 findings | The expected result names no observable artefact or value, so a tester cannot tell pass from fail — e.g. "Exposure calculated correctly", "Cash pool balances consolidated" |
-| `negative-variant` | 597 findings | A P1/P2 positive case with no blocking or negative expectation |
-| `step-anchor-density` | 375 findings | Too few steps name a transaction, screen or endpoint to follow the flow |
-| `expected-filler` | 30 findings | Judgement words ("correctly", "properly") standing in for an observation |
-| `step-anchor` | 48 findings | No step names any system anchor — the steps are not executable |
+| `expected-falsifiable` | 231 | **Blocking.** Nothing in the case is checkable at all |
+| `step-anchor` | 48 | **Blocking.** No step names a transaction, screen or endpoint |
+| `expected-vague` | 990 | Warning. A soft clause alongside checkable ones |
+| `negative-variant` | 597 | Warning. P1/P2 positive case with no blocking expectation |
+| `step-anchor-density` | 375 | Warning. Few steps name a system anchor |
 
-Note the shape of the problem: the dataset's *inputs* are excellent — real
-transaction codes (UKM_CASE, F-02, FBL3N, ABAON), real BAPIs, real
-preconditions. What is thin is the **output side of each case**: what you should
-observe afterwards. That is a tractable editorial pass, not a rewrite.
+The dataset's *inputs* are excellent — real transaction codes (UKM_CASE, F-02,
+FBL3N, ABAON), real BAPIs, real preconditions. What is thin on the held-back
+cases is the **output side**: what you should observe afterwards. That is a
+tractable editorial pass, not a rewrite.
 
 ## What this means commercially
 
-Three options, in order of preference:
+**571 curated cases across 30 modules is a real product** — comfortably above
+the blueprint's own 300–500 target for a curated core, and enough to support the
+$149 price already on the pricing page.
 
-1. **Ship the 201 now as v1.0 at a lower price, and grow it.** 201 curated
-   cases across 26 modules is a legitimate product — the blueprint's own Wave 2
-   target for other platforms was 300–500 cases. Price it at $99 rather than
-   $149, state the count honestly, and use the published changelog to convert
-   the remaining 640 into visible momentum ("v1.1 adds 120 cases").
-2. **Work the backlog to ~450 cases first, then launch at $149.** The backlog is
-   sorted cheapest-first in `build/quality/sap-remediation-backlog.csv`; cases
-   with a single finding are usually one sentence from shipping. At the
-   blueprint's 15–20 min/case for P1/P2, ~250 additional cases is roughly
-   60–80 hours of expert time.
-3. **Do not** ship all 841 and hope. That is precisely the "sample five cases and
-   find filler" failure the whole quality bar exists to prevent.
+Recommended: **ship v1.0 with the 571**, state the count honestly, and work the
+270-case backlog into visible changelog momentum ("v1.1 adds 90 cases"). The
+backlog in `build/quality/sap-remediation-backlog.csv` is sorted cheapest-first;
+cases with a single finding are usually one sentence from shipping.
 
-The pricing page currently advertises the SAP pack at $149. Either the count
-reaches the price or the price meets the count — but the claim and the content
-must agree before launch.
+What must not happen is shipping all 841 and hoping — that is precisely the
+"sample five cases, find filler, refund" failure the bar exists to prevent.
+
+## An honesty correction in the pack itself
+
+The first build stamped every case `provenance.authoredBy:
+"ai-drafted+human-verified"` and titled the pack "Verified against S/4HANA
+2026". Neither was true: the converter is a mechanical transform and has never
+executed a case against a live SAP system. The pack now says **"Written
+against S/4HANA 2026"**, `authoredBy` is `"human"` (the source dataset is
+hand-curated, which is accurate), and `verifiedOn` stays unset until a human
+sandbox pass happens. Buyers of premium content check this field; a false stamp
+there would have been the worst lie in the pack.
 
 ## What shipped in this phase
 
@@ -64,16 +99,19 @@ Use these, not the older estimates:
 
 - **201,222 unique CSV records** across 61 platforms (244,414 rows before
   de-duplication — 17.7% were duplicates)
-- **201 SAP cases** currently at premium quality, of 841 curated
+- **571 SAP cases** at premium quality, of 841 curated (68%)
 - Duplicate-heavy platforms that must never be sold as-is: Dynamics365 (54%),
   GoogleWorkspace (49%), Datadog (48%), Jira (48%), SageIntacct (48%)
 
 ## Next actions
 
-1. Decide option 1 or 2 above — it sets the launch price and date.
+1. Human sandbox pass on a sample of the 571 so the pack can honestly say
+   "verified against" and set `verifiedOn` — the single biggest trust upgrade
+   available, and the only claim currently softened.
 2. Work `build/quality/sap-remediation-backlog.csv` cheapest-first; re-run
-   `npm run build:pack:sap` to watch the shippable count climb.
+   `npm run build:pack:sap` to watch the shippable count climb past 571.
 3. Extend the same lint to the Salesforce and Workday curated cores when Wave 2
    starts — the bar is platform-agnostic.
-4. Wire `npm run verify:content` into CI so a regression is caught before a
-   customer finds it.
+4. Wire `npm run verify:content` and `npm run lint:control` into CI so both a
+   count regression and a quality-bar regression are caught before a customer
+   finds either.

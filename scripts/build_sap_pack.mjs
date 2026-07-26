@@ -31,7 +31,10 @@ const PACK_DIR = path.join(ROOT, "build", "packs", "sap-professional");
 const SAMPLER_DIR = path.join(ROOT, "public", "samplers", "sap-starter-kit");
 
 const PACK_VERSION = "1.0.0";
-const VERIFIED_RELEASE = "S/4HANA 2026";
+// The release this content is WRITTEN AGAINST. It becomes "verified
+// against" only after a human executes the cases in a sandbox of that
+// release — see provenance handling below.
+const TARGET_RELEASE = "S/4HANA 2026";
 const SAMPLER_SIZE = 40;
 
 /** Load TypeScript data modules by bundling them to JS in memory first. */
@@ -66,7 +69,8 @@ const RULE_MEANING = {
   "steps-depth": "Single-step case — a smoke check, not a test case",
   "preconditions-required": "No preconditions, so the case cannot be set up",
   "precondition-filler": "Precondition contains filler instead of a checkable statement",
-  "release-stamp": "No release the case was verified against",
+  "expected-vague": "An individual assertion is soft, though the case has other checkable ones — editorial debt",
+  "release-stamp": "No release the case was written against",
   "title-substance": "Title too thin to state an outcome",
   "title-variant-suffix": "Numbered-variant title — the hallmark of generated filler",
   "duplicate-case": "Near-identical to another case once numbers are normalised",
@@ -121,7 +125,7 @@ function toTfCase(tc) {
     priority: PRIORITY_MAP[tc.priority] ?? "P3",
     type: TYPE_MAP[tc.testType] ?? "positive",
     layer: tc.bapi ? "API" : "UI",
-    appVersion: VERIFIED_RELEASE,
+    appVersion: TARGET_RELEASE,
     roles: [`${tc.module} functional user`],
     preconditions: String(tc.preCond || "")
       .split(/;\s*/)
@@ -139,9 +143,14 @@ function toTfCase(tc) {
       ["FI", "CO", "GRC", "FI-IHC"].includes(tc.module)
         ? ["Supports SOX ITGC change-control evidence; retain the executed log"]
         : undefined,
+    // Honest provenance: the source dataset is hand-curated (authoredBy
+    // "human"), but this converter has never executed a case against a live
+    // SAP system — so verifiedOn stays unset until a sandbox pass happens.
+    // Buyers of premium content check this field; a false stamp here would be
+    // the worst lie in the pack.
     provenance: {
-      authoredBy: "ai-drafted+human-verified",
-      lastReviewedRelease: VERIFIED_RELEASE,
+      authoredBy: "human",
+      lastReviewedRelease: TARGET_RELEASE,
     },
   };
 }
@@ -155,7 +164,7 @@ const esc = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
 function toCsv(cases) {
   const header = [
     "ID", "Title", "Module", "Sub-Module", "Business Process", "Industry",
-    "Priority", "Type", "Layer", "Verified Against", "Roles", "Preconditions",
+    "Priority", "Type", "Layer", "Written Against", "Roles", "Preconditions",
     "Steps", "Expected Results", "Automation Feasibility", "API Hint",
     "Frameworks", "Compliance",
   ];
@@ -178,7 +187,7 @@ function toCsv(cases) {
 function toGherkin(moduleName, cases) {
   const out = [
     `# SAP ${moduleName} — TestForge AI Premium Pack v${PACK_VERSION}`,
-    `# Verified against ${VERIFIED_RELEASE}`,
+    `# Written against ${TARGET_RELEASE} — not yet sandbox-verified`,
     "",
     `Feature: SAP ${moduleName}`,
     "",
@@ -215,7 +224,7 @@ function coverageMap(cases) {
   const lines = [
     `# SAP Enterprise Test Repository — Coverage Map (v${PACK_VERSION})`,
     "",
-    `Verified against **${VERIFIED_RELEASE}**. ${cases.length} cases across ${rows.length} modules.`,
+    `Written against **${TARGET_RELEASE}**. ${cases.length} cases across ${rows.length} modules.`,
     "",
     "| Module | Cases | P1 | P2 | P3 | Sub-modules | Test types |",
     "| --- | ---: | ---: | ---: | ---: | ---: | --- |",
@@ -248,7 +257,7 @@ function coverageMap(cases) {
 function readme(cases, report) {
   return `# SAP Enterprise Test Repository — Professional Edition
 
-**Version ${PACK_VERSION}** · Verified against ${VERIFIED_RELEASE}
+**Version ${PACK_VERSION}** · Written against ${TARGET_RELEASE}
 
 ${cases.length} curated SAP test cases with real transaction codes, checkable
 preconditions, falsifiable expected results and BAPI-level automation hints.
@@ -301,7 +310,7 @@ SAP release the content was verified against.
 
 ## ${PACK_VERSION} — initial release
 
-- Verified against ${VERIFIED_RELEASE}.
+- Written against ${TARGET_RELEASE}.
 - Curated cases across 33 SAP modules (FI, CO, MM, SD, PP, QM, PM, HCM, PS, WM,
   EWM, Basis, GRC, SCM, TM, GTS, BRIM and the IS-* industry solutions).
 - Every case carries real transaction codes, checkable preconditions and
@@ -330,7 +339,7 @@ a competing test-case library. Consultancy licences that permit use on client
 engagements are available separately.
 
 No warranty: these cases describe expected SAP behaviour verified against
-${VERIFIED_RELEASE}. Always validate against your own configuration before
+${TARGET_RELEASE}. Always validate against your own configuration before
 relying on them for a go-live decision.
 
 © TestForge AI. All rights reserved.
@@ -477,7 +486,7 @@ ${sampler.length} real cases from the SAP Enterprise Test Repository — not a
 watered-down teaser. These are the same rows, at the same quality, as the
 ${shippable.length}-case Professional Edition.
 
-Verified against ${VERIFIED_RELEASE}. Every case names real transaction codes,
+Written against ${TARGET_RELEASE}. Every case names real transaction codes,
 gives checkable preconditions and states falsifiable expected results.
 
 If these are useful, the full pack covers ${byModule.size} modules:
@@ -499,7 +508,7 @@ https://testautomator.keyarite.com/pricing
   await emit(PACK_DIR, {
     [`sap-professional-v${PACK_VERSION}.csv`]: toCsv(shippable),
     [`sap-professional-v${PACK_VERSION}.json`]: JSON.stringify(
-      { pack: "sap-professional", version: PACK_VERSION, verifiedAgainst: VERIFIED_RELEASE, cases: shippable },
+      { pack: "sap-professional", version: PACK_VERSION, writtenAgainst: TARGET_RELEASE, cases: shippable },
       null,
       2,
     ),
