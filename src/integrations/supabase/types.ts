@@ -250,7 +250,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      generate_secure_share_id: { Args: never; Returns: string }
     }
     Enums: {
       [_ in never]: never
