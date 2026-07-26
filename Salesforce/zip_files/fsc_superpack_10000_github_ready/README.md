@@ -1,4 +1,4 @@
-# FSC SuperPack: 10,000 Test Cases
+# FSC SuperPack: 5,520 Test Cases
 
 **MERGED Variants A+B**: 10K test cases covering all Financial Services Cloud modules/domains.
 

@@ -1,0 +1,3655 @@
+{
+  "generated_by": "scripts/verify_content_integrity.py",
+  "methodology": "Counts are real CSV records (not physical lines) parsed with Python's csv module. Duplicates are rows identical in every column except the ID. 'unique' is the only figure quoted in marketing.",
+  "totals": {
+    "rows": 244414,
+    "unique": 201222,
+    "duplicates": 43192,
+    "platforms": 61,
+    "files": 394
+  },
+  "platforms": {
+    "3DEXPERIENCE": {
+      "rows": 1440,
+      "unique": 760,
+      "duplicates": 680,
+      "files": 6
+    },
+    "ADPWorkforceNow": {
+      "rows": 1440,
+      "unique": 775,
+      "duplicates": 665,
+      "files": 6
+    },
+    "API": {
+      "rows": 960,
+      "unique": 955,
+      "duplicates": 5,
+      "files": 8
+    },
+    "AWS": {
+      "rows": 720,
+      "unique": 714,
+      "duplicates": 6,
+      "files": 8
+    },
+    "AdobeExperienceCloud": {
+      "rows": 1440,
+      "unique": 766,
+      "duplicates": 674,
+      "files": 6
+    },
+    "Anaplan": {
+      "rows": 1440,
+      "unique": 762,
+      "duplicates": 678,
+      "files": 6
+    },
+    "Android": {
+      "rows": 800,
+      "unique": 795,
+      "duplicates": 5,
+      "files": 8
+    },
+    "Asana": {
+      "rows": 1440,
+      "unique": 765,
+      "duplicates": 675,
+      "files": 6
+    },
+    "AutomationAnywhere": {
+      "rows": 1440,
+      "unique": 758,
+      "duplicates": 682,
+      "files": 6
+    },
+    "Azure": {
+      "rows": 720,
+      "unique": 710,
+      "duplicates": 10,
+      "files": 8
+    },
+    "BlackLine": {
+      "rows": 1440,
+      "unique": 774,
+      "duplicates": 666,
+      "files": 6
+    },
+    "Boomi": {
+      "rows": 1200,
+      "unique": 637,
+      "duplicates": 563,
+      "files": 5
+    },
+    "Coupa": {
+      "rows": 1440,
+      "unique": 777,
+      "duplicates": 663,
+      "files": 6
+    },
+    "CrowdStrike": {
+      "rows": 1440,
+      "unique": 763,
+      "duplicates": 677,
+      "files": 6
+    },
+    "CyberArk": {
+      "rows": 1440,
+      "unique": 764,
+      "duplicates": 676,
+      "files": 6
+    },
+    "Datadog": {
+      "rows": 1200,
+      "unique": 628,
+      "duplicates": 572,
+      "files": 5
+    },
+    "DocuSign": {
+      "rows": 1440,
+      "unique": 768,
+      "duplicates": 672,
+      "files": 6
+    },
+    "Dynamics365": {
+      "rows": 1800,
+      "unique": 819,
+      "duplicates": 981,
+      "files": 6
+    },
+    "Epicor": {
+      "rows": 1440,
+      "unique": 765,
+      "duplicates": 675,
+      "files": 6
+    },
+    "GCP": {
+      "rows": 720,
+      "unique": 715,
+      "duplicates": 5,
+      "files": 8
+    },
+    "GoogleWorkspace": {
+      "rows": 1440,
+      "unique": 734,
+      "duplicates": 706,
+      "files": 6
+    },
+    "HubSpot": {
+      "rows": 1440,
+      "unique": 791,
+      "duplicates": 649,
+      "files": 6
+    },
+    "IBMMaximo": {
+      "rows": 1200,
+      "unique": 644,
+      "duplicates": 556,
+      "files": 5
+    },
+    "Industry Scripts": {
+      "rows": 51534,
+      "unique": 51505,
+      "duplicates": 29,
+      "files": 5
+    },
+    "InforCloudSuite": {
+      "rows": 1540,
+      "unique": 857,
+      "duplicates": 683,
+      "files": 7
+    },
+    "Jira": {
+      "rows": 1440,
+      "unique": 755,
+      "duplicates": 685,
+      "files": 6
+    },
+    "Medallia": {
+      "rows": 1440,
+      "unique": 761,
+      "duplicates": 679,
+      "files": 6
+    },
+    "MuleSoft": {
+      "rows": 1440,
+      "unique": 769,
+      "duplicates": 671,
+      "files": 6
+    },
+    "NetSuite": {
+      "rows": 1760,
+      "unique": 993,
+      "duplicates": 767,
+      "files": 8
+    },
+    "Odoo": {
+      "rows": 1540,
+      "unique": 860,
+      "duplicates": 680,
+      "files": 7
+    },
+    "Okta": {
+      "rows": 1440,
+      "unique": 766,
+      "duplicates": 674,
+      "files": 6
+    },
+    "OracleApps": {
+      "rows": 12000,
+      "unique": 11974,
+      "duplicates": 26,
+      "files": 6
+    },
+    "PTCWindchill": {
+      "rows": 1440,
+      "unique": 759,
+      "duplicates": 681,
+      "files": 6
+    },
+    "PalantirFoundry": {
+      "rows": 1440,
+      "unique": 760,
+      "duplicates": 680,
+      "files": 6
+    },
+    "Procore": {
+      "rows": 1440,
+      "unique": 780,
+      "duplicates": 660,
+      "files": 6
+    },
+    "QAD": {
+      "rows": 1440,
+      "unique": 763,
+      "duplicates": 677,
+      "files": 6
+    },
+    "QlikSense": {
+      "rows": 1440,
+      "unique": 757,
+      "duplicates": 683,
+      "files": 6
+    },
+    "Qualtrics": {
+      "rows": 1440,
+      "unique": 776,
+      "duplicates": 664,
+      "files": 6
+    },
+    "RHEL": {
+      "rows": 1440,
+      "unique": 761,
+      "duplicates": 679,
+      "files": 6
+    },
+    "SAP": {
+      "rows": 14000,
+      "unique": 11990,
+      "duplicates": 2010,
+      "files": 12
+    },
+    "SageIntacct": {
+      "rows": 1680,
+      "unique": 882,
+      "duplicates": 798,
+      "files": 7
+    },
+    "Salesforce": {
+      "rows": 41560,
+      "unique": 41498,
+      "duplicates": 62,
+      "files": 9
+    },
+    "ServiceNow": {
+      "rows": 14000,
+      "unique": 13982,
+      "duplicates": 18,
+      "files": 8
+    },
+    "Smartsheet": {
+      "rows": 1440,
+      "unique": 764,
+      "duplicates": 676,
+      "files": 6
+    },
+    "Snowflake": {
+      "rows": 1440,
+      "unique": 773,
+      "duplicates": 667,
+      "files": 6
+    },
+    "Splunk": {
+      "rows": 1440,
+      "unique": 762,
+      "duplicates": 678,
+      "files": 6
+    },
+    "Strata": {
+      "rows": 1200,
+      "unique": 645,
+      "duplicates": 555,
+      "files": 5
+    },
+    "Tableau": {
+      "rows": 1440,
+      "unique": 770,
+      "duplicates": 670,
+      "files": 6
+    },
+    "Teamcenter": {
+      "rows": 1440,
+      "unique": 768,
+      "duplicates": 672,
+      "files": 6
+    },
+    "TopProducts": {
+      "rows": 560,
+      "unique": 553,
+      "duplicates": 7,
+      "files": 7
+    },
+    "UKGPro": {
+      "rows": 1440,
+      "unique": 785,
+      "duplicates": 655,
+      "files": 6
+    },
+    "UiPath": {
+      "rows": 1440,
+      "unique": 766,
+      "duplicates": 674,
+      "files": 6
+    },
+    "Veeva": {
+      "rows": 12500,
+      "unique": 12471,
+      "duplicates": 29,
+      "files": 5
+    },
+    "WebApps": {
+      "rows": 880,
+      "unique": 861,
+      "duplicates": 19,
+      "files": 8
+    },
+    "Zendesk": {
+      "rows": 1440,
+      "unique": 769,
+      "duplicates": 671,
+      "files": 6
+    },
+    "Zoho": {
+      "rows": 1440,
+      "unique": 760,
+      "duplicates": 680,
+      "files": 6
+    },
+    "Zoom": {
+      "rows": 1440,
+      "unique": 786,
+      "duplicates": 654,
+      "files": 6
+    },
+    "Zscaler": {
+      "rows": 1200,
+      "unique": 645,
+      "duplicates": 555,
+      "files": 5
+    },
+    "iOS": {
+      "rows": 800,
+      "unique": 784,
+      "duplicates": 16,
+      "files": 8
+    },
+    "vSphere": {
+      "rows": 1440,
+      "unique": 773,
+      "duplicates": 667,
+      "files": 6
+    },
+    "workday": {
+      "rows": 26500,
+      "unique": 16500,
+      "duplicates": 10000,
+      "files": 10
+    }
+  },
+  "modules": {
+    "3DEXPERIENCE": [
+      {
+        "file": "3DEXPERIENCE/cad/3dexperience_cad_suite.csv",
+        "rows": 240,
+        "unique": 121,
+        "duplicates": 119,
+        "duplicate_pct": 49.6,
+        "columns": 8
+      },
+      {
+        "file": "3DEXPERIENCE/manufacturing/3dexperience_manufacturing_suite.csv",
+        "rows": 240,
+        "unique": 120,
+        "duplicates": 120,
+        "duplicate_pct": 50.0,
+        "columns": 8
+      },
+      {
+        "file": "3DEXPERIENCE/plm/3dexperience_plm_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      },
+      {
+        "file": "3DEXPERIENCE/quality/3dexperience_quality_suite.csv",
+        "rows": 240,
+        "unique": 121,
+        "duplicates": 119,
+        "duplicate_pct": 49.6,
+        "columns": 8
+      },
+      {
+        "file": "3DEXPERIENCE/simulation/3dexperience_simulation_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "3DEXPERIENCE/supply_chain/3dexperience_supply_chain_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      }
+    ],
+    "ADPWorkforceNow": [
+      {
+        "file": "ADPWorkforceNow/benefits/adpworkforcenow_benefits_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "ADPWorkforceNow/core_hr/adpworkforcenow_core_hr_suite.csv",
+        "rows": 240,
+        "unique": 137,
+        "duplicates": 103,
+        "duplicate_pct": 42.9,
+        "columns": 8
+      },
+      {
+        "file": "ADPWorkforceNow/payroll/adpworkforcenow_payroll_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "ADPWorkforceNow/recruiting/adpworkforcenow_recruiting_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "ADPWorkforceNow/talent/adpworkforcenow_talent_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "ADPWorkforceNow/time/adpworkforcenow_time_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      }
+    ],
+    "API": [
+      {
+        "file": "API/auth/api_auth_suite.csv",
+        "rows": 120,
+        "unique": 120,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "API/contract/api_contract_suite.csv",
+        "rows": 120,
+        "unique": 120,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "API/graphql/api_graphql_suite.csv",
+        "rows": 120,
+        "unique": 120,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "API/grpc/api_grpc_suite.csv",
+        "rows": 120,
+        "unique": 118,
+        "duplicates": 2,
+        "duplicate_pct": 1.7,
+        "columns": 13
+      },
+      {
+        "file": "API/performance/api_performance_suite.csv",
+        "rows": 120,
+        "unique": 120,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "API/rest/api_rest_suite.csv",
+        "rows": 120,
+        "unique": 119,
+        "duplicates": 1,
+        "duplicate_pct": 0.8,
+        "columns": 13
+      },
+      {
+        "file": "API/security/api_security_suite.csv",
+        "rows": 120,
+        "unique": 120,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "API/webhook/api_webhook_suite.csv",
+        "rows": 120,
+        "unique": 118,
+        "duplicates": 2,
+        "duplicate_pct": 1.7,
+        "columns": 13
+      }
+    ],
+    "AWS": [
+      {
+        "file": "AWS/cost/aws_cost_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "AWS/ec2/aws_ec2_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "AWS/eks/aws_eks_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "AWS/iam/aws_iam_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "AWS/lambda/aws_lambda_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "AWS/rds/aws_rds_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "AWS/s3/aws_s3_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "AWS/security/aws_security_suite.csv",
+        "rows": 90,
+        "unique": 87,
+        "duplicates": 3,
+        "duplicate_pct": 3.3,
+        "columns": 13
+      }
+    ],
+    "AdobeExperienceCloud": [
+      {
+        "file": "AdobeExperienceCloud/aem/adobeexperiencecloud_aem_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "AdobeExperienceCloud/analytics/adobeexperiencecloud_analytics_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "AdobeExperienceCloud/campaign/adobeexperiencecloud_campaign_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "AdobeExperienceCloud/identity_service/adobeexperiencecloud_identity_service_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "AdobeExperienceCloud/journey_optimizer/adobeexperiencecloud_journey_optimizer_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "AdobeExperienceCloud/target/adobeexperiencecloud_target_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      }
+    ],
+    "Anaplan": [
+      {
+        "file": "Anaplan/access_control/anaplan_access_control_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Anaplan/forecasting/anaplan_forecasting_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Anaplan/models/anaplan_models_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Anaplan/planning/anaplan_planning_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Anaplan/sheets/anaplan_sheets_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Anaplan/workflow/anaplan_workflow_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "Android": [
+      {
+        "file": "Android/login/android_login_suite.csv",
+        "rows": 100,
+        "unique": 98,
+        "duplicates": 2,
+        "duplicate_pct": 2.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/notifications/android_notifications_suite.csv",
+        "rows": 100,
+        "unique": 99,
+        "duplicates": 1,
+        "duplicate_pct": 1.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/offline/android_offline_suite.csv",
+        "rows": 100,
+        "unique": 100,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/onboarding/android_onboarding_suite.csv",
+        "rows": 100,
+        "unique": 100,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/payments/android_payments_suite.csv",
+        "rows": 100,
+        "unique": 100,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/performance/android_performance_suite.csv",
+        "rows": 100,
+        "unique": 100,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/profile/android_profile_suite.csv",
+        "rows": 100,
+        "unique": 99,
+        "duplicates": 1,
+        "duplicate_pct": 1.0,
+        "columns": 13
+      },
+      {
+        "file": "Android/security/android_security_suite.csv",
+        "rows": 100,
+        "unique": 99,
+        "duplicates": 1,
+        "duplicate_pct": 1.0,
+        "columns": 13
+      }
+    ],
+    "Asana": [
+      {
+        "file": "Asana/automation/asana_automation_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "Asana/forms/asana_forms_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      },
+      {
+        "file": "Asana/portfolios/asana_portfolios_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Asana/projects/asana_projects_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Asana/tasks/asana_tasks_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Asana/timeline/asana_timeline_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      }
+    ],
+    "AutomationAnywhere": [
+      {
+        "file": "AutomationAnywhere/bots/automationanywhere_bots_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "AutomationAnywhere/control_room/automationanywhere_control_room_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "AutomationAnywhere/documents/automationanywhere_documents_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "AutomationAnywhere/iq_bot/automationanywhere_iq_bot_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "AutomationAnywhere/queues/automationanywhere_queues_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "AutomationAnywhere/runner/automationanywhere_runner_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      }
+    ],
+    "Azure": [
+      {
+        "file": "Azure/aks/azure_aks_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Azure/cost/azure_cost_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Azure/functions/azure_functions_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Azure/iam/azure_iam_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "Azure/security/azure_security_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "Azure/sql/azure_sql_suite.csv",
+        "rows": 90,
+        "unique": 87,
+        "duplicates": 3,
+        "duplicate_pct": 3.3,
+        "columns": 13
+      },
+      {
+        "file": "Azure/storage/azure_storage_suite.csv",
+        "rows": 90,
+        "unique": 87,
+        "duplicates": 3,
+        "duplicate_pct": 3.3,
+        "columns": 13
+      },
+      {
+        "file": "Azure/vm/azure_vm_suite.csv",
+        "rows": 90,
+        "unique": 87,
+        "duplicates": 3,
+        "duplicate_pct": 3.3,
+        "columns": 13
+      }
+    ],
+    "BlackLine": [
+      {
+        "file": "BlackLine/controls/blackline_controls_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "BlackLine/journals/blackline_journals_suite.csv",
+        "rows": 240,
+        "unique": 136,
+        "duplicates": 104,
+        "duplicate_pct": 43.3,
+        "columns": 8
+      },
+      {
+        "file": "BlackLine/matching/blackline_matching_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "BlackLine/reconciliations/blackline_reconciliations_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "BlackLine/tasks/blackline_tasks_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "BlackLine/variance/blackline_variance_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      }
+    ],
+    "Boomi": [
+      {
+        "file": "Boomi/api_management/boomi_api_management_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Boomi/atomsphere/boomi_atomsphere_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Boomi/integration_process/boomi_integration_process_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Boomi/master_data/boomi_master_data_suite.csv",
+        "rows": 240,
+        "unique": 131,
+        "duplicates": 109,
+        "duplicate_pct": 45.4,
+        "columns": 8
+      },
+      {
+        "file": "Boomi/monitoring/boomi_monitoring_suite.csv",
+        "rows": 240,
+        "unique": 120,
+        "duplicates": 120,
+        "duplicate_pct": 50.0,
+        "columns": 8
+      }
+    ],
+    "Coupa": [
+      {
+        "file": "Coupa/analytics/coupa_analytics_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Coupa/expenses/coupa_expenses_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Coupa/invoicing/coupa_invoicing_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Coupa/procurement/coupa_procurement_suite.csv",
+        "rows": 240,
+        "unique": 135,
+        "duplicates": 105,
+        "duplicate_pct": 43.8,
+        "columns": 8
+      },
+      {
+        "file": "Coupa/sourcing/coupa_sourcing_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "Coupa/supplier_mgmt/coupa_supplier_mgmt_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      }
+    ],
+    "CrowdStrike": [
+      {
+        "file": "CrowdStrike/detection/crowdstrike_detection_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "CrowdStrike/endpoint/crowdstrike_endpoint_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "CrowdStrike/falcon_identity/crowdstrike_falcon_identity_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "CrowdStrike/hunt/crowdstrike_hunt_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "CrowdStrike/prevention/crowdstrike_prevention_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "CrowdStrike/sensor/crowdstrike_sensor_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "CyberArk": [
+      {
+        "file": "CyberArk/conjur/cyberark_conjur_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "CyberArk/ediscovery/cyberark_ediscovery_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "CyberArk/privileged_access/cyberark_privileged_access_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "CyberArk/rotation/cyberark_rotation_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "CyberArk/session_management/cyberark_session_management_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "CyberArk/vault/cyberark_vault_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      }
+    ],
+    "Datadog": [
+      {
+        "file": "Datadog/apm/datadog_apm_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Datadog/infra/datadog_infra_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Datadog/rum/datadog_rum_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "Datadog/security/datadog_security_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Datadog/synthetics/datadog_synthetics_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      }
+    ],
+    "DocuSign": [
+      {
+        "file": "DocuSign/admin/docusign_admin_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "DocuSign/clm/docusign_clm_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "DocuSign/envelopes/docusign_envelopes_suite.csv",
+        "rows": 240,
+        "unique": 119,
+        "duplicates": 121,
+        "duplicate_pct": 50.4,
+        "columns": 8
+      },
+      {
+        "file": "DocuSign/routing/docusign_routing_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "DocuSign/signing/docusign_signing_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "DocuSign/templates/docusign_templates_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      }
+    ],
+    "Dynamics365": [
+      {
+        "file": "Dynamics365/customer_service/dynamics365_customer_service_suite.csv",
+        "rows": 300,
+        "unique": 130,
+        "duplicates": 170,
+        "duplicate_pct": 56.7,
+        "columns": 8
+      },
+      {
+        "file": "Dynamics365/field_service/dynamics365_field_service_suite.csv",
+        "rows": 300,
+        "unique": 136,
+        "duplicates": 164,
+        "duplicate_pct": 54.7,
+        "columns": 8
+      },
+      {
+        "file": "Dynamics365/finance/dynamics365_finance_suite.csv",
+        "rows": 300,
+        "unique": 140,
+        "duplicates": 160,
+        "duplicate_pct": 53.3,
+        "columns": 8
+      },
+      {
+        "file": "Dynamics365/project_ops/dynamics365_project_ops_suite.csv",
+        "rows": 300,
+        "unique": 133,
+        "duplicates": 167,
+        "duplicate_pct": 55.7,
+        "columns": 8
+      },
+      {
+        "file": "Dynamics365/sales/dynamics365_sales_suite.csv",
+        "rows": 300,
+        "unique": 143,
+        "duplicates": 157,
+        "duplicate_pct": 52.3,
+        "columns": 8
+      },
+      {
+        "file": "Dynamics365/supply_chain/dynamics365_supply_chain_suite.csv",
+        "rows": 300,
+        "unique": 137,
+        "duplicates": 163,
+        "duplicate_pct": 54.3,
+        "columns": 8
+      }
+    ],
+    "Epicor": [
+      {
+        "file": "Epicor/crm/epicor_crm_suite.csv",
+        "rows": 240,
+        "unique": 136,
+        "duplicates": 104,
+        "duplicate_pct": 43.3,
+        "columns": 8
+      },
+      {
+        "file": "Epicor/distribution/epicor_distribution_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Epicor/finance/epicor_finance_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "Epicor/manufacturing/epicor_manufacturing_suite.csv",
+        "rows": 240,
+        "unique": 135,
+        "duplicates": 105,
+        "duplicate_pct": 43.8,
+        "columns": 8
+      },
+      {
+        "file": "Epicor/quality/epicor_quality_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Epicor/supply_chain/epicor_supply_chain_suite.csv",
+        "rows": 240,
+        "unique": 118,
+        "duplicates": 122,
+        "duplicate_pct": 50.8,
+        "columns": 8
+      }
+    ],
+    "GCP": [
+      {
+        "file": "GCP/bigquery/gcp_bigquery_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "GCP/cloud-run/gcp_cloud-run_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "GCP/compute/gcp_compute_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "GCP/cost/gcp_cost_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "GCP/gke/gcp_gke_suite.csv",
+        "rows": 90,
+        "unique": 88,
+        "duplicates": 2,
+        "duplicate_pct": 2.2,
+        "columns": 13
+      },
+      {
+        "file": "GCP/iam/gcp_iam_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "GCP/security/gcp_security_suite.csv",
+        "rows": 90,
+        "unique": 89,
+        "duplicates": 1,
+        "duplicate_pct": 1.1,
+        "columns": 13
+      },
+      {
+        "file": "GCP/storage/gcp_storage_suite.csv",
+        "rows": 90,
+        "unique": 90,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      }
+    ],
+    "GoogleWorkspace": [
+      {
+        "file": "GoogleWorkspace/admin/googleworkspace_admin_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "GoogleWorkspace/docs/googleworkspace_docs_suite.csv",
+        "rows": 240,
+        "unique": 120,
+        "duplicates": 120,
+        "duplicate_pct": 50.0,
+        "columns": 8
+      },
+      {
+        "file": "GoogleWorkspace/drive/googleworkspace_drive_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "GoogleWorkspace/gmail/googleworkspace_gmail_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "GoogleWorkspace/meet/googleworkspace_meet_suite.csv",
+        "rows": 240,
+        "unique": 121,
+        "duplicates": 119,
+        "duplicate_pct": 49.6,
+        "columns": 8
+      },
+      {
+        "file": "GoogleWorkspace/sheets/googleworkspace_sheets_suite.csv",
+        "rows": 240,
+        "unique": 119,
+        "duplicates": 121,
+        "duplicate_pct": 50.4,
+        "columns": 8
+      }
+    ],
+    "HubSpot": [
+      {
+        "file": "HubSpot/cms/hubspot_cms_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "HubSpot/crm/hubspot_crm_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "HubSpot/marketing/hubspot_marketing_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "HubSpot/operations/hubspot_operations_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "HubSpot/sales/hubspot_sales_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      },
+      {
+        "file": "HubSpot/service/hubspot_service_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      }
+    ],
+    "IBMMaximo": [
+      {
+        "file": "IBMMaximo/asset_mgmt/ibmmaximo_asset_mgmt_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "IBMMaximo/inventory/ibmmaximo_inventory_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "IBMMaximo/predictive_maintenance/ibmmaximo_predictive_maintenance_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "IBMMaximo/service_requests/ibmmaximo_service_requests_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "IBMMaximo/work_management/ibmmaximo_work_management_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      }
+    ],
+    "Industry Scripts": [
+      {
+        "file": "Industry Scripts/batches_21_35_combined_incremental.csv",
+        "rows": 15000,
+        "unique": 15000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 22
+      },
+      {
+        "file": "Industry Scripts/e2e_master_summary.csv",
+        "rows": 34,
+        "unique": 5,
+        "duplicates": 29,
+        "duplicate_pct": 85.3,
+        "columns": 2
+      },
+      {
+        "file": "Industry Scripts/master_batches_36_50.csv",
+        "rows": 15000,
+        "unique": 15000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 18
+      },
+      {
+        "file": "Industry Scripts/unified_master_current.csv",
+        "rows": 9500,
+        "unique": 9500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 12
+      },
+      {
+        "file": "Industry Scripts/unified_strict_e2e_final.csv",
+        "rows": 12000,
+        "unique": 12000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      }
+    ],
+    "InforCloudSuite": [
+      {
+        "file": "InforCloudSuite/assets/inforcloudsuite_assets_suite.csv",
+        "rows": 220,
+        "unique": 123,
+        "duplicates": 97,
+        "duplicate_pct": 44.1,
+        "columns": 8
+      },
+      {
+        "file": "InforCloudSuite/finance/inforcloudsuite_finance_suite.csv",
+        "rows": 220,
+        "unique": 124,
+        "duplicates": 96,
+        "duplicate_pct": 43.6,
+        "columns": 8
+      },
+      {
+        "file": "InforCloudSuite/hr/inforcloudsuite_hr_suite.csv",
+        "rows": 220,
+        "unique": 122,
+        "duplicates": 98,
+        "duplicate_pct": 44.5,
+        "columns": 8
+      },
+      {
+        "file": "InforCloudSuite/manufacturing/inforcloudsuite_manufacturing_suite.csv",
+        "rows": 220,
+        "unique": 111,
+        "duplicates": 109,
+        "duplicate_pct": 49.5,
+        "columns": 8
+      },
+      {
+        "file": "InforCloudSuite/projects/inforcloudsuite_projects_suite.csv",
+        "rows": 220,
+        "unique": 124,
+        "duplicates": 96,
+        "duplicate_pct": 43.6,
+        "columns": 8
+      },
+      {
+        "file": "InforCloudSuite/quality/inforcloudsuite_quality_suite.csv",
+        "rows": 220,
+        "unique": 124,
+        "duplicates": 96,
+        "duplicate_pct": 43.6,
+        "columns": 8
+      },
+      {
+        "file": "InforCloudSuite/supply_chain/inforcloudsuite_supply_chain_suite.csv",
+        "rows": 220,
+        "unique": 129,
+        "duplicates": 91,
+        "duplicate_pct": 41.4,
+        "columns": 8
+      }
+    ],
+    "Jira": [
+      {
+        "file": "Jira/agile/jira_agile_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Jira/automation/jira_automation_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Jira/boards/jira_boards_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Jira/issues/jira_issues_suite.csv",
+        "rows": 240,
+        "unique": 131,
+        "duplicates": 109,
+        "duplicate_pct": 45.4,
+        "columns": 8
+      },
+      {
+        "file": "Jira/projects/jira_projects_suite.csv",
+        "rows": 240,
+        "unique": 120,
+        "duplicates": 120,
+        "duplicate_pct": 50.0,
+        "columns": 8
+      },
+      {
+        "file": "Jira/service_management/jira_service_management_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      }
+    ],
+    "Medallia": [
+      {
+        "file": "Medallia/alerts/medallia_alerts_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Medallia/analytics/medallia_analytics_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Medallia/cases/medallia_cases_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "Medallia/journeys/medallia_journeys_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Medallia/listening/medallia_listening_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Medallia/programs/medallia_programs_suite.csv",
+        "rows": 240,
+        "unique": 131,
+        "duplicates": 109,
+        "duplicate_pct": 45.4,
+        "columns": 8
+      }
+    ],
+    "MuleSoft": [
+      {
+        "file": "MuleSoft/api_manager/mulesoft_api_manager_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "MuleSoft/design_center/mulesoft_design_center_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "MuleSoft/exchange/mulesoft_exchange_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "MuleSoft/monitoring/mulesoft_monitoring_suite.csv",
+        "rows": 240,
+        "unique": 137,
+        "duplicates": 103,
+        "duplicate_pct": 42.9,
+        "columns": 8
+      },
+      {
+        "file": "MuleSoft/raml/mulesoft_raml_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "MuleSoft/runtime_manager/mulesoft_runtime_manager_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      }
+    ],
+    "NetSuite": [
+      {
+        "file": "NetSuite/crm/netsuite_crm_suite.csv",
+        "rows": 220,
+        "unique": 126,
+        "duplicates": 94,
+        "duplicate_pct": 42.7,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/financials/netsuite_financials_suite.csv",
+        "rows": 220,
+        "unique": 123,
+        "duplicates": 97,
+        "duplicate_pct": 44.1,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/hcm/netsuite_hcm_suite.csv",
+        "rows": 220,
+        "unique": 132,
+        "duplicates": 88,
+        "duplicate_pct": 40.0,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/inventory/netsuite_inventory_suite.csv",
+        "rows": 220,
+        "unique": 117,
+        "duplicates": 103,
+        "duplicate_pct": 46.8,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/manufacturing/netsuite_manufacturing_suite.csv",
+        "rows": 220,
+        "unique": 126,
+        "duplicates": 94,
+        "duplicate_pct": 42.7,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/order_management/netsuite_order_management_suite.csv",
+        "rows": 220,
+        "unique": 126,
+        "duplicates": 94,
+        "duplicate_pct": 42.7,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/procurement/netsuite_procurement_suite.csv",
+        "rows": 220,
+        "unique": 123,
+        "duplicates": 97,
+        "duplicate_pct": 44.1,
+        "columns": 8
+      },
+      {
+        "file": "NetSuite/projects/netsuite_projects_suite.csv",
+        "rows": 220,
+        "unique": 120,
+        "duplicates": 100,
+        "duplicate_pct": 45.5,
+        "columns": 8
+      }
+    ],
+    "Odoo": [
+      {
+        "file": "Odoo/accounting/odoo_accounting_suite.csv",
+        "rows": 220,
+        "unique": 127,
+        "duplicates": 93,
+        "duplicate_pct": 42.3,
+        "columns": 8
+      },
+      {
+        "file": "Odoo/hr/odoo_hr_suite.csv",
+        "rows": 220,
+        "unique": 124,
+        "duplicates": 96,
+        "duplicate_pct": 43.6,
+        "columns": 8
+      },
+      {
+        "file": "Odoo/inventory/odoo_inventory_suite.csv",
+        "rows": 220,
+        "unique": 121,
+        "duplicates": 99,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Odoo/manufacturing/odoo_manufacturing_suite.csv",
+        "rows": 220,
+        "unique": 122,
+        "duplicates": 98,
+        "duplicate_pct": 44.5,
+        "columns": 8
+      },
+      {
+        "file": "Odoo/purchase/odoo_purchase_suite.csv",
+        "rows": 220,
+        "unique": 120,
+        "duplicates": 100,
+        "duplicate_pct": 45.5,
+        "columns": 8
+      },
+      {
+        "file": "Odoo/sales/odoo_sales_suite.csv",
+        "rows": 220,
+        "unique": 120,
+        "duplicates": 100,
+        "duplicate_pct": 45.5,
+        "columns": 8
+      },
+      {
+        "file": "Odoo/website/odoo_website_suite.csv",
+        "rows": 220,
+        "unique": 126,
+        "duplicates": 94,
+        "duplicate_pct": 42.7,
+        "columns": 8
+      }
+    ],
+    "Okta": [
+      {
+        "file": "Okta/access/okta_access_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Okta/api/okta_api_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Okta/directory/okta_directory_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Okta/lifecycle/okta_lifecycle_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      },
+      {
+        "file": "Okta/mfa/okta_mfa_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Okta/signin/okta_signin_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      }
+    ],
+    "OracleApps": [
+      {
+        "file": "OracleApps/epm/OracleApps_epm_2000.csv",
+        "rows": 2000,
+        "unique": 1993,
+        "duplicates": 7,
+        "duplicate_pct": 0.3,
+        "columns": 14
+      },
+      {
+        "file": "OracleApps/financials/OracleApps_financials_2000.csv",
+        "rows": 2000,
+        "unique": 1995,
+        "duplicates": 5,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "OracleApps/hcm/OracleApps_hcm_2000.csv",
+        "rows": 2000,
+        "unique": 1997,
+        "duplicates": 3,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      },
+      {
+        "file": "OracleApps/procurement/OracleApps_procurement_2000.csv",
+        "rows": 2000,
+        "unique": 1995,
+        "duplicates": 5,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "OracleApps/projects/OracleApps_projects_2000.csv",
+        "rows": 2000,
+        "unique": 2000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "OracleApps/scm/OracleApps_scm_2000.csv",
+        "rows": 2000,
+        "unique": 1994,
+        "duplicates": 6,
+        "duplicate_pct": 0.3,
+        "columns": 14
+      }
+    ],
+    "PTCWindchill": [
+      {
+        "file": "PTCWindchill/bom/ptcwindchill_bom_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "PTCWindchill/cad/ptcwindchill_cad_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "PTCWindchill/change_mgmt/ptcwindchill_change_mgmt_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "PTCWindchill/documents/ptcwindchill_documents_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "PTCWindchill/plm/ptcwindchill_plm_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "PTCWindchill/workflow/ptcwindchill_workflow_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "PalantirFoundry": [
+      {
+        "file": "PalantirFoundry/analytics/palantirfoundry_analytics_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "PalantirFoundry/data_integration/palantirfoundry_data_integration_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "PalantirFoundry/ontology/palantirfoundry_ontology_suite.csv",
+        "rows": 240,
+        "unique": 117,
+        "duplicates": 123,
+        "duplicate_pct": 51.2,
+        "columns": 8
+      },
+      {
+        "file": "PalantirFoundry/pipelines/palantirfoundry_pipelines_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "PalantirFoundry/security/palantirfoundry_security_suite.csv",
+        "rows": 240,
+        "unique": 131,
+        "duplicates": 109,
+        "duplicate_pct": 45.4,
+        "columns": 8
+      },
+      {
+        "file": "PalantirFoundry/workflow/palantirfoundry_workflow_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "Procore": [
+      {
+        "file": "Procore/financials/procore_financials_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Procore/projects/procore_projects_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Procore/quality/procore_quality_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Procore/rfis/procore_rfis_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Procore/safety/procore_safety_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Procore/submittals/procore_submittals_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      }
+    ],
+    "QAD": [
+      {
+        "file": "QAD/finance/qad_finance_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "QAD/logistics/qad_logistics_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "QAD/manufacturing/qad_manufacturing_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "QAD/planning/qad_planning_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "QAD/quality/qad_quality_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "QAD/supply_chain/qad_supply_chain_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      }
+    ],
+    "QlikSense": [
+      {
+        "file": "QlikSense/apps/qliksense_apps_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "QlikSense/automation/qliksense_automation_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "QlikSense/data_load/qliksense_data_load_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "QlikSense/governance/qliksense_governance_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "QlikSense/security/qliksense_security_suite.csv",
+        "rows": 240,
+        "unique": 121,
+        "duplicates": 119,
+        "duplicate_pct": 49.6,
+        "columns": 8
+      },
+      {
+        "file": "QlikSense/visualizations/qliksense_visualizations_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "Qualtrics": [
+      {
+        "file": "Qualtrics/actions/qualtrics_actions_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Qualtrics/analytics/qualtrics_analytics_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Qualtrics/dashboards/qualtrics_dashboards_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "Qualtrics/distribution/qualtrics_distribution_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "Qualtrics/surveys/qualtrics_surveys_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "Qualtrics/xm_programs/qualtrics_xm_programs_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      }
+    ],
+    "RHEL": [
+      {
+        "file": "RHEL/networking/rhel_networking_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "RHEL/package_mgmt/rhel_package_mgmt_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "RHEL/security/rhel_security_suite.csv",
+        "rows": 240,
+        "unique": 137,
+        "duplicates": 103,
+        "duplicate_pct": 42.9,
+        "columns": 8
+      },
+      {
+        "file": "RHEL/services/rhel_services_suite.csv",
+        "rows": 240,
+        "unique": 121,
+        "duplicates": 119,
+        "duplicate_pct": 49.6,
+        "columns": 8
+      },
+      {
+        "file": "RHEL/storage/rhel_storage_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "RHEL/subscription/rhel_subscription_suite.csv",
+        "rows": 240,
+        "unique": 117,
+        "duplicates": 123,
+        "duplicate_pct": 51.2,
+        "columns": 8
+      }
+    ],
+    "SAP": [
+      {
+        "file": "SAP/Ph-II/sap_phii_e2e_1000.csv",
+        "rows": 1000,
+        "unique": 1,
+        "duplicates": 999,
+        "duplicate_pct": 99.9,
+        "columns": 13
+      },
+      {
+        "file": "SAP/Ph-II/sap_phii_func_1000.csv",
+        "rows": 1000,
+        "unique": 1,
+        "duplicates": 999,
+        "duplicate_pct": 99.9,
+        "columns": 13
+      },
+      {
+        "file": "SAP/co/sap_co_1200.csv",
+        "rows": 1200,
+        "unique": 1199,
+        "duplicates": 1,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      },
+      {
+        "file": "SAP/fi/sap_fi_1200.csv",
+        "rows": 1200,
+        "unique": 1200,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "SAP/hcm/sap_hcm_1200.csv",
+        "rows": 1200,
+        "unique": 1197,
+        "duplicates": 3,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "SAP/mm/sap_mm_1200.csv",
+        "rows": 1200,
+        "unique": 1200,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "SAP/pm/sap_pm_1200.csv",
+        "rows": 1200,
+        "unique": 1198,
+        "duplicates": 2,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "SAP/pp/sap_pp_1200.csv",
+        "rows": 1200,
+        "unique": 1198,
+        "duplicates": 2,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "SAP/ps/sap_ps_1200.csv",
+        "rows": 1200,
+        "unique": 1199,
+        "duplicates": 1,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      },
+      {
+        "file": "SAP/qm/sap_qm_1200.csv",
+        "rows": 1200,
+        "unique": 1200,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "SAP/scm/sap_scm_1200.csv",
+        "rows": 1200,
+        "unique": 1198,
+        "duplicates": 2,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "SAP/sd/sap_sd_1200.csv",
+        "rows": 1200,
+        "unique": 1199,
+        "duplicates": 1,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      }
+    ],
+    "SageIntacct": [
+      {
+        "file": "SageIntacct/ap/sageintacct_ap_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "SageIntacct/ar/sageintacct_ar_suite.csv",
+        "rows": 240,
+        "unique": 120,
+        "duplicates": 120,
+        "duplicate_pct": 50.0,
+        "columns": 8
+      },
+      {
+        "file": "SageIntacct/cash/sageintacct_cash_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "SageIntacct/general_ledger/sageintacct_general_ledger_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "SageIntacct/projects/sageintacct_projects_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "SageIntacct/reporting/sageintacct_reporting_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "SageIntacct/subscriptions/sageintacct_subscriptions_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      }
+    ],
+    "Salesforce": [
+      {
+        "file": "Salesforce/financial/financial_services_cloud_5000.csv",
+        "rows": 5000,
+        "unique": 5000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 11
+      },
+      {
+        "file": "Salesforce/financial/superpack/fsc_superpack_10000.csv",
+        "rows": 5520,
+        "unique": 5520,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 12
+      },
+      {
+        "file": "Salesforce/financial/variantB/financial_services_cloud_5000_variantB.csv",
+        "rows": 520,
+        "unique": 520,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 11
+      },
+      {
+        "file": "Salesforce/health/health_cloud_5000.csv",
+        "rows": 5000,
+        "unique": 5000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 11
+      },
+      {
+        "file": "Salesforce/marketing/marketing_cloud_5000.csv",
+        "rows": 5000,
+        "unique": 4982,
+        "duplicates": 18,
+        "duplicate_pct": 0.4,
+        "columns": 12
+      },
+      {
+        "file": "Salesforce/sales/sales_cloud_5000.csv",
+        "rows": 5000,
+        "unique": 4977,
+        "duplicates": 23,
+        "duplicate_pct": 0.5,
+        "columns": 12
+      },
+      {
+        "file": "Salesforce/service_cloud/service_cloud_5000.csv",
+        "rows": 5000,
+        "unique": 4979,
+        "duplicates": 21,
+        "duplicate_pct": 0.4,
+        "columns": 12
+      },
+      {
+        "file": "Salesforce/zip_files/financial_services_cloud_5000_github_ready/financial_services_cloud_5000.csv",
+        "rows": 5000,
+        "unique": 5000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 11
+      },
+      {
+        "file": "Salesforce/zip_files/fsc_superpack_10000_github_ready/fsc_superpack_10000.csv",
+        "rows": 5520,
+        "unique": 5520,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 12
+      }
+    ],
+    "ServiceNow": [
+      {
+        "file": "ServiceNow/csm/servicenow_csm_1000.csv",
+        "rows": 1000,
+        "unique": 997,
+        "duplicates": 3,
+        "duplicate_pct": 0.3,
+        "columns": 13
+      },
+      {
+        "file": "ServiceNow/csm/servicenow_csm_2500.csv",
+        "rows": 2500,
+        "unique": 2500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "ServiceNow/hrsd/servicenow_hrsd_1000.csv",
+        "rows": 1000,
+        "unique": 992,
+        "duplicates": 8,
+        "duplicate_pct": 0.8,
+        "columns": 13
+      },
+      {
+        "file": "ServiceNow/hrsd/servicenow_hrsd_2500.csv",
+        "rows": 2500,
+        "unique": 2500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "ServiceNow/itom/servicenow_itom_1000.csv",
+        "rows": 1000,
+        "unique": 997,
+        "duplicates": 3,
+        "duplicate_pct": 0.3,
+        "columns": 13
+      },
+      {
+        "file": "ServiceNow/itom/servicenow_itom_2500.csv",
+        "rows": 2500,
+        "unique": 2498,
+        "duplicates": 2,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      },
+      {
+        "file": "ServiceNow/itsm/servicenow_itsm_1000.csv",
+        "rows": 1000,
+        "unique": 998,
+        "duplicates": 2,
+        "duplicate_pct": 0.2,
+        "columns": 13
+      },
+      {
+        "file": "ServiceNow/itsm/servicenow_itsm_2500.csv",
+        "rows": 2500,
+        "unique": 2500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      }
+    ],
+    "Smartsheet": [
+      {
+        "file": "Smartsheet/automation/smartsheet_automation_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Smartsheet/dashboards/smartsheet_dashboards_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Smartsheet/forms/smartsheet_forms_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Smartsheet/reports/smartsheet_reports_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Smartsheet/resource_management/smartsheet_resource_management_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Smartsheet/sheets/smartsheet_sheets_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      }
+    ],
+    "Snowflake": [
+      {
+        "file": "Snowflake/access_control/snowflake_access_control_suite.csv",
+        "rows": 240,
+        "unique": 137,
+        "duplicates": 103,
+        "duplicate_pct": 42.9,
+        "columns": 8
+      },
+      {
+        "file": "Snowflake/data_warehouse/snowflake_data_warehouse_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Snowflake/governance/snowflake_governance_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Snowflake/pipelines/snowflake_pipelines_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "Snowflake/sharing/snowflake_sharing_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Snowflake/storage/snowflake_storage_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      }
+    ],
+    "Splunk": [
+      {
+        "file": "Splunk/alerts/splunk_alerts_suite.csv",
+        "rows": 240,
+        "unique": 136,
+        "duplicates": 104,
+        "duplicate_pct": 43.3,
+        "columns": 8
+      },
+      {
+        "file": "Splunk/dashboards/splunk_dashboards_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Splunk/observability/splunk_observability_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Splunk/reports/splunk_reports_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "Splunk/search/splunk_search_suite.csv",
+        "rows": 240,
+        "unique": 120,
+        "duplicates": 120,
+        "duplicate_pct": 50.0,
+        "columns": 8
+      },
+      {
+        "file": "Splunk/siem/splunk_siem_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "Strata": [
+      {
+        "file": "Strata/firewall/strata_firewall_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Strata/policy/strata_policy_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "Strata/threat_prevention/strata_threat_prevention_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "Strata/url_filtering/strata_url_filtering_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "Strata/vpn/strata_vpn_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "Tableau": [
+      {
+        "file": "Tableau/dashboards/tableau_dashboards_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Tableau/data_sources/tableau_data_sources_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Tableau/extracts/tableau_extracts_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Tableau/permissions/tableau_permissions_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Tableau/prep/tableau_prep_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Tableau/server/tableau_server_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      }
+    ],
+    "Teamcenter": [
+      {
+        "file": "Teamcenter/bom/teamcenter_bom_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Teamcenter/change_mgmt/teamcenter_change_mgmt_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Teamcenter/documentation/teamcenter_documentation_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Teamcenter/plm/teamcenter_plm_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Teamcenter/requirements/teamcenter_requirements_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Teamcenter/workflow/teamcenter_workflow_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      }
+    ],
+    "TopProducts": [
+      {
+        "file": "TopProducts/d365/topproducts_d365_suite.csv",
+        "rows": 80,
+        "unique": 80,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "TopProducts/oracle/topproducts_oracle_suite.csv",
+        "rows": 80,
+        "unique": 79,
+        "duplicates": 1,
+        "duplicate_pct": 1.2,
+        "columns": 13
+      },
+      {
+        "file": "TopProducts/salesforce/topproducts_salesforce_suite.csv",
+        "rows": 80,
+        "unique": 79,
+        "duplicates": 1,
+        "duplicate_pct": 1.2,
+        "columns": 13
+      },
+      {
+        "file": "TopProducts/sap/topproducts_sap_suite.csv",
+        "rows": 80,
+        "unique": 79,
+        "duplicates": 1,
+        "duplicate_pct": 1.2,
+        "columns": 13
+      },
+      {
+        "file": "TopProducts/servicenow/topproducts_servicenow_suite.csv",
+        "rows": 80,
+        "unique": 80,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "TopProducts/veeva/topproducts_veeva_suite.csv",
+        "rows": 80,
+        "unique": 77,
+        "duplicates": 3,
+        "duplicate_pct": 3.8,
+        "columns": 13
+      },
+      {
+        "file": "TopProducts/workday/topproducts_workday_suite.csv",
+        "rows": 80,
+        "unique": 79,
+        "duplicates": 1,
+        "duplicate_pct": 1.2,
+        "columns": 13
+      }
+    ],
+    "UKGPro": [
+      {
+        "file": "UKGPro/benefits/ukgpro_benefits_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "UKGPro/core_hr/ukgpro_core_hr_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "UKGPro/payroll/ukgpro_payroll_suite.csv",
+        "rows": 240,
+        "unique": 131,
+        "duplicates": 109,
+        "duplicate_pct": 45.4,
+        "columns": 8
+      },
+      {
+        "file": "UKGPro/talent/ukgpro_talent_suite.csv",
+        "rows": 240,
+        "unique": 135,
+        "duplicates": 105,
+        "duplicate_pct": 43.8,
+        "columns": 8
+      },
+      {
+        "file": "UKGPro/timekeeping/ukgpro_timekeeping_suite.csv",
+        "rows": 240,
+        "unique": 129,
+        "duplicates": 111,
+        "duplicate_pct": 46.2,
+        "columns": 8
+      },
+      {
+        "file": "UKGPro/workforce_management/ukgpro_workforce_management_suite.csv",
+        "rows": 240,
+        "unique": 135,
+        "duplicates": 105,
+        "duplicate_pct": 43.8,
+        "columns": 8
+      }
+    ],
+    "UiPath": [
+      {
+        "file": "UiPath/assets/uipath_assets_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      },
+      {
+        "file": "UiPath/attended/uipath_attended_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "UiPath/orchestrator/uipath_orchestrator_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "UiPath/queues/uipath_queues_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "UiPath/studio/uipath_studio_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "UiPath/unattended/uipath_unattended_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      }
+    ],
+    "Veeva": [
+      {
+        "file": "Veeva/clinical/veeva_clinical_2500.csv",
+        "rows": 2500,
+        "unique": 2493,
+        "duplicates": 7,
+        "duplicate_pct": 0.3,
+        "columns": 14
+      },
+      {
+        "file": "Veeva/commercial/veeva_commercial_2500.csv",
+        "rows": 2500,
+        "unique": 2500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "Veeva/medical/veeva_medical_2500.csv",
+        "rows": 2500,
+        "unique": 2495,
+        "duplicates": 5,
+        "duplicate_pct": 0.2,
+        "columns": 14
+      },
+      {
+        "file": "Veeva/quality/veeva_quality_2500.csv",
+        "rows": 2500,
+        "unique": 2492,
+        "duplicates": 8,
+        "duplicate_pct": 0.3,
+        "columns": 14
+      },
+      {
+        "file": "Veeva/regulatory/veeva_regulatory_2500.csv",
+        "rows": 2500,
+        "unique": 2491,
+        "duplicates": 9,
+        "duplicate_pct": 0.4,
+        "columns": 14
+      }
+    ],
+    "WebApps": [
+      {
+        "file": "WebApps/accessibility/webapps_accessibility_suite.csv",
+        "rows": 110,
+        "unique": 107,
+        "duplicates": 3,
+        "duplicate_pct": 2.7,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/api/webapps_api_suite.csv",
+        "rows": 110,
+        "unique": 109,
+        "duplicates": 1,
+        "duplicate_pct": 0.9,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/auth/webapps_auth_suite.csv",
+        "rows": 110,
+        "unique": 107,
+        "duplicates": 3,
+        "duplicate_pct": 2.7,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/checkout/webapps_checkout_suite.csv",
+        "rows": 110,
+        "unique": 107,
+        "duplicates": 3,
+        "duplicate_pct": 2.7,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/forms/webapps_forms_suite.csv",
+        "rows": 110,
+        "unique": 109,
+        "duplicates": 1,
+        "duplicate_pct": 0.9,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/performance/webapps_performance_suite.csv",
+        "rows": 110,
+        "unique": 106,
+        "duplicates": 4,
+        "duplicate_pct": 3.6,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/security/webapps_security_suite.csv",
+        "rows": 110,
+        "unique": 106,
+        "duplicates": 4,
+        "duplicate_pct": 3.6,
+        "columns": 13
+      },
+      {
+        "file": "WebApps/ui/webapps_ui_suite.csv",
+        "rows": 110,
+        "unique": 110,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      }
+    ],
+    "Zendesk": [
+      {
+        "file": "Zendesk/chat/zendesk_chat_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Zendesk/explore/zendesk_explore_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "Zendesk/guide/zendesk_guide_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "Zendesk/help_center/zendesk_help_center_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Zendesk/talk/zendesk_talk_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Zendesk/tickets/zendesk_tickets_suite.csv",
+        "rows": 240,
+        "unique": 124,
+        "duplicates": 116,
+        "duplicate_pct": 48.3,
+        "columns": 8
+      }
+    ],
+    "Zoho": [
+      {
+        "file": "Zoho/books/zoho_books_suite.csv",
+        "rows": 240,
+        "unique": 132,
+        "duplicates": 108,
+        "duplicate_pct": 45.0,
+        "columns": 8
+      },
+      {
+        "file": "Zoho/creator/zoho_creator_suite.csv",
+        "rows": 240,
+        "unique": 122,
+        "duplicates": 118,
+        "duplicate_pct": 49.2,
+        "columns": 8
+      },
+      {
+        "file": "Zoho/crm/zoho_crm_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Zoho/desk/zoho_desk_suite.csv",
+        "rows": 240,
+        "unique": 127,
+        "duplicates": 113,
+        "duplicate_pct": 47.1,
+        "columns": 8
+      },
+      {
+        "file": "Zoho/people/zoho_people_suite.csv",
+        "rows": 240,
+        "unique": 119,
+        "duplicates": 121,
+        "duplicate_pct": 50.4,
+        "columns": 8
+      },
+      {
+        "file": "Zoho/projects/zoho_projects_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      }
+    ],
+    "Zoom": [
+      {
+        "file": "Zoom/contact_center/zoom_contact_center_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Zoom/meetings/zoom_meetings_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "Zoom/phone/zoom_phone_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      },
+      {
+        "file": "Zoom/recordings/zoom_recordings_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Zoom/rooms/zoom_rooms_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "Zoom/webinars/zoom_webinars_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      }
+    ],
+    "Zscaler": [
+      {
+        "file": "Zscaler/dlp/zscaler_dlp_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      },
+      {
+        "file": "Zscaler/internet_access/zscaler_internet_access_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      },
+      {
+        "file": "Zscaler/policy/zscaler_policy_suite.csv",
+        "rows": 240,
+        "unique": 131,
+        "duplicates": 109,
+        "duplicate_pct": 45.4,
+        "columns": 8
+      },
+      {
+        "file": "Zscaler/private_access/zscaler_private_access_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "Zscaler/sandbox/zscaler_sandbox_suite.csv",
+        "rows": 240,
+        "unique": 126,
+        "duplicates": 114,
+        "duplicate_pct": 47.5,
+        "columns": 8
+      }
+    ],
+    "iOS": [
+      {
+        "file": "iOS/login/ios_login_suite.csv",
+        "rows": 100,
+        "unique": 97,
+        "duplicates": 3,
+        "duplicate_pct": 3.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/notifications/ios_notifications_suite.csv",
+        "rows": 100,
+        "unique": 98,
+        "duplicates": 2,
+        "duplicate_pct": 2.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/offline/ios_offline_suite.csv",
+        "rows": 100,
+        "unique": 99,
+        "duplicates": 1,
+        "duplicate_pct": 1.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/onboarding/ios_onboarding_suite.csv",
+        "rows": 100,
+        "unique": 98,
+        "duplicates": 2,
+        "duplicate_pct": 2.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/payments/ios_payments_suite.csv",
+        "rows": 100,
+        "unique": 100,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/performance/ios_performance_suite.csv",
+        "rows": 100,
+        "unique": 96,
+        "duplicates": 4,
+        "duplicate_pct": 4.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/profile/ios_profile_suite.csv",
+        "rows": 100,
+        "unique": 98,
+        "duplicates": 2,
+        "duplicate_pct": 2.0,
+        "columns": 13
+      },
+      {
+        "file": "iOS/security/ios_security_suite.csv",
+        "rows": 100,
+        "unique": 98,
+        "duplicates": 2,
+        "duplicate_pct": 2.0,
+        "columns": 13
+      }
+    ],
+    "vSphere": [
+      {
+        "file": "vSphere/cluster/vsphere_cluster_suite.csv",
+        "rows": 240,
+        "unique": 133,
+        "duplicates": 107,
+        "duplicate_pct": 44.6,
+        "columns": 8
+      },
+      {
+        "file": "vSphere/drs/vsphere_drs_suite.csv",
+        "rows": 240,
+        "unique": 123,
+        "duplicates": 117,
+        "duplicate_pct": 48.8,
+        "columns": 8
+      },
+      {
+        "file": "vSphere/ha/vsphere_ha_suite.csv",
+        "rows": 240,
+        "unique": 128,
+        "duplicates": 112,
+        "duplicate_pct": 46.7,
+        "columns": 8
+      },
+      {
+        "file": "vSphere/network/vsphere_network_suite.csv",
+        "rows": 240,
+        "unique": 125,
+        "duplicates": 115,
+        "duplicate_pct": 47.9,
+        "columns": 8
+      },
+      {
+        "file": "vSphere/storage/vsphere_storage_suite.csv",
+        "rows": 240,
+        "unique": 130,
+        "duplicates": 110,
+        "duplicate_pct": 45.8,
+        "columns": 8
+      },
+      {
+        "file": "vSphere/vm/vsphere_vm_suite.csv",
+        "rows": 240,
+        "unique": 134,
+        "duplicates": 106,
+        "duplicate_pct": 44.2,
+        "columns": 8
+      }
+    ],
+    "workday": [
+      {
+        "file": "workday/Workday/e2e/workday_e2e_1500.csv",
+        "rows": 1500,
+        "unique": 1500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "workday/Workday/finance/workday_finance_1500.csv",
+        "rows": 1500,
+        "unique": 1500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "workday/Workday/hcm/workday_hcm_2500.csv",
+        "rows": 2500,
+        "unique": 2500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "workday/Workday/integrations/workday_integrations_1500.csv",
+        "rows": 1500,
+        "unique": 1500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "workday/Workday/payroll/workday_payroll_1500.csv",
+        "rows": 1500,
+        "unique": 1500,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 14
+      },
+      {
+        "file": "workday/Workday/recruiting/workday_recruiting_1500.csv",
+        "rows": 1500,
+        "unique": 1499,
+        "duplicates": 1,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      },
+      {
+        "file": "workday/Workday/reporting/workday_reporting_1500.csv",
+        "rows": 1500,
+        "unique": 1499,
+        "duplicates": 1,
+        "duplicate_pct": 0.1,
+        "columns": 14
+      },
+      {
+        "file": "workday/e2e/workday_e2e_5000.csv",
+        "rows": 5000,
+        "unique": 1,
+        "duplicates": 4999,
+        "duplicate_pct": 100.0,
+        "columns": 13
+      },
+      {
+        "file": "workday/finance/workday_finance_5000.csv",
+        "rows": 5000,
+        "unique": 1,
+        "duplicates": 4999,
+        "duplicate_pct": 100.0,
+        "columns": 13
+      },
+      {
+        "file": "workday/hcm/workday_5000.csv",
+        "rows": 5000,
+        "unique": 5000,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 13
+      }
+    ]
+  }
+}

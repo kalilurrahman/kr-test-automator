@@ -1,0 +1,18 @@
+{
+  "_readme": [
+    "Known, accepted discrepancies for scripts/verify_content_integrity.py.",
+    "Every entry needs a reason and an owner-visible plan. A waiver is a debt",
+    "record, not a way to keep shipping a false claim: user-visible text must",
+    "always tell the truth, even when a legacy filename cannot be changed yet."
+  ],
+  "filename_claims": [
+    "Salesforce/financial/superpack/fsc_superpack_10000.csv",
+    "Salesforce/zip_files/fsc_superpack_10000_github_ready/fsc_superpack_10000.csv",
+    "Salesforce/financial/variantB/financial_services_cloud_5000_variantB.csv"
+  ],
+  "_filename_claims_reason": {
+    "fsc_superpack_10000": "Legacy filename claims 10,000; the pack holds 5,520 unique cases. All user-visible text now states 5,520. The file is referenced by Salesforce/manifest.json, src/data/salesforceClouds.ts, src/data/salesforce/financialSuperpack.ts, scripts/build_precomputed_stats.mjs and a binary zip, so the rename lands with Wave-2 Salesforce packaging when the zip is regenerated anyway.",
+    "financial_services_cloud_5000_variantB": "Legacy filename claims 5,000; the variant holds 520 cases. Same rename window as above. Not sold in Wave 1."
+  },
+  "html_claims": []
+}
