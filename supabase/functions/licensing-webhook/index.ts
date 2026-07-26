@@ -159,6 +159,22 @@ serve(async (req) => {
         }
         break;
       }
+      case "subscription_restarted": {
+        // Cancelled-then-restarted subscription: clear the scheduled cutoff,
+        // but only after Gumroad confirms the key is live (unsigned payload).
+        const license = await findLicense();
+        if (license && await confirmKeyValidWithGumroad(license.product_id)) {
+          await admin.from("licenses")
+            .update({ status: "active", expires_at: null, updated_at: new Date().toISOString() })
+            .eq("id", license.id);
+          await admin.from("entitlements").update({ expires_at: null })
+            .eq("license_id", license.id).is("revoked_at", null);
+          await admin.from("license_events").insert({
+            license_id: license.id, event: "subscription_restarted_webhook", detail: { sale_id: saleId },
+          });
+        }
+        break;
+      }
       case "cancellation": {
         // Subscription cancelled: access runs until the paid period ends.
         const license = await findLicense();

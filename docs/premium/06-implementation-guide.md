@@ -50,7 +50,8 @@ else changes, and no customer loses access if the merchant changes.
 5. **Point Gumroad at the webhook**: Settings → Advanced → Ping URL =
    `https://<project>.supabase.co/functions/v1/licensing-webhook?secret=<secret>`.
    Then register resource subscriptions for `refund`, `dispute`, `dispute_won`,
-   `cancellation` via `PUT /v2/resource_subscriptions` with the same URL
+   `cancellation`, `subscription_restarted` via `PUT /v2/resource_subscriptions`
+   with the same URL
    (append `&resource=<name>` per subscription so the function can branch without
    trusting payload contents alone).
 6. **Update checkout links**: `CHECKOUT_BASE` + slugs in `src/pages/Pricing.tsx`,

@@ -113,17 +113,22 @@ serve(async (req) => {
     } catch (e) {
       // Merchant API down: fall back to our own records so paying customers
       // aren't locked out by a Gumroad outage (grace behavior).
+      // Grace only for re-validation by the user the license is already bound
+      // to (their entitlement rows exist) — a first-time activation would show
+      // success while granting nothing.
       const { data: cached } = await admin
-        .from("licenses").select("id,status").eq("license_key_hash", keyHash).maybeSingle();
-      if (cached?.status === "active") {
+        .from("licenses").select("id,status,user_id").eq("license_key_hash", keyHash).maybeSingle();
+      if (cached?.status === "active" && cached.user_id === user.id) {
         await logEvent("verify_merchant_down_grace", cached.id, { error: String(e) });
-        return json({ ok: true, grace: true });
+        return json({ ok: true, grace: true, entitlements: product.entitlements });
       }
       await logEvent("verify_merchant_down_fail", null, { error: String(e) });
       return json({ ok: false, error: "merchant_unavailable" }, 503);
     }
 
-    // 2. Invalid / refunded / ended keys: record it and revoke anything we granted.
+    // 2. Invalid / refunded / ended keys: record it and revoke anything we
+    // granted — including downgrading the cached status so the outage grace
+    // path can't resurrect a key that normal verification rejects.
     if (!verdict.valid) {
       const { data: existing } = await admin
         .from("licenses").select("id").eq("license_key_hash", keyHash).maybeSingle();
@@ -133,6 +138,13 @@ serve(async (req) => {
           updated_at: new Date().toISOString(),
         }).eq("id", existing.id);
         await admin.from("entitlements").update({ revoked_at: new Date().toISOString() })
+          .eq("license_id", existing.id).is("revoked_at", null);
+      } else if (existing && verdict.reason === "subscription_ended") {
+        await admin.from("licenses").update({
+          status: "expired",
+          updated_at: new Date().toISOString(),
+        }).eq("id", existing.id);
+        await admin.from("entitlements").update({ expires_at: new Date().toISOString() })
           .eq("license_id", existing.id).is("revoked_at", null);
       }
       await logEvent("verify_rejected", existing?.id ?? null, { reason: verdict.reason });
@@ -151,19 +163,34 @@ serve(async (req) => {
         await logEvent("key_sharing_blocked", licenseId, {});
         return json({ ok: false, error: "key_bound_to_another_account" }, 403);
       }
-      if (["refunded", "chargeback", "revoked"].includes(existingLicense.status)) {
+      // Only a manual revocation is terminal. A refunded/chargeback status is
+      // overridden by the FRESH merchant verdict we just received — Gumroad
+      // says the purchase is good again (refund reversed, dispute resolved),
+      // and the merchant is the source of truth for payment state.
+      if (existingLicense.status === "revoked") {
         await logEvent("verify_rejected", licenseId, { reason: existingLicense.status });
         return json({ ok: false, error: existingLicense.status }, 403);
       }
+      if (["refunded", "chargeback"].includes(existingLicense.status)) {
+        await logEvent("reinstated_by_merchant_verdict", licenseId, { was: existingLicense.status });
+      }
       await admin.from("licenses").update({
         status: "active",
-        user_id: existingLicense.user_id ?? user.id,
         activated_at: existingLicense.activated_at ?? new Date().toISOString(),
-        expires_at: verdict.expiresAt ?? existingLicense.expires_at,
+        // The merchant verdict REPLACES the stored expiry: a cancelled-then-
+        // restarted subscription reports no cancellation date anymore, and the
+        // stale one must not survive (?? would keep it forever).
+        expires_at: verdict.expiresAt ?? null,
         merchant_order_id: verdict.orderId ?? existingLicense.merchant_order_id,
         purchaser_email: verdict.purchaserEmail ?? existingLicense.purchaser_email,
         updated_at: new Date().toISOString(),
       }).eq("id", licenseId);
+      // First-writer-wins binding: the conditional update is atomic, so two
+      // concurrent first activations can't both claim the key.
+      if (!existingLicense.user_id) {
+        await admin.from("licenses").update({ user_id: user.id })
+          .eq("id", licenseId).is("user_id", null);
+      }
     } else {
       const { data: inserted, error: insertError } = await admin.from("licenses").insert({
         license_key_hash: keyHash,
@@ -220,6 +247,27 @@ serve(async (req) => {
       { onConflict: "license_id,user_id,device_fingerprint", ignoreDuplicates: true },
     );
 
+    // Post-insert recount closes the concurrent-activation race: order users by
+    // first activation (earliest wins deterministically on both sides of the
+    // race); anyone ranked past the seat count deletes their own rows and is
+    // rejected before entitlements are granted.
+    const { data: postActs } = await admin
+      .from("license_activations")
+      .select("user_id, created_at, id")
+      .eq("license_id", licenseId)
+      .order("created_at", { ascending: true })
+      .order("id", { ascending: true });
+    const orderedUsers: string[] = [];
+    for (const a of postActs ?? []) {
+      if (!orderedUsers.includes(a.user_id)) orderedUsers.push(a.user_id);
+    }
+    if (orderedUsers.indexOf(user.id) >= product.seats) {
+      await admin.from("license_activations").delete()
+        .eq("license_id", licenseId).eq("user_id", user.id);
+      await logEvent("seat_limit_reached", licenseId, { seats: product.seats, race: true });
+      return json({ ok: false, error: "seat_limit_reached" }, 403);
+    }
+
     // 5. Grant entitlements (idempotent).
     const rows = (product.entitlements as string[]).map((entitlement) => ({
       user_id: user.id,
@@ -231,9 +279,12 @@ serve(async (req) => {
       onConflict: "user_id,entitlement,license_id",
       ignoreDuplicates: true,
     });
-    // Reinstate anything previously revoked for this license (e.g. refund reversed).
-    await admin.from("entitlements").update({ revoked_at: null })
-      .eq("license_id", licenseId).eq("user_id", user.id).not("revoked_at", "is", null);
+    // Sync existing rows to the merchant's current verdict: reinstate anything
+    // previously revoked (refund reversed) and refresh the expiry so a
+    // cancelled-then-restarted subscription doesn't keep its stale cutoff.
+    await admin.from("entitlements")
+      .update({ revoked_at: null, expires_at: verdict.expiresAt ?? null })
+      .eq("license_id", licenseId).eq("user_id", user.id);
 
     await logEvent(isActivation ? "activated" : "revalidated", licenseId, { uses: verdict.uses });
 

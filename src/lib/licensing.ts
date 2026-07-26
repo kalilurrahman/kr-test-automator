@@ -51,6 +51,21 @@ export async function fetchEntitlements(): Promise<Entitlement[]> {
   return (data ?? []) as Entitlement[];
 }
 
+// supabase-js surfaces non-2xx invokes as FunctionsHttpError whose `context`
+// is the raw fetch Response — the JSON body (with our machine-readable error
+// code) must be read from it explicitly.
+async function invokeErrorBody<T>(error: unknown): Promise<T | null> {
+  const ctx = (error as { context?: Response }).context;
+  if (ctx && typeof ctx.json === "function") {
+    try {
+      return (await ctx.json()) as T;
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
+
 export async function activateLicense(params: {
   licenseKey: string;
   sku: string;
@@ -65,10 +80,8 @@ export async function activateLicense(params: {
     },
   });
   if (error) {
-    // supabase-js surfaces non-2xx as an error; the function body still carries
-    // the machine-readable reason when available.
-    const context = (error as { context?: { body?: VerifyLicenseResult } }).context;
-    return context?.body ?? { ok: false, error: "network_error" };
+    const body = await invokeErrorBody<VerifyLicenseResult>(error);
+    return body ?? { ok: false, error: "network_error" };
   }
   return data as VerifyLicenseResult;
 }
@@ -79,8 +92,8 @@ export async function activateLicense(params: {
 export async function getSignedDownloadUrl(path: string): Promise<string> {
   const { data, error } = await db.functions.invoke("sign-download", { body: { path } });
   if (error) {
-    const context = (error as { context?: { body?: { error?: string } } }).context;
-    throw new Error(context?.body?.error ?? "network_error");
+    const body = await invokeErrorBody<{ error?: string }>(error);
+    throw new Error(body?.error ?? "network_error");
   }
   const result = data as { ok: boolean; url?: string; error?: string };
   if (!result.ok || !result.url) throw new Error(result.error ?? "download_failed");

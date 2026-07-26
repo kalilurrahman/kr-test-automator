@@ -19,17 +19,24 @@ async function sha256Hex(input: string): Promise<string> {
   return Array.from(new Uint8Array(digest)).map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-// Identify the caller and enforce the tier quota. Returns null when the request
-// may proceed, or a Response to send instead. Fails open on unexpected DB
-// errors: availability of the free tool beats strict metering, and every
+// Identify the caller and enforce the tier quota. Returns `deny` when the
+// request must be refused, otherwise `release` — a callback that frees the
+// consumed ledger slot, to be invoked when the generation FAILS downstream so
+// gateway outages don't eat the user's daily quota. Fails open on unexpected
+// DB errors: availability of the free tool beats strict metering, and every
 // failure is logged for follow-up.
+interface QuotaResult {
+  deny?: Response;
+  release?: () => Promise<void>;
+}
+
 async function enforceQuota(
   req: Request,
   meta: { platform?: string; framework?: string },
-): Promise<Response | null> {
+): Promise<QuotaResult> {
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
   const supabaseUrl = Deno.env.get("SUPABASE_URL");
-  if (!serviceKey || !supabaseUrl) return null; // metering not configured
+  if (!serviceKey || !supabaseUrl) return {}; // metering not configured
 
   try {
     const admin = createClient(supabaseUrl, serviceKey);
@@ -94,40 +101,72 @@ async function enforceQuota(
 
     // Fast path: already at the limit — deny without writing anything.
     const before = await usageCount();
-    if (before >= limit) return deny(before);
+    if (before >= limit) return { deny: deny(before) };
 
     // Client-supplied strings are sanitized so a crafted value (e.g. a NUL
     // byte Postgres rejects) can't force the insert to fail and dodge metering.
     const clean = (v: unknown) =>
       typeof v === "string" ? v.replace(/[^\x20-\x7E]/g, "").slice(0, 64) || null : null;
 
-    const { error: insertError } = await admin.from("generation_usage").insert({
-      user_id: userId,
-      ip_hash: userId ? null : ipHash,
-      tier,
-      platform: clean(meta.platform),
-      framework: clean(meta.framework),
-    });
-    if (insertError) {
+    const { data: inserted, error: insertError } = await admin
+      .from("generation_usage")
+      .insert({
+        user_id: userId,
+        ip_hash: userId ? null : ipHash,
+        tier,
+        platform: clean(meta.platform),
+        framework: clean(meta.framework),
+      })
+      .select("id")
+      .single();
+    if (insertError || !inserted) {
       // The count above worked, so this isn't "metering not deployed" — the
       // ledger is broken while looking configured. Fail closed: an unrecorded
       // generation is exactly the unmetered spend this function exists to stop.
       console.error("generation_usage insert failed (failing closed):", insertError);
-      return new Response(
-        JSON.stringify({ error: "Usage metering unavailable. Please try again shortly.", code: "metering_error" }),
-        { status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-      );
+      return {
+        deny: new Response(
+          JSON.stringify({ error: "Usage metering unavailable. Please try again shortly.", code: "metering_error" }),
+          { status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        ),
+      };
     }
 
+    const release = async () => {
+      try {
+        await admin.from("generation_usage").delete().eq("id", inserted.id);
+      } catch (e) {
+        console.error("failed to release quota slot:", e);
+      }
+    };
+
     // Recount including our own row: closes the check-then-insert race — a
-    // concurrent burst all inserts first, and every request over the limit
-    // sees the full total and denies itself.
+    // concurrent burst all inserts first, then only the first `limit` rows of
+    // the day (by id — deterministic on both sides of the race) are winners;
+    // losers free their slot and deny, so the race can neither exceed the
+    // limit nor burn the caller's legitimate remaining quota.
     const after = await usageCount();
-    if (after > limit) return deny(after);
-    return null;
+    if (after > limit) {
+      let winnersQ = admin
+        .from("generation_usage")
+        .select("id")
+        .gte("created_at", todayStart.toISOString())
+        .order("id", { ascending: true })
+        .limit(limit);
+      winnersQ = userId
+        ? winnersQ.eq("user_id", userId)
+        : winnersQ.eq("ip_hash", ipHash).is("user_id", null);
+      const { data: winners } = await winnersQ;
+      const won = (winners ?? []).some((w) => w.id === inserted.id);
+      if (!won) {
+        await release();
+        return { deny: deny(after - 1) };
+      }
+    }
+    return { release };
   } catch (error) {
     console.error("quota enforcement error (failing open):", error);
-    return null;
+    return {};
   }
 }
 
@@ -136,6 +175,7 @@ serve(async (req) => {
     return new Response(null, { headers: corsHeaders });
   }
 
+  let releaseQuota: (() => Promise<void>) | undefined;
   try {
     const { platform, framework, language, testScopes, testCount, businessCase } = await req.json();
 
@@ -144,8 +184,9 @@ serve(async (req) => {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
-    const quotaResponse = await enforceQuota(req, { platform, framework });
-    if (quotaResponse) return quotaResponse;
+    const quota = await enforceQuota(req, { platform, framework });
+    if (quota.deny) return quota.deny;
+    releaseQuota = quota.release;
 
     const outputGuidance = getOutputGuidance(framework, language);
 
@@ -199,6 +240,9 @@ Generate a comprehensive, well-documented test suite with:
     });
 
     if (!response.ok) {
+      // The generation failed downstream — free the caller's quota slot so a
+      // gateway outage doesn't consume their daily allowance.
+      await releaseQuota?.();
       if (response.status === 429) {
         return new Response(JSON.stringify({ error: "Rate limit exceeded. Please try again later." }), {
           status: 429,
@@ -224,6 +268,7 @@ Generate a comprehensive, well-documented test suite with:
     });
   } catch (error) {
     console.error("generate-test-script error:", error);
+    await releaseQuota?.();
     return new Response(
       JSON.stringify({ error: error instanceof Error ? error.message : "Unknown error" }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }

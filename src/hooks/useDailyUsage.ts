@@ -5,7 +5,8 @@ import { useEntitlements } from "@/hooks/useEntitlements";
 import { ENTITLEMENTS } from "@/lib/licensing";
 
 // Display mirror of the limits enforced server-side in generate-test-script
-// (GEN_LIMIT_FREE / GEN_LIMIT_PRO env vars there are the source of truth).
+// (GEN_LIMIT_* env vars there are the source of truth).
+const ANON_LIMIT = 5;
 const FREE_LIMIT = 20;
 const PRO_LIMIT = 100;
 
@@ -15,10 +16,14 @@ export function useDailyUsage() {
   const [used, setUsed] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  const limit = hasEntitlement(ENTITLEMENTS.GENERATOR_PRO) ? PRO_LIMIT : FREE_LIMIT;
+  // Anonymous usage is metered per IP server-side; we can't count it here, but
+  // the ceiling shown must match what the server will enforce.
+  const limit = !user
+    ? ANON_LIMIT
+    : hasEntitlement(ENTITLEMENTS.GENERATOR_PRO) ? PRO_LIMIT : FREE_LIMIT;
 
   const refresh = useCallback(async () => {
-    if (!user) { setLoading(false); return; }
+    if (!user) { setUsed(0); setLoading(false); return; }
     // UTC day to match the server-side quota window.
     const todayStart = new Date();
     todayStart.setUTCHours(0, 0, 0, 0);
@@ -31,9 +36,12 @@ export function useDailyUsage() {
       .gte("created_at", todayStart.toISOString());
 
     if (error) {
+      // Explicit user filter: generations has an anonymous-readable share path,
+      // so an unfiltered count could include other users' shared rows.
       const { count: legacyCount } = await supabase
         .from("generations")
         .select("*", { count: "exact", head: true })
+        .eq("user_id", user.id)
         .gte("created_at", todayStart.toISOString());
       setUsed(legacyCount || 0);
     } else {

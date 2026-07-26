@@ -83,7 +83,7 @@ const Activate = () => {
             <CheckCircle2 className="w-10 h-10 text-primary mx-auto mb-3" />
             <p className="font-medium mb-1">License activated</p>
             <p className="text-sm text-muted-foreground mb-4">
-              Unlocked: {unlocked.join(", ")}
+              Unlocked: {unlocked.length > 0 ? unlocked.join(", ") : "existing access confirmed"}
             </p>
             <Button asChild className="gap-1.5">
               <Link to="/downloads"><Sparkles className="w-4 h-4" /> Go to your content</Link>
