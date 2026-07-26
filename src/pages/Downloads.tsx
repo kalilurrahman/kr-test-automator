@@ -1,6 +1,9 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Download, FileText, FileSpreadsheet, FileJson, FileCode, FileArchive, Search, Sparkles } from "lucide-react";
+import { Download, FileText, FileSpreadsheet, FileJson, FileCode, FileArchive, Search, Sparkles, Lock } from "lucide-react";
+import { toast } from "sonner";
+import { useEntitlements } from "@/hooks/useEntitlements";
+import { getSignedDownloadUrl } from "@/lib/licensing";
 import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -24,6 +27,14 @@ interface DownloadEntry {
   size?: string;
   category: Category;
   blurb: string;
+  /**
+   * Marks a premium file delivered via signed URL instead of a static href.
+   * `path` is the object key in the private "premium" Storage bucket
+   * ("vault/<file>" or "packs/<platformId>/<file>"); `entitlement` is the key
+   * required to download. Flip entries to premium at paid launch — the file
+   * must be uploaded to the bucket and removed from public/ first.
+   */
+  premium?: { path: string; entitlement: string };
 }
 
 const FORMAT_ICON: Record<Format, typeof FileText> = {
@@ -353,15 +364,55 @@ const DownloadGrid = ({ items }: { items: DownloadEntry[] }) => {
               </div>
             </div>
             <p className="text-xs text-muted-foreground flex-1">{d.blurb}</p>
-            <Button asChild variant="default" size="sm" className="gap-1.5">
-              <a href={d.href} download>
-                <Download className="w-3.5 h-3.5" /> Download
-              </a>
-            </Button>
+            <DownloadAction entry={d} />
           </Card>
         );
       })}
     </div>
+  );
+};
+
+/** Free entries download directly; premium entries go through sign-download. */
+const DownloadAction = ({ entry }: { entry: DownloadEntry }) => {
+  const { hasEntitlement } = useEntitlements();
+  const [busy, setBusy] = useState(false);
+
+  if (!entry.premium) {
+    return (
+      <Button asChild variant="default" size="sm" className="gap-1.5">
+        <a href={entry.href} download>
+          <Download className="w-3.5 h-3.5" /> Download
+        </a>
+      </Button>
+    );
+  }
+
+  if (!hasEntitlement(entry.premium.entitlement)) {
+    return (
+      <Button asChild variant="outline" size="sm" className="gap-1.5 border-primary/40 text-primary">
+        <Link to="/pricing">
+          <Lock className="w-3.5 h-3.5" /> Unlock with Premium
+        </Link>
+      </Button>
+    );
+  }
+
+  const download = async () => {
+    setBusy(true);
+    try {
+      const url = await getSignedDownloadUrl(entry.premium!.path);
+      window.open(url, "_blank", "noopener");
+    } catch {
+      toast.error("Download failed — please retry, or contact support if it persists.");
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <Button variant="default" size="sm" className="gap-1.5" onClick={download} disabled={busy}>
+      <Download className="w-3.5 h-3.5" /> {busy ? "Preparing…" : "Download"}
+    </Button>
   );
 };
 
