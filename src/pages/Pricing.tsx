@@ -17,7 +17,11 @@ interface Tier {
   cadence: string;
   blurb: string;
   features: string[];
-  checkoutSlug: string;
+  /** Single checkout product… */
+  checkoutSlug?: string;
+  /** …or one checkout product per platform (each is its own SKU + license
+   *  key, matching the license_products seed and the Activate SKU list). */
+  checkoutOptions?: { label: string; slug: string }[];
   highlight?: boolean;
   badge?: string;
 }
@@ -28,7 +32,7 @@ const TIERS: Tier[] = [
     name: "Platform Premium Pack",
     price: "$99–$149",
     cadence: "one-time per platform",
-    blurb: "SAP flagship & Veeva GxP at $149; Salesforce, Workday, ServiceNow, Oracle at $99.",
+    blurb: "SAP flagship at $149; Salesforce and Workday at $99. More platforms follow.",
     features: [
       "Curated test-case core with full steps, data & roles",
       "Runnable automation scripts (Playwright + Gherkin)",
@@ -36,7 +40,11 @@ const TIERS: Tier[] = [
       "Environment setup + CI pipeline templates",
       "12 months of content updates included",
     ],
-    checkoutSlug: "testforge-platform-pack",
+    checkoutOptions: [
+      { label: "SAP — $149", slug: "testforge-pack-sap" },
+      { label: "Salesforce — $99", slug: "testforge-pack-salesforce" },
+      { label: "Workday — $99", slug: "testforge-pack-workday" },
+    ],
   },
   {
     sku: "all-access",
@@ -136,11 +144,23 @@ const Pricing = () => (
               </li>
             ))}
           </ul>
-          <Button asChild className="mt-6 w-full" variant={tier.highlight ? "default" : "outline"}>
-            <a href={`${CHECKOUT_BASE}/${tier.checkoutSlug}`} target="_blank" rel="noopener noreferrer">
-              Buy {tier.name}
-            </a>
-          </Button>
+          {tier.checkoutOptions ? (
+            <div className="mt-6 space-y-2">
+              {tier.checkoutOptions.map((opt) => (
+                <Button key={opt.slug} asChild className="w-full" variant="outline" size="sm">
+                  <a href={`${CHECKOUT_BASE}/${opt.slug}`} target="_blank" rel="noopener noreferrer">
+                    Buy {opt.label}
+                  </a>
+                </Button>
+              ))}
+            </div>
+          ) : (
+            <Button asChild className="mt-6 w-full" variant={tier.highlight ? "default" : "outline"}>
+              <a href={`${CHECKOUT_BASE}/${tier.checkoutSlug}`} target="_blank" rel="noopener noreferrer">
+                Buy {tier.name}
+              </a>
+            </Button>
+          )}
         </Card>
       ))}
     </section>
