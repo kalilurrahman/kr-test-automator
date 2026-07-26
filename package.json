@@ -10,7 +10,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "verify:content": "python3 scripts/verify_content_integrity.py --write",
+    "build:coverage-pages": "python3 scripts/build_coverage_pages.py",
+    "build:pack:sap": "node scripts/build_sap_pack.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

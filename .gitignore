@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Premium pack build output — paid artefacts must never enter the public repo.
+# They are uploaded to the private Supabase Storage bucket and delivered via
+# entitlement-checked signed URLs (see docs/premium/06-implementation-guide.md).
+build/

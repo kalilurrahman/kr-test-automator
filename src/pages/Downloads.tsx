@@ -4,6 +4,7 @@ import { Download, FileText, FileSpreadsheet, FileJson, FileCode, FileArchive, S
 import { toast } from "sonner";
 import { useEntitlements } from "@/hooks/useEntitlements";
 import { getSignedDownloadUrl } from "@/lib/licensing";
+import StarterKitCta from "@/components/premium/StarterKitCta";
 import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -226,6 +227,9 @@ const Downloads = () => {
             </p>
           </div>
         </header>
+
+        {/* Lead magnet first: the free sample is what proves the paid bar. */}
+        <StarterKitCta />
 
         {/* Premium upsell — Downloads visitors are the highest-intent audience */}
         <Card className="p-4 border-primary/30 bg-primary/5 flex flex-col sm:flex-row sm:items-center gap-3">

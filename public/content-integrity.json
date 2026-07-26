@@ -2,11 +2,11 @@
   "generated_by": "scripts/verify_content_integrity.py",
   "methodology": "Counts are real CSV records (not physical lines) parsed with Python's csv module. Duplicates are rows identical in every column except the ID. 'unique' is the only figure quoted in marketing.",
   "totals": {
-    "rows": 244414,
-    "unique": 201222,
-    "duplicates": 43192,
-    "platforms": 61,
-    "files": 394
+    "rows": 245255,
+    "unique": 202059,
+    "duplicates": 43196,
+    "platforms": 62,
+    "files": 396
   },
   "platforms": {
     "3DEXPERIENCE": {
@@ -356,6 +356,12 @@
       "unique": 645,
       "duplicates": 555,
       "files": 5
+    },
+    "build": {
+      "rows": 841,
+      "unique": 837,
+      "duplicates": 4,
+      "files": 2
     },
     "iOS": {
       "rows": 800,
@@ -3451,6 +3457,24 @@
         "duplicates": 114,
         "duplicate_pct": 47.5,
         "columns": 8
+      }
+    ],
+    "build": [
+      {
+        "file": "build/packs/sap-professional/sap-professional-v1.0.0.csv",
+        "rows": 201,
+        "unique": 201,
+        "duplicates": 0,
+        "duplicate_pct": 0.0,
+        "columns": 18
+      },
+      {
+        "file": "build/quality/sap-remediation-backlog.csv",
+        "rows": 640,
+        "unique": 636,
+        "duplicates": 4,
+        "duplicate_pct": 0.6,
+        "columns": 6
       }
     ],
     "iOS": [
