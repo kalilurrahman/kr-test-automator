@@ -14,7 +14,8 @@
     "verify:content": "python3 scripts/verify_content_integrity.py --write",
     "build:coverage-pages": "python3 scripts/build_coverage_pages.py",
     "build:pack:sap": "node scripts/build_sap_pack.mjs",
-    "lint:control": "node scripts/lint_control_test.mjs"
+    "lint:control": "node scripts/lint_control_test.mjs",
+    "assess:platforms": "node scripts/assess_platform_quality.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

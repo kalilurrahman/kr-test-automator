@@ -103,6 +103,38 @@ Use these, not the older estimates:
 - Duplicate-heavy platforms that must never be sold as-is: Dynamics365 (54%),
   GoogleWorkspace (49%), Datadog (48%), Jira (48%), SageIntacct (48%)
 
+## Wave 2 readiness — measured
+
+Running the same bar across the platforms the strategy proposes selling
+(`npm run assess:platforms`, full report at `build/quality/wave2-readiness.md`)
+produced a finding that should change how Wave 2 is sequenced:
+
+**No Wave 2 platform has a curated core.** Salesforce, Workday, Veeva,
+ServiceNow and Oracle all generate their expected results from a small set of
+templates — "Requisition → Offer → Hire → Onboard → Payroll completes
+successfully", "Setup → Review → Approve → Publish → Archive completes
+successfully". Whole files pass or fail together depending on which template
+string was used, which is why the raw rates land on exact fractions (1/2, 1/5,
+1/6, 1/7, 1/12). Those rates are an artifact, **not a quality ranking**, and the
+assessment tool now labels them as such rather than publishing a misleading
+league table.
+
+Consequence: there is no "closest to ready" platform and no shortcut pack to
+ship second. Wave 2 means authoring curated cases from the business process for
+each platform, at roughly the cost the blueprint already estimated. Since
+content cost is comparable across all of them, **sequence on market value, not
+readiness**:
+
+- **Veeva** if margin matters most — GxP content is scarce, buyers least
+  price-sensitive.
+- **Salesforce** if audience size matters most — largest buyer pool, strongest
+  existing SEO surface.
+- **ServiceNow** offers a cheap automation story (native ATF export) that lifts
+  perceived value for modest extra effort.
+
+The curated SAP dataset at 68% remains the only genuinely near-ready asset in
+the estate.
+
 ## Next actions
 
 1. Human sandbox pass on a sample of the 571 so the pack can honestly say
