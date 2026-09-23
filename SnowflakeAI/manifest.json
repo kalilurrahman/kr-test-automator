@@ -1,0 +1,63 @@
+{
+  "product": "Snowflake",
+  "key": "snowflake",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "data_quality",
+      "label": "Data Quality",
+      "folder": "data_quality",
+      "prefix": "snowflake_data_quality_suite",
+      "count": 125
+    },
+    {
+      "id": "elt_pipeline",
+      "label": "ELT Pipeline",
+      "folder": "elt_pipeline",
+      "prefix": "snowflake_elt_pipeline_suite",
+      "count": 125
+    },
+    {
+      "id": "schema_governance",
+      "label": "Schema Governance",
+      "folder": "schema_governance",
+      "prefix": "snowflake_schema_governance_suite",
+      "count": 125
+    },
+    {
+      "id": "rbac_and_masking",
+      "label": "RBAC and Masking",
+      "folder": "rbac_and_masking",
+      "prefix": "snowflake_rbac_and_masking_suite",
+      "count": 125
+    },
+    {
+      "id": "performance",
+      "label": "Performance",
+      "folder": "performance",
+      "prefix": "snowflake_performance_suite",
+      "count": 125
+    },
+    {
+      "id": "streams_and_tasks",
+      "label": "Streams and Tasks",
+      "folder": "streams_and_tasks",
+      "prefix": "snowflake_streams_and_tasks_suite",
+      "count": 125
+    },
+    {
+      "id": "data_sharing",
+      "label": "Data Sharing",
+      "folder": "data_sharing",
+      "prefix": "snowflake_data_sharing_suite",
+      "count": 125
+    },
+    {
+      "id": "snowpark",
+      "label": "Snowpark",
+      "folder": "snowpark",
+      "prefix": "snowflake_snowpark_suite",
+      "count": 125
+    }
+  ]
+}

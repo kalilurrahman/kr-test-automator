@@ -1,0 +1,63 @@
+{
+  "product": "Codex",
+  "key": "codex",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "unit_test_generation",
+      "label": "Unit Test Generation",
+      "folder": "unit_test_generation",
+      "prefix": "codex_unit_test_generation_suite",
+      "count": 125
+    },
+    {
+      "id": "refactoring",
+      "label": "Refactoring",
+      "folder": "refactoring",
+      "prefix": "codex_refactoring_suite",
+      "count": 125
+    },
+    {
+      "id": "api_testing",
+      "label": "API Testing",
+      "folder": "api_testing",
+      "prefix": "codex_api_testing_suite",
+      "count": 125
+    },
+    {
+      "id": "secure_coding",
+      "label": "Secure Coding",
+      "folder": "secure_coding",
+      "prefix": "codex_secure_coding_suite",
+      "count": 125
+    },
+    {
+      "id": "code_review",
+      "label": "Code Review",
+      "folder": "code_review",
+      "prefix": "codex_code_review_suite",
+      "count": 125
+    },
+    {
+      "id": "repository_context",
+      "label": "Repository Context",
+      "folder": "repository_context",
+      "prefix": "codex_repository_context_suite",
+      "count": 125
+    },
+    {
+      "id": "ci_quality_gate",
+      "label": "CI Quality Gate",
+      "folder": "ci_quality_gate",
+      "prefix": "codex_ci_quality_gate_suite",
+      "count": 125
+    },
+    {
+      "id": "performance",
+      "label": "Performance",
+      "folder": "performance",
+      "prefix": "codex_performance_suite",
+      "count": 125
+    }
+  ]
+}
