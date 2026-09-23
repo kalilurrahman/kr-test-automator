@@ -1,0 +1,63 @@
+{
+  "product": "Databricks",
+  "key": "databricks",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "delta_lake",
+      "label": "Delta Lake",
+      "folder": "delta_lake",
+      "prefix": "databricks_delta_lake_suite",
+      "count": 125
+    },
+    {
+      "id": "jobs",
+      "label": "Jobs",
+      "folder": "jobs",
+      "prefix": "databricks_jobs_suite",
+      "count": 125
+    },
+    {
+      "id": "notebooks",
+      "label": "Notebooks",
+      "folder": "notebooks",
+      "prefix": "databricks_notebooks_suite",
+      "count": 125
+    },
+    {
+      "id": "mlflow",
+      "label": "MLflow",
+      "folder": "mlflow",
+      "prefix": "databricks_mlflow_suite",
+      "count": 125
+    },
+    {
+      "id": "model_evaluation",
+      "label": "Model Evaluation",
+      "folder": "model_evaluation",
+      "prefix": "databricks_model_evaluation_suite",
+      "count": 125
+    },
+    {
+      "id": "unity_catalog",
+      "label": "Unity Catalog",
+      "folder": "unity_catalog",
+      "prefix": "databricks_unity_catalog_suite",
+      "count": 125
+    },
+    {
+      "id": "streaming",
+      "label": "Streaming",
+      "folder": "streaming",
+      "prefix": "databricks_streaming_suite",
+      "count": 125
+    },
+    {
+      "id": "sql_warehouse",
+      "label": "SQL Warehouse",
+      "folder": "sql_warehouse",
+      "prefix": "databricks_sql_warehouse_suite",
+      "count": 125
+    }
+  ]
+}

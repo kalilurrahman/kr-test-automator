@@ -1,0 +1,63 @@
+{
+  "product": "Claude Code",
+  "key": "claudecode",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "test_planning",
+      "label": "Test Planning",
+      "folder": "test_planning",
+      "prefix": "claudecode_test_planning_suite",
+      "count": 125
+    },
+    {
+      "id": "playwright_authoring",
+      "label": "Playwright Authoring",
+      "folder": "playwright_authoring",
+      "prefix": "claudecode_playwright_authoring_suite",
+      "count": 125
+    },
+    {
+      "id": "api_testing",
+      "label": "API Testing",
+      "folder": "api_testing",
+      "prefix": "claudecode_api_testing_suite",
+      "count": 125
+    },
+    {
+      "id": "tdd",
+      "label": "TDD",
+      "folder": "tdd",
+      "prefix": "claudecode_tdd_suite",
+      "count": 125
+    },
+    {
+      "id": "ci_quality_gate",
+      "label": "CI Quality Gate",
+      "folder": "ci_quality_gate",
+      "prefix": "claudecode_ci_quality_gate_suite",
+      "count": 125
+    },
+    {
+      "id": "code_review",
+      "label": "Code Review",
+      "folder": "code_review",
+      "prefix": "claudecode_code_review_suite",
+      "count": 125
+    },
+    {
+      "id": "mcp_integration",
+      "label": "MCP Integration",
+      "folder": "mcp_integration",
+      "prefix": "claudecode_mcp_integration_suite",
+      "count": 125
+    },
+    {
+      "id": "test_maintenance",
+      "label": "Test Maintenance",
+      "folder": "test_maintenance",
+      "prefix": "claudecode_test_maintenance_suite",
+      "count": 125
+    }
+  ]
+}
