@@ -3,7 +3,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0008",
+    "test_case_id": "SNOW-SNOWPA-0008",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0008",
     "test_type": "ETL",
@@ -17,7 +17,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0016",
+    "test_case_id": "SNOW-SNOWPA-0016",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0016",
     "test_type": "Performance",
@@ -31,7 +31,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0024",
+    "test_case_id": "SNOW-SNOWPA-0024",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0024",
     "test_type": "Regression",
@@ -45,7 +45,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0032",
+    "test_case_id": "SNOW-SNOWPA-0032",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0032",
     "test_type": "ETL",
@@ -59,7 +59,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0040",
+    "test_case_id": "SNOW-SNOWPA-0040",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0040",
     "test_type": "Performance",
@@ -73,7 +73,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0048",
+    "test_case_id": "SNOW-SNOWPA-0048",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0048",
     "test_type": "Regression",
@@ -87,7 +87,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0056",
+    "test_case_id": "SNOW-SNOWPA-0056",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0056",
     "test_type": "ETL",
@@ -101,7 +101,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0064",
+    "test_case_id": "SNOW-SNOWPA-0064",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0064",
     "test_type": "Performance",
@@ -115,7 +115,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0072",
+    "test_case_id": "SNOW-SNOWPA-0072",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0072",
     "test_type": "Regression",
@@ -129,7 +129,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0080",
+    "test_case_id": "SNOW-SNOWPA-0080",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0080",
     "test_type": "ETL",
@@ -143,7 +143,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0088",
+    "test_case_id": "SNOW-SNOWPA-0088",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0088",
     "test_type": "Performance",
@@ -157,7 +157,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0096",
+    "test_case_id": "SNOW-SNOWPA-0096",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0096",
     "test_type": "Regression",
@@ -171,7 +171,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0104",
+    "test_case_id": "SNOW-SNOWPA-0104",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0104",
     "test_type": "ETL",
@@ -185,7 +185,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0112",
+    "test_case_id": "SNOW-SNOWPA-0112",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0112",
     "test_type": "Performance",
@@ -199,7 +199,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0120",
+    "test_case_id": "SNOW-SNOWPA-0120",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0120",
     "test_type": "Regression",
@@ -213,7 +213,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0128",
+    "test_case_id": "SNOW-SNOWPA-0128",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0128",
     "test_type": "ETL",
@@ -227,7 +227,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0136",
+    "test_case_id": "SNOW-SNOWPA-0136",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0136",
     "test_type": "Performance",
@@ -241,7 +241,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0144",
+    "test_case_id": "SNOW-SNOWPA-0144",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0144",
     "test_type": "Regression",
@@ -255,7 +255,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0152",
+    "test_case_id": "SNOW-SNOWPA-0152",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0152",
     "test_type": "ETL",
@@ -269,7 +269,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0160",
+    "test_case_id": "SNOW-SNOWPA-0160",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0160",
     "test_type": "Performance",
@@ -283,7 +283,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0168",
+    "test_case_id": "SNOW-SNOWPA-0168",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0168",
     "test_type": "Regression",
@@ -297,7 +297,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0176",
+    "test_case_id": "SNOW-SNOWPA-0176",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0176",
     "test_type": "ETL",
@@ -311,7 +311,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0184",
+    "test_case_id": "SNOW-SNOWPA-0184",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0184",
     "test_type": "Performance",
@@ -325,7 +325,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0192",
+    "test_case_id": "SNOW-SNOWPA-0192",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0192",
     "test_type": "Regression",
@@ -339,7 +339,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0200",
+    "test_case_id": "SNOW-SNOWPA-0200",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0200",
     "test_type": "ETL",
@@ -353,7 +353,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0208",
+    "test_case_id": "SNOW-SNOWPA-0208",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0208",
     "test_type": "Performance",
@@ -367,7 +367,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0216",
+    "test_case_id": "SNOW-SNOWPA-0216",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0216",
     "test_type": "Regression",
@@ -381,7 +381,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0224",
+    "test_case_id": "SNOW-SNOWPA-0224",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0224",
     "test_type": "ETL",
@@ -395,7 +395,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0232",
+    "test_case_id": "SNOW-SNOWPA-0232",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0232",
     "test_type": "Performance",
@@ -409,7 +409,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0240",
+    "test_case_id": "SNOW-SNOWPA-0240",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0240",
     "test_type": "Regression",
@@ -423,7 +423,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0248",
+    "test_case_id": "SNOW-SNOWPA-0248",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0248",
     "test_type": "ETL",
@@ -437,7 +437,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0256",
+    "test_case_id": "SNOW-SNOWPA-0256",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0256",
     "test_type": "Performance",
@@ -451,7 +451,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0264",
+    "test_case_id": "SNOW-SNOWPA-0264",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0264",
     "test_type": "Regression",
@@ -465,7 +465,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0272",
+    "test_case_id": "SNOW-SNOWPA-0272",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0272",
     "test_type": "ETL",
@@ -479,7 +479,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0280",
+    "test_case_id": "SNOW-SNOWPA-0280",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0280",
     "test_type": "Performance",
@@ -493,7 +493,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0288",
+    "test_case_id": "SNOW-SNOWPA-0288",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0288",
     "test_type": "Regression",
@@ -507,7 +507,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0296",
+    "test_case_id": "SNOW-SNOWPA-0296",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0296",
     "test_type": "ETL",
@@ -521,7 +521,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0304",
+    "test_case_id": "SNOW-SNOWPA-0304",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0304",
     "test_type": "Performance",
@@ -535,7 +535,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0312",
+    "test_case_id": "SNOW-SNOWPA-0312",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0312",
     "test_type": "Regression",
@@ -549,7 +549,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0320",
+    "test_case_id": "SNOW-SNOWPA-0320",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0320",
     "test_type": "ETL",
@@ -563,7 +563,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0328",
+    "test_case_id": "SNOW-SNOWPA-0328",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0328",
     "test_type": "Performance",
@@ -577,7 +577,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0336",
+    "test_case_id": "SNOW-SNOWPA-0336",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0336",
     "test_type": "Regression",
@@ -591,7 +591,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0344",
+    "test_case_id": "SNOW-SNOWPA-0344",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0344",
     "test_type": "ETL",
@@ -605,7 +605,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0352",
+    "test_case_id": "SNOW-SNOWPA-0352",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0352",
     "test_type": "Performance",
@@ -619,7 +619,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0360",
+    "test_case_id": "SNOW-SNOWPA-0360",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0360",
     "test_type": "Regression",
@@ -633,7 +633,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0368",
+    "test_case_id": "SNOW-SNOWPA-0368",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0368",
     "test_type": "ETL",
@@ -647,7 +647,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0376",
+    "test_case_id": "SNOW-SNOWPA-0376",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0376",
     "test_type": "Performance",
@@ -661,7 +661,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0384",
+    "test_case_id": "SNOW-SNOWPA-0384",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0384",
     "test_type": "Regression",
@@ -675,7 +675,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0392",
+    "test_case_id": "SNOW-SNOWPA-0392",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0392",
     "test_type": "ETL",
@@ -689,7 +689,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0400",
+    "test_case_id": "SNOW-SNOWPA-0400",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0400",
     "test_type": "Performance",
@@ -703,7 +703,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0408",
+    "test_case_id": "SNOW-SNOWPA-0408",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0408",
     "test_type": "Regression",
@@ -717,7 +717,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0416",
+    "test_case_id": "SNOW-SNOWPA-0416",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0416",
     "test_type": "ETL",
@@ -731,7 +731,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0424",
+    "test_case_id": "SNOW-SNOWPA-0424",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0424",
     "test_type": "Performance",
@@ -745,7 +745,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0432",
+    "test_case_id": "SNOW-SNOWPA-0432",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0432",
     "test_type": "Regression",
@@ -759,7 +759,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0440",
+    "test_case_id": "SNOW-SNOWPA-0440",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0440",
     "test_type": "ETL",
@@ -773,7 +773,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0448",
+    "test_case_id": "SNOW-SNOWPA-0448",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0448",
     "test_type": "Performance",
@@ -787,7 +787,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0456",
+    "test_case_id": "SNOW-SNOWPA-0456",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0456",
     "test_type": "Regression",
@@ -801,7 +801,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0464",
+    "test_case_id": "SNOW-SNOWPA-0464",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0464",
     "test_type": "ETL",
@@ -815,7 +815,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0472",
+    "test_case_id": "SNOW-SNOWPA-0472",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0472",
     "test_type": "Performance",
@@ -829,7 +829,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0480",
+    "test_case_id": "SNOW-SNOWPA-0480",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0480",
     "test_type": "Regression",
@@ -843,7 +843,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0488",
+    "test_case_id": "SNOW-SNOWPA-0488",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0488",
     "test_type": "ETL",
@@ -857,7 +857,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0496",
+    "test_case_id": "SNOW-SNOWPA-0496",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0496",
     "test_type": "Performance",
@@ -871,7 +871,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0504",
+    "test_case_id": "SNOW-SNOWPA-0504",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0504",
     "test_type": "Regression",
@@ -885,7 +885,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0512",
+    "test_case_id": "SNOW-SNOWPA-0512",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0512",
     "test_type": "ETL",
@@ -899,7 +899,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0520",
+    "test_case_id": "SNOW-SNOWPA-0520",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0520",
     "test_type": "Performance",
@@ -913,7 +913,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0528",
+    "test_case_id": "SNOW-SNOWPA-0528",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0528",
     "test_type": "Regression",
@@ -927,7 +927,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0536",
+    "test_case_id": "SNOW-SNOWPA-0536",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0536",
     "test_type": "ETL",
@@ -941,7 +941,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0544",
+    "test_case_id": "SNOW-SNOWPA-0544",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0544",
     "test_type": "Performance",
@@ -955,7 +955,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0552",
+    "test_case_id": "SNOW-SNOWPA-0552",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0552",
     "test_type": "Regression",
@@ -969,7 +969,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0560",
+    "test_case_id": "SNOW-SNOWPA-0560",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0560",
     "test_type": "ETL",
@@ -983,7 +983,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0568",
+    "test_case_id": "SNOW-SNOWPA-0568",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0568",
     "test_type": "Performance",
@@ -997,7 +997,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0576",
+    "test_case_id": "SNOW-SNOWPA-0576",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0576",
     "test_type": "Regression",
@@ -1011,7 +1011,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0584",
+    "test_case_id": "SNOW-SNOWPA-0584",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0584",
     "test_type": "ETL",
@@ -1025,7 +1025,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0592",
+    "test_case_id": "SNOW-SNOWPA-0592",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0592",
     "test_type": "Performance",
@@ -1039,7 +1039,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0600",
+    "test_case_id": "SNOW-SNOWPA-0600",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0600",
     "test_type": "Regression",
@@ -1053,7 +1053,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0608",
+    "test_case_id": "SNOW-SNOWPA-0608",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0608",
     "test_type": "ETL",
@@ -1067,7 +1067,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0616",
+    "test_case_id": "SNOW-SNOWPA-0616",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0616",
     "test_type": "Performance",
@@ -1081,7 +1081,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0624",
+    "test_case_id": "SNOW-SNOWPA-0624",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0624",
     "test_type": "Regression",
@@ -1095,7 +1095,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0632",
+    "test_case_id": "SNOW-SNOWPA-0632",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0632",
     "test_type": "ETL",
@@ -1109,7 +1109,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0640",
+    "test_case_id": "SNOW-SNOWPA-0640",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0640",
     "test_type": "Performance",
@@ -1123,7 +1123,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0648",
+    "test_case_id": "SNOW-SNOWPA-0648",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0648",
     "test_type": "Regression",
@@ -1137,7 +1137,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0656",
+    "test_case_id": "SNOW-SNOWPA-0656",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0656",
     "test_type": "ETL",
@@ -1151,7 +1151,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0664",
+    "test_case_id": "SNOW-SNOWPA-0664",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0664",
     "test_type": "Performance",
@@ -1165,7 +1165,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0672",
+    "test_case_id": "SNOW-SNOWPA-0672",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0672",
     "test_type": "Regression",
@@ -1179,7 +1179,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0680",
+    "test_case_id": "SNOW-SNOWPA-0680",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0680",
     "test_type": "ETL",
@@ -1193,7 +1193,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0688",
+    "test_case_id": "SNOW-SNOWPA-0688",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0688",
     "test_type": "Performance",
@@ -1207,7 +1207,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0696",
+    "test_case_id": "SNOW-SNOWPA-0696",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0696",
     "test_type": "Regression",
@@ -1221,7 +1221,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0704",
+    "test_case_id": "SNOW-SNOWPA-0704",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0704",
     "test_type": "ETL",
@@ -1235,7 +1235,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0712",
+    "test_case_id": "SNOW-SNOWPA-0712",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0712",
     "test_type": "Performance",
@@ -1249,7 +1249,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0720",
+    "test_case_id": "SNOW-SNOWPA-0720",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0720",
     "test_type": "Regression",
@@ -1263,7 +1263,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0728",
+    "test_case_id": "SNOW-SNOWPA-0728",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0728",
     "test_type": "ETL",
@@ -1277,7 +1277,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0736",
+    "test_case_id": "SNOW-SNOWPA-0736",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0736",
     "test_type": "Performance",
@@ -1291,7 +1291,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0744",
+    "test_case_id": "SNOW-SNOWPA-0744",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0744",
     "test_type": "Regression",
@@ -1305,7 +1305,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0752",
+    "test_case_id": "SNOW-SNOWPA-0752",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0752",
     "test_type": "ETL",
@@ -1319,7 +1319,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0760",
+    "test_case_id": "SNOW-SNOWPA-0760",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0760",
     "test_type": "Performance",
@@ -1333,7 +1333,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0768",
+    "test_case_id": "SNOW-SNOWPA-0768",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0768",
     "test_type": "Regression",
@@ -1347,7 +1347,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0776",
+    "test_case_id": "SNOW-SNOWPA-0776",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0776",
     "test_type": "ETL",
@@ -1361,7 +1361,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0784",
+    "test_case_id": "SNOW-SNOWPA-0784",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0784",
     "test_type": "Performance",
@@ -1375,7 +1375,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0792",
+    "test_case_id": "SNOW-SNOWPA-0792",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0792",
     "test_type": "Regression",
@@ -1389,7 +1389,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0800",
+    "test_case_id": "SNOW-SNOWPA-0800",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0800",
     "test_type": "ETL",
@@ -1403,7 +1403,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0808",
+    "test_case_id": "SNOW-SNOWPA-0808",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0808",
     "test_type": "Performance",
@@ -1417,7 +1417,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0816",
+    "test_case_id": "SNOW-SNOWPA-0816",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0816",
     "test_type": "Regression",
@@ -1431,7 +1431,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0824",
+    "test_case_id": "SNOW-SNOWPA-0824",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0824",
     "test_type": "ETL",
@@ -1445,7 +1445,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0832",
+    "test_case_id": "SNOW-SNOWPA-0832",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0832",
     "test_type": "Performance",
@@ -1459,7 +1459,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0840",
+    "test_case_id": "SNOW-SNOWPA-0840",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0840",
     "test_type": "Regression",
@@ -1473,7 +1473,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0848",
+    "test_case_id": "SNOW-SNOWPA-0848",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0848",
     "test_type": "ETL",
@@ -1487,7 +1487,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0856",
+    "test_case_id": "SNOW-SNOWPA-0856",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0856",
     "test_type": "Performance",
@@ -1501,7 +1501,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0864",
+    "test_case_id": "SNOW-SNOWPA-0864",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0864",
     "test_type": "Regression",
@@ -1515,7 +1515,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0872",
+    "test_case_id": "SNOW-SNOWPA-0872",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0872",
     "test_type": "ETL",
@@ -1529,7 +1529,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0880",
+    "test_case_id": "SNOW-SNOWPA-0880",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0880",
     "test_type": "Performance",
@@ -1543,7 +1543,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0888",
+    "test_case_id": "SNOW-SNOWPA-0888",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0888",
     "test_type": "Regression",
@@ -1557,7 +1557,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0896",
+    "test_case_id": "SNOW-SNOWPA-0896",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0896",
     "test_type": "ETL",
@@ -1571,7 +1571,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0904",
+    "test_case_id": "SNOW-SNOWPA-0904",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0904",
     "test_type": "Performance",
@@ -1585,7 +1585,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0912",
+    "test_case_id": "SNOW-SNOWPA-0912",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0912",
     "test_type": "Regression",
@@ -1599,7 +1599,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0920",
+    "test_case_id": "SNOW-SNOWPA-0920",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0920",
     "test_type": "ETL",
@@ -1613,7 +1613,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0928",
+    "test_case_id": "SNOW-SNOWPA-0928",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0928",
     "test_type": "Performance",
@@ -1627,7 +1627,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0936",
+    "test_case_id": "SNOW-SNOWPA-0936",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0936",
     "test_type": "Regression",
@@ -1641,7 +1641,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0944",
+    "test_case_id": "SNOW-SNOWPA-0944",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0944",
     "test_type": "ETL",
@@ -1655,7 +1655,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0952",
+    "test_case_id": "SNOW-SNOWPA-0952",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0952",
     "test_type": "Performance",
@@ -1669,7 +1669,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0960",
+    "test_case_id": "SNOW-SNOWPA-0960",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 0960",
     "test_type": "Regression",
@@ -1683,7 +1683,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0968",
+    "test_case_id": "SNOW-SNOWPA-0968",
     "test_scenario": "Snowpark: error recovery",
     "test_case_name": "Validate error recovery for Snowpark flow 0968",
     "test_type": "ETL",
@@ -1697,7 +1697,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0976",
+    "test_case_id": "SNOW-SNOWPA-0976",
     "test_scenario": "Snowpark: data reconciliation",
     "test_case_name": "Validate data reconciliation for Snowpark flow 0976",
     "test_type": "Performance",
@@ -1711,7 +1711,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0984",
+    "test_case_id": "SNOW-SNOWPA-0984",
     "test_scenario": "Snowpark: role-based authorization",
     "test_case_name": "Validate role-based authorization for Snowpark flow 0984",
     "test_type": "Regression",
@@ -1725,7 +1725,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-0992",
+    "test_case_id": "SNOW-SNOWPA-0992",
     "test_scenario": "Snowpark: retry behavior",
     "test_case_name": "Validate retry behavior for Snowpark flow 0992",
     "test_type": "ETL",
@@ -1739,7 +1739,7 @@ export const SNOWFLAKE_SNOWPARK_SUITE = [
   {
     "product": "Snowflake",
     "module": "Snowpark",
-    "test_case_id": "SF-SNOWPA-1000",
+    "test_case_id": "SNOW-SNOWPA-1000",
     "test_scenario": "Snowpark: regression safety",
     "test_case_name": "Validate regression safety for Snowpark flow 1000",
     "test_type": "Performance",

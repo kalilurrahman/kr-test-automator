@@ -1,21 +1,21 @@
 {
-  "totalCases": 183160,
-  "totalModules": 50477,
-  "uniqueIds": 183160,
+  "totalCases": 206760,
+  "totalModules": 50600,
+  "uniqueIds": 206760,
   "duplicatesRemoved": 6740,
-  "lastUpdated": 1791205355760,
+  "lastUpdated": 1791206048733,
   "byPriority": [
     {
       "name": "High",
-      "value": 71042
+      "value": 88838
     },
     {
       "name": "Medium",
-      "value": 67724
+      "value": 72778
     },
     {
       "name": "Low",
-      "value": 44394
+      "value": 45144
     }
   ],
   "topPlatforms": [
@@ -54,6 +54,34 @@
     {
       "name": "AWS",
       "value": 4250
+    },
+    {
+      "name": "Databricks",
+      "value": 3000
+    },
+    {
+      "name": "Snowflake AI",
+      "value": 3000
+    },
+    {
+      "name": "Palantir Foundry AI",
+      "value": 3000
+    },
+    {
+      "name": "Dataiku",
+      "value": 2200
+    },
+    {
+      "name": "Medidata",
+      "value": 2200
+    },
+    {
+      "name": "IQVIA",
+      "value": 2200
+    },
+    {
+      "name": "Apache Iceberg",
+      "value": 2000
     },
     {
       "name": "SageIntacct",
@@ -234,6 +262,30 @@
     {
       "name": "Strata",
       "value": 1200
+    },
+    {
+      "name": "Claude Code",
+      "value": 1000
+    },
+    {
+      "name": "OpenAI Codex",
+      "value": 1000
+    },
+    {
+      "name": "Gemini Antigravity",
+      "value": 1000
+    },
+    {
+      "name": "GitHub Copilot",
+      "value": 1000
+    },
+    {
+      "name": "Cursor",
+      "value": 1000
+    },
+    {
+      "name": "Windsurf",
+      "value": 1000
     },
     {
       "name": "Azure",
@@ -9750,6 +9802,246 @@
       "high": 460,
       "medium": 495,
       "low": 485
+    },
+    "claudecode": {
+      "label": "Claude Code",
+      "total": 1000,
+      "modules": [
+        "Repository Context",
+        "Code Changes",
+        "Test Authoring",
+        "Debugging",
+        "Refactoring",
+        "Code Review",
+        "Security",
+        "Tool Use and Permissions"
+      ],
+      "high": 800,
+      "medium": 200,
+      "low": 0
+    },
+    "codex": {
+      "label": "OpenAI Codex",
+      "total": 1000,
+      "modules": [
+        "Repository Context",
+        "Code Changes",
+        "Unit Test Generation",
+        "Refactoring",
+        "Code Review",
+        "Secure Coding",
+        "Debugging",
+        "CI and Delivery"
+      ],
+      "high": 800,
+      "medium": 200,
+      "low": 0
+    },
+    "geminiantigravity": {
+      "label": "Gemini Antigravity",
+      "total": 1000,
+      "modules": [
+        "Workspace Context",
+        "Agentic Implementation",
+        "Test Generation",
+        "Debugging Workflow",
+        "Refactoring",
+        "Terminal and Tool Safety",
+        "Secure Operations",
+        "Review Artifacts and Handoff"
+      ],
+      "high": 800,
+      "medium": 200,
+      "low": 0
+    },
+    "githubcopilot": {
+      "label": "GitHub Copilot",
+      "total": 1000,
+      "modules": [
+        "Repository Context",
+        "Agentic Code Changes",
+        "Test Generation",
+        "Debugging",
+        "Refactoring",
+        "Code Review",
+        "Security",
+        "Pull Request Delivery"
+      ],
+      "high": 800,
+      "medium": 200,
+      "low": 0
+    },
+    "cursor": {
+      "label": "Cursor",
+      "total": 1000,
+      "modules": [
+        "Codebase Context",
+        "Agentic Editing",
+        "Test Authoring",
+        "Debugging",
+        "Refactoring",
+        "Diff Review",
+        "Security",
+        "Terminal and Approval Safety"
+      ],
+      "high": 800,
+      "medium": 200,
+      "low": 0
+    },
+    "windsurf": {
+      "label": "Windsurf",
+      "total": 1000,
+      "modules": [
+        "Codebase Context",
+        "Agentic Implementation",
+        "Test Generation",
+        "Debugging",
+        "Refactoring",
+        "Workflow and Tool Safety",
+        "Secure Coding",
+        "Change Review and Handoff"
+      ],
+      "high": 800,
+      "medium": 200,
+      "low": 0
+    },
+    "dataiku": {
+      "label": "Dataiku",
+      "total": 2200,
+      "modules": [
+        "Flow and Lineage",
+        "Visual Recipes",
+        "Datasets and Connections",
+        "Code Environments",
+        "Automation Scenarios",
+        "Machine Learning and MLOps",
+        "LLM Mesh and Prompt Workflows",
+        "Agents and Managed Tools",
+        "Governance and Data Quality",
+        "Bundles and Deployment",
+        "API and Automation"
+      ],
+      "high": 1463,
+      "medium": 737,
+      "low": 0
+    },
+    "apacheiceberg": {
+      "label": "Apache Iceberg",
+      "total": 2000,
+      "modules": [
+        "Table Metadata and Commits",
+        "Schema Evolution",
+        "Partition Evolution and Hidden Partitioning",
+        "Snapshots and Time Travel",
+        "Transactions and Concurrency",
+        "Compaction and Table Maintenance",
+        "Catalogs and Namespace Operations",
+        "Deletes and Row-Level Changes",
+        "Security and Governance",
+        "Engine and Format Interoperability"
+      ],
+      "high": 1397,
+      "medium": 603,
+      "low": 0
+    },
+    "medidata": {
+      "label": "Medidata",
+      "total": 2200,
+      "modules": [
+        "Rave EDC",
+        "Rave eCOA and ePRO",
+        "Rave eConsent",
+        "Rave RTSM",
+        "Rave CTMS",
+        "Rave eTMF",
+        "Risk-Based Quality Management",
+        "Safety and Medical Coding",
+        "Rave Imaging and External Data",
+        "Clinical Integrations",
+        "Audit and Compliance"
+      ],
+      "high": 2200,
+      "medium": 0,
+      "low": 0
+    },
+    "iqvia": {
+      "label": "IQVIA",
+      "total": 2200,
+      "modules": [
+        "Clinical Data Management",
+        "Clinical Trial Management",
+        "Safety and Pharmacovigilance",
+        "Trial Master File",
+        "Regulatory Information Management",
+        "Real-World Data and Evidence",
+        "Commercial Data and Analytics",
+        "Patient Engagement",
+        "Clinical Analytics",
+        "Data Integration and Interoperability",
+        "Identity, Privacy, and Compliance"
+      ],
+      "high": 2200,
+      "medium": 0,
+      "low": 0
+    },
+    "databricks": {
+      "label": "Databricks",
+      "total": 3000,
+      "modules": [
+        "Delta Lake",
+        "Jobs",
+        "Notebooks",
+        "MLflow",
+        "Model Evaluation",
+        "Unity Catalog",
+        "Streaming",
+        "Structured Streaming",
+        "SQL Warehouse"
+      ],
+      "high": 1912,
+      "medium": 838,
+      "low": 250
+    },
+    "snowflakeai": {
+      "label": "Snowflake AI",
+      "total": 3000,
+      "modules": [
+        "Data Quality",
+        "ELT Pipeline",
+        "Schema Governance",
+        "RBAC and Masking",
+        "Performance",
+        "Performance and Cost Controls",
+        "Streams and Tasks",
+        "Data Sharing",
+        "Secure Data Sharing",
+        "Snowpark",
+        "Snowpark and UDFs"
+      ],
+      "high": 1912,
+      "medium": 838,
+      "low": 250
+    },
+    "foundryai": {
+      "label": "Palantir Foundry AI",
+      "total": 3000,
+      "modules": [
+        "AIP Logic",
+        "Workflow",
+        "Workflows",
+        "Ontology",
+        "Ontology and Actions",
+        "Transforms",
+        "Transforms and Pipelines",
+        "Data Lineage",
+        "Access Control",
+        "SDK CI",
+        "SDK and CI",
+        "Object Explorer"
+      ],
+      "high": 1912,
+      "medium": 838,
+      "low": 250
     },
     "salesforce": {
       "label": "Salesforce",

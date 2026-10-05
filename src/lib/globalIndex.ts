@@ -270,19 +270,19 @@ async function build(): Promise<GlobalIndex> {
       const parsed = await getCachedCsv(cloud.csv);
       if (!parsed) return;
       for (const r of parsed.rows) {
-        const id = pick(r, ["Test Case ID", "id", "ID"]);
+        const id = pick(r, ["Test Case ID", "test_case_id", "id", "ID"]);
         if (!id) continue;
         tryAdd({
           id,
           source: "salesforce",
           sourceLabel: "Salesforce",
           module: cloud.name,
-          scenario: pick(r, ["Test Scenario", "Scenario"]),
+          scenario: pick(r, ["Test Scenario", "test_scenario", "Scenario"]),
           priority: pick(r, ["Priority"]),
-          testType: pick(r, ["Test Type", "Type"]),
-          preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
-          steps: pick(r, ["Steps"]),
-          expected: pick(r, ["Expected Result", "Expected"]),
+          testType: pick(r, ["Test Type", "test_type", "Type"]),
+          preconditions: pick(r, ["Preconditions", "preconditions", "Pre-conditions"]),
+          steps: pick(r, ["Steps", "test_steps"]),
+          expected: pick(r, ["Expected Result", "expected_result", "Expected"]),
           productRoute: "/salesforce",
           moduleId: cloud.id,
           raw: r,
@@ -300,19 +300,19 @@ async function build(): Promise<GlobalIndex> {
           const parsed = await getCachedCsv(url);
           if (!parsed) return;
           for (const r of parsed.rows) {
-            const id = pick(r, ["Test Case ID", "id", "ID", "Case ID"]);
+            const id = pick(r, ["Test Case ID", "test_case_id", "id", "ID", "Case ID"]);
             if (!id) continue;
             tryAdd({
               id,
               source: p.id,
               sourceLabel: p.label,
-              module: pick(r, ["Module", "Domain"]) || mod.label,
-              scenario: pick(r, ["Test Scenario", "Scenario", "scenario"]),
+              module: pick(r, ["Module", "module", "Domain"]) || mod.label,
+              scenario: pick(r, ["Test Scenario", "test_scenario", "Scenario", "scenario"]),
               priority: pick(r, ["Priority", "priority"]),
-              testType: pick(r, ["Test Type", "Type", "type"]),
-              preconditions: pick(r, ["Preconditions", "Pre-conditions"]),
-              steps: pick(r, ["Steps", "steps"]),
-              expected: pick(r, ["Expected Result", "Expected"]),
+              testType: pick(r, ["Test Type", "test_type", "Type", "type"]),
+              preconditions: pick(r, ["Preconditions", "preconditions", "Pre-conditions"]),
+              steps: pick(r, ["Steps", "test_steps", "steps"]),
+              expected: pick(r, ["Expected Result", "expected_result", "Expected"]),
               productRoute: `/p/${p.id}`,
               moduleId: mod.id,
               raw: r,

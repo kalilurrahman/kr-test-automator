@@ -92,8 +92,10 @@ npm run dev
 Run the pack generator from the repository root:
 
 ```sh
-python scripts/generate_app_data_artifacts.py
+npm run generate:app-data
 ```
+
+You can also call `python scripts/generate_app_data_artifacts.py` directly.
 
 It generates each pack's CSV (used by the app's table and search), JSON and TypeScript data files, manifests, and `src/data/generatedDataPackRegistry.ts`. The registry connects those manifests to the Platforms catalog and global case index; `vite.config.ts` copies the pack folders into the built app. To add another generated pack, add its folder metadata to `scripts/generate_app_data_pack_registry.py` and its static-copy target to `vite.config.ts`, then rerun the generator.
 

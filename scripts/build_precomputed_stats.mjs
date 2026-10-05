@@ -12,7 +12,7 @@
  * datasets change) — the runtime falls back to live CSV scans if the snapshot
  * is missing.
  */
-import { readFile, writeFile, readdir, stat } from "node:fs/promises";
+import { readFile, writeFile, readdir, stat, rename } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,6 +20,12 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const PUBLIC = path.join(ROOT, "public");
+
+async function writeGeneratedFile(file, contents) {
+  const temporary = `${file}.tmp`;
+  await writeFile(temporary, contents);
+  await rename(temporary, file);
+}
 
 // ---------- minimal CSV parser (matches src/lib/csv.ts) ----------------------
 function parseCsv(text) {
@@ -213,8 +219,8 @@ async function ingestCsv(file, source, sourceLabel, defaultModule) {
   if (!text || text.trimStart().startsWith("<")) return;
   const { rows } = parseObjects(text);
   for (const r of rows) {
-    const id = pick(r, ["Test Case ID", "id", "ID", "Case ID"]);
-    const mod = pick(r, ["Module", "Domain", "Capability"]) || defaultModule;
+    const id = pick(r, ["Test Case ID", "test_case_id", "id", "ID", "Case ID"]);
+    const mod = pick(r, ["Module", "module", "Domain", "Capability"]) || defaultModule;
     const pri = pick(r, ["Priority", "priority"]);
     addCase(id, source, sourceLabel, mod, pri);
   }
@@ -331,14 +337,14 @@ const stats = {
   ),
 };
 
-await writeFile(path.join(PUBLIC, "precomputed-stats.json"), JSON.stringify(stats, null, 2));
+await writeGeneratedFile(path.join(PUBLIC, "precomputed-stats.json"), JSON.stringify(stats, null, 2));
 console.log(`✅ precomputed-stats.json — ${totalCases.toLocaleString()} cases, ${byId.size.toLocaleString()} unique IDs, ${duplicatesRemoved.toLocaleString()} duplicates removed.`);
 
 const industryStatsFile = path.join(PUBLIC, "data", "industry_stats.json");
 if (existsSync(industryStatsFile)) {
   try {
     const industryStats = JSON.parse(await readFile(industryStatsFile, "utf8"));
-    await writeFile(
+    await writeGeneratedFile(
       path.join(PUBLIC, "data", "industry_stats_summary.json"),
       JSON.stringify({ summary: industryStats.summary, byIndustry: industryStats.byIndustry }),
     );
@@ -352,6 +358,6 @@ const indexPayload = {
   builtAt: Date.now(),
   ids: Object.fromEntries([...byId.entries()].map(([id, v]) => [id, [v.source, v.module]])),
 };
-await writeFile(path.join(PUBLIC, "precomputed-index.json"), JSON.stringify(indexPayload));
+await writeGeneratedFile(path.join(PUBLIC, "precomputed-index.json"), JSON.stringify(indexPayload));
 const sizeMb = (Buffer.byteLength(JSON.stringify(indexPayload)) / 1024 / 1024).toFixed(2);
 console.log(`✅ precomputed-index.json — ${byId.size.toLocaleString()} IDs (${sizeMb} MB).`);

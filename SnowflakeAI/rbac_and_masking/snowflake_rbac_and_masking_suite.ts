@@ -3,7 +3,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0004",
+    "test_case_id": "SNOW-RBACAN-0004",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0004",
     "test_type": "Performance",
@@ -17,7 +17,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0012",
+    "test_case_id": "SNOW-RBACAN-0012",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0012",
     "test_type": "Regression",
@@ -31,7 +31,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0020",
+    "test_case_id": "SNOW-RBACAN-0020",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0020",
     "test_type": "ETL",
@@ -45,7 +45,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0028",
+    "test_case_id": "SNOW-RBACAN-0028",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0028",
     "test_type": "Performance",
@@ -59,7 +59,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0036",
+    "test_case_id": "SNOW-RBACAN-0036",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0036",
     "test_type": "Regression",
@@ -73,7 +73,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0044",
+    "test_case_id": "SNOW-RBACAN-0044",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0044",
     "test_type": "ETL",
@@ -87,7 +87,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0052",
+    "test_case_id": "SNOW-RBACAN-0052",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0052",
     "test_type": "Performance",
@@ -101,7 +101,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0060",
+    "test_case_id": "SNOW-RBACAN-0060",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0060",
     "test_type": "Regression",
@@ -115,7 +115,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0068",
+    "test_case_id": "SNOW-RBACAN-0068",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0068",
     "test_type": "ETL",
@@ -129,7 +129,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0076",
+    "test_case_id": "SNOW-RBACAN-0076",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0076",
     "test_type": "Performance",
@@ -143,7 +143,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0084",
+    "test_case_id": "SNOW-RBACAN-0084",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0084",
     "test_type": "Regression",
@@ -157,7 +157,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0092",
+    "test_case_id": "SNOW-RBACAN-0092",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0092",
     "test_type": "ETL",
@@ -171,7 +171,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0100",
+    "test_case_id": "SNOW-RBACAN-0100",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0100",
     "test_type": "Performance",
@@ -185,7 +185,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0108",
+    "test_case_id": "SNOW-RBACAN-0108",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0108",
     "test_type": "Regression",
@@ -199,7 +199,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0116",
+    "test_case_id": "SNOW-RBACAN-0116",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0116",
     "test_type": "ETL",
@@ -213,7 +213,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0124",
+    "test_case_id": "SNOW-RBACAN-0124",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0124",
     "test_type": "Performance",
@@ -227,7 +227,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0132",
+    "test_case_id": "SNOW-RBACAN-0132",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0132",
     "test_type": "Regression",
@@ -241,7 +241,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0140",
+    "test_case_id": "SNOW-RBACAN-0140",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0140",
     "test_type": "ETL",
@@ -255,7 +255,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0148",
+    "test_case_id": "SNOW-RBACAN-0148",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0148",
     "test_type": "Performance",
@@ -269,7 +269,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0156",
+    "test_case_id": "SNOW-RBACAN-0156",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0156",
     "test_type": "Regression",
@@ -283,7 +283,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0164",
+    "test_case_id": "SNOW-RBACAN-0164",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0164",
     "test_type": "ETL",
@@ -297,7 +297,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0172",
+    "test_case_id": "SNOW-RBACAN-0172",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0172",
     "test_type": "Performance",
@@ -311,7 +311,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0180",
+    "test_case_id": "SNOW-RBACAN-0180",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0180",
     "test_type": "Regression",
@@ -325,7 +325,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0188",
+    "test_case_id": "SNOW-RBACAN-0188",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0188",
     "test_type": "ETL",
@@ -339,7 +339,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0196",
+    "test_case_id": "SNOW-RBACAN-0196",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0196",
     "test_type": "Performance",
@@ -353,7 +353,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0204",
+    "test_case_id": "SNOW-RBACAN-0204",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0204",
     "test_type": "Regression",
@@ -367,7 +367,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0212",
+    "test_case_id": "SNOW-RBACAN-0212",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0212",
     "test_type": "ETL",
@@ -381,7 +381,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0220",
+    "test_case_id": "SNOW-RBACAN-0220",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0220",
     "test_type": "Performance",
@@ -395,7 +395,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0228",
+    "test_case_id": "SNOW-RBACAN-0228",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0228",
     "test_type": "Regression",
@@ -409,7 +409,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0236",
+    "test_case_id": "SNOW-RBACAN-0236",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0236",
     "test_type": "ETL",
@@ -423,7 +423,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0244",
+    "test_case_id": "SNOW-RBACAN-0244",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0244",
     "test_type": "Performance",
@@ -437,7 +437,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0252",
+    "test_case_id": "SNOW-RBACAN-0252",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0252",
     "test_type": "Regression",
@@ -451,7 +451,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0260",
+    "test_case_id": "SNOW-RBACAN-0260",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0260",
     "test_type": "ETL",
@@ -465,7 +465,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0268",
+    "test_case_id": "SNOW-RBACAN-0268",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0268",
     "test_type": "Performance",
@@ -479,7 +479,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0276",
+    "test_case_id": "SNOW-RBACAN-0276",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0276",
     "test_type": "Regression",
@@ -493,7 +493,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0284",
+    "test_case_id": "SNOW-RBACAN-0284",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0284",
     "test_type": "ETL",
@@ -507,7 +507,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0292",
+    "test_case_id": "SNOW-RBACAN-0292",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0292",
     "test_type": "Performance",
@@ -521,7 +521,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0300",
+    "test_case_id": "SNOW-RBACAN-0300",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0300",
     "test_type": "Regression",
@@ -535,7 +535,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0308",
+    "test_case_id": "SNOW-RBACAN-0308",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0308",
     "test_type": "ETL",
@@ -549,7 +549,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0316",
+    "test_case_id": "SNOW-RBACAN-0316",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0316",
     "test_type": "Performance",
@@ -563,7 +563,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0324",
+    "test_case_id": "SNOW-RBACAN-0324",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0324",
     "test_type": "Regression",
@@ -577,7 +577,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0332",
+    "test_case_id": "SNOW-RBACAN-0332",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0332",
     "test_type": "ETL",
@@ -591,7 +591,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0340",
+    "test_case_id": "SNOW-RBACAN-0340",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0340",
     "test_type": "Performance",
@@ -605,7 +605,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0348",
+    "test_case_id": "SNOW-RBACAN-0348",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0348",
     "test_type": "Regression",
@@ -619,7 +619,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0356",
+    "test_case_id": "SNOW-RBACAN-0356",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0356",
     "test_type": "ETL",
@@ -633,7 +633,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0364",
+    "test_case_id": "SNOW-RBACAN-0364",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0364",
     "test_type": "Performance",
@@ -647,7 +647,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0372",
+    "test_case_id": "SNOW-RBACAN-0372",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0372",
     "test_type": "Regression",
@@ -661,7 +661,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0380",
+    "test_case_id": "SNOW-RBACAN-0380",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0380",
     "test_type": "ETL",
@@ -675,7 +675,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0388",
+    "test_case_id": "SNOW-RBACAN-0388",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0388",
     "test_type": "Performance",
@@ -689,7 +689,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0396",
+    "test_case_id": "SNOW-RBACAN-0396",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0396",
     "test_type": "Regression",
@@ -703,7 +703,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0404",
+    "test_case_id": "SNOW-RBACAN-0404",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0404",
     "test_type": "ETL",
@@ -717,7 +717,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0412",
+    "test_case_id": "SNOW-RBACAN-0412",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0412",
     "test_type": "Performance",
@@ -731,7 +731,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0420",
+    "test_case_id": "SNOW-RBACAN-0420",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0420",
     "test_type": "Regression",
@@ -745,7 +745,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0428",
+    "test_case_id": "SNOW-RBACAN-0428",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0428",
     "test_type": "ETL",
@@ -759,7 +759,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0436",
+    "test_case_id": "SNOW-RBACAN-0436",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0436",
     "test_type": "Performance",
@@ -773,7 +773,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0444",
+    "test_case_id": "SNOW-RBACAN-0444",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0444",
     "test_type": "Regression",
@@ -787,7 +787,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0452",
+    "test_case_id": "SNOW-RBACAN-0452",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0452",
     "test_type": "ETL",
@@ -801,7 +801,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0460",
+    "test_case_id": "SNOW-RBACAN-0460",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0460",
     "test_type": "Performance",
@@ -815,7 +815,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0468",
+    "test_case_id": "SNOW-RBACAN-0468",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0468",
     "test_type": "Regression",
@@ -829,7 +829,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0476",
+    "test_case_id": "SNOW-RBACAN-0476",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0476",
     "test_type": "ETL",
@@ -843,7 +843,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0484",
+    "test_case_id": "SNOW-RBACAN-0484",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0484",
     "test_type": "Performance",
@@ -857,7 +857,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0492",
+    "test_case_id": "SNOW-RBACAN-0492",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0492",
     "test_type": "Regression",
@@ -871,7 +871,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0500",
+    "test_case_id": "SNOW-RBACAN-0500",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0500",
     "test_type": "ETL",
@@ -885,7 +885,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0508",
+    "test_case_id": "SNOW-RBACAN-0508",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0508",
     "test_type": "Performance",
@@ -899,7 +899,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0516",
+    "test_case_id": "SNOW-RBACAN-0516",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0516",
     "test_type": "Regression",
@@ -913,7 +913,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0524",
+    "test_case_id": "SNOW-RBACAN-0524",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0524",
     "test_type": "ETL",
@@ -927,7 +927,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0532",
+    "test_case_id": "SNOW-RBACAN-0532",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0532",
     "test_type": "Performance",
@@ -941,7 +941,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0540",
+    "test_case_id": "SNOW-RBACAN-0540",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0540",
     "test_type": "Regression",
@@ -955,7 +955,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0548",
+    "test_case_id": "SNOW-RBACAN-0548",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0548",
     "test_type": "ETL",
@@ -969,7 +969,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0556",
+    "test_case_id": "SNOW-RBACAN-0556",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0556",
     "test_type": "Performance",
@@ -983,7 +983,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0564",
+    "test_case_id": "SNOW-RBACAN-0564",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0564",
     "test_type": "Regression",
@@ -997,7 +997,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0572",
+    "test_case_id": "SNOW-RBACAN-0572",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0572",
     "test_type": "ETL",
@@ -1011,7 +1011,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0580",
+    "test_case_id": "SNOW-RBACAN-0580",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0580",
     "test_type": "Performance",
@@ -1025,7 +1025,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0588",
+    "test_case_id": "SNOW-RBACAN-0588",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0588",
     "test_type": "Regression",
@@ -1039,7 +1039,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0596",
+    "test_case_id": "SNOW-RBACAN-0596",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0596",
     "test_type": "ETL",
@@ -1053,7 +1053,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0604",
+    "test_case_id": "SNOW-RBACAN-0604",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0604",
     "test_type": "Performance",
@@ -1067,7 +1067,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0612",
+    "test_case_id": "SNOW-RBACAN-0612",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0612",
     "test_type": "Regression",
@@ -1081,7 +1081,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0620",
+    "test_case_id": "SNOW-RBACAN-0620",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0620",
     "test_type": "ETL",
@@ -1095,7 +1095,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0628",
+    "test_case_id": "SNOW-RBACAN-0628",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0628",
     "test_type": "Performance",
@@ -1109,7 +1109,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0636",
+    "test_case_id": "SNOW-RBACAN-0636",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0636",
     "test_type": "Regression",
@@ -1123,7 +1123,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0644",
+    "test_case_id": "SNOW-RBACAN-0644",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0644",
     "test_type": "ETL",
@@ -1137,7 +1137,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0652",
+    "test_case_id": "SNOW-RBACAN-0652",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0652",
     "test_type": "Performance",
@@ -1151,7 +1151,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0660",
+    "test_case_id": "SNOW-RBACAN-0660",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0660",
     "test_type": "Regression",
@@ -1165,7 +1165,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0668",
+    "test_case_id": "SNOW-RBACAN-0668",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0668",
     "test_type": "ETL",
@@ -1179,7 +1179,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0676",
+    "test_case_id": "SNOW-RBACAN-0676",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0676",
     "test_type": "Performance",
@@ -1193,7 +1193,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0684",
+    "test_case_id": "SNOW-RBACAN-0684",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0684",
     "test_type": "Regression",
@@ -1207,7 +1207,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0692",
+    "test_case_id": "SNOW-RBACAN-0692",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0692",
     "test_type": "ETL",
@@ -1221,7 +1221,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0700",
+    "test_case_id": "SNOW-RBACAN-0700",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0700",
     "test_type": "Performance",
@@ -1235,7 +1235,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0708",
+    "test_case_id": "SNOW-RBACAN-0708",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0708",
     "test_type": "Regression",
@@ -1249,7 +1249,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0716",
+    "test_case_id": "SNOW-RBACAN-0716",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0716",
     "test_type": "ETL",
@@ -1263,7 +1263,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0724",
+    "test_case_id": "SNOW-RBACAN-0724",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0724",
     "test_type": "Performance",
@@ -1277,7 +1277,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0732",
+    "test_case_id": "SNOW-RBACAN-0732",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0732",
     "test_type": "Regression",
@@ -1291,7 +1291,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0740",
+    "test_case_id": "SNOW-RBACAN-0740",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0740",
     "test_type": "ETL",
@@ -1305,7 +1305,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0748",
+    "test_case_id": "SNOW-RBACAN-0748",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0748",
     "test_type": "Performance",
@@ -1319,7 +1319,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0756",
+    "test_case_id": "SNOW-RBACAN-0756",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0756",
     "test_type": "Regression",
@@ -1333,7 +1333,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0764",
+    "test_case_id": "SNOW-RBACAN-0764",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0764",
     "test_type": "ETL",
@@ -1347,7 +1347,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0772",
+    "test_case_id": "SNOW-RBACAN-0772",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0772",
     "test_type": "Performance",
@@ -1361,7 +1361,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0780",
+    "test_case_id": "SNOW-RBACAN-0780",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0780",
     "test_type": "Regression",
@@ -1375,7 +1375,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0788",
+    "test_case_id": "SNOW-RBACAN-0788",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0788",
     "test_type": "ETL",
@@ -1389,7 +1389,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0796",
+    "test_case_id": "SNOW-RBACAN-0796",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0796",
     "test_type": "Performance",
@@ -1403,7 +1403,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0804",
+    "test_case_id": "SNOW-RBACAN-0804",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0804",
     "test_type": "Regression",
@@ -1417,7 +1417,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0812",
+    "test_case_id": "SNOW-RBACAN-0812",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0812",
     "test_type": "ETL",
@@ -1431,7 +1431,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0820",
+    "test_case_id": "SNOW-RBACAN-0820",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0820",
     "test_type": "Performance",
@@ -1445,7 +1445,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0828",
+    "test_case_id": "SNOW-RBACAN-0828",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0828",
     "test_type": "Regression",
@@ -1459,7 +1459,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0836",
+    "test_case_id": "SNOW-RBACAN-0836",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0836",
     "test_type": "ETL",
@@ -1473,7 +1473,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0844",
+    "test_case_id": "SNOW-RBACAN-0844",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0844",
     "test_type": "Performance",
@@ -1487,7 +1487,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0852",
+    "test_case_id": "SNOW-RBACAN-0852",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0852",
     "test_type": "Regression",
@@ -1501,7 +1501,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0860",
+    "test_case_id": "SNOW-RBACAN-0860",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0860",
     "test_type": "ETL",
@@ -1515,7 +1515,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0868",
+    "test_case_id": "SNOW-RBACAN-0868",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0868",
     "test_type": "Performance",
@@ -1529,7 +1529,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0876",
+    "test_case_id": "SNOW-RBACAN-0876",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0876",
     "test_type": "Regression",
@@ -1543,7 +1543,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0884",
+    "test_case_id": "SNOW-RBACAN-0884",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0884",
     "test_type": "ETL",
@@ -1557,7 +1557,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0892",
+    "test_case_id": "SNOW-RBACAN-0892",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0892",
     "test_type": "Performance",
@@ -1571,7 +1571,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0900",
+    "test_case_id": "SNOW-RBACAN-0900",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0900",
     "test_type": "Regression",
@@ -1585,7 +1585,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0908",
+    "test_case_id": "SNOW-RBACAN-0908",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0908",
     "test_type": "ETL",
@@ -1599,7 +1599,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0916",
+    "test_case_id": "SNOW-RBACAN-0916",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0916",
     "test_type": "Performance",
@@ -1613,7 +1613,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0924",
+    "test_case_id": "SNOW-RBACAN-0924",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0924",
     "test_type": "Regression",
@@ -1627,7 +1627,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0932",
+    "test_case_id": "SNOW-RBACAN-0932",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0932",
     "test_type": "ETL",
@@ -1641,7 +1641,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0940",
+    "test_case_id": "SNOW-RBACAN-0940",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0940",
     "test_type": "Performance",
@@ -1655,7 +1655,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0948",
+    "test_case_id": "SNOW-RBACAN-0948",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0948",
     "test_type": "Regression",
@@ -1669,7 +1669,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0956",
+    "test_case_id": "SNOW-RBACAN-0956",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0956",
     "test_type": "ETL",
@@ -1683,7 +1683,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0964",
+    "test_case_id": "SNOW-RBACAN-0964",
     "test_scenario": "RBAC and Masking: role-based authorization",
     "test_case_name": "Validate role-based authorization for RBAC and Masking flow 0964",
     "test_type": "Performance",
@@ -1697,7 +1697,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0972",
+    "test_case_id": "SNOW-RBACAN-0972",
     "test_scenario": "RBAC and Masking: retry behavior",
     "test_case_name": "Validate retry behavior for RBAC and Masking flow 0972",
     "test_type": "Regression",
@@ -1711,7 +1711,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0980",
+    "test_case_id": "SNOW-RBACAN-0980",
     "test_scenario": "RBAC and Masking: regression safety",
     "test_case_name": "Validate regression safety for RBAC and Masking flow 0980",
     "test_type": "ETL",
@@ -1725,7 +1725,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0988",
+    "test_case_id": "SNOW-RBACAN-0988",
     "test_scenario": "RBAC and Masking: error recovery",
     "test_case_name": "Validate error recovery for RBAC and Masking flow 0988",
     "test_type": "Performance",
@@ -1739,7 +1739,7 @@ export const SNOWFLAKE_RBAC_AND_MASKING_SUITE = [
   {
     "product": "Snowflake",
     "module": "RBAC and Masking",
-    "test_case_id": "SF-RBACAN-0996",
+    "test_case_id": "SNOW-RBACAN-0996",
     "test_scenario": "RBAC and Masking: data reconciliation",
     "test_case_name": "Validate data reconciliation for RBAC and Masking flow 0996",
     "test_type": "Regression",

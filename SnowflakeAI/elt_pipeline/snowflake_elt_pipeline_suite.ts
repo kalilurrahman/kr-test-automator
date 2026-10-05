@@ -3,7 +3,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0002",
+    "test_case_id": "SNOW-ELTPIP-0002",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0002",
     "test_type": "ETL",
@@ -17,7 +17,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0010",
+    "test_case_id": "SNOW-ELTPIP-0010",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0010",
     "test_type": "Performance",
@@ -31,7 +31,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0018",
+    "test_case_id": "SNOW-ELTPIP-0018",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0018",
     "test_type": "Regression",
@@ -45,7 +45,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0026",
+    "test_case_id": "SNOW-ELTPIP-0026",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0026",
     "test_type": "ETL",
@@ -59,7 +59,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0034",
+    "test_case_id": "SNOW-ELTPIP-0034",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0034",
     "test_type": "Performance",
@@ -73,7 +73,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0042",
+    "test_case_id": "SNOW-ELTPIP-0042",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0042",
     "test_type": "Regression",
@@ -87,7 +87,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0050",
+    "test_case_id": "SNOW-ELTPIP-0050",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0050",
     "test_type": "ETL",
@@ -101,7 +101,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0058",
+    "test_case_id": "SNOW-ELTPIP-0058",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0058",
     "test_type": "Performance",
@@ -115,7 +115,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0066",
+    "test_case_id": "SNOW-ELTPIP-0066",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0066",
     "test_type": "Regression",
@@ -129,7 +129,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0074",
+    "test_case_id": "SNOW-ELTPIP-0074",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0074",
     "test_type": "ETL",
@@ -143,7 +143,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0082",
+    "test_case_id": "SNOW-ELTPIP-0082",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0082",
     "test_type": "Performance",
@@ -157,7 +157,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0090",
+    "test_case_id": "SNOW-ELTPIP-0090",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0090",
     "test_type": "Regression",
@@ -171,7 +171,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0098",
+    "test_case_id": "SNOW-ELTPIP-0098",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0098",
     "test_type": "ETL",
@@ -185,7 +185,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0106",
+    "test_case_id": "SNOW-ELTPIP-0106",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0106",
     "test_type": "Performance",
@@ -199,7 +199,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0114",
+    "test_case_id": "SNOW-ELTPIP-0114",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0114",
     "test_type": "Regression",
@@ -213,7 +213,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0122",
+    "test_case_id": "SNOW-ELTPIP-0122",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0122",
     "test_type": "ETL",
@@ -227,7 +227,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0130",
+    "test_case_id": "SNOW-ELTPIP-0130",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0130",
     "test_type": "Performance",
@@ -241,7 +241,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0138",
+    "test_case_id": "SNOW-ELTPIP-0138",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0138",
     "test_type": "Regression",
@@ -255,7 +255,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0146",
+    "test_case_id": "SNOW-ELTPIP-0146",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0146",
     "test_type": "ETL",
@@ -269,7 +269,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0154",
+    "test_case_id": "SNOW-ELTPIP-0154",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0154",
     "test_type": "Performance",
@@ -283,7 +283,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0162",
+    "test_case_id": "SNOW-ELTPIP-0162",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0162",
     "test_type": "Regression",
@@ -297,7 +297,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0170",
+    "test_case_id": "SNOW-ELTPIP-0170",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0170",
     "test_type": "ETL",
@@ -311,7 +311,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0178",
+    "test_case_id": "SNOW-ELTPIP-0178",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0178",
     "test_type": "Performance",
@@ -325,7 +325,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0186",
+    "test_case_id": "SNOW-ELTPIP-0186",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0186",
     "test_type": "Regression",
@@ -339,7 +339,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0194",
+    "test_case_id": "SNOW-ELTPIP-0194",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0194",
     "test_type": "ETL",
@@ -353,7 +353,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0202",
+    "test_case_id": "SNOW-ELTPIP-0202",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0202",
     "test_type": "Performance",
@@ -367,7 +367,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0210",
+    "test_case_id": "SNOW-ELTPIP-0210",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0210",
     "test_type": "Regression",
@@ -381,7 +381,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0218",
+    "test_case_id": "SNOW-ELTPIP-0218",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0218",
     "test_type": "ETL",
@@ -395,7 +395,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0226",
+    "test_case_id": "SNOW-ELTPIP-0226",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0226",
     "test_type": "Performance",
@@ -409,7 +409,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0234",
+    "test_case_id": "SNOW-ELTPIP-0234",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0234",
     "test_type": "Regression",
@@ -423,7 +423,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0242",
+    "test_case_id": "SNOW-ELTPIP-0242",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0242",
     "test_type": "ETL",
@@ -437,7 +437,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0250",
+    "test_case_id": "SNOW-ELTPIP-0250",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0250",
     "test_type": "Performance",
@@ -451,7 +451,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0258",
+    "test_case_id": "SNOW-ELTPIP-0258",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0258",
     "test_type": "Regression",
@@ -465,7 +465,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0266",
+    "test_case_id": "SNOW-ELTPIP-0266",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0266",
     "test_type": "ETL",
@@ -479,7 +479,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0274",
+    "test_case_id": "SNOW-ELTPIP-0274",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0274",
     "test_type": "Performance",
@@ -493,7 +493,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0282",
+    "test_case_id": "SNOW-ELTPIP-0282",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0282",
     "test_type": "Regression",
@@ -507,7 +507,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0290",
+    "test_case_id": "SNOW-ELTPIP-0290",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0290",
     "test_type": "ETL",
@@ -521,7 +521,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0298",
+    "test_case_id": "SNOW-ELTPIP-0298",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0298",
     "test_type": "Performance",
@@ -535,7 +535,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0306",
+    "test_case_id": "SNOW-ELTPIP-0306",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0306",
     "test_type": "Regression",
@@ -549,7 +549,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0314",
+    "test_case_id": "SNOW-ELTPIP-0314",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0314",
     "test_type": "ETL",
@@ -563,7 +563,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0322",
+    "test_case_id": "SNOW-ELTPIP-0322",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0322",
     "test_type": "Performance",
@@ -577,7 +577,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0330",
+    "test_case_id": "SNOW-ELTPIP-0330",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0330",
     "test_type": "Regression",
@@ -591,7 +591,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0338",
+    "test_case_id": "SNOW-ELTPIP-0338",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0338",
     "test_type": "ETL",
@@ -605,7 +605,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0346",
+    "test_case_id": "SNOW-ELTPIP-0346",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0346",
     "test_type": "Performance",
@@ -619,7 +619,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0354",
+    "test_case_id": "SNOW-ELTPIP-0354",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0354",
     "test_type": "Regression",
@@ -633,7 +633,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0362",
+    "test_case_id": "SNOW-ELTPIP-0362",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0362",
     "test_type": "ETL",
@@ -647,7 +647,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0370",
+    "test_case_id": "SNOW-ELTPIP-0370",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0370",
     "test_type": "Performance",
@@ -661,7 +661,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0378",
+    "test_case_id": "SNOW-ELTPIP-0378",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0378",
     "test_type": "Regression",
@@ -675,7 +675,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0386",
+    "test_case_id": "SNOW-ELTPIP-0386",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0386",
     "test_type": "ETL",
@@ -689,7 +689,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0394",
+    "test_case_id": "SNOW-ELTPIP-0394",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0394",
     "test_type": "Performance",
@@ -703,7 +703,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0402",
+    "test_case_id": "SNOW-ELTPIP-0402",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0402",
     "test_type": "Regression",
@@ -717,7 +717,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0410",
+    "test_case_id": "SNOW-ELTPIP-0410",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0410",
     "test_type": "ETL",
@@ -731,7 +731,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0418",
+    "test_case_id": "SNOW-ELTPIP-0418",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0418",
     "test_type": "Performance",
@@ -745,7 +745,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0426",
+    "test_case_id": "SNOW-ELTPIP-0426",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0426",
     "test_type": "Regression",
@@ -759,7 +759,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0434",
+    "test_case_id": "SNOW-ELTPIP-0434",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0434",
     "test_type": "ETL",
@@ -773,7 +773,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0442",
+    "test_case_id": "SNOW-ELTPIP-0442",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0442",
     "test_type": "Performance",
@@ -787,7 +787,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0450",
+    "test_case_id": "SNOW-ELTPIP-0450",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0450",
     "test_type": "Regression",
@@ -801,7 +801,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0458",
+    "test_case_id": "SNOW-ELTPIP-0458",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0458",
     "test_type": "ETL",
@@ -815,7 +815,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0466",
+    "test_case_id": "SNOW-ELTPIP-0466",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0466",
     "test_type": "Performance",
@@ -829,7 +829,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0474",
+    "test_case_id": "SNOW-ELTPIP-0474",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0474",
     "test_type": "Regression",
@@ -843,7 +843,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0482",
+    "test_case_id": "SNOW-ELTPIP-0482",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0482",
     "test_type": "ETL",
@@ -857,7 +857,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0490",
+    "test_case_id": "SNOW-ELTPIP-0490",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0490",
     "test_type": "Performance",
@@ -871,7 +871,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0498",
+    "test_case_id": "SNOW-ELTPIP-0498",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0498",
     "test_type": "Regression",
@@ -885,7 +885,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0506",
+    "test_case_id": "SNOW-ELTPIP-0506",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0506",
     "test_type": "ETL",
@@ -899,7 +899,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0514",
+    "test_case_id": "SNOW-ELTPIP-0514",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0514",
     "test_type": "Performance",
@@ -913,7 +913,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0522",
+    "test_case_id": "SNOW-ELTPIP-0522",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0522",
     "test_type": "Regression",
@@ -927,7 +927,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0530",
+    "test_case_id": "SNOW-ELTPIP-0530",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0530",
     "test_type": "ETL",
@@ -941,7 +941,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0538",
+    "test_case_id": "SNOW-ELTPIP-0538",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0538",
     "test_type": "Performance",
@@ -955,7 +955,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0546",
+    "test_case_id": "SNOW-ELTPIP-0546",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0546",
     "test_type": "Regression",
@@ -969,7 +969,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0554",
+    "test_case_id": "SNOW-ELTPIP-0554",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0554",
     "test_type": "ETL",
@@ -983,7 +983,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0562",
+    "test_case_id": "SNOW-ELTPIP-0562",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0562",
     "test_type": "Performance",
@@ -997,7 +997,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0570",
+    "test_case_id": "SNOW-ELTPIP-0570",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0570",
     "test_type": "Regression",
@@ -1011,7 +1011,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0578",
+    "test_case_id": "SNOW-ELTPIP-0578",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0578",
     "test_type": "ETL",
@@ -1025,7 +1025,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0586",
+    "test_case_id": "SNOW-ELTPIP-0586",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0586",
     "test_type": "Performance",
@@ -1039,7 +1039,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0594",
+    "test_case_id": "SNOW-ELTPIP-0594",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0594",
     "test_type": "Regression",
@@ -1053,7 +1053,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0602",
+    "test_case_id": "SNOW-ELTPIP-0602",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0602",
     "test_type": "ETL",
@@ -1067,7 +1067,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0610",
+    "test_case_id": "SNOW-ELTPIP-0610",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0610",
     "test_type": "Performance",
@@ -1081,7 +1081,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0618",
+    "test_case_id": "SNOW-ELTPIP-0618",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0618",
     "test_type": "Regression",
@@ -1095,7 +1095,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0626",
+    "test_case_id": "SNOW-ELTPIP-0626",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0626",
     "test_type": "ETL",
@@ -1109,7 +1109,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0634",
+    "test_case_id": "SNOW-ELTPIP-0634",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0634",
     "test_type": "Performance",
@@ -1123,7 +1123,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0642",
+    "test_case_id": "SNOW-ELTPIP-0642",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0642",
     "test_type": "Regression",
@@ -1137,7 +1137,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0650",
+    "test_case_id": "SNOW-ELTPIP-0650",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0650",
     "test_type": "ETL",
@@ -1151,7 +1151,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0658",
+    "test_case_id": "SNOW-ELTPIP-0658",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0658",
     "test_type": "Performance",
@@ -1165,7 +1165,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0666",
+    "test_case_id": "SNOW-ELTPIP-0666",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0666",
     "test_type": "Regression",
@@ -1179,7 +1179,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0674",
+    "test_case_id": "SNOW-ELTPIP-0674",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0674",
     "test_type": "ETL",
@@ -1193,7 +1193,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0682",
+    "test_case_id": "SNOW-ELTPIP-0682",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0682",
     "test_type": "Performance",
@@ -1207,7 +1207,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0690",
+    "test_case_id": "SNOW-ELTPIP-0690",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0690",
     "test_type": "Regression",
@@ -1221,7 +1221,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0698",
+    "test_case_id": "SNOW-ELTPIP-0698",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0698",
     "test_type": "ETL",
@@ -1235,7 +1235,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0706",
+    "test_case_id": "SNOW-ELTPIP-0706",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0706",
     "test_type": "Performance",
@@ -1249,7 +1249,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0714",
+    "test_case_id": "SNOW-ELTPIP-0714",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0714",
     "test_type": "Regression",
@@ -1263,7 +1263,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0722",
+    "test_case_id": "SNOW-ELTPIP-0722",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0722",
     "test_type": "ETL",
@@ -1277,7 +1277,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0730",
+    "test_case_id": "SNOW-ELTPIP-0730",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0730",
     "test_type": "Performance",
@@ -1291,7 +1291,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0738",
+    "test_case_id": "SNOW-ELTPIP-0738",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0738",
     "test_type": "Regression",
@@ -1305,7 +1305,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0746",
+    "test_case_id": "SNOW-ELTPIP-0746",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0746",
     "test_type": "ETL",
@@ -1319,7 +1319,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0754",
+    "test_case_id": "SNOW-ELTPIP-0754",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0754",
     "test_type": "Performance",
@@ -1333,7 +1333,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0762",
+    "test_case_id": "SNOW-ELTPIP-0762",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0762",
     "test_type": "Regression",
@@ -1347,7 +1347,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0770",
+    "test_case_id": "SNOW-ELTPIP-0770",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0770",
     "test_type": "ETL",
@@ -1361,7 +1361,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0778",
+    "test_case_id": "SNOW-ELTPIP-0778",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0778",
     "test_type": "Performance",
@@ -1375,7 +1375,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0786",
+    "test_case_id": "SNOW-ELTPIP-0786",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0786",
     "test_type": "Regression",
@@ -1389,7 +1389,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0794",
+    "test_case_id": "SNOW-ELTPIP-0794",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0794",
     "test_type": "ETL",
@@ -1403,7 +1403,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0802",
+    "test_case_id": "SNOW-ELTPIP-0802",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0802",
     "test_type": "Performance",
@@ -1417,7 +1417,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0810",
+    "test_case_id": "SNOW-ELTPIP-0810",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0810",
     "test_type": "Regression",
@@ -1431,7 +1431,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0818",
+    "test_case_id": "SNOW-ELTPIP-0818",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0818",
     "test_type": "ETL",
@@ -1445,7 +1445,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0826",
+    "test_case_id": "SNOW-ELTPIP-0826",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0826",
     "test_type": "Performance",
@@ -1459,7 +1459,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0834",
+    "test_case_id": "SNOW-ELTPIP-0834",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0834",
     "test_type": "Regression",
@@ -1473,7 +1473,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0842",
+    "test_case_id": "SNOW-ELTPIP-0842",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0842",
     "test_type": "ETL",
@@ -1487,7 +1487,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0850",
+    "test_case_id": "SNOW-ELTPIP-0850",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0850",
     "test_type": "Performance",
@@ -1501,7 +1501,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0858",
+    "test_case_id": "SNOW-ELTPIP-0858",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0858",
     "test_type": "Regression",
@@ -1515,7 +1515,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0866",
+    "test_case_id": "SNOW-ELTPIP-0866",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0866",
     "test_type": "ETL",
@@ -1529,7 +1529,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0874",
+    "test_case_id": "SNOW-ELTPIP-0874",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0874",
     "test_type": "Performance",
@@ -1543,7 +1543,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0882",
+    "test_case_id": "SNOW-ELTPIP-0882",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0882",
     "test_type": "Regression",
@@ -1557,7 +1557,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0890",
+    "test_case_id": "SNOW-ELTPIP-0890",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0890",
     "test_type": "ETL",
@@ -1571,7 +1571,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0898",
+    "test_case_id": "SNOW-ELTPIP-0898",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0898",
     "test_type": "Performance",
@@ -1585,7 +1585,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0906",
+    "test_case_id": "SNOW-ELTPIP-0906",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0906",
     "test_type": "Regression",
@@ -1599,7 +1599,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0914",
+    "test_case_id": "SNOW-ELTPIP-0914",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0914",
     "test_type": "ETL",
@@ -1613,7 +1613,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0922",
+    "test_case_id": "SNOW-ELTPIP-0922",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0922",
     "test_type": "Performance",
@@ -1627,7 +1627,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0930",
+    "test_case_id": "SNOW-ELTPIP-0930",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0930",
     "test_type": "Regression",
@@ -1641,7 +1641,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0938",
+    "test_case_id": "SNOW-ELTPIP-0938",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0938",
     "test_type": "ETL",
@@ -1655,7 +1655,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0946",
+    "test_case_id": "SNOW-ELTPIP-0946",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0946",
     "test_type": "Performance",
@@ -1669,7 +1669,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0954",
+    "test_case_id": "SNOW-ELTPIP-0954",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0954",
     "test_type": "Regression",
@@ -1683,7 +1683,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0962",
+    "test_case_id": "SNOW-ELTPIP-0962",
     "test_scenario": "ELT Pipeline: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for ELT Pipeline flow 0962",
     "test_type": "ETL",
@@ -1697,7 +1697,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0970",
+    "test_case_id": "SNOW-ELTPIP-0970",
     "test_scenario": "ELT Pipeline: performance threshold",
     "test_case_name": "Validate performance threshold for ELT Pipeline flow 0970",
     "test_type": "Performance",
@@ -1711,7 +1711,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0978",
+    "test_case_id": "SNOW-ELTPIP-0978",
     "test_scenario": "ELT Pipeline: version compatibility",
     "test_case_name": "Validate version compatibility for ELT Pipeline flow 0978",
     "test_type": "Regression",
@@ -1725,7 +1725,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0986",
+    "test_case_id": "SNOW-ELTPIP-0986",
     "test_scenario": "ELT Pipeline: idempotency",
     "test_case_name": "Validate idempotency for ELT Pipeline flow 0986",
     "test_type": "ETL",
@@ -1739,7 +1739,7 @@ export const SNOWFLAKE_ELT_PIPELINE_SUITE = [
   {
     "product": "Snowflake",
     "module": "ELT Pipeline",
-    "test_case_id": "SF-ELTPIP-0994",
+    "test_case_id": "SNOW-ELTPIP-0994",
     "test_scenario": "ELT Pipeline: resource limits",
     "test_case_name": "Validate resource limits for ELT Pipeline flow 0994",
     "test_type": "Performance",

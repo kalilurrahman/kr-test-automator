@@ -16,12 +16,12 @@ import type { PlatformDef, PlatformModule } from "@/data/platformManifests";
 const PAGE_SIZE = 25;
 
 const PRIORITY_FIELDS = ["Priority", "priority"];
-const ID_FIELDS = ["Test Case ID", "id", "ID", "Case ID"];
-const SCENARIO_FIELDS = ["Test Scenario", "scenario", "Scenario"];
+const ID_FIELDS = ["Test Case ID", "test_case_id", "id", "ID", "Case ID"];
+const SCENARIO_FIELDS = ["Test Scenario", "test_scenario", "scenario", "Scenario"];
 const MODULE_FIELDS = ["Module", "module", "Domain"];
-const STEPS_FIELDS = ["Steps", "steps"];
-const EXPECTED_FIELDS = ["Expected Result", "expected", "Expected"];
-const TYPE_FIELDS = ["Test Type", "type", "Type"];
+const STEPS_FIELDS = ["Steps", "test_steps", "steps"];
+const EXPECTED_FIELDS = ["Expected Result", "expected_result", "expected", "Expected"];
+const TYPE_FIELDS = ["Test Type", "test_type", "type", "Type"];
 
 const pick = (row: Record<string, string>, fields: string[]) => {
   for (const f of fields) if (row[f]) return row[f];

@@ -1219,7 +1219,7 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
     "shortLabel": "Snowflake AI",
     "description": "3,000 test cases across 8 Snowflake AI modules.",
     "publicBase": "/SnowflakeAI",
-    "idPrefix": "SF",
+    "idPrefix": "SNOW",
     "accent": "blue",
     "modules": [
       {
@@ -1662,7 +1662,7 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
       "Data Sharing",
       "Snowpark"
     ],
-    "idPrefix": "SF",
+    "idPrefix": "SNOW",
     "accent": "blue"
   },
   {

@@ -1006,6 +1006,12 @@ def generate(pack: dict):
             slug, label, _, tasks = next(m for m in module_specs if m[0] == module["id"])
             path = root / module["folder"] / f"{module['prefix']}.csv"
             existing = read_rows(path)
+            if pack["root"] == "SnowflakeAI":
+                # The original Snowflake AI CSVs reused Salesforce's SF- IDs.
+                # Re-prefix them so global search and case deep-links are unique.
+                for row in existing:
+                    if row["test_case_id"].startswith("SF-"):
+                        row["test_case_id"] = "SNOW-" + row["test_case_id"][3:]
             new_rows = generate_rows(pack, slug, label, slug, tasks, 1001, 250)
             generated_ids = {row["test_case_id"] for row in new_rows}
             preserved_rows = [row for row in existing if row["test_case_id"] not in generated_ids]

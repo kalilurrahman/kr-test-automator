@@ -3,7 +3,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0006",
+    "test_case_id": "SNOW-STREAM-0006",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0006",
     "test_type": "Regression",
@@ -17,7 +17,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0014",
+    "test_case_id": "SNOW-STREAM-0014",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0014",
     "test_type": "ETL",
@@ -31,7 +31,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0022",
+    "test_case_id": "SNOW-STREAM-0022",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0022",
     "test_type": "Performance",
@@ -45,7 +45,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0030",
+    "test_case_id": "SNOW-STREAM-0030",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0030",
     "test_type": "Regression",
@@ -59,7 +59,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0038",
+    "test_case_id": "SNOW-STREAM-0038",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0038",
     "test_type": "ETL",
@@ -73,7 +73,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0046",
+    "test_case_id": "SNOW-STREAM-0046",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0046",
     "test_type": "Performance",
@@ -87,7 +87,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0054",
+    "test_case_id": "SNOW-STREAM-0054",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0054",
     "test_type": "Regression",
@@ -101,7 +101,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0062",
+    "test_case_id": "SNOW-STREAM-0062",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0062",
     "test_type": "ETL",
@@ -115,7 +115,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0070",
+    "test_case_id": "SNOW-STREAM-0070",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0070",
     "test_type": "Performance",
@@ -129,7 +129,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0078",
+    "test_case_id": "SNOW-STREAM-0078",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0078",
     "test_type": "Regression",
@@ -143,7 +143,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0086",
+    "test_case_id": "SNOW-STREAM-0086",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0086",
     "test_type": "ETL",
@@ -157,7 +157,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0094",
+    "test_case_id": "SNOW-STREAM-0094",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0094",
     "test_type": "Performance",
@@ -171,7 +171,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0102",
+    "test_case_id": "SNOW-STREAM-0102",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0102",
     "test_type": "Regression",
@@ -185,7 +185,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0110",
+    "test_case_id": "SNOW-STREAM-0110",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0110",
     "test_type": "ETL",
@@ -199,7 +199,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0118",
+    "test_case_id": "SNOW-STREAM-0118",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0118",
     "test_type": "Performance",
@@ -213,7 +213,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0126",
+    "test_case_id": "SNOW-STREAM-0126",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0126",
     "test_type": "Regression",
@@ -227,7 +227,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0134",
+    "test_case_id": "SNOW-STREAM-0134",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0134",
     "test_type": "ETL",
@@ -241,7 +241,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0142",
+    "test_case_id": "SNOW-STREAM-0142",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0142",
     "test_type": "Performance",
@@ -255,7 +255,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0150",
+    "test_case_id": "SNOW-STREAM-0150",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0150",
     "test_type": "Regression",
@@ -269,7 +269,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0158",
+    "test_case_id": "SNOW-STREAM-0158",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0158",
     "test_type": "ETL",
@@ -283,7 +283,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0166",
+    "test_case_id": "SNOW-STREAM-0166",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0166",
     "test_type": "Performance",
@@ -297,7 +297,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0174",
+    "test_case_id": "SNOW-STREAM-0174",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0174",
     "test_type": "Regression",
@@ -311,7 +311,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0182",
+    "test_case_id": "SNOW-STREAM-0182",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0182",
     "test_type": "ETL",
@@ -325,7 +325,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0190",
+    "test_case_id": "SNOW-STREAM-0190",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0190",
     "test_type": "Performance",
@@ -339,7 +339,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0198",
+    "test_case_id": "SNOW-STREAM-0198",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0198",
     "test_type": "Regression",
@@ -353,7 +353,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0206",
+    "test_case_id": "SNOW-STREAM-0206",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0206",
     "test_type": "ETL",
@@ -367,7 +367,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0214",
+    "test_case_id": "SNOW-STREAM-0214",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0214",
     "test_type": "Performance",
@@ -381,7 +381,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0222",
+    "test_case_id": "SNOW-STREAM-0222",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0222",
     "test_type": "Regression",
@@ -395,7 +395,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0230",
+    "test_case_id": "SNOW-STREAM-0230",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0230",
     "test_type": "ETL",
@@ -409,7 +409,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0238",
+    "test_case_id": "SNOW-STREAM-0238",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0238",
     "test_type": "Performance",
@@ -423,7 +423,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0246",
+    "test_case_id": "SNOW-STREAM-0246",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0246",
     "test_type": "Regression",
@@ -437,7 +437,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0254",
+    "test_case_id": "SNOW-STREAM-0254",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0254",
     "test_type": "ETL",
@@ -451,7 +451,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0262",
+    "test_case_id": "SNOW-STREAM-0262",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0262",
     "test_type": "Performance",
@@ -465,7 +465,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0270",
+    "test_case_id": "SNOW-STREAM-0270",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0270",
     "test_type": "Regression",
@@ -479,7 +479,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0278",
+    "test_case_id": "SNOW-STREAM-0278",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0278",
     "test_type": "ETL",
@@ -493,7 +493,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0286",
+    "test_case_id": "SNOW-STREAM-0286",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0286",
     "test_type": "Performance",
@@ -507,7 +507,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0294",
+    "test_case_id": "SNOW-STREAM-0294",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0294",
     "test_type": "Regression",
@@ -521,7 +521,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0302",
+    "test_case_id": "SNOW-STREAM-0302",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0302",
     "test_type": "ETL",
@@ -535,7 +535,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0310",
+    "test_case_id": "SNOW-STREAM-0310",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0310",
     "test_type": "Performance",
@@ -549,7 +549,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0318",
+    "test_case_id": "SNOW-STREAM-0318",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0318",
     "test_type": "Regression",
@@ -563,7 +563,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0326",
+    "test_case_id": "SNOW-STREAM-0326",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0326",
     "test_type": "ETL",
@@ -577,7 +577,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0334",
+    "test_case_id": "SNOW-STREAM-0334",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0334",
     "test_type": "Performance",
@@ -591,7 +591,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0342",
+    "test_case_id": "SNOW-STREAM-0342",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0342",
     "test_type": "Regression",
@@ -605,7 +605,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0350",
+    "test_case_id": "SNOW-STREAM-0350",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0350",
     "test_type": "ETL",
@@ -619,7 +619,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0358",
+    "test_case_id": "SNOW-STREAM-0358",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0358",
     "test_type": "Performance",
@@ -633,7 +633,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0366",
+    "test_case_id": "SNOW-STREAM-0366",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0366",
     "test_type": "Regression",
@@ -647,7 +647,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0374",
+    "test_case_id": "SNOW-STREAM-0374",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0374",
     "test_type": "ETL",
@@ -661,7 +661,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0382",
+    "test_case_id": "SNOW-STREAM-0382",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0382",
     "test_type": "Performance",
@@ -675,7 +675,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0390",
+    "test_case_id": "SNOW-STREAM-0390",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0390",
     "test_type": "Regression",
@@ -689,7 +689,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0398",
+    "test_case_id": "SNOW-STREAM-0398",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0398",
     "test_type": "ETL",
@@ -703,7 +703,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0406",
+    "test_case_id": "SNOW-STREAM-0406",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0406",
     "test_type": "Performance",
@@ -717,7 +717,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0414",
+    "test_case_id": "SNOW-STREAM-0414",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0414",
     "test_type": "Regression",
@@ -731,7 +731,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0422",
+    "test_case_id": "SNOW-STREAM-0422",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0422",
     "test_type": "ETL",
@@ -745,7 +745,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0430",
+    "test_case_id": "SNOW-STREAM-0430",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0430",
     "test_type": "Performance",
@@ -759,7 +759,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0438",
+    "test_case_id": "SNOW-STREAM-0438",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0438",
     "test_type": "Regression",
@@ -773,7 +773,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0446",
+    "test_case_id": "SNOW-STREAM-0446",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0446",
     "test_type": "ETL",
@@ -787,7 +787,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0454",
+    "test_case_id": "SNOW-STREAM-0454",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0454",
     "test_type": "Performance",
@@ -801,7 +801,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0462",
+    "test_case_id": "SNOW-STREAM-0462",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0462",
     "test_type": "Regression",
@@ -815,7 +815,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0470",
+    "test_case_id": "SNOW-STREAM-0470",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0470",
     "test_type": "ETL",
@@ -829,7 +829,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0478",
+    "test_case_id": "SNOW-STREAM-0478",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0478",
     "test_type": "Performance",
@@ -843,7 +843,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0486",
+    "test_case_id": "SNOW-STREAM-0486",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0486",
     "test_type": "Regression",
@@ -857,7 +857,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0494",
+    "test_case_id": "SNOW-STREAM-0494",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0494",
     "test_type": "ETL",
@@ -871,7 +871,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0502",
+    "test_case_id": "SNOW-STREAM-0502",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0502",
     "test_type": "Performance",
@@ -885,7 +885,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0510",
+    "test_case_id": "SNOW-STREAM-0510",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0510",
     "test_type": "Regression",
@@ -899,7 +899,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0518",
+    "test_case_id": "SNOW-STREAM-0518",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0518",
     "test_type": "ETL",
@@ -913,7 +913,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0526",
+    "test_case_id": "SNOW-STREAM-0526",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0526",
     "test_type": "Performance",
@@ -927,7 +927,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0534",
+    "test_case_id": "SNOW-STREAM-0534",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0534",
     "test_type": "Regression",
@@ -941,7 +941,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0542",
+    "test_case_id": "SNOW-STREAM-0542",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0542",
     "test_type": "ETL",
@@ -955,7 +955,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0550",
+    "test_case_id": "SNOW-STREAM-0550",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0550",
     "test_type": "Performance",
@@ -969,7 +969,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0558",
+    "test_case_id": "SNOW-STREAM-0558",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0558",
     "test_type": "Regression",
@@ -983,7 +983,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0566",
+    "test_case_id": "SNOW-STREAM-0566",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0566",
     "test_type": "ETL",
@@ -997,7 +997,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0574",
+    "test_case_id": "SNOW-STREAM-0574",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0574",
     "test_type": "Performance",
@@ -1011,7 +1011,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0582",
+    "test_case_id": "SNOW-STREAM-0582",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0582",
     "test_type": "Regression",
@@ -1025,7 +1025,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0590",
+    "test_case_id": "SNOW-STREAM-0590",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0590",
     "test_type": "ETL",
@@ -1039,7 +1039,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0598",
+    "test_case_id": "SNOW-STREAM-0598",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0598",
     "test_type": "Performance",
@@ -1053,7 +1053,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0606",
+    "test_case_id": "SNOW-STREAM-0606",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0606",
     "test_type": "Regression",
@@ -1067,7 +1067,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0614",
+    "test_case_id": "SNOW-STREAM-0614",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0614",
     "test_type": "ETL",
@@ -1081,7 +1081,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0622",
+    "test_case_id": "SNOW-STREAM-0622",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0622",
     "test_type": "Performance",
@@ -1095,7 +1095,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0630",
+    "test_case_id": "SNOW-STREAM-0630",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0630",
     "test_type": "Regression",
@@ -1109,7 +1109,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0638",
+    "test_case_id": "SNOW-STREAM-0638",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0638",
     "test_type": "ETL",
@@ -1123,7 +1123,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0646",
+    "test_case_id": "SNOW-STREAM-0646",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0646",
     "test_type": "Performance",
@@ -1137,7 +1137,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0654",
+    "test_case_id": "SNOW-STREAM-0654",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0654",
     "test_type": "Regression",
@@ -1151,7 +1151,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0662",
+    "test_case_id": "SNOW-STREAM-0662",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0662",
     "test_type": "ETL",
@@ -1165,7 +1165,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0670",
+    "test_case_id": "SNOW-STREAM-0670",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0670",
     "test_type": "Performance",
@@ -1179,7 +1179,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0678",
+    "test_case_id": "SNOW-STREAM-0678",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0678",
     "test_type": "Regression",
@@ -1193,7 +1193,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0686",
+    "test_case_id": "SNOW-STREAM-0686",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0686",
     "test_type": "ETL",
@@ -1207,7 +1207,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0694",
+    "test_case_id": "SNOW-STREAM-0694",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0694",
     "test_type": "Performance",
@@ -1221,7 +1221,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0702",
+    "test_case_id": "SNOW-STREAM-0702",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0702",
     "test_type": "Regression",
@@ -1235,7 +1235,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0710",
+    "test_case_id": "SNOW-STREAM-0710",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0710",
     "test_type": "ETL",
@@ -1249,7 +1249,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0718",
+    "test_case_id": "SNOW-STREAM-0718",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0718",
     "test_type": "Performance",
@@ -1263,7 +1263,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0726",
+    "test_case_id": "SNOW-STREAM-0726",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0726",
     "test_type": "Regression",
@@ -1277,7 +1277,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0734",
+    "test_case_id": "SNOW-STREAM-0734",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0734",
     "test_type": "ETL",
@@ -1291,7 +1291,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0742",
+    "test_case_id": "SNOW-STREAM-0742",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0742",
     "test_type": "Performance",
@@ -1305,7 +1305,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0750",
+    "test_case_id": "SNOW-STREAM-0750",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0750",
     "test_type": "Regression",
@@ -1319,7 +1319,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0758",
+    "test_case_id": "SNOW-STREAM-0758",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0758",
     "test_type": "ETL",
@@ -1333,7 +1333,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0766",
+    "test_case_id": "SNOW-STREAM-0766",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0766",
     "test_type": "Performance",
@@ -1347,7 +1347,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0774",
+    "test_case_id": "SNOW-STREAM-0774",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0774",
     "test_type": "Regression",
@@ -1361,7 +1361,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0782",
+    "test_case_id": "SNOW-STREAM-0782",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0782",
     "test_type": "ETL",
@@ -1375,7 +1375,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0790",
+    "test_case_id": "SNOW-STREAM-0790",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0790",
     "test_type": "Performance",
@@ -1389,7 +1389,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0798",
+    "test_case_id": "SNOW-STREAM-0798",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0798",
     "test_type": "Regression",
@@ -1403,7 +1403,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0806",
+    "test_case_id": "SNOW-STREAM-0806",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0806",
     "test_type": "ETL",
@@ -1417,7 +1417,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0814",
+    "test_case_id": "SNOW-STREAM-0814",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0814",
     "test_type": "Performance",
@@ -1431,7 +1431,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0822",
+    "test_case_id": "SNOW-STREAM-0822",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0822",
     "test_type": "Regression",
@@ -1445,7 +1445,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0830",
+    "test_case_id": "SNOW-STREAM-0830",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0830",
     "test_type": "ETL",
@@ -1459,7 +1459,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0838",
+    "test_case_id": "SNOW-STREAM-0838",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0838",
     "test_type": "Performance",
@@ -1473,7 +1473,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0846",
+    "test_case_id": "SNOW-STREAM-0846",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0846",
     "test_type": "Regression",
@@ -1487,7 +1487,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0854",
+    "test_case_id": "SNOW-STREAM-0854",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0854",
     "test_type": "ETL",
@@ -1501,7 +1501,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0862",
+    "test_case_id": "SNOW-STREAM-0862",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0862",
     "test_type": "Performance",
@@ -1515,7 +1515,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0870",
+    "test_case_id": "SNOW-STREAM-0870",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0870",
     "test_type": "Regression",
@@ -1529,7 +1529,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0878",
+    "test_case_id": "SNOW-STREAM-0878",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0878",
     "test_type": "ETL",
@@ -1543,7 +1543,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0886",
+    "test_case_id": "SNOW-STREAM-0886",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0886",
     "test_type": "Performance",
@@ -1557,7 +1557,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0894",
+    "test_case_id": "SNOW-STREAM-0894",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0894",
     "test_type": "Regression",
@@ -1571,7 +1571,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0902",
+    "test_case_id": "SNOW-STREAM-0902",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0902",
     "test_type": "ETL",
@@ -1585,7 +1585,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0910",
+    "test_case_id": "SNOW-STREAM-0910",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0910",
     "test_type": "Performance",
@@ -1599,7 +1599,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0918",
+    "test_case_id": "SNOW-STREAM-0918",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0918",
     "test_type": "Regression",
@@ -1613,7 +1613,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0926",
+    "test_case_id": "SNOW-STREAM-0926",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0926",
     "test_type": "ETL",
@@ -1627,7 +1627,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0934",
+    "test_case_id": "SNOW-STREAM-0934",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0934",
     "test_type": "Performance",
@@ -1641,7 +1641,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0942",
+    "test_case_id": "SNOW-STREAM-0942",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0942",
     "test_type": "Regression",
@@ -1655,7 +1655,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0950",
+    "test_case_id": "SNOW-STREAM-0950",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0950",
     "test_type": "ETL",
@@ -1669,7 +1669,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0958",
+    "test_case_id": "SNOW-STREAM-0958",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0958",
     "test_type": "Performance",
@@ -1683,7 +1683,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0966",
+    "test_case_id": "SNOW-STREAM-0966",
     "test_scenario": "Streams and Tasks: idempotency",
     "test_case_name": "Validate idempotency for Streams and Tasks flow 0966",
     "test_type": "Regression",
@@ -1697,7 +1697,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0974",
+    "test_case_id": "SNOW-STREAM-0974",
     "test_scenario": "Streams and Tasks: resource limits",
     "test_case_name": "Validate resource limits for Streams and Tasks flow 0974",
     "test_type": "ETL",
@@ -1711,7 +1711,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0982",
+    "test_case_id": "SNOW-STREAM-0982",
     "test_scenario": "Streams and Tasks: invalid-input handling",
     "test_case_name": "Validate invalid-input handling for Streams and Tasks flow 0982",
     "test_type": "Performance",
@@ -1725,7 +1725,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0990",
+    "test_case_id": "SNOW-STREAM-0990",
     "test_scenario": "Streams and Tasks: performance threshold",
     "test_case_name": "Validate performance threshold for Streams and Tasks flow 0990",
     "test_type": "Regression",
@@ -1739,7 +1739,7 @@ export const SNOWFLAKE_STREAMS_AND_TASKS_SUITE = [
   {
     "product": "Snowflake",
     "module": "Streams and Tasks",
-    "test_case_id": "SF-STREAM-0998",
+    "test_case_id": "SNOW-STREAM-0998",
     "test_scenario": "Streams and Tasks: version compatibility",
     "test_case_name": "Validate version compatibility for Streams and Tasks flow 0998",
     "test_type": "ETL",
