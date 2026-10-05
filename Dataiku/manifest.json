@@ -1,0 +1,84 @@
+{
+  "product": "Dataiku",
+  "key": "dataiku",
+  "count": 2200,
+  "modules": [
+    {
+      "id": "flow",
+      "label": "Flow and Lineage",
+      "folder": "flow",
+      "prefix": "dataiku_dataiku_flow_suite",
+      "count": 200
+    },
+    {
+      "id": "visual_recipes",
+      "label": "Visual Recipes",
+      "folder": "visual_recipes",
+      "prefix": "dataiku_visual_recipes_suite",
+      "count": 200
+    },
+    {
+      "id": "datasets",
+      "label": "Datasets and Connections",
+      "folder": "datasets",
+      "prefix": "dataiku_datasets_suite",
+      "count": 200
+    },
+    {
+      "id": "code_environments",
+      "label": "Code Environments",
+      "folder": "code_environments",
+      "prefix": "dataiku_code_environments_suite",
+      "count": 200
+    },
+    {
+      "id": "scenarios",
+      "label": "Automation Scenarios",
+      "folder": "scenarios",
+      "prefix": "dataiku_scenarios_suite",
+      "count": 200
+    },
+    {
+      "id": "mlops",
+      "label": "Machine Learning and MLOps",
+      "folder": "mlops",
+      "prefix": "dataiku_mlops_suite",
+      "count": 200
+    },
+    {
+      "id": "llm_mesh",
+      "label": "LLM Mesh and Prompt Workflows",
+      "folder": "llm_mesh",
+      "prefix": "dataiku_llm_mesh_suite",
+      "count": 200
+    },
+    {
+      "id": "agents",
+      "label": "Agents and Managed Tools",
+      "folder": "agents",
+      "prefix": "dataiku_agents_suite",
+      "count": 200
+    },
+    {
+      "id": "governance",
+      "label": "Governance and Data Quality",
+      "folder": "governance",
+      "prefix": "dataiku_governance_suite",
+      "count": 200
+    },
+    {
+      "id": "deployment",
+      "label": "Bundles and Deployment",
+      "folder": "deployment",
+      "prefix": "dataiku_deployment_suite",
+      "count": 200
+    },
+    {
+      "id": "api",
+      "label": "API and Automation",
+      "folder": "api",
+      "prefix": "dataiku_api_suite",
+      "count": 200
+    }
+  ]
+}

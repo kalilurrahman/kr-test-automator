@@ -1,63 +1,63 @@
 {
   "product": "Palantir Foundry",
   "key": "palantirfoundry",
-  "count": 1000,
+  "count": 3000,
   "modules": [
     {
       "id": "aip_logic",
       "label": "AIP Logic",
       "folder": "aip_logic",
       "prefix": "palantirfoundry_aip_logic_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "workflow",
       "label": "Workflow",
       "folder": "workflow",
       "prefix": "palantirfoundry_workflow_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "ontology",
       "label": "Ontology",
       "folder": "ontology",
       "prefix": "palantirfoundry_ontology_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "transforms",
       "label": "Transforms",
       "folder": "transforms",
       "prefix": "palantirfoundry_transforms_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "data_lineage",
       "label": "Data Lineage",
       "folder": "data_lineage",
       "prefix": "palantirfoundry_data_lineage_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "access_control",
       "label": "Access Control",
       "folder": "access_control",
       "prefix": "palantirfoundry_access_control_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "sdk_ci",
       "label": "SDK CI",
       "folder": "sdk_ci",
       "prefix": "palantirfoundry_sdk_ci_suite",
-      "count": 125
+      "count": 375
     },
     {
       "id": "object_explorer",
       "label": "Object Explorer",
       "folder": "object_explorer",
       "prefix": "palantirfoundry_object_explorer_suite",
-      "count": 125
+      "count": 375
     }
   ]
 }

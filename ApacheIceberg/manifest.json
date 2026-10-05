@@ -1,0 +1,77 @@
+{
+  "product": "ApacheIceberg",
+  "key": "apacheiceberg",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "table_metadata",
+      "label": "Table Metadata and Commits",
+      "folder": "table_metadata",
+      "prefix": "apacheiceberg_metadata_suite",
+      "count": 200
+    },
+    {
+      "id": "schema_evolution",
+      "label": "Schema Evolution",
+      "folder": "schema_evolution",
+      "prefix": "apacheiceberg_schema_suite",
+      "count": 200
+    },
+    {
+      "id": "partition_evolution",
+      "label": "Partition Evolution and Hidden Partitioning",
+      "folder": "partition_evolution",
+      "prefix": "apacheiceberg_partitioning_suite",
+      "count": 200
+    },
+    {
+      "id": "snapshots",
+      "label": "Snapshots and Time Travel",
+      "folder": "snapshots",
+      "prefix": "apacheiceberg_snapshots_suite",
+      "count": 200
+    },
+    {
+      "id": "concurrency",
+      "label": "Transactions and Concurrency",
+      "folder": "concurrency",
+      "prefix": "apacheiceberg_concurrency_suite",
+      "count": 200
+    },
+    {
+      "id": "maintenance",
+      "label": "Compaction and Table Maintenance",
+      "folder": "maintenance",
+      "prefix": "apacheiceberg_maintenance_suite",
+      "count": 200
+    },
+    {
+      "id": "catalogs",
+      "label": "Catalogs and Namespace Operations",
+      "folder": "catalogs",
+      "prefix": "apacheiceberg_catalogs_suite",
+      "count": 200
+    },
+    {
+      "id": "deletes",
+      "label": "Deletes and Row-Level Changes",
+      "folder": "deletes",
+      "prefix": "apacheiceberg_deletes_suite",
+      "count": 200
+    },
+    {
+      "id": "security",
+      "label": "Security and Governance",
+      "folder": "security",
+      "prefix": "apacheiceberg_security_suite",
+      "count": 200
+    },
+    {
+      "id": "engines",
+      "label": "Engine and Format Interoperability",
+      "folder": "engines",
+      "prefix": "apacheiceberg_engines_suite",
+      "count": 200
+    }
+  ]
+}

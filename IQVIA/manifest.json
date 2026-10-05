@@ -1,0 +1,84 @@
+{
+  "product": "IQVIA",
+  "key": "iqvia",
+  "count": 2200,
+  "modules": [
+    {
+      "id": "clinical_data",
+      "label": "Clinical Data Management",
+      "folder": "clinical_data",
+      "prefix": "iqvia_clinical_data_suite",
+      "count": 200
+    },
+    {
+      "id": "ctms",
+      "label": "Clinical Trial Management",
+      "folder": "ctms",
+      "prefix": "iqvia_ctms_suite",
+      "count": 200
+    },
+    {
+      "id": "safety",
+      "label": "Safety and Pharmacovigilance",
+      "folder": "safety",
+      "prefix": "iqvia_safety_suite",
+      "count": 200
+    },
+    {
+      "id": "etmf",
+      "label": "Trial Master File",
+      "folder": "etmf",
+      "prefix": "iqvia_etmf_suite",
+      "count": 200
+    },
+    {
+      "id": "regulatory",
+      "label": "Regulatory Information Management",
+      "folder": "regulatory",
+      "prefix": "iqvia_regulatory_suite",
+      "count": 200
+    },
+    {
+      "id": "real_world_data",
+      "label": "Real-World Data and Evidence",
+      "folder": "real_world_data",
+      "prefix": "iqvia_real_world_data_suite",
+      "count": 200
+    },
+    {
+      "id": "commercial_data",
+      "label": "Commercial Data and Analytics",
+      "folder": "commercial_data",
+      "prefix": "iqvia_commercial_data_suite",
+      "count": 200
+    },
+    {
+      "id": "patient_engagement",
+      "label": "Patient Engagement",
+      "folder": "patient_engagement",
+      "prefix": "iqvia_patient_engagement_suite",
+      "count": 200
+    },
+    {
+      "id": "analytics",
+      "label": "Clinical Analytics",
+      "folder": "analytics",
+      "prefix": "iqvia_analytics_suite",
+      "count": 200
+    },
+    {
+      "id": "integration",
+      "label": "Data Integration and Interoperability",
+      "folder": "integration",
+      "prefix": "iqvia_integration_suite",
+      "count": 200
+    },
+    {
+      "id": "identity_compliance",
+      "label": "Identity, Privacy, and Compliance",
+      "folder": "identity_compliance",
+      "prefix": "iqvia_identity_compliance_suite",
+      "count": 200
+    }
+  ]
+}

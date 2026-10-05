@@ -1,0 +1,84 @@
+{
+  "product": "Medidata",
+  "key": "medidata",
+  "count": 2200,
+  "modules": [
+    {
+      "id": "edc",
+      "label": "Rave EDC",
+      "folder": "edc",
+      "prefix": "medidata_edc_suite",
+      "count": 200
+    },
+    {
+      "id": "ecoa",
+      "label": "Rave eCOA and ePRO",
+      "folder": "ecoa",
+      "prefix": "medidata_ecoa_suite",
+      "count": 200
+    },
+    {
+      "id": "econsent",
+      "label": "Rave eConsent",
+      "folder": "econsent",
+      "prefix": "medidata_econsent_suite",
+      "count": 200
+    },
+    {
+      "id": "rtsm",
+      "label": "Rave RTSM",
+      "folder": "rtsm",
+      "prefix": "medidata_rtsm_suite",
+      "count": 200
+    },
+    {
+      "id": "ctms",
+      "label": "Rave CTMS",
+      "folder": "ctms",
+      "prefix": "medidata_ctms_suite",
+      "count": 200
+    },
+    {
+      "id": "etmf",
+      "label": "Rave eTMF",
+      "folder": "etmf",
+      "prefix": "medidata_etmf_suite",
+      "count": 200
+    },
+    {
+      "id": "rbqm",
+      "label": "Risk-Based Quality Management",
+      "folder": "rbqm",
+      "prefix": "medidata_rbqm_suite",
+      "count": 200
+    },
+    {
+      "id": "safety_coding",
+      "label": "Safety and Medical Coding",
+      "folder": "safety_coding",
+      "prefix": "medidata_safety_coding_suite",
+      "count": 200
+    },
+    {
+      "id": "imaging",
+      "label": "Rave Imaging and External Data",
+      "folder": "imaging",
+      "prefix": "medidata_imaging_suite",
+      "count": 200
+    },
+    {
+      "id": "integrations",
+      "label": "Clinical Integrations",
+      "folder": "integrations",
+      "prefix": "medidata_integrations_suite",
+      "count": 200
+    },
+    {
+      "id": "audit_compliance",
+      "label": "Audit and Compliance",
+      "folder": "audit_compliance",
+      "prefix": "medidata_audit_compliance_suite",
+      "count": 200
+    }
+  ]
+}
