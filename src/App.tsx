@@ -17,6 +17,7 @@ import IosInstallHint from "@/components/IosInstallHint";
 import { useThemePalette } from "@/hooks/useThemePalette";
 
 // Heavy modules — code-split them so the initial bundle stays small.
+const ContentAutomation = lazy(() => import("./pages/ContentAutomation"));
 const Templates = lazy(() => import("./pages/Templates"));
 const History = lazy(() => import("./pages/History"));
 const Collections = lazy(() => import("./pages/Collections"));
@@ -60,12 +61,13 @@ function AppShell() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col overflow-x-hidden bg-background">
       <KRHeader />
-      <main className="flex-1">
+      <main className="min-w-0 flex-1">
         <Suspense fallback={<ModuleFallback label="Loading…" />}>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/content-automation" element={<ContentAutomation />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/about" element={<About />} />
             <Route path="/feedback" element={<Feedback />} />

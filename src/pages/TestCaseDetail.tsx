@@ -51,7 +51,7 @@ const TestCaseDetail = () => {
         toast.error("Could not stash case for generator");
       }
     }
-    navigate(`/?platform=${tc.source}&prefill=${encodeURIComponent(tc.id)}`);
+    navigate(`/content-automation?platform=${tc.source}&prefill=${encodeURIComponent(tc.id)}`);
   };
 
   return (

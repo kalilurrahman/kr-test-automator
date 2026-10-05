@@ -100,7 +100,7 @@ export function SapTestCases() {
       platform: "sap",
       prefill: tc.id,
     });
-    navigate(`/?${params.toString()}`);
+    navigate(`/content-automation?${params.toString()}`);
   };
 
   const resetFilters = () => {

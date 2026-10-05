@@ -281,7 +281,7 @@ const ServiceGrid = ({ services }: { services: ServiceEntry[] }) => {
           <div className="flex items-center justify-between text-[11px]">
             <span className="font-mono text-muted-foreground uppercase">{s.language}</span>
             <Button asChild variant="ghost" size="sm" className="gap-1.5 text-primary">
-              <Link to={`/?service=${encodeURIComponent(s.key)}`}>
+              <Link to={`/content-automation?service=${encodeURIComponent(s.key)}`}>
                 Use service <ArrowRight className="w-3 h-3" />
               </Link>
             </Button>

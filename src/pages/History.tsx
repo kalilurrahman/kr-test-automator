@@ -84,7 +84,7 @@ const History = () => {
     if (g.test_scopes?.length) store.setTestScopes(g.test_scopes as TestScope[]);
     if (g.test_count) store.setTestCount(g.test_count);
     store.setResult(null);
-    navigate("/");
+    navigate("/content-automation");
     toast.success("Parameters loaded — ready to generate");
   };
 

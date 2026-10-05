@@ -237,7 +237,7 @@ const IndustryDetail = () => {
 
     toast.success(`Loading ${s.scenario_id} into the generator…`);
     navigate(
-      `/?platform=${encodeURIComponent(platform)}&prefill=${encodeURIComponent(s.scenario_id)}&industry=${encodeURIComponent(meta.slug)}&script=${encodeURIComponent(scriptType)}`,
+      `/content-automation?platform=${encodeURIComponent(platform)}&prefill=${encodeURIComponent(s.scenario_id)}&industry=${encodeURIComponent(meta.slug)}&script=${encodeURIComponent(scriptType)}`,
     );
   };
 

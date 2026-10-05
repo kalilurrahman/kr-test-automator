@@ -51,7 +51,7 @@ const Templates = () => {
         if (!store.testScopes.includes(s as any)) store.toggleScope(s as any);
       });
     }
-    navigate("/");
+    navigate("/content-automation");
   };
 
   return (

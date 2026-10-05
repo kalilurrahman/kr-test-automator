@@ -98,7 +98,7 @@ const Dashboard = () => {
   ];
 
   const quickLinks = [
-    { to: "/", label: "Generator", icon: Sparkles },
+    { to: "/content-automation", label: "Content Automation", icon: Sparkles },
     { to: "/templates", label: "Templates", icon: BookMarked },
     { to: "/history", label: "History", icon: HistoryIcon },
     { to: "/collections", label: "Collections", icon: FolderOpen },

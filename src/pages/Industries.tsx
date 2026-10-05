@@ -262,7 +262,7 @@ const Industries = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="sm">
-                <Link to="/" className="gap-1.5">
+                <Link to="/content-automation" className="gap-1.5">
                   <Sparkles className="w-3.5 h-3.5" /> Open Generator
                 </Link>
               </Button>

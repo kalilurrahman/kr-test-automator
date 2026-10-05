@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import {
   Settings, Download, Menu, X, User, LogOut, UserCircle, Keyboard, ChevronDown,
-  LayoutDashboard, Info, MessageSquare, Factory, Package, Cpu, TestTube2, BookOpen, Sparkles,
+  LayoutDashboard, Factory, Package, Cpu, TestTube2, BookOpen, Sparkles,
 } from "lucide-react";
 import { useState } from "react";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
@@ -29,14 +29,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 /**
- * Top-level navigation order (per latest IA refresh):
- *   Industries → Products/Platforms → Services → Generated Scenarios →
- *   Dashboard → Downloads → More (library) → README → (Config / Settings)
- *
- * README sits immediately before the user / settings cluster on the right
- * so reference docs are the last thing users see before account controls.
- * "Generate" stays as the entry to "/" so users can always jump back to the
- * generator without losing the new IA.
+ * Keep the desktop bar focused on the landing page, automation workspace,
+ * product browser, and dashboard. Secondary destinations live under More.
+ * The landing page lives at "/"; "Automate" is the dedicated test-generation
+ * workspace so feature discovery and creation each have a clear entry point.
  */
 const PRIMARY_LINKS = [
   { to: "/industries", label: "Industries", icon: Factory, match: "/industries" },
@@ -57,6 +53,18 @@ const libraryLinks = [
   { to: "/compare", label: "Compare" },
 ];
 
+const moreLinks = [
+  { to: "/industries", label: "Industries" },
+  { to: "/services", label: "Services" },
+  { to: "/scenarios", label: "Scenarios" },
+  { to: "/downloads", label: "Downloads" },
+  { to: "/pricing", label: "Premium" },
+  ...libraryLinks,
+  { to: "/about", label: "About" },
+  { to: "/feedback", label: "Feedback" },
+  { to: "/readme", label: "README" },
+];
+
 const KRHeader = () => {
   const location = useLocation();
   const { isInstallable, install } = useInstallPrompt();
@@ -66,7 +74,7 @@ const KRHeader = () => {
 
   const isActive = (path: string) => location.pathname === path;
   const startsWith = (path: string) => location.pathname === path || location.pathname.startsWith(path + "/");
-  const libraryActive = libraryLinks.some((l) => location.pathname === l.to);
+  const moreActive = moreLinks.some((l) => startsWith(l.to)) || startsWith("/activate");
   const productGroups = groupProductsByFamily();
 
   const closeMobile = () => setMobileOpen(false);
@@ -104,8 +112,7 @@ const KRHeader = () => {
 
           {/* RIGHT: Nav + Auth + Install */}
           <div className="hidden lg:flex items-center gap-1">
-            <NavLink to="/" label="Generate" active={isActive("/")} />
-            <NavLink to="/industries" label="Industries" icon={Factory} active={startsWith("/industries")} />
+            <NavLink to="/content-automation" label="Automate" icon={Sparkles} active={startsWith("/content-automation")} />
 
             {/* Products dropdown (grouped by family) */}
             <DropdownMenu>
@@ -146,18 +153,14 @@ const KRHeader = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <NavLink to="/services" label="Services" icon={Cpu} active={startsWith("/services")} />
-            <NavLink to="/scenarios" label="Scenarios" icon={TestTube2} active={startsWith("/scenarios")} />
             <NavLink to="/dashboard" label="Dashboard" icon={LayoutDashboard} active={isActive("/dashboard")} />
-            <NavLink to="/downloads" label="Downloads" icon={Download} active={startsWith("/downloads")} />
-            <NavLink to="/pricing" label="Premium" icon={Sparkles} active={startsWith("/pricing") || startsWith("/activate")} />
 
             {/* Library dropdown (kept for templates/history/etc.) */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors inline-flex items-center gap-1 ${
-                    libraryActive
+                    moreActive
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   }`}
@@ -166,28 +169,13 @@ const KRHeader = () => {
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-card border-border">
-                {libraryLinks.map((l) => (
+                {moreLinks.map((l) => (
                   <DropdownMenuItem key={l.to} asChild>
                     <Link to={l.to} className="cursor-pointer">{l.label}</Link>
                   </DropdownMenuItem>
                 ))}
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                  <Link to="/about" className="cursor-pointer inline-flex items-center gap-2">
-                    <Info className="w-3.5 h-3.5" /> About
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/feedback" className="cursor-pointer inline-flex items-center gap-2">
-                    <MessageSquare className="w-3.5 h-3.5" /> Feedback
-                  </Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-
-            {/* README sits immediately before the user / settings cluster so
-                reference docs are the last nav stop before account controls. */}
-            <NavLink to="/readme" label="README" icon={BookOpen} active={startsWith("/readme")} />
 
             {/* Auth */}
             {!loading && (
@@ -264,7 +252,7 @@ const KRHeader = () => {
         {/* Mobile nav */}
         {mobileOpen && (
           <nav className="lg:hidden border-t border-border bg-background px-4 py-3 max-h-[80vh] overflow-y-auto">
-            <MobileLink to="/" label="Generate" onNavigate={closeMobile} active={isActive("/")} />
+            <MobileLink to="/content-automation" label="Content Automation" onNavigate={closeMobile} active={startsWith("/content-automation")} />
             {PRIMARY_LINKS.map((link) => (
               <MobileLink
                 key={link.to}

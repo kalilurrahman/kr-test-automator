@@ -99,7 +99,7 @@ export function SalesforceRepository({ selectedCloud, onSelectCloud }: Props) {
 
   const useInGenerator = (r: SalesforceTestRow) => {
     const params = new URLSearchParams({ platform: "salesforce", prefill: r.id });
-    navigate(`/?${params.toString()}`);
+    navigate(`/content-automation?${params.toString()}`);
   };
 
   const filtersActive = search || moduleFilter !== "All" || priorityFilter !== "All";
