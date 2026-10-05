@@ -1,0 +1,63 @@
+{
+  "product": "GitHub Copilot",
+  "key": "githubcopilot",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "repository_context",
+      "label": "Repository Context",
+      "folder": "repository_context",
+      "prefix": "githubcopilot_repository_context_suite",
+      "count": 125
+    },
+    {
+      "id": "agentic_changes",
+      "label": "Agentic Code Changes",
+      "folder": "agentic_changes",
+      "prefix": "githubcopilot_agentic_changes_suite",
+      "count": 125
+    },
+    {
+      "id": "test_generation",
+      "label": "Test Generation",
+      "folder": "test_generation",
+      "prefix": "githubcopilot_test_generation_suite",
+      "count": 125
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "folder": "debugging",
+      "prefix": "githubcopilot_debugging_suite",
+      "count": 125
+    },
+    {
+      "id": "refactoring",
+      "label": "Refactoring",
+      "folder": "refactoring",
+      "prefix": "githubcopilot_refactoring_suite",
+      "count": 125
+    },
+    {
+      "id": "code_review",
+      "label": "Code Review",
+      "folder": "code_review",
+      "prefix": "githubcopilot_code_review_suite",
+      "count": 125
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "folder": "security",
+      "prefix": "githubcopilot_security_suite",
+      "count": 125
+    },
+    {
+      "id": "pull_request_delivery",
+      "label": "Pull Request Delivery",
+      "folder": "pull_request_delivery",
+      "prefix": "githubcopilot_pull_request_delivery_suite",
+      "count": 125
+    }
+  ]
+}

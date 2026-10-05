@@ -1,0 +1,63 @@
+{
+  "product": "Cursor",
+  "key": "cursor",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "codebase_context",
+      "label": "Codebase Context",
+      "folder": "codebase_context",
+      "prefix": "cursor_codebase_context_suite",
+      "count": 125
+    },
+    {
+      "id": "agentic_editing",
+      "label": "Agentic Editing",
+      "folder": "agentic_editing",
+      "prefix": "cursor_agentic_editing_suite",
+      "count": 125
+    },
+    {
+      "id": "test_authoring",
+      "label": "Test Authoring",
+      "folder": "test_authoring",
+      "prefix": "cursor_test_authoring_suite",
+      "count": 125
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "folder": "debugging",
+      "prefix": "cursor_debugging_suite",
+      "count": 125
+    },
+    {
+      "id": "refactoring",
+      "label": "Refactoring",
+      "folder": "refactoring",
+      "prefix": "cursor_refactoring_suite",
+      "count": 125
+    },
+    {
+      "id": "diff_review",
+      "label": "Diff Review",
+      "folder": "diff_review",
+      "prefix": "cursor_diff_review_suite",
+      "count": 125
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "folder": "security",
+      "prefix": "cursor_security_suite",
+      "count": 125
+    },
+    {
+      "id": "terminal_approval",
+      "label": "Terminal and Approval Safety",
+      "folder": "terminal_approval",
+      "prefix": "cursor_terminal_approval_suite",
+      "count": 125
+    }
+  ]
+}

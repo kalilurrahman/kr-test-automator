@@ -1,0 +1,63 @@
+{
+  "product": "Gemini Antigravity",
+  "key": "geminiantigravity",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "workspace_context",
+      "label": "Workspace Context",
+      "folder": "workspace_context",
+      "prefix": "geminiantigravity_workspace_context_suite",
+      "count": 125
+    },
+    {
+      "id": "agentic_implementation",
+      "label": "Agentic Implementation",
+      "folder": "agentic_implementation",
+      "prefix": "geminiantigravity_agentic_implementation_suite",
+      "count": 125
+    },
+    {
+      "id": "test_generation",
+      "label": "Test Generation",
+      "folder": "test_generation",
+      "prefix": "geminiantigravity_test_generation_suite",
+      "count": 125
+    },
+    {
+      "id": "debugging_workflow",
+      "label": "Debugging Workflow",
+      "folder": "debugging_workflow",
+      "prefix": "geminiantigravity_debugging_workflow_suite",
+      "count": 125
+    },
+    {
+      "id": "refactoring",
+      "label": "Refactoring",
+      "folder": "refactoring",
+      "prefix": "geminiantigravity_refactoring_suite",
+      "count": 125
+    },
+    {
+      "id": "terminal_tool_safety",
+      "label": "Terminal and Tool Safety",
+      "folder": "terminal_tool_safety",
+      "prefix": "geminiantigravity_terminal_tool_safety_suite",
+      "count": 125
+    },
+    {
+      "id": "secure_operations",
+      "label": "Secure Operations",
+      "folder": "secure_operations",
+      "prefix": "geminiantigravity_secure_operations_suite",
+      "count": 125
+    },
+    {
+      "id": "review_handoff",
+      "label": "Review Artifacts and Handoff",
+      "folder": "review_handoff",
+      "prefix": "geminiantigravity_review_handoff_suite",
+      "count": 125
+    }
+  ]
+}

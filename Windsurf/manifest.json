@@ -1,0 +1,63 @@
+{
+  "product": "Windsurf",
+  "key": "windsurf",
+  "count": 1000,
+  "modules": [
+    {
+      "id": "codebase_context",
+      "label": "Codebase Context",
+      "folder": "codebase_context",
+      "prefix": "windsurf_codebase_context_suite",
+      "count": 125
+    },
+    {
+      "id": "agentic_implementation",
+      "label": "Agentic Implementation",
+      "folder": "agentic_implementation",
+      "prefix": "windsurf_agentic_implementation_suite",
+      "count": 125
+    },
+    {
+      "id": "test_generation",
+      "label": "Test Generation",
+      "folder": "test_generation",
+      "prefix": "windsurf_test_generation_suite",
+      "count": 125
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "folder": "debugging",
+      "prefix": "windsurf_debugging_suite",
+      "count": 125
+    },
+    {
+      "id": "refactoring",
+      "label": "Refactoring",
+      "folder": "refactoring",
+      "prefix": "windsurf_refactoring_suite",
+      "count": 125
+    },
+    {
+      "id": "workflow_tool_safety",
+      "label": "Workflow and Tool Safety",
+      "folder": "workflow_tool_safety",
+      "prefix": "windsurf_workflow_tool_safety_suite",
+      "count": 125
+    },
+    {
+      "id": "secure_coding",
+      "label": "Secure Coding",
+      "folder": "secure_coding",
+      "prefix": "windsurf_secure_coding_suite",
+      "count": 125
+    },
+    {
+      "id": "change_handoff",
+      "label": "Change Review and Handoff",
+      "folder": "change_handoff",
+      "prefix": "windsurf_change_handoff_suite",
+      "count": 125
+    }
+  ]
+}

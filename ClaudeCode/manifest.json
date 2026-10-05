@@ -5,37 +5,37 @@
   "modules": [
     {
       "id": "test_planning",
-      "label": "Test Planning",
+      "label": "Repository Context",
       "folder": "test_planning",
       "prefix": "claudecode_test_planning_suite",
       "count": 125
     },
     {
       "id": "playwright_authoring",
-      "label": "Playwright Authoring",
+      "label": "Code Changes",
       "folder": "playwright_authoring",
       "prefix": "claudecode_playwright_authoring_suite",
       "count": 125
     },
     {
-      "id": "api_testing",
-      "label": "API Testing",
-      "folder": "api_testing",
-      "prefix": "claudecode_api_testing_suite",
-      "count": 125
-    },
-    {
       "id": "tdd",
-      "label": "TDD",
+      "label": "Test Authoring",
       "folder": "tdd",
       "prefix": "claudecode_tdd_suite",
       "count": 125
     },
     {
-      "id": "ci_quality_gate",
-      "label": "CI Quality Gate",
-      "folder": "ci_quality_gate",
-      "prefix": "claudecode_ci_quality_gate_suite",
+      "id": "test_maintenance",
+      "label": "Debugging",
+      "folder": "test_maintenance",
+      "prefix": "claudecode_test_maintenance_suite",
+      "count": 125
+    },
+    {
+      "id": "api_testing",
+      "label": "Refactoring",
+      "folder": "api_testing",
+      "prefix": "claudecode_api_testing_suite",
       "count": 125
     },
     {
@@ -46,17 +46,17 @@
       "count": 125
     },
     {
-      "id": "mcp_integration",
-      "label": "MCP Integration",
-      "folder": "mcp_integration",
-      "prefix": "claudecode_mcp_integration_suite",
+      "id": "ci_quality_gate",
+      "label": "Security",
+      "folder": "ci_quality_gate",
+      "prefix": "claudecode_ci_quality_gate_suite",
       "count": 125
     },
     {
-      "id": "test_maintenance",
-      "label": "Test Maintenance",
-      "folder": "test_maintenance",
-      "prefix": "claudecode_test_maintenance_suite",
+      "id": "mcp_integration",
+      "label": "Tool Use and Permissions",
+      "folder": "mcp_integration",
+      "prefix": "claudecode_mcp_integration_suite",
       "count": 125
     }
   ]
