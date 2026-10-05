@@ -237,6 +237,31 @@ for (const [id, folder, ] of WAVE_FOLDERS) {
   }
 }
 
+// Python-generated suites are registered from their manifests so new case IDs
+// appear in the bundled global dashboard index and deep-link resolver.
+const GENERATED_DATA_PACKS = [
+  ["claudecode", "Claude Code", "ClaudeCode"], ["codex", "OpenAI Codex", "Codex"],
+  ["geminiantigravity", "Gemini Antigravity", "GeminiAntigravity"],
+  ["githubcopilot", "GitHub Copilot", "GitHubCopilot"], ["cursor", "Cursor", "Cursor"],
+  ["windsurf", "Windsurf", "Windsurf"], ["dataiku", "Dataiku", "Dataiku"],
+  ["apacheiceberg", "Apache Iceberg", "ApacheIceberg"], ["medidata", "Medidata", "Medidata"],
+  ["iqvia", "IQVIA", "IQVIA"], ["databricks", "Databricks", "Databricks"],
+  ["snowflakeai", "Snowflake AI", "SnowflakeAI"], ["foundryai", "Palantir Foundry AI", "PalantirFoundryAI"],
+];
+for (const [id, label, folder] of GENERATED_DATA_PACKS) {
+  const manifestFile = path.join(ROOT, folder, "manifest.json");
+  if (!existsSync(manifestFile)) continue;
+  try {
+    const manifest = JSON.parse(await readFile(manifestFile, "utf8"));
+    for (const mod of manifest.modules || []) {
+      const file = path.join(ROOT, folder, mod.folder, `${mod.prefix}.csv`);
+      if (existsSync(file)) await ingestCsv(file, id, label, mod.label || mod.id);
+    }
+  } catch (e) {
+    console.warn(`Generated data pack ${folder} skipped in precomputed index`, e?.message || e);
+  }
+}
+
 const SF = [
   ["sales","Sales Cloud","Salesforce/sales/sales_cloud_5000.csv"],
   ["marketing","Marketing Cloud","Salesforce/marketing/marketing_cloud_5000.csv"],

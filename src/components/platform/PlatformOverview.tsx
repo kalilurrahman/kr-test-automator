@@ -68,7 +68,7 @@ export function PlatformOverview({ platform, onOpenModule }: Props) {
     { ext: "xlsx", label: "XLSX", icon: FileSpreadsheet },
     { ext: "json", label: "JSON", icon: FileJson },
     { ext: "ts",   label: "TS",   icon: FileText },
-  ].map((d) => ({
+  ].filter((d) => !mod.formats || mod.formats.includes(d.ext as "csv" | "xlsx" | "json" | "ts")).map((d) => ({
     ...d,
     href: `${platform.publicBase}/${mod.folder}/${mod.prefix}.${d.ext}`,
   }));

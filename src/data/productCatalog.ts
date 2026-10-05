@@ -6,6 +6,8 @@
  * manifest.json files in the static folders — no datasets are regenerated.
  */
 
+import { GENERATED_DATA_PACK_PRODUCTS } from "@/data/generatedDataPackRegistry";
+
 export type ProductRouteKind = "spa" | "static";
 
 export interface ProductEntry {
@@ -495,6 +497,7 @@ export const PRODUCT_CATALOG: ProductEntry[] = [
     route: "/p/zendesk", kind: "spa",
     modules: ["Tickets", "Help Center", "Chat", "Talk", "Guide", "Explore"],
     idPrefix: "ZEN", accent: "emerald" },
+  ...GENERATED_DATA_PACK_PRODUCTS,
 ];
 
 export const TOTAL_PRODUCTS = PRODUCT_CATALOG.length;

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -410,6 +411,16 @@ def generate(tool: dict):
             writer = csv.DictWriter(stream, fieldnames=FIELDS, quoting=csv.QUOTE_MINIMAL)
             writer.writeheader()
             writer.writerows(rows)
+        (folder / f"{prefix}.json").write_text(
+            json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        variable = re.sub(r"\W+", "_", prefix.upper())
+        (folder / f"{prefix}.ts").write_text(
+            f"// Generated from {prefix}.csv; regenerate with scripts/generate_ai_coding_tool_suites.py.\n"
+            f"export const {variable} = {json.dumps(rows, ensure_ascii=False, indent=2)} as const;\n"
+            f"export default {variable};\n",
+            encoding="utf-8",
+        )
         modules.append({"id": slug, "label": label, "folder": slug, "prefix": prefix, "count": len(rows)})
         total += len(rows)
     manifest = {"product": tool["product"], "key": tool["key"], "count": total, "modules": modules}

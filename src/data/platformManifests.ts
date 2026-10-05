@@ -7,6 +7,8 @@
  * folders feed both the SPA pages and the legacy static HTML launchers.
  */
 
+import { GENERATED_DATA_PACK_PLATFORMS } from "@/data/generatedDataPackRegistry";
+
 export interface PlatformModule {
   /** URL slug used in /platform/:moduleId */
   id: string;
@@ -15,6 +17,8 @@ export interface PlatformModule {
   folder: string;
   /** CSV filename without extension (used for download links + fetch path) */
   prefix: string;
+  /** Files actually generated for this module; omitted modules use legacy defaults. */
+  formats?: ("csv" | "xlsx" | "json" | "ts")[];
 }
 
 export interface PlatformDef {
@@ -909,6 +913,7 @@ export const PLATFORMS: PlatformDef[] = [
       m("explore", "Explore", "zendesk_explore_suite"),
     ],
   },
+  ...GENERATED_DATA_PACK_PLATFORMS,
 ];
 
 export function getPlatform(id: string): PlatformDef | undefined {

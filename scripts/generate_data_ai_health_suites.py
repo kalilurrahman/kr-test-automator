@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -334,7 +335,7 @@ PACKS = {
         ],
     },
     "Medidata": {
-        "root": "Medidata", "key": "medidata", "id_prefix": "MED", "mode": "new",
+        "root": "Medidata", "key": "medidata", "id_prefix": "MDT", "mode": "new",
         "modules": [
             ("edc", "Rave EDC", "edc", [
                 "save a synthetic CRF form only when required fields and edit checks pass",
@@ -978,6 +979,16 @@ def write_rows(path: Path, rows):
         writer = csv.DictWriter(stream, fieldnames=FIELDS, lineterminator="\r\n")
         writer.writeheader()
         writer.writerows(rows)
+    json_path = path.with_suffix(".json")
+    json_path.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    variable = re.sub(r"\W+", "_", path.stem.upper())
+    ts_path = path.with_suffix(".ts")
+    ts_path.write_text(
+        f"// Generated from {path.name}; regenerate with scripts/generate_data_ai_health_suites.py.\n"
+        f"export const {variable} = {json.dumps(rows, ensure_ascii=False, indent=2)} as const;\n"
+        f"export default {variable};\n",
+        encoding="utf-8",
+    )
 
 
 def generate(pack: dict):

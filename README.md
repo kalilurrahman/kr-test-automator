@@ -87,6 +87,16 @@ npm install
 npm run dev
 ```
 
+### Generate Python-authored test packs for the app
+
+Run the pack generator from the repository root:
+
+```sh
+python scripts/generate_app_data_artifacts.py
+```
+
+It generates each pack's CSV (used by the app's table and search), JSON and TypeScript data files, manifests, and `src/data/generatedDataPackRegistry.ts`. The registry connects those manifests to the Platforms catalog and global case index; `vite.config.ts` copies the pack folders into the built app. To add another generated pack, add its folder metadata to `scripts/generate_app_data_pack_registry.py` and its static-copy target to `vite.config.ts`, then rerun the generator.
+
 ## 🤝 Contribution
 
 You can edit files directly via GitHub, use GitHub Codespaces, or utilize your preferred IDE locally. Commit your changes and push to your branch to see them updated.
