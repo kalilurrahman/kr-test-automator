@@ -52,6 +52,7 @@ Generate a comprehensive, well-documented test suite with:
 4. Clear comments explaining test logic, except for model-based outputs where model metadata, module attributes and action-mode notes replace code comments
 5. Mix of positive, negative, and edge case tests
 6. Appropriate waits and synchronization`;
+    const completePrompt = `${systemPrompt}\n7. Return complete implementations for the requested test count. There is no 50-line limit. Never truncate functions, omit assertions, or replace required tests with ellipses. Clearly list environment-specific setup and limitations; do not claim the output has been executed or certified.`;
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
@@ -62,7 +63,7 @@ Generate a comprehensive, well-documented test suite with:
       body: JSON.stringify({
         model: "google/gemini-3-flash-preview",
         messages: [
-          { role: "system", content: systemPrompt },
+          { role: "system", content: completePrompt },
           { role: "user", content: `Generate a test automation script for: ${businessCase}` },
         ],
         stream: true,
@@ -82,8 +83,6 @@ Generate a comprehensive, well-documented test suite with:
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
-      const errorText = await response.text();
-      console.error("AI gateway error:", response.status, errorText);
       return new Response(JSON.stringify({ error: "AI generation failed" }), {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
@@ -94,7 +93,6 @@ Generate a comprehensive, well-documented test suite with:
       headers: { ...corsHeaders, "Content-Type": "text/event-stream" },
     });
   } catch (error) {
-    console.error("generate-test-script error:", error);
     return new Response(
       JSON.stringify({ error: error instanceof Error ? error.message : "Unknown error" }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
