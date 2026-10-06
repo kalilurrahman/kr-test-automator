@@ -15,6 +15,7 @@ export type FamilyKey =
   | "energy_logistics"
   | "telecom_network"
   | "data_ai"
+  | "ai_developer_tools"
   | "cloud_devops"
   | "government_public"
   | "commerce_retail"
@@ -61,6 +62,13 @@ export const PRODUCT_FAMILIES: ProductFamily[] = [
     shortLabel: "Data & AI",
     blurb: "Analytics, data engineering, model ecosystems, AI development, and intelligent application platforms.",
     accent: "violet",
+  },
+  {
+    key: "ai_developer_tools",
+    label: "AI Developer Tools",
+    shortLabel: "AI Dev Tools",
+    blurb: "Coding agents, IDE and CLI copilots, autonomous engineering, and developer-agent orchestration.",
+    accent: "cyan",
   },
   {
     key: "financial_services",
@@ -216,12 +224,22 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   langsmith: "data_ai",
   pinecone: "data_ai",
   huggingfacehub: "data_ai",
-  claudecode: "data_ai",
-  codex: "data_ai",
-  geminiantigravity: "data_ai",
-  githubcopilot: "data_ai",
-  cursor: "data_ai",
-  windsurf: "data_ai",
+  claudecode: "ai_developer_tools",
+  codex: "ai_developer_tools",
+  geminiantigravity: "ai_developer_tools",
+  githubcopilot: "ai_developer_tools",
+  cursor: "ai_developer_tools",
+  windsurf: "ai_developer_tools",
+  kiro: "ai_developer_tools",
+  "gitlab-duo": "ai_developer_tools",
+  "jetbrains-junie": "ai_developer_tools",
+  "replit-agent": "ai_developer_tools",
+  devin: "ai_developer_tools",
+  cline: "ai_developer_tools",
+  openhands: "ai_developer_tools",
+  "factory-droid": "ai_developer_tools",
+  "roo-code": "ai_developer_tools",
+  "sourcegraph-amp": "ai_developer_tools",
   airbyte: "data_ai",
   apacheairflow: "data_ai",
   prefect: "data_ai",

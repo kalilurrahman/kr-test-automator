@@ -1,0 +1,79 @@
+{
+  "product": "Kiro",
+  "key": "kiro",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "specs",
+      "label": "Specs and Requirements",
+      "folder": "specs",
+      "prefix": "kiro_specs_suite",
+      "count": 200
+    },
+    {
+      "id": "steering",
+      "label": "Steering and Workspace Context",
+      "folder": "steering",
+      "prefix": "kiro_steering_suite",
+      "count": 200
+    },
+    {
+      "id": "implementation",
+      "label": "Agentic Implementation",
+      "folder": "implementation",
+      "prefix": "kiro_implementation_suite",
+      "count": 200
+    },
+    {
+      "id": "hooks",
+      "label": "Agent Hooks and Automation",
+      "folder": "hooks",
+      "prefix": "kiro_hooks_suite",
+      "count": 200
+    },
+    {
+      "id": "tests_debugging",
+      "label": "Tests and Debugging",
+      "folder": "tests_debugging",
+      "prefix": "kiro_tests_debugging_suite",
+      "count": 200
+    },
+    {
+      "id": "design_artifacts",
+      "label": "Design Artifacts and Documentation",
+      "folder": "design_artifacts",
+      "prefix": "kiro_design_artifacts_suite",
+      "count": 200
+    },
+    {
+      "id": "mcp_integrations",
+      "label": "MCP and External Integrations",
+      "folder": "mcp_integrations",
+      "prefix": "kiro_mcp_integrations_suite",
+      "count": 200
+    },
+    {
+      "id": "review_approvals",
+      "label": "Review and Approval Controls",
+      "folder": "review_approvals",
+      "prefix": "kiro_review_approvals_suite",
+      "count": 200
+    },
+    {
+      "id": "sessions_recovery",
+      "label": "Sessions and Recovery",
+      "folder": "sessions_recovery",
+      "prefix": "kiro_sessions_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "security_governance",
+      "label": "Security and Governance",
+      "folder": "security_governance",
+      "prefix": "kiro_security_governance_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

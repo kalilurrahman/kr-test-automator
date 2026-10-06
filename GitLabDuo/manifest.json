@@ -1,0 +1,79 @@
+{
+  "product": "GitLab Duo Agent Platform",
+  "key": "gitlab-duo",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "issue_to_mr",
+      "label": "Issue-to-Merge-Request Flow",
+      "folder": "issue_to_mr",
+      "prefix": "gitlab-duo_issue_to_mr_suite",
+      "count": 200
+    },
+    {
+      "id": "agent_catalog",
+      "label": "Agents and AI Catalog",
+      "folder": "agent_catalog",
+      "prefix": "gitlab-duo_agent_catalog_suite",
+      "count": 200
+    },
+    {
+      "id": "flows_orchestration",
+      "label": "Flows and Orchestration",
+      "folder": "flows_orchestration",
+      "prefix": "gitlab-duo_flows_orchestration_suite",
+      "count": 200
+    },
+    {
+      "id": "code_review",
+      "label": "Merge Request Code Review",
+      "folder": "code_review",
+      "prefix": "gitlab-duo_code_review_suite",
+      "count": 200
+    },
+    {
+      "id": "cicd_repair",
+      "label": "CI Diagnosis and Repair",
+      "folder": "cicd_repair",
+      "prefix": "gitlab-duo_cicd_repair_suite",
+      "count": 200
+    },
+    {
+      "id": "security_flows",
+      "label": "Security Triage and Remediation",
+      "folder": "security_flows",
+      "prefix": "gitlab-duo_security_flows_suite",
+      "count": 200
+    },
+    {
+      "id": "tool_governance",
+      "label": "Tool Governance and Approvals",
+      "folder": "tool_governance",
+      "prefix": "gitlab-duo_tool_governance_suite",
+      "count": 200
+    },
+    {
+      "id": "mcp_integrations",
+      "label": "MCP and External Integrations",
+      "folder": "mcp_integrations",
+      "prefix": "gitlab-duo_mcp_integrations_suite",
+      "count": 200
+    },
+    {
+      "id": "self_managed",
+      "label": "Self-Managed and AI Gateway Operations",
+      "folder": "self_managed",
+      "prefix": "gitlab-duo_self_managed_suite",
+      "count": 200
+    },
+    {
+      "id": "audit_analytics",
+      "label": "AI Audit and Usage Analytics",
+      "folder": "audit_analytics",
+      "prefix": "gitlab-duo_audit_analytics_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

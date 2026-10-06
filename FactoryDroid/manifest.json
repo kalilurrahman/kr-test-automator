@@ -1,0 +1,79 @@
+{
+  "product": "Factory Droid",
+  "key": "factory-droid",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "autonomy_policy",
+      "label": "Autonomy Levels and Command Policy",
+      "folder": "autonomy_policy",
+      "prefix": "factory-droid_autonomy_policy_suite",
+      "count": 200
+    },
+    {
+      "id": "spec_mode",
+      "label": "Spec Mode and Planning",
+      "folder": "spec_mode",
+      "prefix": "factory-droid_spec_mode_suite",
+      "count": 200
+    },
+    {
+      "id": "missions",
+      "label": "Missions and Multi-agent Orchestration",
+      "folder": "missions",
+      "prefix": "factory-droid_missions_suite",
+      "count": 200
+    },
+    {
+      "id": "custom_droids",
+      "label": "Custom Droids and Subagents",
+      "folder": "custom_droids",
+      "prefix": "factory-droid_custom_droids_suite",
+      "count": 200
+    },
+    {
+      "id": "mcp_plugins_hooks",
+      "label": "MCP, Plugins and Hooks",
+      "folder": "mcp_plugins_hooks",
+      "prefix": "factory-droid_mcp_plugins_hooks_suite",
+      "count": 200
+    },
+    {
+      "id": "qa_control",
+      "label": "Droid Control and QA Flows",
+      "folder": "qa_control",
+      "prefix": "factory-droid_qa_control_suite",
+      "count": 200
+    },
+    {
+      "id": "software_factory",
+      "label": "Software Factory Workflows",
+      "folder": "software_factory",
+      "prefix": "factory-droid_software_factory_suite",
+      "count": 200
+    },
+    {
+      "id": "enterprise_controls",
+      "label": "Enterprise Controls and Managed Settings",
+      "folder": "enterprise_controls",
+      "prefix": "factory-droid_enterprise_controls_suite",
+      "count": 200
+    },
+    {
+      "id": "sdk_sessions",
+      "label": "SDK and Session Management",
+      "folder": "sdk_sessions",
+      "prefix": "factory-droid_sdk_sessions_suite",
+      "count": 200
+    },
+    {
+      "id": "observability_review",
+      "label": "Diff Review and Audit",
+      "folder": "observability_review",
+      "prefix": "factory-droid_observability_review_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

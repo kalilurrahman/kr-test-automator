@@ -1,5 +1,7 @@
 """Additional workflow, data, AI, commerce and payments platform packs."""
 
+from additional_ai_developer_product_packs import PACKS as AI_DEVELOPER_PACKS
+
 
 def m(slug: str, label: str, tasks: str):
     return slug, label, [task.strip() for task in tasks.split("|") if task.strip()]
@@ -223,3 +225,5 @@ PACKS = [
         ],
     },
 ]
+
+PACKS.extend(AI_DEVELOPER_PACKS)

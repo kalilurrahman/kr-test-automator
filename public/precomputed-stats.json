@@ -1,17 +1,17 @@
 {
-  "totalCases": 283960,
-  "totalModules": 50986,
-  "uniqueIds": 283960,
+  "totalCases": 303960,
+  "totalModules": 51086,
+  "uniqueIds": 303960,
   "duplicatesRemoved": 7540,
-  "lastUpdated": 1791294167999,
+  "lastUpdated": 1791297297548,
   "byPriority": [
     {
       "name": "High",
-      "value": 149286
+      "value": 164870
     },
     {
       "name": "Medium",
-      "value": 89530
+      "value": 93946
     },
     {
       "name": "Low",
@@ -221,6 +221,46 @@
     },
     {
       "name": "Real Estate & Facilities",
+      "value": 2000
+    },
+    {
+      "name": "Kiro",
+      "value": 2000
+    },
+    {
+      "name": "GitLab Duo Agent Platform",
+      "value": 2000
+    },
+    {
+      "name": "JetBrains Junie",
+      "value": 2000
+    },
+    {
+      "name": "Replit Agent",
+      "value": 2000
+    },
+    {
+      "name": "Devin",
+      "value": 2000
+    },
+    {
+      "name": "Cline",
+      "value": 2000
+    },
+    {
+      "name": "OpenHands",
+      "value": 2000
+    },
+    {
+      "name": "Factory Droid",
+      "value": 2000
+    },
+    {
+      "name": "Roo Code",
+      "value": 2000
+    },
+    {
+      "name": "Sourcegraph Amp",
       "value": 2000
     },
     {
@@ -10931,6 +10971,196 @@
         "Capital Projects and Renovations",
         "Tenant Portal and Communications",
         "Security, Resilience and Portfolio Reporting"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "kiro": {
+      "label": "Kiro",
+      "total": 2000,
+      "modules": [
+        "Specs and Requirements",
+        "Steering and Workspace Context",
+        "Agentic Implementation",
+        "Agent Hooks and Automation",
+        "Tests and Debugging",
+        "Design Artifacts and Documentation",
+        "MCP and External Integrations",
+        "Review and Approval Controls",
+        "Sessions and Recovery",
+        "Security and Governance"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "gitlab-duo": {
+      "label": "GitLab Duo Agent Platform",
+      "total": 2000,
+      "modules": [
+        "Issue-to-Merge-Request Flow",
+        "Agents and AI Catalog",
+        "Flows and Orchestration",
+        "Merge Request Code Review",
+        "CI Diagnosis and Repair",
+        "Security Triage and Remediation",
+        "Tool Governance and Approvals",
+        "MCP and External Integrations",
+        "Self-Managed and AI Gateway Operations",
+        "AI Audit and Usage Analytics"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "jetbrains-junie": {
+      "label": "JetBrains Junie",
+      "total": 2000,
+      "modules": [
+        "IDE Project Context",
+        "Planning and Multi-step Execution",
+        "Code Changes and Refactoring",
+        "Debugger-assisted Diagnosis",
+        "CLI and Headless Automation",
+        "Test Authoring and Execution",
+        "MCP Tools and Integrations",
+        "Pull Request Review",
+        "Permissions and Sandbox",
+        "Sessions and Resilience"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "replit-agent": {
+      "label": "Replit Agent",
+      "total": 2000,
+      "modules": [
+        "Prompt-to-App Scaffolding",
+        "Design and Iterative Refinement",
+        "Database and Authentication Integrations",
+        "Browser Preview and E2E Testing",
+        "Packages and Terminal Execution",
+        "Deployment and Domains",
+        "Third-party Integrations",
+        "Collaboration and Shared Projects",
+        "Checkpoints and Recovery",
+        "Security and Resource Governance"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "devin": {
+      "label": "Devin",
+      "total": 2000,
+      "modules": [
+        "Repository and Environment Setup",
+        "Ticket-to-Implementation",
+        "Browser Verification",
+        "Parallel Sessions and Batches",
+        "Pull Requests and Reviews",
+        "Testing and Refactoring",
+        "Integrations and Automations",
+        "Secrets and Permissions",
+        "Long-running Work and Recovery",
+        "Outcome Reporting and Governance"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "cline": {
+      "label": "Cline",
+      "total": 2000,
+      "modules": [
+        "Plan and Act Modes",
+        "Tool Use and Approvals",
+        "MCP Servers and Plugins",
+        "Terminal and Editor Operations",
+        "Browser and Web Retrieval",
+        "Sessions and Persistence",
+        "Models and Provider Configuration",
+        "CLI and Agent Client Protocol",
+        "Context, Rules and Checkpoints",
+        "Security and Safe Execution"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "openhands": {
+      "label": "OpenHands",
+      "total": 2000,
+      "modules": [
+        "Workspace and Runtime",
+        "Agent SDK and Actions",
+        "Agent Server and Remote Execution",
+        "Headless and CI Automation",
+        "Conversation State and Persistence",
+        "Model Providers and Agent Skills",
+        "Security and Action Confirmation",
+        "Browser and Session Recording",
+        "GitHub Workflows and Reviews",
+        "Evaluation and Observability"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "factory-droid": {
+      "label": "Factory Droid",
+      "total": 2000,
+      "modules": [
+        "Autonomy Levels and Command Policy",
+        "Spec Mode and Planning",
+        "Missions and Multi-agent Orchestration",
+        "Custom Droids and Subagents",
+        "MCP, Plugins and Hooks",
+        "Droid Control and QA Flows",
+        "Software Factory Workflows",
+        "Enterprise Controls and Managed Settings",
+        "SDK and Session Management",
+        "Diff Review and Audit"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "roo-code": {
+      "label": "Roo Code",
+      "total": 2000,
+      "modules": [
+        "Built-in and Custom Modes",
+        "Orchestrator and Boomerang Tasks",
+        "Custom Instructions and Project Context",
+        "MCP and Available Tools",
+        "Browser and File Operations",
+        "Context Management and Checkpoints",
+        "Providers and Sticky Models",
+        "Edit, Command and Approval Controls",
+        "Task Recovery and Reliability",
+        "Security and Tool Boundaries"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "sourcegraph-amp": {
+      "label": "Sourcegraph Amp",
+      "total": 2000,
+      "modules": [
+        "Codebase Context and Search",
+        "Threads and Cloud Orbs",
+        "Agentic Code Implementation",
+        "Tools and MCP Integrations",
+        "Model Routing and Task Selection",
+        "Long-running Work and Notifications",
+        "Review and Delivery Boundaries",
+        "Session Sharing and Collaboration",
+        "Privacy and Security",
+        "Evaluation and Observability"
       ],
       "high": 1568,
       "medium": 432,

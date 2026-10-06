@@ -1,0 +1,79 @@
+{
+  "product": "JetBrains Junie",
+  "key": "jetbrains-junie",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "ide_context",
+      "label": "IDE Project Context",
+      "folder": "ide_context",
+      "prefix": "jetbrains-junie_ide_context_suite",
+      "count": 200
+    },
+    {
+      "id": "planning_execution",
+      "label": "Planning and Multi-step Execution",
+      "folder": "planning_execution",
+      "prefix": "jetbrains-junie_planning_execution_suite",
+      "count": 200
+    },
+    {
+      "id": "code_changes",
+      "label": "Code Changes and Refactoring",
+      "folder": "code_changes",
+      "prefix": "jetbrains-junie_code_changes_suite",
+      "count": 200
+    },
+    {
+      "id": "debugger",
+      "label": "Debugger-assisted Diagnosis",
+      "folder": "debugger",
+      "prefix": "jetbrains-junie_debugger_suite",
+      "count": 200
+    },
+    {
+      "id": "cli_headless",
+      "label": "CLI and Headless Automation",
+      "folder": "cli_headless",
+      "prefix": "jetbrains-junie_cli_headless_suite",
+      "count": 200
+    },
+    {
+      "id": "test_workflows",
+      "label": "Test Authoring and Execution",
+      "folder": "test_workflows",
+      "prefix": "jetbrains-junie_test_workflows_suite",
+      "count": 200
+    },
+    {
+      "id": "mcp_tools",
+      "label": "MCP Tools and Integrations",
+      "folder": "mcp_tools",
+      "prefix": "jetbrains-junie_mcp_tools_suite",
+      "count": 200
+    },
+    {
+      "id": "pr_review",
+      "label": "Pull Request Review",
+      "folder": "pr_review",
+      "prefix": "jetbrains-junie_pr_review_suite",
+      "count": 200
+    },
+    {
+      "id": "permissions_sandbox",
+      "label": "Permissions and Sandbox",
+      "folder": "permissions_sandbox",
+      "prefix": "jetbrains-junie_permissions_sandbox_suite",
+      "count": 200
+    },
+    {
+      "id": "sessions_resilience",
+      "label": "Sessions and Resilience",
+      "folder": "sessions_resilience",
+      "prefix": "jetbrains-junie_sessions_resilience_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

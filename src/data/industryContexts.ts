@@ -138,6 +138,12 @@ export const INDUSTRY_CONTEXTS = [
     aliases: ["cloud-platform", "cloud", "platform-and-cloud", "data-ai-platforms"],
   },
   {
+    id: "developer-tools",
+    label: "AI Developer Tools",
+    guidance: "Cover repository context and scope, task planning or specifications, IDE and CLI agent workflows, code edits and reviewable diffs, local test and debug loops, tool and MCP permissions, approval gates, session continuity, recovery, collaboration, evaluation, and audit. Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, merge changes, or publish or deploy during a test run.",
+    aliases: ["developer-tools", "ai-coding-tools", "coding-agent", "developer-agent", "ai-developer-tools", "coding-agents"],
+  },
+  {
     id: "media-content",
     label: "Media & Content",
     guidance: "Cover synthetic content lifecycle, metadata, rights and approvals, media delivery, subscriptions, accessibility, partner interfaces, and analytics with non-copyrighted test assets.",

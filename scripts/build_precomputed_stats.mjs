@@ -282,6 +282,11 @@ const GENERATED_DATA_PACKS = [
   ["education-research", "Education & Research Systems", "EducationResearch"],
   ["media-entertainment", "Media & Entertainment", "MediaEntertainment"],
   ["real-estate-facilities", "Real Estate & Facilities", "RealEstateFacilities"],
+  ["kiro", "Kiro", "Kiro"], ["gitlab-duo", "GitLab Duo Agent Platform", "GitLabDuo"],
+  ["jetbrains-junie", "JetBrains Junie", "JetBrainsJunie"], ["replit-agent", "Replit Agent", "ReplitAgent"],
+  ["devin", "Devin", "Devin"], ["cline", "Cline", "Cline"],
+  ["openhands", "OpenHands", "OpenHands"], ["factory-droid", "Factory Droid", "FactoryDroid"],
+  ["roo-code", "Roo Code", "RooCode"], ["sourcegraph-amp", "Sourcegraph Amp", "SourcegraphAmp"],
 ];
 for (const [id, label, folder] of GENERATED_DATA_PACKS) {
   const manifestFile = path.join(ROOT, folder, "manifest.json");

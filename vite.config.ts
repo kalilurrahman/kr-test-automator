@@ -66,6 +66,16 @@ export default defineConfig(({ mode }) => ({
     viteStaticCopy({
       targets: [
         { src: 'MarketAutomationSuites/archives/*.zip', dest: 'market-automation-suites' },
+        { src: 'Kiro/*', dest: 'Kiro' },
+        { src: 'GitLabDuo/*', dest: 'GitLabDuo' },
+        { src: 'JetBrainsJunie/*', dest: 'JetBrainsJunie' },
+        { src: 'ReplitAgent/*', dest: 'ReplitAgent' },
+        { src: 'Devin/*', dest: 'Devin' },
+        { src: 'Cline/*', dest: 'Cline' },
+        { src: 'OpenHands/*', dest: 'OpenHands' },
+        { src: 'FactoryDroid/*', dest: 'FactoryDroid' },
+        { src: 'RooCode/*', dest: 'RooCode' },
+        { src: 'SourcegraphAmp/*', dest: 'SourcegraphAmp' },
         { src: 'Salesforce/*', dest: 'Salesforce' },
         { src: 'ClaudeCode/*', dest: 'ClaudeCode' },
         { src: 'Codex/*', dest: 'Codex' },

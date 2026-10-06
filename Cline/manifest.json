@@ -1,0 +1,79 @@
+{
+  "product": "Cline",
+  "key": "cline",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "plan_act",
+      "label": "Plan and Act Modes",
+      "folder": "plan_act",
+      "prefix": "cline_plan_act_suite",
+      "count": 200
+    },
+    {
+      "id": "tool_approvals",
+      "label": "Tool Use and Approvals",
+      "folder": "tool_approvals",
+      "prefix": "cline_tool_approvals_suite",
+      "count": 200
+    },
+    {
+      "id": "mcp_plugins",
+      "label": "MCP Servers and Plugins",
+      "folder": "mcp_plugins",
+      "prefix": "cline_mcp_plugins_suite",
+      "count": 200
+    },
+    {
+      "id": "terminal_editor",
+      "label": "Terminal and Editor Operations",
+      "folder": "terminal_editor",
+      "prefix": "cline_terminal_editor_suite",
+      "count": 200
+    },
+    {
+      "id": "browser_tools",
+      "label": "Browser and Web Retrieval",
+      "folder": "browser_tools",
+      "prefix": "cline_browser_tools_suite",
+      "count": 200
+    },
+    {
+      "id": "session_persistence",
+      "label": "Sessions and Persistence",
+      "folder": "session_persistence",
+      "prefix": "cline_session_persistence_suite",
+      "count": 200
+    },
+    {
+      "id": "model_provider",
+      "label": "Models and Provider Configuration",
+      "folder": "model_provider",
+      "prefix": "cline_model_provider_suite",
+      "count": 200
+    },
+    {
+      "id": "cli_acp",
+      "label": "CLI and Agent Client Protocol",
+      "folder": "cli_acp",
+      "prefix": "cline_cli_acp_suite",
+      "count": 200
+    },
+    {
+      "id": "context_checkpoints",
+      "label": "Context, Rules and Checkpoints",
+      "folder": "context_checkpoints",
+      "prefix": "cline_context_checkpoints_suite",
+      "count": 200
+    },
+    {
+      "id": "security_boundaries",
+      "label": "Security and Safe Execution",
+      "folder": "security_boundaries",
+      "prefix": "cline_security_boundaries_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

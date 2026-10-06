@@ -1,0 +1,79 @@
+{
+  "product": "Roo Code",
+  "key": "roo-code",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "modes",
+      "label": "Built-in and Custom Modes",
+      "folder": "modes",
+      "prefix": "roo-code_modes_suite",
+      "count": 200
+    },
+    {
+      "id": "orchestrator",
+      "label": "Orchestrator and Boomerang Tasks",
+      "folder": "orchestrator",
+      "prefix": "roo-code_orchestrator_suite",
+      "count": 200
+    },
+    {
+      "id": "custom_instructions",
+      "label": "Custom Instructions and Project Context",
+      "folder": "custom_instructions",
+      "prefix": "roo-code_custom_instructions_suite",
+      "count": 200
+    },
+    {
+      "id": "mcp_tools",
+      "label": "MCP and Available Tools",
+      "folder": "mcp_tools",
+      "prefix": "roo-code_mcp_tools_suite",
+      "count": 200
+    },
+    {
+      "id": "browser_file_ops",
+      "label": "Browser and File Operations",
+      "folder": "browser_file_ops",
+      "prefix": "roo-code_browser_file_ops_suite",
+      "count": 200
+    },
+    {
+      "id": "context_checkpoints",
+      "label": "Context Management and Checkpoints",
+      "folder": "context_checkpoints",
+      "prefix": "roo-code_context_checkpoints_suite",
+      "count": 200
+    },
+    {
+      "id": "provider_models",
+      "label": "Providers and Sticky Models",
+      "folder": "provider_models",
+      "prefix": "roo-code_provider_models_suite",
+      "count": 200
+    },
+    {
+      "id": "edit_approvals",
+      "label": "Edit, Command and Approval Controls",
+      "folder": "edit_approvals",
+      "prefix": "roo-code_edit_approvals_suite",
+      "count": 200
+    },
+    {
+      "id": "task_recovery",
+      "label": "Task Recovery and Reliability",
+      "folder": "task_recovery",
+      "prefix": "roo-code_task_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "security_review",
+      "label": "Security and Tool Boundaries",
+      "folder": "security_review",
+      "prefix": "roo-code_security_review_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

@@ -1,0 +1,79 @@
+{
+  "product": "OpenHands",
+  "key": "openhands",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "workspace_runtime",
+      "label": "Workspace and Runtime",
+      "folder": "workspace_runtime",
+      "prefix": "openhands_workspace_runtime_suite",
+      "count": 200
+    },
+    {
+      "id": "agent_sdk",
+      "label": "Agent SDK and Actions",
+      "folder": "agent_sdk",
+      "prefix": "openhands_agent_sdk_suite",
+      "count": 200
+    },
+    {
+      "id": "agent_server",
+      "label": "Agent Server and Remote Execution",
+      "folder": "agent_server",
+      "prefix": "openhands_agent_server_suite",
+      "count": 200
+    },
+    {
+      "id": "headless_ci",
+      "label": "Headless and CI Automation",
+      "folder": "headless_ci",
+      "prefix": "openhands_headless_ci_suite",
+      "count": 200
+    },
+    {
+      "id": "conversation_state",
+      "label": "Conversation State and Persistence",
+      "folder": "conversation_state",
+      "prefix": "openhands_conversation_state_suite",
+      "count": 200
+    },
+    {
+      "id": "providers_skills",
+      "label": "Model Providers and Agent Skills",
+      "folder": "providers_skills",
+      "prefix": "openhands_providers_skills_suite",
+      "count": 200
+    },
+    {
+      "id": "security_confirmations",
+      "label": "Security and Action Confirmation",
+      "folder": "security_confirmations",
+      "prefix": "openhands_security_confirmations_suite",
+      "count": 200
+    },
+    {
+      "id": "browser_recording",
+      "label": "Browser and Session Recording",
+      "folder": "browser_recording",
+      "prefix": "openhands_browser_recording_suite",
+      "count": 200
+    },
+    {
+      "id": "github_workflows",
+      "label": "GitHub Workflows and Reviews",
+      "folder": "github_workflows",
+      "prefix": "openhands_github_workflows_suite",
+      "count": 200
+    },
+    {
+      "id": "evaluation_observability",
+      "label": "Evaluation and Observability",
+      "folder": "evaluation_observability",
+      "prefix": "openhands_evaluation_observability_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

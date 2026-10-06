@@ -1,0 +1,79 @@
+{
+  "product": "Devin",
+  "key": "devin",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "repo_setup",
+      "label": "Repository and Environment Setup",
+      "folder": "repo_setup",
+      "prefix": "devin_repo_setup_suite",
+      "count": 200
+    },
+    {
+      "id": "ticket_execution",
+      "label": "Ticket-to-Implementation",
+      "folder": "ticket_execution",
+      "prefix": "devin_ticket_execution_suite",
+      "count": 200
+    },
+    {
+      "id": "browser_verification",
+      "label": "Browser Verification",
+      "folder": "browser_verification",
+      "prefix": "devin_browser_verification_suite",
+      "count": 200
+    },
+    {
+      "id": "parallel_sessions",
+      "label": "Parallel Sessions and Batches",
+      "folder": "parallel_sessions",
+      "prefix": "devin_parallel_sessions_suite",
+      "count": 200
+    },
+    {
+      "id": "pull_requests",
+      "label": "Pull Requests and Reviews",
+      "folder": "pull_requests",
+      "prefix": "devin_pull_requests_suite",
+      "count": 200
+    },
+    {
+      "id": "testing_refactoring",
+      "label": "Testing and Refactoring",
+      "folder": "testing_refactoring",
+      "prefix": "devin_testing_refactoring_suite",
+      "count": 200
+    },
+    {
+      "id": "integrations_automations",
+      "label": "Integrations and Automations",
+      "folder": "integrations_automations",
+      "prefix": "devin_integrations_automations_suite",
+      "count": 200
+    },
+    {
+      "id": "secrets_permissions",
+      "label": "Secrets and Permissions",
+      "folder": "secrets_permissions",
+      "prefix": "devin_secrets_permissions_suite",
+      "count": 200
+    },
+    {
+      "id": "long_running_sessions",
+      "label": "Long-running Work and Recovery",
+      "folder": "long_running_sessions",
+      "prefix": "devin_long_running_sessions_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_reporting",
+      "label": "Outcome Reporting and Governance",
+      "folder": "quality_reporting",
+      "prefix": "devin_quality_reporting_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

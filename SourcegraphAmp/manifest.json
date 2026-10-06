@@ -1,0 +1,79 @@
+{
+  "product": "Sourcegraph Amp",
+  "key": "sourcegraph-amp",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "codebase_context",
+      "label": "Codebase Context and Search",
+      "folder": "codebase_context",
+      "prefix": "sourcegraph-amp_codebase_context_suite",
+      "count": 200
+    },
+    {
+      "id": "threads_orbs",
+      "label": "Threads and Cloud Orbs",
+      "folder": "threads_orbs",
+      "prefix": "sourcegraph-amp_threads_orbs_suite",
+      "count": 200
+    },
+    {
+      "id": "implementation",
+      "label": "Agentic Code Implementation",
+      "folder": "implementation",
+      "prefix": "sourcegraph-amp_implementation_suite",
+      "count": 200
+    },
+    {
+      "id": "tools_mcp",
+      "label": "Tools and MCP Integrations",
+      "folder": "tools_mcp",
+      "prefix": "sourcegraph-amp_tools_mcp_suite",
+      "count": 200
+    },
+    {
+      "id": "multi_model",
+      "label": "Model Routing and Task Selection",
+      "folder": "multi_model",
+      "prefix": "sourcegraph-amp_multi_model_suite",
+      "count": 200
+    },
+    {
+      "id": "long_running",
+      "label": "Long-running Work and Notifications",
+      "folder": "long_running",
+      "prefix": "sourcegraph-amp_long_running_suite",
+      "count": 200
+    },
+    {
+      "id": "review_delivery",
+      "label": "Review and Delivery Boundaries",
+      "folder": "review_delivery",
+      "prefix": "sourcegraph-amp_review_delivery_suite",
+      "count": 200
+    },
+    {
+      "id": "session_collaboration",
+      "label": "Session Sharing and Collaboration",
+      "folder": "session_collaboration",
+      "prefix": "sourcegraph-amp_session_collaboration_suite",
+      "count": 200
+    },
+    {
+      "id": "privacy_security",
+      "label": "Privacy and Security",
+      "folder": "privacy_security",
+      "prefix": "sourcegraph-amp_privacy_security_suite",
+      "count": 200
+    },
+    {
+      "id": "evaluation_observability",
+      "label": "Evaluation and Observability",
+      "folder": "evaluation_observability",
+      "prefix": "sourcegraph-amp_evaluation_observability_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

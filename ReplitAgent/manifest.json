@@ -1,0 +1,79 @@
+{
+  "product": "Replit Agent",
+  "key": "replit-agent",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "prompt_app_scaffold",
+      "label": "Prompt-to-App Scaffolding",
+      "folder": "prompt_app_scaffold",
+      "prefix": "replit-agent_prompt_app_scaffold_suite",
+      "count": 200
+    },
+    {
+      "id": "design_iteration",
+      "label": "Design and Iterative Refinement",
+      "folder": "design_iteration",
+      "prefix": "replit-agent_design_iteration_suite",
+      "count": 200
+    },
+    {
+      "id": "database_auth",
+      "label": "Database and Authentication Integrations",
+      "folder": "database_auth",
+      "prefix": "replit-agent_database_auth_suite",
+      "count": 200
+    },
+    {
+      "id": "browser_testing",
+      "label": "Browser Preview and E2E Testing",
+      "folder": "browser_testing",
+      "prefix": "replit-agent_browser_testing_suite",
+      "count": 200
+    },
+    {
+      "id": "terminal_packages",
+      "label": "Packages and Terminal Execution",
+      "folder": "terminal_packages",
+      "prefix": "replit-agent_terminal_packages_suite",
+      "count": 200
+    },
+    {
+      "id": "deployment",
+      "label": "Deployment and Domains",
+      "folder": "deployment",
+      "prefix": "replit-agent_deployment_suite",
+      "count": 200
+    },
+    {
+      "id": "integrations",
+      "label": "Third-party Integrations",
+      "folder": "integrations",
+      "prefix": "replit-agent_integrations_suite",
+      "count": 200
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration and Shared Projects",
+      "folder": "collaboration",
+      "prefix": "replit-agent_collaboration_suite",
+      "count": 200
+    },
+    {
+      "id": "checkpoints_recovery",
+      "label": "Checkpoints and Recovery",
+      "folder": "checkpoints_recovery",
+      "prefix": "replit-agent_checkpoints_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "security_cost_governance",
+      "label": "Security and Resource Governance",
+      "folder": "security_cost_governance",
+      "prefix": "replit-agent_security_cost_governance_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "developer-tools",
+  "safetyNote": "Use disposable synthetic repositories and mock integrations only. Never expose real credentials, modify production repositories, or publish/merge changes during a test run."
+}

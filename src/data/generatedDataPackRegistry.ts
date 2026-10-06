@@ -6189,6 +6189,1236 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
     ],
     "industryDomain": "real-estate",
     "automationSuiteUrl": "/market-automation-suites/real-estate-facilities-playwright-e2e.zip"
+  },
+  {
+    "id": "kiro",
+    "label": "Kiro",
+    "shortLabel": "Kiro",
+    "description": "Spec-driven software delivery, steering files, agent hooks, MCP integrations, review gates, session recovery, and workspace governance.",
+    "publicBase": "/Kiro",
+    "idPrefix": "KIRO",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "specs",
+        "label": "Specs and Requirements",
+        "folder": "specs",
+        "prefix": "kiro_specs_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "steering",
+        "label": "Steering and Workspace Context",
+        "folder": "steering",
+        "prefix": "kiro_steering_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "implementation",
+        "label": "Agentic Implementation",
+        "folder": "implementation",
+        "prefix": "kiro_implementation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "hooks",
+        "label": "Agent Hooks and Automation",
+        "folder": "hooks",
+        "prefix": "kiro_hooks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tests_debugging",
+        "label": "Tests and Debugging",
+        "folder": "tests_debugging",
+        "prefix": "kiro_tests_debugging_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "design_artifacts",
+        "label": "Design Artifacts and Documentation",
+        "folder": "design_artifacts",
+        "prefix": "kiro_design_artifacts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mcp_integrations",
+        "label": "MCP and External Integrations",
+        "folder": "mcp_integrations",
+        "prefix": "kiro_mcp_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "review_approvals",
+        "label": "Review and Approval Controls",
+        "folder": "review_approvals",
+        "prefix": "kiro_review_approvals_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sessions_recovery",
+        "label": "Sessions and Recovery",
+        "folder": "sessions_recovery",
+        "prefix": "kiro_sessions_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_governance",
+        "label": "Security and Governance",
+        "folder": "security_governance",
+        "prefix": "kiro_security_governance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/kiro-playwright-e2e.zip"
+  },
+  {
+    "id": "gitlab-duo",
+    "label": "GitLab Duo Agent Platform",
+    "shortLabel": "GitLab Duo Agent Platform",
+    "description": "AI agents and flows across software delivery, tool governance, repository work, approvals, evaluation, and audit.",
+    "publicBase": "/GitLabDuo",
+    "idPrefix": "GLDU",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "issue_to_mr",
+        "label": "Issue-to-Merge-Request Flow",
+        "folder": "issue_to_mr",
+        "prefix": "gitlab-duo_issue_to_mr_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "agent_catalog",
+        "label": "Agents and AI Catalog",
+        "folder": "agent_catalog",
+        "prefix": "gitlab-duo_agent_catalog_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "flows_orchestration",
+        "label": "Flows and Orchestration",
+        "folder": "flows_orchestration",
+        "prefix": "gitlab-duo_flows_orchestration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "code_review",
+        "label": "Merge Request Code Review",
+        "folder": "code_review",
+        "prefix": "gitlab-duo_code_review_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "cicd_repair",
+        "label": "CI Diagnosis and Repair",
+        "folder": "cicd_repair",
+        "prefix": "gitlab-duo_cicd_repair_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_flows",
+        "label": "Security Triage and Remediation",
+        "folder": "security_flows",
+        "prefix": "gitlab-duo_security_flows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tool_governance",
+        "label": "Tool Governance and Approvals",
+        "folder": "tool_governance",
+        "prefix": "gitlab-duo_tool_governance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mcp_integrations",
+        "label": "MCP and External Integrations",
+        "folder": "mcp_integrations",
+        "prefix": "gitlab-duo_mcp_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "self_managed",
+        "label": "Self-Managed and AI Gateway Operations",
+        "folder": "self_managed",
+        "prefix": "gitlab-duo_self_managed_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "audit_analytics",
+        "label": "AI Audit and Usage Analytics",
+        "folder": "audit_analytics",
+        "prefix": "gitlab-duo_audit_analytics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/gitlab-duo-playwright-e2e.zip"
+  },
+  {
+    "id": "jetbrains-junie",
+    "label": "JetBrains Junie",
+    "shortLabel": "JetBrains Junie",
+    "description": "IDE and CLI agent workflows for codebase understanding, implementation, testing, approvals, recovery, and delivery review.",
+    "publicBase": "/JetBrainsJunie",
+    "idPrefix": "JNIE",
+    "accent": "blue",
+    "modules": [
+      {
+        "id": "ide_context",
+        "label": "IDE Project Context",
+        "folder": "ide_context",
+        "prefix": "jetbrains-junie_ide_context_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "planning_execution",
+        "label": "Planning and Multi-step Execution",
+        "folder": "planning_execution",
+        "prefix": "jetbrains-junie_planning_execution_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "code_changes",
+        "label": "Code Changes and Refactoring",
+        "folder": "code_changes",
+        "prefix": "jetbrains-junie_code_changes_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "debugger",
+        "label": "Debugger-assisted Diagnosis",
+        "folder": "debugger",
+        "prefix": "jetbrains-junie_debugger_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "cli_headless",
+        "label": "CLI and Headless Automation",
+        "folder": "cli_headless",
+        "prefix": "jetbrains-junie_cli_headless_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "test_workflows",
+        "label": "Test Authoring and Execution",
+        "folder": "test_workflows",
+        "prefix": "jetbrains-junie_test_workflows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mcp_tools",
+        "label": "MCP Tools and Integrations",
+        "folder": "mcp_tools",
+        "prefix": "jetbrains-junie_mcp_tools_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "pr_review",
+        "label": "Pull Request Review",
+        "folder": "pr_review",
+        "prefix": "jetbrains-junie_pr_review_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "permissions_sandbox",
+        "label": "Permissions and Sandbox",
+        "folder": "permissions_sandbox",
+        "prefix": "jetbrains-junie_permissions_sandbox_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sessions_resilience",
+        "label": "Sessions and Resilience",
+        "folder": "sessions_resilience",
+        "prefix": "jetbrains-junie_sessions_resilience_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/jetbrains-junie-playwright-e2e.zip"
+  },
+  {
+    "id": "replit-agent",
+    "label": "Replit Agent",
+    "shortLabel": "Replit Agent",
+    "description": "Prompt-to-app planning, implementation, preview, deployment controls, integrations, checkpoints, and collaboration in isolated projects.",
+    "publicBase": "/ReplitAgent",
+    "idPrefix": "RPLT",
+    "accent": "teal",
+    "modules": [
+      {
+        "id": "prompt_app_scaffold",
+        "label": "Prompt-to-App Scaffolding",
+        "folder": "prompt_app_scaffold",
+        "prefix": "replit-agent_prompt_app_scaffold_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "design_iteration",
+        "label": "Design and Iterative Refinement",
+        "folder": "design_iteration",
+        "prefix": "replit-agent_design_iteration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "database_auth",
+        "label": "Database and Authentication Integrations",
+        "folder": "database_auth",
+        "prefix": "replit-agent_database_auth_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "browser_testing",
+        "label": "Browser Preview and E2E Testing",
+        "folder": "browser_testing",
+        "prefix": "replit-agent_browser_testing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "terminal_packages",
+        "label": "Packages and Terminal Execution",
+        "folder": "terminal_packages",
+        "prefix": "replit-agent_terminal_packages_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "deployment",
+        "label": "Deployment and Domains",
+        "folder": "deployment",
+        "prefix": "replit-agent_deployment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "integrations",
+        "label": "Third-party Integrations",
+        "folder": "integrations",
+        "prefix": "replit-agent_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "collaboration",
+        "label": "Collaboration and Shared Projects",
+        "folder": "collaboration",
+        "prefix": "replit-agent_collaboration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "checkpoints_recovery",
+        "label": "Checkpoints and Recovery",
+        "folder": "checkpoints_recovery",
+        "prefix": "replit-agent_checkpoints_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_cost_governance",
+        "label": "Security and Resource Governance",
+        "folder": "security_cost_governance",
+        "prefix": "replit-agent_security_cost_governance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/replit-agent-playwright-e2e.zip"
+  },
+  {
+    "id": "devin",
+    "label": "Devin",
+    "shortLabel": "Devin",
+    "description": "Autonomous engineering tasks, repository setup, planning, delegated execution, review, recovery, and governance with synthetic repositories.",
+    "publicBase": "/Devin",
+    "idPrefix": "DEVN",
+    "accent": "indigo",
+    "modules": [
+      {
+        "id": "repo_setup",
+        "label": "Repository and Environment Setup",
+        "folder": "repo_setup",
+        "prefix": "devin_repo_setup_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "ticket_execution",
+        "label": "Ticket-to-Implementation",
+        "folder": "ticket_execution",
+        "prefix": "devin_ticket_execution_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "browser_verification",
+        "label": "Browser Verification",
+        "folder": "browser_verification",
+        "prefix": "devin_browser_verification_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "parallel_sessions",
+        "label": "Parallel Sessions and Batches",
+        "folder": "parallel_sessions",
+        "prefix": "devin_parallel_sessions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "pull_requests",
+        "label": "Pull Requests and Reviews",
+        "folder": "pull_requests",
+        "prefix": "devin_pull_requests_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "testing_refactoring",
+        "label": "Testing and Refactoring",
+        "folder": "testing_refactoring",
+        "prefix": "devin_testing_refactoring_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "integrations_automations",
+        "label": "Integrations and Automations",
+        "folder": "integrations_automations",
+        "prefix": "devin_integrations_automations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "secrets_permissions",
+        "label": "Secrets and Permissions",
+        "folder": "secrets_permissions",
+        "prefix": "devin_secrets_permissions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "long_running_sessions",
+        "label": "Long-running Work and Recovery",
+        "folder": "long_running_sessions",
+        "prefix": "devin_long_running_sessions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_reporting",
+        "label": "Outcome Reporting and Governance",
+        "folder": "quality_reporting",
+        "prefix": "devin_quality_reporting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/devin-playwright-e2e.zip"
+  },
+  {
+    "id": "cline",
+    "label": "Cline",
+    "shortLabel": "Cline",
+    "description": "IDE agent sessions, model profiles, workspace edits, terminal/browser tools, MCP approvals, and checkpoint recovery.",
+    "publicBase": "/Cline",
+    "idPrefix": "CLNE",
+    "accent": "emerald",
+    "modules": [
+      {
+        "id": "plan_act",
+        "label": "Plan and Act Modes",
+        "folder": "plan_act",
+        "prefix": "cline_plan_act_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tool_approvals",
+        "label": "Tool Use and Approvals",
+        "folder": "tool_approvals",
+        "prefix": "cline_tool_approvals_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mcp_plugins",
+        "label": "MCP Servers and Plugins",
+        "folder": "mcp_plugins",
+        "prefix": "cline_mcp_plugins_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "terminal_editor",
+        "label": "Terminal and Editor Operations",
+        "folder": "terminal_editor",
+        "prefix": "cline_terminal_editor_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "browser_tools",
+        "label": "Browser and Web Retrieval",
+        "folder": "browser_tools",
+        "prefix": "cline_browser_tools_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "session_persistence",
+        "label": "Sessions and Persistence",
+        "folder": "session_persistence",
+        "prefix": "cline_session_persistence_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "model_provider",
+        "label": "Models and Provider Configuration",
+        "folder": "model_provider",
+        "prefix": "cline_model_provider_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "cli_acp",
+        "label": "CLI and Agent Client Protocol",
+        "folder": "cli_acp",
+        "prefix": "cline_cli_acp_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "context_checkpoints",
+        "label": "Context, Rules and Checkpoints",
+        "folder": "context_checkpoints",
+        "prefix": "cline_context_checkpoints_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_boundaries",
+        "label": "Security and Safe Execution",
+        "folder": "security_boundaries",
+        "prefix": "cline_security_boundaries_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/cline-playwright-e2e.zip"
+  },
+  {
+    "id": "openhands",
+    "label": "OpenHands",
+    "shortLabel": "OpenHands",
+    "description": "Open-source coding-agent workflows across UI, CLI, SDK, sandboxes, integrations, session continuity, and evaluation.",
+    "publicBase": "/OpenHands",
+    "idPrefix": "OHND",
+    "accent": "blue",
+    "modules": [
+      {
+        "id": "workspace_runtime",
+        "label": "Workspace and Runtime",
+        "folder": "workspace_runtime",
+        "prefix": "openhands_workspace_runtime_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "agent_sdk",
+        "label": "Agent SDK and Actions",
+        "folder": "agent_sdk",
+        "prefix": "openhands_agent_sdk_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "agent_server",
+        "label": "Agent Server and Remote Execution",
+        "folder": "agent_server",
+        "prefix": "openhands_agent_server_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "headless_ci",
+        "label": "Headless and CI Automation",
+        "folder": "headless_ci",
+        "prefix": "openhands_headless_ci_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "conversation_state",
+        "label": "Conversation State and Persistence",
+        "folder": "conversation_state",
+        "prefix": "openhands_conversation_state_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "providers_skills",
+        "label": "Model Providers and Agent Skills",
+        "folder": "providers_skills",
+        "prefix": "openhands_providers_skills_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_confirmations",
+        "label": "Security and Action Confirmation",
+        "folder": "security_confirmations",
+        "prefix": "openhands_security_confirmations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "browser_recording",
+        "label": "Browser and Session Recording",
+        "folder": "browser_recording",
+        "prefix": "openhands_browser_recording_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "github_workflows",
+        "label": "GitHub Workflows and Reviews",
+        "folder": "github_workflows",
+        "prefix": "openhands_github_workflows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "evaluation_observability",
+        "label": "Evaluation and Observability",
+        "folder": "evaluation_observability",
+        "prefix": "openhands_evaluation_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/openhands-playwright-e2e.zip"
+  },
+  {
+    "id": "factory-droid",
+    "label": "Factory Droid",
+    "shortLabel": "Factory Droid",
+    "description": "Agentic software development, missions, task autonomy, checkpoints, code review, tool policies, and controlled delivery.",
+    "publicBase": "/FactoryDroid",
+    "idPrefix": "FCDR",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "autonomy_policy",
+        "label": "Autonomy Levels and Command Policy",
+        "folder": "autonomy_policy",
+        "prefix": "factory-droid_autonomy_policy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "spec_mode",
+        "label": "Spec Mode and Planning",
+        "folder": "spec_mode",
+        "prefix": "factory-droid_spec_mode_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "missions",
+        "label": "Missions and Multi-agent Orchestration",
+        "folder": "missions",
+        "prefix": "factory-droid_missions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "custom_droids",
+        "label": "Custom Droids and Subagents",
+        "folder": "custom_droids",
+        "prefix": "factory-droid_custom_droids_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mcp_plugins_hooks",
+        "label": "MCP, Plugins and Hooks",
+        "folder": "mcp_plugins_hooks",
+        "prefix": "factory-droid_mcp_plugins_hooks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "qa_control",
+        "label": "Droid Control and QA Flows",
+        "folder": "qa_control",
+        "prefix": "factory-droid_qa_control_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "software_factory",
+        "label": "Software Factory Workflows",
+        "folder": "software_factory",
+        "prefix": "factory-droid_software_factory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "enterprise_controls",
+        "label": "Enterprise Controls and Managed Settings",
+        "folder": "enterprise_controls",
+        "prefix": "factory-droid_enterprise_controls_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sdk_sessions",
+        "label": "SDK and Session Management",
+        "folder": "sdk_sessions",
+        "prefix": "factory-droid_sdk_sessions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "observability_review",
+        "label": "Diff Review and Audit",
+        "folder": "observability_review",
+        "prefix": "factory-droid_observability_review_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/factory-droid-playwright-e2e.zip"
+  },
+  {
+    "id": "roo-code",
+    "label": "Roo Code",
+    "shortLabel": "Roo Code",
+    "description": "Mode-scoped coding agents, delegated and orchestrated tasks, tool permissions, custom workflows, and safe session recovery.",
+    "publicBase": "/RooCode",
+    "idPrefix": "ROOC",
+    "accent": "rose",
+    "modules": [
+      {
+        "id": "modes",
+        "label": "Built-in and Custom Modes",
+        "folder": "modes",
+        "prefix": "roo-code_modes_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "orchestrator",
+        "label": "Orchestrator and Boomerang Tasks",
+        "folder": "orchestrator",
+        "prefix": "roo-code_orchestrator_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "custom_instructions",
+        "label": "Custom Instructions and Project Context",
+        "folder": "custom_instructions",
+        "prefix": "roo-code_custom_instructions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mcp_tools",
+        "label": "MCP and Available Tools",
+        "folder": "mcp_tools",
+        "prefix": "roo-code_mcp_tools_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "browser_file_ops",
+        "label": "Browser and File Operations",
+        "folder": "browser_file_ops",
+        "prefix": "roo-code_browser_file_ops_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "context_checkpoints",
+        "label": "Context Management and Checkpoints",
+        "folder": "context_checkpoints",
+        "prefix": "roo-code_context_checkpoints_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "provider_models",
+        "label": "Providers and Sticky Models",
+        "folder": "provider_models",
+        "prefix": "roo-code_provider_models_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "edit_approvals",
+        "label": "Edit, Command and Approval Controls",
+        "folder": "edit_approvals",
+        "prefix": "roo-code_edit_approvals_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "task_recovery",
+        "label": "Task Recovery and Reliability",
+        "folder": "task_recovery",
+        "prefix": "roo-code_task_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_review",
+        "label": "Security and Tool Boundaries",
+        "folder": "security_review",
+        "prefix": "roo-code_security_review_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/roo-code-playwright-e2e.zip"
+  },
+  {
+    "id": "sourcegraph-amp",
+    "label": "Sourcegraph Amp",
+    "shortLabel": "Sourcegraph Amp",
+    "description": "Codebase-aware agent threads, cloud workspaces, model routing, MCP tools, collaboration, review, and evaluation.",
+    "publicBase": "/SourcegraphAmp",
+    "idPrefix": "SAMP",
+    "accent": "cyan",
+    "modules": [
+      {
+        "id": "codebase_context",
+        "label": "Codebase Context and Search",
+        "folder": "codebase_context",
+        "prefix": "sourcegraph-amp_codebase_context_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "threads_orbs",
+        "label": "Threads and Cloud Orbs",
+        "folder": "threads_orbs",
+        "prefix": "sourcegraph-amp_threads_orbs_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "implementation",
+        "label": "Agentic Code Implementation",
+        "folder": "implementation",
+        "prefix": "sourcegraph-amp_implementation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tools_mcp",
+        "label": "Tools and MCP Integrations",
+        "folder": "tools_mcp",
+        "prefix": "sourcegraph-amp_tools_mcp_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "multi_model",
+        "label": "Model Routing and Task Selection",
+        "folder": "multi_model",
+        "prefix": "sourcegraph-amp_multi_model_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "long_running",
+        "label": "Long-running Work and Notifications",
+        "folder": "long_running",
+        "prefix": "sourcegraph-amp_long_running_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "review_delivery",
+        "label": "Review and Delivery Boundaries",
+        "folder": "review_delivery",
+        "prefix": "sourcegraph-amp_review_delivery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "session_collaboration",
+        "label": "Session Sharing and Collaboration",
+        "folder": "session_collaboration",
+        "prefix": "sourcegraph-amp_session_collaboration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "privacy_security",
+        "label": "Privacy and Security",
+        "folder": "privacy_security",
+        "prefix": "sourcegraph-amp_privacy_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "evaluation_observability",
+        "label": "Evaluation and Observability",
+        "folder": "evaluation_observability",
+        "prefix": "sourcegraph-amp_evaluation_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "developer-tools",
+    "automationSuiteUrl": "/market-automation-suites/sourcegraph-amp-playwright-e2e.zip"
   }
 ];
 
@@ -7342,5 +8572,235 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
     "idPrefix": "REFX",
     "accent": "teal",
     "industryDomain": "real-estate"
+  },
+  {
+    "key": "kiro",
+    "label": "Kiro",
+    "shortLabel": "Kiro",
+    "description": "Spec-driven software delivery, steering files, agent hooks, MCP integrations, review gates, session recovery, and workspace governance.",
+    "route": "/p/kiro",
+    "kind": "spa",
+    "modules": [
+      "Specs and Requirements",
+      "Steering and Workspace Context",
+      "Agentic Implementation",
+      "Agent Hooks and Automation",
+      "Tests and Debugging",
+      "Design Artifacts and Documentation",
+      "MCP and External Integrations",
+      "Review and Approval Controls",
+      "Sessions and Recovery",
+      "Security and Governance"
+    ],
+    "idPrefix": "KIRO",
+    "accent": "violet",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "gitlab-duo",
+    "label": "GitLab Duo Agent Platform",
+    "shortLabel": "GitLab Duo Agent Platform",
+    "description": "AI agents and flows across software delivery, tool governance, repository work, approvals, evaluation, and audit.",
+    "route": "/p/gitlab-duo",
+    "kind": "spa",
+    "modules": [
+      "Issue-to-Merge-Request Flow",
+      "Agents and AI Catalog",
+      "Flows and Orchestration",
+      "Merge Request Code Review",
+      "CI Diagnosis and Repair",
+      "Security Triage and Remediation",
+      "Tool Governance and Approvals",
+      "MCP and External Integrations",
+      "Self-Managed and AI Gateway Operations",
+      "AI Audit and Usage Analytics"
+    ],
+    "idPrefix": "GLDU",
+    "accent": "amber",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "jetbrains-junie",
+    "label": "JetBrains Junie",
+    "shortLabel": "JetBrains Junie",
+    "description": "IDE and CLI agent workflows for codebase understanding, implementation, testing, approvals, recovery, and delivery review.",
+    "route": "/p/jetbrains-junie",
+    "kind": "spa",
+    "modules": [
+      "IDE Project Context",
+      "Planning and Multi-step Execution",
+      "Code Changes and Refactoring",
+      "Debugger-assisted Diagnosis",
+      "CLI and Headless Automation",
+      "Test Authoring and Execution",
+      "MCP Tools and Integrations",
+      "Pull Request Review",
+      "Permissions and Sandbox",
+      "Sessions and Resilience"
+    ],
+    "idPrefix": "JNIE",
+    "accent": "blue",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "replit-agent",
+    "label": "Replit Agent",
+    "shortLabel": "Replit Agent",
+    "description": "Prompt-to-app planning, implementation, preview, deployment controls, integrations, checkpoints, and collaboration in isolated projects.",
+    "route": "/p/replit-agent",
+    "kind": "spa",
+    "modules": [
+      "Prompt-to-App Scaffolding",
+      "Design and Iterative Refinement",
+      "Database and Authentication Integrations",
+      "Browser Preview and E2E Testing",
+      "Packages and Terminal Execution",
+      "Deployment and Domains",
+      "Third-party Integrations",
+      "Collaboration and Shared Projects",
+      "Checkpoints and Recovery",
+      "Security and Resource Governance"
+    ],
+    "idPrefix": "RPLT",
+    "accent": "teal",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "devin",
+    "label": "Devin",
+    "shortLabel": "Devin",
+    "description": "Autonomous engineering tasks, repository setup, planning, delegated execution, review, recovery, and governance with synthetic repositories.",
+    "route": "/p/devin",
+    "kind": "spa",
+    "modules": [
+      "Repository and Environment Setup",
+      "Ticket-to-Implementation",
+      "Browser Verification",
+      "Parallel Sessions and Batches",
+      "Pull Requests and Reviews",
+      "Testing and Refactoring",
+      "Integrations and Automations",
+      "Secrets and Permissions",
+      "Long-running Work and Recovery",
+      "Outcome Reporting and Governance"
+    ],
+    "idPrefix": "DEVN",
+    "accent": "indigo",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "cline",
+    "label": "Cline",
+    "shortLabel": "Cline",
+    "description": "IDE agent sessions, model profiles, workspace edits, terminal/browser tools, MCP approvals, and checkpoint recovery.",
+    "route": "/p/cline",
+    "kind": "spa",
+    "modules": [
+      "Plan and Act Modes",
+      "Tool Use and Approvals",
+      "MCP Servers and Plugins",
+      "Terminal and Editor Operations",
+      "Browser and Web Retrieval",
+      "Sessions and Persistence",
+      "Models and Provider Configuration",
+      "CLI and Agent Client Protocol",
+      "Context, Rules and Checkpoints",
+      "Security and Safe Execution"
+    ],
+    "idPrefix": "CLNE",
+    "accent": "emerald",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "openhands",
+    "label": "OpenHands",
+    "shortLabel": "OpenHands",
+    "description": "Open-source coding-agent workflows across UI, CLI, SDK, sandboxes, integrations, session continuity, and evaluation.",
+    "route": "/p/openhands",
+    "kind": "spa",
+    "modules": [
+      "Workspace and Runtime",
+      "Agent SDK and Actions",
+      "Agent Server and Remote Execution",
+      "Headless and CI Automation",
+      "Conversation State and Persistence",
+      "Model Providers and Agent Skills",
+      "Security and Action Confirmation",
+      "Browser and Session Recording",
+      "GitHub Workflows and Reviews",
+      "Evaluation and Observability"
+    ],
+    "idPrefix": "OHND",
+    "accent": "blue",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "factory-droid",
+    "label": "Factory Droid",
+    "shortLabel": "Factory Droid",
+    "description": "Agentic software development, missions, task autonomy, checkpoints, code review, tool policies, and controlled delivery.",
+    "route": "/p/factory-droid",
+    "kind": "spa",
+    "modules": [
+      "Autonomy Levels and Command Policy",
+      "Spec Mode and Planning",
+      "Missions and Multi-agent Orchestration",
+      "Custom Droids and Subagents",
+      "MCP, Plugins and Hooks",
+      "Droid Control and QA Flows",
+      "Software Factory Workflows",
+      "Enterprise Controls and Managed Settings",
+      "SDK and Session Management",
+      "Diff Review and Audit"
+    ],
+    "idPrefix": "FCDR",
+    "accent": "amber",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "roo-code",
+    "label": "Roo Code",
+    "shortLabel": "Roo Code",
+    "description": "Mode-scoped coding agents, delegated and orchestrated tasks, tool permissions, custom workflows, and safe session recovery.",
+    "route": "/p/roo-code",
+    "kind": "spa",
+    "modules": [
+      "Built-in and Custom Modes",
+      "Orchestrator and Boomerang Tasks",
+      "Custom Instructions and Project Context",
+      "MCP and Available Tools",
+      "Browser and File Operations",
+      "Context Management and Checkpoints",
+      "Providers and Sticky Models",
+      "Edit, Command and Approval Controls",
+      "Task Recovery and Reliability",
+      "Security and Tool Boundaries"
+    ],
+    "idPrefix": "ROOC",
+    "accent": "rose",
+    "industryDomain": "developer-tools"
+  },
+  {
+    "key": "sourcegraph-amp",
+    "label": "Sourcegraph Amp",
+    "shortLabel": "Sourcegraph Amp",
+    "description": "Codebase-aware agent threads, cloud workspaces, model routing, MCP tools, collaboration, review, and evaluation.",
+    "route": "/p/sourcegraph-amp",
+    "kind": "spa",
+    "modules": [
+      "Codebase Context and Search",
+      "Threads and Cloud Orbs",
+      "Agentic Code Implementation",
+      "Tools and MCP Integrations",
+      "Model Routing and Task Selection",
+      "Long-running Work and Notifications",
+      "Review and Delivery Boundaries",
+      "Session Sharing and Collaboration",
+      "Privacy and Security",
+      "Evaluation and Observability"
+    ],
+    "idPrefix": "SAMP",
+    "accent": "cyan",
+    "industryDomain": "developer-tools"
   }
 ];
