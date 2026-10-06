@@ -1,0 +1,77 @@
+{
+  "product": "Prefect",
+  "key": "prefect",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "flows_tasks",
+      "label": "Flows and Tasks",
+      "folder": "flows_tasks",
+      "prefix": "prefect_flows_tasks_suite",
+      "count": 200
+    },
+    {
+      "id": "states_retries",
+      "label": "States and Retries",
+      "folder": "states_retries",
+      "prefix": "prefect_states_retries_suite",
+      "count": 200
+    },
+    {
+      "id": "deployments",
+      "label": "Deployments and Versions",
+      "folder": "deployments",
+      "prefix": "prefect_deployments_suite",
+      "count": 200
+    },
+    {
+      "id": "schedules_events",
+      "label": "Schedules and Events",
+      "folder": "schedules_events",
+      "prefix": "prefect_schedules_events_suite",
+      "count": 200
+    },
+    {
+      "id": "work_pools",
+      "label": "Work Pools and Workers",
+      "folder": "work_pools",
+      "prefix": "prefect_work_pools_suite",
+      "count": 200
+    },
+    {
+      "id": "blocks_secrets",
+      "label": "Blocks and Secrets",
+      "folder": "blocks_secrets",
+      "prefix": "prefect_blocks_secrets_suite",
+      "count": 200
+    },
+    {
+      "id": "concurrency_cache",
+      "label": "Concurrency and Caching",
+      "folder": "concurrency_cache",
+      "prefix": "prefect_concurrency_cache_suite",
+      "count": 200
+    },
+    {
+      "id": "artifacts_logs",
+      "label": "Artifacts and Observability",
+      "folder": "artifacts_logs",
+      "prefix": "prefect_artifacts_logs_suite",
+      "count": 200
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations and Task Runners",
+      "folder": "integrations",
+      "prefix": "prefect_integrations_suite",
+      "count": 200
+    },
+    {
+      "id": "access_api",
+      "label": "Access and API",
+      "folder": "access_api",
+      "prefix": "prefect_access_api_suite",
+      "count": 200
+    }
+  ]
+}

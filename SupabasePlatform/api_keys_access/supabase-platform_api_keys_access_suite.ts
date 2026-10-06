@@ -12,7 +12,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -26,7 +26,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -40,7 +40,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -54,7 +54,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -68,7 +68,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -82,7 +82,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -96,7 +96,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -110,7 +110,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -124,7 +124,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -138,7 +138,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,clean-baseline"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,clean-baseline"
   },
   {
     "product": "Supabase",
@@ -152,7 +152,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -166,7 +166,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -180,7 +180,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -194,7 +194,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -208,7 +208,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -222,7 +222,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -236,7 +236,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -250,7 +250,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -264,7 +264,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -278,7 +278,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,empty-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,empty-input"
   },
   {
     "product": "Supabase",
@@ -292,7 +292,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -306,7 +306,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -320,7 +320,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -334,7 +334,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -348,7 +348,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -362,7 +362,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -376,7 +376,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -390,7 +390,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -404,7 +404,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -418,7 +418,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,single-record"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,single-record"
   },
   {
     "product": "Supabase",
@@ -432,7 +432,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -446,7 +446,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -460,7 +460,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -474,7 +474,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -488,7 +488,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -502,7 +502,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -516,7 +516,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -530,7 +530,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -544,7 +544,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -558,7 +558,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,duplicate-key"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,duplicate-key"
   },
   {
     "product": "Supabase",
@@ -572,7 +572,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -586,7 +586,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -600,7 +600,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -614,7 +614,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -628,7 +628,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -642,7 +642,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -656,7 +656,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -670,7 +670,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -684,7 +684,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -698,7 +698,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,nullable-optional-field"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,nullable-optional-field"
   },
   {
     "product": "Supabase",
@@ -712,7 +712,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -726,7 +726,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -740,7 +740,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -754,7 +754,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -768,7 +768,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -782,7 +782,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -796,7 +796,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -810,7 +810,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -824,7 +824,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -838,7 +838,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,boundary-values"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,boundary-values"
   },
   {
     "product": "Supabase",
@@ -852,7 +852,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -866,7 +866,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -880,7 +880,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -894,7 +894,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -908,7 +908,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -922,7 +922,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -936,7 +936,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -950,7 +950,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -964,7 +964,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -978,7 +978,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,late-arriving-data"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,late-arriving-data"
   },
   {
     "product": "Supabase",
@@ -992,7 +992,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1006,7 +1006,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1020,7 +1020,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1034,7 +1034,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1048,7 +1048,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1062,7 +1062,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1076,7 +1076,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1090,7 +1090,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1104,7 +1104,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1118,7 +1118,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,out-of-order-events"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,out-of-order-events"
   },
   {
     "product": "Supabase",
@@ -1132,7 +1132,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1146,7 +1146,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1160,7 +1160,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1174,7 +1174,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1188,7 +1188,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1202,7 +1202,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1216,7 +1216,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1230,7 +1230,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1244,7 +1244,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1258,7 +1258,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,compatible-schema-change"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,compatible-schema-change"
   },
   {
     "product": "Supabase",
@@ -1272,7 +1272,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1286,7 +1286,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1300,7 +1300,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1314,7 +1314,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1328,7 +1328,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1342,7 +1342,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1356,7 +1356,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1370,7 +1370,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1384,7 +1384,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1398,7 +1398,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,field-rename"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,field-rename"
   },
   {
     "product": "Supabase",
@@ -1412,7 +1412,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1426,7 +1426,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1440,7 +1440,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1454,7 +1454,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1468,7 +1468,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1482,7 +1482,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1496,7 +1496,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1510,7 +1510,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1524,7 +1524,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1538,7 +1538,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,worker-restart"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,worker-restart"
   },
   {
     "product": "Supabase",
@@ -1552,7 +1552,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1566,7 +1566,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1580,7 +1580,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1594,7 +1594,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1608,7 +1608,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1622,7 +1622,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1636,7 +1636,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1650,7 +1650,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1664,7 +1664,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1678,7 +1678,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,least-privilege"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,least-privilege"
   },
   {
     "product": "Supabase",
@@ -1692,7 +1692,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1706,7 +1706,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1720,7 +1720,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1734,7 +1734,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1748,7 +1748,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1762,7 +1762,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1776,7 +1776,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1790,7 +1790,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1804,7 +1804,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1818,7 +1818,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,concurrent-writers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,concurrent-writers"
   },
   {
     "product": "Supabase",
@@ -1832,7 +1832,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1846,7 +1846,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1860,7 +1860,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1874,7 +1874,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1888,7 +1888,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1902,7 +1902,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1916,7 +1916,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1930,7 +1930,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1944,7 +1944,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1958,7 +1958,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,transient-retry"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,transient-retry"
   },
   {
     "product": "Supabase",
@@ -1972,7 +1972,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -1986,7 +1986,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2000,7 +2000,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2014,7 +2014,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2028,7 +2028,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2042,7 +2042,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2056,7 +2056,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2070,7 +2070,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2084,7 +2084,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2098,7 +2098,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,commit-conflict"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,commit-conflict"
   },
   {
     "product": "Supabase",
@@ -2112,7 +2112,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2126,7 +2126,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2140,7 +2140,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2154,7 +2154,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2168,7 +2168,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2182,7 +2182,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2196,7 +2196,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2210,7 +2210,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2224,7 +2224,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2238,7 +2238,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,rollback-and-replay"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,rollback-and-replay"
   },
   {
     "product": "Supabase",
@@ -2252,7 +2252,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2266,7 +2266,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2280,7 +2280,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2294,7 +2294,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2308,7 +2308,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2322,7 +2322,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2336,7 +2336,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2350,7 +2350,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2364,7 +2364,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2378,7 +2378,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,Unicode-identifiers"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,Unicode-identifiers"
   },
   {
     "product": "Supabase",
@@ -2392,7 +2392,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2406,7 +2406,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2420,7 +2420,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2434,7 +2434,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2448,7 +2448,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2462,7 +2462,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2476,7 +2476,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2490,7 +2490,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2504,7 +2504,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2518,7 +2518,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,time-zone-boundary"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,time-zone-boundary"
   },
   {
     "product": "Supabase",
@@ -2532,7 +2532,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2546,7 +2546,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2560,7 +2560,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2574,7 +2574,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2588,7 +2588,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2602,7 +2602,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2616,7 +2616,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2630,7 +2630,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2644,7 +2644,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2658,7 +2658,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,skewed-high-volume"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,skewed-high-volume"
   },
   {
     "product": "Supabase",
@@ -2672,7 +2672,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to create a scoped API key for a synthetic test client. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a scoped API key for a synthetic test client; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2686,7 +2686,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reject a revoked API key on the next protected request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject a revoked API key on the next protected request; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2700,7 +2700,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to rotate a service role key without logging its value. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rotate a service role key without logging its value; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2714,7 +2714,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict organization membership to assigned projects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict organization membership to assigned projects; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2728,7 +2728,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to enforce least privilege for database and storage roles. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce least privilege for database and storage roles; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2742,7 +2742,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent browser clients from receiving service-role credentials. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent browser clients from receiving service-role credentials; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2756,7 +2756,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit access grants and key lifecycle operations. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit access grants and key lifecycle operations; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2770,7 +2770,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to fail closed when an identity provider is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when an identity provider is unavailable; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2784,7 +2784,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify key labels identify the intended environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify key labels identify the intended environment; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   },
   {
     "product": "Supabase",
@@ -2798,7 +2798,7 @@ export const SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to export access review data without exposing key material. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access review data without exposing key material; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "supabase-platform,data-ai-platform,synthetic-data,api_keys_access,corrupt-input"
+    "tags": "supabase-platform,market-platform,synthetic-data,api_keys_access,corrupt-input"
   }
 ] as const;
 export default SUPABASE_PLATFORM_API_KEYS_ACCESS_SUITE;

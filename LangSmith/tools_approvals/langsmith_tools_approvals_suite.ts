@@ -12,7 +12,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -26,7 +26,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -40,7 +40,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -54,7 +54,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -68,7 +68,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -82,7 +82,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -96,7 +96,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -110,7 +110,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -124,7 +124,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -138,7 +138,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -152,7 +152,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -166,7 +166,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -180,7 +180,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -194,7 +194,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -208,7 +208,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -222,7 +222,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -236,7 +236,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -250,7 +250,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -264,7 +264,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -278,7 +278,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -292,7 +292,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -306,7 +306,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -320,7 +320,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -334,7 +334,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -348,7 +348,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -362,7 +362,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -376,7 +376,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -390,7 +390,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -404,7 +404,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -418,7 +418,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -432,7 +432,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -446,7 +446,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -460,7 +460,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -474,7 +474,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -488,7 +488,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -502,7 +502,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -516,7 +516,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -530,7 +530,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -544,7 +544,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -558,7 +558,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -572,7 +572,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -586,7 +586,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -600,7 +600,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -614,7 +614,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -628,7 +628,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -642,7 +642,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -656,7 +656,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -670,7 +670,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -684,7 +684,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -698,7 +698,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -712,7 +712,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -726,7 +726,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -740,7 +740,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -754,7 +754,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -768,7 +768,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -782,7 +782,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -796,7 +796,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -810,7 +810,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -824,7 +824,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -838,7 +838,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -852,7 +852,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -866,7 +866,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -880,7 +880,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -894,7 +894,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -908,7 +908,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -922,7 +922,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -936,7 +936,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -950,7 +950,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -964,7 +964,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -978,7 +978,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -992,7 +992,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1006,7 +1006,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1020,7 +1020,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1034,7 +1034,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1048,7 +1048,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1062,7 +1062,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1076,7 +1076,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1090,7 +1090,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1104,7 +1104,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1118,7 +1118,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1132,7 +1132,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1146,7 +1146,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1160,7 +1160,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1174,7 +1174,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1188,7 +1188,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1202,7 +1202,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1216,7 +1216,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1230,7 +1230,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1244,7 +1244,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1258,7 +1258,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1272,7 +1272,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1286,7 +1286,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1300,7 +1300,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1314,7 +1314,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1328,7 +1328,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1342,7 +1342,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1356,7 +1356,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1370,7 +1370,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1384,7 +1384,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1398,7 +1398,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1412,7 +1412,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1426,7 +1426,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1440,7 +1440,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1454,7 +1454,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1468,7 +1468,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1482,7 +1482,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1496,7 +1496,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1510,7 +1510,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1524,7 +1524,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1538,7 +1538,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1552,7 +1552,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1566,7 +1566,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1580,7 +1580,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1594,7 +1594,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1608,7 +1608,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1622,7 +1622,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1636,7 +1636,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1650,7 +1650,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1664,7 +1664,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1678,7 +1678,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1692,7 +1692,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1706,7 +1706,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1720,7 +1720,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1734,7 +1734,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1748,7 +1748,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1762,7 +1762,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1776,7 +1776,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1790,7 +1790,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1804,7 +1804,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1818,7 +1818,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1832,7 +1832,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1846,7 +1846,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1860,7 +1860,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1874,7 +1874,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1888,7 +1888,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1902,7 +1902,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1916,7 +1916,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1930,7 +1930,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1944,7 +1944,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1958,7 +1958,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1972,7 +1972,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1986,7 +1986,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2000,7 +2000,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2014,7 +2014,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2028,7 +2028,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2042,7 +2042,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2056,7 +2056,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2070,7 +2070,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2084,7 +2084,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2098,7 +2098,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2112,7 +2112,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2126,7 +2126,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2140,7 +2140,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2154,7 +2154,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2168,7 +2168,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2182,7 +2182,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2196,7 +2196,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2210,7 +2210,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2224,7 +2224,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2238,7 +2238,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2252,7 +2252,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2266,7 +2266,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2280,7 +2280,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2294,7 +2294,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2308,7 +2308,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2322,7 +2322,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2336,7 +2336,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2350,7 +2350,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2364,7 +2364,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2378,7 +2378,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2392,7 +2392,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2406,7 +2406,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2420,7 +2420,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2434,7 +2434,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2448,7 +2448,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2462,7 +2462,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2476,7 +2476,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2490,7 +2490,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2504,7 +2504,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2518,7 +2518,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2532,7 +2532,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2546,7 +2546,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2560,7 +2560,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2574,7 +2574,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2588,7 +2588,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2602,7 +2602,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2616,7 +2616,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2630,7 +2630,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2644,7 +2644,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2658,7 +2658,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2672,7 +2672,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to invoke an allowlisted tool with validated structured arguments. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly invoke an allowlisted tool with validated structured arguments; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2686,7 +2686,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to pause a graph at a configured human approval boundary. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly pause a graph at a configured human approval boundary; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2700,7 +2700,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to resume only after an authorized reviewer records a decision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume only after an authorized reviewer records a decision; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2714,7 +2714,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to deny a tool action when approval expires before execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deny a tool action when approval expires before execution; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2728,7 +2728,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retry an idempotent tool after a transient dependency failure. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry an idempotent tool after a transient dependency failure; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2742,7 +2742,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent duplicate side effects after graph replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent duplicate side effects after graph replay; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2756,7 +2756,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to redact credentials from tool arguments and execution traces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly redact credentials from tool arguments and execution traces; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2770,7 +2770,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit reviewer identity decision and tool result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity decision and tool result; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2784,7 +2784,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to isolate tools by project and environment policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tools by project and environment policy; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2798,7 +2798,7 @@ export const LANGSMITH_TOOLS_APPROVALS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to fail closed when the approval service is unavailable. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail closed when the approval service is unavailable; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,tools_approvals,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,tools_approvals,corrupt-input"
   }
 ] as const;
 export default LANGSMITH_TOOLS_APPROVALS_SUITE;

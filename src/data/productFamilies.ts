@@ -143,6 +143,12 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   githubcopilot: "data_ai",
   cursor: "data_ai",
   windsurf: "data_ai",
+  airbyte: "data_ai",
+  apacheairflow: "data_ai",
+  prefect: "data_ai",
+  dagster: "data_ai",
+  n8n: "cloud_devops",
+  crewai: "data_ai",
 
   // ── Cloud / DevOps ───────────────────────────────────────────────────────
   aws: "cloud_devops",
@@ -179,6 +185,8 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   smartsheet: "commerce_retail",
   zoho: "commerce_retail",
   asana: "commerce_retail",
+  shopify: "commerce_retail",
+  stripe: "commerce_retail",
 
   // ── Other / Cross-cutting ────────────────────────────────────────────────
   ios: "other",

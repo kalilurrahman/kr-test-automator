@@ -1,0 +1,77 @@
+{
+  "product": "Airbyte",
+  "key": "airbyte",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "connections",
+      "label": "Connections and Syncs",
+      "folder": "connections",
+      "prefix": "airbyte_connections_suite",
+      "count": 200
+    },
+    {
+      "id": "sources",
+      "label": "Sources and Discovery",
+      "folder": "sources",
+      "prefix": "airbyte_sources_suite",
+      "count": 200
+    },
+    {
+      "id": "destinations",
+      "label": "Destinations and Writes",
+      "folder": "destinations",
+      "prefix": "airbyte_destinations_suite",
+      "count": 200
+    },
+    {
+      "id": "streams",
+      "label": "Streams and Schema",
+      "folder": "streams",
+      "prefix": "airbyte_streams_suite",
+      "count": 200
+    },
+    {
+      "id": "jobs",
+      "label": "Jobs and Logs",
+      "folder": "jobs",
+      "prefix": "airbyte_jobs_suite",
+      "count": 200
+    },
+    {
+      "id": "scheduling",
+      "label": "Schedules and Concurrency",
+      "folder": "scheduling",
+      "prefix": "airbyte_scheduling_suite",
+      "count": 200
+    },
+    {
+      "id": "connector_builder",
+      "label": "Connector Builder",
+      "folder": "connector_builder",
+      "prefix": "airbyte_connector_builder_suite",
+      "count": 200
+    },
+    {
+      "id": "state_recovery",
+      "label": "State and Recovery",
+      "folder": "state_recovery",
+      "prefix": "airbyte_state_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "workspace_access",
+      "label": "Workspace Access and Secrets",
+      "folder": "workspace_access",
+      "prefix": "airbyte_workspace_access_suite",
+      "count": 200
+    },
+    {
+      "id": "api_observability",
+      "label": "API and Observability",
+      "folder": "api_observability",
+      "prefix": "airbyte_api_observability_suite",
+      "count": 200
+    }
+  ]
+}

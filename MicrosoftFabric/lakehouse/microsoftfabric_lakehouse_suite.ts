@@ -12,7 +12,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -26,7 +26,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -40,7 +40,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -54,7 +54,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -68,7 +68,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -82,7 +82,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -96,7 +96,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -110,7 +110,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -124,7 +124,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -138,7 +138,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -152,7 +152,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -166,7 +166,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -180,7 +180,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -194,7 +194,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -208,7 +208,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -222,7 +222,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -236,7 +236,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -250,7 +250,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -264,7 +264,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -278,7 +278,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -292,7 +292,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -306,7 +306,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -320,7 +320,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -334,7 +334,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -348,7 +348,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -362,7 +362,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -376,7 +376,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -390,7 +390,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -404,7 +404,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -418,7 +418,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -432,7 +432,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -446,7 +446,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -460,7 +460,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -474,7 +474,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -488,7 +488,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -502,7 +502,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -516,7 +516,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -530,7 +530,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -544,7 +544,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -558,7 +558,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -572,7 +572,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -586,7 +586,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -600,7 +600,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -614,7 +614,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -628,7 +628,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -642,7 +642,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -656,7 +656,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -670,7 +670,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -684,7 +684,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -698,7 +698,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -712,7 +712,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -726,7 +726,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -740,7 +740,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -754,7 +754,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -768,7 +768,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -782,7 +782,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -796,7 +796,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -810,7 +810,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -824,7 +824,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -838,7 +838,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -852,7 +852,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -866,7 +866,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -880,7 +880,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -894,7 +894,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -908,7 +908,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -922,7 +922,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -936,7 +936,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -950,7 +950,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -964,7 +964,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -978,7 +978,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -992,7 +992,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1006,7 +1006,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1020,7 +1020,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1034,7 +1034,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1048,7 +1048,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1062,7 +1062,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1076,7 +1076,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1090,7 +1090,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1104,7 +1104,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1118,7 +1118,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1132,7 +1132,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1146,7 +1146,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1160,7 +1160,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1174,7 +1174,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1188,7 +1188,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1202,7 +1202,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1216,7 +1216,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1230,7 +1230,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1244,7 +1244,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1258,7 +1258,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1272,7 +1272,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1286,7 +1286,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1300,7 +1300,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1314,7 +1314,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1328,7 +1328,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1342,7 +1342,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1356,7 +1356,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1370,7 +1370,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1384,7 +1384,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1398,7 +1398,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1412,7 +1412,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1426,7 +1426,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1440,7 +1440,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1454,7 +1454,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1468,7 +1468,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1482,7 +1482,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1496,7 +1496,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1510,7 +1510,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1524,7 +1524,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1538,7 +1538,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1552,7 +1552,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1566,7 +1566,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1580,7 +1580,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1594,7 +1594,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1608,7 +1608,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1622,7 +1622,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1636,7 +1636,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1650,7 +1650,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1664,7 +1664,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1678,7 +1678,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1692,7 +1692,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1706,7 +1706,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1720,7 +1720,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1734,7 +1734,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1748,7 +1748,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1762,7 +1762,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1776,7 +1776,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1790,7 +1790,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1804,7 +1804,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1818,7 +1818,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1832,7 +1832,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1846,7 +1846,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1860,7 +1860,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1874,7 +1874,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1888,7 +1888,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1902,7 +1902,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1916,7 +1916,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1930,7 +1930,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1944,7 +1944,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1958,7 +1958,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1972,7 +1972,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -1986,7 +1986,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2000,7 +2000,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2014,7 +2014,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2028,7 +2028,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2042,7 +2042,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2056,7 +2056,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2070,7 +2070,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2084,7 +2084,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2098,7 +2098,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2112,7 +2112,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2126,7 +2126,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2140,7 +2140,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2154,7 +2154,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2168,7 +2168,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2182,7 +2182,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2196,7 +2196,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2210,7 +2210,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2224,7 +2224,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2238,7 +2238,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2252,7 +2252,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2266,7 +2266,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2280,7 +2280,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2294,7 +2294,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2308,7 +2308,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2322,7 +2322,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2336,7 +2336,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2350,7 +2350,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2364,7 +2364,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2378,7 +2378,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2392,7 +2392,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2406,7 +2406,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2420,7 +2420,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2434,7 +2434,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2448,7 +2448,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2462,7 +2462,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2476,7 +2476,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2490,7 +2490,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2504,7 +2504,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2518,7 +2518,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2532,7 +2532,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2546,7 +2546,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2560,7 +2560,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2574,7 +2574,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2588,7 +2588,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2602,7 +2602,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2616,7 +2616,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2630,7 +2630,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2644,7 +2644,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2658,7 +2658,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2672,7 +2672,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to create a lakehouse table from a versioned synthetic file set. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a lakehouse table from a versioned synthetic file set; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2686,7 +2686,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to run a notebook against the selected lakehouse default database. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a notebook against the selected lakehouse default database; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2700,7 +2700,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to commit a Delta write atomically after a worker retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly commit a Delta write atomically after a worker retry; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2714,7 +2714,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve schema and partition metadata after a merge. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema and partition metadata after a merge; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2728,7 +2728,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to read a table from a second Fabric workload. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly read a table from a second Fabric workload; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2742,7 +2742,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to enforce lakehouse item permissions for notebook execution. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce lakehouse item permissions for notebook execution; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2756,7 +2756,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to rebuild a table after an upstream schema addition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly rebuild a table after an upstream schema addition; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2770,7 +2770,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent concurrent writes from silently losing records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent concurrent writes from silently losing records; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2784,7 +2784,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to optimize a synthetic table without changing logical results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly optimize a synthetic table without changing logical results; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2798,7 +2798,7 @@ export const MICROSOFTFABRIC_LAKEHOUSE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retain notebook run lineage to its input snapshot. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain notebook run lineage to its input snapshot; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,lakehouse,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,lakehouse,corrupt-input"
   }
 ] as const;
 export default MICROSOFTFABRIC_LAKEHOUSE_SUITE;

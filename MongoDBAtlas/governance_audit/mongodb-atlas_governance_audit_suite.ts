@@ -12,7 +12,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -26,7 +26,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -40,7 +40,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -54,7 +54,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -68,7 +68,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -82,7 +82,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -96,7 +96,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -110,7 +110,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -124,7 +124,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -138,7 +138,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,clean-baseline"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,clean-baseline"
   },
   {
     "product": "MongoDB Atlas",
@@ -152,7 +152,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -166,7 +166,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -180,7 +180,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -194,7 +194,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -208,7 +208,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -222,7 +222,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -236,7 +236,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -250,7 +250,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -264,7 +264,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -278,7 +278,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,empty-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,empty-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -292,7 +292,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -306,7 +306,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -320,7 +320,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -334,7 +334,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -348,7 +348,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -362,7 +362,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -376,7 +376,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -390,7 +390,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -404,7 +404,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -418,7 +418,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,single-record"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,single-record"
   },
   {
     "product": "MongoDB Atlas",
@@ -432,7 +432,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -446,7 +446,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -460,7 +460,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -474,7 +474,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -488,7 +488,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -502,7 +502,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -516,7 +516,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -530,7 +530,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -544,7 +544,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -558,7 +558,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,duplicate-key"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,duplicate-key"
   },
   {
     "product": "MongoDB Atlas",
@@ -572,7 +572,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -586,7 +586,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -600,7 +600,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -614,7 +614,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -628,7 +628,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -642,7 +642,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -656,7 +656,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -670,7 +670,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -684,7 +684,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -698,7 +698,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,nullable-optional-field"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,nullable-optional-field"
   },
   {
     "product": "MongoDB Atlas",
@@ -712,7 +712,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -726,7 +726,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -740,7 +740,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -754,7 +754,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -768,7 +768,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -782,7 +782,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -796,7 +796,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -810,7 +810,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -824,7 +824,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -838,7 +838,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,boundary-values"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,boundary-values"
   },
   {
     "product": "MongoDB Atlas",
@@ -852,7 +852,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -866,7 +866,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -880,7 +880,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -894,7 +894,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -908,7 +908,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -922,7 +922,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -936,7 +936,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -950,7 +950,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -964,7 +964,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -978,7 +978,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,late-arriving-data"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,late-arriving-data"
   },
   {
     "product": "MongoDB Atlas",
@@ -992,7 +992,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1006,7 +1006,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1020,7 +1020,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1034,7 +1034,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1048,7 +1048,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1062,7 +1062,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1076,7 +1076,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1090,7 +1090,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1104,7 +1104,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1118,7 +1118,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,out-of-order-events"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,out-of-order-events"
   },
   {
     "product": "MongoDB Atlas",
@@ -1132,7 +1132,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1146,7 +1146,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1160,7 +1160,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1174,7 +1174,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1188,7 +1188,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1202,7 +1202,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1216,7 +1216,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1230,7 +1230,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1244,7 +1244,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1258,7 +1258,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,compatible-schema-change"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,compatible-schema-change"
   },
   {
     "product": "MongoDB Atlas",
@@ -1272,7 +1272,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1286,7 +1286,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1300,7 +1300,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1314,7 +1314,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1328,7 +1328,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1342,7 +1342,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1356,7 +1356,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1370,7 +1370,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1384,7 +1384,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1398,7 +1398,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,field-rename"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,field-rename"
   },
   {
     "product": "MongoDB Atlas",
@@ -1412,7 +1412,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1426,7 +1426,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1440,7 +1440,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1454,7 +1454,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1468,7 +1468,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1482,7 +1482,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1496,7 +1496,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1510,7 +1510,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1524,7 +1524,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1538,7 +1538,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,worker-restart"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,worker-restart"
   },
   {
     "product": "MongoDB Atlas",
@@ -1552,7 +1552,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1566,7 +1566,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1580,7 +1580,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1594,7 +1594,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1608,7 +1608,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1622,7 +1622,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1636,7 +1636,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1650,7 +1650,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1664,7 +1664,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1678,7 +1678,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,least-privilege"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,least-privilege"
   },
   {
     "product": "MongoDB Atlas",
@@ -1692,7 +1692,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1706,7 +1706,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1720,7 +1720,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1734,7 +1734,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1748,7 +1748,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1762,7 +1762,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1776,7 +1776,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1790,7 +1790,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1804,7 +1804,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1818,7 +1818,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,concurrent-writers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,concurrent-writers"
   },
   {
     "product": "MongoDB Atlas",
@@ -1832,7 +1832,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1846,7 +1846,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1860,7 +1860,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1874,7 +1874,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1888,7 +1888,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1902,7 +1902,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1916,7 +1916,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1930,7 +1930,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1944,7 +1944,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1958,7 +1958,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,transient-retry"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,transient-retry"
   },
   {
     "product": "MongoDB Atlas",
@@ -1972,7 +1972,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -1986,7 +1986,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2000,7 +2000,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2014,7 +2014,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2028,7 +2028,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2042,7 +2042,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2056,7 +2056,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2070,7 +2070,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2084,7 +2084,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2098,7 +2098,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,commit-conflict"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,commit-conflict"
   },
   {
     "product": "MongoDB Atlas",
@@ -2112,7 +2112,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2126,7 +2126,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2140,7 +2140,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2154,7 +2154,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2168,7 +2168,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2182,7 +2182,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2196,7 +2196,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2210,7 +2210,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2224,7 +2224,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2238,7 +2238,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,rollback-and-replay"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,rollback-and-replay"
   },
   {
     "product": "MongoDB Atlas",
@@ -2252,7 +2252,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2266,7 +2266,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2280,7 +2280,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2294,7 +2294,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2308,7 +2308,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2322,7 +2322,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2336,7 +2336,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2350,7 +2350,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2364,7 +2364,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2378,7 +2378,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,Unicode-identifiers"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,Unicode-identifiers"
   },
   {
     "product": "MongoDB Atlas",
@@ -2392,7 +2392,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2406,7 +2406,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2420,7 +2420,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2434,7 +2434,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2448,7 +2448,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2462,7 +2462,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2476,7 +2476,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2490,7 +2490,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2504,7 +2504,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2518,7 +2518,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,time-zone-boundary"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,time-zone-boundary"
   },
   {
     "product": "MongoDB Atlas",
@@ -2532,7 +2532,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2546,7 +2546,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2560,7 +2560,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2574,7 +2574,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2588,7 +2588,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2602,7 +2602,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2616,7 +2616,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2630,7 +2630,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2644,7 +2644,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2658,7 +2658,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,skewed-high-volume"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,skewed-high-volume"
   },
   {
     "product": "MongoDB Atlas",
@@ -2672,7 +2672,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to classify synthetic fields using configured data discovery rules. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly classify synthetic fields using configured data discovery rules; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2686,7 +2686,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to mask a sensitive field for a restricted application role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly mask a sensitive field for a restricted application role; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2700,7 +2700,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to export audit events for a bounded time window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export audit events for a bounded time window; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2714,7 +2714,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconstruct a document change from audit records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconstruct a document change from audit records; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2728,7 +2728,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict sample data previews to authorized organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict sample data previews to authorized organization members; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2742,7 +2742,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to propagate collection tags to catalog search results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly propagate collection tags to catalog search results; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2756,7 +2756,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to record policy changes with actor and before-after state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record policy changes with actor and before-after state; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2770,7 +2770,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent an unauthorized user from disabling auditing. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unauthorized user from disabling auditing; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2784,7 +2784,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retain audit evidence through a project role change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain audit evidence through a project role change; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   },
   {
     "product": "MongoDB Atlas",
@@ -2798,7 +2798,7 @@ export const MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify data classification never logs synthetic secret values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify data classification never logs synthetic secret values; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "mongodb-atlas,data-ai-platform,synthetic-data,governance_audit,corrupt-input"
+    "tags": "mongodb-atlas,market-platform,synthetic-data,governance_audit,corrupt-input"
   }
 ] as const;
 export default MONGODB_ATLAS_GOVERNANCE_AUDIT_SUITE;

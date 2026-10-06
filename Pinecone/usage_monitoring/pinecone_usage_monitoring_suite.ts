@@ -12,7 +12,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -26,7 +26,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -40,7 +40,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -54,7 +54,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -68,7 +68,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -82,7 +82,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -96,7 +96,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -110,7 +110,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -124,7 +124,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -138,7 +138,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -152,7 +152,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -166,7 +166,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -180,7 +180,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -194,7 +194,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -208,7 +208,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -222,7 +222,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -236,7 +236,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -250,7 +250,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -264,7 +264,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -278,7 +278,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,empty-input"
   },
   {
     "product": "Pinecone",
@@ -292,7 +292,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -306,7 +306,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -320,7 +320,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -334,7 +334,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -348,7 +348,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -362,7 +362,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -376,7 +376,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -390,7 +390,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -404,7 +404,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -418,7 +418,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,single-record"
   },
   {
     "product": "Pinecone",
@@ -432,7 +432,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -446,7 +446,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -460,7 +460,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -474,7 +474,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -488,7 +488,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -502,7 +502,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -516,7 +516,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -530,7 +530,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -544,7 +544,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -558,7 +558,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -572,7 +572,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -586,7 +586,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -600,7 +600,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -614,7 +614,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -628,7 +628,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -642,7 +642,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -656,7 +656,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -670,7 +670,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -684,7 +684,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -698,7 +698,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -712,7 +712,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -726,7 +726,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -740,7 +740,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -754,7 +754,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -768,7 +768,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -782,7 +782,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -796,7 +796,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -810,7 +810,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -824,7 +824,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -838,7 +838,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -852,7 +852,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -866,7 +866,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -880,7 +880,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -894,7 +894,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -908,7 +908,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -922,7 +922,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -936,7 +936,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -950,7 +950,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -964,7 +964,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -978,7 +978,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -992,7 +992,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1006,7 +1006,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1020,7 +1020,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1034,7 +1034,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1048,7 +1048,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1062,7 +1062,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1076,7 +1076,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1090,7 +1090,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1104,7 +1104,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1118,7 +1118,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1132,7 +1132,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1146,7 +1146,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1160,7 +1160,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1174,7 +1174,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1188,7 +1188,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1202,7 +1202,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1216,7 +1216,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1230,7 +1230,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1244,7 +1244,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1258,7 +1258,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1272,7 +1272,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1286,7 +1286,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1300,7 +1300,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1314,7 +1314,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1328,7 +1328,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1342,7 +1342,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1356,7 +1356,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1370,7 +1370,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1384,7 +1384,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1398,7 +1398,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1412,7 +1412,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1426,7 +1426,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1440,7 +1440,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1454,7 +1454,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1468,7 +1468,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1482,7 +1482,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1496,7 +1496,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1510,7 +1510,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1524,7 +1524,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1538,7 +1538,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1552,7 +1552,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1566,7 +1566,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1580,7 +1580,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1594,7 +1594,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1608,7 +1608,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1622,7 +1622,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1636,7 +1636,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1650,7 +1650,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1664,7 +1664,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1678,7 +1678,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1692,7 +1692,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1706,7 +1706,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1720,7 +1720,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1734,7 +1734,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1748,7 +1748,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1762,7 +1762,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1776,7 +1776,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1790,7 +1790,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1804,7 +1804,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1818,7 +1818,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1832,7 +1832,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1846,7 +1846,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1860,7 +1860,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1874,7 +1874,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1888,7 +1888,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1902,7 +1902,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1916,7 +1916,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1930,7 +1930,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1944,7 +1944,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1958,7 +1958,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1972,7 +1972,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -1986,7 +1986,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2000,7 +2000,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2014,7 +2014,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2028,7 +2028,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2042,7 +2042,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2056,7 +2056,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2070,7 +2070,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2084,7 +2084,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2098,7 +2098,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2112,7 +2112,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2126,7 +2126,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2140,7 +2140,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2154,7 +2154,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2168,7 +2168,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2182,7 +2182,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2196,7 +2196,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2210,7 +2210,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2224,7 +2224,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2238,7 +2238,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2252,7 +2252,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2266,7 +2266,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2280,7 +2280,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2294,7 +2294,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2308,7 +2308,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2322,7 +2322,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2336,7 +2336,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2350,7 +2350,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2364,7 +2364,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2378,7 +2378,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2392,7 +2392,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2406,7 +2406,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2420,7 +2420,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2434,7 +2434,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2448,7 +2448,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2462,7 +2462,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2476,7 +2476,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2490,7 +2490,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2504,7 +2504,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2518,7 +2518,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2532,7 +2532,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2546,7 +2546,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2560,7 +2560,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2574,7 +2574,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2588,7 +2588,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2602,7 +2602,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2616,7 +2616,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2630,7 +2630,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2644,7 +2644,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2658,7 +2658,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2672,7 +2672,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile read and write units with a synthetic request window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile read and write units with a synthetic request window; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2686,7 +2686,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to alert when index storage approaches a configured limit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert when index storage approaches a configured limit; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2700,7 +2700,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to attribute usage to the correct project and namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly attribute usage to the correct project and namespace; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2714,7 +2714,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to correlate a slow query with its filter and index metrics. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly correlate a slow query with its filter and index metrics; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2728,7 +2728,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve usage history after index configuration changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve usage history after index configuration changes; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2742,7 +2742,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict monitoring dashboards to authorized members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict monitoring dashboards to authorized members; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2756,7 +2756,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to export a bounded usage report without vector values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export a bounded usage report without vector values; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2770,7 +2770,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare estimated capacity with observed synthetic load. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare estimated capacity with observed synthetic load; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2784,7 +2784,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to notify the index owner when an integration is stalled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly notify the index owner when an integration is stalled; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2798,7 +2798,7 @@ export const PINECONE_USAGE_MONITORING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit monitoring alert and threshold changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit monitoring alert and threshold changes; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,usage_monitoring,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,usage_monitoring,corrupt-input"
   }
 ] as const;
 export default PINECONE_USAGE_MONITORING_SUITE;

@@ -1,0 +1,77 @@
+{
+  "product": "Stripe",
+  "key": "stripe",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "customers_checkout",
+      "label": "Customers and Checkout",
+      "folder": "customers_checkout",
+      "prefix": "stripe_customers_checkout_suite",
+      "count": 200
+    },
+    {
+      "id": "payment_intents",
+      "label": "Payment Intents and Methods",
+      "folder": "payment_intents",
+      "prefix": "stripe_payment_intents_suite",
+      "count": 200
+    },
+    {
+      "id": "subscriptions",
+      "label": "Subscriptions and Billing",
+      "folder": "subscriptions",
+      "prefix": "stripe_subscriptions_suite",
+      "count": 200
+    },
+    {
+      "id": "refunds_disputes",
+      "label": "Refunds and Disputes",
+      "folder": "refunds_disputes",
+      "prefix": "stripe_refunds_disputes_suite",
+      "count": 200
+    },
+    {
+      "id": "connect",
+      "label": "Connect Accounts and Transfers",
+      "folder": "connect",
+      "prefix": "stripe_connect_suite",
+      "count": 200
+    },
+    {
+      "id": "webhooks",
+      "label": "Webhooks and Events",
+      "folder": "webhooks",
+      "prefix": "stripe_webhooks_suite",
+      "count": 200
+    },
+    {
+      "id": "invoices",
+      "label": "Invoices and Revenue",
+      "folder": "invoices",
+      "prefix": "stripe_invoices_suite",
+      "count": 200
+    },
+    {
+      "id": "tax",
+      "label": "Tax Calculation and Reporting",
+      "folder": "tax",
+      "prefix": "stripe_tax_suite",
+      "count": 200
+    },
+    {
+      "id": "radar_risk",
+      "label": "Radar and Risk Controls",
+      "folder": "radar_risk",
+      "prefix": "stripe_radar_risk_suite",
+      "count": 200
+    },
+    {
+      "id": "api_security",
+      "label": "API Keys, Access and Reporting",
+      "folder": "api_security",
+      "prefix": "stripe_api_security_suite",
+      "count": 200
+    }
+  ]
+}

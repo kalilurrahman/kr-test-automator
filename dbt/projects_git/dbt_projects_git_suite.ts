@@ -12,7 +12,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -26,7 +26,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -40,7 +40,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -54,7 +54,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -68,7 +68,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -82,7 +82,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -96,7 +96,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -110,7 +110,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -124,7 +124,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -138,7 +138,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,clean-baseline"
   },
   {
     "product": "dbt",
@@ -152,7 +152,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -166,7 +166,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -180,7 +180,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -194,7 +194,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -208,7 +208,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -222,7 +222,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -236,7 +236,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -250,7 +250,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -264,7 +264,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -278,7 +278,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,empty-input"
   },
   {
     "product": "dbt",
@@ -292,7 +292,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -306,7 +306,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -320,7 +320,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -334,7 +334,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -348,7 +348,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -362,7 +362,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -376,7 +376,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -390,7 +390,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -404,7 +404,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -418,7 +418,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,single-record"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,single-record"
   },
   {
     "product": "dbt",
@@ -432,7 +432,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -446,7 +446,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -460,7 +460,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -474,7 +474,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -488,7 +488,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -502,7 +502,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -516,7 +516,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -530,7 +530,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -544,7 +544,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -558,7 +558,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,duplicate-key"
   },
   {
     "product": "dbt",
@@ -572,7 +572,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -586,7 +586,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -600,7 +600,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -614,7 +614,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -628,7 +628,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -642,7 +642,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -656,7 +656,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -670,7 +670,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -684,7 +684,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -698,7 +698,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -712,7 +712,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -726,7 +726,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -740,7 +740,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -754,7 +754,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -768,7 +768,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -782,7 +782,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -796,7 +796,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -810,7 +810,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -824,7 +824,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -838,7 +838,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,boundary-values"
   },
   {
     "product": "dbt",
@@ -852,7 +852,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -866,7 +866,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -880,7 +880,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -894,7 +894,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -908,7 +908,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -922,7 +922,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -936,7 +936,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -950,7 +950,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -964,7 +964,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -978,7 +978,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -992,7 +992,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1006,7 +1006,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1020,7 +1020,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1034,7 +1034,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1048,7 +1048,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1062,7 +1062,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1076,7 +1076,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1090,7 +1090,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1104,7 +1104,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1118,7 +1118,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1132,7 +1132,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1146,7 +1146,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1160,7 +1160,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1174,7 +1174,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1188,7 +1188,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1202,7 +1202,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1216,7 +1216,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1230,7 +1230,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1244,7 +1244,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1258,7 +1258,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1272,7 +1272,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1286,7 +1286,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1300,7 +1300,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1314,7 +1314,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1328,7 +1328,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1342,7 +1342,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1356,7 +1356,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1370,7 +1370,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1384,7 +1384,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1398,7 +1398,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,field-rename"
   },
   {
     "product": "dbt",
@@ -1412,7 +1412,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1426,7 +1426,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1440,7 +1440,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1454,7 +1454,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1468,7 +1468,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1482,7 +1482,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1496,7 +1496,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1510,7 +1510,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1524,7 +1524,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1538,7 +1538,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,worker-restart"
   },
   {
     "product": "dbt",
@@ -1552,7 +1552,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1566,7 +1566,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1580,7 +1580,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1594,7 +1594,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1608,7 +1608,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1622,7 +1622,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1636,7 +1636,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1650,7 +1650,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1664,7 +1664,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1678,7 +1678,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,least-privilege"
   },
   {
     "product": "dbt",
@@ -1692,7 +1692,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1706,7 +1706,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1720,7 +1720,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1734,7 +1734,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1748,7 +1748,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1762,7 +1762,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1776,7 +1776,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1790,7 +1790,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1804,7 +1804,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1818,7 +1818,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1832,7 +1832,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1846,7 +1846,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1860,7 +1860,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1874,7 +1874,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1888,7 +1888,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1902,7 +1902,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1916,7 +1916,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1930,7 +1930,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1944,7 +1944,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1958,7 +1958,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,transient-retry"
   },
   {
     "product": "dbt",
@@ -1972,7 +1972,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -1986,7 +1986,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2000,7 +2000,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2014,7 +2014,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2028,7 +2028,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2042,7 +2042,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2056,7 +2056,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2070,7 +2070,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2084,7 +2084,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2098,7 +2098,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2112,7 +2112,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2126,7 +2126,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2140,7 +2140,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2154,7 +2154,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2168,7 +2168,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2182,7 +2182,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2196,7 +2196,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2210,7 +2210,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2224,7 +2224,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2238,7 +2238,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2252,7 +2252,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2266,7 +2266,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2280,7 +2280,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2294,7 +2294,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2308,7 +2308,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2322,7 +2322,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2336,7 +2336,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2350,7 +2350,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2364,7 +2364,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2378,7 +2378,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2392,7 +2392,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2406,7 +2406,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2420,7 +2420,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2434,7 +2434,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2448,7 +2448,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2462,7 +2462,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2476,7 +2476,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2490,7 +2490,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2504,7 +2504,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2518,7 +2518,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2532,7 +2532,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2546,7 +2546,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2560,7 +2560,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2574,7 +2574,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2588,7 +2588,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2602,7 +2602,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2616,7 +2616,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2630,7 +2630,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2644,7 +2644,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2658,7 +2658,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2672,7 +2672,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to connect a project to the selected Git repository and branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly connect a project to the selected Git repository and branch; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2686,7 +2686,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to open a pull request from an isolated development environment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly open a pull request from an isolated development environment; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2700,7 +2700,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to resolve a Git conflict without losing model changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resolve a Git conflict without losing model changes; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2714,7 +2714,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to switch branches while preserving uncommitted work safely. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly switch branches while preserving uncommitted work safely; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2728,7 +2728,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to validate repository credentials without displaying the token. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate repository credentials without displaying the token; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2742,7 +2742,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict project access to assigned groups. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict project access to assigned groups; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2756,7 +2756,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare a development branch with the production manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a development branch with the production manifest; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2770,7 +2770,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to recover a project after a failed repository sync. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly recover a project after a failed repository sync; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2784,7 +2784,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit repository and project setting changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit repository and project setting changes; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2798,7 +2798,7 @@ export const DBT_PROJECTS_GIT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to clone a project using its declared adapter and target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly clone a project using its declared adapter and target; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,projects_git,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,projects_git,corrupt-input"
   }
 ] as const;
 export default DBT_PROJECTS_GIT_SUITE;

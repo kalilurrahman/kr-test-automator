@@ -12,7 +12,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -26,7 +26,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -40,7 +40,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -54,7 +54,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -68,7 +68,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -82,7 +82,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -96,7 +96,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -110,7 +110,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -124,7 +124,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -138,7 +138,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,clean-baseline"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,clean-baseline"
   },
   {
     "product": "Microsoft Fabric",
@@ -152,7 +152,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -166,7 +166,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -180,7 +180,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -194,7 +194,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -208,7 +208,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -222,7 +222,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -236,7 +236,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -250,7 +250,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -264,7 +264,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -278,7 +278,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,empty-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,empty-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -292,7 +292,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -306,7 +306,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -320,7 +320,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -334,7 +334,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -348,7 +348,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -362,7 +362,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -376,7 +376,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -390,7 +390,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -404,7 +404,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -418,7 +418,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,single-record"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,single-record"
   },
   {
     "product": "Microsoft Fabric",
@@ -432,7 +432,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -446,7 +446,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -460,7 +460,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -474,7 +474,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -488,7 +488,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -502,7 +502,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -516,7 +516,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -530,7 +530,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -544,7 +544,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -558,7 +558,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,duplicate-key"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,duplicate-key"
   },
   {
     "product": "Microsoft Fabric",
@@ -572,7 +572,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -586,7 +586,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -600,7 +600,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -614,7 +614,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -628,7 +628,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -642,7 +642,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -656,7 +656,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -670,7 +670,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -684,7 +684,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -698,7 +698,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,nullable-optional-field"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,nullable-optional-field"
   },
   {
     "product": "Microsoft Fabric",
@@ -712,7 +712,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -726,7 +726,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -740,7 +740,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -754,7 +754,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -768,7 +768,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -782,7 +782,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -796,7 +796,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -810,7 +810,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -824,7 +824,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -838,7 +838,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,boundary-values"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,boundary-values"
   },
   {
     "product": "Microsoft Fabric",
@@ -852,7 +852,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -866,7 +866,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -880,7 +880,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -894,7 +894,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -908,7 +908,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -922,7 +922,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -936,7 +936,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -950,7 +950,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -964,7 +964,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -978,7 +978,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,late-arriving-data"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,late-arriving-data"
   },
   {
     "product": "Microsoft Fabric",
@@ -992,7 +992,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1006,7 +1006,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1020,7 +1020,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1034,7 +1034,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1048,7 +1048,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1062,7 +1062,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1076,7 +1076,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1090,7 +1090,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1104,7 +1104,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1118,7 +1118,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,out-of-order-events"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,out-of-order-events"
   },
   {
     "product": "Microsoft Fabric",
@@ -1132,7 +1132,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1146,7 +1146,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1160,7 +1160,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1174,7 +1174,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1188,7 +1188,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1202,7 +1202,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1216,7 +1216,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1230,7 +1230,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1244,7 +1244,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1258,7 +1258,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,compatible-schema-change"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,compatible-schema-change"
   },
   {
     "product": "Microsoft Fabric",
@@ -1272,7 +1272,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1286,7 +1286,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1300,7 +1300,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1314,7 +1314,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1328,7 +1328,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1342,7 +1342,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1356,7 +1356,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1370,7 +1370,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1384,7 +1384,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1398,7 +1398,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,field-rename"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,field-rename"
   },
   {
     "product": "Microsoft Fabric",
@@ -1412,7 +1412,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1426,7 +1426,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1440,7 +1440,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1454,7 +1454,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1468,7 +1468,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1482,7 +1482,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1496,7 +1496,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1510,7 +1510,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1524,7 +1524,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1538,7 +1538,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,worker-restart"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,worker-restart"
   },
   {
     "product": "Microsoft Fabric",
@@ -1552,7 +1552,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1566,7 +1566,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1580,7 +1580,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1594,7 +1594,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1608,7 +1608,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1622,7 +1622,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1636,7 +1636,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1650,7 +1650,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1664,7 +1664,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1678,7 +1678,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,least-privilege"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,least-privilege"
   },
   {
     "product": "Microsoft Fabric",
@@ -1692,7 +1692,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1706,7 +1706,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1720,7 +1720,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1734,7 +1734,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1748,7 +1748,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1762,7 +1762,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1776,7 +1776,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1790,7 +1790,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1804,7 +1804,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1818,7 +1818,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,concurrent-writers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,concurrent-writers"
   },
   {
     "product": "Microsoft Fabric",
@@ -1832,7 +1832,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1846,7 +1846,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1860,7 +1860,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1874,7 +1874,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1888,7 +1888,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1902,7 +1902,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1916,7 +1916,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1930,7 +1930,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1944,7 +1944,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1958,7 +1958,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,transient-retry"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,transient-retry"
   },
   {
     "product": "Microsoft Fabric",
@@ -1972,7 +1972,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -1986,7 +1986,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2000,7 +2000,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2014,7 +2014,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2028,7 +2028,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2042,7 +2042,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2056,7 +2056,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2070,7 +2070,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2084,7 +2084,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2098,7 +2098,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,commit-conflict"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,commit-conflict"
   },
   {
     "product": "Microsoft Fabric",
@@ -2112,7 +2112,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2126,7 +2126,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2140,7 +2140,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2154,7 +2154,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2168,7 +2168,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2182,7 +2182,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2196,7 +2196,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2210,7 +2210,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2224,7 +2224,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2238,7 +2238,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,rollback-and-replay"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,rollback-and-replay"
   },
   {
     "product": "Microsoft Fabric",
@@ -2252,7 +2252,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2266,7 +2266,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2280,7 +2280,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2294,7 +2294,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2308,7 +2308,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2322,7 +2322,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2336,7 +2336,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2350,7 +2350,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2364,7 +2364,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2378,7 +2378,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,Unicode-identifiers"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,Unicode-identifiers"
   },
   {
     "product": "Microsoft Fabric",
@@ -2392,7 +2392,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2406,7 +2406,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2420,7 +2420,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2434,7 +2434,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2448,7 +2448,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2462,7 +2462,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2476,7 +2476,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2490,7 +2490,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2504,7 +2504,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2518,7 +2518,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,time-zone-boundary"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,time-zone-boundary"
   },
   {
     "product": "Microsoft Fabric",
@@ -2532,7 +2532,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2546,7 +2546,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2560,7 +2560,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2574,7 +2574,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2588,7 +2588,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2602,7 +2602,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2616,7 +2616,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2630,7 +2630,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2644,7 +2644,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2658,7 +2658,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,skewed-high-volume"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,skewed-high-volume"
   },
   {
     "product": "Microsoft Fabric",
@@ -2672,7 +2672,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to ingest a synthetic event stream into an eventhouse. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly ingest a synthetic event stream into an eventhouse; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2686,7 +2686,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to query events by event time across a late-arrival window. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly query events by event time across a late-arrival window; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2700,7 +2700,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to deduplicate retried events using a stable event identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deduplicate retried events using a stable event identifier; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2714,7 +2714,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to apply a KQL function to records with nullable fields. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly apply a KQL function to records with nullable fields; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2728,7 +2728,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to create a real-time dashboard with a bounded refresh interval. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a real-time dashboard with a bounded refresh interval; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2742,7 +2742,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to alert on a synthetic threshold breach exactly once. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly alert on a synthetic threshold breach exactly once; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2756,7 +2756,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve event ordering within the declared partition key. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve event ordering within the declared partition key; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2770,7 +2770,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to replay a bounded time range after a consumer restart. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replay a bounded time range after a consumer restart; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2784,7 +2784,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict eventhouse access by database role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict eventhouse access by database role; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   },
   {
     "product": "Microsoft Fabric",
@@ -2798,7 +2798,7 @@ export const MICROSOFTFABRIC_REAL_TIME_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile event counts between ingestion and query results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile event counts between ingestion and query results; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "microsoftfabric,data-ai-platform,synthetic-data,real_time,corrupt-input"
+    "tags": "microsoftfabric,market-platform,synthetic-data,real_time,corrupt-input"
   }
 ] as const;
 export default MICROSOFTFABRIC_REAL_TIME_SUITE;

@@ -31,7 +31,7 @@ const extMap: Record<string, string> = {
 };
 
 const OutputPanel = () => {
-  const { isGenerating, progress, progressStep, result, language, framework } = useGeneratorStore();
+  const { isGenerating, progress, progressStep, result, language, framework, targetScriptLines } = useGeneratorStore();
   const [copied, setCopied] = useState(false);
 
   const specialKind = useMemo(
@@ -140,6 +140,8 @@ const OutputPanel = () => {
   if (!result) return null;
 
   const syntaxLang = langMap[result.language] || langMap[language] || "typescript";
+  const scriptLineCount = result.script.split(/\r?\n/).length;
+  const requestedLongScript = (targetScriptLines ?? 0) >= 2000;
 
   const missingItems = validation?.missing ?? [];
   const hasMissing = specialKind && missingItems.length > 0;
@@ -181,8 +183,13 @@ const OutputPanel = () => {
           {result.test_cases.length} test cases ·
           P1: {result.test_cases.filter((t) => t.priority === "P1").length} ·
           P2: {result.test_cases.filter((t) => t.priority === "P2").length} ·
-          P3: {result.test_cases.filter((t) => t.priority === "P3").length}
+          P3: {result.test_cases.filter((t) => t.priority === "P3").length} · {scriptLineCount.toLocaleString()} script lines
         </p>
+        {requestedLongScript && scriptLineCount < targetScriptLines! && (
+          <p role="status" className="mt-1 text-xs text-amber-500">
+            The model returned {scriptLineCount.toLocaleString()} lines; the requested target was {targetScriptLines!.toLocaleString()}.
+          </p>
+        )}
       </div>
 
       {/* Action buttons */}

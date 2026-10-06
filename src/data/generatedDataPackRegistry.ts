@@ -2630,6 +2630,982 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
       }
     ],
     "automationSuiteUrl": "/market-automation-suites/huggingfacehub-playwright-e2e.zip"
+  },
+  {
+    "id": "airbyte",
+    "label": "Airbyte",
+    "shortLabel": "Airbyte",
+    "description": "2,000 test cases across 10 Airbyte modules.",
+    "publicBase": "/Airbyte",
+    "idPrefix": "ABY",
+    "accent": "cyan",
+    "modules": [
+      {
+        "id": "connections",
+        "label": "Connections and Syncs",
+        "folder": "connections",
+        "prefix": "airbyte_connections_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sources",
+        "label": "Sources and Discovery",
+        "folder": "sources",
+        "prefix": "airbyte_sources_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "destinations",
+        "label": "Destinations and Writes",
+        "folder": "destinations",
+        "prefix": "airbyte_destinations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "streams",
+        "label": "Streams and Schema",
+        "folder": "streams",
+        "prefix": "airbyte_streams_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "jobs",
+        "label": "Jobs and Logs",
+        "folder": "jobs",
+        "prefix": "airbyte_jobs_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "scheduling",
+        "label": "Schedules and Concurrency",
+        "folder": "scheduling",
+        "prefix": "airbyte_scheduling_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "connector_builder",
+        "label": "Connector Builder",
+        "folder": "connector_builder",
+        "prefix": "airbyte_connector_builder_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "state_recovery",
+        "label": "State and Recovery",
+        "folder": "state_recovery",
+        "prefix": "airbyte_state_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "workspace_access",
+        "label": "Workspace Access and Secrets",
+        "folder": "workspace_access",
+        "prefix": "airbyte_workspace_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "api_observability",
+        "label": "API and Observability",
+        "folder": "api_observability",
+        "prefix": "airbyte_api_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/airbyte-playwright-e2e.zip"
+  },
+  {
+    "id": "apacheairflow",
+    "label": "Apache Airflow",
+    "shortLabel": "Apache Airflow",
+    "description": "2,000 test cases across 10 Apache Airflow modules.",
+    "publicBase": "/ApacheAirflow",
+    "idPrefix": "AFL",
+    "accent": "blue",
+    "modules": [
+      {
+        "id": "dags",
+        "label": "DAG Authoring and Parsing",
+        "folder": "dags",
+        "prefix": "apacheairflow_dags_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "scheduling",
+        "label": "Scheduling and Timetables",
+        "folder": "scheduling",
+        "prefix": "apacheairflow_scheduling_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tasks",
+        "label": "Tasks and Operators",
+        "folder": "tasks",
+        "prefix": "apacheairflow_tasks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "retries",
+        "label": "Retries and Idempotence",
+        "folder": "retries",
+        "prefix": "apacheairflow_retries_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "backfills",
+        "label": "Backfills and Data Intervals",
+        "folder": "backfills",
+        "prefix": "apacheairflow_backfills_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "assets",
+        "label": "Data-Aware Scheduling",
+        "folder": "assets",
+        "prefix": "apacheairflow_assets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "connections_secrets",
+        "label": "Connections and Secrets",
+        "folder": "connections_secrets",
+        "prefix": "apacheairflow_connections_secrets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "pools_concurrency",
+        "label": "Pools and Concurrency",
+        "folder": "pools_concurrency",
+        "prefix": "apacheairflow_pools_concurrency_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "webserver_rbac",
+        "label": "Web UI and RBAC",
+        "folder": "webserver_rbac",
+        "prefix": "apacheairflow_webserver_rbac_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "monitoring_deploy",
+        "label": "Monitoring and Deployment",
+        "folder": "monitoring_deploy",
+        "prefix": "apacheairflow_monitoring_deploy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/apacheairflow-playwright-e2e.zip"
+  },
+  {
+    "id": "prefect",
+    "label": "Prefect",
+    "shortLabel": "Prefect",
+    "description": "2,000 test cases across 10 Prefect modules.",
+    "publicBase": "/Prefect",
+    "idPrefix": "PFT",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "flows_tasks",
+        "label": "Flows and Tasks",
+        "folder": "flows_tasks",
+        "prefix": "prefect_flows_tasks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "states_retries",
+        "label": "States and Retries",
+        "folder": "states_retries",
+        "prefix": "prefect_states_retries_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "deployments",
+        "label": "Deployments and Versions",
+        "folder": "deployments",
+        "prefix": "prefect_deployments_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "schedules_events",
+        "label": "Schedules and Events",
+        "folder": "schedules_events",
+        "prefix": "prefect_schedules_events_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "work_pools",
+        "label": "Work Pools and Workers",
+        "folder": "work_pools",
+        "prefix": "prefect_work_pools_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "blocks_secrets",
+        "label": "Blocks and Secrets",
+        "folder": "blocks_secrets",
+        "prefix": "prefect_blocks_secrets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "concurrency_cache",
+        "label": "Concurrency and Caching",
+        "folder": "concurrency_cache",
+        "prefix": "prefect_concurrency_cache_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "artifacts_logs",
+        "label": "Artifacts and Observability",
+        "folder": "artifacts_logs",
+        "prefix": "prefect_artifacts_logs_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "integrations",
+        "label": "Integrations and Task Runners",
+        "folder": "integrations",
+        "prefix": "prefect_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "access_api",
+        "label": "Access and API",
+        "folder": "access_api",
+        "prefix": "prefect_access_api_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/prefect-playwright-e2e.zip"
+  },
+  {
+    "id": "dagster",
+    "label": "Dagster",
+    "shortLabel": "Dagster",
+    "description": "2,000 test cases across 10 Dagster modules.",
+    "publicBase": "/Dagster",
+    "idPrefix": "DGS",
+    "accent": "teal",
+    "modules": [
+      {
+        "id": "assets",
+        "label": "Software-Defined Assets",
+        "folder": "assets",
+        "prefix": "dagster_assets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "checks",
+        "label": "Asset Checks and Quality",
+        "folder": "checks",
+        "prefix": "dagster_checks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "jobs_ops",
+        "label": "Jobs and Ops",
+        "folder": "jobs_ops",
+        "prefix": "dagster_jobs_ops_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "schedules_sensors",
+        "label": "Schedules and Sensors",
+        "folder": "schedules_sensors",
+        "prefix": "dagster_schedules_sensors_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "partitions_backfills",
+        "label": "Partitions and Backfills",
+        "folder": "partitions_backfills",
+        "prefix": "dagster_partitions_backfills_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "resources_config",
+        "label": "Resources and Run Config",
+        "folder": "resources_config",
+        "prefix": "dagster_resources_config_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "io_managers",
+        "label": "Integrations and I/O Managers",
+        "folder": "io_managers",
+        "prefix": "dagster_io_managers_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "code_locations",
+        "label": "Code Locations and Deployments",
+        "folder": "code_locations",
+        "prefix": "dagster_code_locations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "runs_observability",
+        "label": "Runs and Observability",
+        "folder": "runs_observability",
+        "prefix": "dagster_runs_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "permissions_api",
+        "label": "Permissions and API",
+        "folder": "permissions_api",
+        "prefix": "dagster_permissions_api_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/dagster-playwright-e2e.zip"
+  },
+  {
+    "id": "n8n",
+    "label": "n8n",
+    "shortLabel": "n8n",
+    "description": "2,000 test cases across 10 n8n modules.",
+    "publicBase": "/N8n",
+    "idPrefix": "N8N",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "workflows",
+        "label": "Workflows and Nodes",
+        "folder": "workflows",
+        "prefix": "n8n_workflows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "triggers_webhooks",
+        "label": "Triggers and Webhooks",
+        "folder": "triggers_webhooks",
+        "prefix": "n8n_triggers_webhooks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "credentials",
+        "label": "Credentials and Connections",
+        "folder": "credentials",
+        "prefix": "n8n_credentials_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "executions",
+        "label": "Executions and Retries",
+        "folder": "executions",
+        "prefix": "n8n_executions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "error_flows",
+        "label": "Error Handling and Recovery",
+        "folder": "error_flows",
+        "prefix": "n8n_error_flows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "queues_scaling",
+        "label": "Queues and Scaling",
+        "folder": "queues_scaling",
+        "prefix": "n8n_queues_scaling_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "environments",
+        "label": "Projects and Environments",
+        "folder": "environments",
+        "prefix": "n8n_environments_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sharing_access",
+        "label": "Sharing and Access",
+        "folder": "sharing_access",
+        "prefix": "n8n_sharing_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "integrations",
+        "label": "Integrations and Data Mapping",
+        "folder": "integrations",
+        "prefix": "n8n_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "audit_api",
+        "label": "Audit and API",
+        "folder": "audit_api",
+        "prefix": "n8n_audit_api_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/n8n-playwright-e2e.zip"
+  },
+  {
+    "id": "crewai",
+    "label": "CrewAI",
+    "shortLabel": "CrewAI",
+    "description": "2,000 test cases across 10 CrewAI modules.",
+    "publicBase": "/CrewAI",
+    "idPrefix": "CRW",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "agents_tasks",
+        "label": "Agents and Tasks",
+        "folder": "agents_tasks",
+        "prefix": "crewai_agents_tasks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "crews_flows",
+        "label": "Crews and Flows",
+        "folder": "crews_flows",
+        "prefix": "crewai_crews_flows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tools",
+        "label": "Tools and Integrations",
+        "folder": "tools",
+        "prefix": "crewai_tools_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "memory",
+        "label": "Memory and State",
+        "folder": "memory",
+        "prefix": "crewai_memory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "knowledge",
+        "label": "Knowledge and Retrieval",
+        "folder": "knowledge",
+        "prefix": "crewai_knowledge_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "guardrails",
+        "label": "Guardrails and Validation",
+        "folder": "guardrails",
+        "prefix": "crewai_guardrails_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "human_approval",
+        "label": "Human Approval and Control",
+        "folder": "human_approval",
+        "prefix": "crewai_human_approval_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "deployment",
+        "label": "Deployment and Runtime",
+        "folder": "deployment",
+        "prefix": "crewai_deployment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tracing_eval",
+        "label": "Tracing and Evaluation",
+        "folder": "tracing_eval",
+        "prefix": "crewai_tracing_eval_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "enterprise_security",
+        "label": "Enterprise Security and API",
+        "folder": "enterprise_security",
+        "prefix": "crewai_enterprise_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/crewai-playwright-e2e.zip"
+  },
+  {
+    "id": "shopify",
+    "label": "Shopify",
+    "shortLabel": "Shopify",
+    "description": "2,000 test cases across 10 Shopify modules.",
+    "publicBase": "/Shopify",
+    "idPrefix": "SHP",
+    "accent": "emerald",
+    "modules": [
+      {
+        "id": "catalog",
+        "label": "Products and Catalog",
+        "folder": "catalog",
+        "prefix": "shopify_catalog_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "inventory",
+        "label": "Inventory and Locations",
+        "folder": "inventory",
+        "prefix": "shopify_inventory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "checkout",
+        "label": "Cart and Checkout",
+        "folder": "checkout",
+        "prefix": "shopify_checkout_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "orders",
+        "label": "Orders and Refunds",
+        "folder": "orders",
+        "prefix": "shopify_orders_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "payments",
+        "label": "Payments and Payouts",
+        "folder": "payments",
+        "prefix": "shopify_payments_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "shipping",
+        "label": "Shipping and Fulfillment",
+        "folder": "shipping",
+        "prefix": "shopify_shipping_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "discounts",
+        "label": "Discounts and Promotions",
+        "folder": "discounts",
+        "prefix": "shopify_discounts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "customers",
+        "label": "Customers and Accounts",
+        "folder": "customers",
+        "prefix": "shopify_customers_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "apps_webhooks",
+        "label": "Apps and Webhooks",
+        "folder": "apps_webhooks",
+        "prefix": "shopify_apps_webhooks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "markets_analytics",
+        "label": "Markets, Tax and Analytics",
+        "folder": "markets_analytics",
+        "prefix": "shopify_markets_analytics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/shopify-playwright-e2e.zip"
+  },
+  {
+    "id": "stripe",
+    "label": "Stripe",
+    "shortLabel": "Stripe",
+    "description": "2,000 test cases across 10 Stripe modules.",
+    "publicBase": "/Stripe",
+    "idPrefix": "STR",
+    "accent": "indigo",
+    "modules": [
+      {
+        "id": "customers_checkout",
+        "label": "Customers and Checkout",
+        "folder": "customers_checkout",
+        "prefix": "stripe_customers_checkout_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "payment_intents",
+        "label": "Payment Intents and Methods",
+        "folder": "payment_intents",
+        "prefix": "stripe_payment_intents_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "subscriptions",
+        "label": "Subscriptions and Billing",
+        "folder": "subscriptions",
+        "prefix": "stripe_subscriptions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "refunds_disputes",
+        "label": "Refunds and Disputes",
+        "folder": "refunds_disputes",
+        "prefix": "stripe_refunds_disputes_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "connect",
+        "label": "Connect Accounts and Transfers",
+        "folder": "connect",
+        "prefix": "stripe_connect_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "webhooks",
+        "label": "Webhooks and Events",
+        "folder": "webhooks",
+        "prefix": "stripe_webhooks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "invoices",
+        "label": "Invoices and Revenue",
+        "folder": "invoices",
+        "prefix": "stripe_invoices_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tax",
+        "label": "Tax Calculation and Reporting",
+        "folder": "tax",
+        "prefix": "stripe_tax_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "radar_risk",
+        "label": "Radar and Risk Controls",
+        "folder": "radar_risk",
+        "prefix": "stripe_radar_risk_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "api_security",
+        "label": "API Keys, Access and Reporting",
+        "folder": "api_security",
+        "prefix": "stripe_api_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/stripe-playwright-e2e.zip"
   }
 ];
 
@@ -3124,5 +4100,181 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
     ],
     "idPrefix": "HFH",
     "accent": "amber"
+  },
+  {
+    "key": "airbyte",
+    "label": "Airbyte",
+    "shortLabel": "Airbyte",
+    "description": "2,000 test cases across 10 Airbyte modules.",
+    "route": "/p/airbyte",
+    "kind": "spa",
+    "modules": [
+      "Connections and Syncs",
+      "Sources and Discovery",
+      "Destinations and Writes",
+      "Streams and Schema",
+      "Jobs and Logs",
+      "Schedules and Concurrency",
+      "Connector Builder",
+      "State and Recovery",
+      "Workspace Access and Secrets",
+      "API and Observability"
+    ],
+    "idPrefix": "ABY",
+    "accent": "cyan"
+  },
+  {
+    "key": "apacheairflow",
+    "label": "Apache Airflow",
+    "shortLabel": "Apache Airflow",
+    "description": "2,000 test cases across 10 Apache Airflow modules.",
+    "route": "/p/apacheairflow",
+    "kind": "spa",
+    "modules": [
+      "DAG Authoring and Parsing",
+      "Scheduling and Timetables",
+      "Tasks and Operators",
+      "Retries and Idempotence",
+      "Backfills and Data Intervals",
+      "Data-Aware Scheduling",
+      "Connections and Secrets",
+      "Pools and Concurrency",
+      "Web UI and RBAC",
+      "Monitoring and Deployment"
+    ],
+    "idPrefix": "AFL",
+    "accent": "blue"
+  },
+  {
+    "key": "prefect",
+    "label": "Prefect",
+    "shortLabel": "Prefect",
+    "description": "2,000 test cases across 10 Prefect modules.",
+    "route": "/p/prefect",
+    "kind": "spa",
+    "modules": [
+      "Flows and Tasks",
+      "States and Retries",
+      "Deployments and Versions",
+      "Schedules and Events",
+      "Work Pools and Workers",
+      "Blocks and Secrets",
+      "Concurrency and Caching",
+      "Artifacts and Observability",
+      "Integrations and Task Runners",
+      "Access and API"
+    ],
+    "idPrefix": "PFT",
+    "accent": "violet"
+  },
+  {
+    "key": "dagster",
+    "label": "Dagster",
+    "shortLabel": "Dagster",
+    "description": "2,000 test cases across 10 Dagster modules.",
+    "route": "/p/dagster",
+    "kind": "spa",
+    "modules": [
+      "Software-Defined Assets",
+      "Asset Checks and Quality",
+      "Jobs and Ops",
+      "Schedules and Sensors",
+      "Partitions and Backfills",
+      "Resources and Run Config",
+      "Integrations and I/O Managers",
+      "Code Locations and Deployments",
+      "Runs and Observability",
+      "Permissions and API"
+    ],
+    "idPrefix": "DGS",
+    "accent": "teal"
+  },
+  {
+    "key": "n8n",
+    "label": "n8n",
+    "shortLabel": "n8n",
+    "description": "2,000 test cases across 10 n8n modules.",
+    "route": "/p/n8n",
+    "kind": "spa",
+    "modules": [
+      "Workflows and Nodes",
+      "Triggers and Webhooks",
+      "Credentials and Connections",
+      "Executions and Retries",
+      "Error Handling and Recovery",
+      "Queues and Scaling",
+      "Projects and Environments",
+      "Sharing and Access",
+      "Integrations and Data Mapping",
+      "Audit and API"
+    ],
+    "idPrefix": "N8N",
+    "accent": "amber"
+  },
+  {
+    "key": "crewai",
+    "label": "CrewAI",
+    "shortLabel": "CrewAI",
+    "description": "2,000 test cases across 10 CrewAI modules.",
+    "route": "/p/crewai",
+    "kind": "spa",
+    "modules": [
+      "Agents and Tasks",
+      "Crews and Flows",
+      "Tools and Integrations",
+      "Memory and State",
+      "Knowledge and Retrieval",
+      "Guardrails and Validation",
+      "Human Approval and Control",
+      "Deployment and Runtime",
+      "Tracing and Evaluation",
+      "Enterprise Security and API"
+    ],
+    "idPrefix": "CRW",
+    "accent": "amber"
+  },
+  {
+    "key": "shopify",
+    "label": "Shopify",
+    "shortLabel": "Shopify",
+    "description": "2,000 test cases across 10 Shopify modules.",
+    "route": "/p/shopify",
+    "kind": "spa",
+    "modules": [
+      "Products and Catalog",
+      "Inventory and Locations",
+      "Cart and Checkout",
+      "Orders and Refunds",
+      "Payments and Payouts",
+      "Shipping and Fulfillment",
+      "Discounts and Promotions",
+      "Customers and Accounts",
+      "Apps and Webhooks",
+      "Markets, Tax and Analytics"
+    ],
+    "idPrefix": "SHP",
+    "accent": "emerald"
+  },
+  {
+    "key": "stripe",
+    "label": "Stripe",
+    "shortLabel": "Stripe",
+    "description": "2,000 test cases across 10 Stripe modules.",
+    "route": "/p/stripe",
+    "kind": "spa",
+    "modules": [
+      "Customers and Checkout",
+      "Payment Intents and Methods",
+      "Subscriptions and Billing",
+      "Refunds and Disputes",
+      "Connect Accounts and Transfers",
+      "Webhooks and Events",
+      "Invoices and Revenue",
+      "Tax Calculation and Reporting",
+      "Radar and Risk Controls",
+      "API Keys, Access and Reporting"
+    ],
+    "idPrefix": "STR",
+    "accent": "indigo"
   }
 ];

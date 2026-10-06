@@ -258,6 +258,10 @@ const GENERATED_DATA_PACKS = [
   ["fivetran", "Fivetran", "Fivetran"], ["supabase-platform", "Supabase", "SupabasePlatform"],
   ["vercel", "Vercel", "Vercel"], ["langsmith", "LangChain and LangSmith", "LangSmith"],
   ["pinecone", "Pinecone", "Pinecone"], ["huggingfacehub", "Hugging Face Hub", "HuggingFaceHub"],
+  ["airbyte", "Airbyte", "Airbyte"], ["apacheairflow", "Apache Airflow", "ApacheAirflow"],
+  ["prefect", "Prefect", "Prefect"], ["dagster", "Dagster", "Dagster"],
+  ["n8n", "n8n", "N8n"], ["crewai", "CrewAI", "CrewAI"],
+  ["shopify", "Shopify", "Shopify"], ["stripe", "Stripe", "Stripe"],
 ];
 for (const [id, label, folder] of GENERATED_DATA_PACKS) {
   const manifestFile = path.join(ROOT, folder, "manifest.json");

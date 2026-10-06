@@ -1,0 +1,77 @@
+{
+  "product": "Dagster",
+  "key": "dagster",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "assets",
+      "label": "Software-Defined Assets",
+      "folder": "assets",
+      "prefix": "dagster_assets_suite",
+      "count": 200
+    },
+    {
+      "id": "checks",
+      "label": "Asset Checks and Quality",
+      "folder": "checks",
+      "prefix": "dagster_checks_suite",
+      "count": 200
+    },
+    {
+      "id": "jobs_ops",
+      "label": "Jobs and Ops",
+      "folder": "jobs_ops",
+      "prefix": "dagster_jobs_ops_suite",
+      "count": 200
+    },
+    {
+      "id": "schedules_sensors",
+      "label": "Schedules and Sensors",
+      "folder": "schedules_sensors",
+      "prefix": "dagster_schedules_sensors_suite",
+      "count": 200
+    },
+    {
+      "id": "partitions_backfills",
+      "label": "Partitions and Backfills",
+      "folder": "partitions_backfills",
+      "prefix": "dagster_partitions_backfills_suite",
+      "count": 200
+    },
+    {
+      "id": "resources_config",
+      "label": "Resources and Run Config",
+      "folder": "resources_config",
+      "prefix": "dagster_resources_config_suite",
+      "count": 200
+    },
+    {
+      "id": "io_managers",
+      "label": "Integrations and I/O Managers",
+      "folder": "io_managers",
+      "prefix": "dagster_io_managers_suite",
+      "count": 200
+    },
+    {
+      "id": "code_locations",
+      "label": "Code Locations and Deployments",
+      "folder": "code_locations",
+      "prefix": "dagster_code_locations_suite",
+      "count": 200
+    },
+    {
+      "id": "runs_observability",
+      "label": "Runs and Observability",
+      "folder": "runs_observability",
+      "prefix": "dagster_runs_observability_suite",
+      "count": 200
+    },
+    {
+      "id": "permissions_api",
+      "label": "Permissions and API",
+      "folder": "permissions_api",
+      "prefix": "dagster_permissions_api_suite",
+      "count": 200
+    }
+  ]
+}

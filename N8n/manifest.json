@@ -1,0 +1,77 @@
+{
+  "product": "n8n",
+  "key": "n8n",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "workflows",
+      "label": "Workflows and Nodes",
+      "folder": "workflows",
+      "prefix": "n8n_workflows_suite",
+      "count": 200
+    },
+    {
+      "id": "triggers_webhooks",
+      "label": "Triggers and Webhooks",
+      "folder": "triggers_webhooks",
+      "prefix": "n8n_triggers_webhooks_suite",
+      "count": 200
+    },
+    {
+      "id": "credentials",
+      "label": "Credentials and Connections",
+      "folder": "credentials",
+      "prefix": "n8n_credentials_suite",
+      "count": 200
+    },
+    {
+      "id": "executions",
+      "label": "Executions and Retries",
+      "folder": "executions",
+      "prefix": "n8n_executions_suite",
+      "count": 200
+    },
+    {
+      "id": "error_flows",
+      "label": "Error Handling and Recovery",
+      "folder": "error_flows",
+      "prefix": "n8n_error_flows_suite",
+      "count": 200
+    },
+    {
+      "id": "queues_scaling",
+      "label": "Queues and Scaling",
+      "folder": "queues_scaling",
+      "prefix": "n8n_queues_scaling_suite",
+      "count": 200
+    },
+    {
+      "id": "environments",
+      "label": "Projects and Environments",
+      "folder": "environments",
+      "prefix": "n8n_environments_suite",
+      "count": 200
+    },
+    {
+      "id": "sharing_access",
+      "label": "Sharing and Access",
+      "folder": "sharing_access",
+      "prefix": "n8n_sharing_access_suite",
+      "count": 200
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations and Data Mapping",
+      "folder": "integrations",
+      "prefix": "n8n_integrations_suite",
+      "count": 200
+    },
+    {
+      "id": "audit_api",
+      "label": "Audit and API",
+      "folder": "audit_api",
+      "prefix": "n8n_audit_api_suite",
+      "count": 200
+    }
+  ]
+}

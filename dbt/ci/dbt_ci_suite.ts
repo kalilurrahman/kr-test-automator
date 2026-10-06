@@ -12,7 +12,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -26,7 +26,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -40,7 +40,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -54,7 +54,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -68,7 +68,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -82,7 +82,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -96,7 +96,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -110,7 +110,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -124,7 +124,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -138,7 +138,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,ci,clean-baseline"
   },
   {
     "product": "dbt",
@@ -152,7 +152,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -166,7 +166,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -180,7 +180,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -194,7 +194,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -208,7 +208,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -222,7 +222,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -236,7 +236,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -250,7 +250,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -264,7 +264,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -278,7 +278,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,empty-input"
   },
   {
     "product": "dbt",
@@ -292,7 +292,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -306,7 +306,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -320,7 +320,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -334,7 +334,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -348,7 +348,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -362,7 +362,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -376,7 +376,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -390,7 +390,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -404,7 +404,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -418,7 +418,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,single-record"
+    "tags": "dbt,market-platform,synthetic-data,ci,single-record"
   },
   {
     "product": "dbt",
@@ -432,7 +432,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -446,7 +446,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -460,7 +460,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -474,7 +474,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -488,7 +488,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -502,7 +502,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -516,7 +516,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -530,7 +530,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -544,7 +544,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -558,7 +558,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,ci,duplicate-key"
   },
   {
     "product": "dbt",
@@ -572,7 +572,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -586,7 +586,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -600,7 +600,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -614,7 +614,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -628,7 +628,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -642,7 +642,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -656,7 +656,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -670,7 +670,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -684,7 +684,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -698,7 +698,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,ci,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -712,7 +712,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -726,7 +726,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -740,7 +740,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -754,7 +754,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -768,7 +768,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -782,7 +782,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -796,7 +796,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -810,7 +810,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -824,7 +824,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -838,7 +838,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,ci,boundary-values"
   },
   {
     "product": "dbt",
@@ -852,7 +852,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -866,7 +866,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -880,7 +880,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -894,7 +894,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -908,7 +908,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -922,7 +922,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -936,7 +936,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -950,7 +950,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -964,7 +964,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -978,7 +978,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,ci,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -992,7 +992,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1006,7 +1006,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1020,7 +1020,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1034,7 +1034,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1048,7 +1048,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1062,7 +1062,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1076,7 +1076,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1090,7 +1090,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1104,7 +1104,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1118,7 +1118,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,ci,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1132,7 +1132,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1146,7 +1146,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1160,7 +1160,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1174,7 +1174,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1188,7 +1188,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1202,7 +1202,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1216,7 +1216,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1230,7 +1230,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1244,7 +1244,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1258,7 +1258,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,ci,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1272,7 +1272,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1286,7 +1286,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1300,7 +1300,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1314,7 +1314,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1328,7 +1328,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1342,7 +1342,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1356,7 +1356,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1370,7 +1370,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1384,7 +1384,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1398,7 +1398,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,ci,field-rename"
   },
   {
     "product": "dbt",
@@ -1412,7 +1412,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1426,7 +1426,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1440,7 +1440,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1454,7 +1454,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1468,7 +1468,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1482,7 +1482,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1496,7 +1496,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1510,7 +1510,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1524,7 +1524,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1538,7 +1538,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,ci,worker-restart"
   },
   {
     "product": "dbt",
@@ -1552,7 +1552,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1566,7 +1566,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1580,7 +1580,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1594,7 +1594,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1608,7 +1608,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1622,7 +1622,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1636,7 +1636,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1650,7 +1650,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1664,7 +1664,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1678,7 +1678,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,ci,least-privilege"
   },
   {
     "product": "dbt",
@@ -1692,7 +1692,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1706,7 +1706,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1720,7 +1720,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1734,7 +1734,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1748,7 +1748,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1762,7 +1762,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1776,7 +1776,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1790,7 +1790,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1804,7 +1804,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1818,7 +1818,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,ci,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1832,7 +1832,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1846,7 +1846,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1860,7 +1860,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1874,7 +1874,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1888,7 +1888,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1902,7 +1902,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1916,7 +1916,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1930,7 +1930,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1944,7 +1944,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1958,7 +1958,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,ci,transient-retry"
   },
   {
     "product": "dbt",
@@ -1972,7 +1972,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -1986,7 +1986,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2000,7 +2000,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2014,7 +2014,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2028,7 +2028,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2042,7 +2042,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2056,7 +2056,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2070,7 +2070,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2084,7 +2084,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2098,7 +2098,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,ci,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2112,7 +2112,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2126,7 +2126,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2140,7 +2140,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2154,7 +2154,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2168,7 +2168,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2182,7 +2182,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2196,7 +2196,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2210,7 +2210,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2224,7 +2224,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2238,7 +2238,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,ci,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2252,7 +2252,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2266,7 +2266,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2280,7 +2280,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2294,7 +2294,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2308,7 +2308,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2322,7 +2322,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2336,7 +2336,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2350,7 +2350,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2364,7 +2364,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2378,7 +2378,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,ci,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2392,7 +2392,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2406,7 +2406,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2420,7 +2420,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2434,7 +2434,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2448,7 +2448,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2462,7 +2462,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2476,7 +2476,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2490,7 +2490,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2504,7 +2504,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2518,7 +2518,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,ci,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2532,7 +2532,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2546,7 +2546,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2560,7 +2560,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2574,7 +2574,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2588,7 +2588,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2602,7 +2602,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2616,7 +2616,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2630,7 +2630,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2644,7 +2644,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2658,7 +2658,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,ci,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2672,7 +2672,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to run a slim CI build for only changed downstream models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a slim CI build for only changed downstream models; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2686,7 +2686,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare a pull request with the correct base manifest. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare a pull request with the correct base manifest; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2700,7 +2700,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to block merge when critical model tests fail. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly block merge when critical model tests fail; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2714,7 +2714,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reuse a valid state artifact without stale model selection. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reuse a valid state artifact without stale model selection; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2728,7 +2728,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to avoid exposing CI credentials in logs and artifacts. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid exposing CI credentials in logs and artifacts; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2742,7 +2742,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to run independent CI jobs without colliding on schemas. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run independent CI jobs without colliding on schemas; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2756,7 +2756,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to report a removed model as a controlled breaking change. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly report a removed model as a controlled breaking change; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2770,7 +2770,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to cancel superseded builds for the same pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel superseded builds for the same pull request; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2784,7 +2784,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify CI uses the declared adapter version. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify CI uses the declared adapter version; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2798,7 +2798,7 @@ export const DBT_CI_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to publish check results to the matching commit status. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish check results to the matching commit status; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,ci,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,ci,corrupt-input"
   }
 ] as const;
 export default DBT_CI_SUITE;

@@ -12,7 +12,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -26,7 +26,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -40,7 +40,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -54,7 +54,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -68,7 +68,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -82,7 +82,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -96,7 +96,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -110,7 +110,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -124,7 +124,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -138,7 +138,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -152,7 +152,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -166,7 +166,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -180,7 +180,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -194,7 +194,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -208,7 +208,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -222,7 +222,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -236,7 +236,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -250,7 +250,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -264,7 +264,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -278,7 +278,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -292,7 +292,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -306,7 +306,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -320,7 +320,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -334,7 +334,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -348,7 +348,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -362,7 +362,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -376,7 +376,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -390,7 +390,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -404,7 +404,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -418,7 +418,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -432,7 +432,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -446,7 +446,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -460,7 +460,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -474,7 +474,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -488,7 +488,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -502,7 +502,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -516,7 +516,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -530,7 +530,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -544,7 +544,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -558,7 +558,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -572,7 +572,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -586,7 +586,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -600,7 +600,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -614,7 +614,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -628,7 +628,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -642,7 +642,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -656,7 +656,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -670,7 +670,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -684,7 +684,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -698,7 +698,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -712,7 +712,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -726,7 +726,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -740,7 +740,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -754,7 +754,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -768,7 +768,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -782,7 +782,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -796,7 +796,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -810,7 +810,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -824,7 +824,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -838,7 +838,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -852,7 +852,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -866,7 +866,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -880,7 +880,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -894,7 +894,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -908,7 +908,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -922,7 +922,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -936,7 +936,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -950,7 +950,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -964,7 +964,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -978,7 +978,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -992,7 +992,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1006,7 +1006,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1020,7 +1020,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1034,7 +1034,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1048,7 +1048,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1062,7 +1062,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1076,7 +1076,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1090,7 +1090,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1104,7 +1104,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1118,7 +1118,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1132,7 +1132,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1146,7 +1146,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1160,7 +1160,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1174,7 +1174,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1188,7 +1188,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1202,7 +1202,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1216,7 +1216,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1230,7 +1230,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1244,7 +1244,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1258,7 +1258,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1272,7 +1272,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1286,7 +1286,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1300,7 +1300,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1314,7 +1314,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1328,7 +1328,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1342,7 +1342,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1356,7 +1356,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1370,7 +1370,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1384,7 +1384,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1398,7 +1398,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1412,7 +1412,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1426,7 +1426,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1440,7 +1440,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1454,7 +1454,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1468,7 +1468,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1482,7 +1482,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1496,7 +1496,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1510,7 +1510,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1524,7 +1524,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1538,7 +1538,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1552,7 +1552,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1566,7 +1566,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1580,7 +1580,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1594,7 +1594,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1608,7 +1608,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1622,7 +1622,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1636,7 +1636,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1650,7 +1650,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1664,7 +1664,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1678,7 +1678,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1692,7 +1692,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1706,7 +1706,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1720,7 +1720,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1734,7 +1734,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1748,7 +1748,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1762,7 +1762,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1776,7 +1776,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1790,7 +1790,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1804,7 +1804,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1818,7 +1818,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1832,7 +1832,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1846,7 +1846,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1860,7 +1860,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1874,7 +1874,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1888,7 +1888,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1902,7 +1902,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1916,7 +1916,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1930,7 +1930,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1944,7 +1944,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1958,7 +1958,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1972,7 +1972,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1986,7 +1986,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2000,7 +2000,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2014,7 +2014,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2028,7 +2028,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2042,7 +2042,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2056,7 +2056,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2070,7 +2070,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2084,7 +2084,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2098,7 +2098,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2112,7 +2112,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2126,7 +2126,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2140,7 +2140,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2154,7 +2154,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2168,7 +2168,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2182,7 +2182,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2196,7 +2196,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2210,7 +2210,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2224,7 +2224,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2238,7 +2238,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2252,7 +2252,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2266,7 +2266,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2280,7 +2280,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2294,7 +2294,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2308,7 +2308,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2322,7 +2322,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2336,7 +2336,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2350,7 +2350,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2364,7 +2364,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2378,7 +2378,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2392,7 +2392,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2406,7 +2406,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2420,7 +2420,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2434,7 +2434,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2448,7 +2448,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2462,7 +2462,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2476,7 +2476,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2490,7 +2490,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2504,7 +2504,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2518,7 +2518,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2532,7 +2532,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2546,7 +2546,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2560,7 +2560,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2574,7 +2574,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2588,7 +2588,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2602,7 +2602,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2616,7 +2616,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2630,7 +2630,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2644,7 +2644,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2658,7 +2658,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2672,7 +2672,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to create a thread with isolated conversation state. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a thread with isolated conversation state; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2686,7 +2686,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to resume a thread from a persistent checkpoint after reconnect. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume a thread from a persistent checkpoint after reconnect; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2700,7 +2700,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to stream incremental model and tool events in their expected order. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stream incremental model and tool events in their expected order; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2714,7 +2714,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to stop a stream after the client cancels the request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a stream after the client cancels the request; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2728,7 +2728,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to enforce thread ownership across two synthetic users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce thread ownership across two synthetic users; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2742,7 +2742,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to expire stale thread state according to retention settings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire stale thread state according to retention settings; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2756,7 +2756,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to avoid duplicate messages after a client retry. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly avoid duplicate messages after a client retry; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2770,7 +2770,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve trace linkage between parent thread and child run. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve trace linkage between parent thread and child run; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2784,7 +2784,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to bound concurrent streams for a single synthetic account. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly bound concurrent streams for a single synthetic account; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2798,7 +2798,7 @@ export const LANGSMITH_THREADS_STREAMING_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit thread lifecycle and retention actions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit thread lifecycle and retention actions; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,threads_streaming,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,threads_streaming,corrupt-input"
   }
 ] as const;
 export default LANGSMITH_THREADS_STREAMING_SUITE;

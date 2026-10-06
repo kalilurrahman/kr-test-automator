@@ -12,7 +12,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -26,7 +26,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -40,7 +40,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -54,7 +54,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -68,7 +68,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -82,7 +82,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -96,7 +96,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -110,7 +110,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -124,7 +124,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -138,7 +138,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -152,7 +152,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -166,7 +166,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -180,7 +180,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -194,7 +194,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -208,7 +208,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -222,7 +222,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -236,7 +236,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -250,7 +250,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -264,7 +264,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -278,7 +278,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -292,7 +292,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -306,7 +306,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -320,7 +320,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -334,7 +334,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -348,7 +348,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -362,7 +362,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -376,7 +376,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -390,7 +390,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -404,7 +404,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -418,7 +418,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -432,7 +432,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -446,7 +446,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -460,7 +460,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -474,7 +474,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -488,7 +488,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -502,7 +502,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -516,7 +516,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -530,7 +530,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -544,7 +544,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -558,7 +558,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -572,7 +572,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -586,7 +586,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -600,7 +600,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -614,7 +614,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -628,7 +628,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -642,7 +642,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -656,7 +656,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -670,7 +670,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -684,7 +684,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -698,7 +698,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -712,7 +712,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -726,7 +726,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -740,7 +740,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -754,7 +754,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -768,7 +768,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -782,7 +782,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -796,7 +796,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -810,7 +810,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -824,7 +824,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -838,7 +838,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -852,7 +852,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -866,7 +866,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -880,7 +880,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -894,7 +894,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -908,7 +908,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -922,7 +922,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -936,7 +936,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -950,7 +950,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -964,7 +964,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -978,7 +978,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -992,7 +992,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1006,7 +1006,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1020,7 +1020,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1034,7 +1034,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1048,7 +1048,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1062,7 +1062,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1076,7 +1076,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1090,7 +1090,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1104,7 +1104,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1118,7 +1118,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1132,7 +1132,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1146,7 +1146,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1160,7 +1160,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1174,7 +1174,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1188,7 +1188,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1202,7 +1202,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1216,7 +1216,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1230,7 +1230,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1244,7 +1244,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1258,7 +1258,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1272,7 +1272,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1286,7 +1286,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1300,7 +1300,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1314,7 +1314,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1328,7 +1328,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1342,7 +1342,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1356,7 +1356,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1370,7 +1370,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1384,7 +1384,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1398,7 +1398,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1412,7 +1412,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1426,7 +1426,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1440,7 +1440,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1454,7 +1454,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1468,7 +1468,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1482,7 +1482,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1496,7 +1496,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1510,7 +1510,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1524,7 +1524,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1538,7 +1538,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1552,7 +1552,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1566,7 +1566,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1580,7 +1580,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1594,7 +1594,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1608,7 +1608,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1622,7 +1622,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1636,7 +1636,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1650,7 +1650,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1664,7 +1664,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1678,7 +1678,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1692,7 +1692,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1706,7 +1706,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1720,7 +1720,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1734,7 +1734,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1748,7 +1748,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1762,7 +1762,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1776,7 +1776,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1790,7 +1790,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1804,7 +1804,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1818,7 +1818,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1832,7 +1832,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1846,7 +1846,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1860,7 +1860,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1874,7 +1874,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1888,7 +1888,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1902,7 +1902,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1916,7 +1916,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1930,7 +1930,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1944,7 +1944,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1958,7 +1958,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1972,7 +1972,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -1986,7 +1986,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2000,7 +2000,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2014,7 +2014,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2028,7 +2028,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2042,7 +2042,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2056,7 +2056,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2070,7 +2070,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2084,7 +2084,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2098,7 +2098,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2112,7 +2112,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2126,7 +2126,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2140,7 +2140,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2154,7 +2154,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2168,7 +2168,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2182,7 +2182,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2196,7 +2196,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2210,7 +2210,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2224,7 +2224,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2238,7 +2238,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2252,7 +2252,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2266,7 +2266,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2280,7 +2280,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2294,7 +2294,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2308,7 +2308,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2322,7 +2322,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2336,7 +2336,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2350,7 +2350,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2364,7 +2364,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2378,7 +2378,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2392,7 +2392,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2406,7 +2406,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2420,7 +2420,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2434,7 +2434,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2448,7 +2448,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2462,7 +2462,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2476,7 +2476,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2490,7 +2490,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2504,7 +2504,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2518,7 +2518,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2532,7 +2532,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2546,7 +2546,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2560,7 +2560,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2574,7 +2574,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2588,7 +2588,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2602,7 +2602,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2616,7 +2616,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2630,7 +2630,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2644,7 +2644,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2658,7 +2658,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2672,7 +2672,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to create a Space with the selected SDK and hardware tier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a Space with the selected SDK and hardware tier; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2686,7 +2686,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to deploy an application revision from a pinned repository commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly deploy an application revision from a pinned repository commit; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2700,7 +2700,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restart a sleeping Space and verify its health endpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restart a sleeping Space and verify its health endpoint; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2714,7 +2714,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to configure a Space secret without exposing it in build output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly configure a Space secret without exposing it in build output; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2728,7 +2728,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict a private Space to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private Space to approved organization members; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2742,7 +2742,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to roll back a failed Space build to the prior working revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed Space build to the prior working revision; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2756,7 +2756,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify hardware changes respect organization quota limits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify hardware changes respect organization quota limits; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2770,7 +2770,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile Space runtime status with deployment logs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile Space runtime status with deployment logs; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2784,7 +2784,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to stop a disposable Space and release its assigned hardware. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly stop a disposable Space and release its assigned hardware; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2798,7 +2798,7 @@ export const HUGGINGFACEHUB_SPACES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit Space configuration and secret access changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit Space configuration and secret access changes; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,spaces,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,spaces,corrupt-input"
   }
 ] as const;
 export default HUGGINGFACEHUB_SPACES_SUITE;

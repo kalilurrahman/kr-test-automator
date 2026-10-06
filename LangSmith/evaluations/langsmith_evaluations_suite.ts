@@ -12,7 +12,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -26,7 +26,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -40,7 +40,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -54,7 +54,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -68,7 +68,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -82,7 +82,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -96,7 +96,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -110,7 +110,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -124,7 +124,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -138,7 +138,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,clean-baseline"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,clean-baseline"
   },
   {
     "product": "LangChain and LangSmith",
@@ -152,7 +152,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -166,7 +166,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -180,7 +180,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -194,7 +194,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -208,7 +208,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -222,7 +222,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -236,7 +236,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -250,7 +250,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -264,7 +264,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -278,7 +278,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,empty-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,empty-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -292,7 +292,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -306,7 +306,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -320,7 +320,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -334,7 +334,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -348,7 +348,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -362,7 +362,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -376,7 +376,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -390,7 +390,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -404,7 +404,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -418,7 +418,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,single-record"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,single-record"
   },
   {
     "product": "LangChain and LangSmith",
@@ -432,7 +432,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -446,7 +446,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -460,7 +460,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -474,7 +474,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -488,7 +488,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -502,7 +502,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -516,7 +516,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -530,7 +530,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -544,7 +544,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -558,7 +558,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,duplicate-key"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,duplicate-key"
   },
   {
     "product": "LangChain and LangSmith",
@@ -572,7 +572,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -586,7 +586,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -600,7 +600,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -614,7 +614,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -628,7 +628,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -642,7 +642,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -656,7 +656,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -670,7 +670,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -684,7 +684,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -698,7 +698,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,nullable-optional-field"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,nullable-optional-field"
   },
   {
     "product": "LangChain and LangSmith",
@@ -712,7 +712,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -726,7 +726,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -740,7 +740,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -754,7 +754,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -768,7 +768,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -782,7 +782,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -796,7 +796,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -810,7 +810,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -824,7 +824,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -838,7 +838,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,boundary-values"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,boundary-values"
   },
   {
     "product": "LangChain and LangSmith",
@@ -852,7 +852,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -866,7 +866,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -880,7 +880,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -894,7 +894,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -908,7 +908,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -922,7 +922,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -936,7 +936,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -950,7 +950,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -964,7 +964,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -978,7 +978,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,late-arriving-data"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,late-arriving-data"
   },
   {
     "product": "LangChain and LangSmith",
@@ -992,7 +992,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1006,7 +1006,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1020,7 +1020,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1034,7 +1034,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1048,7 +1048,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1062,7 +1062,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1076,7 +1076,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1090,7 +1090,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1104,7 +1104,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1118,7 +1118,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,out-of-order-events"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,out-of-order-events"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1132,7 +1132,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1146,7 +1146,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1160,7 +1160,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1174,7 +1174,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1188,7 +1188,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1202,7 +1202,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1216,7 +1216,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1230,7 +1230,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1244,7 +1244,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1258,7 +1258,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,compatible-schema-change"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,compatible-schema-change"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1272,7 +1272,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1286,7 +1286,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1300,7 +1300,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1314,7 +1314,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1328,7 +1328,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1342,7 +1342,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1356,7 +1356,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1370,7 +1370,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1384,7 +1384,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1398,7 +1398,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,field-rename"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,field-rename"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1412,7 +1412,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1426,7 +1426,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1440,7 +1440,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1454,7 +1454,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1468,7 +1468,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1482,7 +1482,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1496,7 +1496,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1510,7 +1510,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1524,7 +1524,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1538,7 +1538,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,worker-restart"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,worker-restart"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1552,7 +1552,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1566,7 +1566,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1580,7 +1580,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1594,7 +1594,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1608,7 +1608,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1622,7 +1622,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1636,7 +1636,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1650,7 +1650,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1664,7 +1664,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1678,7 +1678,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,least-privilege"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,least-privilege"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1692,7 +1692,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1706,7 +1706,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1720,7 +1720,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1734,7 +1734,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1748,7 +1748,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1762,7 +1762,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1776,7 +1776,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1790,7 +1790,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1804,7 +1804,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1818,7 +1818,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,concurrent-writers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,concurrent-writers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1832,7 +1832,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1846,7 +1846,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1860,7 +1860,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1874,7 +1874,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1888,7 +1888,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1902,7 +1902,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1916,7 +1916,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1930,7 +1930,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1944,7 +1944,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1958,7 +1958,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,transient-retry"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,transient-retry"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1972,7 +1972,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -1986,7 +1986,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2000,7 +2000,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2014,7 +2014,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2028,7 +2028,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2042,7 +2042,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2056,7 +2056,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2070,7 +2070,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2084,7 +2084,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2098,7 +2098,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,commit-conflict"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,commit-conflict"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2112,7 +2112,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2126,7 +2126,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2140,7 +2140,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2154,7 +2154,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2168,7 +2168,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2182,7 +2182,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2196,7 +2196,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2210,7 +2210,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2224,7 +2224,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2238,7 +2238,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,rollback-and-replay"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,rollback-and-replay"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2252,7 +2252,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2266,7 +2266,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2280,7 +2280,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2294,7 +2294,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2308,7 +2308,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2322,7 +2322,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2336,7 +2336,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2350,7 +2350,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2364,7 +2364,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2378,7 +2378,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,Unicode-identifiers"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,Unicode-identifiers"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2392,7 +2392,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2406,7 +2406,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2420,7 +2420,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2434,7 +2434,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2448,7 +2448,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2462,7 +2462,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2476,7 +2476,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2490,7 +2490,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2504,7 +2504,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2518,7 +2518,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,time-zone-boundary"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,time-zone-boundary"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2532,7 +2532,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2546,7 +2546,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2560,7 +2560,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2574,7 +2574,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2588,7 +2588,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2602,7 +2602,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2616,7 +2616,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2630,7 +2630,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2644,7 +2644,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2658,7 +2658,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,skewed-high-volume"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,skewed-high-volume"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2672,7 +2672,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to run an evaluator against a pinned model and dataset revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run an evaluator against a pinned model and dataset revision; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2686,7 +2686,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare candidate and baseline results using a fixed seed. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare candidate and baseline results using a fixed seed; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2700,7 +2700,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to fail a quality gate when a metric misses its threshold. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail a quality gate when a metric misses its threshold; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2714,7 +2714,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retain per-example evaluator output for failed cases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain per-example evaluator output for failed cases; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2728,7 +2728,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to cancel a running experiment without publishing a partial result. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a running experiment without publishing a partial result; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2742,7 +2742,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retry a transient evaluator error without duplicate examples. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient evaluator error without duplicate examples; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2756,7 +2756,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare prompt revisions over the same evaluation dataset. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare prompt revisions over the same evaluation dataset; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2770,7 +2770,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict evaluation artifacts to their project members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict evaluation artifacts to their project members; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2784,7 +2784,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to record model and evaluator version in experiment metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record model and evaluator version in experiment metadata; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   },
   {
     "product": "LangChain and LangSmith",
@@ -2798,7 +2798,7 @@ export const LANGSMITH_EVALUATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reproduce a completed experiment from its saved configuration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reproduce a completed experiment from its saved configuration; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "langsmith,data-ai-platform,synthetic-data,evaluations,corrupt-input"
+    "tags": "langsmith,market-platform,synthetic-data,evaluations,corrupt-input"
   }
 ] as const;
 export default LANGSMITH_EVALUATIONS_SUITE;

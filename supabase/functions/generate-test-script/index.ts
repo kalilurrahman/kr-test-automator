@@ -11,7 +11,10 @@ serve(async (req) => {
   }
 
   try {
-    const { platform, framework, language, testScopes, testCount, businessCase } = await req.json();
+    const { platform, framework, language, testScopes, testCount, businessCase, targetScriptLines } = await req.json();
+    const requestedLineTarget = Number(targetScriptLines);
+    const longForm = Number.isFinite(requestedLineTarget) && requestedLineTarget >= 2000;
+    const lineTarget = longForm ? Math.min(4000, Math.floor(requestedLineTarget)) : 0;
 
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     if (!LOVABLE_API_KEY) {
@@ -19,6 +22,14 @@ serve(async (req) => {
     }
 
     const outputGuidance = getOutputGuidance(framework, language);
+    const longFormGuidance = longForm ? `
+LONG-FORM SCRIPT REQUIREMENTS:
+- Minimum target: ${lineTarget} meaningful source lines in the script field. Generate the complete script, not a summary or a short representative sample.
+- Organize the suite into runnable modules or clearly separated sections: configuration, typed fixtures, setup and teardown, reusable page objects or clients, data builders, assertions, and the requested test cases.
+- Cover positive, negative, boundary, authorization, retry/recovery, concurrency, and cleanup paths where they apply to the business case.
+- Keep every helper and test implementation complete and internally consistent. Include imports, types, executable setup, assertions, and cleanup; do not use ellipses, TODOs, placeholder functions, repeated filler, or blank/comment-only padding to reach the target.
+- Preserve the requested framework and language. For model-based and VBScript output, provide complete runnable-equivalent model modules or UFT functions rather than switching languages.
+- Ensure the full JSON response remains valid and the script can be saved as a standalone source file.` : "";
 
     const systemPrompt = `You are TestForge AI, an expert test automation engineer. Generate production-ready test automation scripts.
 
@@ -44,6 +55,7 @@ REQUIREMENTS:
 - Target Test Count: ${testCount}
 - Business Case: ${businessCase}
 ${outputGuidance}
+${longFormGuidance}
 
 Generate a comprehensive, well-documented test suite with:
 1. Page Object Model pattern where applicable
@@ -67,6 +79,7 @@ Generate a comprehensive, well-documented test suite with:
           { role: "user", content: `Generate a test automation script for: ${businessCase}` },
         ],
         stream: true,
+        ...(longForm ? { max_tokens: 65536 } : {}),
       }),
     });
 

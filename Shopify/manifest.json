@@ -1,0 +1,77 @@
+{
+  "product": "Shopify",
+  "key": "shopify",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "catalog",
+      "label": "Products and Catalog",
+      "folder": "catalog",
+      "prefix": "shopify_catalog_suite",
+      "count": 200
+    },
+    {
+      "id": "inventory",
+      "label": "Inventory and Locations",
+      "folder": "inventory",
+      "prefix": "shopify_inventory_suite",
+      "count": 200
+    },
+    {
+      "id": "checkout",
+      "label": "Cart and Checkout",
+      "folder": "checkout",
+      "prefix": "shopify_checkout_suite",
+      "count": 200
+    },
+    {
+      "id": "orders",
+      "label": "Orders and Refunds",
+      "folder": "orders",
+      "prefix": "shopify_orders_suite",
+      "count": 200
+    },
+    {
+      "id": "payments",
+      "label": "Payments and Payouts",
+      "folder": "payments",
+      "prefix": "shopify_payments_suite",
+      "count": 200
+    },
+    {
+      "id": "shipping",
+      "label": "Shipping and Fulfillment",
+      "folder": "shipping",
+      "prefix": "shopify_shipping_suite",
+      "count": 200
+    },
+    {
+      "id": "discounts",
+      "label": "Discounts and Promotions",
+      "folder": "discounts",
+      "prefix": "shopify_discounts_suite",
+      "count": 200
+    },
+    {
+      "id": "customers",
+      "label": "Customers and Accounts",
+      "folder": "customers",
+      "prefix": "shopify_customers_suite",
+      "count": 200
+    },
+    {
+      "id": "apps_webhooks",
+      "label": "Apps and Webhooks",
+      "folder": "apps_webhooks",
+      "prefix": "shopify_apps_webhooks_suite",
+      "count": 200
+    },
+    {
+      "id": "markets_analytics",
+      "label": "Markets, Tax and Analytics",
+      "folder": "markets_analytics",
+      "prefix": "shopify_markets_analytics_suite",
+      "count": 200
+    }
+  ]
+}

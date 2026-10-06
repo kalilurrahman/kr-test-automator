@@ -12,7 +12,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -26,7 +26,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -40,7 +40,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -54,7 +54,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -68,7 +68,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -82,7 +82,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -96,7 +96,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -110,7 +110,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -124,7 +124,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -138,7 +138,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,clean-baseline"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,clean-baseline"
   },
   {
     "product": "dbt",
@@ -152,7 +152,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -166,7 +166,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -180,7 +180,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -194,7 +194,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -208,7 +208,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -222,7 +222,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -236,7 +236,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -250,7 +250,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -264,7 +264,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -278,7 +278,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,empty-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,empty-input"
   },
   {
     "product": "dbt",
@@ -292,7 +292,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -306,7 +306,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -320,7 +320,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -334,7 +334,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -348,7 +348,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -362,7 +362,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -376,7 +376,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -390,7 +390,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -404,7 +404,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -418,7 +418,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,single-record"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,single-record"
   },
   {
     "product": "dbt",
@@ -432,7 +432,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -446,7 +446,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -460,7 +460,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -474,7 +474,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -488,7 +488,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -502,7 +502,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -516,7 +516,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -530,7 +530,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -544,7 +544,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -558,7 +558,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,duplicate-key"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,duplicate-key"
   },
   {
     "product": "dbt",
@@ -572,7 +572,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -586,7 +586,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -600,7 +600,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -614,7 +614,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -628,7 +628,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -642,7 +642,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -656,7 +656,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -670,7 +670,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -684,7 +684,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -698,7 +698,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,nullable-optional-field"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,nullable-optional-field"
   },
   {
     "product": "dbt",
@@ -712,7 +712,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -726,7 +726,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -740,7 +740,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -754,7 +754,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -768,7 +768,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -782,7 +782,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -796,7 +796,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -810,7 +810,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -824,7 +824,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -838,7 +838,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,boundary-values"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,boundary-values"
   },
   {
     "product": "dbt",
@@ -852,7 +852,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -866,7 +866,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -880,7 +880,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -894,7 +894,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -908,7 +908,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -922,7 +922,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -936,7 +936,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -950,7 +950,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -964,7 +964,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -978,7 +978,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,late-arriving-data"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,late-arriving-data"
   },
   {
     "product": "dbt",
@@ -992,7 +992,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1006,7 +1006,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1020,7 +1020,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1034,7 +1034,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1048,7 +1048,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1062,7 +1062,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1076,7 +1076,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1090,7 +1090,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1104,7 +1104,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1118,7 +1118,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,out-of-order-events"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,out-of-order-events"
   },
   {
     "product": "dbt",
@@ -1132,7 +1132,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1146,7 +1146,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1160,7 +1160,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1174,7 +1174,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1188,7 +1188,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1202,7 +1202,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1216,7 +1216,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1230,7 +1230,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1244,7 +1244,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1258,7 +1258,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,compatible-schema-change"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,compatible-schema-change"
   },
   {
     "product": "dbt",
@@ -1272,7 +1272,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1286,7 +1286,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1300,7 +1300,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1314,7 +1314,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1328,7 +1328,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1342,7 +1342,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1356,7 +1356,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1370,7 +1370,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1384,7 +1384,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1398,7 +1398,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,field-rename"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,field-rename"
   },
   {
     "product": "dbt",
@@ -1412,7 +1412,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1426,7 +1426,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1440,7 +1440,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1454,7 +1454,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1468,7 +1468,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1482,7 +1482,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1496,7 +1496,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1510,7 +1510,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1524,7 +1524,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1538,7 +1538,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,worker-restart"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,worker-restart"
   },
   {
     "product": "dbt",
@@ -1552,7 +1552,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1566,7 +1566,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1580,7 +1580,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1594,7 +1594,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1608,7 +1608,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1622,7 +1622,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1636,7 +1636,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1650,7 +1650,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1664,7 +1664,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1678,7 +1678,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,least-privilege"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,least-privilege"
   },
   {
     "product": "dbt",
@@ -1692,7 +1692,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1706,7 +1706,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1720,7 +1720,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1734,7 +1734,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1748,7 +1748,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1762,7 +1762,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1776,7 +1776,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1790,7 +1790,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1804,7 +1804,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1818,7 +1818,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,concurrent-writers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,concurrent-writers"
   },
   {
     "product": "dbt",
@@ -1832,7 +1832,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1846,7 +1846,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1860,7 +1860,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1874,7 +1874,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1888,7 +1888,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1902,7 +1902,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1916,7 +1916,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1930,7 +1930,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1944,7 +1944,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1958,7 +1958,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,transient-retry"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,transient-retry"
   },
   {
     "product": "dbt",
@@ -1972,7 +1972,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -1986,7 +1986,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2000,7 +2000,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2014,7 +2014,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2028,7 +2028,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2042,7 +2042,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2056,7 +2056,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2070,7 +2070,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2084,7 +2084,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2098,7 +2098,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,commit-conflict"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,commit-conflict"
   },
   {
     "product": "dbt",
@@ -2112,7 +2112,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2126,7 +2126,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2140,7 +2140,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2154,7 +2154,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2168,7 +2168,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2182,7 +2182,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2196,7 +2196,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2210,7 +2210,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2224,7 +2224,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2238,7 +2238,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,rollback-and-replay"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,rollback-and-replay"
   },
   {
     "product": "dbt",
@@ -2252,7 +2252,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2266,7 +2266,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2280,7 +2280,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2294,7 +2294,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2308,7 +2308,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2322,7 +2322,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2336,7 +2336,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2350,7 +2350,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2364,7 +2364,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2378,7 +2378,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,Unicode-identifiers"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,Unicode-identifiers"
   },
   {
     "product": "dbt",
@@ -2392,7 +2392,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2406,7 +2406,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2420,7 +2420,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2434,7 +2434,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2448,7 +2448,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2462,7 +2462,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2476,7 +2476,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2490,7 +2490,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2504,7 +2504,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2518,7 +2518,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,time-zone-boundary"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,time-zone-boundary"
   },
   {
     "product": "dbt",
@@ -2532,7 +2532,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2546,7 +2546,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2560,7 +2560,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2574,7 +2574,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2588,7 +2588,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2602,7 +2602,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2616,7 +2616,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2630,7 +2630,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2644,7 +2644,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2658,7 +2658,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,skewed-high-volume"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,skewed-high-volume"
   },
   {
     "product": "dbt",
@@ -2672,7 +2672,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to generate documentation from model and column descriptions. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly generate documentation from model and column descriptions; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2686,7 +2686,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to trace a downstream metric to its raw source tables. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly trace a downstream metric to its raw source tables; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2700,7 +2700,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to hide restricted model details from unauthorized project users. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly hide restricted model details from unauthorized project users; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2714,7 +2714,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to render lineage after an ephemeral model is compiled. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly render lineage after an ephemeral model is compiled; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2728,7 +2728,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to update docs after a column rename migration. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update docs after a column rename migration; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2742,7 +2742,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify exposures link to the intended production models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify exposures link to the intended production models; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2756,7 +2756,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to publish documentation for a pinned project revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish documentation for a pinned project revision; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2770,7 +2770,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to search catalog terms with deterministic results. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly search catalog terms with deterministic results; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2784,7 +2784,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to export docs metadata without leaking environment secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export docs metadata without leaking environment secrets; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   },
   {
     "product": "dbt",
@@ -2798,7 +2798,7 @@ export const DBT_DOCS_LINEAGE_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve lineage when a model is moved between folders. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage when a model is moved between folders; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "dbt,data-ai-platform,synthetic-data,docs_lineage,corrupt-input"
+    "tags": "dbt,market-platform,synthetic-data,docs_lineage,corrupt-input"
   }
 ] as const;
 export default DBT_DOCS_LINEAGE_SUITE;

@@ -12,7 +12,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -26,7 +26,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -40,7 +40,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -54,7 +54,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -68,7 +68,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -82,7 +82,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -96,7 +96,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -110,7 +110,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -124,7 +124,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -138,7 +138,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,clean-baseline"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,clean-baseline"
   },
   {
     "product": "Pinecone",
@@ -152,7 +152,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -166,7 +166,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -180,7 +180,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -194,7 +194,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -208,7 +208,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -222,7 +222,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -236,7 +236,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -250,7 +250,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -264,7 +264,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -278,7 +278,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,empty-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,empty-input"
   },
   {
     "product": "Pinecone",
@@ -292,7 +292,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -306,7 +306,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -320,7 +320,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -334,7 +334,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -348,7 +348,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -362,7 +362,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -376,7 +376,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -390,7 +390,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -404,7 +404,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -418,7 +418,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,single-record"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,single-record"
   },
   {
     "product": "Pinecone",
@@ -432,7 +432,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -446,7 +446,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -460,7 +460,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -474,7 +474,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -488,7 +488,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -502,7 +502,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -516,7 +516,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -530,7 +530,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -544,7 +544,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -558,7 +558,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,duplicate-key"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,duplicate-key"
   },
   {
     "product": "Pinecone",
@@ -572,7 +572,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -586,7 +586,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -600,7 +600,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -614,7 +614,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -628,7 +628,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -642,7 +642,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -656,7 +656,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -670,7 +670,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -684,7 +684,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -698,7 +698,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,nullable-optional-field"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,nullable-optional-field"
   },
   {
     "product": "Pinecone",
@@ -712,7 +712,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -726,7 +726,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -740,7 +740,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -754,7 +754,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -768,7 +768,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -782,7 +782,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -796,7 +796,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -810,7 +810,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -824,7 +824,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -838,7 +838,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,boundary-values"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,boundary-values"
   },
   {
     "product": "Pinecone",
@@ -852,7 +852,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -866,7 +866,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -880,7 +880,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -894,7 +894,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -908,7 +908,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -922,7 +922,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -936,7 +936,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -950,7 +950,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -964,7 +964,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -978,7 +978,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,late-arriving-data"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,late-arriving-data"
   },
   {
     "product": "Pinecone",
@@ -992,7 +992,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1006,7 +1006,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1020,7 +1020,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1034,7 +1034,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1048,7 +1048,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1062,7 +1062,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1076,7 +1076,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1090,7 +1090,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1104,7 +1104,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1118,7 +1118,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,out-of-order-events"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,out-of-order-events"
   },
   {
     "product": "Pinecone",
@@ -1132,7 +1132,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1146,7 +1146,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1160,7 +1160,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1174,7 +1174,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1188,7 +1188,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1202,7 +1202,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1216,7 +1216,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1230,7 +1230,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1244,7 +1244,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1258,7 +1258,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,compatible-schema-change"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,compatible-schema-change"
   },
   {
     "product": "Pinecone",
@@ -1272,7 +1272,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1286,7 +1286,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1300,7 +1300,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1314,7 +1314,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1328,7 +1328,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1342,7 +1342,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1356,7 +1356,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1370,7 +1370,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1384,7 +1384,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1398,7 +1398,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,field-rename"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,field-rename"
   },
   {
     "product": "Pinecone",
@@ -1412,7 +1412,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1426,7 +1426,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1440,7 +1440,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1454,7 +1454,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1468,7 +1468,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1482,7 +1482,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1496,7 +1496,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1510,7 +1510,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1524,7 +1524,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1538,7 +1538,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,worker-restart"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,worker-restart"
   },
   {
     "product": "Pinecone",
@@ -1552,7 +1552,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1566,7 +1566,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1580,7 +1580,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1594,7 +1594,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1608,7 +1608,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1622,7 +1622,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1636,7 +1636,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1650,7 +1650,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1664,7 +1664,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1678,7 +1678,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,least-privilege"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,least-privilege"
   },
   {
     "product": "Pinecone",
@@ -1692,7 +1692,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1706,7 +1706,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1720,7 +1720,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1734,7 +1734,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1748,7 +1748,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1762,7 +1762,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1776,7 +1776,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1790,7 +1790,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1804,7 +1804,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1818,7 +1818,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,concurrent-writers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,concurrent-writers"
   },
   {
     "product": "Pinecone",
@@ -1832,7 +1832,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1846,7 +1846,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1860,7 +1860,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1874,7 +1874,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1888,7 +1888,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1902,7 +1902,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1916,7 +1916,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1930,7 +1930,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1944,7 +1944,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1958,7 +1958,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,transient-retry"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,transient-retry"
   },
   {
     "product": "Pinecone",
@@ -1972,7 +1972,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -1986,7 +1986,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2000,7 +2000,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2014,7 +2014,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2028,7 +2028,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2042,7 +2042,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2056,7 +2056,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2070,7 +2070,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2084,7 +2084,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2098,7 +2098,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,commit-conflict"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,commit-conflict"
   },
   {
     "product": "Pinecone",
@@ -2112,7 +2112,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2126,7 +2126,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2140,7 +2140,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2154,7 +2154,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2168,7 +2168,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2182,7 +2182,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2196,7 +2196,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2210,7 +2210,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2224,7 +2224,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2238,7 +2238,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,rollback-and-replay"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,rollback-and-replay"
   },
   {
     "product": "Pinecone",
@@ -2252,7 +2252,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2266,7 +2266,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2280,7 +2280,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2294,7 +2294,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2308,7 +2308,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2322,7 +2322,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2336,7 +2336,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2350,7 +2350,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2364,7 +2364,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2378,7 +2378,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,Unicode-identifiers"
   },
   {
     "product": "Pinecone",
@@ -2392,7 +2392,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2406,7 +2406,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2420,7 +2420,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2434,7 +2434,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2448,7 +2448,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2462,7 +2462,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2476,7 +2476,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2490,7 +2490,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2504,7 +2504,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2518,7 +2518,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,time-zone-boundary"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,time-zone-boundary"
   },
   {
     "product": "Pinecone",
@@ -2532,7 +2532,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2546,7 +2546,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2560,7 +2560,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2574,7 +2574,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2588,7 +2588,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2602,7 +2602,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2616,7 +2616,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2630,7 +2630,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2644,7 +2644,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2658,7 +2658,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,skewed-high-volume"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,skewed-high-volume"
   },
   {
     "product": "Pinecone",
@@ -2672,7 +2672,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to upsert vectors with unique identifiers into an isolated namespace. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert vectors with unique identifiers into an isolated namespace; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2686,7 +2686,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to repeat an upsert with the same IDs and verify idempotent replacement. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly repeat an upsert with the same IDs and verify idempotent replacement; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2700,7 +2700,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reject vectors with a dimension that differs from the index. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reject vectors with a dimension that differs from the index; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2714,7 +2714,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve metadata values across an upsert and fetch cycle. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve metadata values across an upsert and fetch cycle; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2728,7 +2728,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to upsert a bounded batch and report partial failures accurately. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly upsert a bounded batch and report partial failures accurately; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2742,7 +2742,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to isolate tenant vectors in separate namespaces. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly isolate tenant vectors in separate namespaces; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2756,7 +2756,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to delete selected vector IDs without affecting adjacent records. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly delete selected vector IDs without affecting adjacent records; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2770,7 +2770,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to handle empty metadata and nullable fields consistently. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle empty metadata and nullable fields consistently; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2784,7 +2784,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retry a transient batch timeout without duplicating vector IDs. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient batch timeout without duplicating vector IDs; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   },
   {
     "product": "Pinecone",
@@ -2798,7 +2798,7 @@ export const PINECONE_VECTORS_UPSERT_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile namespace counts with the synthetic input fixture. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile namespace counts with the synthetic input fixture; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "pinecone,data-ai-platform,synthetic-data,vectors_upsert,corrupt-input"
+    "tags": "pinecone,market-platform,synthetic-data,vectors_upsert,corrupt-input"
   }
 ] as const;
 export default PINECONE_VECTORS_UPSERT_SUITE;

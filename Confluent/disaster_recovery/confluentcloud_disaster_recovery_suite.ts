@@ -12,7 +12,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -26,7 +26,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -40,7 +40,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -54,7 +54,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -68,7 +68,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -82,7 +82,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -96,7 +96,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -110,7 +110,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -124,7 +124,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -138,7 +138,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,clean-baseline"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,clean-baseline"
   },
   {
     "product": "Confluent Cloud",
@@ -152,7 +152,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -166,7 +166,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -180,7 +180,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -194,7 +194,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -208,7 +208,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -222,7 +222,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -236,7 +236,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -250,7 +250,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -264,7 +264,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -278,7 +278,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,empty-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,empty-input"
   },
   {
     "product": "Confluent Cloud",
@@ -292,7 +292,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -306,7 +306,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -320,7 +320,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -334,7 +334,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -348,7 +348,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -362,7 +362,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -376,7 +376,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -390,7 +390,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -404,7 +404,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -418,7 +418,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,single-record"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,single-record"
   },
   {
     "product": "Confluent Cloud",
@@ -432,7 +432,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -446,7 +446,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -460,7 +460,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -474,7 +474,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -488,7 +488,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -502,7 +502,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -516,7 +516,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -530,7 +530,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -544,7 +544,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -558,7 +558,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,duplicate-key"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,duplicate-key"
   },
   {
     "product": "Confluent Cloud",
@@ -572,7 +572,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -586,7 +586,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -600,7 +600,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -614,7 +614,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -628,7 +628,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -642,7 +642,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -656,7 +656,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -670,7 +670,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -684,7 +684,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -698,7 +698,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,nullable-optional-field"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,nullable-optional-field"
   },
   {
     "product": "Confluent Cloud",
@@ -712,7 +712,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -726,7 +726,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -740,7 +740,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -754,7 +754,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -768,7 +768,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -782,7 +782,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -796,7 +796,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -810,7 +810,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -824,7 +824,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -838,7 +838,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,boundary-values"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,boundary-values"
   },
   {
     "product": "Confluent Cloud",
@@ -852,7 +852,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -866,7 +866,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -880,7 +880,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -894,7 +894,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -908,7 +908,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -922,7 +922,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -936,7 +936,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -950,7 +950,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -964,7 +964,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -978,7 +978,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,late-arriving-data"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,late-arriving-data"
   },
   {
     "product": "Confluent Cloud",
@@ -992,7 +992,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1006,7 +1006,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1020,7 +1020,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1034,7 +1034,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1048,7 +1048,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1062,7 +1062,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1076,7 +1076,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1090,7 +1090,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1104,7 +1104,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1118,7 +1118,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,out-of-order-events"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,out-of-order-events"
   },
   {
     "product": "Confluent Cloud",
@@ -1132,7 +1132,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1146,7 +1146,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1160,7 +1160,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1174,7 +1174,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1188,7 +1188,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1202,7 +1202,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1216,7 +1216,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1230,7 +1230,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1244,7 +1244,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1258,7 +1258,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,compatible-schema-change"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,compatible-schema-change"
   },
   {
     "product": "Confluent Cloud",
@@ -1272,7 +1272,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1286,7 +1286,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1300,7 +1300,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1314,7 +1314,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1328,7 +1328,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1342,7 +1342,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1356,7 +1356,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1370,7 +1370,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1384,7 +1384,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1398,7 +1398,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,field-rename"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,field-rename"
   },
   {
     "product": "Confluent Cloud",
@@ -1412,7 +1412,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1426,7 +1426,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1440,7 +1440,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1454,7 +1454,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1468,7 +1468,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1482,7 +1482,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1496,7 +1496,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1510,7 +1510,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1524,7 +1524,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1538,7 +1538,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,worker-restart"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,worker-restart"
   },
   {
     "product": "Confluent Cloud",
@@ -1552,7 +1552,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1566,7 +1566,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1580,7 +1580,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1594,7 +1594,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1608,7 +1608,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1622,7 +1622,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1636,7 +1636,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1650,7 +1650,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1664,7 +1664,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1678,7 +1678,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,least-privilege"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,least-privilege"
   },
   {
     "product": "Confluent Cloud",
@@ -1692,7 +1692,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1706,7 +1706,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1720,7 +1720,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1734,7 +1734,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1748,7 +1748,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1762,7 +1762,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1776,7 +1776,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1790,7 +1790,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1804,7 +1804,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1818,7 +1818,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,concurrent-writers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,concurrent-writers"
   },
   {
     "product": "Confluent Cloud",
@@ -1832,7 +1832,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1846,7 +1846,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1860,7 +1860,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1874,7 +1874,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1888,7 +1888,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1902,7 +1902,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1916,7 +1916,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1930,7 +1930,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1944,7 +1944,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1958,7 +1958,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,transient-retry"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,transient-retry"
   },
   {
     "product": "Confluent Cloud",
@@ -1972,7 +1972,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -1986,7 +1986,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2000,7 +2000,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2014,7 +2014,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2028,7 +2028,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2042,7 +2042,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2056,7 +2056,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2070,7 +2070,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2084,7 +2084,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2098,7 +2098,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,commit-conflict"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,commit-conflict"
   },
   {
     "product": "Confluent Cloud",
@@ -2112,7 +2112,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2126,7 +2126,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2140,7 +2140,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2154,7 +2154,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2168,7 +2168,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2182,7 +2182,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2196,7 +2196,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2210,7 +2210,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2224,7 +2224,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2238,7 +2238,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,rollback-and-replay"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,rollback-and-replay"
   },
   {
     "product": "Confluent Cloud",
@@ -2252,7 +2252,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2266,7 +2266,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2280,7 +2280,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2294,7 +2294,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2308,7 +2308,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2322,7 +2322,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2336,7 +2336,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2350,7 +2350,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2364,7 +2364,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2378,7 +2378,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,Unicode-identifiers"
   },
   {
     "product": "Confluent Cloud",
@@ -2392,7 +2392,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2406,7 +2406,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2420,7 +2420,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2434,7 +2434,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2448,7 +2448,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2462,7 +2462,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2476,7 +2476,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2490,7 +2490,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2504,7 +2504,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2518,7 +2518,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,time-zone-boundary"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,time-zone-boundary"
   },
   {
     "product": "Confluent Cloud",
@@ -2532,7 +2532,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2546,7 +2546,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2560,7 +2560,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2574,7 +2574,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2588,7 +2588,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2602,7 +2602,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2616,7 +2616,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2630,7 +2630,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2644,7 +2644,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2658,7 +2658,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,skewed-high-volume"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,skewed-high-volume"
   },
   {
     "product": "Confluent Cloud",
@@ -2672,7 +2672,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to link source and destination clusters with verified topic mappings. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly link source and destination clusters with verified topic mappings; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2686,7 +2686,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to replicate offsets consistently during a controlled failover. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly replicate offsets consistently during a controlled failover; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2700,7 +2700,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent split-brain writes during a region transition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent split-brain writes during a region transition; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2714,7 +2714,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restore consumer progress from the replicated checkpoint. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restore consumer progress from the replicated checkpoint; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2728,7 +2728,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile record counts after a bounded recovery replay. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile record counts after a bounded recovery replay; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2742,7 +2742,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve schema compatibility across linked clusters. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve schema compatibility across linked clusters; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2756,7 +2756,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to revoke an obsolete cluster link without deleting source data. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke an obsolete cluster link without deleting source data; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2770,7 +2770,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to measure recovery time against the declared service target. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly measure recovery time against the declared service target; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2784,7 +2784,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit failover approval and completion evidence. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit failover approval and completion evidence; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   },
   {
     "product": "Confluent Cloud",
@@ -2798,7 +2798,7 @@ export const CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to resume replication after a transient network partition. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly resume replication after a transient network partition; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "confluentcloud,data-ai-platform,synthetic-data,disaster_recovery,corrupt-input"
+    "tags": "confluentcloud,market-platform,synthetic-data,disaster_recovery,corrupt-input"
   }
 ] as const;
 export default CONFLUENTCLOUD_DISASTER_RECOVERY_SUITE;

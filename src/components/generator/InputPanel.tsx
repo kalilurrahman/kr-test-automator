@@ -20,7 +20,7 @@ interface InputPanelProps {
 const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
   const {
     platform, framework, language, setFramework, setLanguage,
-    testCount, setTestCount, businessCase, setBusinessCase, isGenerating,
+    testCount, setTestCount, targetScriptLines, setTargetScriptLines, businessCase, setBusinessCase, isGenerating,
   } = useGeneratorStore();
   const specialKind = detectSpecialKind(framework, language);
 
@@ -125,10 +125,46 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         <TestScopeSelect />
       </div>
 
-      {/* 4. Test Count */}
+      {/* 4. Script length */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ④ Test Count
+          ④ Script Length
+        </label>
+        <div className="grid grid-cols-2 gap-2">
+          <button
+            type="button"
+            aria-pressed={!targetScriptLines}
+            disabled={isGenerating}
+            onClick={() => setTargetScriptLines(null)}
+            className={`rounded-lg border px-3 py-2 text-xs transition-colors ${
+              !targetScriptLines ? "border-primary/60 bg-primary/10 text-primary" : "border-border text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Standard
+          </button>
+          <button
+            type="button"
+            aria-pressed={!!targetScriptLines}
+            disabled={isGenerating}
+            onClick={() => setTargetScriptLines(2000)}
+            className={`rounded-lg border px-3 py-2 text-xs transition-colors ${
+              targetScriptLines ? "border-primary/60 bg-primary/10 text-primary" : "border-border text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Comprehensive · 2,000+ lines
+          </button>
+        </div>
+        {targetScriptLines && (
+          <p className="mt-1.5 text-[11px] text-muted-foreground">
+            Requests a complete, modular suite with a 2,000-line minimum target.
+          </p>
+        )}
+      </div>
+
+      {/* 5. Test Count */}
+      <div>
+        <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
+          ⑤ Test Count
         </label>
         <Slider
           value={[testCount]}
@@ -143,10 +179,10 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         </span>
       </div>
 
-      {/* 5. Business Case */}
+      {/* 6. Business Case */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ⑤ Business Case
+          ⑥ Business Case
         </label>
         <Textarea
           value={businessCase}

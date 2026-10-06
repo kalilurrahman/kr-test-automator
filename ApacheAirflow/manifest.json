@@ -1,0 +1,77 @@
+{
+  "product": "Apache Airflow",
+  "key": "apacheairflow",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "dags",
+      "label": "DAG Authoring and Parsing",
+      "folder": "dags",
+      "prefix": "apacheairflow_dags_suite",
+      "count": 200
+    },
+    {
+      "id": "scheduling",
+      "label": "Scheduling and Timetables",
+      "folder": "scheduling",
+      "prefix": "apacheairflow_scheduling_suite",
+      "count": 200
+    },
+    {
+      "id": "tasks",
+      "label": "Tasks and Operators",
+      "folder": "tasks",
+      "prefix": "apacheairflow_tasks_suite",
+      "count": 200
+    },
+    {
+      "id": "retries",
+      "label": "Retries and Idempotence",
+      "folder": "retries",
+      "prefix": "apacheairflow_retries_suite",
+      "count": 200
+    },
+    {
+      "id": "backfills",
+      "label": "Backfills and Data Intervals",
+      "folder": "backfills",
+      "prefix": "apacheairflow_backfills_suite",
+      "count": 200
+    },
+    {
+      "id": "assets",
+      "label": "Data-Aware Scheduling",
+      "folder": "assets",
+      "prefix": "apacheairflow_assets_suite",
+      "count": 200
+    },
+    {
+      "id": "connections_secrets",
+      "label": "Connections and Secrets",
+      "folder": "connections_secrets",
+      "prefix": "apacheairflow_connections_secrets_suite",
+      "count": 200
+    },
+    {
+      "id": "pools_concurrency",
+      "label": "Pools and Concurrency",
+      "folder": "pools_concurrency",
+      "prefix": "apacheairflow_pools_concurrency_suite",
+      "count": 200
+    },
+    {
+      "id": "webserver_rbac",
+      "label": "Web UI and RBAC",
+      "folder": "webserver_rbac",
+      "prefix": "apacheairflow_webserver_rbac_suite",
+      "count": 200
+    },
+    {
+      "id": "monitoring_deploy",
+      "label": "Monitoring and Deployment",
+      "folder": "monitoring_deploy",
+      "prefix": "apacheairflow_monitoring_deploy_suite",
+      "count": 200
+    }
+  ]
+}

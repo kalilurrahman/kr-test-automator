@@ -12,7 +12,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -26,7 +26,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -40,7 +40,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -54,7 +54,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -68,7 +68,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -82,7 +82,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -96,7 +96,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -110,7 +110,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -124,7 +124,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -138,7 +138,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -152,7 +152,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -166,7 +166,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -180,7 +180,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -194,7 +194,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -208,7 +208,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -222,7 +222,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -236,7 +236,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -250,7 +250,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -264,7 +264,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -278,7 +278,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -292,7 +292,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -306,7 +306,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -320,7 +320,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -334,7 +334,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -348,7 +348,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -362,7 +362,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -376,7 +376,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -390,7 +390,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -404,7 +404,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -418,7 +418,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -432,7 +432,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -446,7 +446,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -460,7 +460,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -474,7 +474,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -488,7 +488,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -502,7 +502,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -516,7 +516,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -530,7 +530,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -544,7 +544,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -558,7 +558,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -572,7 +572,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -586,7 +586,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -600,7 +600,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -614,7 +614,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -628,7 +628,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -642,7 +642,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -656,7 +656,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -670,7 +670,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -684,7 +684,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -698,7 +698,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -712,7 +712,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -726,7 +726,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -740,7 +740,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -754,7 +754,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -768,7 +768,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -782,7 +782,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -796,7 +796,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -810,7 +810,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -824,7 +824,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -838,7 +838,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -852,7 +852,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -866,7 +866,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -880,7 +880,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -894,7 +894,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -908,7 +908,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -922,7 +922,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -936,7 +936,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -950,7 +950,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -964,7 +964,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -978,7 +978,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -992,7 +992,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1006,7 +1006,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1020,7 +1020,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1034,7 +1034,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1048,7 +1048,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1062,7 +1062,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1076,7 +1076,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1090,7 +1090,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1104,7 +1104,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1118,7 +1118,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1132,7 +1132,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1146,7 +1146,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1160,7 +1160,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1174,7 +1174,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1188,7 +1188,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1202,7 +1202,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1216,7 +1216,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1230,7 +1230,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1244,7 +1244,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1258,7 +1258,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1272,7 +1272,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1286,7 +1286,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1300,7 +1300,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1314,7 +1314,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1328,7 +1328,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1342,7 +1342,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1356,7 +1356,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1370,7 +1370,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1384,7 +1384,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1398,7 +1398,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1412,7 +1412,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1426,7 +1426,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1440,7 +1440,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1454,7 +1454,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1468,7 +1468,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1482,7 +1482,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1496,7 +1496,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1510,7 +1510,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1524,7 +1524,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1538,7 +1538,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1552,7 +1552,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1566,7 +1566,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1580,7 +1580,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1594,7 +1594,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1608,7 +1608,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1622,7 +1622,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1636,7 +1636,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1650,7 +1650,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1664,7 +1664,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1678,7 +1678,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1692,7 +1692,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1706,7 +1706,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1720,7 +1720,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1734,7 +1734,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1748,7 +1748,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1762,7 +1762,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1776,7 +1776,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1790,7 +1790,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1804,7 +1804,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1818,7 +1818,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1832,7 +1832,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1846,7 +1846,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1860,7 +1860,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1874,7 +1874,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1888,7 +1888,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1902,7 +1902,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1916,7 +1916,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1930,7 +1930,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1944,7 +1944,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1958,7 +1958,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1972,7 +1972,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -1986,7 +1986,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2000,7 +2000,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2014,7 +2014,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2028,7 +2028,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2042,7 +2042,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2056,7 +2056,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2070,7 +2070,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2084,7 +2084,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2098,7 +2098,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2112,7 +2112,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2126,7 +2126,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2140,7 +2140,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2154,7 +2154,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2168,7 +2168,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2182,7 +2182,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2196,7 +2196,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2210,7 +2210,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2224,7 +2224,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2238,7 +2238,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2252,7 +2252,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2266,7 +2266,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2280,7 +2280,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2294,7 +2294,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2308,7 +2308,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2322,7 +2322,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2336,7 +2336,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2350,7 +2350,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2364,7 +2364,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2378,7 +2378,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2392,7 +2392,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2406,7 +2406,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2420,7 +2420,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2434,7 +2434,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2448,7 +2448,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2462,7 +2462,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2476,7 +2476,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2490,7 +2490,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2504,7 +2504,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2518,7 +2518,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2532,7 +2532,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2546,7 +2546,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2560,7 +2560,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2574,7 +2574,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2588,7 +2588,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2602,7 +2602,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2616,7 +2616,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2630,7 +2630,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2644,7 +2644,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2658,7 +2658,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2672,7 +2672,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to request access to a gated model with required synthetic details. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly request access to a gated model with required synthetic details; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2686,7 +2686,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to approve or reject a request using an authorized reviewer role. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly approve or reject a request using an authorized reviewer role; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2700,7 +2700,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to enforce license acceptance before artifact download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly enforce license acceptance before artifact download; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2714,7 +2714,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to revoke a user's access and block the next gated download. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly revoke a user's access and block the next gated download; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2728,7 +2728,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent a public token from accessing private gated assets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent a public token from accessing private gated assets; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2742,7 +2742,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retain approval history after the model card is updated. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain approval history after the model card is updated; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2756,7 +2756,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify license metadata is visible before user acceptance. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify license metadata is visible before user acceptance; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2770,7 +2770,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit reviewer identity and gate decision timestamp. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit reviewer identity and gate decision timestamp; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2784,7 +2784,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to expire a stale request according to the configured policy. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly expire a stale request according to the configured policy; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2798,7 +2798,7 @@ export const HUGGINGFACEHUB_GATED_LICENSES_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to export access decisions without exposing applicant secrets. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly export access decisions without exposing applicant secrets; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,gated_licenses,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,gated_licenses,corrupt-input"
   }
 ] as const;
 export default HUGGINGFACEHUB_GATED_LICENSES_SUITE;

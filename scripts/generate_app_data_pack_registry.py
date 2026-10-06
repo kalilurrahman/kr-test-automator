@@ -31,6 +31,14 @@ PACKS = {
     "LangSmith": {"id": "langsmith", "label": "LangChain and LangSmith", "accent": "violet", "automationSuiteUrl": "/market-automation-suites/langsmith-playwright-e2e.zip"},
     "Pinecone": {"id": "pinecone", "label": "Pinecone", "accent": "teal", "automationSuiteUrl": "/market-automation-suites/pinecone-playwright-e2e.zip"},
     "HuggingFaceHub": {"id": "huggingfacehub", "label": "Hugging Face Hub", "accent": "amber", "automationSuiteUrl": "/market-automation-suites/huggingfacehub-playwright-e2e.zip"},
+    "Airbyte": {"id": "airbyte", "label": "Airbyte", "accent": "cyan", "automationSuiteUrl": "/market-automation-suites/airbyte-playwright-e2e.zip"},
+    "ApacheAirflow": {"id": "apacheairflow", "label": "Apache Airflow", "accent": "blue", "automationSuiteUrl": "/market-automation-suites/apacheairflow-playwright-e2e.zip"},
+    "Prefect": {"id": "prefect", "label": "Prefect", "accent": "violet", "automationSuiteUrl": "/market-automation-suites/prefect-playwright-e2e.zip"},
+    "Dagster": {"id": "dagster", "label": "Dagster", "accent": "teal", "automationSuiteUrl": "/market-automation-suites/dagster-playwright-e2e.zip"},
+    "N8n": {"id": "n8n", "label": "n8n", "accent": "amber", "automationSuiteUrl": "/market-automation-suites/n8n-playwright-e2e.zip"},
+    "CrewAI": {"id": "crewai", "label": "CrewAI", "accent": "amber", "automationSuiteUrl": "/market-automation-suites/crewai-playwright-e2e.zip"},
+    "Shopify": {"id": "shopify", "label": "Shopify", "accent": "emerald", "automationSuiteUrl": "/market-automation-suites/shopify-playwright-e2e.zip"},
+    "Stripe": {"id": "stripe", "label": "Stripe", "accent": "indigo", "automationSuiteUrl": "/market-automation-suites/stripe-playwright-e2e.zip"},
 }
 
 

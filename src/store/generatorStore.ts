@@ -28,6 +28,7 @@ interface GeneratorState {
   language: string;
   testScopes: TestScope[];
   testCount: number;
+  targetScriptLines: number | null;
   businessCase: string;
   isGenerating: boolean;
   progress: number;
@@ -39,6 +40,7 @@ interface GeneratorState {
   toggleScope: (s: TestScope) => void;
   setTestScopes: (scopes: TestScope[]) => void;
   setTestCount: (n: number) => void;
+  setTargetScriptLines: (n: number | null) => void;
   setBusinessCase: (t: string) => void;
   setIsGenerating: (b: boolean) => void;
   setProgress: (n: number) => void;
@@ -53,6 +55,7 @@ const initialState = {
   language: "typescript",
   testScopes: ["ui_functional", "e2e"] as TestScope[],
   testCount: 10,
+  targetScriptLines: null as number | null,
   businessCase: "",
   isGenerating: false,
   progress: 0,
@@ -73,6 +76,7 @@ export const useGeneratorStore = create<GeneratorState>((set) => ({
     })),
   setTestScopes: (scopes) => set({ testScopes: scopes }),
   setTestCount: (n) => set({ testCount: n }),
+  setTargetScriptLines: (n) => set({ targetScriptLines: n }),
   setBusinessCase: (t) => set({ businessCase: t }),
   setIsGenerating: (b) => set({ isGenerating: b }),
   setProgress: (n) => set({ progress: n }),

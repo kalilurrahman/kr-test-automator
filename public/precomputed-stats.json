@@ -1,17 +1,17 @@
 {
-  "totalCases": 226560,
-  "totalModules": 50699,
-  "uniqueIds": 226560,
+  "totalCases": 242560,
+  "totalModules": 50779,
+  "uniqueIds": 242560,
   "duplicatesRemoved": 6940,
-  "lastUpdated": 1791288649989,
+  "lastUpdated": 1791289958080,
   "byPriority": [
     {
       "name": "High",
-      "value": 104510
+      "value": 116958
     },
     {
       "name": "Medium",
-      "value": 76906
+      "value": 80458
     },
     {
       "name": "Low",
@@ -117,6 +117,38 @@
     },
     {
       "name": "Pinecone",
+      "value": 2000
+    },
+    {
+      "name": "Airbyte",
+      "value": 2000
+    },
+    {
+      "name": "Apache Airflow",
+      "value": 2000
+    },
+    {
+      "name": "Prefect",
+      "value": 2000
+    },
+    {
+      "name": "Dagster",
+      "value": 2000
+    },
+    {
+      "name": "n8n",
+      "value": 2000
+    },
+    {
+      "name": "CrewAI",
+      "value": 2000
+    },
+    {
+      "name": "Shopify",
+      "value": 2000
+    },
+    {
+      "name": "Stripe",
       "value": 2000
     },
     {
@@ -10270,6 +10302,158 @@
       ],
       "high": 1464,
       "medium": 336,
+      "low": 0
+    },
+    "airbyte": {
+      "label": "Airbyte",
+      "total": 2000,
+      "modules": [
+        "Connections and Syncs",
+        "Sources and Discovery",
+        "Destinations and Writes",
+        "Streams and Schema",
+        "Jobs and Logs",
+        "Schedules and Concurrency",
+        "Connector Builder",
+        "State and Recovery",
+        "Workspace Access and Secrets",
+        "API and Observability"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "apacheairflow": {
+      "label": "Apache Airflow",
+      "total": 2000,
+      "modules": [
+        "DAG Authoring and Parsing",
+        "Scheduling and Timetables",
+        "Tasks and Operators",
+        "Retries and Idempotence",
+        "Backfills and Data Intervals",
+        "Data-Aware Scheduling",
+        "Connections and Secrets",
+        "Pools and Concurrency",
+        "Web UI and RBAC",
+        "Monitoring and Deployment"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "prefect": {
+      "label": "Prefect",
+      "total": 2000,
+      "modules": [
+        "Flows and Tasks",
+        "States and Retries",
+        "Deployments and Versions",
+        "Schedules and Events",
+        "Work Pools and Workers",
+        "Blocks and Secrets",
+        "Concurrency and Caching",
+        "Artifacts and Observability",
+        "Integrations and Task Runners",
+        "Access and API"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "dagster": {
+      "label": "Dagster",
+      "total": 2000,
+      "modules": [
+        "Software-Defined Assets",
+        "Asset Checks and Quality",
+        "Jobs and Ops",
+        "Schedules and Sensors",
+        "Partitions and Backfills",
+        "Resources and Run Config",
+        "Integrations and I/O Managers",
+        "Code Locations and Deployments",
+        "Runs and Observability",
+        "Permissions and API"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "n8n": {
+      "label": "n8n",
+      "total": 2000,
+      "modules": [
+        "Workflows and Nodes",
+        "Triggers and Webhooks",
+        "Credentials and Connections",
+        "Executions and Retries",
+        "Error Handling and Recovery",
+        "Queues and Scaling",
+        "Projects and Environments",
+        "Sharing and Access",
+        "Integrations and Data Mapping",
+        "Audit and API"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "crewai": {
+      "label": "CrewAI",
+      "total": 2000,
+      "modules": [
+        "Agents and Tasks",
+        "Crews and Flows",
+        "Tools and Integrations",
+        "Memory and State",
+        "Knowledge and Retrieval",
+        "Guardrails and Validation",
+        "Human Approval and Control",
+        "Deployment and Runtime",
+        "Tracing and Evaluation",
+        "Enterprise Security and API"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "shopify": {
+      "label": "Shopify",
+      "total": 2000,
+      "modules": [
+        "Products and Catalog",
+        "Inventory and Locations",
+        "Cart and Checkout",
+        "Orders and Refunds",
+        "Payments and Payouts",
+        "Shipping and Fulfillment",
+        "Discounts and Promotions",
+        "Customers and Accounts",
+        "Apps and Webhooks",
+        "Markets, Tax and Analytics"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "stripe": {
+      "label": "Stripe",
+      "total": 2000,
+      "modules": [
+        "Customers and Checkout",
+        "Payment Intents and Methods",
+        "Subscriptions and Billing",
+        "Refunds and Disputes",
+        "Connect Accounts and Transfers",
+        "Webhooks and Events",
+        "Invoices and Revenue",
+        "Tax Calculation and Reporting",
+        "Radar and Risk Controls",
+        "API Keys, Access and Reporting"
+      ],
+      "high": 1568,
+      "medium": 432,
       "low": 0
     },
     "salesforce": {

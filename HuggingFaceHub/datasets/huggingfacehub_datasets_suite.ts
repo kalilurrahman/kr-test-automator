@@ -12,7 +12,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -26,7 +26,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -40,7 +40,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -54,7 +54,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -68,7 +68,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -82,7 +82,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -96,7 +96,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -110,7 +110,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -124,7 +124,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -138,7 +138,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,clean-baseline"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,clean-baseline"
   },
   {
     "product": "Hugging Face Hub",
@@ -152,7 +152,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -166,7 +166,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -180,7 +180,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -194,7 +194,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -208,7 +208,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -222,7 +222,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -236,7 +236,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -250,7 +250,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -264,7 +264,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -278,7 +278,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,empty-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,empty-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -292,7 +292,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -306,7 +306,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -320,7 +320,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -334,7 +334,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -348,7 +348,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -362,7 +362,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -376,7 +376,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -390,7 +390,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -404,7 +404,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -418,7 +418,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,single-record"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,single-record"
   },
   {
     "product": "Hugging Face Hub",
@@ -432,7 +432,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -446,7 +446,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -460,7 +460,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -474,7 +474,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -488,7 +488,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -502,7 +502,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -516,7 +516,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -530,7 +530,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -544,7 +544,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -558,7 +558,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,duplicate-key"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,duplicate-key"
   },
   {
     "product": "Hugging Face Hub",
@@ -572,7 +572,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -586,7 +586,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -600,7 +600,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -614,7 +614,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -628,7 +628,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -642,7 +642,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -656,7 +656,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -670,7 +670,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -684,7 +684,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -698,7 +698,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,nullable-optional-field"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,nullable-optional-field"
   },
   {
     "product": "Hugging Face Hub",
@@ -712,7 +712,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -726,7 +726,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -740,7 +740,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -754,7 +754,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -768,7 +768,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -782,7 +782,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -796,7 +796,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -810,7 +810,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -824,7 +824,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -838,7 +838,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,boundary-values"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,boundary-values"
   },
   {
     "product": "Hugging Face Hub",
@@ -852,7 +852,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -866,7 +866,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -880,7 +880,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -894,7 +894,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -908,7 +908,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -922,7 +922,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -936,7 +936,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -950,7 +950,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -964,7 +964,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -978,7 +978,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,late-arriving-data"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,late-arriving-data"
   },
   {
     "product": "Hugging Face Hub",
@@ -992,7 +992,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1006,7 +1006,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1020,7 +1020,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1034,7 +1034,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1048,7 +1048,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1062,7 +1062,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1076,7 +1076,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1090,7 +1090,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1104,7 +1104,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1118,7 +1118,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,out-of-order-events"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,out-of-order-events"
   },
   {
     "product": "Hugging Face Hub",
@@ -1132,7 +1132,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1146,7 +1146,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1160,7 +1160,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1174,7 +1174,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1188,7 +1188,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1202,7 +1202,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1216,7 +1216,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1230,7 +1230,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1244,7 +1244,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1258,7 +1258,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,compatible-schema-change"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,compatible-schema-change"
   },
   {
     "product": "Hugging Face Hub",
@@ -1272,7 +1272,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1286,7 +1286,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1300,7 +1300,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1314,7 +1314,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1328,7 +1328,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1342,7 +1342,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1356,7 +1356,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1370,7 +1370,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1384,7 +1384,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1398,7 +1398,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,field-rename"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,field-rename"
   },
   {
     "product": "Hugging Face Hub",
@@ -1412,7 +1412,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1426,7 +1426,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1440,7 +1440,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1454,7 +1454,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1468,7 +1468,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1482,7 +1482,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1496,7 +1496,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1510,7 +1510,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1524,7 +1524,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1538,7 +1538,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,worker-restart"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,worker-restart"
   },
   {
     "product": "Hugging Face Hub",
@@ -1552,7 +1552,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1566,7 +1566,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1580,7 +1580,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1594,7 +1594,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1608,7 +1608,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1622,7 +1622,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1636,7 +1636,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1650,7 +1650,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1664,7 +1664,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1678,7 +1678,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,least-privilege"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,least-privilege"
   },
   {
     "product": "Hugging Face Hub",
@@ -1692,7 +1692,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1706,7 +1706,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1720,7 +1720,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1734,7 +1734,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1748,7 +1748,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1762,7 +1762,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1776,7 +1776,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1790,7 +1790,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1804,7 +1804,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1818,7 +1818,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,concurrent-writers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,concurrent-writers"
   },
   {
     "product": "Hugging Face Hub",
@@ -1832,7 +1832,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1846,7 +1846,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1860,7 +1860,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1874,7 +1874,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1888,7 +1888,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1902,7 +1902,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1916,7 +1916,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1930,7 +1930,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1944,7 +1944,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1958,7 +1958,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,transient-retry"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,transient-retry"
   },
   {
     "product": "Hugging Face Hub",
@@ -1972,7 +1972,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -1986,7 +1986,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2000,7 +2000,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2014,7 +2014,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2028,7 +2028,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2042,7 +2042,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2056,7 +2056,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2070,7 +2070,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2084,7 +2084,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2098,7 +2098,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,commit-conflict"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,commit-conflict"
   },
   {
     "product": "Hugging Face Hub",
@@ -2112,7 +2112,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2126,7 +2126,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2140,7 +2140,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2154,7 +2154,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2168,7 +2168,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2182,7 +2182,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2196,7 +2196,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2210,7 +2210,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2224,7 +2224,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2238,7 +2238,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,rollback-and-replay"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,rollback-and-replay"
   },
   {
     "product": "Hugging Face Hub",
@@ -2252,7 +2252,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2266,7 +2266,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2280,7 +2280,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2294,7 +2294,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2308,7 +2308,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2322,7 +2322,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2336,7 +2336,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2350,7 +2350,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2364,7 +2364,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2378,7 +2378,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,Unicode-identifiers"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,Unicode-identifiers"
   },
   {
     "product": "Hugging Face Hub",
@@ -2392,7 +2392,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2406,7 +2406,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2420,7 +2420,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2434,7 +2434,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2448,7 +2448,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2462,7 +2462,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2476,7 +2476,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2490,7 +2490,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2504,7 +2504,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2518,7 +2518,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,time-zone-boundary"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,time-zone-boundary"
   },
   {
     "product": "Hugging Face Hub",
@@ -2532,7 +2532,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2546,7 +2546,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2560,7 +2560,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2574,7 +2574,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2588,7 +2588,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2602,7 +2602,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2616,7 +2616,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2630,7 +2630,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2644,7 +2644,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2658,7 +2658,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,skewed-high-volume"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,skewed-high-volume"
   },
   {
     "product": "Hugging Face Hub",
@@ -2672,7 +2672,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to publish a dataset with valid features and split metadata. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly publish a dataset with valid features and split metadata; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2686,7 +2686,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to load a bounded synthetic dataset revision by immutable commit. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly load a bounded synthetic dataset revision by immutable commit; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2700,7 +2700,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to validate dataset rows against the declared feature schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly validate dataset rows against the declared feature schema; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2714,7 +2714,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to update dataset data without changing a pinned consumer revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly update dataset data without changing a pinned consumer revision; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2728,7 +2728,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict a private dataset to approved organization members. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict a private dataset to approved organization members; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2742,7 +2742,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to handle a malformed data shard without corrupting other splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly handle a malformed data shard without corrupting other splits; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2756,7 +2756,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile row counts across train validation and test splits. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile row counts across train validation and test splits; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2770,7 +2770,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify dataset preview masks configured sensitive values. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify dataset preview masks configured sensitive values; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2784,7 +2784,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare dataset revisions after a controlled correction. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare dataset revisions after a controlled correction; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   },
   {
     "product": "Hugging Face Hub",
@@ -2798,7 +2798,7 @@ export const HUGGINGFACEHUB_DATASETS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit dataset visibility and license metadata changes. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit dataset visibility and license metadata changes; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "huggingfacehub,data-ai-platform,synthetic-data,datasets,corrupt-input"
+    "tags": "huggingfacehub,market-platform,synthetic-data,datasets,corrupt-input"
   }
 ] as const;
 export default HUGGINGFACEHUB_DATASETS_SUITE;

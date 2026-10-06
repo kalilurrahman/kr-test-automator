@@ -12,7 +12,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -26,7 +26,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -40,7 +40,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -54,7 +54,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -68,7 +68,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -82,7 +82,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -96,7 +96,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -110,7 +110,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -124,7 +124,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -138,7 +138,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,clean-baseline"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,clean-baseline"
   },
   {
     "product": "Fivetran",
@@ -152,7 +152,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -166,7 +166,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -180,7 +180,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -194,7 +194,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -208,7 +208,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -222,7 +222,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -236,7 +236,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -250,7 +250,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -264,7 +264,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -278,7 +278,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,empty-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,empty-input"
   },
   {
     "product": "Fivetran",
@@ -292,7 +292,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -306,7 +306,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -320,7 +320,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -334,7 +334,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -348,7 +348,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -362,7 +362,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -376,7 +376,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -390,7 +390,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -404,7 +404,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -418,7 +418,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,single-record"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,single-record"
   },
   {
     "product": "Fivetran",
@@ -432,7 +432,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -446,7 +446,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -460,7 +460,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -474,7 +474,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -488,7 +488,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -502,7 +502,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -516,7 +516,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -530,7 +530,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -544,7 +544,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -558,7 +558,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,duplicate-key"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,duplicate-key"
   },
   {
     "product": "Fivetran",
@@ -572,7 +572,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -586,7 +586,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -600,7 +600,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -614,7 +614,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -628,7 +628,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -642,7 +642,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -656,7 +656,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -670,7 +670,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -684,7 +684,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -698,7 +698,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,nullable-optional-field"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,nullable-optional-field"
   },
   {
     "product": "Fivetran",
@@ -712,7 +712,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -726,7 +726,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -740,7 +740,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -754,7 +754,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -768,7 +768,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -782,7 +782,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -796,7 +796,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -810,7 +810,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -824,7 +824,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -838,7 +838,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,boundary-values"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,boundary-values"
   },
   {
     "product": "Fivetran",
@@ -852,7 +852,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -866,7 +866,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -880,7 +880,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -894,7 +894,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -908,7 +908,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -922,7 +922,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -936,7 +936,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -950,7 +950,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -964,7 +964,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -978,7 +978,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,late-arriving-data"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,late-arriving-data"
   },
   {
     "product": "Fivetran",
@@ -992,7 +992,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1006,7 +1006,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1020,7 +1020,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1034,7 +1034,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1048,7 +1048,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1062,7 +1062,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1076,7 +1076,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1090,7 +1090,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1104,7 +1104,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1118,7 +1118,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,out-of-order-events"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,out-of-order-events"
   },
   {
     "product": "Fivetran",
@@ -1132,7 +1132,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1146,7 +1146,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1160,7 +1160,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1174,7 +1174,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1188,7 +1188,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1202,7 +1202,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1216,7 +1216,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1230,7 +1230,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1244,7 +1244,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1258,7 +1258,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,compatible-schema-change"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,compatible-schema-change"
   },
   {
     "product": "Fivetran",
@@ -1272,7 +1272,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1286,7 +1286,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1300,7 +1300,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1314,7 +1314,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1328,7 +1328,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1342,7 +1342,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1356,7 +1356,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1370,7 +1370,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1384,7 +1384,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1398,7 +1398,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,field-rename"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,field-rename"
   },
   {
     "product": "Fivetran",
@@ -1412,7 +1412,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1426,7 +1426,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1440,7 +1440,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1454,7 +1454,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1468,7 +1468,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1482,7 +1482,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1496,7 +1496,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1510,7 +1510,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1524,7 +1524,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1538,7 +1538,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,worker-restart"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,worker-restart"
   },
   {
     "product": "Fivetran",
@@ -1552,7 +1552,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1566,7 +1566,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1580,7 +1580,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1594,7 +1594,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1608,7 +1608,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1622,7 +1622,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1636,7 +1636,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1650,7 +1650,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1664,7 +1664,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1678,7 +1678,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,least-privilege"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,least-privilege"
   },
   {
     "product": "Fivetran",
@@ -1692,7 +1692,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1706,7 +1706,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1720,7 +1720,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1734,7 +1734,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1748,7 +1748,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1762,7 +1762,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1776,7 +1776,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1790,7 +1790,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1804,7 +1804,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1818,7 +1818,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,concurrent-writers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,concurrent-writers"
   },
   {
     "product": "Fivetran",
@@ -1832,7 +1832,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1846,7 +1846,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1860,7 +1860,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1874,7 +1874,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1888,7 +1888,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1902,7 +1902,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1916,7 +1916,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1930,7 +1930,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1944,7 +1944,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1958,7 +1958,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,transient-retry"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,transient-retry"
   },
   {
     "product": "Fivetran",
@@ -1972,7 +1972,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -1986,7 +1986,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2000,7 +2000,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2014,7 +2014,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2028,7 +2028,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2042,7 +2042,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2056,7 +2056,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2070,7 +2070,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2084,7 +2084,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2098,7 +2098,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,commit-conflict"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,commit-conflict"
   },
   {
     "product": "Fivetran",
@@ -2112,7 +2112,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2126,7 +2126,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2140,7 +2140,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2154,7 +2154,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2168,7 +2168,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2182,7 +2182,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2196,7 +2196,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2210,7 +2210,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2224,7 +2224,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2238,7 +2238,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,rollback-and-replay"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,rollback-and-replay"
   },
   {
     "product": "Fivetran",
@@ -2252,7 +2252,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2266,7 +2266,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2280,7 +2280,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2294,7 +2294,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2308,7 +2308,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2322,7 +2322,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2336,7 +2336,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2350,7 +2350,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2364,7 +2364,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2378,7 +2378,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,Unicode-identifiers"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,Unicode-identifiers"
   },
   {
     "product": "Fivetran",
@@ -2392,7 +2392,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2406,7 +2406,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2420,7 +2420,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2434,7 +2434,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2448,7 +2448,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2462,7 +2462,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2476,7 +2476,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2490,7 +2490,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2504,7 +2504,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2518,7 +2518,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,time-zone-boundary"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,time-zone-boundary"
   },
   {
     "product": "Fivetran",
@@ -2532,7 +2532,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2546,7 +2546,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2560,7 +2560,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2574,7 +2574,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2588,7 +2588,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2602,7 +2602,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2616,7 +2616,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2630,7 +2630,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2644,7 +2644,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2658,7 +2658,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,skewed-high-volume"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,skewed-high-volume"
   },
   {
     "product": "Fivetran",
@@ -2672,7 +2672,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to run a transformation after its source sync succeeds. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly run a transformation after its source sync succeeds; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2686,7 +2686,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to select only models downstream of a changed source table. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly select only models downstream of a changed source table; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2700,7 +2700,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to fail downstream publication when a required data test fails. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly fail downstream publication when a required data test fails; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2714,7 +2714,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to promote a tested transformation to production with a pinned revision. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a tested transformation to production with a pinned revision; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2728,7 +2728,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent parallel jobs from writing to the same target schema. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent parallel jobs from writing to the same target schema; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2742,7 +2742,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to preserve lineage from destination columns to transformation models. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly preserve lineage from destination columns to transformation models; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2756,7 +2756,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retry a transient warehouse failure without repeating side effects. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient warehouse failure without repeating side effects; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2770,7 +2770,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to restrict production transformations to an approved branch. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly restrict production transformations to an approved branch; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2784,7 +2784,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to reconcile transformed totals with source sync output. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly reconcile transformed totals with source sync output; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   },
   {
     "product": "Fivetran",
@@ -2798,7 +2798,7 @@ export const FIVETRAN_TRANSFORMATIONS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to record transformation run details with the source sync identifier. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly record transformation run details with the source sync identifier; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "fivetran,data-ai-platform,synthetic-data,transformations,corrupt-input"
+    "tags": "fivetran,market-platform,synthetic-data,transformations,corrupt-input"
   }
 ] as const;
 export default FIVETRAN_TRANSFORMATIONS_SUITE;

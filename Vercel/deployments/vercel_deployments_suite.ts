@@ -12,7 +12,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -26,7 +26,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -40,7 +40,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -54,7 +54,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -68,7 +68,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -82,7 +82,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -96,7 +96,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -110,7 +110,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -124,7 +124,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -138,7 +138,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a disposable workspace, tenant, project, and versioned synthetic fixture. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the clean baseline condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,clean-baseline"
+    "tags": "vercel,market-platform,synthetic-data,deployments,clean-baseline"
   },
   {
     "product": "Vercel",
@@ -152,7 +152,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -166,7 +166,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -180,7 +180,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -194,7 +194,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -208,7 +208,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -222,7 +222,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -236,7 +236,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -250,7 +250,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -264,7 +264,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -278,7 +278,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use an empty source or namespace and verify defined empty-result behavior. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the empty input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,empty-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,empty-input"
   },
   {
     "product": "Vercel",
@@ -292,7 +292,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -306,7 +306,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -320,7 +320,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -334,7 +334,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -348,7 +348,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -362,7 +362,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -376,7 +376,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -390,7 +390,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -404,7 +404,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -418,7 +418,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use one valid synthetic record and verify the smallest non-empty result. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the single record condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,single-record"
+    "tags": "vercel,market-platform,synthetic-data,deployments,single-record"
   },
   {
     "product": "Vercel",
@@ -432,7 +432,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -446,7 +446,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -460,7 +460,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -474,7 +474,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -488,7 +488,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -502,7 +502,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -516,7 +516,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -530,7 +530,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -544,7 +544,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -558,7 +558,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Submit a duplicate business key and verify the declared deduplication or rejection rule. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the duplicate key condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,duplicate-key"
+    "tags": "vercel,market-platform,synthetic-data,deployments,duplicate-key"
   },
   {
     "product": "Vercel",
@@ -572,7 +572,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -586,7 +586,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -600,7 +600,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -614,7 +614,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -628,7 +628,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -642,7 +642,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -656,7 +656,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -670,7 +670,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -684,7 +684,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -698,7 +698,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Set optional fields to null while retaining all required identifiers. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the nullable optional field condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,nullable-optional-field"
+    "tags": "vercel,market-platform,synthetic-data,deployments,nullable-optional-field"
   },
   {
     "product": "Vercel",
@@ -712,7 +712,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -726,7 +726,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -740,7 +740,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -754,7 +754,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -768,7 +768,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -782,7 +782,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -796,7 +796,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -810,7 +810,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -824,7 +824,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -838,7 +838,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Exercise documented minimum, maximum, and just-outside limits. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the boundary values condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,boundary-values"
+    "tags": "vercel,market-platform,synthetic-data,deployments,boundary-values"
   },
   {
     "product": "Vercel",
@@ -852,7 +852,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -866,7 +866,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -880,7 +880,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -894,7 +894,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -908,7 +908,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -922,7 +922,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -936,7 +936,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -950,7 +950,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -964,7 +964,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -978,7 +978,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Deliver an older event after a newer watermark or processing window has advanced. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the late arriving data condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,late-arriving-data"
+    "tags": "vercel,market-platform,synthetic-data,deployments,late-arriving-data"
   },
   {
     "product": "Vercel",
@@ -992,7 +992,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1006,7 +1006,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1020,7 +1020,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1034,7 +1034,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1048,7 +1048,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1062,7 +1062,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1076,7 +1076,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1090,7 +1090,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1104,7 +1104,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1118,7 +1118,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Shuffle event or commit order while preserving source event-time values. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the out-of-order events condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,out-of-order-events"
+    "tags": "vercel,market-platform,synthetic-data,deployments,out-of-order-events"
   },
   {
     "product": "Vercel",
@@ -1132,7 +1132,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1146,7 +1146,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1160,7 +1160,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1174,7 +1174,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1188,7 +1188,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1202,7 +1202,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1216,7 +1216,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1230,7 +1230,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1244,7 +1244,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1258,7 +1258,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Add a nullable field while existing readers and stored versions remain active. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the compatible schema change condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,compatible-schema-change"
+    "tags": "vercel,market-platform,synthetic-data,deployments,compatible-schema-change"
   },
   {
     "product": "Vercel",
@@ -1272,7 +1272,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1286,7 +1286,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1300,7 +1300,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1314,7 +1314,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1328,7 +1328,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1342,7 +1342,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1356,7 +1356,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1370,7 +1370,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1384,7 +1384,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1398,7 +1398,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Rename a field using the supported migration path and inspect historical reads. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the field rename condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,field-rename"
+    "tags": "vercel,market-platform,synthetic-data,deployments,field-rename"
   },
   {
     "product": "Vercel",
@@ -1412,7 +1412,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1426,7 +1426,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1440,7 +1440,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1454,7 +1454,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1468,7 +1468,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1482,7 +1482,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1496,7 +1496,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1510,7 +1510,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1524,7 +1524,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1538,7 +1538,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restart a worker after processing input but before final checkpoint or commit. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the worker restart condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,worker-restart"
+    "tags": "vercel,market-platform,synthetic-data,deployments,worker-restart"
   },
   {
     "product": "Vercel",
@@ -1552,7 +1552,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1566,7 +1566,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1580,7 +1580,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1594,7 +1594,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1608,7 +1608,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1622,7 +1622,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1636,7 +1636,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1650,7 +1650,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1664,7 +1664,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1678,7 +1678,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Compare the authorized role with a role missing the required grant. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the least privilege condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,least-privilege"
+    "tags": "vercel,market-platform,synthetic-data,deployments,least-privilege"
   },
   {
     "product": "Vercel",
@@ -1692,7 +1692,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1706,7 +1706,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1720,7 +1720,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1734,7 +1734,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1748,7 +1748,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1762,7 +1762,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1776,7 +1776,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1790,7 +1790,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1804,7 +1804,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1818,7 +1818,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Run two valid writers against overlapping logical data at the same time. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the concurrent writers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,concurrent-writers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,concurrent-writers"
   },
   {
     "product": "Vercel",
@@ -1832,7 +1832,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1846,7 +1846,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1860,7 +1860,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1874,7 +1874,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1888,7 +1888,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1902,7 +1902,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1916,7 +1916,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1930,7 +1930,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1944,7 +1944,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1958,7 +1958,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Inject one transient service failure, restore the dependency, and retry. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the transient retry condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,transient-retry"
+    "tags": "vercel,market-platform,synthetic-data,deployments,transient-retry"
   },
   {
     "product": "Vercel",
@@ -1972,7 +1972,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -1986,7 +1986,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2000,7 +2000,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2014,7 +2014,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2028,7 +2028,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2042,7 +2042,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2056,7 +2056,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2070,7 +2070,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2084,7 +2084,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2098,7 +2098,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Advance the resource version between read and write to create an optimistic conflict. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the commit conflict condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,commit-conflict"
+    "tags": "vercel,market-platform,synthetic-data,deployments,commit-conflict"
   },
   {
     "product": "Vercel",
@@ -2112,7 +2112,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2126,7 +2126,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2140,7 +2140,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2154,7 +2154,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2168,7 +2168,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2182,7 +2182,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2196,7 +2196,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2210,7 +2210,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2224,7 +2224,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2238,7 +2238,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Restore a prior version in a disposable fixture and replay the same operation. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the rollback and replay condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,rollback-and-replay"
+    "tags": "vercel,market-platform,synthetic-data,deployments,rollback-and-replay"
   },
   {
     "product": "Vercel",
@@ -2252,7 +2252,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2266,7 +2266,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2280,7 +2280,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2294,7 +2294,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2308,7 +2308,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2322,7 +2322,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2336,7 +2336,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2350,7 +2350,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2364,7 +2364,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2378,7 +2378,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use Unicode in safe project, model, table, index, and synthetic account labels. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the Unicode identifiers condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,Unicode-identifiers"
+    "tags": "vercel,market-platform,synthetic-data,deployments,Unicode-identifiers"
   },
   {
     "product": "Vercel",
@@ -2392,7 +2392,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2406,7 +2406,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2420,7 +2420,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2434,7 +2434,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2448,7 +2448,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2462,7 +2462,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2476,7 +2476,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2490,7 +2490,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2504,7 +2504,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2518,7 +2518,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Place timestamps around local midnight and a daylight-saving transition. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the time-zone boundary condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,time-zone-boundary"
+    "tags": "vercel,market-platform,synthetic-data,deployments,time-zone-boundary"
   },
   {
     "product": "Vercel",
@@ -2532,7 +2532,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2546,7 +2546,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2560,7 +2560,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2574,7 +2574,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2588,7 +2588,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2602,7 +2602,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2616,7 +2616,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2630,7 +2630,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2644,7 +2644,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2658,7 +2658,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Use a large synthetic fixture with one intentionally skewed key or partition. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the skewed high volume condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,skewed-high-volume"
+    "tags": "vercel,market-platform,synthetic-data,deployments,skewed-high-volume"
   },
   {
     "product": "Vercel",
@@ -2672,7 +2672,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to create a preview deployment for a synthetic pull request. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly create a preview deployment for a synthetic pull request; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2686,7 +2686,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to promote a verified preview revision to production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly promote a verified preview revision to production; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2700,7 +2700,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to cancel a deployment before it receives production traffic. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly cancel a deployment before it receives production traffic; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2714,7 +2714,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to roll back a failed production release to the prior deployment. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly roll back a failed production release to the prior deployment; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2728,7 +2728,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to verify deployment source commit and build artifact match. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly verify deployment source commit and build artifact match; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2742,7 +2742,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to prevent an unapproved branch from receiving a production alias. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly prevent an unapproved branch from receiving a production alias; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2756,7 +2756,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retry a transient build failure without duplicate aliases. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retry a transient build failure without duplicate aliases; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2770,7 +2770,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to compare environment configuration between preview and production. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly compare environment configuration between preview and production; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2784,7 +2784,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to retain deployment logs and lifecycle events. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly retain deployment logs and lifecycle events; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   },
   {
     "product": "Vercel",
@@ -2798,7 +2798,7 @@ export const VERCEL_DEPLOYMENTS_SUITE = [
     "test_steps": "1. Create a disposable, versioned synthetic fixture: Include one malformed record and verify quarantine or clear failure without silent loss. 2. Execute the platform workflow to audit production promotion approval and completion. 3. Capture the committed result, resource version, or run status. 4. Compare the result with the source fixture and the declared invariant. 5. Repeat or recover the operation when applicable; verify access, audit evidence, and side effects.",
     "expected_result": "The platform must correctly audit production promotion approval and completion; the corrupt input condition follows the configured contract; valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, retries do not duplicate side effects, lineage and audit evidence remain available, and no production records or credentials are used.",
     "automation_framework": "Playwright + platform UI/API",
-    "tags": "vercel,data-ai-platform,synthetic-data,deployments,corrupt-input"
+    "tags": "vercel,market-platform,synthetic-data,deployments,corrupt-input"
   }
 ] as const;
 export default VERCEL_DEPLOYMENTS_SUITE;

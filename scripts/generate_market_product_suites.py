@@ -330,6 +330,10 @@ PACKS = [
     },
 ]
 
+from additional_market_product_packs import PACKS as ADDITIONAL_PACKS
+
+PACKS.extend(ADDITIONAL_PACKS)
+
 
 def rows_for(pack: dict, slug: str, label: str, tasks: list[str]) -> list[dict[str, str]]:
     rows = []
@@ -365,7 +369,7 @@ def rows_for(pack: dict, slug: str, label: str, tasks: list[str]) -> list[dict[s
                 "records or credentials are used."
             ),
             "automation_framework": "Playwright + platform UI/API",
-            "tags": ",".join([pack["key"], "data-ai-platform", "synthetic-data", slug, variant.replace(" ", "-")]),
+            "tags": ",".join([pack["key"], "market-platform", "synthetic-data", slug, variant.replace(" ", "-")]),
         })
     return rows
 
@@ -707,6 +711,17 @@ def write_automation_archive(pack: dict) -> None:
 
 
 def main() -> None:
+    roots = [pack["root"] for pack in PACKS]
+    keys = [pack["key"] for pack in PACKS]
+    prefixes = [pack["prefix"] for pack in PACKS]
+    if any(len(values) != len(set(values)) for values in (roots, keys, prefixes)):
+        raise ValueError("Market suite roots, product IDs, and case prefixes must be unique")
+    for pack in PACKS:
+        if len(pack["modules"]) != 10 or len(pack["journeys"]) != 10:
+            raise ValueError(f"{pack['display']} must define ten case modules and ten E2E journeys")
+        if any(len(tasks) != 10 or len(set(tasks)) != 10 for _, _, tasks in pack["modules"]):
+            raise ValueError(f"{pack['display']} modules must each define ten unique workflow scenarios")
+
     for pack in PACKS:
         write_pack(pack)
         write_automation_suite(pack)
@@ -726,8 +741,10 @@ This set extends the existing product catalog with data engineering, developer p
 
 - **Data platforms:** Microsoft Fabric, dbt, Confluent Cloud, MongoDB Atlas, and Fivetran extend the catalog across analytics, transformation, streaming, operational databases, and ingestion. Microsoft's 2025 earnings commentary described Fabric adoption as accelerating; dbt Labs' 2025 analytics engineering report documents the shift toward AI-enabled analytics workflows; Confluent's annual report describes cross-enterprise streaming use cases; MongoDB cites production AI adoption in its survey material; and Fivetran's enterprise report highlights data readiness for AI.
 - **Developer and AI platforms:** Supabase, Vercel, LangChain/LangSmith, Pinecone, and Hugging Face Hub cover application backends, deployment and AI inference routing, agent observability, vector retrieval, and model/data distribution. Vercel reported more than 3 million AI SDK weekly downloads in 2025; Hugging Face reported over 2 million public models, 500,000 public datasets, and 1 million Spaces; G2 included Pinecone on its 2025 fastest-growing software list; and LangChain's agent engineering survey describes agent use moving into production.
+- **Orchestration and data movement:** Airbyte, Apache Airflow, Prefect, and Dagster add connector syncs, workflow scheduling, asset lineage, backfills, retries, and worker recovery.
+- **AI workflows and digital commerce:** n8n and CrewAI add event-driven workflows, agent tools, approvals, guardrails, traces, and evaluations; Shopify and Stripe add catalog, inventory, checkout, billing, payments, refunds, risk, and webhook flows.
 
-Sources: [Microsoft FY25 Q2 earnings](https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q2), [dbt Labs State of Analytics Engineering 2025](https://www.getdbt.com/resources/state-of-analytics-engineering-2025), [Confluent 2025 annual report](https://www.sec.gov/Archives/edgar/data/1699838/000169983826000006/cflt-20251231.htm), [MongoDB AI-in-production survey](https://www.mongodb.com/resources/solutions/use-cases/retool-2024-state-of-ai-in-production), [Fivetran enterprise data report](https://www.fivetran.com/press/fivetran-report-finds-enterprises-racing-toward-ai-without-the-data-to-support-it), [Vercel AI SDK growth](https://vercel.com/blog/series-f), [Hugging Face Hub scale](https://huggingface.co/blog/huggingface-hub-v1), [G2 fastest-growing products](https://www.g2.com/best-software-companies/2025/fastest-growing), and [LangChain State of Agent Engineering](https://www.langchain.com/state-of-agent-engineering).
+Sources: [Microsoft FY25 Q2 earnings](https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q2), [dbt Labs State of Analytics Engineering 2025](https://www.getdbt.com/resources/state-of-analytics-engineering-2025), [Confluent 2025 annual report](https://www.sec.gov/Archives/edgar/data/1699838/000169983826000006/cflt-20251231.htm), [MongoDB AI-in-production survey](https://www.mongodb.com/resources/solutions/use-cases/retool-2024-state-of-ai-in-production), [Fivetran enterprise data report](https://www.fivetran.com/press/fivetran-report-finds-enterprises-racing-toward-ai-without-the-data-to-support-it), [Vercel AI SDK growth](https://vercel.com/blog/series-f), [Hugging Face Hub scale](https://huggingface.co/blog/huggingface-hub-v1), [G2 fastest-growing products](https://www.g2.com/best-software-companies/2025/fastest-growing), [LangChain State of Agent Engineering](https://www.langchain.com/state-of-agent-engineering), [Airbyte platform docs](https://docs.airbyte.com/platform), [Apache Airflow tutorials](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/), [Prefect flow tutorials](https://docs.prefect.io/latest/tutorial/flows), [Dagster asset docs](https://docs.dagster.io/guides/build/assets/defining-assets), [n8n 2026 AI agent tooling report](https://n8n.io/reports/2026-ai-agent-development-tools/), [CrewAI 2026 agent survey](https://crewai.com/blog/the-state-of-agentic-ai-in-2026), and [Shopify 2025 annual report](https://www.sec.gov/Archives/edgar/data/1594805/000159480526000011/shop-20251231.htm).
 
 Run any suite independently by following its README. Each targets a non-production product tenant and requires tenant-specific accessible-name patterns in `suite.config.ts`. The app-facing CSV, JSON, and TypeScript cases are regenerated with `npm run generate:app-data`.
 """

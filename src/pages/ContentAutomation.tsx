@@ -232,6 +232,7 @@ const ContentAutomation = () => {
         language: store.language,
         testScopes: store.testScopes,
         testCount: store.testCount,
+        ...(store.targetScriptLines ? { targetScriptLines: store.targetScriptLines } : {}),
         businessCase: store.businessCase,
       },
       onProgress: (step) => {

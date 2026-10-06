@@ -1,0 +1,77 @@
+{
+  "product": "CrewAI",
+  "key": "crewai",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "agents_tasks",
+      "label": "Agents and Tasks",
+      "folder": "agents_tasks",
+      "prefix": "crewai_agents_tasks_suite",
+      "count": 200
+    },
+    {
+      "id": "crews_flows",
+      "label": "Crews and Flows",
+      "folder": "crews_flows",
+      "prefix": "crewai_crews_flows_suite",
+      "count": 200
+    },
+    {
+      "id": "tools",
+      "label": "Tools and Integrations",
+      "folder": "tools",
+      "prefix": "crewai_tools_suite",
+      "count": 200
+    },
+    {
+      "id": "memory",
+      "label": "Memory and State",
+      "folder": "memory",
+      "prefix": "crewai_memory_suite",
+      "count": 200
+    },
+    {
+      "id": "knowledge",
+      "label": "Knowledge and Retrieval",
+      "folder": "knowledge",
+      "prefix": "crewai_knowledge_suite",
+      "count": 200
+    },
+    {
+      "id": "guardrails",
+      "label": "Guardrails and Validation",
+      "folder": "guardrails",
+      "prefix": "crewai_guardrails_suite",
+      "count": 200
+    },
+    {
+      "id": "human_approval",
+      "label": "Human Approval and Control",
+      "folder": "human_approval",
+      "prefix": "crewai_human_approval_suite",
+      "count": 200
+    },
+    {
+      "id": "deployment",
+      "label": "Deployment and Runtime",
+      "folder": "deployment",
+      "prefix": "crewai_deployment_suite",
+      "count": 200
+    },
+    {
+      "id": "tracing_eval",
+      "label": "Tracing and Evaluation",
+      "folder": "tracing_eval",
+      "prefix": "crewai_tracing_eval_suite",
+      "count": 200
+    },
+    {
+      "id": "enterprise_security",
+      "label": "Enterprise Security and API",
+      "folder": "enterprise_security",
+      "prefix": "crewai_enterprise_security_suite",
+      "count": 200
+    }
+  ]
+}
