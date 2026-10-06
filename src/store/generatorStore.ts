@@ -1,10 +1,7 @@
 import { create } from "zustand";
+import type { IndustryContextId } from "@/data/industryContexts";
 
-export type Platform =
-  | "sap" | "salesforce" | "veeva" | "servicenow" | "workday"
-  | "oracle" | "m365" | "web" | "api" | "mobile_ios" | "mobile_android"
-  | "dynamics365" | "aws" | "gcp" | "azure" | "webapps" | "topproducts"
-  | "ios" | "android";
+export type Platform = string;
 
 export type TestScope =
   | "ui_functional" | "regression" | "smoke" | "e2e"
@@ -30,6 +27,7 @@ interface GeneratorState {
   testScopes: TestScope[];
   testCount: number;
   targetScriptLines: number | null;
+  industryContext: IndustryContextId | null;
   businessCase: string;
   isGenerating: boolean;
   progress: number;
@@ -42,6 +40,7 @@ interface GeneratorState {
   setTestScopes: (scopes: TestScope[]) => void;
   setTestCount: (n: number) => void;
   setTargetScriptLines: (n: number | null) => void;
+  setIndustryContext: (context: IndustryContextId | null) => void;
   setBusinessCase: (t: string) => void;
   setIsGenerating: (b: boolean) => void;
   setProgress: (n: number) => void;
@@ -57,6 +56,7 @@ const initialState = {
   testScopes: ["ui_functional", "e2e"] as TestScope[],
   testCount: 10,
   targetScriptLines: null as number | null,
+  industryContext: null as IndustryContextId | null,
   businessCase: "",
   isGenerating: false,
   progress: 0,
@@ -78,6 +78,7 @@ export const useGeneratorStore = create<GeneratorState>((set) => ({
   setTestScopes: (scopes) => set({ testScopes: scopes }),
   setTestCount: (n) => set({ testCount: n }),
   setTargetScriptLines: (n) => set({ targetScriptLines: n }),
+  setIndustryContext: (context) => set({ industryContext: context }),
   setBusinessCase: (t) => set({ businessCase: t }),
   setIsGenerating: (b) => set({ isGenerating: b }),
   setProgress: (n) => set({ progress: n }),

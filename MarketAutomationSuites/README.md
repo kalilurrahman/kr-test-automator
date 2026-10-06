@@ -22,6 +22,18 @@ This set extends the existing product catalog with data engineering, developer p
 | CrewAI | [`CrewAI/manifest.json`](../CrewAI/manifest.json) | [`MarketAutomationSuites/CrewAI/README.md`](./CrewAI/README.md) |
 | Shopify | [`Shopify/manifest.json`](../Shopify/manifest.json) | [`MarketAutomationSuites/Shopify/README.md`](./Shopify/README.md) |
 | Stripe | [`Stripe/manifest.json`](../Stripe/manifest.json) | [`MarketAutomationSuites/Stripe/README.md`](./Stripe/README.md) |
+| Pharma GxP | [`PharmaGxP/manifest.json`](../PharmaGxP/manifest.json) | [`MarketAutomationSuites/PharmaGxP/README.md`](./PharmaGxP/README.md) |
+| MedTech Device Lifecycle | [`MedTech/manifest.json`](../MedTech/manifest.json) | [`MarketAutomationSuites/MedTech/README.md`](./MedTech/README.md) |
+| Healthcare Operations | [`HealthcareOps/manifest.json`](../HealthcareOps/manifest.json) | [`MarketAutomationSuites/HealthcareOps/README.md`](./HealthcareOps/README.md) |
+| Manufacturing MES | [`ManufacturingMES/manifest.json`](../ManufacturingMES/manifest.json) | [`MarketAutomationSuites/ManufacturingMES/README.md`](./ManufacturingMES/README.md) |
+| Defense Program Systems | [`DefenseSystems/manifest.json`](../DefenseSystems/manifest.json) | [`MarketAutomationSuites/DefenseSystems/README.md`](./DefenseSystems/README.md) |
+| Industrial Automation and OT | [`IndustrialAutomation/manifest.json`](../IndustrialAutomation/manifest.json) | [`MarketAutomationSuites/IndustrialAutomation/README.md`](./IndustrialAutomation/README.md) |
+| CPG and Consumer Goods | [`CPGOperations/manifest.json`](../CPGOperations/manifest.json) | [`MarketAutomationSuites/CPGOperations/README.md`](./CPGOperations/README.md) |
+| Energy and Utilities Operations | [`EnergyUtilities/manifest.json`](../EnergyUtilities/manifest.json) | [`MarketAutomationSuites/EnergyUtilities/README.md`](./EnergyUtilities/README.md) |
+| Insurance Operations | [`InsuranceSuite/manifest.json`](../InsuranceSuite/manifest.json) | [`MarketAutomationSuites/InsuranceSuite/README.md`](./InsuranceSuite/README.md) |
+| Financial Services Core | [`FinancialServices/manifest.json`](../FinancialServices/manifest.json) | [`MarketAutomationSuites/FinancialServices/README.md`](./FinancialServices/README.md) |
+| Aerospace and MRO | [`Aerospace/manifest.json`](../Aerospace/manifest.json) | [`MarketAutomationSuites/Aerospace/README.md`](./Aerospace/README.md) |
+| Logistics and Supply Chain | [`LogisticsSupplyChain/manifest.json`](../LogisticsSupplyChain/manifest.json) | [`MarketAutomationSuites/LogisticsSupplyChain/README.md`](./LogisticsSupplyChain/README.md) |
 
 ## Why these products
 
@@ -33,3 +45,24 @@ This set extends the existing product catalog with data engineering, developer p
 Sources: [Microsoft FY25 Q2 earnings](https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q2), [dbt Labs State of Analytics Engineering 2025](https://www.getdbt.com/resources/state-of-analytics-engineering-2025), [Confluent 2025 annual report](https://www.sec.gov/Archives/edgar/data/1699838/000169983826000006/cflt-20251231.htm), [MongoDB AI-in-production survey](https://www.mongodb.com/resources/solutions/use-cases/retool-2024-state-of-ai-in-production), [Fivetran enterprise data report](https://www.fivetran.com/press/fivetran-report-finds-enterprises-racing-toward-ai-without-the-data-to-support-it), [Vercel AI SDK growth](https://vercel.com/blog/series-f), [Hugging Face Hub scale](https://huggingface.co/blog/huggingface-hub-v1), [G2 fastest-growing products](https://www.g2.com/best-software-companies/2025/fastest-growing), [LangChain State of Agent Engineering](https://www.langchain.com/state-of-agent-engineering), [Airbyte platform docs](https://docs.airbyte.com/platform), [Apache Airflow tutorials](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/), [Prefect flow tutorials](https://docs.prefect.io/latest/tutorial/flows), [Dagster asset docs](https://docs.dagster.io/guides/build/assets/defining-assets), [n8n 2026 AI agent tooling report](https://n8n.io/reports/2026-ai-agent-development-tools/), [CrewAI 2026 agent survey](https://crewai.com/blog/the-state-of-agentic-ai-in-2026), and [Shopify 2025 annual report](https://www.sec.gov/Archives/edgar/data/1594805/000159480526000011/shop-20251231.htm).
 
 Run any suite independently by following its README. Each targets a non-production product tenant and requires tenant-specific accessible-name patterns in `suite.config.ts`. The app-facing CSV, JSON, and TypeScript cases are regenerated with `npm run generate:app-data`.
+
+## Industry vertical suites
+
+These workflow suites extend the product list into regulated, physical-operations, and service industries. Every pack contains 2,000 synthetic cases in ten modules and ten standalone Playwright journeys. Each manifest and suite README carries domain-specific data and environment boundaries.
+
+| Industry product | Context | Catalog manifest | Playwright suite |
+| --- | --- | --- | --- |
+| Pharma GxP | pharma-life-sciences | [`PharmaGxP/manifest.json`](../PharmaGxP/manifest.json) | [`MarketAutomationSuites/PharmaGxP/README.md`](./PharmaGxP/README.md) |
+| MedTech Device Lifecycle | medical-devices | [`MedTech/manifest.json`](../MedTech/manifest.json) | [`MarketAutomationSuites/MedTech/README.md`](./MedTech/README.md) |
+| Healthcare Operations | healthcare | [`HealthcareOps/manifest.json`](../HealthcareOps/manifest.json) | [`MarketAutomationSuites/HealthcareOps/README.md`](./HealthcareOps/README.md) |
+| Manufacturing MES | manufacturing | [`ManufacturingMES/manifest.json`](../ManufacturingMES/manifest.json) | [`MarketAutomationSuites/ManufacturingMES/README.md`](./ManufacturingMES/README.md) |
+| Defense Program Systems | defense | [`DefenseSystems/manifest.json`](../DefenseSystems/manifest.json) | [`MarketAutomationSuites/DefenseSystems/README.md`](./DefenseSystems/README.md) |
+| Industrial Automation and OT | industrial-automation | [`IndustrialAutomation/manifest.json`](../IndustrialAutomation/manifest.json) | [`MarketAutomationSuites/IndustrialAutomation/README.md`](./IndustrialAutomation/README.md) |
+| CPG and Consumer Goods | cpg | [`CPGOperations/manifest.json`](../CPGOperations/manifest.json) | [`MarketAutomationSuites/CPGOperations/README.md`](./CPGOperations/README.md) |
+| Energy and Utilities Operations | energy-utilities | [`EnergyUtilities/manifest.json`](../EnergyUtilities/manifest.json) | [`MarketAutomationSuites/EnergyUtilities/README.md`](./EnergyUtilities/README.md) |
+| Insurance Operations | insurance | [`InsuranceSuite/manifest.json`](../InsuranceSuite/manifest.json) | [`MarketAutomationSuites/InsuranceSuite/README.md`](./InsuranceSuite/README.md) |
+| Financial Services Core | financial-services | [`FinancialServices/manifest.json`](../FinancialServices/manifest.json) | [`MarketAutomationSuites/FinancialServices/README.md`](./FinancialServices/README.md) |
+| Aerospace and MRO | aerospace | [`Aerospace/manifest.json`](../Aerospace/manifest.json) | [`MarketAutomationSuites/Aerospace/README.md`](./Aerospace/README.md) |
+| Logistics and Supply Chain | logistics-supply-chain | [`LogisticsSupplyChain/manifest.json`](../LogisticsSupplyChain/manifest.json) | [`MarketAutomationSuites/LogisticsSupplyChain/README.md`](./LogisticsSupplyChain/README.md) |
+
+Use synthetic data in isolated non-production systems. Regulated workflow examples do not certify compliance or product safety. Defense workflows are limited to unclassified administration; industrial controls are simulated only.

@@ -262,6 +262,17 @@ const GENERATED_DATA_PACKS = [
   ["prefect", "Prefect", "Prefect"], ["dagster", "Dagster", "Dagster"],
   ["n8n", "n8n", "N8n"], ["crewai", "CrewAI", "CrewAI"],
   ["shopify", "Shopify", "Shopify"], ["stripe", "Stripe", "Stripe"],
+  ["phamagxp", "Pharma GxP", "PharmaGxP"], ["medtech", "MedTech Device Lifecycle", "MedTech"],
+  ["healthcare-operations", "Healthcare Operations", "HealthcareOps"],
+  ["manufacturing-mes", "Manufacturing MES", "ManufacturingMES"],
+  ["defense-systems", "Defense Program Systems", "DefenseSystems"],
+  ["industrial-automation", "Industrial Automation and OT", "IndustrialAutomation"],
+  ["cpg-operations", "CPG and Consumer Goods", "CPGOperations"],
+  ["energy-utilities", "Energy and Utilities Operations", "EnergyUtilities"],
+  ["insurance-suite", "Insurance Operations", "InsuranceSuite"],
+  ["financial-services", "Financial Services Core", "FinancialServices"],
+  ["aerospace", "Aerospace and MRO", "Aerospace"],
+  ["logistics-supply-chain", "Logistics and Supply Chain", "LogisticsSupplyChain"],
 ];
 for (const [id, label, folder] of GENERATED_DATA_PACKS) {
   const manifestFile = path.join(ROOT, folder, "manifest.json");

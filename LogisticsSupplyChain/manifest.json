@@ -1,0 +1,79 @@
+{
+  "product": "Logistics and Supply Chain",
+  "key": "logistics-supply-chain",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "orders_transport",
+      "label": "Transport Orders and Planning",
+      "folder": "orders_transport",
+      "prefix": "logistics-supply-chain_orders_transport_suite",
+      "count": 200
+    },
+    {
+      "id": "warehouse_execution",
+      "label": "Warehouse Execution",
+      "folder": "warehouse_execution",
+      "prefix": "logistics-supply-chain_warehouse_execution_suite",
+      "count": 200
+    },
+    {
+      "id": "carrier_integration",
+      "label": "Carrier and EDI Integration",
+      "folder": "carrier_integration",
+      "prefix": "logistics-supply-chain_carrier_integration_suite",
+      "count": 200
+    },
+    {
+      "id": "inventory_visibility",
+      "label": "Inventory Visibility",
+      "folder": "inventory_visibility",
+      "prefix": "logistics-supply-chain_inventory_visibility_suite",
+      "count": 200
+    },
+    {
+      "id": "shipment_tracking",
+      "label": "Shipment Tracking and Exceptions",
+      "folder": "shipment_tracking",
+      "prefix": "logistics-supply-chain_shipment_tracking_suite",
+      "count": 200
+    },
+    {
+      "id": "customs_trade",
+      "label": "Customs and Trade Documents",
+      "folder": "customs_trade",
+      "prefix": "logistics-supply-chain_customs_trade_suite",
+      "count": 200
+    },
+    {
+      "id": "returns_reverse",
+      "label": "Returns and Reverse Logistics",
+      "folder": "returns_reverse",
+      "prefix": "logistics-supply-chain_returns_reverse_suite",
+      "count": 200
+    },
+    {
+      "id": "supplier_collaboration",
+      "label": "Supplier Collaboration",
+      "folder": "supplier_collaboration",
+      "prefix": "logistics-supply-chain_supplier_collaboration_suite",
+      "count": 200
+    },
+    {
+      "id": "demand_sop",
+      "label": "Demand and Supply Planning",
+      "folder": "demand_sop",
+      "prefix": "logistics-supply-chain_demand_sop_suite",
+      "count": 200
+    },
+    {
+      "id": "resilience_analytics",
+      "label": "Resilience and Network Analytics",
+      "folder": "resilience_analytics",
+      "prefix": "logistics-supply-chain_resilience_analytics_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "logistics-supply-chain",
+  "safetyNote": "Use synthetic shipments, SKU, supplier, and carrier identities, with mocked partner endpoints. Do not enter real addresses, customer details, customs filings, or production dispatch commands."
+}

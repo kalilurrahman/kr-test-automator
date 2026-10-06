@@ -39,6 +39,18 @@ PACKS = {
     "CrewAI": {"id": "crewai", "label": "CrewAI", "accent": "amber", "automationSuiteUrl": "/market-automation-suites/crewai-playwright-e2e.zip"},
     "Shopify": {"id": "shopify", "label": "Shopify", "accent": "emerald", "automationSuiteUrl": "/market-automation-suites/shopify-playwright-e2e.zip"},
     "Stripe": {"id": "stripe", "label": "Stripe", "accent": "indigo", "automationSuiteUrl": "/market-automation-suites/stripe-playwright-e2e.zip"},
+    "PharmaGxP": {"id": "phamagxp", "label": "Pharma GxP", "accent": "violet", "industryDomain": "pharma-life-sciences", "description": "GxP product lifecycle, batch genealogy, deviations, validation evidence, laboratory, release, and safety workflows.", "automationSuiteUrl": "/market-automation-suites/phamagxp-playwright-e2e.zip"},
+    "MedTech": {"id": "medtech", "label": "MedTech Device Lifecycle", "accent": "rose", "industryDomain": "medical-devices", "description": "Device design controls, risk traceability, verification, complaints, field actions, manufacturing history, and supplier quality.", "automationSuiteUrl": "/market-automation-suites/medtech-playwright-e2e.zip"},
+    "HealthcareOps": {"id": "healthcare-operations", "label": "Healthcare Operations", "accent": "rose", "industryDomain": "healthcare", "description": "Synthetic patient access, EHR interfaces, scheduling, claims, care coordination, laboratory exchange, consent, and resilience.", "automationSuiteUrl": "/market-automation-suites/healthcare-operations-playwright-e2e.zip"},
+    "ManufacturingMES": {"id": "manufacturing-mes", "label": "Manufacturing MES", "accent": "amber", "industryDomain": "manufacturing", "description": "Production dispatch, shop-floor execution, inspection, OEE, material traceability, maintenance, and ERP/MES integration.", "automationSuiteUrl": "/market-automation-suites/manufacturing-mes-playwright-e2e.zip"},
+    "DefenseSystems": {"id": "defense-systems", "label": "Defense Program Systems", "accent": "indigo", "industryDomain": "defense", "description": "Unclassified synthetic configuration, requirements traceability, supplier provenance, maintenance readiness, and audit workflows.", "automationSuiteUrl": "/market-automation-suites/defense-systems-playwright-e2e.zip"},
+    "IndustrialAutomation": {"id": "industrial-automation", "label": "Industrial Automation and OT", "accent": "teal", "industryDomain": "industrial-automation", "description": "Digital-twin asset inventory, virtual PLC/HMI, alarms, historian events, simulated interlocks, and recovery workflows.", "automationSuiteUrl": "/market-automation-suites/industrial-automation-playwright-e2e.zip"},
+    "CPGOperations": {"id": "cpg-operations", "label": "CPG and Consumer Goods", "accent": "amber", "industryDomain": "cpg", "description": "Product and packaging data, demand, trade promotions, retail execution, lot traceability, quality, and fulfillment.", "automationSuiteUrl": "/market-automation-suites/cpg-operations-playwright-e2e.zip"},
+    "EnergyUtilities": {"id": "energy-utilities", "label": "Energy and Utilities Operations", "accent": "amber", "industryDomain": "energy-utilities", "description": "Synthetic metering, outage management, field work, asset maintenance, billing, distributed resources, and settlement.", "automationSuiteUrl": "/market-automation-suites/energy-utilities-playwright-e2e.zip"},
+    "InsuranceSuite": {"id": "insurance-suite", "label": "Insurance Operations", "accent": "cyan", "industryDomain": "insurance", "description": "Policy administration, underwriting, claims, adjudication, payments, broker channels, reinsurance, and mock screening.", "automationSuiteUrl": "/market-automation-suites/insurance-suite-playwright-e2e.zip"},
+    "FinancialServices": {"id": "financial-services", "label": "Financial Services Core", "accent": "indigo", "industryDomain": "financial-services", "description": "Synthetic account lifecycle, payments, ledger, lending, treasury, risk limits, AML/KYC mocks, and reporting.", "automationSuiteUrl": "/market-automation-suites/financial-services-playwright-e2e.zip"},
+    "Aerospace": {"id": "aerospace", "label": "Aerospace and MRO", "accent": "blue", "industryDomain": "aerospace", "description": "Configuration baselines, engineering changes, MRO planning, controlled records, parts traceability, and offline simulation.", "automationSuiteUrl": "/market-automation-suites/aerospace-playwright-e2e.zip"},
+    "LogisticsSupplyChain": {"id": "logistics-supply-chain", "label": "Logistics and Supply Chain", "accent": "amber", "industryDomain": "logistics-supply-chain", "description": "Transport planning, warehouse execution, carrier EDI, inventory visibility, tracking, returns, and supply planning.", "automationSuiteUrl": "/market-automation-suites/logistics-supply-chain-playwright-e2e.zip"},
 }
 
 
@@ -74,9 +86,10 @@ def load_manifest(root_name: str, metadata: dict):
         "id": metadata["id"],
         "label": metadata["label"],
         "accent": metadata["accent"],
+        "industryDomain": metadata.get("industryDomain", manifest.get("industryDomain")),
         "automationSuiteUrl": metadata.get("automationSuiteUrl"),
         "idPrefix": prefix,
-        "description": f"{manifest['count']:,} test cases across {len(modules)} {metadata['label']} modules.",
+        "description": metadata.get("description") or f"{manifest['count']:,} test cases across {len(modules)} {metadata['label']} modules.",
         "modules": modules,
         "count": manifest["count"],
     }
@@ -97,6 +110,7 @@ def main():
             "id": pack["id"], "label": pack["label"], "shortLabel": pack["label"],
             "description": pack["description"], "publicBase": f"/{pack['folder']}",
             "idPrefix": pack["idPrefix"], "accent": pack["accent"], "modules": pack["modules"],
+            **({"industryDomain": pack["industryDomain"]} if pack.get("industryDomain") else {}),
             **({"automationSuiteUrl": pack["automationSuiteUrl"]} if pack.get("automationSuiteUrl") else {}),
         })
         product_rows.append({
@@ -104,6 +118,7 @@ def main():
             "description": pack["description"], "route": f"/p/{pack['id']}",
             "kind": "spa", "modules": [module["label"] for module in pack["modules"]],
             "idPrefix": pack["idPrefix"], "accent": pack["accent"],
+            **({"industryDomain": pack["industryDomain"]} if pack.get("industryDomain") else {}),
         })
 
     out = ROOT / "src" / "data" / "generatedDataPackRegistry.ts"

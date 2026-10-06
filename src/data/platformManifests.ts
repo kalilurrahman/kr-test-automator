@@ -35,6 +35,8 @@ export interface PlatformDef {
   accent: "gold" | "blue" | "violet" | "teal" | "emerald" | "amber" | "rose" | "cyan" | "indigo";
   /** Optional downloadable standalone browser E2E suite archive. */
   automationSuiteUrl?: string;
+  /** Industry context passed to Content Automation when a case is opened. */
+  industryDomain?: string;
   modules: PlatformModule[];
 }
 

@@ -1,0 +1,79 @@
+{
+  "product": "Industrial Automation and OT",
+  "key": "industrial-automation",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "asset_inventory",
+      "label": "OT Asset Inventory",
+      "folder": "asset_inventory",
+      "prefix": "industrial-automation_asset_inventory_suite",
+      "count": 200
+    },
+    {
+      "id": "network_zones",
+      "label": "Zones and Conduits",
+      "folder": "network_zones",
+      "prefix": "industrial-automation_network_zones_suite",
+      "count": 200
+    },
+    {
+      "id": "plc_hmi_simulation",
+      "label": "PLC and HMI Digital Twin",
+      "folder": "plc_hmi_simulation",
+      "prefix": "industrial-automation_plc_hmi_simulation_suite",
+      "count": 200
+    },
+    {
+      "id": "alarms_events",
+      "label": "Alarms and Event Handling",
+      "folder": "alarms_events",
+      "prefix": "industrial-automation_alarms_events_suite",
+      "count": 200
+    },
+    {
+      "id": "historian_telemetry",
+      "label": "Historian and Telemetry",
+      "folder": "historian_telemetry",
+      "prefix": "industrial-automation_historian_telemetry_suite",
+      "count": 200
+    },
+    {
+      "id": "change_deployment",
+      "label": "Logic Change and Deployment",
+      "folder": "change_deployment",
+      "prefix": "industrial-automation_change_deployment_suite",
+      "count": 200
+    },
+    {
+      "id": "safety_interlocks",
+      "label": "Safety Interlocks and Fail-Safe Tests",
+      "folder": "safety_interlocks",
+      "prefix": "industrial-automation_safety_interlocks_suite",
+      "count": 200
+    },
+    {
+      "id": "identity_remote_access",
+      "label": "Identity and Remote Access",
+      "folder": "identity_remote_access",
+      "prefix": "industrial-automation_identity_remote_access_suite",
+      "count": 200
+    },
+    {
+      "id": "backup_recovery",
+      "label": "Backup and Recovery",
+      "folder": "backup_recovery",
+      "prefix": "industrial-automation_backup_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "security_monitoring",
+      "label": "Security Monitoring and Response",
+      "folder": "security_monitoring",
+      "prefix": "industrial-automation_security_monitoring_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "industrial-automation",
+  "safetyNote": "Use a digital twin, protocol simulator, or isolated lab fixture only. Never send write commands to live PLCs, SCADA, robots, safety systems, or production networks; simulation evidence is not a safety certification."
+}

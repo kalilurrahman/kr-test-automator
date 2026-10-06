@@ -1,0 +1,79 @@
+{
+  "product": "Defense Program Systems",
+  "key": "defense-systems",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "configuration_baselines",
+      "label": "Configuration Baselines",
+      "folder": "configuration_baselines",
+      "prefix": "defense-systems_configuration_baselines_suite",
+      "count": 200
+    },
+    {
+      "id": "requirements_traceability",
+      "label": "Requirements and Traceability",
+      "folder": "requirements_traceability",
+      "prefix": "defense-systems_requirements_traceability_suite",
+      "count": 200
+    },
+    {
+      "id": "supplier_provenance",
+      "label": "Supplier and Provenance",
+      "folder": "supplier_provenance",
+      "prefix": "defense-systems_supplier_provenance_suite",
+      "count": 200
+    },
+    {
+      "id": "program_schedule",
+      "label": "Program Schedule and Milestones",
+      "folder": "program_schedule",
+      "prefix": "defense-systems_program_schedule_suite",
+      "count": 200
+    },
+    {
+      "id": "technical_data",
+      "label": "Technical Data and Records",
+      "folder": "technical_data",
+      "prefix": "defense-systems_technical_data_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_nonconformance",
+      "label": "Quality and Nonconformance",
+      "folder": "quality_nonconformance",
+      "prefix": "defense-systems_quality_nonconformance_suite",
+      "count": 200
+    },
+    {
+      "id": "maintenance_readiness",
+      "label": "Maintenance Readiness",
+      "folder": "maintenance_readiness",
+      "prefix": "defense-systems_maintenance_readiness_suite",
+      "count": 200
+    },
+    {
+      "id": "access_control",
+      "label": "Access and Information Handling",
+      "folder": "access_control",
+      "prefix": "defense-systems_access_control_suite",
+      "count": 200
+    },
+    {
+      "id": "audit_evidence",
+      "label": "Audit and Evidence",
+      "folder": "audit_evidence",
+      "prefix": "defense-systems_audit_evidence_suite",
+      "count": 200
+    },
+    {
+      "id": "continuity_recovery",
+      "label": "Continuity and Recovery",
+      "folder": "continuity_recovery",
+      "prefix": "defense-systems_continuity_recovery_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "defense",
+  "safetyNote": "Use unclassified synthetic records only, within an isolated sandbox. Do not include operational plans, mission targeting, weapons instructions, controlled technical data, or real defense-system connections; this suite covers administrative workflow behavior only."
+}

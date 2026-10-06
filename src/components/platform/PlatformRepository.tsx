@@ -130,6 +130,7 @@ export function PlatformRepository({ platform, selectedModule, onSelectModule }:
       // sessionStorage may be unavailable (private mode) — ContentAutomation will fall back.
     }
     const params = new URLSearchParams({ platform: platform.id, prefill: id });
+    if (platform.industryDomain) params.set("industry", platform.industryDomain);
     navigate(`/content-automation?${params.toString()}`);
   };
 

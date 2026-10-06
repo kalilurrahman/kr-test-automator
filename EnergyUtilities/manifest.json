@@ -1,0 +1,79 @@
+{
+  "product": "Energy and Utilities Operations",
+  "key": "energy-utilities",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "customer_metering",
+      "label": "Customer and Metering",
+      "folder": "customer_metering",
+      "prefix": "energy-utilities_customer_metering_suite",
+      "count": 200
+    },
+    {
+      "id": "grid_operations",
+      "label": "Grid Operations and Events",
+      "folder": "grid_operations",
+      "prefix": "energy-utilities_grid_operations_suite",
+      "count": 200
+    },
+    {
+      "id": "outage_management",
+      "label": "Outage Management",
+      "folder": "outage_management",
+      "prefix": "energy-utilities_outage_management_suite",
+      "count": 200
+    },
+    {
+      "id": "workforce_field_service",
+      "label": "Workforce and Field Service",
+      "folder": "workforce_field_service",
+      "prefix": "energy-utilities_workforce_field_service_suite",
+      "count": 200
+    },
+    {
+      "id": "asset_maintenance",
+      "label": "Asset Maintenance and Reliability",
+      "folder": "asset_maintenance",
+      "prefix": "energy-utilities_asset_maintenance_suite",
+      "count": 200
+    },
+    {
+      "id": "billing_settlement",
+      "label": "Billing and Settlement",
+      "folder": "billing_settlement",
+      "prefix": "energy-utilities_billing_settlement_suite",
+      "count": 200
+    },
+    {
+      "id": "distributed_energy",
+      "label": "Distributed Energy Resources",
+      "folder": "distributed_energy",
+      "prefix": "energy-utilities_distributed_energy_suite",
+      "count": 200
+    },
+    {
+      "id": "market_transactions",
+      "label": "Market Transactions and Settlement",
+      "folder": "market_transactions",
+      "prefix": "energy-utilities_market_transactions_suite",
+      "count": 200
+    },
+    {
+      "id": "regulatory_reporting",
+      "label": "Regulatory and Sustainability Reporting",
+      "folder": "regulatory_reporting",
+      "prefix": "energy-utilities_regulatory_reporting_suite",
+      "count": 200
+    },
+    {
+      "id": "resilience_cyber",
+      "label": "Resilience and Operational Security",
+      "folder": "resilience_cyber",
+      "prefix": "energy-utilities_resilience_cyber_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "energy-utilities",
+  "safetyNote": "Use synthetic accounts, meter reads, market transactions, and digital-twin telemetry. Execute only in a sandbox; never dispatch commands to a live grid, meter, DER, or utility control system."
+}

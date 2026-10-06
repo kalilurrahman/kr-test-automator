@@ -23,6 +23,8 @@ export interface ProductEntry {
   modules: string[];
   /** Stable ID prefix used when deep-linking individual cases */
   idPrefix: string;
+  /** Optional industry context for product-specific generation. */
+  industryDomain?: string;
   /** Tailwind colour family to tint the card */
   accent: "gold" | "blue" | "violet" | "teal" | "emerald" | "amber" | "rose" | "cyan" | "indigo";
 }

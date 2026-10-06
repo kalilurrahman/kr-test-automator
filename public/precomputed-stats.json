@@ -1,17 +1,17 @@
 {
-  "totalCases": 242560,
-  "totalModules": 50779,
-  "uniqueIds": 242560,
+  "totalCases": 266560,
+  "totalModules": 50899,
+  "uniqueIds": 266560,
   "duplicatesRemoved": 6940,
-  "lastUpdated": 1791289958080,
+  "lastUpdated": 1791293238143,
   "byPriority": [
     {
       "name": "High",
-      "value": 116958
+      "value": 135630
     },
     {
       "name": "Medium",
-      "value": 80458
+      "value": 85786
     },
     {
       "name": "Low",
@@ -149,6 +149,54 @@
     },
     {
       "name": "Stripe",
+      "value": 2000
+    },
+    {
+      "name": "Pharma GxP",
+      "value": 2000
+    },
+    {
+      "name": "MedTech Device Lifecycle",
+      "value": 2000
+    },
+    {
+      "name": "Healthcare Operations",
+      "value": 2000
+    },
+    {
+      "name": "Manufacturing MES",
+      "value": 2000
+    },
+    {
+      "name": "Defense Program Systems",
+      "value": 2000
+    },
+    {
+      "name": "Industrial Automation and OT",
+      "value": 2000
+    },
+    {
+      "name": "CPG and Consumer Goods",
+      "value": 2000
+    },
+    {
+      "name": "Energy and Utilities Operations",
+      "value": 2000
+    },
+    {
+      "name": "Insurance Operations",
+      "value": 2000
+    },
+    {
+      "name": "Financial Services Core",
+      "value": 2000
+    },
+    {
+      "name": "Aerospace and MRO",
+      "value": 2000
+    },
+    {
+      "name": "Logistics and Supply Chain",
       "value": 2000
     },
     {
@@ -10454,6 +10502,234 @@
       ],
       "high": 1568,
       "medium": 432,
+      "low": 0
+    },
+    "phamagxp": {
+      "label": "Pharma GxP",
+      "total": 2000,
+      "modules": [
+        "Product and Change Control",
+        "GMP Batch and Manufacturing",
+        "Quality and Deviations",
+        "Change Control and Approvals",
+        "Validation Evidence and Traceability",
+        "Documents and Training",
+        "Materials and Genealogy",
+        "Laboratory and Stability",
+        "Batch Release and Disposition",
+        "Safety and Regulatory Operations"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "medtech": {
+      "label": "MedTech Device Lifecycle",
+      "total": 2000,
+      "modules": [
+        "Design Controls",
+        "Risk and Usability",
+        "Device Configuration and BOM",
+        "Verification and Validation Evidence",
+        "Complaints and Service",
+        "Field Actions and Recall Readiness",
+        "Supplier Quality",
+        "Manufacturing and Device History",
+        "Service and Calibration",
+        "Access, Records and Audit"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "healthcare-operations": {
+      "label": "Healthcare Operations",
+      "total": 2000,
+      "modules": [
+        "Patient Access and Registration",
+        "Scheduling and Referrals",
+        "EHR Workflow Integration",
+        "Claims and Revenue Cycle",
+        "Care Coordination and Discharge",
+        "Medication Workflow Interfaces",
+        "Laboratory and Imaging Interfaces",
+        "Identity, Consent and Access",
+        "Population and Public Health",
+        "Operations and Resilience"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "manufacturing-mes": {
+      "label": "Manufacturing MES",
+      "total": 2000,
+      "modules": [
+        "Production Orders and Dispatch",
+        "Routing and Bill of Materials",
+        "Shop Floor Execution",
+        "Quality and Inspection",
+        "OEE and Equipment",
+        "Serialization and Genealogy",
+        "Warehouse and Material Flow",
+        "Maintenance and Work Orders",
+        "Planning and Scheduling",
+        "Integration and Operations Analytics"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "defense-systems": {
+      "label": "Defense Program Systems",
+      "total": 2000,
+      "modules": [
+        "Configuration Baselines",
+        "Requirements and Traceability",
+        "Supplier and Provenance",
+        "Program Schedule and Milestones",
+        "Technical Data and Records",
+        "Quality and Nonconformance",
+        "Maintenance Readiness",
+        "Access and Information Handling",
+        "Audit and Evidence",
+        "Continuity and Recovery"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "industrial-automation": {
+      "label": "Industrial Automation and OT",
+      "total": 2000,
+      "modules": [
+        "OT Asset Inventory",
+        "Zones and Conduits",
+        "PLC and HMI Digital Twin",
+        "Alarms and Event Handling",
+        "Historian and Telemetry",
+        "Logic Change and Deployment",
+        "Safety Interlocks and Fail-Safe Tests",
+        "Identity and Remote Access",
+        "Backup and Recovery",
+        "Security Monitoring and Response"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "cpg-operations": {
+      "label": "CPG and Consumer Goods",
+      "total": 2000,
+      "modules": [
+        "Product and Packaging Master",
+        "Demand Planning and Forecasts",
+        "Trade Promotion and Rebates",
+        "Retail Execution",
+        "Orders and Fulfillment",
+        "Inventory, Shelf Life and Lot Traceability",
+        "Quality and Food Safety",
+        "Labeling and Product Claims",
+        "Supplier Sourcing and Procurement",
+        "Retail Data and Commercial Analytics"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "energy-utilities": {
+      "label": "Energy and Utilities Operations",
+      "total": 2000,
+      "modules": [
+        "Customer and Metering",
+        "Grid Operations and Events",
+        "Outage Management",
+        "Workforce and Field Service",
+        "Asset Maintenance and Reliability",
+        "Billing and Settlement",
+        "Distributed Energy Resources",
+        "Market Transactions and Settlement",
+        "Regulatory and Sustainability Reporting",
+        "Resilience and Operational Security"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "insurance-suite": {
+      "label": "Insurance Operations",
+      "total": 2000,
+      "modules": [
+        "Policy Administration",
+        "Underwriting and Risk",
+        "Claims Intake and FNOL",
+        "Claims Adjudication",
+        "Payments and Subrogation",
+        "Premium Billing and Collections",
+        "Customer and Broker Channels",
+        "Reinsurance and Exposure",
+        "Fraud, KYC and Compliance",
+        "Analytics, Access and Audit"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "financial-services": {
+      "label": "Financial Services Core",
+      "total": 2000,
+      "modules": [
+        "Customer and Account Lifecycle",
+        "Payments and Transfers",
+        "Ledger and Reconciliation",
+        "Lending and Credit",
+        "Treasury and Liquidity",
+        "Risk and Limits",
+        "AML and KYC Case Workflows",
+        "Digital Channels and Authentication",
+        "Regulatory Reporting and Controls",
+        "Security, Resilience and Audit"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "aerospace": {
+      "label": "Aerospace and MRO",
+      "total": 2000,
+      "modules": [
+        "Configuration Management",
+        "Engineering Changes",
+        "MRO Planning and Work Packages",
+        "Airworthiness and Records",
+        "Parts and Supply Chain",
+        "Quality and Safety Events",
+        "Manufacturing and Assembly",
+        "Flight Test Data Simulation",
+        "Fleet Reliability and Service Bulletins",
+        "Access and Audit Traceability"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "logistics-supply-chain": {
+      "label": "Logistics and Supply Chain",
+      "total": 2000,
+      "modules": [
+        "Transport Orders and Planning",
+        "Warehouse Execution",
+        "Carrier and EDI Integration",
+        "Inventory Visibility",
+        "Shipment Tracking and Exceptions",
+        "Customs and Trade Documents",
+        "Returns and Reverse Logistics",
+        "Supplier Collaboration",
+        "Demand and Supply Planning",
+        "Resilience and Network Analytics"
+      ],
+      "high": 1520,
+      "medium": 480,
       "low": 0
     },
     "salesforce": {

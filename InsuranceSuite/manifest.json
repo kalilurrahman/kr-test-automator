@@ -1,0 +1,79 @@
+{
+  "product": "Insurance Operations",
+  "key": "insurance-suite",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "policy_admin",
+      "label": "Policy Administration",
+      "folder": "policy_admin",
+      "prefix": "insurance-suite_policy_admin_suite",
+      "count": 200
+    },
+    {
+      "id": "underwriting",
+      "label": "Underwriting and Risk",
+      "folder": "underwriting",
+      "prefix": "insurance-suite_underwriting_suite",
+      "count": 200
+    },
+    {
+      "id": "claims_intake",
+      "label": "Claims Intake and FNOL",
+      "folder": "claims_intake",
+      "prefix": "insurance-suite_claims_intake_suite",
+      "count": 200
+    },
+    {
+      "id": "adjudication",
+      "label": "Claims Adjudication",
+      "folder": "adjudication",
+      "prefix": "insurance-suite_adjudication_suite",
+      "count": 200
+    },
+    {
+      "id": "payments_recovery",
+      "label": "Payments and Subrogation",
+      "folder": "payments_recovery",
+      "prefix": "insurance-suite_payments_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "billing_collections",
+      "label": "Premium Billing and Collections",
+      "folder": "billing_collections",
+      "prefix": "insurance-suite_billing_collections_suite",
+      "count": 200
+    },
+    {
+      "id": "customer_broker",
+      "label": "Customer and Broker Channels",
+      "folder": "customer_broker",
+      "prefix": "insurance-suite_customer_broker_suite",
+      "count": 200
+    },
+    {
+      "id": "reinsurance",
+      "label": "Reinsurance and Exposure",
+      "folder": "reinsurance",
+      "prefix": "insurance-suite_reinsurance_suite",
+      "count": 200
+    },
+    {
+      "id": "fraud_compliance",
+      "label": "Fraud, KYC and Compliance",
+      "folder": "fraud_compliance",
+      "prefix": "insurance-suite_fraud_compliance_suite",
+      "count": 200
+    },
+    {
+      "id": "analytics_access",
+      "label": "Analytics, Access and Audit",
+      "folder": "analytics_access",
+      "prefix": "insurance-suite_analytics_access_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "insurance",
+  "safetyNote": "Use generated policyholders, claims, and counterparties only; connect external screening and payment systems to mocks. Do not use real financial or personal data, issue real payments, or treat test outputs as legal or actuarial advice."
+}

@@ -1,5 +1,5 @@
 /**
- * Family taxonomy that buckets every entry in PRODUCT_CATALOG into one of eight
+ * Family taxonomy that buckets every entry in PRODUCT_CATALOG into industry and product families
  * logical industry families. Used by /platforms, /services and the header
  * dropdown so users can navigate by similarity instead of scanning a flat list.
  *
@@ -9,7 +9,10 @@ import { PRODUCT_CATALOG, type ProductEntry } from "@/data/productCatalog";
 
 export type FamilyKey =
   | "erp_finance"
+  | "financial_services"
   | "healthcare_lifesciences"
+  | "manufacturing_industrial"
+  | "energy_logistics"
   | "telecom_network"
   | "data_ai"
   | "cloud_devops"
@@ -54,6 +57,27 @@ export const PRODUCT_FAMILIES: ProductFamily[] = [
     shortLabel: "Data & AI",
     blurb: "Analytics, data engineering, model ecosystems, AI development, and intelligent application platforms.",
     accent: "violet",
+  },
+  {
+    key: "financial_services",
+    label: "Financial Services / Insurance",
+    shortLabel: "Financial / Insurance",
+    blurb: "Banking operations, payment workflows, policy administration, claims, lending and risk controls.",
+    accent: "indigo",
+  },
+  {
+    key: "manufacturing_industrial",
+    label: "Manufacturing / Industrial",
+    shortLabel: "Manufacturing / OT",
+    blurb: "MES, aerospace, defense program administration, plant operations and industrial automation workflows.",
+    accent: "amber",
+  },
+  {
+    key: "energy_logistics",
+    label: "Energy / Logistics",
+    shortLabel: "Energy / Logistics",
+    blurb: "Utilities, field service, transport, warehouse execution and supply-chain operations.",
+    accent: "teal",
   },
   {
     key: "cloud_devops",
@@ -111,6 +135,23 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   ibmmaximo: "healthcare_lifesciences", // EAM also used in pharma plants
   medidata: "healthcare_lifesciences",
   iqvia: "healthcare_lifesciences",
+  phamagxp: "healthcare_lifesciences",
+  medtech: "healthcare_lifesciences",
+  "healthcare-operations": "healthcare_lifesciences",
+
+  // ── Financial Services / Insurance ──────────────────────────────────────
+  "insurance-suite": "financial_services",
+  "financial-services": "financial_services",
+
+  // ── Manufacturing / Industrial ──────────────────────────────────────────
+  "manufacturing-mes": "manufacturing_industrial",
+  "defense-systems": "manufacturing_industrial",
+  "industrial-automation": "manufacturing_industrial",
+  aerospace: "manufacturing_industrial",
+
+  // ── Energy / Logistics ──────────────────────────────────────────────────
+  "energy-utilities": "energy_logistics",
+  "logistics-supply-chain": "energy_logistics",
 
   // ── Telecom / Network ────────────────────────────────────────────────────
   cyberark: "telecom_network",
@@ -187,6 +228,7 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   asana: "commerce_retail",
   shopify: "commerce_retail",
   stripe: "commerce_retail",
+  "cpg-operations": "commerce_retail",
 
   // ── Other / Cross-cutting ────────────────────────────────────────────────
   ios: "other",

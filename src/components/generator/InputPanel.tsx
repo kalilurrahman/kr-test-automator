@@ -11,6 +11,8 @@ import { Sparkles, LayoutTemplate, Dice5, Zap, Boxes, FileCode2, RotateCcw } fro
 import { Link } from "react-router-dom";
 import { specializedExamples } from "@/data/specializedExamples";
 import { detectSpecialKind } from "@/lib/specialOutputValidation";
+import { INDUSTRY_CONTEXTS, type IndustryContextId } from "@/data/industryContexts";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 interface InputPanelProps {
   onGenerate: () => void;
@@ -20,7 +22,8 @@ interface InputPanelProps {
 const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
   const {
     platform, framework, language, setFramework, setLanguage,
-    testCount, setTestCount, targetScriptLines, setTargetScriptLines, businessCase, setBusinessCase, isGenerating,
+    testCount, setTestCount, targetScriptLines, setTargetScriptLines, industryContext, setIndustryContext,
+    businessCase, setBusinessCase, isGenerating,
   } = useGeneratorStore();
   const specialKind = detectSpecialKind(framework, language);
 
@@ -45,18 +48,43 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         Generate Test Script
       </h2>
 
-      {/* 1. Platform */}
+      {/* 1. Industry context */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ① Platform
+          ① Industry Context <span className="normal-case tracking-normal">(optional)</span>
+        </label>
+        <Select
+          value={industryContext ?? "none"}
+          onValueChange={(value) => setIndustryContext(value === "none" ? null : value as IndustryContextId)}
+          disabled={isGenerating}
+        >
+          <SelectTrigger aria-label="Industry context">
+            <SelectValue placeholder="Choose an industry context" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="none">General purpose</SelectItem>
+            {INDUSTRY_CONTEXTS.map((context) => (
+              <SelectItem key={context.id} value={context.id}>{context.label}</SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+        <p className="mt-1 text-[11px] text-muted-foreground">
+          Adds domain workflows and synthetic-data guardrails to the generated suite.
+        </p>
+      </div>
+
+      {/* 2. Platform */}
+      <div>
+        <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
+          ② Platform
         </label>
         <PlatformGrid />
       </div>
 
-      {/* 2. Framework */}
+      {/* 3. Framework */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ② Framework + Language
+          ③ Framework + Language
         </label>
         <FrameworkSelect />
 
@@ -117,18 +145,18 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         )}
       </div>
 
-      {/* 3. Test Scope */}
+      {/* 4. Test Scope */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ③ Test Scope
+          ④ Test Scope
         </label>
         <TestScopeSelect />
       </div>
 
-      {/* 4. Script length */}
+      {/* 5. Script length */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ④ Script Length
+          ⑤ Script Length
         </label>
         <div className="grid grid-cols-2 gap-2">
           <button
@@ -161,10 +189,10 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         )}
       </div>
 
-      {/* 5. Test Count */}
+      {/* 6. Test Count */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ⑤ Test Count
+          ⑥ Test Count
         </label>
         <Slider
           value={[testCount]}
@@ -179,10 +207,10 @@ const InputPanel = ({ onGenerate, onSurpriseMe }: InputPanelProps) => {
         </span>
       </div>
 
-      {/* 6. Business Case */}
+      {/* 7. Business Case */}
       <div>
         <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">
-          ⑥ Business Case
+          ⑦ Business Case
         </label>
         <Textarea
           value={businessCase}

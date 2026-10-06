@@ -1,0 +1,79 @@
+{
+  "product": "Healthcare Operations",
+  "key": "healthcare-operations",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "patient_access",
+      "label": "Patient Access and Registration",
+      "folder": "patient_access",
+      "prefix": "healthcare-operations_patient_access_suite",
+      "count": 200
+    },
+    {
+      "id": "scheduling_referrals",
+      "label": "Scheduling and Referrals",
+      "folder": "scheduling_referrals",
+      "prefix": "healthcare-operations_scheduling_referrals_suite",
+      "count": 200
+    },
+    {
+      "id": "ehr_workflows",
+      "label": "EHR Workflow Integration",
+      "folder": "ehr_workflows",
+      "prefix": "healthcare-operations_ehr_workflows_suite",
+      "count": 200
+    },
+    {
+      "id": "claims_revenue",
+      "label": "Claims and Revenue Cycle",
+      "folder": "claims_revenue",
+      "prefix": "healthcare-operations_claims_revenue_suite",
+      "count": 200
+    },
+    {
+      "id": "care_coordination",
+      "label": "Care Coordination and Discharge",
+      "folder": "care_coordination",
+      "prefix": "healthcare-operations_care_coordination_suite",
+      "count": 200
+    },
+    {
+      "id": "medication_workflows",
+      "label": "Medication Workflow Interfaces",
+      "folder": "medication_workflows",
+      "prefix": "healthcare-operations_medication_workflows_suite",
+      "count": 200
+    },
+    {
+      "id": "lab_imaging",
+      "label": "Laboratory and Imaging Interfaces",
+      "folder": "lab_imaging",
+      "prefix": "healthcare-operations_lab_imaging_suite",
+      "count": 200
+    },
+    {
+      "id": "identity_access",
+      "label": "Identity, Consent and Access",
+      "folder": "identity_access",
+      "prefix": "healthcare-operations_identity_access_suite",
+      "count": 200
+    },
+    {
+      "id": "public_health",
+      "label": "Population and Public Health",
+      "folder": "public_health",
+      "prefix": "healthcare-operations_public_health_suite",
+      "count": 200
+    },
+    {
+      "id": "operations_observability",
+      "label": "Operations and Resilience",
+      "folder": "operations_observability",
+      "prefix": "healthcare-operations_operations_observability_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "healthcare",
+  "safetyNote": "Use generated non-identifying patient, member, encounter, and claim fixtures in an isolated environment. Do not use protected health information or drive clinical decisions; outputs are workflow tests and do not assert HIPAA compliance or clinical safety."
+}

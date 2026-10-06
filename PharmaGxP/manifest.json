@@ -1,0 +1,79 @@
+{
+  "product": "Pharma GxP",
+  "key": "phamagxp",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "product_lifecycle",
+      "label": "Product and Change Control",
+      "folder": "product_lifecycle",
+      "prefix": "phamagxp_product_lifecycle_suite",
+      "count": 200
+    },
+    {
+      "id": "gmp_batch",
+      "label": "GMP Batch and Manufacturing",
+      "folder": "gmp_batch",
+      "prefix": "phamagxp_gmp_batch_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_deviations",
+      "label": "Quality and Deviations",
+      "folder": "quality_deviations",
+      "prefix": "phamagxp_quality_deviations_suite",
+      "count": 200
+    },
+    {
+      "id": "change_control",
+      "label": "Change Control and Approvals",
+      "folder": "change_control",
+      "prefix": "phamagxp_change_control_suite",
+      "count": 200
+    },
+    {
+      "id": "validation",
+      "label": "Validation Evidence and Traceability",
+      "folder": "validation",
+      "prefix": "phamagxp_validation_suite",
+      "count": 200
+    },
+    {
+      "id": "documents_training",
+      "label": "Documents and Training",
+      "folder": "documents_training",
+      "prefix": "phamagxp_documents_training_suite",
+      "count": 200
+    },
+    {
+      "id": "materials_traceability",
+      "label": "Materials and Genealogy",
+      "folder": "materials_traceability",
+      "prefix": "phamagxp_materials_traceability_suite",
+      "count": 200
+    },
+    {
+      "id": "lab_results",
+      "label": "Laboratory and Stability",
+      "folder": "lab_results",
+      "prefix": "phamagxp_lab_results_suite",
+      "count": 200
+    },
+    {
+      "id": "release_disposition",
+      "label": "Batch Release and Disposition",
+      "folder": "release_disposition",
+      "prefix": "phamagxp_release_disposition_suite",
+      "count": 200
+    },
+    {
+      "id": "safety_regulatory",
+      "label": "Safety and Regulatory Operations",
+      "folder": "safety_regulatory",
+      "prefix": "phamagxp_safety_regulatory_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "pharma-life-sciences",
+  "safetyNote": "Use synthetic, non-identifying records in an isolated validation tenant. These scenarios exercise workflow evidence only; they do not establish GxP compliance, system validation, product quality, or regulatory acceptability."
+}

@@ -1,0 +1,79 @@
+{
+  "product": "Aerospace and MRO",
+  "key": "aerospace",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "configuration_management",
+      "label": "Configuration Management",
+      "folder": "configuration_management",
+      "prefix": "aerospace_configuration_management_suite",
+      "count": 200
+    },
+    {
+      "id": "engineering_change",
+      "label": "Engineering Changes",
+      "folder": "engineering_change",
+      "prefix": "aerospace_engineering_change_suite",
+      "count": 200
+    },
+    {
+      "id": "mro_planning",
+      "label": "MRO Planning and Work Packages",
+      "folder": "mro_planning",
+      "prefix": "aerospace_mro_planning_suite",
+      "count": 200
+    },
+    {
+      "id": "airworthiness_records",
+      "label": "Airworthiness and Records",
+      "folder": "airworthiness_records",
+      "prefix": "aerospace_airworthiness_records_suite",
+      "count": 200
+    },
+    {
+      "id": "parts_supply",
+      "label": "Parts and Supply Chain",
+      "folder": "parts_supply",
+      "prefix": "aerospace_parts_supply_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_safety",
+      "label": "Quality and Safety Events",
+      "folder": "quality_safety",
+      "prefix": "aerospace_quality_safety_suite",
+      "count": 200
+    },
+    {
+      "id": "manufacturing_assembly",
+      "label": "Manufacturing and Assembly",
+      "folder": "manufacturing_assembly",
+      "prefix": "aerospace_manufacturing_assembly_suite",
+      "count": 200
+    },
+    {
+      "id": "flight_test_simulation",
+      "label": "Flight Test Data Simulation",
+      "folder": "flight_test_simulation",
+      "prefix": "aerospace_flight_test_simulation_suite",
+      "count": 200
+    },
+    {
+      "id": "fleet_reliability",
+      "label": "Fleet Reliability and Service Bulletins",
+      "folder": "fleet_reliability",
+      "prefix": "aerospace_fleet_reliability_suite",
+      "count": 200
+    },
+    {
+      "id": "security_traceability",
+      "label": "Access and Audit Traceability",
+      "folder": "security_traceability",
+      "prefix": "aerospace_security_traceability_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "aerospace",
+  "safetyNote": "Use unclassified synthetic assets, work cards, components, and offline simulation data only. No operational flight, mission, or controlled technical data is included; run the suite against isolated test systems and do not interpret it as airworthiness certification."
+}

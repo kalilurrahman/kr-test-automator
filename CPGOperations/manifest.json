@@ -1,0 +1,79 @@
+{
+  "product": "CPG and Consumer Goods",
+  "key": "cpg-operations",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "product_master",
+      "label": "Product and Packaging Master",
+      "folder": "product_master",
+      "prefix": "cpg-operations_product_master_suite",
+      "count": 200
+    },
+    {
+      "id": "demand_forecasting",
+      "label": "Demand Planning and Forecasts",
+      "folder": "demand_forecasting",
+      "prefix": "cpg-operations_demand_forecasting_suite",
+      "count": 200
+    },
+    {
+      "id": "trade_promotion",
+      "label": "Trade Promotion and Rebates",
+      "folder": "trade_promotion",
+      "prefix": "cpg-operations_trade_promotion_suite",
+      "count": 200
+    },
+    {
+      "id": "retail_execution",
+      "label": "Retail Execution",
+      "folder": "retail_execution",
+      "prefix": "cpg-operations_retail_execution_suite",
+      "count": 200
+    },
+    {
+      "id": "order_fulfillment",
+      "label": "Orders and Fulfillment",
+      "folder": "order_fulfillment",
+      "prefix": "cpg-operations_order_fulfillment_suite",
+      "count": 200
+    },
+    {
+      "id": "inventory_lots",
+      "label": "Inventory, Shelf Life and Lot Traceability",
+      "folder": "inventory_lots",
+      "prefix": "cpg-operations_inventory_lots_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_food_safety",
+      "label": "Quality and Food Safety",
+      "folder": "quality_food_safety",
+      "prefix": "cpg-operations_quality_food_safety_suite",
+      "count": 200
+    },
+    {
+      "id": "labeling_claims",
+      "label": "Labeling and Product Claims",
+      "folder": "labeling_claims",
+      "prefix": "cpg-operations_labeling_claims_suite",
+      "count": 200
+    },
+    {
+      "id": "supplier_sourcing",
+      "label": "Supplier Sourcing and Procurement",
+      "folder": "supplier_sourcing",
+      "prefix": "cpg-operations_supplier_sourcing_suite",
+      "count": 200
+    },
+    {
+      "id": "analytics_retail_data",
+      "label": "Retail Data and Commercial Analytics",
+      "folder": "analytics_retail_data",
+      "prefix": "cpg-operations_analytics_retail_data_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "cpg",
+  "safetyNote": "Use synthetic consumer, retailer, lot, store, and supplier records only. Do not use real consumer personal data, real food-safety events, or production inventory; workflow tests do not establish regulatory or product-safety compliance."
+}

@@ -1,0 +1,79 @@
+{
+  "product": "MedTech Device Lifecycle",
+  "key": "medtech",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "design_controls",
+      "label": "Design Controls",
+      "folder": "design_controls",
+      "prefix": "medtech_design_controls_suite",
+      "count": 200
+    },
+    {
+      "id": "risk_management",
+      "label": "Risk and Usability",
+      "folder": "risk_management",
+      "prefix": "medtech_risk_management_suite",
+      "count": 200
+    },
+    {
+      "id": "device_configuration",
+      "label": "Device Configuration and BOM",
+      "folder": "device_configuration",
+      "prefix": "medtech_device_configuration_suite",
+      "count": 200
+    },
+    {
+      "id": "verification_validation",
+      "label": "Verification and Validation Evidence",
+      "folder": "verification_validation",
+      "prefix": "medtech_verification_validation_suite",
+      "count": 200
+    },
+    {
+      "id": "complaints",
+      "label": "Complaints and Service",
+      "folder": "complaints",
+      "prefix": "medtech_complaints_suite",
+      "count": 200
+    },
+    {
+      "id": "field_actions",
+      "label": "Field Actions and Recall Readiness",
+      "folder": "field_actions",
+      "prefix": "medtech_field_actions_suite",
+      "count": 200
+    },
+    {
+      "id": "supplier_quality",
+      "label": "Supplier Quality",
+      "folder": "supplier_quality",
+      "prefix": "medtech_supplier_quality_suite",
+      "count": 200
+    },
+    {
+      "id": "manufacturing_dhr",
+      "label": "Manufacturing and Device History",
+      "folder": "manufacturing_dhr",
+      "prefix": "medtech_manufacturing_dhr_suite",
+      "count": 200
+    },
+    {
+      "id": "service_calibration",
+      "label": "Service and Calibration",
+      "folder": "service_calibration",
+      "prefix": "medtech_service_calibration_suite",
+      "count": 200
+    },
+    {
+      "id": "access_audit",
+      "label": "Access, Records and Audit",
+      "folder": "access_audit",
+      "prefix": "medtech_access_audit_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "medical-devices",
+  "safetyNote": "Use synthetic device, complaint, and serial records in an isolated test system. Do not connect tests to live devices, clinical decisions, real complaint data, or production quality records; generated scenarios do not certify a medical device."
+}

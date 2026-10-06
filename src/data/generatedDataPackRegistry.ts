@@ -3606,6 +3606,1482 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
       }
     ],
     "automationSuiteUrl": "/market-automation-suites/stripe-playwright-e2e.zip"
+  },
+  {
+    "id": "phamagxp",
+    "label": "Pharma GxP",
+    "shortLabel": "Pharma GxP",
+    "description": "GxP product lifecycle, batch genealogy, deviations, validation evidence, laboratory, release, and safety workflows.",
+    "publicBase": "/PharmaGxP",
+    "idPrefix": "PHGX",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "product_lifecycle",
+        "label": "Product and Change Control",
+        "folder": "product_lifecycle",
+        "prefix": "phamagxp_product_lifecycle_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "gmp_batch",
+        "label": "GMP Batch and Manufacturing",
+        "folder": "gmp_batch",
+        "prefix": "phamagxp_gmp_batch_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_deviations",
+        "label": "Quality and Deviations",
+        "folder": "quality_deviations",
+        "prefix": "phamagxp_quality_deviations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "change_control",
+        "label": "Change Control and Approvals",
+        "folder": "change_control",
+        "prefix": "phamagxp_change_control_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "validation",
+        "label": "Validation Evidence and Traceability",
+        "folder": "validation",
+        "prefix": "phamagxp_validation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "documents_training",
+        "label": "Documents and Training",
+        "folder": "documents_training",
+        "prefix": "phamagxp_documents_training_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "materials_traceability",
+        "label": "Materials and Genealogy",
+        "folder": "materials_traceability",
+        "prefix": "phamagxp_materials_traceability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "lab_results",
+        "label": "Laboratory and Stability",
+        "folder": "lab_results",
+        "prefix": "phamagxp_lab_results_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "release_disposition",
+        "label": "Batch Release and Disposition",
+        "folder": "release_disposition",
+        "prefix": "phamagxp_release_disposition_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "safety_regulatory",
+        "label": "Safety and Regulatory Operations",
+        "folder": "safety_regulatory",
+        "prefix": "phamagxp_safety_regulatory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "pharma-life-sciences",
+    "automationSuiteUrl": "/market-automation-suites/phamagxp-playwright-e2e.zip"
+  },
+  {
+    "id": "medtech",
+    "label": "MedTech Device Lifecycle",
+    "shortLabel": "MedTech Device Lifecycle",
+    "description": "Device design controls, risk traceability, verification, complaints, field actions, manufacturing history, and supplier quality.",
+    "publicBase": "/MedTech",
+    "idPrefix": "MDTX",
+    "accent": "rose",
+    "modules": [
+      {
+        "id": "design_controls",
+        "label": "Design Controls",
+        "folder": "design_controls",
+        "prefix": "medtech_design_controls_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "risk_management",
+        "label": "Risk and Usability",
+        "folder": "risk_management",
+        "prefix": "medtech_risk_management_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "device_configuration",
+        "label": "Device Configuration and BOM",
+        "folder": "device_configuration",
+        "prefix": "medtech_device_configuration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "verification_validation",
+        "label": "Verification and Validation Evidence",
+        "folder": "verification_validation",
+        "prefix": "medtech_verification_validation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "complaints",
+        "label": "Complaints and Service",
+        "folder": "complaints",
+        "prefix": "medtech_complaints_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "field_actions",
+        "label": "Field Actions and Recall Readiness",
+        "folder": "field_actions",
+        "prefix": "medtech_field_actions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "supplier_quality",
+        "label": "Supplier Quality",
+        "folder": "supplier_quality",
+        "prefix": "medtech_supplier_quality_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "manufacturing_dhr",
+        "label": "Manufacturing and Device History",
+        "folder": "manufacturing_dhr",
+        "prefix": "medtech_manufacturing_dhr_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "service_calibration",
+        "label": "Service and Calibration",
+        "folder": "service_calibration",
+        "prefix": "medtech_service_calibration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "access_audit",
+        "label": "Access, Records and Audit",
+        "folder": "access_audit",
+        "prefix": "medtech_access_audit_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "medical-devices",
+    "automationSuiteUrl": "/market-automation-suites/medtech-playwright-e2e.zip"
+  },
+  {
+    "id": "healthcare-operations",
+    "label": "Healthcare Operations",
+    "shortLabel": "Healthcare Operations",
+    "description": "Synthetic patient access, EHR interfaces, scheduling, claims, care coordination, laboratory exchange, consent, and resilience.",
+    "publicBase": "/HealthcareOps",
+    "idPrefix": "HCOP",
+    "accent": "rose",
+    "modules": [
+      {
+        "id": "patient_access",
+        "label": "Patient Access and Registration",
+        "folder": "patient_access",
+        "prefix": "healthcare-operations_patient_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "scheduling_referrals",
+        "label": "Scheduling and Referrals",
+        "folder": "scheduling_referrals",
+        "prefix": "healthcare-operations_scheduling_referrals_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "ehr_workflows",
+        "label": "EHR Workflow Integration",
+        "folder": "ehr_workflows",
+        "prefix": "healthcare-operations_ehr_workflows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "claims_revenue",
+        "label": "Claims and Revenue Cycle",
+        "folder": "claims_revenue",
+        "prefix": "healthcare-operations_claims_revenue_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "care_coordination",
+        "label": "Care Coordination and Discharge",
+        "folder": "care_coordination",
+        "prefix": "healthcare-operations_care_coordination_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "medication_workflows",
+        "label": "Medication Workflow Interfaces",
+        "folder": "medication_workflows",
+        "prefix": "healthcare-operations_medication_workflows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "lab_imaging",
+        "label": "Laboratory and Imaging Interfaces",
+        "folder": "lab_imaging",
+        "prefix": "healthcare-operations_lab_imaging_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "identity_access",
+        "label": "Identity, Consent and Access",
+        "folder": "identity_access",
+        "prefix": "healthcare-operations_identity_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "public_health",
+        "label": "Population and Public Health",
+        "folder": "public_health",
+        "prefix": "healthcare-operations_public_health_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "operations_observability",
+        "label": "Operations and Resilience",
+        "folder": "operations_observability",
+        "prefix": "healthcare-operations_operations_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "healthcare",
+    "automationSuiteUrl": "/market-automation-suites/healthcare-operations-playwright-e2e.zip"
+  },
+  {
+    "id": "manufacturing-mes",
+    "label": "Manufacturing MES",
+    "shortLabel": "Manufacturing MES",
+    "description": "Production dispatch, shop-floor execution, inspection, OEE, material traceability, maintenance, and ERP/MES integration.",
+    "publicBase": "/ManufacturingMES",
+    "idPrefix": "MFGX",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "production_orders",
+        "label": "Production Orders and Dispatch",
+        "folder": "production_orders",
+        "prefix": "manufacturing-mes_production_orders_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "routing_bom",
+        "label": "Routing and Bill of Materials",
+        "folder": "routing_bom",
+        "prefix": "manufacturing-mes_routing_bom_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "shop_floor",
+        "label": "Shop Floor Execution",
+        "folder": "shop_floor",
+        "prefix": "manufacturing-mes_shop_floor_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_inspection",
+        "label": "Quality and Inspection",
+        "folder": "quality_inspection",
+        "prefix": "manufacturing-mes_quality_inspection_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "oee_equipment",
+        "label": "OEE and Equipment",
+        "folder": "oee_equipment",
+        "prefix": "manufacturing-mes_oee_equipment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "traceability_genealogy",
+        "label": "Serialization and Genealogy",
+        "folder": "traceability_genealogy",
+        "prefix": "manufacturing-mes_traceability_genealogy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "warehouse_materials",
+        "label": "Warehouse and Material Flow",
+        "folder": "warehouse_materials",
+        "prefix": "manufacturing-mes_warehouse_materials_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "maintenance",
+        "label": "Maintenance and Work Orders",
+        "folder": "maintenance",
+        "prefix": "manufacturing-mes_maintenance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "planning_scheduling",
+        "label": "Planning and Scheduling",
+        "folder": "planning_scheduling",
+        "prefix": "manufacturing-mes_planning_scheduling_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "integration_analytics",
+        "label": "Integration and Operations Analytics",
+        "folder": "integration_analytics",
+        "prefix": "manufacturing-mes_integration_analytics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "manufacturing",
+    "automationSuiteUrl": "/market-automation-suites/manufacturing-mes-playwright-e2e.zip"
+  },
+  {
+    "id": "defense-systems",
+    "label": "Defense Program Systems",
+    "shortLabel": "Defense Program Systems",
+    "description": "Unclassified synthetic configuration, requirements traceability, supplier provenance, maintenance readiness, and audit workflows.",
+    "publicBase": "/DefenseSystems",
+    "idPrefix": "DFNS",
+    "accent": "indigo",
+    "modules": [
+      {
+        "id": "configuration_baselines",
+        "label": "Configuration Baselines",
+        "folder": "configuration_baselines",
+        "prefix": "defense-systems_configuration_baselines_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "requirements_traceability",
+        "label": "Requirements and Traceability",
+        "folder": "requirements_traceability",
+        "prefix": "defense-systems_requirements_traceability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "supplier_provenance",
+        "label": "Supplier and Provenance",
+        "folder": "supplier_provenance",
+        "prefix": "defense-systems_supplier_provenance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "program_schedule",
+        "label": "Program Schedule and Milestones",
+        "folder": "program_schedule",
+        "prefix": "defense-systems_program_schedule_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "technical_data",
+        "label": "Technical Data and Records",
+        "folder": "technical_data",
+        "prefix": "defense-systems_technical_data_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_nonconformance",
+        "label": "Quality and Nonconformance",
+        "folder": "quality_nonconformance",
+        "prefix": "defense-systems_quality_nonconformance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "maintenance_readiness",
+        "label": "Maintenance Readiness",
+        "folder": "maintenance_readiness",
+        "prefix": "defense-systems_maintenance_readiness_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "access_control",
+        "label": "Access and Information Handling",
+        "folder": "access_control",
+        "prefix": "defense-systems_access_control_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "audit_evidence",
+        "label": "Audit and Evidence",
+        "folder": "audit_evidence",
+        "prefix": "defense-systems_audit_evidence_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "continuity_recovery",
+        "label": "Continuity and Recovery",
+        "folder": "continuity_recovery",
+        "prefix": "defense-systems_continuity_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "defense",
+    "automationSuiteUrl": "/market-automation-suites/defense-systems-playwright-e2e.zip"
+  },
+  {
+    "id": "industrial-automation",
+    "label": "Industrial Automation and OT",
+    "shortLabel": "Industrial Automation and OT",
+    "description": "Digital-twin asset inventory, virtual PLC/HMI, alarms, historian events, simulated interlocks, and recovery workflows.",
+    "publicBase": "/IndustrialAutomation",
+    "idPrefix": "IOTA",
+    "accent": "teal",
+    "modules": [
+      {
+        "id": "asset_inventory",
+        "label": "OT Asset Inventory",
+        "folder": "asset_inventory",
+        "prefix": "industrial-automation_asset_inventory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "network_zones",
+        "label": "Zones and Conduits",
+        "folder": "network_zones",
+        "prefix": "industrial-automation_network_zones_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "plc_hmi_simulation",
+        "label": "PLC and HMI Digital Twin",
+        "folder": "plc_hmi_simulation",
+        "prefix": "industrial-automation_plc_hmi_simulation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "alarms_events",
+        "label": "Alarms and Event Handling",
+        "folder": "alarms_events",
+        "prefix": "industrial-automation_alarms_events_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "historian_telemetry",
+        "label": "Historian and Telemetry",
+        "folder": "historian_telemetry",
+        "prefix": "industrial-automation_historian_telemetry_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "change_deployment",
+        "label": "Logic Change and Deployment",
+        "folder": "change_deployment",
+        "prefix": "industrial-automation_change_deployment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "safety_interlocks",
+        "label": "Safety Interlocks and Fail-Safe Tests",
+        "folder": "safety_interlocks",
+        "prefix": "industrial-automation_safety_interlocks_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "identity_remote_access",
+        "label": "Identity and Remote Access",
+        "folder": "identity_remote_access",
+        "prefix": "industrial-automation_identity_remote_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "backup_recovery",
+        "label": "Backup and Recovery",
+        "folder": "backup_recovery",
+        "prefix": "industrial-automation_backup_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_monitoring",
+        "label": "Security Monitoring and Response",
+        "folder": "security_monitoring",
+        "prefix": "industrial-automation_security_monitoring_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "industrial-automation",
+    "automationSuiteUrl": "/market-automation-suites/industrial-automation-playwright-e2e.zip"
+  },
+  {
+    "id": "cpg-operations",
+    "label": "CPG and Consumer Goods",
+    "shortLabel": "CPG and Consumer Goods",
+    "description": "Product and packaging data, demand, trade promotions, retail execution, lot traceability, quality, and fulfillment.",
+    "publicBase": "/CPGOperations",
+    "idPrefix": "CPGX",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "product_master",
+        "label": "Product and Packaging Master",
+        "folder": "product_master",
+        "prefix": "cpg-operations_product_master_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "demand_forecasting",
+        "label": "Demand Planning and Forecasts",
+        "folder": "demand_forecasting",
+        "prefix": "cpg-operations_demand_forecasting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "trade_promotion",
+        "label": "Trade Promotion and Rebates",
+        "folder": "trade_promotion",
+        "prefix": "cpg-operations_trade_promotion_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "retail_execution",
+        "label": "Retail Execution",
+        "folder": "retail_execution",
+        "prefix": "cpg-operations_retail_execution_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "order_fulfillment",
+        "label": "Orders and Fulfillment",
+        "folder": "order_fulfillment",
+        "prefix": "cpg-operations_order_fulfillment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "inventory_lots",
+        "label": "Inventory, Shelf Life and Lot Traceability",
+        "folder": "inventory_lots",
+        "prefix": "cpg-operations_inventory_lots_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_food_safety",
+        "label": "Quality and Food Safety",
+        "folder": "quality_food_safety",
+        "prefix": "cpg-operations_quality_food_safety_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "labeling_claims",
+        "label": "Labeling and Product Claims",
+        "folder": "labeling_claims",
+        "prefix": "cpg-operations_labeling_claims_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "supplier_sourcing",
+        "label": "Supplier Sourcing and Procurement",
+        "folder": "supplier_sourcing",
+        "prefix": "cpg-operations_supplier_sourcing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "analytics_retail_data",
+        "label": "Retail Data and Commercial Analytics",
+        "folder": "analytics_retail_data",
+        "prefix": "cpg-operations_analytics_retail_data_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "cpg",
+    "automationSuiteUrl": "/market-automation-suites/cpg-operations-playwright-e2e.zip"
+  },
+  {
+    "id": "energy-utilities",
+    "label": "Energy and Utilities Operations",
+    "shortLabel": "Energy and Utilities Operations",
+    "description": "Synthetic metering, outage management, field work, asset maintenance, billing, distributed resources, and settlement.",
+    "publicBase": "/EnergyUtilities",
+    "idPrefix": "ENU",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "customer_metering",
+        "label": "Customer and Metering",
+        "folder": "customer_metering",
+        "prefix": "energy-utilities_customer_metering_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "grid_operations",
+        "label": "Grid Operations and Events",
+        "folder": "grid_operations",
+        "prefix": "energy-utilities_grid_operations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "outage_management",
+        "label": "Outage Management",
+        "folder": "outage_management",
+        "prefix": "energy-utilities_outage_management_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "workforce_field_service",
+        "label": "Workforce and Field Service",
+        "folder": "workforce_field_service",
+        "prefix": "energy-utilities_workforce_field_service_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "asset_maintenance",
+        "label": "Asset Maintenance and Reliability",
+        "folder": "asset_maintenance",
+        "prefix": "energy-utilities_asset_maintenance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "billing_settlement",
+        "label": "Billing and Settlement",
+        "folder": "billing_settlement",
+        "prefix": "energy-utilities_billing_settlement_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "distributed_energy",
+        "label": "Distributed Energy Resources",
+        "folder": "distributed_energy",
+        "prefix": "energy-utilities_distributed_energy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "market_transactions",
+        "label": "Market Transactions and Settlement",
+        "folder": "market_transactions",
+        "prefix": "energy-utilities_market_transactions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "regulatory_reporting",
+        "label": "Regulatory and Sustainability Reporting",
+        "folder": "regulatory_reporting",
+        "prefix": "energy-utilities_regulatory_reporting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "resilience_cyber",
+        "label": "Resilience and Operational Security",
+        "folder": "resilience_cyber",
+        "prefix": "energy-utilities_resilience_cyber_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "energy-utilities",
+    "automationSuiteUrl": "/market-automation-suites/energy-utilities-playwright-e2e.zip"
+  },
+  {
+    "id": "insurance-suite",
+    "label": "Insurance Operations",
+    "shortLabel": "Insurance Operations",
+    "description": "Policy administration, underwriting, claims, adjudication, payments, broker channels, reinsurance, and mock screening.",
+    "publicBase": "/InsuranceSuite",
+    "idPrefix": "INSX",
+    "accent": "cyan",
+    "modules": [
+      {
+        "id": "policy_admin",
+        "label": "Policy Administration",
+        "folder": "policy_admin",
+        "prefix": "insurance-suite_policy_admin_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "underwriting",
+        "label": "Underwriting and Risk",
+        "folder": "underwriting",
+        "prefix": "insurance-suite_underwriting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "claims_intake",
+        "label": "Claims Intake and FNOL",
+        "folder": "claims_intake",
+        "prefix": "insurance-suite_claims_intake_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "adjudication",
+        "label": "Claims Adjudication",
+        "folder": "adjudication",
+        "prefix": "insurance-suite_adjudication_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "payments_recovery",
+        "label": "Payments and Subrogation",
+        "folder": "payments_recovery",
+        "prefix": "insurance-suite_payments_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "billing_collections",
+        "label": "Premium Billing and Collections",
+        "folder": "billing_collections",
+        "prefix": "insurance-suite_billing_collections_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "customer_broker",
+        "label": "Customer and Broker Channels",
+        "folder": "customer_broker",
+        "prefix": "insurance-suite_customer_broker_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "reinsurance",
+        "label": "Reinsurance and Exposure",
+        "folder": "reinsurance",
+        "prefix": "insurance-suite_reinsurance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "fraud_compliance",
+        "label": "Fraud, KYC and Compliance",
+        "folder": "fraud_compliance",
+        "prefix": "insurance-suite_fraud_compliance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "analytics_access",
+        "label": "Analytics, Access and Audit",
+        "folder": "analytics_access",
+        "prefix": "insurance-suite_analytics_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "insurance",
+    "automationSuiteUrl": "/market-automation-suites/insurance-suite-playwright-e2e.zip"
+  },
+  {
+    "id": "financial-services",
+    "label": "Financial Services Core",
+    "shortLabel": "Financial Services Core",
+    "description": "Synthetic account lifecycle, payments, ledger, lending, treasury, risk limits, AML/KYC mocks, and reporting.",
+    "publicBase": "/FinancialServices",
+    "idPrefix": "FINS",
+    "accent": "indigo",
+    "modules": [
+      {
+        "id": "customer_accounts",
+        "label": "Customer and Account Lifecycle",
+        "folder": "customer_accounts",
+        "prefix": "financial-services_customer_accounts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "payments_transfers",
+        "label": "Payments and Transfers",
+        "folder": "payments_transfers",
+        "prefix": "financial-services_payments_transfers_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "ledger_reconciliation",
+        "label": "Ledger and Reconciliation",
+        "folder": "ledger_reconciliation",
+        "prefix": "financial-services_ledger_reconciliation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "lending_credit",
+        "label": "Lending and Credit",
+        "folder": "lending_credit",
+        "prefix": "financial-services_lending_credit_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "treasury_liquidity",
+        "label": "Treasury and Liquidity",
+        "folder": "treasury_liquidity",
+        "prefix": "financial-services_treasury_liquidity_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "risk_limits",
+        "label": "Risk and Limits",
+        "folder": "risk_limits",
+        "prefix": "financial-services_risk_limits_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "aml_kyc",
+        "label": "AML and KYC Case Workflows",
+        "folder": "aml_kyc",
+        "prefix": "financial-services_aml_kyc_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "digital_channels",
+        "label": "Digital Channels and Authentication",
+        "folder": "digital_channels",
+        "prefix": "financial-services_digital_channels_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "regulatory_reporting",
+        "label": "Regulatory Reporting and Controls",
+        "folder": "regulatory_reporting",
+        "prefix": "financial-services_regulatory_reporting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_resilience",
+        "label": "Security, Resilience and Audit",
+        "folder": "security_resilience",
+        "prefix": "financial-services_security_resilience_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "financial-services",
+    "automationSuiteUrl": "/market-automation-suites/financial-services-playwright-e2e.zip"
+  },
+  {
+    "id": "aerospace",
+    "label": "Aerospace and MRO",
+    "shortLabel": "Aerospace and MRO",
+    "description": "Configuration baselines, engineering changes, MRO planning, controlled records, parts traceability, and offline simulation.",
+    "publicBase": "/Aerospace",
+    "idPrefix": "AERO",
+    "accent": "blue",
+    "modules": [
+      {
+        "id": "configuration_management",
+        "label": "Configuration Management",
+        "folder": "configuration_management",
+        "prefix": "aerospace_configuration_management_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "engineering_change",
+        "label": "Engineering Changes",
+        "folder": "engineering_change",
+        "prefix": "aerospace_engineering_change_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "mro_planning",
+        "label": "MRO Planning and Work Packages",
+        "folder": "mro_planning",
+        "prefix": "aerospace_mro_planning_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "airworthiness_records",
+        "label": "Airworthiness and Records",
+        "folder": "airworthiness_records",
+        "prefix": "aerospace_airworthiness_records_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "parts_supply",
+        "label": "Parts and Supply Chain",
+        "folder": "parts_supply",
+        "prefix": "aerospace_parts_supply_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_safety",
+        "label": "Quality and Safety Events",
+        "folder": "quality_safety",
+        "prefix": "aerospace_quality_safety_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "manufacturing_assembly",
+        "label": "Manufacturing and Assembly",
+        "folder": "manufacturing_assembly",
+        "prefix": "aerospace_manufacturing_assembly_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "flight_test_simulation",
+        "label": "Flight Test Data Simulation",
+        "folder": "flight_test_simulation",
+        "prefix": "aerospace_flight_test_simulation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "fleet_reliability",
+        "label": "Fleet Reliability and Service Bulletins",
+        "folder": "fleet_reliability",
+        "prefix": "aerospace_fleet_reliability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_traceability",
+        "label": "Access and Audit Traceability",
+        "folder": "security_traceability",
+        "prefix": "aerospace_security_traceability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "aerospace",
+    "automationSuiteUrl": "/market-automation-suites/aerospace-playwright-e2e.zip"
+  },
+  {
+    "id": "logistics-supply-chain",
+    "label": "Logistics and Supply Chain",
+    "shortLabel": "Logistics and Supply Chain",
+    "description": "Transport planning, warehouse execution, carrier EDI, inventory visibility, tracking, returns, and supply planning.",
+    "publicBase": "/LogisticsSupplyChain",
+    "idPrefix": "LSCX",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "orders_transport",
+        "label": "Transport Orders and Planning",
+        "folder": "orders_transport",
+        "prefix": "logistics-supply-chain_orders_transport_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "warehouse_execution",
+        "label": "Warehouse Execution",
+        "folder": "warehouse_execution",
+        "prefix": "logistics-supply-chain_warehouse_execution_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "carrier_integration",
+        "label": "Carrier and EDI Integration",
+        "folder": "carrier_integration",
+        "prefix": "logistics-supply-chain_carrier_integration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "inventory_visibility",
+        "label": "Inventory Visibility",
+        "folder": "inventory_visibility",
+        "prefix": "logistics-supply-chain_inventory_visibility_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "shipment_tracking",
+        "label": "Shipment Tracking and Exceptions",
+        "folder": "shipment_tracking",
+        "prefix": "logistics-supply-chain_shipment_tracking_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "customs_trade",
+        "label": "Customs and Trade Documents",
+        "folder": "customs_trade",
+        "prefix": "logistics-supply-chain_customs_trade_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "returns_reverse",
+        "label": "Returns and Reverse Logistics",
+        "folder": "returns_reverse",
+        "prefix": "logistics-supply-chain_returns_reverse_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "supplier_collaboration",
+        "label": "Supplier Collaboration",
+        "folder": "supplier_collaboration",
+        "prefix": "logistics-supply-chain_supplier_collaboration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "demand_sop",
+        "label": "Demand and Supply Planning",
+        "folder": "demand_sop",
+        "prefix": "logistics-supply-chain_demand_sop_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "resilience_analytics",
+        "label": "Resilience and Network Analytics",
+        "folder": "resilience_analytics",
+        "prefix": "logistics-supply-chain_resilience_analytics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "logistics-supply-chain",
+    "automationSuiteUrl": "/market-automation-suites/logistics-supply-chain-playwright-e2e.zip"
   }
 ];
 
@@ -4276,5 +5752,281 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
     ],
     "idPrefix": "STR",
     "accent": "indigo"
+  },
+  {
+    "key": "phamagxp",
+    "label": "Pharma GxP",
+    "shortLabel": "Pharma GxP",
+    "description": "GxP product lifecycle, batch genealogy, deviations, validation evidence, laboratory, release, and safety workflows.",
+    "route": "/p/phamagxp",
+    "kind": "spa",
+    "modules": [
+      "Product and Change Control",
+      "GMP Batch and Manufacturing",
+      "Quality and Deviations",
+      "Change Control and Approvals",
+      "Validation Evidence and Traceability",
+      "Documents and Training",
+      "Materials and Genealogy",
+      "Laboratory and Stability",
+      "Batch Release and Disposition",
+      "Safety and Regulatory Operations"
+    ],
+    "idPrefix": "PHGX",
+    "accent": "violet",
+    "industryDomain": "pharma-life-sciences"
+  },
+  {
+    "key": "medtech",
+    "label": "MedTech Device Lifecycle",
+    "shortLabel": "MedTech Device Lifecycle",
+    "description": "Device design controls, risk traceability, verification, complaints, field actions, manufacturing history, and supplier quality.",
+    "route": "/p/medtech",
+    "kind": "spa",
+    "modules": [
+      "Design Controls",
+      "Risk and Usability",
+      "Device Configuration and BOM",
+      "Verification and Validation Evidence",
+      "Complaints and Service",
+      "Field Actions and Recall Readiness",
+      "Supplier Quality",
+      "Manufacturing and Device History",
+      "Service and Calibration",
+      "Access, Records and Audit"
+    ],
+    "idPrefix": "MDTX",
+    "accent": "rose",
+    "industryDomain": "medical-devices"
+  },
+  {
+    "key": "healthcare-operations",
+    "label": "Healthcare Operations",
+    "shortLabel": "Healthcare Operations",
+    "description": "Synthetic patient access, EHR interfaces, scheduling, claims, care coordination, laboratory exchange, consent, and resilience.",
+    "route": "/p/healthcare-operations",
+    "kind": "spa",
+    "modules": [
+      "Patient Access and Registration",
+      "Scheduling and Referrals",
+      "EHR Workflow Integration",
+      "Claims and Revenue Cycle",
+      "Care Coordination and Discharge",
+      "Medication Workflow Interfaces",
+      "Laboratory and Imaging Interfaces",
+      "Identity, Consent and Access",
+      "Population and Public Health",
+      "Operations and Resilience"
+    ],
+    "idPrefix": "HCOP",
+    "accent": "rose",
+    "industryDomain": "healthcare"
+  },
+  {
+    "key": "manufacturing-mes",
+    "label": "Manufacturing MES",
+    "shortLabel": "Manufacturing MES",
+    "description": "Production dispatch, shop-floor execution, inspection, OEE, material traceability, maintenance, and ERP/MES integration.",
+    "route": "/p/manufacturing-mes",
+    "kind": "spa",
+    "modules": [
+      "Production Orders and Dispatch",
+      "Routing and Bill of Materials",
+      "Shop Floor Execution",
+      "Quality and Inspection",
+      "OEE and Equipment",
+      "Serialization and Genealogy",
+      "Warehouse and Material Flow",
+      "Maintenance and Work Orders",
+      "Planning and Scheduling",
+      "Integration and Operations Analytics"
+    ],
+    "idPrefix": "MFGX",
+    "accent": "amber",
+    "industryDomain": "manufacturing"
+  },
+  {
+    "key": "defense-systems",
+    "label": "Defense Program Systems",
+    "shortLabel": "Defense Program Systems",
+    "description": "Unclassified synthetic configuration, requirements traceability, supplier provenance, maintenance readiness, and audit workflows.",
+    "route": "/p/defense-systems",
+    "kind": "spa",
+    "modules": [
+      "Configuration Baselines",
+      "Requirements and Traceability",
+      "Supplier and Provenance",
+      "Program Schedule and Milestones",
+      "Technical Data and Records",
+      "Quality and Nonconformance",
+      "Maintenance Readiness",
+      "Access and Information Handling",
+      "Audit and Evidence",
+      "Continuity and Recovery"
+    ],
+    "idPrefix": "DFNS",
+    "accent": "indigo",
+    "industryDomain": "defense"
+  },
+  {
+    "key": "industrial-automation",
+    "label": "Industrial Automation and OT",
+    "shortLabel": "Industrial Automation and OT",
+    "description": "Digital-twin asset inventory, virtual PLC/HMI, alarms, historian events, simulated interlocks, and recovery workflows.",
+    "route": "/p/industrial-automation",
+    "kind": "spa",
+    "modules": [
+      "OT Asset Inventory",
+      "Zones and Conduits",
+      "PLC and HMI Digital Twin",
+      "Alarms and Event Handling",
+      "Historian and Telemetry",
+      "Logic Change and Deployment",
+      "Safety Interlocks and Fail-Safe Tests",
+      "Identity and Remote Access",
+      "Backup and Recovery",
+      "Security Monitoring and Response"
+    ],
+    "idPrefix": "IOTA",
+    "accent": "teal",
+    "industryDomain": "industrial-automation"
+  },
+  {
+    "key": "cpg-operations",
+    "label": "CPG and Consumer Goods",
+    "shortLabel": "CPG and Consumer Goods",
+    "description": "Product and packaging data, demand, trade promotions, retail execution, lot traceability, quality, and fulfillment.",
+    "route": "/p/cpg-operations",
+    "kind": "spa",
+    "modules": [
+      "Product and Packaging Master",
+      "Demand Planning and Forecasts",
+      "Trade Promotion and Rebates",
+      "Retail Execution",
+      "Orders and Fulfillment",
+      "Inventory, Shelf Life and Lot Traceability",
+      "Quality and Food Safety",
+      "Labeling and Product Claims",
+      "Supplier Sourcing and Procurement",
+      "Retail Data and Commercial Analytics"
+    ],
+    "idPrefix": "CPGX",
+    "accent": "amber",
+    "industryDomain": "cpg"
+  },
+  {
+    "key": "energy-utilities",
+    "label": "Energy and Utilities Operations",
+    "shortLabel": "Energy and Utilities Operations",
+    "description": "Synthetic metering, outage management, field work, asset maintenance, billing, distributed resources, and settlement.",
+    "route": "/p/energy-utilities",
+    "kind": "spa",
+    "modules": [
+      "Customer and Metering",
+      "Grid Operations and Events",
+      "Outage Management",
+      "Workforce and Field Service",
+      "Asset Maintenance and Reliability",
+      "Billing and Settlement",
+      "Distributed Energy Resources",
+      "Market Transactions and Settlement",
+      "Regulatory and Sustainability Reporting",
+      "Resilience and Operational Security"
+    ],
+    "idPrefix": "ENU",
+    "accent": "amber",
+    "industryDomain": "energy-utilities"
+  },
+  {
+    "key": "insurance-suite",
+    "label": "Insurance Operations",
+    "shortLabel": "Insurance Operations",
+    "description": "Policy administration, underwriting, claims, adjudication, payments, broker channels, reinsurance, and mock screening.",
+    "route": "/p/insurance-suite",
+    "kind": "spa",
+    "modules": [
+      "Policy Administration",
+      "Underwriting and Risk",
+      "Claims Intake and FNOL",
+      "Claims Adjudication",
+      "Payments and Subrogation",
+      "Premium Billing and Collections",
+      "Customer and Broker Channels",
+      "Reinsurance and Exposure",
+      "Fraud, KYC and Compliance",
+      "Analytics, Access and Audit"
+    ],
+    "idPrefix": "INSX",
+    "accent": "cyan",
+    "industryDomain": "insurance"
+  },
+  {
+    "key": "financial-services",
+    "label": "Financial Services Core",
+    "shortLabel": "Financial Services Core",
+    "description": "Synthetic account lifecycle, payments, ledger, lending, treasury, risk limits, AML/KYC mocks, and reporting.",
+    "route": "/p/financial-services",
+    "kind": "spa",
+    "modules": [
+      "Customer and Account Lifecycle",
+      "Payments and Transfers",
+      "Ledger and Reconciliation",
+      "Lending and Credit",
+      "Treasury and Liquidity",
+      "Risk and Limits",
+      "AML and KYC Case Workflows",
+      "Digital Channels and Authentication",
+      "Regulatory Reporting and Controls",
+      "Security, Resilience and Audit"
+    ],
+    "idPrefix": "FINS",
+    "accent": "indigo",
+    "industryDomain": "financial-services"
+  },
+  {
+    "key": "aerospace",
+    "label": "Aerospace and MRO",
+    "shortLabel": "Aerospace and MRO",
+    "description": "Configuration baselines, engineering changes, MRO planning, controlled records, parts traceability, and offline simulation.",
+    "route": "/p/aerospace",
+    "kind": "spa",
+    "modules": [
+      "Configuration Management",
+      "Engineering Changes",
+      "MRO Planning and Work Packages",
+      "Airworthiness and Records",
+      "Parts and Supply Chain",
+      "Quality and Safety Events",
+      "Manufacturing and Assembly",
+      "Flight Test Data Simulation",
+      "Fleet Reliability and Service Bulletins",
+      "Access and Audit Traceability"
+    ],
+    "idPrefix": "AERO",
+    "accent": "blue",
+    "industryDomain": "aerospace"
+  },
+  {
+    "key": "logistics-supply-chain",
+    "label": "Logistics and Supply Chain",
+    "shortLabel": "Logistics and Supply Chain",
+    "description": "Transport planning, warehouse execution, carrier EDI, inventory visibility, tracking, returns, and supply planning.",
+    "route": "/p/logistics-supply-chain",
+    "kind": "spa",
+    "modules": [
+      "Transport Orders and Planning",
+      "Warehouse Execution",
+      "Carrier and EDI Integration",
+      "Inventory Visibility",
+      "Shipment Tracking and Exceptions",
+      "Customs and Trade Documents",
+      "Returns and Reverse Logistics",
+      "Supplier Collaboration",
+      "Demand and Supply Planning",
+      "Resilience and Network Analytics"
+    ],
+    "idPrefix": "LSCX",
+    "accent": "amber",
+    "industryDomain": "logistics-supply-chain"
   }
 ];

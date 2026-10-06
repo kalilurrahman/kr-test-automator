@@ -2,6 +2,8 @@
 
 This directory is a self-contained browser automation project with 10 platform-specific end-to-end workflows, form validation, authenticated navigation, and an opt-in authorization boundary check. The companion app test-data pack contains 2,000 synthetic cases across 10 modules.
 
+
+
 ## Covered E2E workflows
 
 - Workspace provisioning and role boundary
@@ -20,7 +22,7 @@ This directory is a self-contained browser automation project with 10 platform-s
 Use a dedicated non-production tenant with disposable test resources and a user authorized to create the objects covered by this pack. Copy `.env.example` to `.env`, set `BASE_URL` and any tenant-specific paths, then install browser dependencies:
 
 ```sh
-npm ci
+npm install
 npx playwright install chromium
 npm run typecheck
 npm test

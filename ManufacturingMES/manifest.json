@@ -1,0 +1,79 @@
+{
+  "product": "Manufacturing MES",
+  "key": "manufacturing-mes",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "production_orders",
+      "label": "Production Orders and Dispatch",
+      "folder": "production_orders",
+      "prefix": "manufacturing-mes_production_orders_suite",
+      "count": 200
+    },
+    {
+      "id": "routing_bom",
+      "label": "Routing and Bill of Materials",
+      "folder": "routing_bom",
+      "prefix": "manufacturing-mes_routing_bom_suite",
+      "count": 200
+    },
+    {
+      "id": "shop_floor",
+      "label": "Shop Floor Execution",
+      "folder": "shop_floor",
+      "prefix": "manufacturing-mes_shop_floor_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_inspection",
+      "label": "Quality and Inspection",
+      "folder": "quality_inspection",
+      "prefix": "manufacturing-mes_quality_inspection_suite",
+      "count": 200
+    },
+    {
+      "id": "oee_equipment",
+      "label": "OEE and Equipment",
+      "folder": "oee_equipment",
+      "prefix": "manufacturing-mes_oee_equipment_suite",
+      "count": 200
+    },
+    {
+      "id": "traceability_genealogy",
+      "label": "Serialization and Genealogy",
+      "folder": "traceability_genealogy",
+      "prefix": "manufacturing-mes_traceability_genealogy_suite",
+      "count": 200
+    },
+    {
+      "id": "warehouse_materials",
+      "label": "Warehouse and Material Flow",
+      "folder": "warehouse_materials",
+      "prefix": "manufacturing-mes_warehouse_materials_suite",
+      "count": 200
+    },
+    {
+      "id": "maintenance",
+      "label": "Maintenance and Work Orders",
+      "folder": "maintenance",
+      "prefix": "manufacturing-mes_maintenance_suite",
+      "count": 200
+    },
+    {
+      "id": "planning_scheduling",
+      "label": "Planning and Scheduling",
+      "folder": "planning_scheduling",
+      "prefix": "manufacturing-mes_planning_scheduling_suite",
+      "count": 200
+    },
+    {
+      "id": "integration_analytics",
+      "label": "Integration and Operations Analytics",
+      "folder": "integration_analytics",
+      "prefix": "manufacturing-mes_integration_analytics_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "manufacturing",
+  "safetyNote": "Run only against a non-production MES or digital twin with synthetic orders, lots, users, and equipment events. Do not command physical machinery or claim that a test result validates a production process or product."
+}

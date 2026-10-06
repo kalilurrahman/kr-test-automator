@@ -13,6 +13,7 @@ import { toast } from "sonner";
 import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
 import { useNotificationStore } from "@/store/notificationStore";
 import SeoHead from "@/components/SeoHead";
+import { resolveIndustryContext } from "@/data/industryContexts";
 
 
 const ContentAutomation = () => {
@@ -27,6 +28,9 @@ const ContentAutomation = () => {
     const platform = params.get("platform");
     const prefillId = params.get("prefill");
     const service = params.get("service");
+    const industryContext = resolveIndustryContext(params.get("industry"));
+    if (params.has("industry")) store.setIndustryContext(industryContext);
+    else if (platform && prefillId) store.setIndustryContext(null);
     if (!platform && !prefillId) {
       const selectedService = AUTOMATION_SCRIPT_OPTIONS.find((option) => option.value === service);
       const aliases: Record<string, string> = {
@@ -46,7 +50,7 @@ const ContentAutomation = () => {
       }
       return;
     }
-    if (platform) store.setPlatform(platform as any);
+    if (platform) store.setPlatform(platform);
 
     const clearQuery = () => {
       const next = new URLSearchParams(params);
@@ -233,6 +237,7 @@ const ContentAutomation = () => {
         testScopes: store.testScopes,
         testCount: store.testCount,
         ...(store.targetScriptLines ? { targetScriptLines: store.targetScriptLines } : {}),
+        ...(store.industryContext ? { industryContext: store.industryContext } : {}),
         businessCase: store.businessCase,
       },
       onProgress: (step) => {

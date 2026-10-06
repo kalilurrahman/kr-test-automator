@@ -1,0 +1,79 @@
+{
+  "product": "Financial Services Core",
+  "key": "financial-services",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "customer_accounts",
+      "label": "Customer and Account Lifecycle",
+      "folder": "customer_accounts",
+      "prefix": "financial-services_customer_accounts_suite",
+      "count": 200
+    },
+    {
+      "id": "payments_transfers",
+      "label": "Payments and Transfers",
+      "folder": "payments_transfers",
+      "prefix": "financial-services_payments_transfers_suite",
+      "count": 200
+    },
+    {
+      "id": "ledger_reconciliation",
+      "label": "Ledger and Reconciliation",
+      "folder": "ledger_reconciliation",
+      "prefix": "financial-services_ledger_reconciliation_suite",
+      "count": 200
+    },
+    {
+      "id": "lending_credit",
+      "label": "Lending and Credit",
+      "folder": "lending_credit",
+      "prefix": "financial-services_lending_credit_suite",
+      "count": 200
+    },
+    {
+      "id": "treasury_liquidity",
+      "label": "Treasury and Liquidity",
+      "folder": "treasury_liquidity",
+      "prefix": "financial-services_treasury_liquidity_suite",
+      "count": 200
+    },
+    {
+      "id": "risk_limits",
+      "label": "Risk and Limits",
+      "folder": "risk_limits",
+      "prefix": "financial-services_risk_limits_suite",
+      "count": 200
+    },
+    {
+      "id": "aml_kyc",
+      "label": "AML and KYC Case Workflows",
+      "folder": "aml_kyc",
+      "prefix": "financial-services_aml_kyc_suite",
+      "count": 200
+    },
+    {
+      "id": "digital_channels",
+      "label": "Digital Channels and Authentication",
+      "folder": "digital_channels",
+      "prefix": "financial-services_digital_channels_suite",
+      "count": 200
+    },
+    {
+      "id": "regulatory_reporting",
+      "label": "Regulatory Reporting and Controls",
+      "folder": "regulatory_reporting",
+      "prefix": "financial-services_regulatory_reporting_suite",
+      "count": 200
+    },
+    {
+      "id": "security_resilience",
+      "label": "Security, Resilience and Audit",
+      "folder": "security_resilience",
+      "prefix": "financial-services_security_resilience_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "financial-services",
+  "safetyNote": "Use synthetic accounts, transactions, identity attributes, and mock external services only. Do not initiate real payments or use real customer data; scenarios do not provide financial, legal, or regulatory certification."
+}

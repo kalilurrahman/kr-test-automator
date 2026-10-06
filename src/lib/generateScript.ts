@@ -7,6 +7,7 @@ export interface GenerateParams {
   testScopes: string[];
   testCount: number;
   targetScriptLines?: number;
+  industryContext?: string;
   businessCase: string;
 }
 

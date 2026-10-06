@@ -13,6 +13,8 @@ import re
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
+from industry_product_packs import INDUSTRY_PACKS
+
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = [
     "product", "module", "test_case_id", "test_scenario", "test_case_name",
@@ -333,6 +335,7 @@ PACKS = [
 from additional_market_product_packs import PACKS as ADDITIONAL_PACKS
 
 PACKS.extend(ADDITIONAL_PACKS)
+PACKS.extend(INDUSTRY_PACKS)
 
 
 def rows_for(pack: dict, slug: str, label: str, tasks: list[str]) -> list[dict[str, str]]:
@@ -354,7 +357,10 @@ def rows_for(pack: dict, slug: str, label: str, tasks: list[str]) -> list[dict[s
             "test_case_name": f"{pack['display']}: {task} with {variant}",
             "test_type": kind,
             "priority": priority,
-            "preconditions": f"Non-production tenant or isolated local fixture; synthetic records only; {fixture}",
+            "preconditions": (
+                f"Non-production tenant or isolated local fixture; synthetic records only; {fixture} "
+                + (f"Safety boundary: {pack['safetyNote']}" if pack.get("safetyNote") else "")
+            ),
             "test_steps": (
                 f"1. Create a disposable, versioned synthetic fixture: {fixture} "
                 f"2. Execute the platform workflow to {task}. "
@@ -367,6 +373,7 @@ def rows_for(pack: dict, slug: str, label: str, tasks: list[str]) -> list[dict[s
                 "valid state is preserved, invalid or unauthorized work is rejected or quarantined without silent loss, "
                 "retries do not duplicate side effects, lineage and audit evidence remain available, and no production "
                 "records or credentials are used."
+                + (f" Safety boundary: {pack['safetyNote']}" if pack.get("safetyNote") else "")
             ),
             "automation_framework": "Playwright + platform UI/API",
             "tags": ",".join([pack["key"], "market-platform", "synthetic-data", slug, variant.replace(" ", "-")]),
@@ -398,8 +405,13 @@ def write_pack(pack: dict) -> None:
         )
         manifest_modules.append({"id": slug, "label": label, "folder": slug, "prefix": prefix, "count": len(rows)})
         total += len(rows)
+    manifest = {"product": pack["display"], "key": pack["key"], "count": total, "modules": manifest_modules}
+    if pack.get("industryDomain"):
+        manifest["industryDomain"] = pack["industryDomain"]
+    if pack.get("safetyNote"):
+        manifest["safetyNote"] = pack["safetyNote"]
     (root / "manifest.json").write_text(
-        json.dumps({"product": pack["display"], "key": pack["key"], "count": total, "modules": manifest_modules}, indent=2) + "\n",
+        json.dumps(manifest, indent=2) + "\n",
         encoding="utf-8",
     )
 
@@ -414,7 +426,8 @@ def suite_config_ts(pack: dict) -> str:
         "// Product-specific accessible-name contract for this standalone E2E suite.\n"
         "// Update these patterns to match the labels exposed by your tenant version.\n"
         f"export const productName = {json.dumps(pack['display'])};\n"
-        f"export const journeys = {json.dumps(journeys, ensure_ascii=False, indent=2)} as const;\n"
+        + (f"export const industryDomain = {json.dumps(pack['industryDomain'])};\n" if pack.get("industryDomain") else "")
+        + f"export const journeys = {json.dumps(journeys, ensure_ascii=False, indent=2)} as const;\n"
     )
 
 
@@ -666,6 +679,8 @@ playwright/.cache/
 
 This directory is a self-contained browser automation project with 10 platform-specific end-to-end workflows, form validation, authenticated navigation, and an opt-in authorization boundary check. The companion app test-data pack contains 2,000 synthetic cases across 10 modules.
 
+{f"Industry context: {pack['industryDomain']}. " if pack.get('industryDomain') else ""}{f"Safety boundary: {pack['safetyNote']}" if pack.get('safetyNote') else ""}
+
 ## Covered E2E workflows
 
 {workflow_list}
@@ -748,6 +763,16 @@ Sources: [Microsoft FY25 Q2 earnings](https://www.microsoft.com/en-us/investor/e
 
 Run any suite independently by following its README. Each targets a non-production product tenant and requires tenant-specific accessible-name patterns in `suite.config.ts`. The app-facing CSV, JSON, and TypeScript cases are regenerated with `npm run generate:app-data`.
 """
+    index += "\n## Industry vertical suites\n\n"
+    index += "These workflow suites extend the product list into regulated, physical-operations, and service industries. Every pack contains 2,000 synthetic cases in ten modules and ten standalone Playwright journeys. Each manifest and suite README carries domain-specific data and environment boundaries.\n\n"
+    index += "| Industry product | Context | Catalog manifest | Playwright suite |\n| --- | --- | --- | --- |\n"
+    for pack in INDUSTRY_PACKS:
+        index += (
+            f"| {pack['display']} | {pack['industryDomain']} | "
+            f"[`{pack['root']}/manifest.json`](../{pack['root']}/manifest.json) | "
+            f"[`MarketAutomationSuites/{pack['root']}/README.md`](./{pack['root']}/README.md) |\n"
+        )
+    index += "\nUse synthetic data in isolated non-production systems. Regulated workflow examples do not certify compliance or product safety. Defense workflows are limited to unclassified administration; industrial controls are simulated only.\n"
     (ROOT / "MarketAutomationSuites" / "README.md").write_text(index, encoding="utf-8")
 
 
