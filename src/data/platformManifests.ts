@@ -33,6 +33,8 @@ export interface PlatformDef {
   idPrefix: string;
   /** Tailwind accent token */
   accent: "gold" | "blue" | "violet" | "teal" | "emerald" | "amber" | "rose" | "cyan" | "indigo";
+  /** Optional downloadable standalone browser E2E suite archive. */
+  automationSuiteUrl?: string;
   modules: PlatformModule[];
 }
 

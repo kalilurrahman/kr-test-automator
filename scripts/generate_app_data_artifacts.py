@@ -16,6 +16,7 @@ SCRIPTS = ROOT / "scripts"
 for script in (
     "generate_ai_coding_tool_suites.py",
     "generate_data_ai_health_suites.py",
+    "generate_market_product_suites.py",
     "generate_app_data_pack_registry.py",
 ):
     subprocess.run([sys.executable, str(SCRIPTS / script)], cwd=ROOT, check=True)

@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 import { PRODUCT_CATALOG, TOTAL_MODULES, TOTAL_PRODUCTS } from "@/data/productCatalog";
 import { getGlobalStats } from "@/lib/globalStats";
 
-const featuredProducts = ["sap", "salesforce", "dataiku", "databricks", "apacheiceberg", "medidata", "iqvia", "snowflake"]
+const featuredProducts = ["sap", "salesforce", "microsoftfabric", "databricks", "dbt", "vercel", "huggingfacehub", "snowflake"]
   .map((key) => PRODUCT_CATALOG.find((product) => product.key === key))
   .filter((product): product is (typeof PRODUCT_CATALOG)[number] => Boolean(product));
 

@@ -21,6 +21,16 @@ PACKS = {
     "Databricks": {"id": "databricks", "label": "Databricks", "accent": "amber"},
     "SnowflakeAI": {"id": "snowflakeai", "label": "Snowflake AI", "accent": "blue"},
     "PalantirFoundryAI": {"id": "foundryai", "label": "Palantir Foundry AI", "accent": "violet"},
+    "MicrosoftFabric": {"id": "microsoftfabric", "label": "Microsoft Fabric", "accent": "blue", "automationSuiteUrl": "/market-automation-suites/microsoftfabric-playwright-e2e.zip"},
+    "dbt": {"id": "dbt", "label": "dbt", "accent": "amber", "automationSuiteUrl": "/market-automation-suites/dbt-playwright-e2e.zip"},
+    "Confluent": {"id": "confluentcloud", "label": "Confluent Cloud", "accent": "cyan", "automationSuiteUrl": "/market-automation-suites/confluentcloud-playwright-e2e.zip"},
+    "MongoDBAtlas": {"id": "mongodb-atlas", "label": "MongoDB Atlas", "accent": "emerald", "automationSuiteUrl": "/market-automation-suites/mongodb-atlas-playwright-e2e.zip"},
+    "Fivetran": {"id": "fivetran", "label": "Fivetran", "accent": "violet", "automationSuiteUrl": "/market-automation-suites/fivetran-playwright-e2e.zip"},
+    "SupabasePlatform": {"id": "supabase-platform", "label": "Supabase", "accent": "emerald", "automationSuiteUrl": "/market-automation-suites/supabase-platform-playwright-e2e.zip"},
+    "Vercel": {"id": "vercel", "label": "Vercel", "accent": "indigo", "automationSuiteUrl": "/market-automation-suites/vercel-playwright-e2e.zip"},
+    "LangSmith": {"id": "langsmith", "label": "LangChain and LangSmith", "accent": "violet", "automationSuiteUrl": "/market-automation-suites/langsmith-playwright-e2e.zip"},
+    "Pinecone": {"id": "pinecone", "label": "Pinecone", "accent": "teal", "automationSuiteUrl": "/market-automation-suites/pinecone-playwright-e2e.zip"},
+    "HuggingFaceHub": {"id": "huggingfacehub", "label": "Hugging Face Hub", "accent": "amber", "automationSuiteUrl": "/market-automation-suites/huggingfacehub-playwright-e2e.zip"},
 }
 
 
@@ -56,6 +66,7 @@ def load_manifest(root_name: str, metadata: dict):
         "id": metadata["id"],
         "label": metadata["label"],
         "accent": metadata["accent"],
+        "automationSuiteUrl": metadata.get("automationSuiteUrl"),
         "idPrefix": prefix,
         "description": f"{manifest['count']:,} test cases across {len(modules)} {metadata['label']} modules.",
         "modules": modules,
@@ -78,6 +89,7 @@ def main():
             "id": pack["id"], "label": pack["label"], "shortLabel": pack["label"],
             "description": pack["description"], "publicBase": f"/{pack['folder']}",
             "idPrefix": pack["idPrefix"], "accent": pack["accent"], "modules": pack["modules"],
+            **({"automationSuiteUrl": pack["automationSuiteUrl"]} if pack.get("automationSuiteUrl") else {}),
         })
         product_rows.append({
             "key": pack["id"], "label": pack["label"], "shortLabel": pack["label"],

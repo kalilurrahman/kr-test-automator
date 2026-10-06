@@ -1,0 +1,77 @@
+{
+  "product": "LangChain and LangSmith",
+  "key": "langsmith",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "projects_traces",
+      "label": "Projects and Traces",
+      "folder": "projects_traces",
+      "prefix": "langsmith_projects_traces_suite",
+      "count": 200
+    },
+    {
+      "id": "prompts",
+      "label": "Prompt Management",
+      "folder": "prompts",
+      "prefix": "langsmith_prompts_suite",
+      "count": 200
+    },
+    {
+      "id": "datasets",
+      "label": "Datasets and Examples",
+      "folder": "datasets",
+      "prefix": "langsmith_datasets_suite",
+      "count": 200
+    },
+    {
+      "id": "evaluations",
+      "label": "Evaluations and Experiments",
+      "folder": "evaluations",
+      "prefix": "langsmith_evaluations_suite",
+      "count": 200
+    },
+    {
+      "id": "agents_graphs",
+      "label": "Agents and Graphs",
+      "folder": "agents_graphs",
+      "prefix": "langsmith_agents_graphs_suite",
+      "count": 200
+    },
+    {
+      "id": "tools_approvals",
+      "label": "Tools and Human Approval",
+      "folder": "tools_approvals",
+      "prefix": "langsmith_tools_approvals_suite",
+      "count": 200
+    },
+    {
+      "id": "threads_streaming",
+      "label": "Threads and Streaming",
+      "folder": "threads_streaming",
+      "prefix": "langsmith_threads_streaming_suite",
+      "count": 200
+    },
+    {
+      "id": "models_routing",
+      "label": "Models and Routing",
+      "folder": "models_routing",
+      "prefix": "langsmith_models_routing_suite",
+      "count": 200
+    },
+    {
+      "id": "security_access",
+      "label": "Security and Access",
+      "folder": "security_access",
+      "prefix": "langsmith_security_access_suite",
+      "count": 200
+    },
+    {
+      "id": "deployment_monitoring",
+      "label": "Deployment and Monitoring",
+      "folder": "deployment_monitoring",
+      "prefix": "langsmith_deployment_monitoring_suite",
+      "count": 200
+    }
+  ]
+}

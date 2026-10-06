@@ -1,0 +1,77 @@
+{
+  "product": "Hugging Face Hub",
+  "key": "huggingfacehub",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "repositories_commits",
+      "label": "Repositories and Commits",
+      "folder": "repositories_commits",
+      "prefix": "huggingfacehub_repositories_commits_suite",
+      "count": 200
+    },
+    {
+      "id": "models_cards",
+      "label": "Models and Model Cards",
+      "folder": "models_cards",
+      "prefix": "huggingfacehub_models_cards_suite",
+      "count": 200
+    },
+    {
+      "id": "datasets",
+      "label": "Datasets and Revisions",
+      "folder": "datasets",
+      "prefix": "huggingfacehub_datasets_suite",
+      "count": 200
+    },
+    {
+      "id": "spaces",
+      "label": "Spaces and Applications",
+      "folder": "spaces",
+      "prefix": "huggingfacehub_spaces_suite",
+      "count": 200
+    },
+    {
+      "id": "inference_endpoints",
+      "label": "Inference Endpoints",
+      "folder": "inference_endpoints",
+      "prefix": "huggingfacehub_inference_endpoints_suite",
+      "count": 200
+    },
+    {
+      "id": "gated_licenses",
+      "label": "Gated Models and Licenses",
+      "folder": "gated_licenses",
+      "prefix": "huggingfacehub_gated_licenses_suite",
+      "count": 200
+    },
+    {
+      "id": "organizations_tokens",
+      "label": "Organizations and Tokens",
+      "folder": "organizations_tokens",
+      "prefix": "huggingfacehub_organizations_tokens_suite",
+      "count": 200
+    },
+    {
+      "id": "inference_providers",
+      "label": "Inference Providers and Routing",
+      "folder": "inference_providers",
+      "prefix": "huggingfacehub_inference_providers_suite",
+      "count": 200
+    },
+    {
+      "id": "collections_eval",
+      "label": "Collections and Evaluation",
+      "folder": "collections_eval",
+      "prefix": "huggingfacehub_collections_eval_suite",
+      "count": 200
+    },
+    {
+      "id": "security_supply_chain",
+      "label": "Security and Supply Chain",
+      "folder": "security_supply_chain",
+      "prefix": "huggingfacehub_security_supply_chain_suite",
+      "count": 200
+    }
+  ]
+}

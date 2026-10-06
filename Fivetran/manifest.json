@@ -1,0 +1,77 @@
+{
+  "product": "Fivetran",
+  "key": "fivetran",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "connectors",
+      "label": "Connectors and Sources",
+      "folder": "connectors",
+      "prefix": "fivetran_connectors_suite",
+      "count": 200
+    },
+    {
+      "id": "destinations",
+      "label": "Destinations and Targets",
+      "folder": "destinations",
+      "prefix": "fivetran_destinations_suite",
+      "count": 200
+    },
+    {
+      "id": "sync_cdc",
+      "label": "Syncs and CDC",
+      "folder": "sync_cdc",
+      "prefix": "fivetran_sync_cdc_suite",
+      "count": 200
+    },
+    {
+      "id": "schema_drift",
+      "label": "Schema Drift and Evolution",
+      "folder": "schema_drift",
+      "prefix": "fivetran_schema_drift_suite",
+      "count": 200
+    },
+    {
+      "id": "transformations",
+      "label": "Transformations and dbt",
+      "folder": "transformations",
+      "prefix": "fivetran_transformations_suite",
+      "count": 200
+    },
+    {
+      "id": "orchestration",
+      "label": "Orchestration and Scheduling",
+      "folder": "orchestration",
+      "prefix": "fivetran_orchestration_suite",
+      "count": 200
+    },
+    {
+      "id": "quality",
+      "label": "Data Quality and Alerts",
+      "folder": "quality",
+      "prefix": "fivetran_quality_suite",
+      "count": 200
+    },
+    {
+      "id": "access_security",
+      "label": "Access, Secrets, and Audit",
+      "folder": "access_security",
+      "prefix": "fivetran_access_security_suite",
+      "count": 200
+    },
+    {
+      "id": "history_recovery",
+      "label": "History and Recovery",
+      "folder": "history_recovery",
+      "prefix": "fivetran_history_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "usage_billing",
+      "label": "Usage and Billing",
+      "folder": "usage_billing",
+      "prefix": "fivetran_usage_billing_suite",
+      "count": 200
+    }
+  ]
+}

@@ -99,6 +99,8 @@ You can also call `python scripts/generate_app_data_artifacts.py` directly.
 
 It generates each pack's CSV (used by the app's table and search), JSON and TypeScript data files, manifests, and `src/data/generatedDataPackRegistry.ts`. The registry connects those manifests to the Platforms catalog and global case index; `vite.config.ts` copies the pack folders into the built app. To add another generated pack, add its folder metadata to `scripts/generate_app_data_pack_registry.py` and its static-copy target to `vite.config.ts`, then rerun the generator.
 
+The market-leading data and AI platform packs add Microsoft Fabric, dbt, Confluent Cloud, MongoDB Atlas, Fivetran, Supabase, Vercel, LangChain/LangSmith, Pinecone, and Hugging Face Hub. Each has 2,000 structured cases and an independent Playwright E2E project with setup instructions under [`MarketAutomationSuites`](MarketAutomationSuites/README.md). Configure each project with a non-production tenant and its accessible UI labels before running it.
+
 ## 🤝 Contribution
 
 You can edit files directly via GitHub, use GitHub Codespaces, or utilize your preferred IDE locally. Commit your changes and push to your branch to see them updated.

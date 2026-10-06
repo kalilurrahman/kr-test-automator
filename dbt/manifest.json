@@ -1,0 +1,77 @@
+{
+  "product": "dbt",
+  "key": "dbt",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "projects_git",
+      "label": "Projects and Git",
+      "folder": "projects_git",
+      "prefix": "dbt_projects_git_suite",
+      "count": 200
+    },
+    {
+      "id": "models",
+      "label": "Models and SQL",
+      "folder": "models",
+      "prefix": "dbt_models_suite",
+      "count": 200
+    },
+    {
+      "id": "tests_contracts",
+      "label": "Tests and Contracts",
+      "folder": "tests_contracts",
+      "prefix": "dbt_tests_contracts_suite",
+      "count": 200
+    },
+    {
+      "id": "snapshots",
+      "label": "Snapshots and History",
+      "folder": "snapshots",
+      "prefix": "dbt_snapshots_suite",
+      "count": 200
+    },
+    {
+      "id": "docs_lineage",
+      "label": "Documentation and Lineage",
+      "folder": "docs_lineage",
+      "prefix": "dbt_docs_lineage_suite",
+      "count": 200
+    },
+    {
+      "id": "jobs_environments",
+      "label": "Jobs and Environments",
+      "folder": "jobs_environments",
+      "prefix": "dbt_jobs_environments_suite",
+      "count": 200
+    },
+    {
+      "id": "ci",
+      "label": "CI and Pull Request Checks",
+      "folder": "ci",
+      "prefix": "dbt_ci_suite",
+      "count": 200
+    },
+    {
+      "id": "metrics",
+      "label": "Metrics and Semantic Layer",
+      "folder": "metrics",
+      "prefix": "dbt_metrics_suite",
+      "count": 200
+    },
+    {
+      "id": "access_audit",
+      "label": "Access and Audit",
+      "folder": "access_audit",
+      "prefix": "dbt_access_audit_suite",
+      "count": 200
+    },
+    {
+      "id": "adapters_packages",
+      "label": "Adapters and Packages",
+      "folder": "adapters_packages",
+      "prefix": "dbt_adapters_packages_suite",
+      "count": 200
+    }
+  ]
+}

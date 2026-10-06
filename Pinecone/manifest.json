@@ -1,0 +1,77 @@
+{
+  "product": "Pinecone",
+  "key": "pinecone",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "projects_indexes",
+      "label": "Projects and Indexes",
+      "folder": "projects_indexes",
+      "prefix": "pinecone_projects_indexes_suite",
+      "count": 200
+    },
+    {
+      "id": "vectors_upsert",
+      "label": "Vector Upsert and Namespaces",
+      "folder": "vectors_upsert",
+      "prefix": "pinecone_vectors_upsert_suite",
+      "count": 200
+    },
+    {
+      "id": "query_filter",
+      "label": "Similarity Search and Filters",
+      "folder": "query_filter",
+      "prefix": "pinecone_query_filter_suite",
+      "count": 200
+    },
+    {
+      "id": "hybrid_rerank",
+      "label": "Hybrid Search and Reranking",
+      "folder": "hybrid_rerank",
+      "prefix": "pinecone_hybrid_rerank_suite",
+      "count": 200
+    },
+    {
+      "id": "metadata_tenants",
+      "label": "Metadata and Tenancy",
+      "folder": "metadata_tenants",
+      "prefix": "pinecone_metadata_tenants_suite",
+      "count": 200
+    },
+    {
+      "id": "ingestion",
+      "label": "Ingestion and Integrations",
+      "folder": "ingestion",
+      "prefix": "pinecone_ingestion_suite",
+      "count": 200
+    },
+    {
+      "id": "backup_restore",
+      "label": "Backup and Restore",
+      "folder": "backup_restore",
+      "prefix": "pinecone_backup_restore_suite",
+      "count": 200
+    },
+    {
+      "id": "security_access",
+      "label": "Security and Access",
+      "folder": "security_access",
+      "prefix": "pinecone_security_access_suite",
+      "count": 200
+    },
+    {
+      "id": "scaling_resilience",
+      "label": "Scaling and Resilience",
+      "folder": "scaling_resilience",
+      "prefix": "pinecone_scaling_resilience_suite",
+      "count": 200
+    },
+    {
+      "id": "usage_monitoring",
+      "label": "Usage and Monitoring",
+      "folder": "usage_monitoring",
+      "prefix": "pinecone_usage_monitoring_suite",
+      "count": 200
+    }
+  ]
+}

@@ -1410,6 +1410,1226 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "microsoftfabric",
+    "label": "Microsoft Fabric",
+    "shortLabel": "Microsoft Fabric",
+    "description": "2,000 test cases across 10 Microsoft Fabric modules.",
+    "publicBase": "/MicrosoftFabric",
+    "idPrefix": "FAB",
+    "accent": "blue",
+    "modules": [
+      {
+        "id": "workspaces",
+        "label": "Workspaces and Roles",
+        "folder": "workspaces",
+        "prefix": "microsoftfabric_workspaces_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "onelake",
+        "label": "OneLake and Shortcuts",
+        "folder": "onelake",
+        "prefix": "microsoftfabric_onelake_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "data_factory",
+        "label": "Data Factory Pipelines",
+        "folder": "data_factory",
+        "prefix": "microsoftfabric_data_factory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "lakehouse",
+        "label": "Lakehouse and Spark",
+        "folder": "lakehouse",
+        "prefix": "microsoftfabric_lakehouse_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "warehouse",
+        "label": "Warehouse and SQL",
+        "folder": "warehouse",
+        "prefix": "microsoftfabric_warehouse_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "power_bi",
+        "label": "Power BI Semantic Models",
+        "folder": "power_bi",
+        "prefix": "microsoftfabric_power_bi_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "real_time",
+        "label": "Real-Time Intelligence",
+        "folder": "real_time",
+        "prefix": "microsoftfabric_real_time_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "data_science",
+        "label": "Data Science and ML",
+        "folder": "data_science",
+        "prefix": "microsoftfabric_data_science_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "governance",
+        "label": "Governance and Lineage",
+        "folder": "governance",
+        "prefix": "microsoftfabric_governance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "capacity",
+        "label": "Capacity and Operations",
+        "folder": "capacity",
+        "prefix": "microsoftfabric_capacity_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/microsoftfabric-playwright-e2e.zip"
+  },
+  {
+    "id": "dbt",
+    "label": "dbt",
+    "shortLabel": "dbt",
+    "description": "2,000 test cases across 10 dbt modules.",
+    "publicBase": "/dbt",
+    "idPrefix": "DBT",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "projects_git",
+        "label": "Projects and Git",
+        "folder": "projects_git",
+        "prefix": "dbt_projects_git_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "models",
+        "label": "Models and SQL",
+        "folder": "models",
+        "prefix": "dbt_models_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tests_contracts",
+        "label": "Tests and Contracts",
+        "folder": "tests_contracts",
+        "prefix": "dbt_tests_contracts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "snapshots",
+        "label": "Snapshots and History",
+        "folder": "snapshots",
+        "prefix": "dbt_snapshots_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "docs_lineage",
+        "label": "Documentation and Lineage",
+        "folder": "docs_lineage",
+        "prefix": "dbt_docs_lineage_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "jobs_environments",
+        "label": "Jobs and Environments",
+        "folder": "jobs_environments",
+        "prefix": "dbt_jobs_environments_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "ci",
+        "label": "CI and Pull Request Checks",
+        "folder": "ci",
+        "prefix": "dbt_ci_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "metrics",
+        "label": "Metrics and Semantic Layer",
+        "folder": "metrics",
+        "prefix": "dbt_metrics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "access_audit",
+        "label": "Access and Audit",
+        "folder": "access_audit",
+        "prefix": "dbt_access_audit_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "adapters_packages",
+        "label": "Adapters and Packages",
+        "folder": "adapters_packages",
+        "prefix": "dbt_adapters_packages_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/dbt-playwright-e2e.zip"
+  },
+  {
+    "id": "confluentcloud",
+    "label": "Confluent Cloud",
+    "shortLabel": "Confluent Cloud",
+    "description": "2,000 test cases across 10 Confluent Cloud modules.",
+    "publicBase": "/Confluent",
+    "idPrefix": "CFLT",
+    "accent": "cyan",
+    "modules": [
+      {
+        "id": "clusters",
+        "label": "Clusters and Networking",
+        "folder": "clusters",
+        "prefix": "confluentcloud_clusters_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "topics",
+        "label": "Topics and Partitions",
+        "folder": "topics",
+        "prefix": "confluentcloud_topics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "schemas",
+        "label": "Schema Registry",
+        "folder": "schemas",
+        "prefix": "confluentcloud_schemas_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "connectors",
+        "label": "Connectors and Integrations",
+        "folder": "connectors",
+        "prefix": "confluentcloud_connectors_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "producers_consumers",
+        "label": "Clients and Consumer Groups",
+        "folder": "producers_consumers",
+        "prefix": "confluentcloud_producers_consumers_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "flink_sql",
+        "label": "Flink and Stream Processing",
+        "folder": "flink_sql",
+        "prefix": "confluentcloud_flink_sql_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "governance",
+        "label": "Stream Governance and Lineage",
+        "folder": "governance",
+        "prefix": "confluentcloud_governance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "rbac",
+        "label": "RBAC, ACLs, and Audit",
+        "folder": "rbac",
+        "prefix": "confluentcloud_rbac_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "disaster_recovery",
+        "label": "Replication and Disaster Recovery",
+        "folder": "disaster_recovery",
+        "prefix": "confluentcloud_disaster_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "monitoring",
+        "label": "Monitoring and Cost",
+        "folder": "monitoring",
+        "prefix": "confluentcloud_monitoring_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/confluentcloud-playwright-e2e.zip"
+  },
+  {
+    "id": "mongodb-atlas",
+    "label": "MongoDB Atlas",
+    "shortLabel": "MongoDB Atlas",
+    "description": "2,000 test cases across 10 MongoDB Atlas modules.",
+    "publicBase": "/MongoDBAtlas",
+    "idPrefix": "MDBA",
+    "accent": "emerald",
+    "modules": [
+      {
+        "id": "projects_clusters",
+        "label": "Projects and Clusters",
+        "folder": "projects_clusters",
+        "prefix": "mongodb-atlas_projects_clusters_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "database_collections",
+        "label": "Databases and Collections",
+        "folder": "database_collections",
+        "prefix": "mongodb-atlas_database_collections_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "indexes_search",
+        "label": "Indexes, Search, and Vector",
+        "folder": "indexes_search",
+        "prefix": "mongodb-atlas_indexes_search_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "aggregation",
+        "label": "Aggregation and Query",
+        "folder": "aggregation",
+        "prefix": "mongodb-atlas_aggregation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "change_streams",
+        "label": "Change Streams and Triggers",
+        "folder": "change_streams",
+        "prefix": "mongodb-atlas_change_streams_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "backup_restore",
+        "label": "Backup and Restore",
+        "folder": "backup_restore",
+        "prefix": "mongodb-atlas_backup_restore_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_network",
+        "label": "Security and Networking",
+        "folder": "security_network",
+        "prefix": "mongodb-atlas_security_network_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "governance_audit",
+        "label": "Governance and Audit",
+        "folder": "governance_audit",
+        "prefix": "mongodb-atlas_governance_audit_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "app_services",
+        "label": "App Services and APIs",
+        "folder": "app_services",
+        "prefix": "mongodb-atlas_app_services_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "monitoring_performance",
+        "label": "Monitoring and Performance",
+        "folder": "monitoring_performance",
+        "prefix": "mongodb-atlas_monitoring_performance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/mongodb-atlas-playwright-e2e.zip"
+  },
+  {
+    "id": "fivetran",
+    "label": "Fivetran",
+    "shortLabel": "Fivetran",
+    "description": "2,000 test cases across 10 Fivetran modules.",
+    "publicBase": "/Fivetran",
+    "idPrefix": "FVT",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "connectors",
+        "label": "Connectors and Sources",
+        "folder": "connectors",
+        "prefix": "fivetran_connectors_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "destinations",
+        "label": "Destinations and Targets",
+        "folder": "destinations",
+        "prefix": "fivetran_destinations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sync_cdc",
+        "label": "Syncs and CDC",
+        "folder": "sync_cdc",
+        "prefix": "fivetran_sync_cdc_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "schema_drift",
+        "label": "Schema Drift and Evolution",
+        "folder": "schema_drift",
+        "prefix": "fivetran_schema_drift_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "transformations",
+        "label": "Transformations and dbt",
+        "folder": "transformations",
+        "prefix": "fivetran_transformations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "orchestration",
+        "label": "Orchestration and Scheduling",
+        "folder": "orchestration",
+        "prefix": "fivetran_orchestration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality",
+        "label": "Data Quality and Alerts",
+        "folder": "quality",
+        "prefix": "fivetran_quality_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "access_security",
+        "label": "Access, Secrets, and Audit",
+        "folder": "access_security",
+        "prefix": "fivetran_access_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "history_recovery",
+        "label": "History and Recovery",
+        "folder": "history_recovery",
+        "prefix": "fivetran_history_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "usage_billing",
+        "label": "Usage and Billing",
+        "folder": "usage_billing",
+        "prefix": "fivetran_usage_billing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/fivetran-playwright-e2e.zip"
+  },
+  {
+    "id": "supabase-platform",
+    "label": "Supabase",
+    "shortLabel": "Supabase",
+    "description": "2,000 test cases across 10 Supabase modules.",
+    "publicBase": "/SupabasePlatform",
+    "idPrefix": "SUPA",
+    "accent": "emerald",
+    "modules": [
+      {
+        "id": "projects_database",
+        "label": "Projects and Postgres",
+        "folder": "projects_database",
+        "prefix": "supabase-platform_projects_database_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "auth_rls",
+        "label": "Auth and Row-Level Security",
+        "folder": "auth_rls",
+        "prefix": "supabase-platform_auth_rls_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "realtime",
+        "label": "Realtime and Broadcast",
+        "folder": "realtime",
+        "prefix": "supabase-platform_realtime_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "Storage and Buckets",
+        "folder": "storage",
+        "prefix": "supabase-platform_storage_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "edge_functions",
+        "label": "Edge Functions",
+        "folder": "edge_functions",
+        "prefix": "supabase-platform_edge_functions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "migrations_branching",
+        "label": "Migrations and Branching",
+        "folder": "migrations_branching",
+        "prefix": "supabase-platform_migrations_branching_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "api_keys_access",
+        "label": "API Keys and Access",
+        "folder": "api_keys_access",
+        "prefix": "supabase-platform_api_keys_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "backup_recovery",
+        "label": "Backups and Recovery",
+        "folder": "backup_recovery",
+        "prefix": "supabase-platform_backup_recovery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "observability",
+        "label": "Logs and Observability",
+        "folder": "observability",
+        "prefix": "supabase-platform_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "integrations",
+        "label": "Integrations and Deployment",
+        "folder": "integrations",
+        "prefix": "supabase-platform_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/supabase-platform-playwright-e2e.zip"
+  },
+  {
+    "id": "vercel",
+    "label": "Vercel",
+    "shortLabel": "Vercel",
+    "description": "2,000 test cases across 10 Vercel modules.",
+    "publicBase": "/Vercel",
+    "idPrefix": "VERC",
+    "accent": "indigo",
+    "modules": [
+      {
+        "id": "projects_git",
+        "label": "Projects and Git",
+        "folder": "projects_git",
+        "prefix": "vercel_projects_git_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "deployments",
+        "label": "Deployments and Promotion",
+        "folder": "deployments",
+        "prefix": "vercel_deployments_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "environment_secrets",
+        "label": "Environment Variables and Secrets",
+        "folder": "environment_secrets",
+        "prefix": "vercel_environment_secrets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "domains",
+        "label": "Domains and Routing",
+        "folder": "domains",
+        "prefix": "vercel_domains_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "functions_crons",
+        "label": "Functions and Cron",
+        "folder": "functions_crons",
+        "prefix": "vercel_functions_crons_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "cache_isr",
+        "label": "Caching and Incremental Rendering",
+        "folder": "cache_isr",
+        "prefix": "vercel_cache_isr_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "ai_gateway",
+        "label": "AI SDK and AI Gateway",
+        "folder": "ai_gateway",
+        "prefix": "vercel_ai_gateway_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "observability",
+        "label": "Observability and Logs",
+        "folder": "observability",
+        "prefix": "vercel_observability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_firewall",
+        "label": "Security and Firewall",
+        "folder": "security_firewall",
+        "prefix": "vercel_security_firewall_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "teams_billing",
+        "label": "Teams and Usage",
+        "folder": "teams_billing",
+        "prefix": "vercel_teams_billing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/vercel-playwright-e2e.zip"
+  },
+  {
+    "id": "langsmith",
+    "label": "LangChain and LangSmith",
+    "shortLabel": "LangChain and LangSmith",
+    "description": "2,000 test cases across 10 LangChain and LangSmith modules.",
+    "publicBase": "/LangSmith",
+    "idPrefix": "LANG",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "projects_traces",
+        "label": "Projects and Traces",
+        "folder": "projects_traces",
+        "prefix": "langsmith_projects_traces_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "prompts",
+        "label": "Prompt Management",
+        "folder": "prompts",
+        "prefix": "langsmith_prompts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "datasets",
+        "label": "Datasets and Examples",
+        "folder": "datasets",
+        "prefix": "langsmith_datasets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "evaluations",
+        "label": "Evaluations and Experiments",
+        "folder": "evaluations",
+        "prefix": "langsmith_evaluations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "agents_graphs",
+        "label": "Agents and Graphs",
+        "folder": "agents_graphs",
+        "prefix": "langsmith_agents_graphs_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tools_approvals",
+        "label": "Tools and Human Approval",
+        "folder": "tools_approvals",
+        "prefix": "langsmith_tools_approvals_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "threads_streaming",
+        "label": "Threads and Streaming",
+        "folder": "threads_streaming",
+        "prefix": "langsmith_threads_streaming_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "models_routing",
+        "label": "Models and Routing",
+        "folder": "models_routing",
+        "prefix": "langsmith_models_routing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_access",
+        "label": "Security and Access",
+        "folder": "security_access",
+        "prefix": "langsmith_security_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "deployment_monitoring",
+        "label": "Deployment and Monitoring",
+        "folder": "deployment_monitoring",
+        "prefix": "langsmith_deployment_monitoring_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/langsmith-playwright-e2e.zip"
+  },
+  {
+    "id": "pinecone",
+    "label": "Pinecone",
+    "shortLabel": "Pinecone",
+    "description": "2,000 test cases across 10 Pinecone modules.",
+    "publicBase": "/Pinecone",
+    "idPrefix": "PINE",
+    "accent": "teal",
+    "modules": [
+      {
+        "id": "projects_indexes",
+        "label": "Projects and Indexes",
+        "folder": "projects_indexes",
+        "prefix": "pinecone_projects_indexes_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "vectors_upsert",
+        "label": "Vector Upsert and Namespaces",
+        "folder": "vectors_upsert",
+        "prefix": "pinecone_vectors_upsert_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "query_filter",
+        "label": "Similarity Search and Filters",
+        "folder": "query_filter",
+        "prefix": "pinecone_query_filter_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "hybrid_rerank",
+        "label": "Hybrid Search and Reranking",
+        "folder": "hybrid_rerank",
+        "prefix": "pinecone_hybrid_rerank_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "metadata_tenants",
+        "label": "Metadata and Tenancy",
+        "folder": "metadata_tenants",
+        "prefix": "pinecone_metadata_tenants_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "ingestion",
+        "label": "Ingestion and Integrations",
+        "folder": "ingestion",
+        "prefix": "pinecone_ingestion_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "backup_restore",
+        "label": "Backup and Restore",
+        "folder": "backup_restore",
+        "prefix": "pinecone_backup_restore_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_access",
+        "label": "Security and Access",
+        "folder": "security_access",
+        "prefix": "pinecone_security_access_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "scaling_resilience",
+        "label": "Scaling and Resilience",
+        "folder": "scaling_resilience",
+        "prefix": "pinecone_scaling_resilience_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "usage_monitoring",
+        "label": "Usage and Monitoring",
+        "folder": "usage_monitoring",
+        "prefix": "pinecone_usage_monitoring_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/pinecone-playwright-e2e.zip"
+  },
+  {
+    "id": "huggingfacehub",
+    "label": "Hugging Face Hub",
+    "shortLabel": "Hugging Face Hub",
+    "description": "2,000 test cases across 10 Hugging Face Hub modules.",
+    "publicBase": "/HuggingFaceHub",
+    "idPrefix": "HFH",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "repositories_commits",
+        "label": "Repositories and Commits",
+        "folder": "repositories_commits",
+        "prefix": "huggingfacehub_repositories_commits_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "models_cards",
+        "label": "Models and Model Cards",
+        "folder": "models_cards",
+        "prefix": "huggingfacehub_models_cards_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "datasets",
+        "label": "Datasets and Revisions",
+        "folder": "datasets",
+        "prefix": "huggingfacehub_datasets_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "spaces",
+        "label": "Spaces and Applications",
+        "folder": "spaces",
+        "prefix": "huggingfacehub_spaces_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "inference_endpoints",
+        "label": "Inference Endpoints",
+        "folder": "inference_endpoints",
+        "prefix": "huggingfacehub_inference_endpoints_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "gated_licenses",
+        "label": "Gated Models and Licenses",
+        "folder": "gated_licenses",
+        "prefix": "huggingfacehub_gated_licenses_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "organizations_tokens",
+        "label": "Organizations and Tokens",
+        "folder": "organizations_tokens",
+        "prefix": "huggingfacehub_organizations_tokens_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "inference_providers",
+        "label": "Inference Providers and Routing",
+        "folder": "inference_providers",
+        "prefix": "huggingfacehub_inference_providers_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "collections_eval",
+        "label": "Collections and Evaluation",
+        "folder": "collections_eval",
+        "prefix": "huggingfacehub_collections_eval_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_supply_chain",
+        "label": "Security and Supply Chain",
+        "folder": "security_supply_chain",
+        "prefix": "huggingfacehub_security_supply_chain_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "automationSuiteUrl": "/market-automation-suites/huggingfacehub-playwright-e2e.zip"
   }
 ];
 
@@ -1684,5 +2904,225 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
     ],
     "idPrefix": "PF",
     "accent": "violet"
+  },
+  {
+    "key": "microsoftfabric",
+    "label": "Microsoft Fabric",
+    "shortLabel": "Microsoft Fabric",
+    "description": "2,000 test cases across 10 Microsoft Fabric modules.",
+    "route": "/p/microsoftfabric",
+    "kind": "spa",
+    "modules": [
+      "Workspaces and Roles",
+      "OneLake and Shortcuts",
+      "Data Factory Pipelines",
+      "Lakehouse and Spark",
+      "Warehouse and SQL",
+      "Power BI Semantic Models",
+      "Real-Time Intelligence",
+      "Data Science and ML",
+      "Governance and Lineage",
+      "Capacity and Operations"
+    ],
+    "idPrefix": "FAB",
+    "accent": "blue"
+  },
+  {
+    "key": "dbt",
+    "label": "dbt",
+    "shortLabel": "dbt",
+    "description": "2,000 test cases across 10 dbt modules.",
+    "route": "/p/dbt",
+    "kind": "spa",
+    "modules": [
+      "Projects and Git",
+      "Models and SQL",
+      "Tests and Contracts",
+      "Snapshots and History",
+      "Documentation and Lineage",
+      "Jobs and Environments",
+      "CI and Pull Request Checks",
+      "Metrics and Semantic Layer",
+      "Access and Audit",
+      "Adapters and Packages"
+    ],
+    "idPrefix": "DBT",
+    "accent": "amber"
+  },
+  {
+    "key": "confluentcloud",
+    "label": "Confluent Cloud",
+    "shortLabel": "Confluent Cloud",
+    "description": "2,000 test cases across 10 Confluent Cloud modules.",
+    "route": "/p/confluentcloud",
+    "kind": "spa",
+    "modules": [
+      "Clusters and Networking",
+      "Topics and Partitions",
+      "Schema Registry",
+      "Connectors and Integrations",
+      "Clients and Consumer Groups",
+      "Flink and Stream Processing",
+      "Stream Governance and Lineage",
+      "RBAC, ACLs, and Audit",
+      "Replication and Disaster Recovery",
+      "Monitoring and Cost"
+    ],
+    "idPrefix": "CFLT",
+    "accent": "cyan"
+  },
+  {
+    "key": "mongodb-atlas",
+    "label": "MongoDB Atlas",
+    "shortLabel": "MongoDB Atlas",
+    "description": "2,000 test cases across 10 MongoDB Atlas modules.",
+    "route": "/p/mongodb-atlas",
+    "kind": "spa",
+    "modules": [
+      "Projects and Clusters",
+      "Databases and Collections",
+      "Indexes, Search, and Vector",
+      "Aggregation and Query",
+      "Change Streams and Triggers",
+      "Backup and Restore",
+      "Security and Networking",
+      "Governance and Audit",
+      "App Services and APIs",
+      "Monitoring and Performance"
+    ],
+    "idPrefix": "MDBA",
+    "accent": "emerald"
+  },
+  {
+    "key": "fivetran",
+    "label": "Fivetran",
+    "shortLabel": "Fivetran",
+    "description": "2,000 test cases across 10 Fivetran modules.",
+    "route": "/p/fivetran",
+    "kind": "spa",
+    "modules": [
+      "Connectors and Sources",
+      "Destinations and Targets",
+      "Syncs and CDC",
+      "Schema Drift and Evolution",
+      "Transformations and dbt",
+      "Orchestration and Scheduling",
+      "Data Quality and Alerts",
+      "Access, Secrets, and Audit",
+      "History and Recovery",
+      "Usage and Billing"
+    ],
+    "idPrefix": "FVT",
+    "accent": "violet"
+  },
+  {
+    "key": "supabase-platform",
+    "label": "Supabase",
+    "shortLabel": "Supabase",
+    "description": "2,000 test cases across 10 Supabase modules.",
+    "route": "/p/supabase-platform",
+    "kind": "spa",
+    "modules": [
+      "Projects and Postgres",
+      "Auth and Row-Level Security",
+      "Realtime and Broadcast",
+      "Storage and Buckets",
+      "Edge Functions",
+      "Migrations and Branching",
+      "API Keys and Access",
+      "Backups and Recovery",
+      "Logs and Observability",
+      "Integrations and Deployment"
+    ],
+    "idPrefix": "SUPA",
+    "accent": "emerald"
+  },
+  {
+    "key": "vercel",
+    "label": "Vercel",
+    "shortLabel": "Vercel",
+    "description": "2,000 test cases across 10 Vercel modules.",
+    "route": "/p/vercel",
+    "kind": "spa",
+    "modules": [
+      "Projects and Git",
+      "Deployments and Promotion",
+      "Environment Variables and Secrets",
+      "Domains and Routing",
+      "Functions and Cron",
+      "Caching and Incremental Rendering",
+      "AI SDK and AI Gateway",
+      "Observability and Logs",
+      "Security and Firewall",
+      "Teams and Usage"
+    ],
+    "idPrefix": "VERC",
+    "accent": "indigo"
+  },
+  {
+    "key": "langsmith",
+    "label": "LangChain and LangSmith",
+    "shortLabel": "LangChain and LangSmith",
+    "description": "2,000 test cases across 10 LangChain and LangSmith modules.",
+    "route": "/p/langsmith",
+    "kind": "spa",
+    "modules": [
+      "Projects and Traces",
+      "Prompt Management",
+      "Datasets and Examples",
+      "Evaluations and Experiments",
+      "Agents and Graphs",
+      "Tools and Human Approval",
+      "Threads and Streaming",
+      "Models and Routing",
+      "Security and Access",
+      "Deployment and Monitoring"
+    ],
+    "idPrefix": "LANG",
+    "accent": "violet"
+  },
+  {
+    "key": "pinecone",
+    "label": "Pinecone",
+    "shortLabel": "Pinecone",
+    "description": "2,000 test cases across 10 Pinecone modules.",
+    "route": "/p/pinecone",
+    "kind": "spa",
+    "modules": [
+      "Projects and Indexes",
+      "Vector Upsert and Namespaces",
+      "Similarity Search and Filters",
+      "Hybrid Search and Reranking",
+      "Metadata and Tenancy",
+      "Ingestion and Integrations",
+      "Backup and Restore",
+      "Security and Access",
+      "Scaling and Resilience",
+      "Usage and Monitoring"
+    ],
+    "idPrefix": "PINE",
+    "accent": "teal"
+  },
+  {
+    "key": "huggingfacehub",
+    "label": "Hugging Face Hub",
+    "shortLabel": "Hugging Face Hub",
+    "description": "2,000 test cases across 10 Hugging Face Hub modules.",
+    "route": "/p/huggingfacehub",
+    "kind": "spa",
+    "modules": [
+      "Repositories and Commits",
+      "Models and Model Cards",
+      "Datasets and Revisions",
+      "Spaces and Applications",
+      "Inference Endpoints",
+      "Gated Models and Licenses",
+      "Organizations and Tokens",
+      "Inference Providers and Routing",
+      "Collections and Evaluation",
+      "Security and Supply Chain"
+    ],
+    "idPrefix": "HFH",
+    "accent": "amber"
   }
 ];

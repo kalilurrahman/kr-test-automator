@@ -90,6 +90,15 @@ export function PlatformOverview({ platform, onOpenModule }: Props) {
           <span>Static folder: <code className="font-mono">{platform.publicBase}</code></span>
           <Link to="/dashboard" className="text-primary hover:underline ml-auto">← Back to master dashboard</Link>
         </div>
+        {platform.automationSuiteUrl && (
+          <a
+            href={platform.automationSuiteUrl}
+            download
+            className="mt-4 inline-flex items-center gap-2 rounded-md border border-primary/30 bg-primary/5 px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+          >
+            <Download className="h-4 w-4" /> Download standalone Playwright E2E suite
+          </a>
+        )}
       </Card>
 
       {/* Stat cards (SAP-parity) */}

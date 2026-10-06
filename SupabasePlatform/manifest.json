@@ -1,0 +1,77 @@
+{
+  "product": "Supabase",
+  "key": "supabase-platform",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "projects_database",
+      "label": "Projects and Postgres",
+      "folder": "projects_database",
+      "prefix": "supabase-platform_projects_database_suite",
+      "count": 200
+    },
+    {
+      "id": "auth_rls",
+      "label": "Auth and Row-Level Security",
+      "folder": "auth_rls",
+      "prefix": "supabase-platform_auth_rls_suite",
+      "count": 200
+    },
+    {
+      "id": "realtime",
+      "label": "Realtime and Broadcast",
+      "folder": "realtime",
+      "prefix": "supabase-platform_realtime_suite",
+      "count": 200
+    },
+    {
+      "id": "storage",
+      "label": "Storage and Buckets",
+      "folder": "storage",
+      "prefix": "supabase-platform_storage_suite",
+      "count": 200
+    },
+    {
+      "id": "edge_functions",
+      "label": "Edge Functions",
+      "folder": "edge_functions",
+      "prefix": "supabase-platform_edge_functions_suite",
+      "count": 200
+    },
+    {
+      "id": "migrations_branching",
+      "label": "Migrations and Branching",
+      "folder": "migrations_branching",
+      "prefix": "supabase-platform_migrations_branching_suite",
+      "count": 200
+    },
+    {
+      "id": "api_keys_access",
+      "label": "API Keys and Access",
+      "folder": "api_keys_access",
+      "prefix": "supabase-platform_api_keys_access_suite",
+      "count": 200
+    },
+    {
+      "id": "backup_recovery",
+      "label": "Backups and Recovery",
+      "folder": "backup_recovery",
+      "prefix": "supabase-platform_backup_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "observability",
+      "label": "Logs and Observability",
+      "folder": "observability",
+      "prefix": "supabase-platform_observability_suite",
+      "count": 200
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations and Deployment",
+      "folder": "integrations",
+      "prefix": "supabase-platform_integrations_suite",
+      "count": 200
+    }
+  ]
+}

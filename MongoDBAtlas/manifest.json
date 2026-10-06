@@ -1,0 +1,77 @@
+{
+  "product": "MongoDB Atlas",
+  "key": "mongodb-atlas",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "projects_clusters",
+      "label": "Projects and Clusters",
+      "folder": "projects_clusters",
+      "prefix": "mongodb-atlas_projects_clusters_suite",
+      "count": 200
+    },
+    {
+      "id": "database_collections",
+      "label": "Databases and Collections",
+      "folder": "database_collections",
+      "prefix": "mongodb-atlas_database_collections_suite",
+      "count": 200
+    },
+    {
+      "id": "indexes_search",
+      "label": "Indexes, Search, and Vector",
+      "folder": "indexes_search",
+      "prefix": "mongodb-atlas_indexes_search_suite",
+      "count": 200
+    },
+    {
+      "id": "aggregation",
+      "label": "Aggregation and Query",
+      "folder": "aggregation",
+      "prefix": "mongodb-atlas_aggregation_suite",
+      "count": 200
+    },
+    {
+      "id": "change_streams",
+      "label": "Change Streams and Triggers",
+      "folder": "change_streams",
+      "prefix": "mongodb-atlas_change_streams_suite",
+      "count": 200
+    },
+    {
+      "id": "backup_restore",
+      "label": "Backup and Restore",
+      "folder": "backup_restore",
+      "prefix": "mongodb-atlas_backup_restore_suite",
+      "count": 200
+    },
+    {
+      "id": "security_network",
+      "label": "Security and Networking",
+      "folder": "security_network",
+      "prefix": "mongodb-atlas_security_network_suite",
+      "count": 200
+    },
+    {
+      "id": "governance_audit",
+      "label": "Governance and Audit",
+      "folder": "governance_audit",
+      "prefix": "mongodb-atlas_governance_audit_suite",
+      "count": 200
+    },
+    {
+      "id": "app_services",
+      "label": "App Services and APIs",
+      "folder": "app_services",
+      "prefix": "mongodb-atlas_app_services_suite",
+      "count": 200
+    },
+    {
+      "id": "monitoring_performance",
+      "label": "Monitoring and Performance",
+      "folder": "monitoring_performance",
+      "prefix": "mongodb-atlas_monitoring_performance_suite",
+      "count": 200
+    }
+  ]
+}

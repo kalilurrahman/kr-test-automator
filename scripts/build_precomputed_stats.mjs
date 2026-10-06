@@ -253,6 +253,11 @@ const GENERATED_DATA_PACKS = [
   ["apacheiceberg", "Apache Iceberg", "ApacheIceberg"], ["medidata", "Medidata", "Medidata"],
   ["iqvia", "IQVIA", "IQVIA"], ["databricks", "Databricks", "Databricks"],
   ["snowflakeai", "Snowflake AI", "SnowflakeAI"], ["foundryai", "Palantir Foundry AI", "PalantirFoundryAI"],
+  ["microsoftfabric", "Microsoft Fabric", "MicrosoftFabric"], ["dbt", "dbt", "dbt"],
+  ["confluentcloud", "Confluent Cloud", "Confluent"], ["mongodb-atlas", "MongoDB Atlas", "MongoDBAtlas"],
+  ["fivetran", "Fivetran", "Fivetran"], ["supabase-platform", "Supabase", "SupabasePlatform"],
+  ["vercel", "Vercel", "Vercel"], ["langsmith", "LangChain and LangSmith", "LangSmith"],
+  ["pinecone", "Pinecone", "Pinecone"], ["huggingfacehub", "Hugging Face Hub", "HuggingFaceHub"],
 ];
 for (const [id, label, folder] of GENERATED_DATA_PACKS) {
   const manifestFile = path.join(ROOT, folder, "manifest.json");

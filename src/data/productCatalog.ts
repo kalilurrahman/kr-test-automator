@@ -1,5 +1,5 @@
 /**
- * Single source of truth for the 15-platform enterprise test catalogue.
+ * Single source of truth for the enterprise product test catalogue.
  * Drives the Dashboard, About page, and grouped header navigation.
  *
  * NOTE: Module names and counts are read directly from the existing

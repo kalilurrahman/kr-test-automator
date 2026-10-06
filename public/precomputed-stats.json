@@ -1,17 +1,17 @@
 {
-  "totalCases": 206760,
-  "totalModules": 50600,
-  "uniqueIds": 206760,
-  "duplicatesRemoved": 6740,
-  "lastUpdated": 1791209830175,
+  "totalCases": 226560,
+  "totalModules": 50699,
+  "uniqueIds": 226560,
+  "duplicatesRemoved": 6940,
+  "lastUpdated": 1791286433280,
   "byPriority": [
     {
       "name": "High",
-      "value": 88838
+      "value": 104510
     },
     {
       "name": "Medium",
-      "value": 72778
+      "value": 76906
     },
     {
       "name": "Low",
@@ -82,6 +82,46 @@
     {
       "name": "Apache Iceberg",
       "value": 2000
+    },
+    {
+      "name": "Microsoft Fabric",
+      "value": 2000
+    },
+    {
+      "name": "dbt",
+      "value": 2000
+    },
+    {
+      "name": "Confluent Cloud",
+      "value": 2000
+    },
+    {
+      "name": "MongoDB Atlas",
+      "value": 2000
+    },
+    {
+      "name": "Fivetran",
+      "value": 2000
+    },
+    {
+      "name": "Supabase",
+      "value": 2000
+    },
+    {
+      "name": "Vercel",
+      "value": 2000
+    },
+    {
+      "name": "LangChain and LangSmith",
+      "value": 2000
+    },
+    {
+      "name": "Pinecone",
+      "value": 2000
+    },
+    {
+      "name": "Hugging Face Hub",
+      "value": 1800
     },
     {
       "name": "SageIntacct",
@@ -10042,6 +10082,195 @@
       "high": 1912,
       "medium": 838,
       "low": 250
+    },
+    "microsoftfabric": {
+      "label": "Microsoft Fabric",
+      "total": 2000,
+      "modules": [
+        "Workspaces and Roles",
+        "OneLake and Shortcuts",
+        "Data Factory Pipelines",
+        "Lakehouse and Spark",
+        "Warehouse and SQL",
+        "Power BI Semantic Models",
+        "Real-Time Intelligence",
+        "Data Science and ML",
+        "Governance and Lineage",
+        "Capacity and Operations"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "dbt": {
+      "label": "dbt",
+      "total": 2000,
+      "modules": [
+        "Projects and Git",
+        "Models and SQL",
+        "Tests and Contracts",
+        "Snapshots and History",
+        "Documentation and Lineage",
+        "Jobs and Environments",
+        "CI and Pull Request Checks",
+        "Metrics and Semantic Layer",
+        "Access and Audit",
+        "Adapters and Packages"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "confluentcloud": {
+      "label": "Confluent Cloud",
+      "total": 2000,
+      "modules": [
+        "Clusters and Networking",
+        "Topics and Partitions",
+        "Schema Registry",
+        "Connectors and Integrations",
+        "Clients and Consumer Groups",
+        "Flink and Stream Processing",
+        "Stream Governance and Lineage",
+        "RBAC, ACLs, and Audit",
+        "Replication and Disaster Recovery",
+        "Monitoring and Cost"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "mongodb-atlas": {
+      "label": "MongoDB Atlas",
+      "total": 2000,
+      "modules": [
+        "Projects and Clusters",
+        "Databases and Collections",
+        "Indexes, Search, and Vector",
+        "Aggregation and Query",
+        "Change Streams and Triggers",
+        "Backup and Restore",
+        "Security and Networking",
+        "Governance and Audit",
+        "App Services and APIs",
+        "Monitoring and Performance"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "fivetran": {
+      "label": "Fivetran",
+      "total": 2000,
+      "modules": [
+        "Connectors and Sources",
+        "Destinations and Targets",
+        "Syncs and CDC",
+        "Schema Drift and Evolution",
+        "Transformations and dbt",
+        "Orchestration and Scheduling",
+        "Data Quality and Alerts",
+        "Access, Secrets, and Audit",
+        "History and Recovery",
+        "Usage and Billing"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "supabase-platform": {
+      "label": "Supabase",
+      "total": 2000,
+      "modules": [
+        "Projects and Postgres",
+        "Auth and Row-Level Security",
+        "Realtime and Broadcast",
+        "Storage and Buckets",
+        "Edge Functions",
+        "Migrations and Branching",
+        "API Keys and Access",
+        "Backups and Recovery",
+        "Logs and Observability",
+        "Integrations and Deployment"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "vercel": {
+      "label": "Vercel",
+      "total": 2000,
+      "modules": [
+        "Projects and Git",
+        "Deployments and Promotion",
+        "Environment Variables and Secrets",
+        "Domains and Routing",
+        "Functions and Cron",
+        "Caching and Incremental Rendering",
+        "AI SDK and AI Gateway",
+        "Observability and Logs",
+        "Security and Firewall",
+        "Teams and Usage"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "langsmith": {
+      "label": "LangChain and LangSmith",
+      "total": 2000,
+      "modules": [
+        "Projects and Traces",
+        "Prompt Management",
+        "Datasets and Examples",
+        "Evaluations and Experiments",
+        "Agents and Graphs",
+        "Tools and Human Approval",
+        "Threads and Streaming",
+        "Models and Routing",
+        "Security and Access",
+        "Deployment and Monitoring"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "pinecone": {
+      "label": "Pinecone",
+      "total": 2000,
+      "modules": [
+        "Projects and Indexes",
+        "Vector Upsert and Namespaces",
+        "Similarity Search and Filters",
+        "Hybrid Search and Reranking",
+        "Metadata and Tenancy",
+        "Ingestion and Integrations",
+        "Backup and Restore",
+        "Security and Access",
+        "Scaling and Resilience",
+        "Usage and Monitoring"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "huggingfacehub": {
+      "label": "Hugging Face Hub",
+      "total": 1800,
+      "modules": [
+        "Repositories and Commits",
+        "Models and Model Cards",
+        "Datasets and Revisions",
+        "Spaces and Applications",
+        "Inference Endpoints",
+        "Gated Models and Licenses",
+        "Organizations and Tokens",
+        "Collections and Evaluation",
+        "Security and Supply Chain"
+      ],
+      "high": 1464,
+      "medium": 336,
+      "low": 0
     },
     "salesforce": {
       "label": "Salesforce",

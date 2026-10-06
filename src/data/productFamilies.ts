@@ -1,5 +1,5 @@
 /**
- * Family taxonomy that buckets every entry in PRODUCT_CATALOG into one of six
+ * Family taxonomy that buckets every entry in PRODUCT_CATALOG into one of eight
  * logical industry families. Used by /platforms, /services and the header
  * dropdown so users can navigate by similarity instead of scanning a flat list.
  *
@@ -11,6 +11,7 @@ export type FamilyKey =
   | "erp_finance"
   | "healthcare_lifesciences"
   | "telecom_network"
+  | "data_ai"
   | "cloud_devops"
   | "government_public"
   | "commerce_retail"
@@ -46,6 +47,13 @@ export const PRODUCT_FAMILIES: ProductFamily[] = [
     shortLabel: "Telecom / Network",
     blurb: "Network security, identity, OSS/BSS and zero-trust connectivity stacks.",
     accent: "indigo",
+  },
+  {
+    key: "data_ai",
+    label: "Data & AI Platforms",
+    shortLabel: "Data & AI",
+    blurb: "Analytics, data engineering, model ecosystems, AI development, and intelligent application platforms.",
+    accent: "violet",
   },
   {
     key: "cloud_devops",
@@ -110,12 +118,35 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   crowdstrike: "telecom_network",
   splunk: "telecom_network",
 
+  // ── Data & AI Platforms ─────────────────────────────────────────────────
+  dataiku: "data_ai",
+  apacheiceberg: "data_ai",
+  databricks: "data_ai",
+  snowflake: "data_ai",
+  snowflakeai: "data_ai",
+  foundryai: "data_ai",
+  microsoftfabric: "data_ai",
+  dbt: "data_ai",
+  confluentcloud: "data_ai",
+  "mongodb-atlas": "data_ai",
+  fivetran: "data_ai",
+  "supabase-platform": "data_ai",
+  vercel: "data_ai",
+  langsmith: "data_ai",
+  pinecone: "data_ai",
+  huggingfacehub: "data_ai",
+  claudecode: "data_ai",
+  codex: "data_ai",
+  geminiantigravity: "data_ai",
+  githubcopilot: "data_ai",
+  cursor: "data_ai",
+  windsurf: "data_ai",
+
   // ── Cloud / DevOps ───────────────────────────────────────────────────────
   aws: "cloud_devops",
   gcp: "cloud_devops",
   azure: "cloud_devops",
   api: "cloud_devops",
-  snowflake: "cloud_devops",
   datadog: "cloud_devops",
   jira: "cloud_devops",
   mulesoft: "cloud_devops",

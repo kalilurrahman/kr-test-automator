@@ -1,0 +1,77 @@
+{
+  "product": "Vercel",
+  "key": "vercel",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "projects_git",
+      "label": "Projects and Git",
+      "folder": "projects_git",
+      "prefix": "vercel_projects_git_suite",
+      "count": 200
+    },
+    {
+      "id": "deployments",
+      "label": "Deployments and Promotion",
+      "folder": "deployments",
+      "prefix": "vercel_deployments_suite",
+      "count": 200
+    },
+    {
+      "id": "environment_secrets",
+      "label": "Environment Variables and Secrets",
+      "folder": "environment_secrets",
+      "prefix": "vercel_environment_secrets_suite",
+      "count": 200
+    },
+    {
+      "id": "domains",
+      "label": "Domains and Routing",
+      "folder": "domains",
+      "prefix": "vercel_domains_suite",
+      "count": 200
+    },
+    {
+      "id": "functions_crons",
+      "label": "Functions and Cron",
+      "folder": "functions_crons",
+      "prefix": "vercel_functions_crons_suite",
+      "count": 200
+    },
+    {
+      "id": "cache_isr",
+      "label": "Caching and Incremental Rendering",
+      "folder": "cache_isr",
+      "prefix": "vercel_cache_isr_suite",
+      "count": 200
+    },
+    {
+      "id": "ai_gateway",
+      "label": "AI SDK and AI Gateway",
+      "folder": "ai_gateway",
+      "prefix": "vercel_ai_gateway_suite",
+      "count": 200
+    },
+    {
+      "id": "observability",
+      "label": "Observability and Logs",
+      "folder": "observability",
+      "prefix": "vercel_observability_suite",
+      "count": 200
+    },
+    {
+      "id": "security_firewall",
+      "label": "Security and Firewall",
+      "folder": "security_firewall",
+      "prefix": "vercel_security_firewall_suite",
+      "count": 200
+    },
+    {
+      "id": "teams_billing",
+      "label": "Teams and Usage",
+      "folder": "teams_billing",
+      "prefix": "vercel_teams_billing_suite",
+      "count": 200
+    }
+  ]
+}

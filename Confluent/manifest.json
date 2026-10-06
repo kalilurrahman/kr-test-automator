@@ -1,0 +1,77 @@
+{
+  "product": "Confluent Cloud",
+  "key": "confluentcloud",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "clusters",
+      "label": "Clusters and Networking",
+      "folder": "clusters",
+      "prefix": "confluentcloud_clusters_suite",
+      "count": 200
+    },
+    {
+      "id": "topics",
+      "label": "Topics and Partitions",
+      "folder": "topics",
+      "prefix": "confluentcloud_topics_suite",
+      "count": 200
+    },
+    {
+      "id": "schemas",
+      "label": "Schema Registry",
+      "folder": "schemas",
+      "prefix": "confluentcloud_schemas_suite",
+      "count": 200
+    },
+    {
+      "id": "connectors",
+      "label": "Connectors and Integrations",
+      "folder": "connectors",
+      "prefix": "confluentcloud_connectors_suite",
+      "count": 200
+    },
+    {
+      "id": "producers_consumers",
+      "label": "Clients and Consumer Groups",
+      "folder": "producers_consumers",
+      "prefix": "confluentcloud_producers_consumers_suite",
+      "count": 200
+    },
+    {
+      "id": "flink_sql",
+      "label": "Flink and Stream Processing",
+      "folder": "flink_sql",
+      "prefix": "confluentcloud_flink_sql_suite",
+      "count": 200
+    },
+    {
+      "id": "governance",
+      "label": "Stream Governance and Lineage",
+      "folder": "governance",
+      "prefix": "confluentcloud_governance_suite",
+      "count": 200
+    },
+    {
+      "id": "rbac",
+      "label": "RBAC, ACLs, and Audit",
+      "folder": "rbac",
+      "prefix": "confluentcloud_rbac_suite",
+      "count": 200
+    },
+    {
+      "id": "disaster_recovery",
+      "label": "Replication and Disaster Recovery",
+      "folder": "disaster_recovery",
+      "prefix": "confluentcloud_disaster_recovery_suite",
+      "count": 200
+    },
+    {
+      "id": "monitoring",
+      "label": "Monitoring and Cost",
+      "folder": "monitoring",
+      "prefix": "confluentcloud_monitoring_suite",
+      "count": 200
+    }
+  ]
+}

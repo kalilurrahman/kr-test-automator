@@ -43,6 +43,11 @@ const TOP_PRODUCT_KEYS = [
   "oracle",
   "dynamics365", // serves as the M365 / Microsoft 365 launcher
   "veeva",
+  "microsoftfabric",
+  "databricks",
+  "dbt",
+  "vercel",
+  "huggingfacehub",
 ] as const;
 
 type SortKey = "name" | "modules" | "family";
@@ -91,7 +96,7 @@ const Platforms = () => {
     <>
       <SeoHead
         title="Products & Platforms · TestForge AI"
-        description={`Browse ${TOTAL_PRODUCTS} enterprise platforms across ${PRODUCT_FAMILIES.length} families — ERP, Healthcare, Telecom, Cloud, Government and Commerce.`}
+        description={`Browse ${TOTAL_PRODUCTS} enterprise platforms across ${PRODUCT_FAMILIES.length} families — ERP, Healthcare, Data & AI, Telecom, Cloud, Government and Commerce.`}
         canonical="/platforms"
       />
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-6">

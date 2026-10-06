@@ -1,0 +1,77 @@
+{
+  "product": "Microsoft Fabric",
+  "key": "microsoftfabric",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "workspaces",
+      "label": "Workspaces and Roles",
+      "folder": "workspaces",
+      "prefix": "microsoftfabric_workspaces_suite",
+      "count": 200
+    },
+    {
+      "id": "onelake",
+      "label": "OneLake and Shortcuts",
+      "folder": "onelake",
+      "prefix": "microsoftfabric_onelake_suite",
+      "count": 200
+    },
+    {
+      "id": "data_factory",
+      "label": "Data Factory Pipelines",
+      "folder": "data_factory",
+      "prefix": "microsoftfabric_data_factory_suite",
+      "count": 200
+    },
+    {
+      "id": "lakehouse",
+      "label": "Lakehouse and Spark",
+      "folder": "lakehouse",
+      "prefix": "microsoftfabric_lakehouse_suite",
+      "count": 200
+    },
+    {
+      "id": "warehouse",
+      "label": "Warehouse and SQL",
+      "folder": "warehouse",
+      "prefix": "microsoftfabric_warehouse_suite",
+      "count": 200
+    },
+    {
+      "id": "power_bi",
+      "label": "Power BI Semantic Models",
+      "folder": "power_bi",
+      "prefix": "microsoftfabric_power_bi_suite",
+      "count": 200
+    },
+    {
+      "id": "real_time",
+      "label": "Real-Time Intelligence",
+      "folder": "real_time",
+      "prefix": "microsoftfabric_real_time_suite",
+      "count": 200
+    },
+    {
+      "id": "data_science",
+      "label": "Data Science and ML",
+      "folder": "data_science",
+      "prefix": "microsoftfabric_data_science_suite",
+      "count": 200
+    },
+    {
+      "id": "governance",
+      "label": "Governance and Lineage",
+      "folder": "governance",
+      "prefix": "microsoftfabric_governance_suite",
+      "count": 200
+    },
+    {
+      "id": "capacity",
+      "label": "Capacity and Operations",
+      "folder": "capacity",
+      "prefix": "microsoftfabric_capacity_suite",
+      "count": 200
+    }
+  ]
+}
