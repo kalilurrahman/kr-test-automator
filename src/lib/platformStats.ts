@@ -9,7 +9,8 @@ import type { PlatformDef } from "@/data/platformManifests";
 
 const PRIORITY_FIELDS = ["Priority", "priority"];
 const MODULE_FIELDS = ["Module", "module", "Domain", "Capability"];
-const TYPE_FIELDS = ["Test Type", "type", "Type"];
+const TYPE_FIELDS = ["Test Type", "test_type", "Test_Type", "type", "Type"];
+const FRAMEWORK_FIELDS = ["Automation Framework", "automation_framework", "Automation_Framework", "framework", "Framework"];
 
 const pick = (row: Record<string, string>, fields: string[]) => {
   for (const f of fields) if (row[f]) return row[f];
@@ -53,6 +54,26 @@ const AUTO_TYPES = new Set([
   "api",
 ]);
 
+const AUTO_FRAMEWORK_HINTS = [
+  "api",
+  "playwright",
+  "selenium",
+  "cypress",
+  "webdriver",
+  "puppeteer",
+  "appium",
+  "pytest",
+  "jest",
+  "vitest",
+  "robot",
+  "cucumber",
+  "junit",
+  "testng",
+  "k6",
+  "postman",
+  "restassured",
+];
+
 async function fetchModule(
   platform: PlatformDef,
   mod: PlatformDef["modules"][number],
@@ -76,7 +97,10 @@ async function fetchModule(
       else if (p === "medium") medium += 1;
       else if (p === "low") low += 1;
       const t = pick(r, TYPE_FIELDS).toLowerCase();
-      if (AUTO_TYPES.has(t)) auto += 1;
+      const framework = pick(r, FRAMEWORK_FIELDS).toLowerCase();
+      if (AUTO_TYPES.has(t) || AUTO_FRAMEWORK_HINTS.some((hint) => framework.includes(hint))) {
+        auto += 1;
+      }
     }
     return {
       id: mod.id,

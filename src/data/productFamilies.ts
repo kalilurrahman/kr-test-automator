@@ -109,6 +109,8 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   // ── Healthcare / Life Sciences ───────────────────────────────────────────
   veeva: "healthcare_lifesciences",
   ibmmaximo: "healthcare_lifesciences", // EAM also used in pharma plants
+  medidata: "healthcare_lifesciences",
+  iqvia: "healthcare_lifesciences",
 
   // ── Telecom / Network ────────────────────────────────────────────────────
   cyberark: "telecom_network",
