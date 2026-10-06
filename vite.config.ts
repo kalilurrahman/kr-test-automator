@@ -192,7 +192,7 @@ export default defineConfig(({ mode }) => ({
     }),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "robots.txt"],
+      includeAssets: ["favicon.ico", "favicon-32.png", "brand/validaira-mark.svg", "brand/validaira-social.png", "icons/apple-touch-icon.png", "icons/icon-512-maskable.png", "robots.txt"],
       manifest: {
         id: "/",
         name: "Validaira - AI-native quality engineering",
@@ -200,8 +200,8 @@ export default defineConfig(({ mode }) => ({
         description: "AI-native quality engineering for confident releases",
         lang: "en",
         categories: ["productivity", "developer", "business"],
-        theme_color: "#c9a227",
-        background_color: "#0a0c10",
+        theme_color: "#0c1423",
+        background_color: "#0c1423",
         display: "standalone",
         display_override: ["standalone", "minimal-ui"],
         orientation: "portrait",
@@ -222,6 +222,12 @@ export default defineConfig(({ mode }) => ({
           },
           {
             src: "/icons/icon-512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/icons/icon-512-maskable.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",

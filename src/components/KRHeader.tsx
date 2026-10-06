@@ -101,7 +101,12 @@ const KRHeader = () => {
 
           {/* CENTER: App name */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
-            <Settings className="w-5 h-5 text-primary" />
+            <img
+              src="/brand/validaira-mark.svg"
+              alt=""
+              aria-hidden="true"
+              className="h-8 w-8 rounded-lg"
+            />
             <span
               className="text-lg font-bold tracking-wide text-foreground hidden sm:inline"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
