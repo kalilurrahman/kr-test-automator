@@ -1,0 +1,79 @@
+{
+  "product": "Public Services",
+  "key": "public-services",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "service_catalog_accessibility",
+      "label": "Digital Service Catalog and Accessibility",
+      "folder": "service_catalog_accessibility",
+      "prefix": "public-services_service_catalog_accessibility_suite",
+      "count": 200
+    },
+    {
+      "id": "case_intake",
+      "label": "Case Intake and Triage",
+      "folder": "case_intake",
+      "prefix": "public-services_case_intake_suite",
+      "count": 200
+    },
+    {
+      "id": "eligibility_benefits",
+      "label": "Eligibility and Benefits Workflow",
+      "folder": "eligibility_benefits",
+      "prefix": "public-services_eligibility_benefits_suite",
+      "count": 200
+    },
+    {
+      "id": "identity_consent",
+      "label": "Identity, Consent and Delegation",
+      "folder": "identity_consent",
+      "prefix": "public-services_identity_consent_suite",
+      "count": 200
+    },
+    {
+      "id": "appointments_queues",
+      "label": "Appointments and Queue Management",
+      "folder": "appointments_queues",
+      "prefix": "public-services_appointments_queues_suite",
+      "count": 200
+    },
+    {
+      "id": "documents_records",
+      "label": "Documents and Records Management",
+      "folder": "documents_records",
+      "prefix": "public-services_documents_records_suite",
+      "count": 200
+    },
+    {
+      "id": "payments_reconciliation",
+      "label": "Government Payment Mocks and Reconciliation",
+      "folder": "payments_reconciliation",
+      "prefix": "public-services_payments_reconciliation_suite",
+      "count": 200
+    },
+    {
+      "id": "interagency_exchange",
+      "label": "Inter-agency Exchange",
+      "folder": "interagency_exchange",
+      "prefix": "public-services_interagency_exchange_suite",
+      "count": 200
+    },
+    {
+      "id": "appeals_communications",
+      "label": "Appeals and Case Communications",
+      "folder": "appeals_communications",
+      "prefix": "public-services_appeals_communications_suite",
+      "count": 200
+    },
+    {
+      "id": "transparency_security",
+      "label": "Transparency, Security and Audit",
+      "folder": "transparency_security",
+      "prefix": "public-services_transparency_security_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "public-sector",
+  "safetyNote": "Use synthetic resident identities and mock agency/payment endpoints only. Do not use real citizen records, contact production government systems, or make real eligibility, legal, or benefits determinations."
+}

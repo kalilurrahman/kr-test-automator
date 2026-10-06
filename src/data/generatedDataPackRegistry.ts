@@ -5082,6 +5082,1113 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
     ],
     "industryDomain": "logistics-supply-chain",
     "automationSuiteUrl": "/market-automation-suites/logistics-supply-chain-playwright-e2e.zip"
+  },
+  {
+    "id": "automotive-mobility",
+    "label": "Automotive & Mobility",
+    "shortLabel": "Automotive & Mobility",
+    "description": "Vehicle programs, software update simulation, dealer operations, fleet mobility, charging, supplier traceability, and service workflows.",
+    "publicBase": "/AutomotiveMobility",
+    "idPrefix": "AUTOX",
+    "accent": "rose",
+    "modules": [
+      {
+        "id": "vehicle_programs",
+        "label": "Vehicle Programs and Configuration",
+        "folder": "vehicle_programs",
+        "prefix": "automotive-mobility_vehicle_programs_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "engineering_changes",
+        "label": "Engineering Change and Requirements",
+        "folder": "engineering_changes",
+        "prefix": "automotive-mobility_engineering_changes_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "software_update_simulation",
+        "label": "Vehicle Software Update Simulation",
+        "folder": "software_update_simulation",
+        "prefix": "automotive-mobility_software_update_simulation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "dealer_retail",
+        "label": "Dealer and Retail Operations",
+        "folder": "dealer_retail",
+        "prefix": "automotive-mobility_dealer_retail_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "vehicle_ordering",
+        "label": "Vehicle Ordering and Fulfillment",
+        "folder": "vehicle_ordering",
+        "prefix": "automotive-mobility_vehicle_ordering_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "fleet_mobility",
+        "label": "Fleet and Mobility Services",
+        "folder": "fleet_mobility",
+        "prefix": "automotive-mobility_fleet_mobility_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "charging_energy",
+        "label": "Charging and Energy Services",
+        "folder": "charging_energy",
+        "prefix": "automotive-mobility_charging_energy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "supplier_quality",
+        "label": "Supplier Quality and Parts Traceability",
+        "folder": "supplier_quality",
+        "prefix": "automotive-mobility_supplier_quality_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "service_warranty",
+        "label": "Service and Warranty Operations",
+        "folder": "service_warranty",
+        "prefix": "automotive-mobility_service_warranty_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "connected_vehicle_security",
+        "label": "Connected Vehicle Security and Audit",
+        "folder": "connected_vehicle_security",
+        "prefix": "automotive-mobility_connected_vehicle_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "automotive",
+    "automationSuiteUrl": "/market-automation-suites/automotive-mobility-playwright-e2e.zip"
+  },
+  {
+    "id": "construction-aec",
+    "label": "Construction & AEC",
+    "shortLabel": "Construction & AEC",
+    "description": "BIM coordination, design reviews, project controls, site execution, quality inspections, submittals, and handover.",
+    "publicBase": "/ConstructionAEC",
+    "idPrefix": "AECX",
+    "accent": "amber",
+    "modules": [
+      {
+        "id": "bim_information",
+        "label": "BIM and Information Management",
+        "folder": "bim_information",
+        "prefix": "construction-aec_bim_information_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "design_reviews",
+        "label": "Design Review and Coordination",
+        "folder": "design_reviews",
+        "prefix": "construction-aec_design_reviews_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "project_controls",
+        "label": "Project Controls and Scheduling",
+        "folder": "project_controls",
+        "prefix": "construction-aec_project_controls_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "cost_contracts",
+        "label": "Cost and Contract Administration",
+        "folder": "cost_contracts",
+        "prefix": "construction-aec_cost_contracts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "field_execution",
+        "label": "Field Execution and Daily Reports",
+        "folder": "field_execution",
+        "prefix": "construction-aec_field_execution_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "quality_inspections",
+        "label": "Quality Inspections and Defects",
+        "folder": "quality_inspections",
+        "prefix": "construction-aec_quality_inspections_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "safety_environment",
+        "label": "Safety and Environmental Records",
+        "folder": "safety_environment",
+        "prefix": "construction-aec_safety_environment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "materials_logistics",
+        "label": "Materials and Site Logistics",
+        "folder": "materials_logistics",
+        "prefix": "construction-aec_materials_logistics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "submittals_rfis",
+        "label": "Submittals and RFIs",
+        "folder": "submittals_rfis",
+        "prefix": "construction-aec_submittals_rfis_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "handover_facilities",
+        "label": "Commissioning and Handover",
+        "folder": "handover_facilities",
+        "prefix": "construction-aec_handover_facilities_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "construction",
+    "automationSuiteUrl": "/market-automation-suites/construction-aec-playwright-e2e.zip"
+  },
+  {
+    "id": "travel-hospitality",
+    "label": "Travel & Hospitality",
+    "shortLabel": "Travel & Hospitality",
+    "description": "Availability, reservations, pricing, guest services, payment mocks, loyalty, channel distribution, and disruption recovery.",
+    "publicBase": "/TravelHospitality",
+    "idPrefix": "TRVX",
+    "accent": "cyan",
+    "modules": [
+      {
+        "id": "availability_inventory",
+        "label": "Availability and Inventory",
+        "folder": "availability_inventory",
+        "prefix": "travel-hospitality_availability_inventory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "reservations",
+        "label": "Reservations and Itineraries",
+        "folder": "reservations",
+        "prefix": "travel-hospitality_reservations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "pricing_promotions",
+        "label": "Pricing and Promotions",
+        "folder": "pricing_promotions",
+        "prefix": "travel-hospitality_pricing_promotions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "guest_traveler_profiles",
+        "label": "Guest and Traveler Profiles",
+        "folder": "guest_traveler_profiles",
+        "prefix": "travel-hospitality_guest_traveler_profiles_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "checkin_guest_services",
+        "label": "Check-in and Guest Services",
+        "folder": "checkin_guest_services",
+        "prefix": "travel-hospitality_checkin_guest_services_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "payments_refunds",
+        "label": "Payment and Refund Mocks",
+        "folder": "payments_refunds",
+        "prefix": "travel-hospitality_payments_refunds_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "loyalty_membership",
+        "label": "Loyalty and Membership",
+        "folder": "loyalty_membership",
+        "prefix": "travel-hospitality_loyalty_membership_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "distribution_channels",
+        "label": "Distribution and Channel Integration",
+        "folder": "distribution_channels",
+        "prefix": "travel-hospitality_distribution_channels_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "cancellations_disruptions",
+        "label": "Cancellations and Disruption Handling",
+        "folder": "cancellations_disruptions",
+        "prefix": "travel-hospitality_cancellations_disruptions_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "analytics_privacy",
+        "label": "Analytics, Privacy and Access",
+        "folder": "analytics_privacy",
+        "prefix": "travel-hospitality_analytics_privacy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "travel-hospitality",
+    "automationSuiteUrl": "/market-automation-suites/travel-hospitality-playwright-e2e.zip"
+  },
+  {
+    "id": "agriculture-agritech",
+    "label": "Agriculture & Agritech",
+    "shortLabel": "Agriculture & Agritech",
+    "description": "Farm and field planning, simulated sensors, equipment maintenance, input inventory, harvest traceability, and reporting.",
+    "publicBase": "/AgricultureAgriTech",
+    "idPrefix": "AGRX",
+    "accent": "lime",
+    "modules": [
+      {
+        "id": "field_farm_registry",
+        "label": "Farm and Field Registry",
+        "folder": "field_farm_registry",
+        "prefix": "agriculture-agritech_field_farm_registry_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "crop_season_planning",
+        "label": "Crop and Season Planning",
+        "folder": "crop_season_planning",
+        "prefix": "agriculture-agritech_crop_season_planning_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "equipment_maintenance",
+        "label": "Equipment and Maintenance",
+        "folder": "equipment_maintenance",
+        "prefix": "agriculture-agritech_equipment_maintenance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "iot_sensor_data",
+        "label": "IoT and Sensor Data Simulation",
+        "folder": "iot_sensor_data",
+        "prefix": "agriculture-agritech_iot_sensor_data_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "irrigation_water",
+        "label": "Irrigation and Water Workflows",
+        "folder": "irrigation_water",
+        "prefix": "agriculture-agritech_irrigation_water_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "input_inventory",
+        "label": "Seed, Fertilizer and Input Inventory",
+        "folder": "input_inventory",
+        "prefix": "agriculture-agritech_input_inventory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "harvest_postharvest",
+        "label": "Harvest and Post-harvest Operations",
+        "folder": "harvest_postharvest",
+        "prefix": "agriculture-agritech_harvest_postharvest_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "traceability_market",
+        "label": "Traceability and Market Linkage",
+        "folder": "traceability_market",
+        "prefix": "agriculture-agritech_traceability_market_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "sustainability_reporting",
+        "label": "Sustainability and Reporting",
+        "folder": "sustainability_reporting",
+        "prefix": "agriculture-agritech_sustainability_reporting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "farm_security_integrations",
+        "label": "Access, Integrations and Resilience",
+        "folder": "farm_security_integrations",
+        "prefix": "agriculture-agritech_farm_security_integrations_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "agriculture",
+    "automationSuiteUrl": "/market-automation-suites/agriculture-agritech-playwright-e2e.zip"
+  },
+  {
+    "id": "telecom-network-ops",
+    "label": "Telecom Network Operations",
+    "shortLabel": "Telecom Network Operations",
+    "description": "Service orchestration, simulated network inventory, usage rating, assurance, partner interfaces, change, and resilience.",
+    "publicBase": "/TelecomNetworkOps",
+    "idPrefix": "TELX",
+    "accent": "blue",
+    "modules": [
+      {
+        "id": "service_catalog",
+        "label": "Service Catalog and Order Capture",
+        "folder": "service_catalog",
+        "prefix": "telecom-network-ops_service_catalog_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "network_inventory",
+        "label": "Network Inventory and Topology",
+        "folder": "network_inventory",
+        "prefix": "telecom-network-ops_network_inventory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "provisioning_orchestration",
+        "label": "Provisioning Orchestration Simulation",
+        "folder": "provisioning_orchestration",
+        "prefix": "telecom-network-ops_provisioning_orchestration_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "subscriber_care",
+        "label": "Subscriber Care and Case Management",
+        "folder": "subscriber_care",
+        "prefix": "telecom-network-ops_subscriber_care_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "usage_rating_billing",
+        "label": "Usage, Rating and Billing",
+        "folder": "usage_rating_billing",
+        "prefix": "telecom-network-ops_usage_rating_billing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "assurance_incidents",
+        "label": "Network Assurance and Incident Workflow",
+        "folder": "assurance_incidents",
+        "prefix": "telecom-network-ops_assurance_incidents_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "partner_interconnect",
+        "label": "Partner and Interconnect Interfaces",
+        "folder": "partner_interconnect",
+        "prefix": "telecom-network-ops_partner_interconnect_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "network_change",
+        "label": "Network Change and Maintenance Windows",
+        "folder": "network_change",
+        "prefix": "telecom-network-ops_network_change_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "identity_security",
+        "label": "Identity, Security and Privacy",
+        "folder": "identity_security",
+        "prefix": "telecom-network-ops_identity_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "resilience_analytics",
+        "label": "Resilience and Operations Analytics",
+        "folder": "resilience_analytics",
+        "prefix": "telecom-network-ops_resilience_analytics_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "telecom-network",
+    "automationSuiteUrl": "/market-automation-suites/telecom-network-ops-playwright-e2e.zip"
+  },
+  {
+    "id": "public-services",
+    "label": "Public Services",
+    "shortLabel": "Public Services",
+    "description": "Accessible digital services, synthetic case intake, eligibility workflow, records, payment mocks, appeals, and inter-agency exchange.",
+    "publicBase": "/PublicServices",
+    "idPrefix": "PUBL",
+    "accent": "indigo",
+    "modules": [
+      {
+        "id": "service_catalog_accessibility",
+        "label": "Digital Service Catalog and Accessibility",
+        "folder": "service_catalog_accessibility",
+        "prefix": "public-services_service_catalog_accessibility_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "case_intake",
+        "label": "Case Intake and Triage",
+        "folder": "case_intake",
+        "prefix": "public-services_case_intake_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "eligibility_benefits",
+        "label": "Eligibility and Benefits Workflow",
+        "folder": "eligibility_benefits",
+        "prefix": "public-services_eligibility_benefits_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "identity_consent",
+        "label": "Identity, Consent and Delegation",
+        "folder": "identity_consent",
+        "prefix": "public-services_identity_consent_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "appointments_queues",
+        "label": "Appointments and Queue Management",
+        "folder": "appointments_queues",
+        "prefix": "public-services_appointments_queues_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "documents_records",
+        "label": "Documents and Records Management",
+        "folder": "documents_records",
+        "prefix": "public-services_documents_records_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "payments_reconciliation",
+        "label": "Government Payment Mocks and Reconciliation",
+        "folder": "payments_reconciliation",
+        "prefix": "public-services_payments_reconciliation_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "interagency_exchange",
+        "label": "Inter-agency Exchange",
+        "folder": "interagency_exchange",
+        "prefix": "public-services_interagency_exchange_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "appeals_communications",
+        "label": "Appeals and Case Communications",
+        "folder": "appeals_communications",
+        "prefix": "public-services_appeals_communications_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "transparency_security",
+        "label": "Transparency, Security and Audit",
+        "folder": "transparency_security",
+        "prefix": "public-services_transparency_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "public-sector",
+    "automationSuiteUrl": "/market-automation-suites/public-services-playwright-e2e.zip"
+  },
+  {
+    "id": "education-research",
+    "label": "Education & Research Systems",
+    "shortLabel": "Education & Research Systems",
+    "description": "Admissions, learner records, accessible learning, assessments, grants, lab assets, reproducible data, and publication workflows.",
+    "publicBase": "/EducationResearch",
+    "idPrefix": "EDUX",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "admissions_enrollment",
+        "label": "Admissions and Enrollment",
+        "folder": "admissions_enrollment",
+        "prefix": "education-research_admissions_enrollment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "learner_information",
+        "label": "Learner Information and Records",
+        "folder": "learner_information",
+        "prefix": "education-research_learner_information_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "learning_delivery",
+        "label": "Learning Delivery and Accessibility",
+        "folder": "learning_delivery",
+        "prefix": "education-research_learning_delivery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "assessment_credentials",
+        "label": "Assessment and Credentials",
+        "folder": "assessment_credentials",
+        "prefix": "education-research_assessment_credentials_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "research_projects",
+        "label": "Research Project Administration",
+        "folder": "research_projects",
+        "prefix": "education-research_research_projects_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "grants_funding",
+        "label": "Grants and Funding",
+        "folder": "grants_funding",
+        "prefix": "education-research_grants_funding_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "lab_inventory",
+        "label": "Laboratory and Research Assets",
+        "folder": "lab_inventory",
+        "prefix": "education-research_lab_inventory_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "research_data_lineage",
+        "label": "Research Data and Reproducibility",
+        "folder": "research_data_lineage",
+        "prefix": "education-research_research_data_lineage_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "publication_review",
+        "label": "Publication and Collaboration",
+        "folder": "publication_review",
+        "prefix": "education-research_publication_review_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "privacy_security_interoperability",
+        "label": "Privacy, Security and Interoperability",
+        "folder": "privacy_security_interoperability",
+        "prefix": "education-research_privacy_security_interoperability_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "education-research",
+    "automationSuiteUrl": "/market-automation-suites/education-research-playwright-e2e.zip"
+  },
+  {
+    "id": "media-entertainment",
+    "label": "Media & Entertainment",
+    "shortLabel": "Media & Entertainment",
+    "description": "Content ingest, editorial, rights, production, media delivery, publishing, subscriptions, accessibility, and analytics.",
+    "publicBase": "/MediaEntertainment",
+    "idPrefix": "MEDX",
+    "accent": "violet",
+    "modules": [
+      {
+        "id": "content_ingest",
+        "label": "Content Ingest and Metadata",
+        "folder": "content_ingest",
+        "prefix": "media-entertainment_content_ingest_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "editorial_workflow",
+        "label": "Editorial Planning and Review",
+        "folder": "editorial_workflow",
+        "prefix": "media-entertainment_editorial_workflow_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "rights_licensing",
+        "label": "Rights and Licensing",
+        "folder": "rights_licensing",
+        "prefix": "media-entertainment_rights_licensing_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "production_workflows",
+        "label": "Production and Post-production",
+        "folder": "production_workflows",
+        "prefix": "media-entertainment_production_workflows_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "media_processing_delivery",
+        "label": "Media Processing and Delivery",
+        "folder": "media_processing_delivery",
+        "prefix": "media-entertainment_media_processing_delivery_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "publishing_channels",
+        "label": "Publishing and Channel Operations",
+        "folder": "publishing_channels",
+        "prefix": "media-entertainment_publishing_channels_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "subscriptions_monetization",
+        "label": "Subscriptions and Monetization Mocks",
+        "folder": "subscriptions_monetization",
+        "prefix": "media-entertainment_subscriptions_monetization_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "audience_community",
+        "label": "Audience and Community Operations",
+        "folder": "audience_community",
+        "prefix": "media-entertainment_audience_community_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "accessibility_localization",
+        "label": "Accessibility and Localization",
+        "folder": "accessibility_localization",
+        "prefix": "media-entertainment_accessibility_localization_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "analytics_security",
+        "label": "Analytics, Security and Resilience",
+        "folder": "analytics_security",
+        "prefix": "media-entertainment_analytics_security_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "media-content",
+    "automationSuiteUrl": "/market-automation-suites/media-entertainment-playwright-e2e.zip"
+  },
+  {
+    "id": "real-estate-facilities",
+    "label": "Real Estate & Facilities",
+    "shortLabel": "Real Estate & Facilities",
+    "description": "Property portfolios, leasing, facilities work orders, inspections, occupancy, utilities, vendors, and capital projects.",
+    "publicBase": "/RealEstateFacilities",
+    "idPrefix": "REFX",
+    "accent": "teal",
+    "modules": [
+      {
+        "id": "property_portfolio",
+        "label": "Property Portfolio and Asset Register",
+        "folder": "property_portfolio",
+        "prefix": "real-estate-facilities_property_portfolio_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "leasing_tenants",
+        "label": "Leasing and Tenant Operations",
+        "folder": "leasing_tenants",
+        "prefix": "real-estate-facilities_leasing_tenants_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "work_orders_facilities",
+        "label": "Facilities and Work Order Management",
+        "folder": "work_orders_facilities",
+        "prefix": "real-estate-facilities_work_orders_facilities_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "inspections_compliance",
+        "label": "Inspections and Compliance Records",
+        "folder": "inspections_compliance",
+        "prefix": "real-estate-facilities_inspections_compliance_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "space_occupancy",
+        "label": "Space and Occupancy Planning",
+        "folder": "space_occupancy",
+        "prefix": "real-estate-facilities_space_occupancy_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "utilities_environment",
+        "label": "Utilities and Environmental Monitoring",
+        "folder": "utilities_environment",
+        "prefix": "real-estate-facilities_utilities_environment_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "vendor_contracts",
+        "label": "Vendor and Contract Management",
+        "folder": "vendor_contracts",
+        "prefix": "real-estate-facilities_vendor_contracts_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "capital_projects",
+        "label": "Capital Projects and Renovations",
+        "folder": "capital_projects",
+        "prefix": "real-estate-facilities_capital_projects_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "tenant_portal_communications",
+        "label": "Tenant Portal and Communications",
+        "folder": "tenant_portal_communications",
+        "prefix": "real-estate-facilities_tenant_portal_communications_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      },
+      {
+        "id": "security_resilience_reporting",
+        "label": "Security, Resilience and Portfolio Reporting",
+        "folder": "security_resilience_reporting",
+        "prefix": "real-estate-facilities_security_resilience_reporting_suite",
+        "formats": [
+          "csv",
+          "json",
+          "ts"
+        ]
+      }
+    ],
+    "industryDomain": "real-estate",
+    "automationSuiteUrl": "/market-automation-suites/real-estate-facilities-playwright-e2e.zip"
   }
 ];
 
@@ -6028,5 +7135,212 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
     "idPrefix": "LSCX",
     "accent": "amber",
     "industryDomain": "logistics-supply-chain"
+  },
+  {
+    "key": "automotive-mobility",
+    "label": "Automotive & Mobility",
+    "shortLabel": "Automotive & Mobility",
+    "description": "Vehicle programs, software update simulation, dealer operations, fleet mobility, charging, supplier traceability, and service workflows.",
+    "route": "/p/automotive-mobility",
+    "kind": "spa",
+    "modules": [
+      "Vehicle Programs and Configuration",
+      "Engineering Change and Requirements",
+      "Vehicle Software Update Simulation",
+      "Dealer and Retail Operations",
+      "Vehicle Ordering and Fulfillment",
+      "Fleet and Mobility Services",
+      "Charging and Energy Services",
+      "Supplier Quality and Parts Traceability",
+      "Service and Warranty Operations",
+      "Connected Vehicle Security and Audit"
+    ],
+    "idPrefix": "AUTOX",
+    "accent": "rose",
+    "industryDomain": "automotive"
+  },
+  {
+    "key": "construction-aec",
+    "label": "Construction & AEC",
+    "shortLabel": "Construction & AEC",
+    "description": "BIM coordination, design reviews, project controls, site execution, quality inspections, submittals, and handover.",
+    "route": "/p/construction-aec",
+    "kind": "spa",
+    "modules": [
+      "BIM and Information Management",
+      "Design Review and Coordination",
+      "Project Controls and Scheduling",
+      "Cost and Contract Administration",
+      "Field Execution and Daily Reports",
+      "Quality Inspections and Defects",
+      "Safety and Environmental Records",
+      "Materials and Site Logistics",
+      "Submittals and RFIs",
+      "Commissioning and Handover"
+    ],
+    "idPrefix": "AECX",
+    "accent": "amber",
+    "industryDomain": "construction"
+  },
+  {
+    "key": "travel-hospitality",
+    "label": "Travel & Hospitality",
+    "shortLabel": "Travel & Hospitality",
+    "description": "Availability, reservations, pricing, guest services, payment mocks, loyalty, channel distribution, and disruption recovery.",
+    "route": "/p/travel-hospitality",
+    "kind": "spa",
+    "modules": [
+      "Availability and Inventory",
+      "Reservations and Itineraries",
+      "Pricing and Promotions",
+      "Guest and Traveler Profiles",
+      "Check-in and Guest Services",
+      "Payment and Refund Mocks",
+      "Loyalty and Membership",
+      "Distribution and Channel Integration",
+      "Cancellations and Disruption Handling",
+      "Analytics, Privacy and Access"
+    ],
+    "idPrefix": "TRVX",
+    "accent": "cyan",
+    "industryDomain": "travel-hospitality"
+  },
+  {
+    "key": "agriculture-agritech",
+    "label": "Agriculture & Agritech",
+    "shortLabel": "Agriculture & Agritech",
+    "description": "Farm and field planning, simulated sensors, equipment maintenance, input inventory, harvest traceability, and reporting.",
+    "route": "/p/agriculture-agritech",
+    "kind": "spa",
+    "modules": [
+      "Farm and Field Registry",
+      "Crop and Season Planning",
+      "Equipment and Maintenance",
+      "IoT and Sensor Data Simulation",
+      "Irrigation and Water Workflows",
+      "Seed, Fertilizer and Input Inventory",
+      "Harvest and Post-harvest Operations",
+      "Traceability and Market Linkage",
+      "Sustainability and Reporting",
+      "Access, Integrations and Resilience"
+    ],
+    "idPrefix": "AGRX",
+    "accent": "lime",
+    "industryDomain": "agriculture"
+  },
+  {
+    "key": "telecom-network-ops",
+    "label": "Telecom Network Operations",
+    "shortLabel": "Telecom Network Operations",
+    "description": "Service orchestration, simulated network inventory, usage rating, assurance, partner interfaces, change, and resilience.",
+    "route": "/p/telecom-network-ops",
+    "kind": "spa",
+    "modules": [
+      "Service Catalog and Order Capture",
+      "Network Inventory and Topology",
+      "Provisioning Orchestration Simulation",
+      "Subscriber Care and Case Management",
+      "Usage, Rating and Billing",
+      "Network Assurance and Incident Workflow",
+      "Partner and Interconnect Interfaces",
+      "Network Change and Maintenance Windows",
+      "Identity, Security and Privacy",
+      "Resilience and Operations Analytics"
+    ],
+    "idPrefix": "TELX",
+    "accent": "blue",
+    "industryDomain": "telecom-network"
+  },
+  {
+    "key": "public-services",
+    "label": "Public Services",
+    "shortLabel": "Public Services",
+    "description": "Accessible digital services, synthetic case intake, eligibility workflow, records, payment mocks, appeals, and inter-agency exchange.",
+    "route": "/p/public-services",
+    "kind": "spa",
+    "modules": [
+      "Digital Service Catalog and Accessibility",
+      "Case Intake and Triage",
+      "Eligibility and Benefits Workflow",
+      "Identity, Consent and Delegation",
+      "Appointments and Queue Management",
+      "Documents and Records Management",
+      "Government Payment Mocks and Reconciliation",
+      "Inter-agency Exchange",
+      "Appeals and Case Communications",
+      "Transparency, Security and Audit"
+    ],
+    "idPrefix": "PUBL",
+    "accent": "indigo",
+    "industryDomain": "public-sector"
+  },
+  {
+    "key": "education-research",
+    "label": "Education & Research Systems",
+    "shortLabel": "Education & Research Systems",
+    "description": "Admissions, learner records, accessible learning, assessments, grants, lab assets, reproducible data, and publication workflows.",
+    "route": "/p/education-research",
+    "kind": "spa",
+    "modules": [
+      "Admissions and Enrollment",
+      "Learner Information and Records",
+      "Learning Delivery and Accessibility",
+      "Assessment and Credentials",
+      "Research Project Administration",
+      "Grants and Funding",
+      "Laboratory and Research Assets",
+      "Research Data and Reproducibility",
+      "Publication and Collaboration",
+      "Privacy, Security and Interoperability"
+    ],
+    "idPrefix": "EDUX",
+    "accent": "violet",
+    "industryDomain": "education-research"
+  },
+  {
+    "key": "media-entertainment",
+    "label": "Media & Entertainment",
+    "shortLabel": "Media & Entertainment",
+    "description": "Content ingest, editorial, rights, production, media delivery, publishing, subscriptions, accessibility, and analytics.",
+    "route": "/p/media-entertainment",
+    "kind": "spa",
+    "modules": [
+      "Content Ingest and Metadata",
+      "Editorial Planning and Review",
+      "Rights and Licensing",
+      "Production and Post-production",
+      "Media Processing and Delivery",
+      "Publishing and Channel Operations",
+      "Subscriptions and Monetization Mocks",
+      "Audience and Community Operations",
+      "Accessibility and Localization",
+      "Analytics, Security and Resilience"
+    ],
+    "idPrefix": "MEDX",
+    "accent": "violet",
+    "industryDomain": "media-content"
+  },
+  {
+    "key": "real-estate-facilities",
+    "label": "Real Estate & Facilities",
+    "shortLabel": "Real Estate & Facilities",
+    "description": "Property portfolios, leasing, facilities work orders, inspections, occupancy, utilities, vendors, and capital projects.",
+    "route": "/p/real-estate-facilities",
+    "kind": "spa",
+    "modules": [
+      "Property Portfolio and Asset Register",
+      "Leasing and Tenant Operations",
+      "Facilities and Work Order Management",
+      "Inspections and Compliance Records",
+      "Space and Occupancy Planning",
+      "Utilities and Environmental Monitoring",
+      "Vendor and Contract Management",
+      "Capital Projects and Renovations",
+      "Tenant Portal and Communications",
+      "Security, Resilience and Portfolio Reporting"
+    ],
+    "idPrefix": "REFX",
+    "accent": "teal",
+    "industryDomain": "real-estate"
   }
 ];

@@ -1,0 +1,79 @@
+{
+  "product": "Travel & Hospitality",
+  "key": "travel-hospitality",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "availability_inventory",
+      "label": "Availability and Inventory",
+      "folder": "availability_inventory",
+      "prefix": "travel-hospitality_availability_inventory_suite",
+      "count": 200
+    },
+    {
+      "id": "reservations",
+      "label": "Reservations and Itineraries",
+      "folder": "reservations",
+      "prefix": "travel-hospitality_reservations_suite",
+      "count": 200
+    },
+    {
+      "id": "pricing_promotions",
+      "label": "Pricing and Promotions",
+      "folder": "pricing_promotions",
+      "prefix": "travel-hospitality_pricing_promotions_suite",
+      "count": 200
+    },
+    {
+      "id": "guest_traveler_profiles",
+      "label": "Guest and Traveler Profiles",
+      "folder": "guest_traveler_profiles",
+      "prefix": "travel-hospitality_guest_traveler_profiles_suite",
+      "count": 200
+    },
+    {
+      "id": "checkin_guest_services",
+      "label": "Check-in and Guest Services",
+      "folder": "checkin_guest_services",
+      "prefix": "travel-hospitality_checkin_guest_services_suite",
+      "count": 200
+    },
+    {
+      "id": "payments_refunds",
+      "label": "Payment and Refund Mocks",
+      "folder": "payments_refunds",
+      "prefix": "travel-hospitality_payments_refunds_suite",
+      "count": 200
+    },
+    {
+      "id": "loyalty_membership",
+      "label": "Loyalty and Membership",
+      "folder": "loyalty_membership",
+      "prefix": "travel-hospitality_loyalty_membership_suite",
+      "count": 200
+    },
+    {
+      "id": "distribution_channels",
+      "label": "Distribution and Channel Integration",
+      "folder": "distribution_channels",
+      "prefix": "travel-hospitality_distribution_channels_suite",
+      "count": 200
+    },
+    {
+      "id": "cancellations_disruptions",
+      "label": "Cancellations and Disruption Handling",
+      "folder": "cancellations_disruptions",
+      "prefix": "travel-hospitality_cancellations_disruptions_suite",
+      "count": 200
+    },
+    {
+      "id": "analytics_privacy",
+      "label": "Analytics, Privacy and Access",
+      "folder": "analytics_privacy",
+      "prefix": "travel-hospitality_analytics_privacy_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "travel-hospitality",
+  "safetyNote": "Use synthetic travelers, reservations, properties, and mock payment or booking services. Do not contact live booking channels or charge real payment instruments; do not use real traveler personal data."
+}

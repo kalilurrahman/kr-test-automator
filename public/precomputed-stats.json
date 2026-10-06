@@ -1,17 +1,17 @@
 {
-  "totalCases": 266560,
-  "totalModules": 50899,
-  "uniqueIds": 266560,
-  "duplicatesRemoved": 6940,
-  "lastUpdated": 1791293238143,
+  "totalCases": 283960,
+  "totalModules": 50986,
+  "uniqueIds": 283960,
+  "duplicatesRemoved": 7540,
+  "lastUpdated": 1791294167999,
   "byPriority": [
     {
       "name": "High",
-      "value": 135630
+      "value": 149286
     },
     {
       "name": "Medium",
-      "value": 85786
+      "value": 89530
     },
     {
       "name": "Low",
@@ -200,7 +200,43 @@
       "value": 2000
     },
     {
+      "name": "Construction & AEC",
+      "value": 2000
+    },
+    {
+      "name": "Travel & Hospitality",
+      "value": 2000
+    },
+    {
+      "name": "Agriculture & Agritech",
+      "value": 2000
+    },
+    {
+      "name": "Public Services",
+      "value": 2000
+    },
+    {
+      "name": "Media & Entertainment",
+      "value": 2000
+    },
+    {
+      "name": "Real Estate & Facilities",
+      "value": 2000
+    },
+    {
       "name": "Hugging Face Hub",
+      "value": 1800
+    },
+    {
+      "name": "Automotive & Mobility",
+      "value": 1800
+    },
+    {
+      "name": "Telecom Network Operations",
+      "value": 1800
+    },
+    {
+      "name": "Education & Research Systems",
       "value": 1800
     },
     {
@@ -10730,6 +10766,174 @@
       ],
       "high": 1520,
       "medium": 480,
+      "low": 0
+    },
+    "automotive-mobility": {
+      "label": "Automotive & Mobility",
+      "total": 1800,
+      "modules": [
+        "Vehicle Programs and Configuration",
+        "Engineering Change and Requirements",
+        "Vehicle Software Update Simulation",
+        "Dealer and Retail Operations",
+        "Fleet and Mobility Services",
+        "Charging and Energy Services",
+        "Supplier Quality and Parts Traceability",
+        "Service and Warranty Operations",
+        "Connected Vehicle Security and Audit"
+      ],
+      "high": 1416,
+      "medium": 384,
+      "low": 0
+    },
+    "construction-aec": {
+      "label": "Construction & AEC",
+      "total": 2000,
+      "modules": [
+        "BIM and Information Management",
+        "Design Review and Coordination",
+        "Project Controls and Scheduling",
+        "Cost and Contract Administration",
+        "Field Execution and Daily Reports",
+        "Quality Inspections and Defects",
+        "Safety and Environmental Records",
+        "Materials and Site Logistics",
+        "Submittals and RFIs",
+        "Commissioning and Handover"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "travel-hospitality": {
+      "label": "Travel & Hospitality",
+      "total": 2000,
+      "modules": [
+        "Availability and Inventory",
+        "Reservations and Itineraries",
+        "Pricing and Promotions",
+        "Guest and Traveler Profiles",
+        "Check-in and Guest Services",
+        "Payment and Refund Mocks",
+        "Loyalty and Membership",
+        "Distribution and Channel Integration",
+        "Cancellations and Disruption Handling",
+        "Analytics, Privacy and Access"
+      ],
+      "high": 1520,
+      "medium": 480,
+      "low": 0
+    },
+    "agriculture-agritech": {
+      "label": "Agriculture & Agritech",
+      "total": 2000,
+      "modules": [
+        "Farm and Field Registry",
+        "Crop and Season Planning",
+        "Equipment and Maintenance",
+        "IoT and Sensor Data Simulation",
+        "Irrigation and Water Workflows",
+        "Seed, Fertilizer and Input Inventory",
+        "Harvest and Post-harvest Operations",
+        "Traceability and Market Linkage",
+        "Sustainability and Reporting",
+        "Access, Integrations and Resilience"
+      ],
+      "high": 1568,
+      "medium": 432,
+      "low": 0
+    },
+    "telecom-network-ops": {
+      "label": "Telecom Network Operations",
+      "total": 1800,
+      "modules": [
+        "Service Catalog and Order Capture",
+        "Network Inventory and Topology",
+        "Provisioning Orchestration Simulation",
+        "Subscriber Care and Case Management",
+        "Usage, Rating and Billing",
+        "Network Assurance and Incident Workflow",
+        "Partner and Interconnect Interfaces",
+        "Identity, Security and Privacy",
+        "Resilience and Operations Analytics"
+      ],
+      "high": 1416,
+      "medium": 384,
+      "low": 0
+    },
+    "public-services": {
+      "label": "Public Services",
+      "total": 2000,
+      "modules": [
+        "Digital Service Catalog and Accessibility",
+        "Case Intake and Triage",
+        "Eligibility and Benefits Workflow",
+        "Identity, Consent and Delegation",
+        "Appointments and Queue Management",
+        "Documents and Records Management",
+        "Government Payment Mocks and Reconciliation",
+        "Inter-agency Exchange",
+        "Appeals and Case Communications",
+        "Transparency, Security and Audit"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "education-research": {
+      "label": "Education & Research Systems",
+      "total": 1800,
+      "modules": [
+        "Admissions and Enrollment",
+        "Learner Information and Records",
+        "Learning Delivery and Accessibility",
+        "Assessment and Credentials",
+        "Research Project Administration",
+        "Grants and Funding",
+        "Laboratory and Research Assets",
+        "Publication and Collaboration",
+        "Privacy, Security and Interoperability"
+      ],
+      "high": 1416,
+      "medium": 384,
+      "low": 0
+    },
+    "media-entertainment": {
+      "label": "Media & Entertainment",
+      "total": 2000,
+      "modules": [
+        "Content Ingest and Metadata",
+        "Editorial Planning and Review",
+        "Rights and Licensing",
+        "Production and Post-production",
+        "Media Processing and Delivery",
+        "Publishing and Channel Operations",
+        "Subscriptions and Monetization Mocks",
+        "Audience and Community Operations",
+        "Accessibility and Localization",
+        "Analytics, Security and Resilience"
+      ],
+      "high": 1616,
+      "medium": 384,
+      "low": 0
+    },
+    "real-estate-facilities": {
+      "label": "Real Estate & Facilities",
+      "total": 2000,
+      "modules": [
+        "Property Portfolio and Asset Register",
+        "Leasing and Tenant Operations",
+        "Facilities and Work Order Management",
+        "Inspections and Compliance Records",
+        "Space and Occupancy Planning",
+        "Utilities and Environmental Monitoring",
+        "Vendor and Contract Management",
+        "Capital Projects and Renovations",
+        "Tenant Portal and Communications",
+        "Security, Resilience and Portfolio Reporting"
+      ],
+      "high": 1568,
+      "medium": 432,
       "low": 0
     },
     "salesforce": {

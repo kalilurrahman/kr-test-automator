@@ -273,6 +273,15 @@ const GENERATED_DATA_PACKS = [
   ["financial-services", "Financial Services Core", "FinancialServices"],
   ["aerospace", "Aerospace and MRO", "Aerospace"],
   ["logistics-supply-chain", "Logistics and Supply Chain", "LogisticsSupplyChain"],
+  ["automotive-mobility", "Automotive & Mobility", "AutomotiveMobility"],
+  ["construction-aec", "Construction & AEC", "ConstructionAEC"],
+  ["travel-hospitality", "Travel & Hospitality", "TravelHospitality"],
+  ["agriculture-agritech", "Agriculture & Agritech", "AgricultureAgriTech"],
+  ["telecom-network-ops", "Telecom Network Operations", "TelecomNetworkOps"],
+  ["public-services", "Public Services", "PublicServices"],
+  ["education-research", "Education & Research Systems", "EducationResearch"],
+  ["media-entertainment", "Media & Entertainment", "MediaEntertainment"],
+  ["real-estate-facilities", "Real Estate & Facilities", "RealEstateFacilities"],
 ];
 for (const [id, label, folder] of GENERATED_DATA_PACKS) {
   const manifestFile = path.join(ROOT, folder, "manifest.json");

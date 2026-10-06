@@ -297,3 +297,8 @@ INDUSTRY_PACKS = [
         ("Network delivery metric and event lineage", "Analytics|Network|Reports", "New report|Create report", ["Report name", "Period"], "Create|Save", "Report", "Lineage|Reconcile"),
     ], "Use synthetic shipments, SKU, supplier, and carrier identities, with mocked partner endpoints. Do not enter real addresses, customer details, customs filings, or production dispatch commands."),
 ]
+
+# Keep vertical suite definitions in a focused companion module as the catalog grows.
+from additional_industry_product_packs import MORE_INDUSTRY_PACKS
+
+INDUSTRY_PACKS.extend(MORE_INDUSTRY_PACKS)

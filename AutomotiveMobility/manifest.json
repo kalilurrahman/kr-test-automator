@@ -1,0 +1,79 @@
+{
+  "product": "Automotive & Mobility",
+  "key": "automotive-mobility",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "vehicle_programs",
+      "label": "Vehicle Programs and Configuration",
+      "folder": "vehicle_programs",
+      "prefix": "automotive-mobility_vehicle_programs_suite",
+      "count": 200
+    },
+    {
+      "id": "engineering_changes",
+      "label": "Engineering Change and Requirements",
+      "folder": "engineering_changes",
+      "prefix": "automotive-mobility_engineering_changes_suite",
+      "count": 200
+    },
+    {
+      "id": "software_update_simulation",
+      "label": "Vehicle Software Update Simulation",
+      "folder": "software_update_simulation",
+      "prefix": "automotive-mobility_software_update_simulation_suite",
+      "count": 200
+    },
+    {
+      "id": "dealer_retail",
+      "label": "Dealer and Retail Operations",
+      "folder": "dealer_retail",
+      "prefix": "automotive-mobility_dealer_retail_suite",
+      "count": 200
+    },
+    {
+      "id": "vehicle_ordering",
+      "label": "Vehicle Ordering and Fulfillment",
+      "folder": "vehicle_ordering",
+      "prefix": "automotive-mobility_vehicle_ordering_suite",
+      "count": 200
+    },
+    {
+      "id": "fleet_mobility",
+      "label": "Fleet and Mobility Services",
+      "folder": "fleet_mobility",
+      "prefix": "automotive-mobility_fleet_mobility_suite",
+      "count": 200
+    },
+    {
+      "id": "charging_energy",
+      "label": "Charging and Energy Services",
+      "folder": "charging_energy",
+      "prefix": "automotive-mobility_charging_energy_suite",
+      "count": 200
+    },
+    {
+      "id": "supplier_quality",
+      "label": "Supplier Quality and Parts Traceability",
+      "folder": "supplier_quality",
+      "prefix": "automotive-mobility_supplier_quality_suite",
+      "count": 200
+    },
+    {
+      "id": "service_warranty",
+      "label": "Service and Warranty Operations",
+      "folder": "service_warranty",
+      "prefix": "automotive-mobility_service_warranty_suite",
+      "count": 200
+    },
+    {
+      "id": "connected_vehicle_security",
+      "label": "Connected Vehicle Security and Audit",
+      "folder": "connected_vehicle_security",
+      "prefix": "automotive-mobility_connected_vehicle_security_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "automotive",
+  "safetyNote": "Use synthetic vehicle profiles, offline test benches, and simulated services only. Never send commands to a live vehicle, charging network, or public road system; these scenarios do not establish vehicle safety or regulatory certification."
+}

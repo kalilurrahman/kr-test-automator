@@ -24,6 +24,18 @@ export const INDUSTRY_CONTEXTS = [
     aliases: ["manufacturing-mes", "manufacturing", "factory", "mes"],
   },
   {
+    id: "automotive",
+    label: "Automotive & Mobility",
+    guidance: "Cover synthetic vehicle programs, configuration, engineering changes, software update simulation, dealer and fleet workflows, charging mocks, supplier traceability, and service. Use offline test benches only; never command live vehicles, chargers, or public-road systems.",
+    aliases: ["automotive", "automotive-mobility", "mobility", "vehicle", "connected-vehicle"],
+  },
+  {
+    id: "construction",
+    label: "Construction & AEC",
+    guidance: "Cover synthetic BIM revisions, design coordination, schedules, contract workflows, field reports, inspections, materials, RFIs, commissioning, and handover. Use test models and projects only; do not make real structural or construction-safety determinations.",
+    aliases: ["construction", "construction-aec", "aec", "built-environment", "building-construction"],
+  },
+  {
     id: "defense",
     label: "Defense Programs",
     guidance: "Limit scenarios to unclassified synthetic administrative workflows such as configuration baselines, requirements, suppliers, schedules, maintenance, access review, and audit. Exclude operational plans, mission targeting, weapons instructions, and controlled technical data.",
@@ -70,6 +82,24 @@ export const INDUSTRY_CONTEXTS = [
     label: "Logistics & Supply Chain",
     guidance: "Cover transport planning, warehouse execution, carrier messages, inventory visibility, shipment milestones, simulated trade documents, returns, supplier collaboration, demand planning, and reconciliation. Use synthetic addresses and mocked partner endpoints.",
     aliases: ["logistics", "supply-chain", "logistics-supply-chain", "transportation", "warehouse", "supply", "supply-chain-management"],
+  },
+  {
+    id: "travel-hospitality",
+    label: "Travel & Hospitality",
+    guidance: "Cover synthetic availability, reservations, guest services, pricing, loyalty, mock payments, distribution channels, disruptions, and privacy. Use test traveler profiles and mocked booking providers only; never charge real instruments or contact live booking systems.",
+    aliases: ["travel", "travel-hospitality", "hospitality", "hotel-operations", "booking"],
+  },
+  {
+    id: "agriculture",
+    label: "Agriculture & Agritech",
+    guidance: "Cover synthetic farms, fields, crop plans, simulated sensors, equipment maintenance, input inventory, harvest traceability, and reporting. Keep IoT and machinery simulated; do not issue live equipment commands or provide pesticide or safety determinations.",
+    aliases: ["agriculture", "agritech", "agriculture-agritech", "farm-management", "precision-agriculture"],
+  },
+  {
+    id: "real-estate",
+    label: "Real Estate & Facilities",
+    guidance: "Cover synthetic property portfolios, leases, facilities work orders, inspections, occupancy, utility fixtures, vendors, and capital projects. Use pseudonymous tenant fixtures and test integrations; do not use real personal or payment data or issue building-control commands.",
+    aliases: ["real-estate", "real-estate-facilities", "property-management", "facilities-management", "commercial-real-estate"],
   },
   {
     id: "retail-commerce",

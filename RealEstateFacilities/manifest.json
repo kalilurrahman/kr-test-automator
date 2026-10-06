@@ -1,0 +1,79 @@
+{
+  "product": "Real Estate & Facilities",
+  "key": "real-estate-facilities",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "property_portfolio",
+      "label": "Property Portfolio and Asset Register",
+      "folder": "property_portfolio",
+      "prefix": "real-estate-facilities_property_portfolio_suite",
+      "count": 200
+    },
+    {
+      "id": "leasing_tenants",
+      "label": "Leasing and Tenant Operations",
+      "folder": "leasing_tenants",
+      "prefix": "real-estate-facilities_leasing_tenants_suite",
+      "count": 200
+    },
+    {
+      "id": "work_orders_facilities",
+      "label": "Facilities and Work Order Management",
+      "folder": "work_orders_facilities",
+      "prefix": "real-estate-facilities_work_orders_facilities_suite",
+      "count": 200
+    },
+    {
+      "id": "inspections_compliance",
+      "label": "Inspections and Compliance Records",
+      "folder": "inspections_compliance",
+      "prefix": "real-estate-facilities_inspections_compliance_suite",
+      "count": 200
+    },
+    {
+      "id": "space_occupancy",
+      "label": "Space and Occupancy Planning",
+      "folder": "space_occupancy",
+      "prefix": "real-estate-facilities_space_occupancy_suite",
+      "count": 200
+    },
+    {
+      "id": "utilities_environment",
+      "label": "Utilities and Environmental Monitoring",
+      "folder": "utilities_environment",
+      "prefix": "real-estate-facilities_utilities_environment_suite",
+      "count": 200
+    },
+    {
+      "id": "vendor_contracts",
+      "label": "Vendor and Contract Management",
+      "folder": "vendor_contracts",
+      "prefix": "real-estate-facilities_vendor_contracts_suite",
+      "count": 200
+    },
+    {
+      "id": "capital_projects",
+      "label": "Capital Projects and Renovations",
+      "folder": "capital_projects",
+      "prefix": "real-estate-facilities_capital_projects_suite",
+      "count": 200
+    },
+    {
+      "id": "tenant_portal_communications",
+      "label": "Tenant Portal and Communications",
+      "folder": "tenant_portal_communications",
+      "prefix": "real-estate-facilities_tenant_portal_communications_suite",
+      "count": 200
+    },
+    {
+      "id": "security_resilience_reporting",
+      "label": "Security, Resilience and Portfolio Reporting",
+      "folder": "security_resilience_reporting",
+      "prefix": "real-estate-facilities_security_resilience_reporting_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "real-estate",
+  "safetyNote": "Use synthetic properties, leases, tenant profiles, and facilities data only. Do not use real personal or payment information, execute live building-control commands, or represent test workflows as safety or legal determinations."
+}

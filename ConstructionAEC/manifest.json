@@ -1,0 +1,79 @@
+{
+  "product": "Construction & AEC",
+  "key": "construction-aec",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "bim_information",
+      "label": "BIM and Information Management",
+      "folder": "bim_information",
+      "prefix": "construction-aec_bim_information_suite",
+      "count": 200
+    },
+    {
+      "id": "design_reviews",
+      "label": "Design Review and Coordination",
+      "folder": "design_reviews",
+      "prefix": "construction-aec_design_reviews_suite",
+      "count": 200
+    },
+    {
+      "id": "project_controls",
+      "label": "Project Controls and Scheduling",
+      "folder": "project_controls",
+      "prefix": "construction-aec_project_controls_suite",
+      "count": 200
+    },
+    {
+      "id": "cost_contracts",
+      "label": "Cost and Contract Administration",
+      "folder": "cost_contracts",
+      "prefix": "construction-aec_cost_contracts_suite",
+      "count": 200
+    },
+    {
+      "id": "field_execution",
+      "label": "Field Execution and Daily Reports",
+      "folder": "field_execution",
+      "prefix": "construction-aec_field_execution_suite",
+      "count": 200
+    },
+    {
+      "id": "quality_inspections",
+      "label": "Quality Inspections and Defects",
+      "folder": "quality_inspections",
+      "prefix": "construction-aec_quality_inspections_suite",
+      "count": 200
+    },
+    {
+      "id": "safety_environment",
+      "label": "Safety and Environmental Records",
+      "folder": "safety_environment",
+      "prefix": "construction-aec_safety_environment_suite",
+      "count": 200
+    },
+    {
+      "id": "materials_logistics",
+      "label": "Materials and Site Logistics",
+      "folder": "materials_logistics",
+      "prefix": "construction-aec_materials_logistics_suite",
+      "count": 200
+    },
+    {
+      "id": "submittals_rfis",
+      "label": "Submittals and RFIs",
+      "folder": "submittals_rfis",
+      "prefix": "construction-aec_submittals_rfis_suite",
+      "count": 200
+    },
+    {
+      "id": "handover_facilities",
+      "label": "Commissioning and Handover",
+      "folder": "handover_facilities",
+      "prefix": "construction-aec_handover_facilities_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "construction",
+  "safetyNote": "Use synthetic BIM models, projects, site reports, and worker fixtures. Do not make real structural, construction-safety, or engineering determinations; all field integrations and approvals must remain in a test environment."
+}

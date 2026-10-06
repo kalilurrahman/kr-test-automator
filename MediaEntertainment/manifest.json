@@ -1,0 +1,79 @@
+{
+  "product": "Media & Entertainment",
+  "key": "media-entertainment",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "content_ingest",
+      "label": "Content Ingest and Metadata",
+      "folder": "content_ingest",
+      "prefix": "media-entertainment_content_ingest_suite",
+      "count": 200
+    },
+    {
+      "id": "editorial_workflow",
+      "label": "Editorial Planning and Review",
+      "folder": "editorial_workflow",
+      "prefix": "media-entertainment_editorial_workflow_suite",
+      "count": 200
+    },
+    {
+      "id": "rights_licensing",
+      "label": "Rights and Licensing",
+      "folder": "rights_licensing",
+      "prefix": "media-entertainment_rights_licensing_suite",
+      "count": 200
+    },
+    {
+      "id": "production_workflows",
+      "label": "Production and Post-production",
+      "folder": "production_workflows",
+      "prefix": "media-entertainment_production_workflows_suite",
+      "count": 200
+    },
+    {
+      "id": "media_processing_delivery",
+      "label": "Media Processing and Delivery",
+      "folder": "media_processing_delivery",
+      "prefix": "media-entertainment_media_processing_delivery_suite",
+      "count": 200
+    },
+    {
+      "id": "publishing_channels",
+      "label": "Publishing and Channel Operations",
+      "folder": "publishing_channels",
+      "prefix": "media-entertainment_publishing_channels_suite",
+      "count": 200
+    },
+    {
+      "id": "subscriptions_monetization",
+      "label": "Subscriptions and Monetization Mocks",
+      "folder": "subscriptions_monetization",
+      "prefix": "media-entertainment_subscriptions_monetization_suite",
+      "count": 200
+    },
+    {
+      "id": "audience_community",
+      "label": "Audience and Community Operations",
+      "folder": "audience_community",
+      "prefix": "media-entertainment_audience_community_suite",
+      "count": 200
+    },
+    {
+      "id": "accessibility_localization",
+      "label": "Accessibility and Localization",
+      "folder": "accessibility_localization",
+      "prefix": "media-entertainment_accessibility_localization_suite",
+      "count": 200
+    },
+    {
+      "id": "analytics_security",
+      "label": "Analytics, Security and Resilience",
+      "folder": "analytics_security",
+      "prefix": "media-entertainment_analytics_security_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "media-content",
+  "safetyNote": "Use synthetic media and non-copyrighted test assets only, with mock licensing, channels, and payment providers. Do not publish real content, process real subscriber data, or treat synthetic engagement metrics as actual audience outcomes."
+}

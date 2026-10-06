@@ -18,6 +18,10 @@ export type FamilyKey =
   | "cloud_devops"
   | "government_public"
   | "commerce_retail"
+  | "built_environment"
+  | "agriculture_food"
+  | "education_research"
+  | "media_entertainment"
   | "other";
 
 export interface ProductFamily {
@@ -101,6 +105,34 @@ export const PRODUCT_FAMILIES: ProductFamily[] = [
     accent: "amber",
   },
   {
+    key: "built_environment",
+    label: "Built Environment",
+    shortLabel: "Built Environment",
+    blurb: "Construction delivery, BIM coordination, property operations and facilities management.",
+    accent: "teal",
+  },
+  {
+    key: "agriculture_food",
+    label: "Agriculture & Food Systems",
+    shortLabel: "Agriculture",
+    blurb: "Farm operations, agritech, field data, harvest traceability and resource reporting.",
+    accent: "emerald",
+  },
+  {
+    key: "education_research",
+    label: "Education & Research",
+    shortLabel: "Education / Research",
+    blurb: "Learner services, research administration, grants, labs and scholarly publishing workflows.",
+    accent: "blue",
+  },
+  {
+    key: "media_entertainment",
+    label: "Media & Entertainment",
+    shortLabel: "Media / Entertainment",
+    blurb: "Content operations, production, rights, distribution, subscriptions and audience workflows.",
+    accent: "violet",
+  },
+  {
     key: "other",
     label: "Other / Cross-cutting",
     shortLabel: "Other",
@@ -148,10 +180,16 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   "defense-systems": "manufacturing_industrial",
   "industrial-automation": "manufacturing_industrial",
   aerospace: "manufacturing_industrial",
+  "automotive-mobility": "manufacturing_industrial",
 
   // ── Energy / Logistics ──────────────────────────────────────────────────
   "energy-utilities": "energy_logistics",
   "logistics-supply-chain": "energy_logistics",
+  "construction-aec": "built_environment",
+  "real-estate-facilities": "built_environment",
+  "agriculture-agritech": "agriculture_food",
+  "education-research": "education_research",
+  "media-entertainment": "media_entertainment",
 
   // ── Telecom / Network ────────────────────────────────────────────────────
   cyberark: "telecom_network",

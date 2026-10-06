@@ -1,0 +1,79 @@
+{
+  "product": "Agriculture & Agritech",
+  "key": "agriculture-agritech",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "field_farm_registry",
+      "label": "Farm and Field Registry",
+      "folder": "field_farm_registry",
+      "prefix": "agriculture-agritech_field_farm_registry_suite",
+      "count": 200
+    },
+    {
+      "id": "crop_season_planning",
+      "label": "Crop and Season Planning",
+      "folder": "crop_season_planning",
+      "prefix": "agriculture-agritech_crop_season_planning_suite",
+      "count": 200
+    },
+    {
+      "id": "equipment_maintenance",
+      "label": "Equipment and Maintenance",
+      "folder": "equipment_maintenance",
+      "prefix": "agriculture-agritech_equipment_maintenance_suite",
+      "count": 200
+    },
+    {
+      "id": "iot_sensor_data",
+      "label": "IoT and Sensor Data Simulation",
+      "folder": "iot_sensor_data",
+      "prefix": "agriculture-agritech_iot_sensor_data_suite",
+      "count": 200
+    },
+    {
+      "id": "irrigation_water",
+      "label": "Irrigation and Water Workflows",
+      "folder": "irrigation_water",
+      "prefix": "agriculture-agritech_irrigation_water_suite",
+      "count": 200
+    },
+    {
+      "id": "input_inventory",
+      "label": "Seed, Fertilizer and Input Inventory",
+      "folder": "input_inventory",
+      "prefix": "agriculture-agritech_input_inventory_suite",
+      "count": 200
+    },
+    {
+      "id": "harvest_postharvest",
+      "label": "Harvest and Post-harvest Operations",
+      "folder": "harvest_postharvest",
+      "prefix": "agriculture-agritech_harvest_postharvest_suite",
+      "count": 200
+    },
+    {
+      "id": "traceability_market",
+      "label": "Traceability and Market Linkage",
+      "folder": "traceability_market",
+      "prefix": "agriculture-agritech_traceability_market_suite",
+      "count": 200
+    },
+    {
+      "id": "sustainability_reporting",
+      "label": "Sustainability and Reporting",
+      "folder": "sustainability_reporting",
+      "prefix": "agriculture-agritech_sustainability_reporting_suite",
+      "count": 200
+    },
+    {
+      "id": "farm_security_integrations",
+      "label": "Access, Integrations and Resilience",
+      "folder": "farm_security_integrations",
+      "prefix": "agriculture-agritech_farm_security_integrations_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "agriculture",
+  "safetyNote": "Use synthetic farm, field, equipment, weather, and crop data only. Keep all IoT and equipment integrations simulated; do not issue live machine commands or provide pesticide, agronomic, or environmental safety determinations."
+}

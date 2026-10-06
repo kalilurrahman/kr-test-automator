@@ -1,0 +1,79 @@
+{
+  "product": "Telecom Network Operations",
+  "key": "telecom-network-ops",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "service_catalog",
+      "label": "Service Catalog and Order Capture",
+      "folder": "service_catalog",
+      "prefix": "telecom-network-ops_service_catalog_suite",
+      "count": 200
+    },
+    {
+      "id": "network_inventory",
+      "label": "Network Inventory and Topology",
+      "folder": "network_inventory",
+      "prefix": "telecom-network-ops_network_inventory_suite",
+      "count": 200
+    },
+    {
+      "id": "provisioning_orchestration",
+      "label": "Provisioning Orchestration Simulation",
+      "folder": "provisioning_orchestration",
+      "prefix": "telecom-network-ops_provisioning_orchestration_suite",
+      "count": 200
+    },
+    {
+      "id": "subscriber_care",
+      "label": "Subscriber Care and Case Management",
+      "folder": "subscriber_care",
+      "prefix": "telecom-network-ops_subscriber_care_suite",
+      "count": 200
+    },
+    {
+      "id": "usage_rating_billing",
+      "label": "Usage, Rating and Billing",
+      "folder": "usage_rating_billing",
+      "prefix": "telecom-network-ops_usage_rating_billing_suite",
+      "count": 200
+    },
+    {
+      "id": "assurance_incidents",
+      "label": "Network Assurance and Incident Workflow",
+      "folder": "assurance_incidents",
+      "prefix": "telecom-network-ops_assurance_incidents_suite",
+      "count": 200
+    },
+    {
+      "id": "partner_interconnect",
+      "label": "Partner and Interconnect Interfaces",
+      "folder": "partner_interconnect",
+      "prefix": "telecom-network-ops_partner_interconnect_suite",
+      "count": 200
+    },
+    {
+      "id": "network_change",
+      "label": "Network Change and Maintenance Windows",
+      "folder": "network_change",
+      "prefix": "telecom-network-ops_network_change_suite",
+      "count": 200
+    },
+    {
+      "id": "identity_security",
+      "label": "Identity, Security and Privacy",
+      "folder": "identity_security",
+      "prefix": "telecom-network-ops_identity_security_suite",
+      "count": 200
+    },
+    {
+      "id": "resilience_analytics",
+      "label": "Resilience and Operations Analytics",
+      "folder": "resilience_analytics",
+      "prefix": "telecom-network-ops_resilience_analytics_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "telecom-network",
+  "safetyNote": "Use synthetic subscribers, simulated topology, and isolated network orchestration mocks only. Never provision or modify a live telecom network, access real subscriber records, or trigger production maintenance actions."
+}

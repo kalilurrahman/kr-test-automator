@@ -34,6 +34,15 @@ This set extends the existing product catalog with data engineering, developer p
 | Financial Services Core | [`FinancialServices/manifest.json`](../FinancialServices/manifest.json) | [`MarketAutomationSuites/FinancialServices/README.md`](./FinancialServices/README.md) |
 | Aerospace and MRO | [`Aerospace/manifest.json`](../Aerospace/manifest.json) | [`MarketAutomationSuites/Aerospace/README.md`](./Aerospace/README.md) |
 | Logistics and Supply Chain | [`LogisticsSupplyChain/manifest.json`](../LogisticsSupplyChain/manifest.json) | [`MarketAutomationSuites/LogisticsSupplyChain/README.md`](./LogisticsSupplyChain/README.md) |
+| Automotive & Mobility | [`AutomotiveMobility/manifest.json`](../AutomotiveMobility/manifest.json) | [`MarketAutomationSuites/AutomotiveMobility/README.md`](./AutomotiveMobility/README.md) |
+| Construction & AEC | [`ConstructionAEC/manifest.json`](../ConstructionAEC/manifest.json) | [`MarketAutomationSuites/ConstructionAEC/README.md`](./ConstructionAEC/README.md) |
+| Travel & Hospitality | [`TravelHospitality/manifest.json`](../TravelHospitality/manifest.json) | [`MarketAutomationSuites/TravelHospitality/README.md`](./TravelHospitality/README.md) |
+| Agriculture & Agritech | [`AgricultureAgriTech/manifest.json`](../AgricultureAgriTech/manifest.json) | [`MarketAutomationSuites/AgricultureAgriTech/README.md`](./AgricultureAgriTech/README.md) |
+| Telecom Network Operations | [`TelecomNetworkOps/manifest.json`](../TelecomNetworkOps/manifest.json) | [`MarketAutomationSuites/TelecomNetworkOps/README.md`](./TelecomNetworkOps/README.md) |
+| Public Services | [`PublicServices/manifest.json`](../PublicServices/manifest.json) | [`MarketAutomationSuites/PublicServices/README.md`](./PublicServices/README.md) |
+| Education & Research Systems | [`EducationResearch/manifest.json`](../EducationResearch/manifest.json) | [`MarketAutomationSuites/EducationResearch/README.md`](./EducationResearch/README.md) |
+| Media & Entertainment | [`MediaEntertainment/manifest.json`](../MediaEntertainment/manifest.json) | [`MarketAutomationSuites/MediaEntertainment/README.md`](./MediaEntertainment/README.md) |
+| Real Estate & Facilities | [`RealEstateFacilities/manifest.json`](../RealEstateFacilities/manifest.json) | [`MarketAutomationSuites/RealEstateFacilities/README.md`](./RealEstateFacilities/README.md) |
 
 ## Why these products
 
@@ -64,5 +73,14 @@ These workflow suites extend the product list into regulated, physical-operation
 | Financial Services Core | financial-services | [`FinancialServices/manifest.json`](../FinancialServices/manifest.json) | [`MarketAutomationSuites/FinancialServices/README.md`](./FinancialServices/README.md) |
 | Aerospace and MRO | aerospace | [`Aerospace/manifest.json`](../Aerospace/manifest.json) | [`MarketAutomationSuites/Aerospace/README.md`](./Aerospace/README.md) |
 | Logistics and Supply Chain | logistics-supply-chain | [`LogisticsSupplyChain/manifest.json`](../LogisticsSupplyChain/manifest.json) | [`MarketAutomationSuites/LogisticsSupplyChain/README.md`](./LogisticsSupplyChain/README.md) |
+| Automotive & Mobility | automotive | [`AutomotiveMobility/manifest.json`](../AutomotiveMobility/manifest.json) | [`MarketAutomationSuites/AutomotiveMobility/README.md`](./AutomotiveMobility/README.md) |
+| Construction & AEC | construction | [`ConstructionAEC/manifest.json`](../ConstructionAEC/manifest.json) | [`MarketAutomationSuites/ConstructionAEC/README.md`](./ConstructionAEC/README.md) |
+| Travel & Hospitality | travel-hospitality | [`TravelHospitality/manifest.json`](../TravelHospitality/manifest.json) | [`MarketAutomationSuites/TravelHospitality/README.md`](./TravelHospitality/README.md) |
+| Agriculture & Agritech | agriculture | [`AgricultureAgriTech/manifest.json`](../AgricultureAgriTech/manifest.json) | [`MarketAutomationSuites/AgricultureAgriTech/README.md`](./AgricultureAgriTech/README.md) |
+| Telecom Network Operations | telecom-network | [`TelecomNetworkOps/manifest.json`](../TelecomNetworkOps/manifest.json) | [`MarketAutomationSuites/TelecomNetworkOps/README.md`](./TelecomNetworkOps/README.md) |
+| Public Services | public-sector | [`PublicServices/manifest.json`](../PublicServices/manifest.json) | [`MarketAutomationSuites/PublicServices/README.md`](./PublicServices/README.md) |
+| Education & Research Systems | education-research | [`EducationResearch/manifest.json`](../EducationResearch/manifest.json) | [`MarketAutomationSuites/EducationResearch/README.md`](./EducationResearch/README.md) |
+| Media & Entertainment | media-content | [`MediaEntertainment/manifest.json`](../MediaEntertainment/manifest.json) | [`MarketAutomationSuites/MediaEntertainment/README.md`](./MediaEntertainment/README.md) |
+| Real Estate & Facilities | real-estate | [`RealEstateFacilities/manifest.json`](../RealEstateFacilities/manifest.json) | [`MarketAutomationSuites/RealEstateFacilities/README.md`](./RealEstateFacilities/README.md) |
 
 Use synthetic data in isolated non-production systems. Regulated workflow examples do not certify compliance or product safety. Defense workflows are limited to unclassified administration; industrial controls are simulated only.

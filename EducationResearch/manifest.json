@@ -1,0 +1,79 @@
+{
+  "product": "Education & Research Systems",
+  "key": "education-research",
+  "count": 2000,
+  "modules": [
+    {
+      "id": "admissions_enrollment",
+      "label": "Admissions and Enrollment",
+      "folder": "admissions_enrollment",
+      "prefix": "education-research_admissions_enrollment_suite",
+      "count": 200
+    },
+    {
+      "id": "learner_information",
+      "label": "Learner Information and Records",
+      "folder": "learner_information",
+      "prefix": "education-research_learner_information_suite",
+      "count": 200
+    },
+    {
+      "id": "learning_delivery",
+      "label": "Learning Delivery and Accessibility",
+      "folder": "learning_delivery",
+      "prefix": "education-research_learning_delivery_suite",
+      "count": 200
+    },
+    {
+      "id": "assessment_credentials",
+      "label": "Assessment and Credentials",
+      "folder": "assessment_credentials",
+      "prefix": "education-research_assessment_credentials_suite",
+      "count": 200
+    },
+    {
+      "id": "research_projects",
+      "label": "Research Project Administration",
+      "folder": "research_projects",
+      "prefix": "education-research_research_projects_suite",
+      "count": 200
+    },
+    {
+      "id": "grants_funding",
+      "label": "Grants and Funding",
+      "folder": "grants_funding",
+      "prefix": "education-research_grants_funding_suite",
+      "count": 200
+    },
+    {
+      "id": "lab_inventory",
+      "label": "Laboratory and Research Assets",
+      "folder": "lab_inventory",
+      "prefix": "education-research_lab_inventory_suite",
+      "count": 200
+    },
+    {
+      "id": "research_data_lineage",
+      "label": "Research Data and Reproducibility",
+      "folder": "research_data_lineage",
+      "prefix": "education-research_research_data_lineage_suite",
+      "count": 200
+    },
+    {
+      "id": "publication_review",
+      "label": "Publication and Collaboration",
+      "folder": "publication_review",
+      "prefix": "education-research_publication_review_suite",
+      "count": 200
+    },
+    {
+      "id": "privacy_security_interoperability",
+      "label": "Privacy, Security and Interoperability",
+      "folder": "privacy_security_interoperability",
+      "prefix": "education-research_privacy_security_interoperability_suite",
+      "count": 200
+    }
+  ],
+  "industryDomain": "education-research",
+  "safetyNote": "Use synthetic learners, applicants, grant records, datasets, and lab fixtures; never use real student or research-subject data. These workflows do not make academic, research-ethics, or human-subject determinations."
+}
