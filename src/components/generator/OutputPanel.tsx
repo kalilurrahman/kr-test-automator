@@ -74,7 +74,7 @@ const OutputPanel = () => {
       <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center px-4">
         <div className="text-primary text-2xl mb-2">✦</div>
         <h3 className="text-xl font-bold text-foreground mb-2" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-          TestForge AI
+          Validaira
         </h3>
         <p className="text-sm text-muted-foreground mb-6">
           Configure your test on the left.<br />Or browse Templates to get started.

@@ -37,7 +37,7 @@ const Readme = () => {
   return (
     <>
       <SeoHead
-        title="README · TestForge AI"
+        title="README · Validaira"
         description="In-app rendering of the repository README — kept in sync with the GitHub source on every build."
         canonical="/readme"
       />

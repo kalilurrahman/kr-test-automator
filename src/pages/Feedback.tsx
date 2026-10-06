@@ -65,8 +65,8 @@ const Feedback = () => {
   return (
     <>
       <SeoHead
-        title="Feedback · TestForge AI"
-        description="Share suggestions, bugs and improvements for TestForge AI. Goes straight to the maintainer."
+        title="Feedback · Validaira"
+        description="Share suggestions, bugs, and improvements for Validaira. Goes straight to the maintainer."
         canonical="/feedback"
       />
 

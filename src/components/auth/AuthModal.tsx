@@ -61,7 +61,7 @@ export function AuthModal({ open, onOpenChange }: AuthModalProps) {
       <DialogContent className="sm:max-w-md bg-card border-border">
         <DialogHeader>
           <DialogTitle className="text-center text-xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            ✦ TestForge AI
+            ✦ Validaira
           </DialogTitle>
         </DialogHeader>
 

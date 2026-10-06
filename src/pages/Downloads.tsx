@@ -193,7 +193,7 @@ const Downloads = () => {
   return (
     <>
       <SeoHead
-        title="Downloads · TestForge AI"
+        title="Downloads · Validaira"
         description="Download the unified strict E2E master, the v3 working set, stats and summary CSVs in XLSX, CSV, JSON, TS and HTML."
         canonical="/downloads"
       />

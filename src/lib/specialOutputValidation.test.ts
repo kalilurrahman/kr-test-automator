@@ -136,19 +136,19 @@ describe("buildDownloadFilename", () => {
     expect(name).toBe("uftone-online-banking-login.vbs");
   });
 
-  it("falls back to generic testforge filename for other frameworks", () => {
+  it("uses a Validaira filename for other frameworks", () => {
     const name = buildDownloadFilename(
       "Cypress Smoke",
       "cypress_ts",
       "typescript",
       ".ts",
     );
-    expect(name).toBe("testforge-cypress-smoke.ts");
+    expect(name).toBe("validaira-cypress-smoke.ts");
   });
 
   it("uses default slug when title is empty", () => {
     const name = buildDownloadFilename("", "playwright_ts", "typescript", ".ts");
-    expect(name).toBe("testforge-test-suite.ts");
+    expect(name).toBe("validaira-test-suite.ts");
   });
 
   it("truncates very long titles to 60 chars", () => {

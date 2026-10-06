@@ -9,7 +9,7 @@ const GlobalCaseBrowser = lazy(() =>
 const Scenarios = () => (
   <>
     <SeoHead
-      title="Generated Scenarios · TestForge AI"
+      title="Generated Scenarios · Validaira"
       description="Search every generated test scenario across all platforms — SAP, Salesforce, Workday, Veeva, ServiceNow and more."
       canonical="/scenarios"
     />

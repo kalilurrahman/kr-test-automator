@@ -57,7 +57,7 @@ MoR at **5% + $0.50**, no monthly fee; tax/compliance across 200+ countries. But
 | FastSpring | ~8.5% / custom | **Yes** | Fulfillment-level | Yes | Cost + sales-led onboarding |
 | Keygen (infra) | Free CE self-host; Cloud $49–$399/mo | n/a (not payments) | **Deepest** (Ed25519, offline, entitlements) | n/a | Low; Fair Source |
 
-## Recommendation ranking for TestForge AI
+## Recommendation ranking for Validaira
 
 1. **Polar.sh (primary)** — MoR at half of Gumroad's take, native license keys with public validate/activate endpoints that drop cleanly into the existing SPA + Supabase edge functions, automatic key revocation on refund, and GitHub/dev-native UX matching a QA-engineer audience. Start on free Starter; move to Pro ($20/mo) once revenue justifies the lower rate.
 2. **Gumroad (secondary/discovery channel)** — worth listing flagship bundles for Discover reach and creator-economy social proof; the verify API + Ping webhooks are sufficient because Supabase does the real entitlement work. Never let balances accumulate; mirror sales to Postgres instantly.

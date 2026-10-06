@@ -144,7 +144,7 @@ export function exportToPdf(data: ExportData) {
     doc.setFontSize(8);
     doc.setFont("helvetica", "normal");
     doc.setTextColor(150);
-    doc.text(`TestForge AI  •  Page ${i} of ${totalPages}`, margin, 285);
+    doc.text(`Validaira  •  Page ${i} of ${totalPages}`, margin, 285);
     doc.setTextColor(0);
   }
 

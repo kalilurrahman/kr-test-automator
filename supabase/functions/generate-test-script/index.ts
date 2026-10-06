@@ -61,7 +61,7 @@ LONG-FORM SCRIPT REQUIREMENTS:
 - Preserve the requested framework and language. For model-based and VBScript output, provide complete runnable-equivalent model modules or UFT functions rather than switching languages.
 - Ensure the full JSON response remains valid and the script can be saved as a standalone source file.` : "";
 
-    const systemPrompt = `You are TestForge AI, an expert test automation engineer. Generate production-ready test automation scripts.
+    const systemPrompt = `You are Validaira, an expert AI-native quality engineering assistant. Generate production-ready test automation scripts.
 
 OUTPUT FORMAT (JSON):
 {

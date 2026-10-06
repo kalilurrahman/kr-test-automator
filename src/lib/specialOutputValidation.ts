@@ -75,5 +75,5 @@ export const buildDownloadFilename = (
   const kind = detectSpecialKind(framework, language);
   if (kind === "tosca") return `tosca-${slug}.tosca.yaml`;
   if (kind === "vbscript") return `uftone-${slug}.vbs`;
-  return `testforge-${slug}${fallbackExt}`;
+  return `validaira-${slug}${fallbackExt}`;
 };

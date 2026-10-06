@@ -54,8 +54,8 @@ const Activate = () => {
   return (
     <div className="min-h-[calc(100vh-64px)] flex items-start justify-center px-4 py-12">
       <SeoHead
-        title="Activate License · TestForge AI"
-        description="Activate your TestForge AI premium license key to unlock validated test-case libraries and runnable automation packs."
+        title="Activate License · Validaira"
+        description="Activate your Validaira premium license key to unlock test-case libraries and runnable automation packs."
         canonical="/activate"
       />
       <Card className="w-full max-w-lg p-6">

@@ -115,7 +115,7 @@ const Dashboard = () => {
   return (
     <>
       <SeoHead
-        title="Dashboard · TestForge AI Enterprise Test Hub"
+        title="Dashboard · Validaira Quality Engineering"
         description={`Master dashboard for ${TOTAL_PRODUCTS}+ enterprise test platforms — SAP, Salesforce, Microsoft Fabric, Databricks, dbt, Vercel, Workday, Veeva and more.`}
         canonical="/dashboard"
       />

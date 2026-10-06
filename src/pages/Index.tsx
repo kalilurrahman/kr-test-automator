@@ -85,8 +85,8 @@ const Index = () => {
   return (
     <>
       <SeoHead
-        title="TestForge AI · Enterprise test automation, ready to move"
-        description="Explore enterprise test libraries, generate automation scripts, and keep reusable QA work moving across platforms, teams, and frameworks."
+        title="Validaira — AI-native quality engineering for confident releases"
+        description="Explore enterprise test libraries, generate automation, evaluate AI applications, diagnose failures, and maintain regression coverage with Validaira."
         canonical="/"
       />
       <div className="min-w-0 overflow-hidden">
@@ -96,10 +96,10 @@ const Index = () => {
             <div className="relative z-10">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary">
                 <Sparkles className="h-3.5 w-3.5" />
-                Enterprise QA, connected end to end
+                Release with confidence. Validate with intelligence.
               </div>
               <h1 className="max-w-2xl text-5xl font-semibold leading-[0.98] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-                Turn complex workflows into <span className="text-primary">testable</span> progress.
+                AI-native quality engineering for <span className="text-primary">confident releases.</span>
               </h1>
               <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
                 Find the right scenario, shape it into an automated test, and carry the result into your team’s workflow—all in one place.
@@ -131,7 +131,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 py-8 sm:py-10" aria-label="TestForge at a glance">
+        <section className="mx-auto max-w-7xl px-4 py-8 sm:py-10" aria-label="Validaira at a glance">
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
             <StatCard icon={Layers3} value={TOTAL_PRODUCTS.toLocaleString()} label="platforms and products" />
             <StatCard icon={Database} value={caseCount} label="indexed test cases" />
@@ -250,7 +250,7 @@ const HeroWorkspace = ({ caseCount }: { caseCount: string }) => (
     <div className="absolute -inset-8 rounded-[2.5rem] bg-gradient-to-br from-primary/20 via-cyan-500/10 to-transparent blur-2xl" />
     <div className="relative rounded-2xl border border-white/10 bg-[#080d15]/95 p-3 shadow-[0_30px_100px_-35px_rgba(0,0,0,0.9)] sm:p-4">
       <div className="flex items-center justify-between gap-3 border-b border-white/10 px-2 pb-3">
-        <div className="flex items-center gap-2"><span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/15 text-primary"><Sparkles className="h-4 w-4" /></span><div><div className="text-xs font-semibold text-white">TestForge Studio</div><div className="text-[10px] text-slate-400">Automation workspace</div></div></div>
+        <div className="flex items-center gap-2"><span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/15 text-primary"><Sparkles className="h-4 w-4" /></span><div><div className="text-xs font-semibold text-white">Validaira Studio</div><div className="text-[10px] text-slate-400">Automation workspace</div></div></div>
         <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2.5 py-1 text-[10px] text-emerald-300"><span className="mr-1.5 inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />Ready to generate</span>
       </div>
       <div className="grid gap-3 p-2 pt-4 sm:grid-cols-[0.85fr_1.15fr]">

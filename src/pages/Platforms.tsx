@@ -95,7 +95,7 @@ const Platforms = () => {
   return (
     <>
       <SeoHead
-        title="Products & Platforms · TestForge AI"
+        title="Products & Platforms · Validaira"
         description={`Browse ${TOTAL_PRODUCTS} enterprise platforms across ${PRODUCT_FAMILIES.length} families — ERP, Healthcare, Data & AI, Telecom, Cloud, Government and Commerce.`}
         canonical="/platforms"
       />

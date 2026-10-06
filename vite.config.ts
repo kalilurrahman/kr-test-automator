@@ -195,9 +195,9 @@ export default defineConfig(({ mode }) => ({
       includeAssets: ["favicon.ico", "robots.txt"],
       manifest: {
         id: "/",
-        name: "TestForge AI - Enterprise Test Automation",
-        short_name: "TestForge AI",
-        description: "AI-powered test automation script generator for enterprise platforms",
+        name: "Validaira - AI-native quality engineering",
+        short_name: "Validaira",
+        description: "AI-native quality engineering for confident releases",
         lang: "en",
         categories: ["productivity", "developer", "business"],
         theme_color: "#c9a227",

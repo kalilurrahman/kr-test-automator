@@ -150,7 +150,7 @@ const Services = () => {
   return (
     <>
       <SeoHead
-        title="Services · TestForge AI"
+        title="Services · Validaira"
         description="Twelve automation services grouped by capability — UI E2E, API & performance, mobile, model-based, legacy record-replay and security/DevOps."
         canonical="/services"
       />

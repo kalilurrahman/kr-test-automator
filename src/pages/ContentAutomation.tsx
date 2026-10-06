@@ -304,7 +304,7 @@ const ContentAutomation = () => {
   return (
     <div className="min-h-[calc(100vh-64px)] min-w-0">
       <SeoHead
-        title="Content Automation · TestForge AI"
+        title="Content Automation · Validaira"
         description="Generate framework-ready automated test scripts from enterprise scenarios and plain-language requirements."
         canonical="/content-automation"
       />

@@ -94,7 +94,7 @@ const FAQ: { q: string; a: string }[] = [
 const Pricing = () => (
   <div className="min-h-[calc(100vh-64px)]">
     <SeoHead
-      title="Pricing · TestForge AI"
+      title="Pricing · Validaira"
       description="Premium test-case libraries and runnable automation packs for SAP, Salesforce, Workday and 50+ enterprise platforms. One-time license, lifetime access."
       canonical="/pricing"
     />

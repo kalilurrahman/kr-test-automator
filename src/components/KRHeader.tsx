@@ -106,7 +106,7 @@ const KRHeader = () => {
               className="text-lg font-bold tracking-wide text-foreground hidden sm:inline"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              TestForge AI
+              Validaira
             </span>
           </Link>
 

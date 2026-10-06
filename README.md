@@ -1,12 +1,16 @@
-# TestForge AI
+# Validaira
+
+> **AI-native quality engineering for confident releases.**
+>
+> Release with confidence. Validate with intelligence.
 
 ![Showcase GIF](docs/assets/media/showcase.gif)
 
 [View Showcase Video](docs/assets/media/showcase.mp4)
 
-**TestForge AI** is an innovative platform tailored for creating, exploring, and saving automated test scripts across various platforms and frameworks. Powered by Generative AI, TestForge provides developers, QA engineers, and IT executives an intuitive interface to rapidly draft test cases for different test scopes.
+**Validaira** is an AI-native quality engineering platform for exploring enterprise test libraries, generating automation, and organizing validation work for confident releases.
 
-**Live Application:** [TestForge AI](https://kr-test-automator.lovable.app/)
+**Live Application:** [Validaira](https://kr-test-automator.lovable.app/)
 
 ---
 

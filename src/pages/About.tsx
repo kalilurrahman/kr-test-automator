@@ -11,8 +11,8 @@ const About = () => {
   return (
     <>
       <SeoHead
-        title="About · TestForge AI"
-        description="What TestForge AI is, how it's organised, and how to use the dashboard, generator, repositories and ID lookup."
+        title="About · Validaira"
+        description="What Validaira is, how it's organised, and how to use the dashboard, generator, repositories, and ID lookup."
         canonical="/about"
       />
 
@@ -22,10 +22,10 @@ const About = () => {
             className="text-3xl md:text-4xl font-bold text-foreground mb-3"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            About TestForge AI
+            About Validaira
           </h1>
           <p className="text-muted-foreground max-w-3xl">
-            TestForge AI is an enterprise test-automation hub. It bundles 130,000+ curated test cases
+            Validaira is an AI-native quality engineering platform. It bundles 130,000+ curated test cases
             across {TOTAL_PRODUCTS} platforms and pairs them with an AI script generator that turns plain-English business cases
             into Selenium, Cypress, Playwright, REST-Assured, Karate, Postman or Robot Framework code.
             On top of the curated catalogue it ships <strong className="text-foreground">51,500 industry E2E scenarios</strong>{" "}
@@ -159,7 +159,7 @@ const About = () => {
             Thanks &amp; acknowledgements
           </h2>
           <p className="text-sm text-muted-foreground mb-4 max-w-3xl">
-            TestForge AI exists because a small constellation of AI tools made it possible to build,
+              Validaira exists because a small constellation of AI tools made it possible to build,
             iterate and ship at solo-builder velocity. Sincere thanks to:
           </p>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-muted-foreground">

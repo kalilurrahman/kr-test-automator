@@ -39,7 +39,7 @@ const IosInstallHint = () => {
       <Card className="p-4 bg-card border-primary/30 shadow-lg">
         <div className="flex items-start gap-3">
           <div className="flex-1">
-            <h3 className="text-sm font-semibold text-foreground mb-1">Install TestForge AI</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-1">Install Validaira</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
               Tap <Share className="inline w-3.5 h-3.5 mx-0.5 text-primary" /> in Safari, then{" "}
               <span className="inline-flex items-center gap-0.5 text-primary">
