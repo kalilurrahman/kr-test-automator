@@ -24,7 +24,7 @@ export interface ModuleStats {
   high: number;
   medium: number;
   low: number;
-  /** % of cases that look automation-friendly (UI / Functional / Regression / E2E) */
+  /** % of cases with an automation-friendly type or a declared automation framework */
   automationPct: number;
 }
 
@@ -54,25 +54,7 @@ const AUTO_TYPES = new Set([
   "api",
 ]);
 
-const AUTO_FRAMEWORK_HINTS = [
-  "api",
-  "playwright",
-  "selenium",
-  "cypress",
-  "webdriver",
-  "puppeteer",
-  "appium",
-  "pytest",
-  "jest",
-  "vitest",
-  "robot",
-  "cucumber",
-  "junit",
-  "testng",
-  "k6",
-  "postman",
-  "restassured",
-];
+const NON_AUTOMATION_FRAMEWORK = /\bmanual\b|not applicable|not automatable|not automated|^(n\/a|na|none|tbd|unknown|-)$/i;
 
 async function fetchModule(
   platform: PlatformDef,
@@ -97,8 +79,8 @@ async function fetchModule(
       else if (p === "medium") medium += 1;
       else if (p === "low") low += 1;
       const t = pick(r, TYPE_FIELDS).toLowerCase();
-      const framework = pick(r, FRAMEWORK_FIELDS).toLowerCase();
-      if (AUTO_TYPES.has(t) || AUTO_FRAMEWORK_HINTS.some((hint) => framework.includes(hint))) {
+      const framework = pick(r, FRAMEWORK_FIELDS).trim();
+      if (AUTO_TYPES.has(t) || (framework !== "" && !NON_AUTOMATION_FRAMEWORK.test(framework))) {
         auto += 1;
       }
     }
