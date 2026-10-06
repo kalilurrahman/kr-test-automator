@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 import { findCaseById, guessSourceFromId } from "@/lib/globalIndex";
@@ -46,6 +47,7 @@ const Dashboard = () => {
   const [globalStats, setGlobalStats] = useState<GlobalStats | null>(null);
   const [statsLoading, setStatsLoading] = useState(true);
   const [industryStats, setIndustryStats] = useState<IndustryStatsSnapshot | null>(null);
+  const [treemapProduct, setTreemapProduct] = useState("all");
 
   useEffect(() => {
     let cancelled = false;
@@ -111,6 +113,9 @@ const Dashboard = () => {
     () => (industryStats ? buildIndustryDomainRows(industryStats) : []),
     [industryStats],
   );
+  const treemapPlatforms = globalStats?.topPlatforms.filter(
+    (platform) => treemapProduct === "all" || platform.name === treemapProduct,
+  ) ?? [];
 
   return (
     <>
@@ -183,24 +188,40 @@ const Dashboard = () => {
 
           {/* Top platforms — heatmap-style treemap */}
           <Card className="p-5 bg-card border-border lg:col-span-2">
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
               <h2 className="text-sm font-semibold text-foreground uppercase tracking-wider">
                 Top platforms by case volume
               </h2>
-              {globalStats && (
-                <span className="text-[10px] font-mono text-muted-foreground">
-                  {globalStats.topPlatforms.length} platforms · larger tile = more cases
-                </span>
-              )}
+              <div className="flex items-center gap-2 sm:ml-auto">
+                <label htmlFor="treemap-product-filter" className="text-[10px] text-muted-foreground whitespace-nowrap">
+                  Filter product
+                </label>
+                <Select value={treemapProduct} onValueChange={setTreemapProduct}>
+                  <SelectTrigger id="treemap-product-filter" aria-label="Filter treemap by product" className="h-8 w-[190px] text-xs">
+                    <SelectValue placeholder="All products" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All products</SelectItem>
+                    {globalStats?.topPlatforms.map((platform) => (
+                      <SelectItem key={platform.name} value={platform.name}>{platform.name}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                {globalStats && (
+                  <span className="hidden md:inline text-[10px] font-mono text-muted-foreground whitespace-nowrap">
+                    {treemapPlatforms.length} {treemapPlatforms.length === 1 ? "product" : "products"} · larger tile = more cases
+                  </span>
+                )}
+              </div>
             </div>
             <div className="h-72 sm:h-80">
               {statsLoading ? (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Loading…
                 </div>
-              ) : globalStats && globalStats.topPlatforms.length > 0 ? (
+              ) : globalStats && treemapPlatforms.length > 0 ? (
                 <Suspense fallback={<ChartFallback />}>
-                  <PlatformTreemap stats={globalStats} />
+                  <PlatformTreemap stats={{ ...globalStats, topPlatforms: treemapPlatforms }} />
                 </Suspense>
               ) : (
                 <div className="h-full flex items-center justify-center text-muted-foreground text-xs">

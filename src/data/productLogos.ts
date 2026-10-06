@@ -1,84 +1,164 @@
-// Maps each productCatalog key → simpleicons.org slug. Returning null means
-// "no public brand logo available — render the initial-square fallback".
-// Simple Icons is a free SVG CDN that serves official brand marks at any size:
-//   https://cdn.simpleicons.org/<slug>/<hex-color>
-// We omit the hex so each logo renders in its own brand colour automatically.
-//
-// Verified against https://simpleicons.org as of April 2026. Products that
-// have no listing there (CyberArk, Palantir, Strata, etc.) intentionally
-// return null so the fallback initials render.
+/**
+ * Product marks use bundled Simple Icons SVGs when an exact mark is available,
+ * followed by that product's official-site favicon. Generic Validaira industry
+ * packs use a domain icon instead of a made-up vendor logo.
+ */
 
-const SLUGS: Record<string, string | null> = {
+const SIMPLE_ICON_SLUGS: Record<string, string> = {
   sap: "sap",
-  salesforce: "salesforce",
-  workday: "workday",
-  servicenow: "servicenow",
-  veeva: null,                  // not on simpleicons
-  dynamics365: "dynamics365",
-  oracle: "oracle",
-  api: null,                    // generic
   ios: "ios",
   android: "android",
-  aws: "amazonaws",
   gcp: "googlecloud",
-  azure: "microsoftazure",
-  webapps: null,
-  topproducts: null,
   asana: "asana",
-  cyberark: null,
-  docusign: "docusign",
-  googleworkspace: "googleworkspace",
-  medallia: null,
   odoo: "odoo",
-  procore: "procore",
-  ptcwindchill: null,
-  qad: null,
-  smartsheet: "smartsheet",
   zoho: "zoho",
   zoom: "zoom",
-  zscaler: "zscaler",
   "3dexperience": "dassaultsystemes",
-  adobeexperiencecloud: "adobe",
   adpworkforcenow: "adp",
-  anaplan: null,
-  automationanywhere: null,
-  blackline: null,
-  boomi: null,
-  coupa: null,
-  crowdstrike: "crowdstrike",
   datadog: "datadog",
-  epicor: null,
   hubspot: "hubspot",
-  ibmmaximo: "ibm",
-  inforcloudsuite: null,
   jira: "jira",
-  mulesoft: "mulesoft",
-  netsuite: "oracle",
   okta: "okta",
   palantirfoundry: "palantir",
+  foundryai: "palantir",
   qliksense: "qlik",
   qualtrics: "qualtrics",
   rhel: "redhat",
   sageintacct: "sage",
   snowflake: "snowflake",
+  snowflakeai: "snowflake",
   splunk: "splunk",
   strata: "paloaltonetworks",
-  tableau: "tableau",
   teamcenter: "siemens",
   uipath: "uipath",
-  ukgpro: null,
   vsphere: "vmware",
   zendesk: "zendesk",
+  claudecode: "claudecode",
+  geminiantigravity: "googlegemini",
+  githubcopilot: "githubcopilot",
+  cursor: "cursor",
+  windsurf: "windsurf",
+  dataiku: "dataiku",
+  databricks: "databricks",
+  "mongodb-atlas": "mongodb",
+  "supabase-platform": "supabase",
+  vercel: "vercel",
+  langsmith: "langchain",
+  huggingfacehub: "huggingface",
+  airbyte: "airbyte",
+  apacheairflow: "apacheairflow",
+  prefect: "prefect",
+  n8n: "n8n",
+  crewai: "crewai",
+  shopify: "shopify",
+  stripe: "stripe",
+  cline: "cline",
+  "replit-agent": "replit",
+  "gitlab-duo": "gitlab",
+  "jetbrains-junie": "jetbrains",
 };
 
-export function getProductLogoUrl(productKey: string): string | null {
-  const slug = SLUGS[productKey];
-  if (!slug) return null;
-  // Simple Icons serves official brand SVGs in the brand colour by default.
-  return `https://cdn.simpleicons.org/${slug}`;
+/** Domains are intentionally explicit so similarly named products don't pick the wrong logo. */
+const OFFICIAL_DOMAINS: Record<string, string> = {
+  salesforce: "salesforce.com",
+  workday: "workday.com",
+  servicenow: "servicenow.com",
+  veeva: "veeva.com",
+  dynamics365: "dynamics.microsoft.com",
+  oracle: "oracle.com",
+  aws: "aws.amazon.com",
+  azure: "azure.microsoft.com",
+  cyberark: "cyberark.com",
+  docusign: "docusign.com",
+  googleworkspace: "workspace.google.com",
+  medallia: "medallia.com",
+  procore: "procore.com",
+  ptcwindchill: "ptc.com",
+  qad: "qad.com",
+  smartsheet: "smartsheet.com",
+  zscaler: "zscaler.com",
+  adobeexperiencecloud: "adobe.com",
+  anaplan: "anaplan.com",
+  automationanywhere: "automationanywhere.com",
+  blackline: "blackline.com",
+  boomi: "boomi.com",
+  coupa: "coupa.com",
+  crowdstrike: "crowdstrike.com",
+  epicor: "epicor.com",
+  ibmmaximo: "ibm.com",
+  inforcloudsuite: "infor.com",
+  mulesoft: "mulesoft.com",
+  netsuite: "netsuite.com",
+  tableau: "tableau.com",
+  ukgpro: "ukg.com",
+  codex: "openai.com",
+  apacheiceberg: "iceberg.apache.org",
+  medidata: "medidata.com",
+  iqvia: "www.iqvia.com",
+  microsoftfabric: "microsoft.com",
+  dbt: "getdbt.com",
+  confluentcloud: "confluent.io",
+  fivetran: "fivetran.com",
+  pinecone: "pinecone.io",
+  dagster: "dagster.io",
+  kiro: "kiro.dev",
+  "devin": "devin.ai",
+  openhands: "openhands.dev",
+  "factory-droid": "factory.ai",
+  "roo-code": "roocode.com",
+  "sourcegraph-amp": "sourcegraph.com",
+};
+
+export type ProductFallbackGlyph =
+  | "code" | "web" | "top" | "pharma" | "medical" | "healthcare" | "factory"
+  | "defense" | "automation" | "cpg" | "energy" | "insurance" | "finance"
+  | "aerospace" | "logistics" | "automotive" | "construction" | "travel"
+  | "agriculture" | "telecom" | "public" | "education" | "media" | "realestate";
+
+const FALLBACK_GLYPHS: Record<string, ProductFallbackGlyph> = {
+  api: "code",
+  webapps: "web",
+  topproducts: "top",
+  phamagxp: "pharma",
+  medtech: "medical",
+  "healthcare-operations": "healthcare",
+  "manufacturing-mes": "factory",
+  "defense-systems": "defense",
+  "industrial-automation": "automation",
+  "cpg-operations": "cpg",
+  "energy-utilities": "energy",
+  "insurance-suite": "insurance",
+  "financial-services": "finance",
+  aerospace: "aerospace",
+  "logistics-supply-chain": "logistics",
+  "automotive-mobility": "automotive",
+  "construction-aec": "construction",
+  "travel-hospitality": "travel",
+  "agriculture-agritech": "agriculture",
+  "telecom-network-ops": "telecom",
+  "public-services": "public",
+  "education-research": "education",
+  "media-entertainment": "media",
+  "real-estate-facilities": "realestate",
+};
+
+export function getProductLogoUrls(productKey: string): string[] {
+  const urls: string[] = [];
+  const iconSlug = SIMPLE_ICON_SLUGS[productKey];
+  const domain = OFFICIAL_DOMAINS[productKey];
+
+  if (iconSlug) urls.push(`/logos/simple-icons/${iconSlug}.svg`);
+  if (domain) {
+    urls.push(`https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`);
+  }
+  return urls;
 }
 
-/** Initials shown when no public logo exists. */
+export function getProductFallbackGlyph(productKey: string): ProductFallbackGlyph | null {
+  return FALLBACK_GLYPHS[productKey] ?? null;
+}
+
+/** Initials remain the last-resort mark if a vendor changes its favicon. */
 export function getProductInitials(label: string): string {
   const cleaned = label.replace(/[^A-Za-z0-9 ]/g, "").trim();
   const parts = cleaned.split(/\s+/).filter(Boolean);
