@@ -17,7 +17,7 @@
 ## 🌟 Key Features
 
 ### 1. **Script Generation Engine**
-The home page lets you configure and generate test scripts seamlessly. Simply select your **Platform**, choose your target **Framework & Language**, and determine the **Test Scope**. The AI engine handles the rest.
+Open `/content-automation` to describe a business case, choose a **Platform**, **Framework & Language**, **Test Scope**, and optional industry context, then generate a test script. Platform, industry, and template pages can also pass context into the generator.
 
 <img src="docs/assets/home.png" alt="Home Page" width="800">
 

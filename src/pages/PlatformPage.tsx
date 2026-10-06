@@ -48,7 +48,7 @@ const PlatformPage = () => {
   return (
     <div className="min-h-[calc(100vh-64px)]">
       <SeoHead
-        title={`${platform.label} Test Repository · KR Test Automator`}
+        title={`${platform.label} Test Repository · Validaira`}
         description={platform.description}
       />
       <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">

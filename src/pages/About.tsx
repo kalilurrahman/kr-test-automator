@@ -1,12 +1,24 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SeoHead from "@/components/SeoHead";
 import { Card } from "@/components/ui/card";
-import { PRODUCT_CATALOG, TOTAL_PRODUCTS, TOTAL_MODULES, BUNDLED_TEST_COUNT } from "@/data/productCatalog";
+import { PRODUCT_CATALOG, TOTAL_PRODUCTS, TOTAL_MODULES } from "@/data/productCatalog";
+import { getGlobalStats } from "@/lib/globalStats";
 import { Sparkles, Layers, Package, FileCode2, Workflow } from "lucide-react";
 import { ProductLogo } from "@/components/ProductLogo";
 
 const About = () => {
-  const totalCases = BUNDLED_TEST_COUNT;
+  const [uniqueCaseCount, setUniqueCaseCount] = useState<string | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    getGlobalStats()
+      .then((stats) => {
+        if (active) setUniqueCaseCount(stats.uniqueIds.toLocaleString());
+      })
+      .catch(() => undefined);
+    return () => { active = false; };
+  }, []);
 
   return (
     <>
@@ -25,10 +37,10 @@ const About = () => {
             About Validaira
           </h1>
           <p className="text-muted-foreground max-w-3xl">
-            Validaira is an AI-native quality engineering platform. It bundles 130,000+ curated test cases
-            across {TOTAL_PRODUCTS} platforms and pairs them with an AI script generator that turns plain-English business cases
+            Validaira is an AI-native quality engineering platform. Its searchable catalogue spans {TOTAL_PRODUCTS} platforms
+            and pairs them with an AI script generator that turns plain-English business cases
             into Selenium, Cypress, Playwright, REST-Assured, Karate, Postman or Robot Framework code.
-            On top of the curated catalogue it ships <strong className="text-foreground">51,500 industry E2E scenarios</strong>{" "}
+            The catalogue includes <strong className="text-foreground">51,500 industry scenarios</strong>{" "}
             (9.5k v3 library + 12k strict-validated set + 30k incremental B21–B50 batches) across fine-grained industry domains.
           </p>
         </header>
@@ -37,8 +49,8 @@ const About = () => {
         <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <Stat icon={Package} value={TOTAL_PRODUCTS} label="Platforms" />
           <Stat icon={Layers} value={TOTAL_MODULES} label="Modules" />
-          <Stat icon={FileCode2} value={totalCases.toLocaleString()} label="Bundled cases" />
-          <Stat icon={Workflow} value="51,500" label="Industry E2E" />
+          <Stat icon={FileCode2} value={uniqueCaseCount ?? "—"} label="Unique indexed cases" />
+          <Stat icon={Workflow} value="51,500" label="Industry scenarios" />
         </section>
 
         {/* How it's organised */}
@@ -51,10 +63,10 @@ const About = () => {
           </h2>
           <div className="space-y-3 text-sm text-muted-foreground">
             <p>
-              <strong className="text-foreground">Generator (/)</strong> — describe a business case and the AI streams a runnable script in your chosen framework.
+              <strong className="text-foreground">Content Automation (/content-automation)</strong> — describe a business case and the AI streams a test script in your chosen framework.
             </p>
             <p>
-              <strong className="text-foreground">Dashboard (/dashboard)</strong> — landing page with stats, quick links and the {TOTAL_PRODUCTS}-platform grid. Includes a <em>Find by ID</em> box that deep-links any test case (e.g. <code className="font-mono text-primary">SF-HC-00005</code>) into the generator with the prompt pre-filled.
+              <strong className="text-foreground">Dashboard (/dashboard)</strong> — catalogue coverage, quick links and the {TOTAL_PRODUCTS}-platform grid. Includes a <em>Find by ID</em> box that deep-links a test case (e.g. <code className="font-mono text-primary">SF-HC-00005</code>) into Content Automation with the prompt pre-filled.
             </p>
             <p>
               <strong className="text-foreground">Industries (/industries)</strong> — parent industry domains roll up split sub-domains and expose product lineage such as SAP S/4HANA → module/product plus industry lineage such as Finance → Revenue Management.
@@ -63,7 +75,7 @@ const About = () => {
               <strong className="text-foreground">SAP & Salesforce SPA modules</strong> — interactive React pages with searchable tables, analytics charts and one-click "Send to generator".
             </p>
             <p>
-              <strong className="text-foreground">Static product launchers</strong> — every other platform ships as bundled HTML repositories under <code className="font-mono">/Product/index.html</code>.
+              <strong className="text-foreground">Platform repositories and generated suites</strong> — browse product and industry case libraries, with downloadable automation suites available for supported products.
             </p>
             <p>
               <strong className="text-foreground">Templates / History / Collections / Compare</strong> — save, organise, re-run and diff your generated scripts.
@@ -193,7 +205,7 @@ const About = () => {
         </section>
 
         <section className="pt-4 border-t border-border text-xs text-muted-foreground">
-          Built by <a href="https://www.linkedin.com/in/kalilurrahman" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Kalilur Rahman</a> — a global IT executive's working tool, not a commercial product. Have feedback? Use the <Link to="/feedback" className="text-primary hover:underline">Feedback</Link> form.
+          Built by <a href="https://www.linkedin.com/in/kalilurrahman" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Kalilur Rahman</a>. Validaira focuses on AI-native quality engineering for confident releases. Have feedback? Use the <Link to="/feedback" className="text-primary hover:underline">Feedback</Link> form.
         </section>
       </div>
     </>
