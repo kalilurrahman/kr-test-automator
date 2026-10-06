@@ -5,3 +5,5 @@
 - [ ] Ensure generated scripts are complete and not limited to 50 lines.
 - [ ] Validate counts and representative flows; run lint, tests, and build.
 - [ ] Deploy the generation function and publish the app.
+- [ ] Improve dashboard clarity and add verified product, family, and industry graphs.
+- [ ] Improve product visibility and logo presentation on the home page.
