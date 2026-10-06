@@ -18,10 +18,11 @@ import { SALESFORCE_CLOUDS } from "@/data/salesforceClouds";
 import { readCache, writeCache, TTL_MS } from "@/lib/indexCache";
 import { getCachedCsv } from "@/lib/csvCache";
 import { resolveDomain } from "@/data/industryDomains";
+import { normalizeCaseRow } from "@/lib/csvCache";
 
 type PrecomputedIndexPayload = {
   builtAt: number;
-  ids: Record<string, [source: string, module: string]>;
+  ids: Record<string, [source: string, module: string, scenario?: string, priority?: string, testType?: string]>;
 };
 
 export interface IndexedCase {
@@ -98,14 +99,14 @@ async function tryPrecomputedIndex(): Promise<GlobalIndex | null> {
     const res = await fetch("/precomputed-index.json", { cache: "force-cache" });
     if (!res.ok) return null;
     const payload = (await res.json()) as PrecomputedIndexPayload;
-    const cases: IndexedCase[] = Object.entries(payload.ids).map(([id, [source, module]]) => ({
+    const cases: IndexedCase[] = Object.entries(payload.ids).map(([id, [source, module, scenario, priority, testType]]) => ({
       id,
       source,
       sourceLabel: labelForSource(source),
       module,
-      scenario: id,
-      priority: "",
-      testType: "",
+      scenario: scenario || id,
+      priority: priority || "",
+      testType: testType || "",
       preconditions: "",
       steps: "",
       expected: "",
@@ -461,6 +462,25 @@ export async function findCaseById(id: string): Promise<IndexedCase | null> {
 
 /** Hydrate a single detail page with the full row only when needed. */
 export async function findFullCaseById(id: string): Promise<IndexedCase | null> {
+  const hit = await findCaseById(id);
+  if (hit?.steps) return hit;
+  const platform = PLATFORMS.find((item) => item.id === hit?.source);
+  if (hit && platform) {
+    const candidates = platform.modules.filter((mod) => mod.label === hit.module || mod.id === hit.module);
+    for (const mod of candidates) {
+      const parsed = await getCachedCsv(`${platform.publicBase}/${mod.folder}/${mod.prefix}.csv`);
+      const row = parsed?.rows.find((item) => item["Test Case ID"] === id.trim());
+      if (!row) continue;
+      const full = {
+        ...hit, moduleId: mod.id, scenario: row["Test Scenario"], priority: row.Priority,
+        testType: row["Test Type"], preconditions: row.Preconditions, steps: row.Steps,
+        expected: row["Expected Result"], raw: normalizeCaseRow(row),
+      };
+      const idx = await getGlobalIndex();
+      idx.byId.set(full.id, full);
+      return full;
+    }
+  }
   const fresh = await build();
   void writeCache({
     cases: fresh.cases,
@@ -476,6 +496,8 @@ export async function findFullCaseById(id: string): Promise<IndexedCase | null> 
 export async function guessSourceFromId(id: string): Promise<string | null> {
   const idx = await getGlobalIndex();
   const trimmed = id.trim().toUpperCase();
+  const exact = idx.byId.get(id.trim());
+  if (exact) return exact.source;
   // Try longer prefixes first
   const parts = trimmed.split("-");
   for (let n = Math.min(parts.length, 3); n >= 1; n--) {

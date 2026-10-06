@@ -29,7 +29,7 @@ const TestCaseDetail = () => {
       .then(async (hit) => {
         if (cancelled) return;
         setTc(hit);
-        if (hit && (!hit.scenario || hit.scenario === hit.id)) {
+        if (hit && !hit.steps) {
           const full = await findFullCaseById(id);
           if (!cancelled && full) setTc(full);
         }
