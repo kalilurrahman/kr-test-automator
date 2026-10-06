@@ -8,8 +8,8 @@
 const DB_NAME = "tf-cache";
 const DB_VERSION = 1;
 const STORE = "global-index";
-// v3: include 51.5k industry-grounded scenarios with B36-B50 lineage fields.
-const KEY = "v3";
+// v4: additive uploaded AI-product cases and normalized CSV fields.
+const KEY = "v4";
 /** 24h freshness window — refresh in the background after this. */
 export const TTL_MS = 24 * 60 * 60 * 1000;
 
