@@ -14,6 +14,7 @@ export type TestScope =
 export interface GenerationResult {
   title: string;
   script: string;
+  requested_script_lines?: number;
   language: string;
   test_cases: { id: string; name: string; type: string; priority: string; description: string }[];
   prerequisites: string[];

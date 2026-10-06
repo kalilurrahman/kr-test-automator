@@ -141,7 +141,8 @@ const OutputPanel = () => {
 
   const syntaxLang = langMap[result.language] || langMap[language] || "typescript";
   const scriptLineCount = result.script.split(/\r?\n/).length;
-  const requestedLongScript = (targetScriptLines ?? 0) >= 2000;
+  const requestedLineTarget = result.requested_script_lines ?? 0;
+  const requestedLongScript = requestedLineTarget >= 2000;
 
   const missingItems = validation?.missing ?? [];
   const hasMissing = specialKind && missingItems.length > 0;
@@ -185,9 +186,9 @@ const OutputPanel = () => {
           P2: {result.test_cases.filter((t) => t.priority === "P2").length} ·
           P3: {result.test_cases.filter((t) => t.priority === "P3").length} · {scriptLineCount.toLocaleString()} script lines
         </p>
-        {requestedLongScript && scriptLineCount < targetScriptLines! && (
+        {requestedLongScript && scriptLineCount < requestedLineTarget && (
           <p role="status" className="mt-1 text-xs text-amber-500">
-            The model returned {scriptLineCount.toLocaleString()} lines; the requested target was {targetScriptLines!.toLocaleString()}.
+            The model returned {scriptLineCount.toLocaleString()} lines; the requested target was {requestedLineTarget.toLocaleString()}.
           </p>
         )}
       </div>

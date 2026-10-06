@@ -675,7 +675,7 @@ This directory is a self-contained browser automation project with 10 platform-s
 Use a dedicated non-production tenant with disposable test resources and a user authorized to create the objects covered by this pack. Copy `.env.example` to `.env`, set `BASE_URL` and any tenant-specific paths, then install browser dependencies:
 
 ```sh
-npm ci
+npm install
 npx playwright install chromium
 npm run typecheck
 npm test

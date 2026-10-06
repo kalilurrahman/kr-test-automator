@@ -245,7 +245,7 @@ const ContentAutomation = () => {
       onDone: async (result) => {
         store.setProgress(100);
         store.setIsGenerating(false);
-        store.setResult(result);
+        store.setResult({ ...result, requested_script_lines: store.targetScriptLines ?? undefined });
 
         // Notify if user navigated away
         if (document.hidden) {
