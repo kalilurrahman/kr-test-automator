@@ -193,47 +193,8 @@ export default defineConfig(({ mode }) => ({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "favicon-32.png", "brand/validaira-mark.svg", "brand/validaira-social.png", "icons/apple-touch-icon.png", "icons/icon-512-maskable.png", "robots.txt"],
-      manifest: {
-        id: "/",
-        name: "Validaira - AI-native quality engineering",
-        short_name: "Validaira",
-        description: "AI-native quality engineering for confident releases",
-        lang: "en",
-        categories: ["productivity", "developer", "business"],
-        theme_color: "#0c1423",
-        background_color: "#0c1423",
-        display: "standalone",
-        display_override: ["standalone", "minimal-ui"],
-        orientation: "portrait",
-        scope: "/",
-        start_url: "/",
-        icons: [
-          {
-            src: "/icons/icon-192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "any",
-          },
-          {
-            src: "/icons/icon-512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any",
-          },
-          {
-            src: "/icons/icon-512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any",
-          },
-          {
-            src: "/icons/icon-512-maskable.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "maskable",
-          },
-        ],
-      },
+      // Served from public/ in both preview and production.
+      manifest: false,
       workbox: {
         globPatterns: ["index.html", "assets/*.css", "*.{ico,png,svg,webmanifest}", "icons/*.{png,svg}"],
         // Keep the install payload lean; lazy JS/data is cached on demand below.

@@ -5459,7 +5459,7 @@ export const GENERATED_DATA_PACK_PLATFORMS: PlatformDef[] = [
     "description": "Farm and field planning, simulated sensors, equipment maintenance, input inventory, harvest traceability, and reporting.",
     "publicBase": "/AgricultureAgriTech",
     "idPrefix": "AGRX",
-    "accent": "lime",
+    "accent": "emerald",
     "modules": [
       {
         "id": "field_farm_registry",
@@ -8455,7 +8455,7 @@ export const GENERATED_DATA_PACK_PRODUCTS: ProductEntry[] = [
       "Access, Integrations and Resilience"
     ],
     "idPrefix": "AGRX",
-    "accent": "lime",
+    "accent": "emerald",
     "industryDomain": "agriculture"
   },
   {

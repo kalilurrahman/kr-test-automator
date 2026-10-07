@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" fill="none">
-  <g transform="translate(4 4) scale(.336)" fill="none">
-    <rect x="16" y="16" width="480" height="480" rx="138" fill="#0C1423"/>
-    <rect x="17" y="17" width="478" height="478" rx="137" stroke="#D6AF54" stroke-opacity=".34" stroke-width="2"/>
-    <path d="M129 143h73l55 177 55-177h72L287 369h-61L129 143Z" fill="url(#g)"/>
-    <path d="m301 310 35 34 66-73" stroke="#75DEB4" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="383" cy="132" r="9" fill="#A8F0D1"/>
-  </g>
-  <defs><linearGradient id="g" x1="130" y1="140" x2="384" y2="366" gradientUnits="userSpaceOnUse"><stop stop-color="#F5DE9B"/><stop offset=".52" stop-color="#D6AF54"/><stop offset="1" stop-color="#A9812E"/></linearGradient></defs>
-  <text x="190" y="111" fill="#F5F1E8" font-family="Inter, Avenir, Arial, sans-serif" font-size="76" font-weight="650" letter-spacing="-2">Validaira</text>
-  <text x="194" y="151" fill="#A8B1C0" font-family="Inter, Avenir, Arial, sans-serif" font-size="21" font-weight="450" letter-spacing="2.2">AI-NATIVE QUALITY ENGINEERING</text>
+<title>Validaira — AI-native quality engineering</title>
+<g transform="translate(4 4) scale(.336)">
+<rect width="512" height="512" rx="112" fill="#0C1423"/>
+<path d="M112 132h78l66 199 66-199h78L289 389h-66L112 132Z" fill="#D6AF54"/>
+<path d="m291 300 42 42 75-84" stroke="#0C1423" stroke-width="43" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m291 300 42 42 75-84" stroke="#75DEB4" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="190" y="108" fill="#F5F8FC" font-family="DejaVu Sans, Arial, sans-serif" font-size="76" font-weight="700">Validaira</text>
+<text x="194" y="150" fill="#A8B1C0" font-family="DejaVu Sans, Arial, sans-serif" font-size="20">AI-NATIVE QUALITY ENGINEERING</text>
 </svg>
