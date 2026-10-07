@@ -1,18 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-  <defs>
-    <linearGradient id="bg" x1="56" y1="36" x2="462" y2="490" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#18243A"/><stop offset="1" stop-color="#090F1C"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="133" y1="137" x2="373" y2="377" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F5DE9B"/><stop offset=".52" stop-color="#D6AF54"/><stop offset="1" stop-color="#A9812E"/>
-    </linearGradient>
-    <linearGradient id="mint" x1="298" y1="286" x2="386" y2="347" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#A8F0D1"/><stop offset="1" stop-color="#4CC99C"/>
-    </linearGradient>
-  </defs>
-  <rect x="16" y="16" width="480" height="480" rx="138" fill="url(#bg)"/>
-  <rect x="17" y="17" width="478" height="478" rx="137" stroke="#D6AF54" stroke-opacity=".24" stroke-width="2"/>
-  <path d="M129 143h73l55 177 55-177h72L287 369h-61L129 143Z" fill="url(#gold)"/>
-  <path d="m301 310 35 34 66-73" stroke="url(#mint)" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="383" cy="132" r="9" fill="#A8F0D1"/>
+  <title>Validaira</title>
+  <rect width="512" height="512" rx="112" fill="#0C1423"/>
+  <path d="M112 132h78l66 199 66-199h78L289 389h-66L112 132Z" fill="#D6AF54"/>
+  <path d="m291 300 42 42 75-84" stroke="#0C1423" stroke-width="43" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m291 300 42 42 75-84" stroke="#75DEB4" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-  <rect width="512" height="512" rx="148" fill="#0C1423"/>
-  <path d="M109 116h82l65 211 65-211h82L291 398h-70L109 116Z" fill="#D6AF54"/>
-  <path d="m301 319 37 35 71-78" stroke="#75DEB4" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="397" cy="104" r="11" fill="#A8F0D1"/>
+  <title>Validaira</title>
+  <rect width="512" height="512" rx="112" fill="#0C1423"/>
+  <path d="M112 132h78l66 199 66-199h78L289 389h-66L112 132Z" fill="#D6AF54"/>
+  <path d="m291 300 42 42 75-84" stroke="#0C1423" stroke-width="43" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m291 300 42 42 75-84" stroke="#75DEB4" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
