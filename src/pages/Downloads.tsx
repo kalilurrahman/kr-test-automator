@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/select";
 
 type Format = "XLSX" | "CSV" | "JSON" | "TS" | "HTML" | "ZIP";
-type Category = "Strict E2E" | "Working set" | "Stats & summary" | "Reference";
+type Category = "Strict E2E" | "Working set" | "Stats & summary" | "Reference" | "Brand assets";
 
 interface DownloadEntry {
   href: string;
@@ -36,6 +36,13 @@ const FORMAT_ICON: Record<Format, typeof FileText> = {
 };
 
 const DOWNLOADS: DownloadEntry[] = [
+  {
+    href: "/brand/validaira-brand-kit.zip",
+    label: "Validaira brand kit",
+    format: "ZIP",
+    category: "Brand assets",
+    blurb: "Vector marks, mobile app icons, favicon, wordmark, and marketing artwork.",
+  },
   // ── Strict E2E master (primary) ─────────────────────────────────────────
   {
     href: "/data/unified_strict_e2e_final.xlsx",
