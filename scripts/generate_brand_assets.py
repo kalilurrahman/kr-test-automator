@@ -2,7 +2,7 @@
 from pathlib import Path
 from io import BytesIO
 from zipfile import ZipFile, ZIP_DEFLATED
-import cairosvg
+from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,8 +21,7 @@ def font(size, bold=False):
 
 
 def mark(size, maskable=False):
-    raster = cairosvg.svg2png(url=str(BRAND / "validaira-mark.svg"), output_width=size * 4, output_height=size * 4)
-    image = Image.open(BytesIO(raster)).convert("RGBA").resize((size, size), Image.Resampling.LANCZOS)
+    image = Image.open(BytesIO(MARK_RASTER)).convert("RGBA").resize((size, size), Image.Resampling.LANCZOS)
     if maskable:
         canvas = Image.new("RGBA", (size, size), NAVY + (255,))
         inner = image.resize((int(size * .8), int(size * .8)), Image.Resampling.LANCZOS)
@@ -31,6 +30,15 @@ def mark(size, maskable=False):
         return canvas
     return image
 
+
+with sync_playwright() as playwright:
+    browser = playwright.chromium.launch(headless=True)
+    page = browser.new_page(viewport={"width": 2048, "height": 2048})
+    page.set_content('<style>body{margin:0}svg{display:block;width:2048px;height:2048px}</style>' + (BRAND / "validaira-mark.svg").read_text())
+    MARK_RASTER = page.locator("svg").screenshot(omit_background=True)
+    page.set_content('<style>body{margin:0}svg{display:block;width:1560px;height:360px}</style>' + (BRAND / "validaira-wordmark.svg").read_text())
+    page.locator("svg").screenshot(path=str(BRAND / "validaira-wordmark.png"), omit_background=True)
+    browser.close()
 
 ICONS.mkdir(exist_ok=True)
 for size in [64, 192, 512]:
@@ -60,8 +68,7 @@ draw.text((86, 595), "Confident releases.", font=font(48), fill=GOLD)
 draw.text((86, 675), "Better tests.", font=font(48), fill=PAPER)
 draw.text((86, 1690), "AI-NATIVE QUALITY ENGINEERING", font=font(32, True), fill=PAPER)
 portrait.save(BRAND / "validaira-mobile.jpg", quality=92, optimize=True)
-# Keep the wordmark vector text-free by converting its glyphs to outlines.
-cairosvg.svg2png(url=str(BRAND / "validaira-wordmark.svg"), write_to=str(BRAND / "validaira-wordmark.png"), output_width=1560, output_height=360)
+# Include both vector and raster wordmarks for common presentation tools.
 with ZipFile(BRAND / "validaira-brand-kit.zip", "w", ZIP_DEFLATED) as archive:
     for asset in sorted(BRAND.glob("validaira-*")):
         if asset.suffix != ".zip":
