@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Refresh Validaira imagery, app icons, and mobile installation branding; check broken website aspects.
+
 - [ ] Integrate 5,000 uploaded AI-product test cases into product repositories and downloads.
 - [ ] Add all cases to global search, detail deep links, and generator prefill.
 - [ ] Ensure generated scripts are complete and not limited to 50 lines.
