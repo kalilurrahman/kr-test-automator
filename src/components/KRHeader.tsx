@@ -100,7 +100,7 @@ const KRHeader = () => {
           </a>
 
           {/* CENTER: App name */}
-          <Link to="/" className="flex items-center gap-2 shrink-0">
+          <Link to="/" aria-label="Validaira home" className="flex items-center gap-2 shrink-0">
             <img
               src="/brand/validaira-mark.svg"
               alt=""
@@ -108,7 +108,7 @@ const KRHeader = () => {
               className="h-8 w-8 rounded-lg"
             />
             <span
-              className="text-lg font-bold tracking-wide text-foreground hidden sm:inline"
+              className="text-lg font-bold text-foreground"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Validaira
@@ -233,13 +233,13 @@ const KRHeader = () => {
             <FontSwitcher />
 
             {isInstallable && (
-              <button
+              <Button variant="outline" size="sm"
                 onClick={install}
                 className="ml-2 px-3 py-1.5 text-sm rounded-md border border-primary/30 text-primary hover:bg-primary/10 flex items-center gap-1.5 transition-colors"
               >
                 <Download className="w-3.5 h-3.5" />
-                Install
-              </button>
+                Install Validaira
+              </Button>
             )}
           </div>
 
@@ -336,12 +336,12 @@ const KRHeader = () => {
             </Accordion>
 
             {isInstallable && (
-              <button
+              <Button variant="ghost"
                 onClick={() => { install(); closeMobile(); }}
                 className="w-full text-left px-3 py-2 text-sm rounded-md text-primary inline-flex items-center gap-2"
               >
-                <Download className="w-4 h-4" /> Install app
-              </button>
+                <Download className="w-4 h-4" /> Install Validaira
+              </Button>
             )}
 
             {!loading && !user && (

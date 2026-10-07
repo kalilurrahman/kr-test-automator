@@ -38,6 +38,7 @@ const IosInstallHint = () => {
     <div className="fixed bottom-4 inset-x-4 z-50 md:hidden" role="dialog" aria-label="Install app instructions">
       <Card className="p-4 bg-card border-primary/30 shadow-lg">
         <div className="flex items-start gap-3">
+          <img src="/icons/apple-touch-icon.png?v=validaira-2" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-lg" />
           <div className="flex-1">
             <h3 className="text-sm font-semibold text-foreground mb-1">Install Validaira</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
