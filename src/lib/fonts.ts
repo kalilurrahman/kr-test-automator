@@ -124,10 +124,10 @@ export function applyFontPreset(id: FontPresetId) {
   root.style.setProperty("--font-display", preset.display);
   root.style.setProperty("--font-body", preset.body);
   root.style.setProperty("--font-mono", preset.mono);
-  // clamp prevents overflow on small viewports while honouring user choice.
+  // Keep the selected reading size stable across viewport widths.
   root.style.setProperty(
     "--font-base-size",
-    `clamp(12px, ${preset.basePx * 0.0625}rem + 0.1vw, ${preset.basePx + 2}px)`,
+    `${preset.basePx}px`,
   );
   window.localStorage.setItem(STORAGE_KEY, id);
 }
