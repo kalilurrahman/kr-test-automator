@@ -1,0 +1,414 @@
+import type { PlatformModule } from "@/data/platformManifests";
+
+export const UPLOADED_AI_PRODUCT_MODULES: Record<string, PlatformModule[]> = {
+  "claudecode": [
+    {
+      "id": "uploaded_test_planning",
+      "label": "Test Planning",
+      "folder": "uploaded_test_planning",
+      "prefix": "uploaded_test_planning_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_playwright_authoring",
+      "label": "Playwright Authoring",
+      "folder": "uploaded_playwright_authoring",
+      "prefix": "uploaded_playwright_authoring_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_api_testing",
+      "label": "API Testing",
+      "folder": "uploaded_api_testing",
+      "prefix": "uploaded_api_testing_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_tdd",
+      "label": "TDD",
+      "folder": "uploaded_tdd",
+      "prefix": "uploaded_tdd_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_ci_quality_gate",
+      "label": "CI Quality Gate",
+      "folder": "uploaded_ci_quality_gate",
+      "prefix": "uploaded_ci_quality_gate_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_code_review",
+      "label": "Code Review",
+      "folder": "uploaded_code_review",
+      "prefix": "uploaded_code_review_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_mcp_integration",
+      "label": "MCP Integration",
+      "folder": "uploaded_mcp_integration",
+      "prefix": "uploaded_mcp_integration_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_test_maintenance",
+      "label": "Test Maintenance",
+      "folder": "uploaded_test_maintenance",
+      "prefix": "uploaded_test_maintenance_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    }
+  ],
+  "codex": [
+    {
+      "id": "uploaded_unit_test_generation",
+      "label": "Unit Test Generation",
+      "folder": "uploaded_unit_test_generation",
+      "prefix": "uploaded_unit_test_generation_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_refactoring",
+      "label": "Refactoring",
+      "folder": "uploaded_refactoring",
+      "prefix": "uploaded_refactoring_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_api_testing",
+      "label": "API Testing",
+      "folder": "uploaded_api_testing",
+      "prefix": "uploaded_api_testing_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_secure_coding",
+      "label": "Secure Coding",
+      "folder": "uploaded_secure_coding",
+      "prefix": "uploaded_secure_coding_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_code_review",
+      "label": "Code Review",
+      "folder": "uploaded_code_review",
+      "prefix": "uploaded_code_review_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_repository_context",
+      "label": "Repository Context",
+      "folder": "uploaded_repository_context",
+      "prefix": "uploaded_repository_context_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_ci_quality_gate",
+      "label": "CI Quality Gate",
+      "folder": "uploaded_ci_quality_gate",
+      "prefix": "uploaded_ci_quality_gate_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_performance",
+      "label": "Performance",
+      "folder": "uploaded_performance",
+      "prefix": "uploaded_performance_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    }
+  ],
+  "foundryai": [
+    {
+      "id": "uploaded_aip_logic",
+      "label": "AIP Logic",
+      "folder": "uploaded_aip_logic",
+      "prefix": "uploaded_aip_logic_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_workflow",
+      "label": "Workflow",
+      "folder": "uploaded_workflow",
+      "prefix": "uploaded_workflow_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_ontology",
+      "label": "Ontology",
+      "folder": "uploaded_ontology",
+      "prefix": "uploaded_ontology_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_transforms",
+      "label": "Transforms",
+      "folder": "uploaded_transforms",
+      "prefix": "uploaded_transforms_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_data_lineage",
+      "label": "Data Lineage",
+      "folder": "uploaded_data_lineage",
+      "prefix": "uploaded_data_lineage_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_access_control",
+      "label": "Access Control",
+      "folder": "uploaded_access_control",
+      "prefix": "uploaded_access_control_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_sdk_ci",
+      "label": "SDK CI",
+      "folder": "uploaded_sdk_ci",
+      "prefix": "uploaded_sdk_ci_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_object_explorer",
+      "label": "Object Explorer",
+      "folder": "uploaded_object_explorer",
+      "prefix": "uploaded_object_explorer_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    }
+  ],
+  "snowflakeai": [
+    {
+      "id": "uploaded_data_quality",
+      "label": "Data Quality",
+      "folder": "uploaded_data_quality",
+      "prefix": "uploaded_data_quality_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_elt_pipeline",
+      "label": "ELT Pipeline",
+      "folder": "uploaded_elt_pipeline",
+      "prefix": "uploaded_elt_pipeline_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_schema_governance",
+      "label": "Schema Governance",
+      "folder": "uploaded_schema_governance",
+      "prefix": "uploaded_schema_governance_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_rbac_and_masking",
+      "label": "RBAC and Masking",
+      "folder": "uploaded_rbac_and_masking",
+      "prefix": "uploaded_rbac_and_masking_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_performance",
+      "label": "Performance",
+      "folder": "uploaded_performance",
+      "prefix": "uploaded_performance_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_streams_and_tasks",
+      "label": "Streams and Tasks",
+      "folder": "uploaded_streams_and_tasks",
+      "prefix": "uploaded_streams_and_tasks_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_data_sharing",
+      "label": "Data Sharing",
+      "folder": "uploaded_data_sharing",
+      "prefix": "uploaded_data_sharing_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_snowpark",
+      "label": "Snowpark",
+      "folder": "uploaded_snowpark",
+      "prefix": "uploaded_snowpark_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    }
+  ],
+  "databricks": [
+    {
+      "id": "uploaded_delta_lake",
+      "label": "Delta Lake",
+      "folder": "uploaded_delta_lake",
+      "prefix": "uploaded_delta_lake_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_jobs",
+      "label": "Jobs",
+      "folder": "uploaded_jobs",
+      "prefix": "uploaded_jobs_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_notebooks",
+      "label": "Notebooks",
+      "folder": "uploaded_notebooks",
+      "prefix": "uploaded_notebooks_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_mlflow",
+      "label": "MLflow",
+      "folder": "uploaded_mlflow",
+      "prefix": "uploaded_mlflow_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_model_evaluation",
+      "label": "Model Evaluation",
+      "folder": "uploaded_model_evaluation",
+      "prefix": "uploaded_model_evaluation_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_unity_catalog",
+      "label": "Unity Catalog",
+      "folder": "uploaded_unity_catalog",
+      "prefix": "uploaded_unity_catalog_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_streaming",
+      "label": "Streaming",
+      "folder": "uploaded_streaming",
+      "prefix": "uploaded_streaming_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    },
+    {
+      "id": "uploaded_sql_warehouse",
+      "label": "SQL Warehouse",
+      "folder": "uploaded_sql_warehouse",
+      "prefix": "uploaded_sql_warehouse_cases",
+      "formats": [
+        "csv",
+        "json"
+      ]
+    }
+  ]
+};
