@@ -12,5 +12,5 @@ For your generated scripts, please refer to the `/history` route.
 
 ## Available Replacements
 
-- **Browse Templates:** Navigate to [https://kr-test-automator.lovable.app/templates](https://kr-test-automator.lovable.app/templates)
-- **View History:** Navigate to [https://kr-test-automator.lovable.app/history](https://kr-test-automator.lovable.app/history)
+- **Browse Templates:** Navigate to [https://validaira.lovable.app/templates](https://validaira.lovable.app/templates)
+- **View History:** Navigate to [https://validaira.lovable.app/history](https://validaira.lovable.app/history)

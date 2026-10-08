@@ -10,17 +10,13 @@ const KRFooter = () => (
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-9 h-9 rounded-full bg-background border border-primary/30 flex items-center justify-center">
-              <span className="text-sm font-bold text-primary" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                KR
-              </span>
-            </div>
+            <img src="/brand/validaira-mark.svg" alt="" className="w-9 h-9 rounded-lg" />
             <span className="text-sm font-semibold text-foreground" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-              Kalilur Rahman
+              Validaira
             </span>
           </div>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Global IT Director · Kaggle Grandmaster · CIO Next100 2022 · Building tools that matter.
+            AI-native quality engineering. Built by Kalilur Rahman — Global IT Director · Kaggle Grandmaster · CIO Next100 2022.
           </p>
         </div>
 

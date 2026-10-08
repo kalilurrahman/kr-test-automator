@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useSearchParams, Navigate } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Layers } from "lucide-react";
+import { ProductLogo } from "@/components/ProductLogo";
 import { getPlatform, getModule, type PlatformModule } from "@/data/platformManifests";
 import { PlatformOverview } from "@/components/platform/PlatformOverview";
 import { PlatformRepository } from "@/components/platform/PlatformRepository";
@@ -54,7 +54,7 @@ const PlatformPage = () => {
       <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
         <header className="flex items-start gap-3">
           <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
-            <Layers className="w-5 h-5 text-primary" />
+            <ProductLogo productKey={platform.id} label={platform.label} size={32} />
           </div>
           <div>
             <h1

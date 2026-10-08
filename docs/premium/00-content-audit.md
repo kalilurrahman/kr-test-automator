@@ -56,7 +56,7 @@ breadth signaling and SEO surface, not sellable content.
    machine generation in five rows.
 2. **Non-falsifiable expected results** ("Success") — rows can't serve as acceptance
    criteria, which is the core of what a paying QA lead buys.
-3. **Zero executable automation** despite the "test automator" brand — no Playwright/
+3. **Zero executable automation** despite the "Validaira" brand — no Playwright/
    Cypress/Selenium specs, no page objects, no API collections.
 4. **Only SAP got curated treatment** — no 300–800-case curated core for Salesforce,
    Workday, ServiceNow, Veeva, Oracle (exactly what the premium buyer wants).

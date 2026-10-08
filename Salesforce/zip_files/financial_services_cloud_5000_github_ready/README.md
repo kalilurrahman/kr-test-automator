@@ -5,7 +5,7 @@
 ## GitHub → Lovable Integration
 
 ```
-kr-test-automator.lovable.app/salesforce/financial/
+validaira.lovable.app/salesforce/financial/
 ├── ?tab=overview (this HTML)
 ├── financial_services_cloud_5000.xlsx (Excel)
 ├── financial_services_cloud_5000.csv (dynamic table)
