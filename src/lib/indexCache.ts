@@ -8,8 +8,8 @@
 const DB_NAME = "tf-cache";
 const DB_VERSION = 1;
 const STORE = "global-index";
-// v4: additive uploaded AI-product cases and normalized CSV fields.
-const KEY = "v4";
+// v5: original uploaded IDs take precedence over generated suites.
+const KEY = "v5";
 /** 24h freshness window — refresh in the background after this. */
 export const TTL_MS = 24 * 60 * 60 * 1000;
 

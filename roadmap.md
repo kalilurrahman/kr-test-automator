@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Refresh Validaira imagery, app icons, and mobile installation branding; check broken website aspects.
+- [ ] Finish Validaira branding on every page and export icons, marketing artwork, and the downloadable brand kit.
 
 - [ ] Integrate 5,000 uploaded AI-product test cases into product repositories and downloads.
 - [ ] Add all cases to global search, detail deep links, and generator prefill.

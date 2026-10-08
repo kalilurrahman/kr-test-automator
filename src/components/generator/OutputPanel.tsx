@@ -72,7 +72,7 @@ const OutputPanel = () => {
   if (!isGenerating && !result) {
     return (
       <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center px-4">
-        <div className="text-primary text-2xl mb-2">✦</div>
+        <img src="/brand/validaira-mark.svg" alt="" className="w-12 h-12 mb-3 rounded-lg" />
         <h3 className="text-xl font-bold text-foreground mb-2" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           Validaira
         </h3>
