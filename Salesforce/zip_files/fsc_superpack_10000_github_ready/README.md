@@ -5,7 +5,7 @@
 ## GitHub → Lovable
 
 ```
-kr-test-automator.lovable.app/salesforce/financial/superpack/
+validaira.lovable.app/salesforce/financial/superpack/
 ├── ?tab=overview (10K‑row table)
 ├── fsc_superpack_10000.xlsx (Excel)
 ├── fsc_superpack_10000.csv (filterable table)

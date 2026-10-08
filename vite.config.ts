@@ -194,7 +194,7 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "favicon-32.png", "brand/validaira-mark.svg", "brand/validaira-social.png", "icons/apple-touch-icon.png", "icons/icon-512-maskable.png", "robots.txt"],
       // Served from public/ in both preview and production.
-      manifest: false,
+      manifest: "public/manifest.webmanifest",
       workbox: {
         globPatterns: ["index.html", "assets/*.css", "*.{ico,png,svg,webmanifest}", "icons/*.{png,svg}"],
         // Keep the install payload lean; lazy JS/data is cached on demand below.

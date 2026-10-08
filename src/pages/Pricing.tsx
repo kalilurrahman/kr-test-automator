@@ -36,7 +36,7 @@ const TIERS: Tier[] = [
       "Environment setup + CI pipeline templates",
       "12 months of content updates included",
     ],
-    checkoutSlug: "testforge-platform-pack",
+    checkoutSlug: "validaira-platform-pack",
   },
   {
     sku: "all-access",
@@ -51,7 +51,7 @@ const TIERS: Tier[] = [
       "Priority feature requests",
       "12 months of content updates included",
     ],
-    checkoutSlug: "testforge-all-access",
+    checkoutSlug: "validaira-all-access",
     highlight: true,
     badge: "Best value",
   },
@@ -68,7 +68,7 @@ const TIERS: Tier[] = [
       "Invoice / PO-friendly purchasing",
       "Priority email support",
     ],
-    checkoutSlug: "testforge-team-5",
+    checkoutSlug: "validaira-team-5",
   },
 ];
 

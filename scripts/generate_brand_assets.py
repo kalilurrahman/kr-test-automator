@@ -17,7 +17,7 @@ PAPER = (245, 248, 252)
 
 def font(size, bold=False):
     suffix = "-Bold" if bold else ""
-    return ImageFont.truetype(f"/usr/share/fonts/truetype/dejavu/DejaVuSans{suffix}.ttf", size)
+    return ImageFont.truetype(f"/usr/share/fonts/truetype/liberation/LiberationSans{suffix}.ttf", size)
 
 
 def mark(size, maskable=False):

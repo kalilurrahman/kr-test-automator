@@ -10,7 +10,7 @@
 
 **Validaira** is an AI-native quality engineering platform for exploring enterprise test libraries, generating automation, and organizing validation work for confident releases.
 
-**Live Application:** [Validaira](https://kr-test-automator.lovable.app/)
+**Live Application:** [Validaira](https://validaira.lovable.app/)
 
 ---
 
@@ -210,9 +210,9 @@ The dashboard reports the **number of duplicate IDs skipped** and the **count of
 
 Any test case is reachable at `/t/<id>`:
 
-- `https://kr-test-automator.lovable.app/t/SF-HC-00005`
-- `https://kr-test-automator.lovable.app/t/SAP-FI-001`
-- `https://kr-test-automator.lovable.app/t/WD-PAY-042`
+- `https://validaira.lovable.app/t/SF-HC-00005`
+- `https://validaira.lovable.app/t/SAP-FI-001`
+- `https://validaira.lovable.app/t/WD-PAY-042`
 
 The detail page renders the case (preconditions, steps, expected result, metadata) and offers two CTAs:
 
