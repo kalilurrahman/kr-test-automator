@@ -19,8 +19,9 @@ import SeoHead from "@/components/SeoHead";
 import { Button } from "@/components/ui/button";
 import brandHero from "@/assets/validaira-brand-hero.jpg";
 import { HomeProductExplorer } from "@/components/home-product-explorer";
+import { CatalogueSnapshot } from "@/components/catalogue-snapshot";
 import { TOTAL_MODULES, TOTAL_PRODUCTS } from "@/data/productCatalog";
-import { getGlobalStats } from "@/lib/globalStats";
+import { getGlobalStats, type GlobalStats } from "@/lib/globalStats";
 
 const features = [
   {
@@ -53,7 +54,7 @@ const workflow = [
 ];
 
 const Index = () => {
-  const [stats, setStats] = useState<{ cases: number; unique: number } | null>(null);
+  const [stats, setStats] = useState<GlobalStats | null>(null);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
 
@@ -69,12 +70,12 @@ const Index = () => {
   useEffect(() => {
     let active = true;
     getGlobalStats().then((result) => {
-      if (active) setStats({ cases: result.totalCases, unique: result.uniqueIds });
+      if (active) setStats(result);
     }).catch(() => undefined);
     return () => { active = false; };
   }, []);
 
-  const caseCount = stats?.unique.toLocaleString() ?? "—";
+  const caseCount = stats?.uniqueIds.toLocaleString() ?? "—";
 
   return (
     <>
@@ -111,12 +112,13 @@ const Index = () => {
             <StatCard icon={Workflow} value={TOTAL_MODULES.toLocaleString()} label="product modules" />
             <StatCard icon={Braces} value="5,000" label="original AI-product cases" />
           </div>
-          {stats?.cases && stats.cases !== stats.unique ? (
-            <p className="mt-2 text-right text-[11px] text-muted-foreground">{stats.cases.toLocaleString()} total records · duplicates excluded from indexed count</p>
+          {stats?.totalCases && stats.totalCases !== stats.uniqueIds ? (
+            <p className="mt-2 text-right text-[11px] text-muted-foreground">{stats.totalCases.toLocaleString()} total records · duplicates excluded from indexed count</p>
           ) : null}
         </section>
 
         <HomeProductExplorer />
+        <CatalogueSnapshot stats={stats} />
 
         <section className="mx-auto max-w-7xl px-4 py-12 sm:py-16">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">

@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Add a lightweight home catalogue snapshot with verified product and priority graphs.
+
 - [x] Focused five-credit enhancement: searchable product discovery, clearer first-screen actions, and interaction checks.
 
 - [ ] Finish Validaira branding on every page and export icons, marketing artwork, and the downloadable brand kit.
