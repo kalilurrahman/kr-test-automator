@@ -287,6 +287,12 @@ html { transition: background-color 0.25s ease, color 0.25s ease; }
 
 .brand-hero { background: hsl(var(--brand-ink)); color: hsl(var(--brand-paper)); }
 .brand-logo-plate { background: hsl(var(--brand-paper)); }
+.catalogue-meter { appearance: none; border: 0; border-radius: 4px; background: hsl(var(--muted)); }
+.catalogue-meter::-webkit-meter-bar { background: hsl(var(--muted)); border: 0; border-radius: 4px; }
+.catalogue-meter::-webkit-meter-optimum-value { background: hsl(var(--primary)); border-radius: 4px; }
+.catalogue-meter::-moz-meter-bar { background: hsl(var(--primary)); border-radius: 4px; }
+.catalogue-meter-secondary::-webkit-meter-optimum-value { background: hsl(var(--brand-mint)); }
+.catalogue-meter-secondary::-moz-meter-bar { background: hsl(var(--brand-mint)); }
 .brand-hero-copy { color: hsl(var(--brand-muted)); }
 .brand-hero-accent { color: hsl(var(--brand-gold)); }
 .brand-hero-image { opacity: 0.8; }
