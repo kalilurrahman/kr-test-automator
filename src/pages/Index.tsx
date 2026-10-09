@@ -18,13 +18,9 @@ import {
 import SeoHead from "@/components/SeoHead";
 import { Button } from "@/components/ui/button";
 import brandHero from "@/assets/validaira-brand-hero.jpg";
-import { ProductLogo } from "@/components/ProductLogo";
-import { PRODUCT_CATALOG, TOTAL_MODULES, TOTAL_PRODUCTS } from "@/data/productCatalog";
+import { HomeProductExplorer } from "@/components/home-product-explorer";
+import { TOTAL_MODULES, TOTAL_PRODUCTS } from "@/data/productCatalog";
 import { getGlobalStats } from "@/lib/globalStats";
-
-const featuredProducts = ["sap", "salesforce", "workday", "servicenow", "claudecode", "codex", "databricks", "snowflake", "microsoftfabric", "dbt", "vercel", "huggingfacehub", "jira", "shopify", "n8n", "uipath"]
-  .map((key) => PRODUCT_CATALOG.find((product) => product.key === key))
-  .filter((product): product is (typeof PRODUCT_CATALOG)[number] => Boolean(product));
 
 const features = [
   {
@@ -91,14 +87,14 @@ const Index = () => {
         <section className="brand-hero relative isolate overflow-hidden border-b border-border">
           <img src={brandHero} alt="Gold Validaira V with mint validation mark in a precision laboratory" width={1920} height={1088} fetchPriority="high" className="brand-hero-image absolute inset-0 -z-20 h-full w-full object-cover" />
           <div className="brand-hero-scrim pointer-events-none absolute inset-0 -z-10" />
-          <div className="mx-auto max-w-7xl px-4 py-12 sm:py-16 lg:py-20">
+          <div className="mx-auto max-w-7xl px-4 py-9 sm:py-12 lg:py-14">
             <div className="max-w-xl">
               <p className="brand-hero-accent mb-4 flex items-center gap-2 text-xs font-semibold uppercase"><Sparkles className="h-4 w-4" />AI-native quality engineering</p>
               <h1 className="text-6xl font-semibold leading-none sm:text-7xl">Validaira</h1>
               <p className="mt-4 max-w-md text-2xl leading-snug sm:text-3xl">Confident releases start with better tests.</p>
               <p className="brand-hero-copy mt-5 max-w-md text-sm leading-6 sm:text-base">Explore enterprise scenarios, generate framework-ready automation, and keep your quality engineering work connected.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <Button asChild size="lg" className="brand-hero-primary h-12 gap-2 px-5 text-sm font-semibold"><Link to="/content-automation">Open Content Automation <ArrowRight className="h-4 w-4" /></Link></Button>
+                <Button asChild size="lg" className="brand-hero-primary h-12 gap-2 px-5 text-sm font-semibold"><Link to="/content-automation">Generate a test script <ArrowRight className="h-4 w-4" /></Link></Button>
                 <Button asChild size="lg" variant="outline" className="brand-hero-secondary h-12 gap-2 px-5 text-sm"><Link to="/platforms">Explore test libraries <ChevronRight className="h-4 w-4" /></Link></Button>
               </div>
               <div className="brand-hero-copy mt-7 flex flex-wrap gap-x-5 gap-y-2 text-xs">
@@ -113,12 +109,14 @@ const Index = () => {
             <StatCard icon={Layers3} value={TOTAL_PRODUCTS.toLocaleString()} label="platforms and products" />
             <StatCard icon={Database} value={caseCount} label="indexed test cases" />
             <StatCard icon={Workflow} value={TOTAL_MODULES.toLocaleString()} label="product modules" />
-            <StatCard icon={Braces} value="AI-native" label="quality engineering" />
+            <StatCard icon={Braces} value="5,000" label="original AI-product cases" />
           </div>
           {stats?.cases && stats.cases !== stats.unique ? (
             <p className="mt-2 text-right text-[11px] text-muted-foreground">{stats.cases.toLocaleString()} total records · duplicates excluded from indexed count</p>
           ) : null}
         </section>
+
+        <HomeProductExplorer />
 
         <section className="mx-auto max-w-7xl px-4 py-12 sm:py-16">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
@@ -174,26 +172,6 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 py-12 sm:py-16">
-          <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">Broad by design</p>
-              <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">Built around the systems your teams already run.</h2>
-            </div>
-            <Link to="/platforms" className="inline-flex items-center gap-1 text-sm text-primary hover:underline">Browse all {TOTAL_PRODUCTS} products <ArrowRight className="h-3.5 w-3.5" /></Link>
-          </div>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-            {featuredProducts.map((product) => (
-              <Link key={product.key} to={product.route} className="flex items-center gap-3 rounded-lg border border-border bg-card/70 px-3 py-3 text-sm text-foreground transition-colors hover:border-primary/40 hover:bg-primary/5">
-                <ProductLogo productKey={product.key} label={product.label} size={32} /><span className="min-w-0 flex-1">{product.label}</span><ChevronRight className="h-3 w-3 shrink-0 text-muted-foreground" />
-              </Link>
-            ))}
-            <Link to="/platforms" className="inline-flex items-center justify-center gap-2 rounded-lg border border-dashed border-border px-4 py-3 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary">
-              + {Math.max(0, TOTAL_PRODUCTS - featuredProducts.length)} more <ArrowRight className="h-3 w-3" />
-            </Link>
-          </div>
-        </section>
-
         <section className="mx-auto max-w-7xl px-4 pb-14 sm:pb-20">
           <div className="border-t border-border py-8 sm:py-10">
             <div className="relative flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
@@ -215,7 +193,7 @@ const Index = () => {
 };
 
 const StatCard = ({ icon: Icon, value, label }: { icon: typeof Database; value: string; label: string }) => (
-  <div className="flex min-w-0 items-center gap-3 rounded-xl border border-border bg-card/65 p-4">
+  <div className="flex min-w-0 items-center gap-3 border-l-2 border-primary/40 py-2 pl-3 sm:pl-4">
     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><Icon className="h-4 w-4" /></span>
     <span className="min-w-0"><strong className="block truncate text-xl font-semibold text-foreground">{value}</strong><small className="block text-[10px] uppercase tracking-wider text-muted-foreground">{label}</small></span>
   </div>

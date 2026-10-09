@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Focused five-credit enhancement: prioritize searchable product discovery, clearer first-screen actions, and verification.
+
 - [ ] Finish Validaira branding on every page and export icons, marketing artwork, and the downloadable brand kit.
 
 - [ ] Integrate 5,000 uploaded AI-product test cases into product repositories and downloads.

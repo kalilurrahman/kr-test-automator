@@ -7,3 +7,4 @@
 - Dashboard charts report catalogue coverage, not execution outcomes; derive all figures from shipped data and never fabricate pass rates or trends.
 - Use the public web manifest as the single installation metadata source in development and production, and version icon URLs when the artwork changes to avoid stale launcher branding.
 - Derive favicon, launcher icons, maskable icons, and downloadable brand assets from one vector mark so every size preserves the same identity.
+- Home product discovery uses the shared product catalogue and family taxonomy so its links and grouping stay aligned with product repositories.
