@@ -10,7 +10,7 @@ const renderExplorer = () => render(<MemoryRouter><HomeProductExplorer /></Memor
 describe("Home product explorer", () => {
   it("features all five uploaded product repositories", () => {
     renderExplorer();
-    for (const name of ["Claude Code", "Codex", "Databricks", "Snowflake AI", "Palantir Foundry AI"]) {
+    for (const name of ["Claude Code", "OpenAI Codex", "Databricks", "Snowflake AI", "Palantir Foundry AI"]) {
       expect(screen.getByRole("link", { name })).toHaveAttribute("href", expect.stringContaining("/p/"));
     }
   });

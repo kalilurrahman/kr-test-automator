@@ -48,7 +48,7 @@ export function HomeProductExplorer() {
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {products.slice(0, 16).map((product) => (
             <Link key={product.key} to={product.route} className="group flex min-h-20 items-center gap-3 rounded-lg border border-border bg-card px-3 py-4 transition-colors hover:border-primary/50 hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-              <ProductLogo productKey={product.key} label={product.label} size={40} />
+              <ProductLogo productKey={product.key} label={product.label} size={40} className={["foundryai", "cursor", "githubcopilot"].includes(product.key) ? "brand-logo-plate" : ""} />
               <span className="min-w-0 flex-1 text-sm font-medium leading-5">{product.label}</span>
               <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-primary" />
             </Link>
