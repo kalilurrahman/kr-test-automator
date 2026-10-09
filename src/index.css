@@ -286,6 +286,7 @@ html.light {
 html { transition: background-color 0.25s ease, color 0.25s ease; }
 
 .brand-hero { background: hsl(var(--brand-ink)); color: hsl(var(--brand-paper)); }
+.brand-logo-plate { background: hsl(var(--brand-paper)); }
 .brand-hero-copy { color: hsl(var(--brand-muted)); }
 .brand-hero-accent { color: hsl(var(--brand-gold)); }
 .brand-hero-image { opacity: 0.8; }
