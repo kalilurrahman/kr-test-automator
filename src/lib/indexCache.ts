@@ -8,8 +8,8 @@
 const DB_NAME = "tf-cache";
 const DB_VERSION = 1;
 const STORE = "global-index";
-// v5: original uploaded IDs take precedence over generated suites.
-const KEY = "v5";
+// v6: include collaboration packs while preserving uploaded-ID precedence.
+const KEY = "v6";
 /** 24h freshness window — refresh in the background after this. */
 export const TTL_MS = 24 * 60 * 60 * 1000;
 
