@@ -8,3 +8,4 @@
 - Use the public web manifest as the single installation metadata source in development and production, and version icon URLs when the artwork changes to avoid stale launcher branding.
 - Derive favicon, launcher icons, maskable icons, and downloadable brand assets from one vector mark so every size preserves the same identity.
 - Home product discovery uses the shared product catalogue and family taxonomy so its links and grouping stay aligned with product repositories.
+- Generate collaboration product packs additively through their dedicated generator and shared registry; this preserves existing case content and keeps search, downloads, and product pages aligned.

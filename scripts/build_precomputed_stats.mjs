@@ -287,6 +287,9 @@ const GENERATED_DATA_PACKS = [
   ["devin", "Devin", "Devin"], ["cline", "Cline", "Cline"],
   ["openhands", "OpenHands", "OpenHands"], ["factory-droid", "Factory Droid", "FactoryDroid"],
   ["roo-code", "Roo Code", "RooCode"], ["sourcegraph-amp", "Sourcegraph Amp", "SourcegraphAmp"],
+  ["github", "GitHub", "GitHub"], ["gitlab", "GitLab", "GitLab"],
+  ["slack", "Slack", "Slack"], ["microsoft-teams", "Microsoft Teams", "MicrosoftTeams"],
+  ["confluence", "Confluence", "Confluence"],
 ];
 for (const [id, label, folder] of GENERATED_DATA_PACKS) {
   const manifestFile = path.join(ROOT, folder, "manifest.json");

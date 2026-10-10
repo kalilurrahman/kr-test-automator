@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Add five missing enterprise products with synthetic cases, catalogue/search integration, downloads, and verified generator prefills.
+
 - [ ] Add a lightweight home catalogue snapshot with verified product and priority graphs.
 
 - [x] Focused five-credit enhancement: searchable product discovery, clearer first-screen actions, and interaction checks.

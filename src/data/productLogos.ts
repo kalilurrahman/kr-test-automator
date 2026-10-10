@@ -6,6 +6,10 @@
 
 const SIMPLE_ICON_SLUGS: Record<string, string> = {
   sap: "sap",
+  github: "github",
+  gitlab: "gitlab",
+  slack: "slack",
+  confluence: "confluence",
   ios: "ios",
   android: "android",
   gcp: "googlecloud",
@@ -60,6 +64,7 @@ const SIMPLE_ICON_SLUGS: Record<string, string> = {
 
 /** Domains are intentionally explicit so similarly named products don't pick the wrong logo. */
 const OFFICIAL_DOMAINS: Record<string, string> = {
+  "microsoft-teams": "teams.microsoft.com",
   salesforce: "salesforce.com",
   workday: "workday.com",
   servicenow: "servicenow.com",

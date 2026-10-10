@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import json
 from pathlib import Path
+from generate_collaboration_product_suites import PACKS as COLLABORATION_PACKS
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKS = {
@@ -71,6 +72,8 @@ PACKS = {
     "RooCode": {"id": "roo-code", "label": "Roo Code", "accent": "rose", "industryDomain": "developer-tools", "description": "Mode-scoped coding agents, delegated and orchestrated tasks, tool permissions, custom workflows, and safe session recovery.", "automationSuiteUrl": "/market-automation-suites/roo-code-playwright-e2e.zip"},
     "SourcegraphAmp": {"id": "sourcegraph-amp", "label": "Sourcegraph Amp", "accent": "cyan", "industryDomain": "developer-tools", "description": "Codebase-aware agent threads, cloud workspaces, model routing, MCP tools, collaboration, review, and evaluation.", "automationSuiteUrl": "/market-automation-suites/sourcegraph-amp-playwright-e2e.zip"},
 }
+
+PACKS.update({pack["root"]: {"id": pack["key"], "label": pack["display"], "accent": pack["accent"]} for pack in COLLABORATION_PACKS})
 
 
 def load_manifest(root_name: str, metadata: dict):

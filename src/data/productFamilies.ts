@@ -254,6 +254,8 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   api: "cloud_devops",
   datadog: "cloud_devops",
   jira: "cloud_devops",
+  github: "cloud_devops",
+  gitlab: "cloud_devops",
   mulesoft: "cloud_devops",
   boomi: "cloud_devops",
   uipath: "cloud_devops",
@@ -293,6 +295,9 @@ export const PRODUCT_FAMILY_MAP: Record<string, FamilyKey> = {
   topproducts: "other",
   googleworkspace: "other",
   zoom: "other",
+  slack: "other",
+  "microsoft-teams": "other",
+  confluence: "other",
 };
 
 export function familyForProduct(p: ProductEntry): ProductFamily {

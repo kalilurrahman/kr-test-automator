@@ -400,7 +400,7 @@ def write_pack(pack: dict) -> None:
         csv_path.with_suffix(".ts").write_text(
             f"// Generated from {csv_path.name}; regenerate with scripts/generate_market_product_suites.py.\n"
             f"export const {variable} = {json.dumps(rows, ensure_ascii=False, indent=2)} as const;\n"
-            f"export default {variable};\n",
+            "",
             encoding="utf-8",
         )
         manifest_modules.append({"id": slug, "label": label, "folder": slug, "prefix": prefix, "count": len(rows)})

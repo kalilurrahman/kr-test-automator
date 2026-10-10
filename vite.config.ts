@@ -65,6 +65,11 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     viteStaticCopy({
       targets: [
+        { src: 'GitHub/*', dest: 'GitHub' },
+        { src: 'GitLab/*', dest: 'GitLab' },
+        { src: 'Slack/*', dest: 'Slack' },
+        { src: 'MicrosoftTeams/*', dest: 'MicrosoftTeams' },
+        { src: 'Confluence/*', dest: 'Confluence' },
         { src: 'MarketAutomationSuites/archives/*.zip', dest: 'market-automation-suites' },
         { src: 'Kiro/*', dest: 'Kiro' },
         { src: 'GitLabDuo/*', dest: 'GitLabDuo' },
